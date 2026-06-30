@@ -12,9 +12,9 @@ type GlobalacceleratorAcceleratorAttributesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GlobalacceleratorAcceleratorAttributesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FlowLogsEnabled() interface{}
-	SetFlowLogsEnabled(val interface{})
-	FlowLogsEnabledInput() interface{}
+	FlowLogsEnabled() any
+	SetFlowLogsEnabled(val any)
+	FlowLogsEnabledInput() any
 	FlowLogsS3Bucket() *string
 	SetFlowLogsS3Bucket(val *string)
 	FlowLogsS3BucketInput() *string
@@ -49,7 +49,7 @@ type GlobalacceleratorAcceleratorAttributesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GlobalacceleratorAcceleratorAttributesOutputReference interface {
 	ResetFlowLogsS3Prefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) FlowLogsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) FlowLogsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flowLogsEnabled",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) FlowLo
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) FlowLogsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) FlowLogsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flowLogsEnabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Terraf
 	return returns
 }
 
-
 func NewGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GlobalacceleratorAcceleratorAttributesOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGlobalacceleratorAcceleratorAttributesOutputReference_Override(g Globala
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlowLogsEnabled(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetFlowLogsEnabled(val any) {
 	if err := j.validateSetFlowLogsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlow
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlowLogsS3Bucket(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetFlowLogsS3Bucket(val *string) {
 	if err := j.validateSetFlowLogsS3BucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlow
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlowLogsS3Prefix(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetFlowLogsS3Prefix(val *string) {
 	if err := j.validateSetFlowLogsS3PrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetFlow
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetInternalValue(val *GlobalacceleratorAcceleratorAttributes) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetInternalValue(val *GlobalacceleratorAcceleratorAttributes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) ResetF
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) ToStri
 
 	return returns
 }
-

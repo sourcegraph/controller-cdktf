@@ -117,7 +117,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -281,4 +281,3 @@ func validateNewEc2FleetLaunchTemplateConfigOverrideOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	CheckpointPercentagesInput() *[]*float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	MinHealthyPercentage() *float64
 	SetMinHealthyPercentage(val *float64)
 	MinHealthyPercentageInput() *float64
-	SkipMatching() interface{}
-	SetSkipMatching(val interface{})
-	SkipMatchingInput() interface{}
+	SkipMatching() any
+	SetSkipMatching(val any)
+	SkipMatchingInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	ResetSkipMatching()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ch
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Mi
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SkipMatching() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SkipMatching() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipMatching",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Sk
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SkipMatchingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SkipMatchingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipMatchingInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Te
 	return returns
 }
 
-
 func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutoscalingGroupInstanceRefreshPreferencesOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference_Override(a Aut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetCheckpointDelay(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetCheckpointDelay(val *string) {
 	if err := j.validateSetCheckpointDelayParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetCheckpointPercentages(val *[]*float64) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetCheckpointPercentages(val *[]*float64) {
 	if err := j.validateSetCheckpointPercentagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetInstanceWarmup(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetInstanceWarmup(val *string) {
 	if err := j.validateSetInstanceWarmupParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetInternalValue(val *AutoscalingGroupInstanceRefreshPreferences) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetInternalValue(val *AutoscalingGroupInstanceRefreshPreferences) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetMinHealthyPercentage(val *float64) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetMinHealthyPercentage(val *float64) {
 	if err := j.validateSetMinHealthyPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetSkipMatching(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetSkipMatching(val any) {
 	if err := j.validateSetSkipMatchingParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Co
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) In
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Re
 	)
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) To
 
 	return returns
 }
-

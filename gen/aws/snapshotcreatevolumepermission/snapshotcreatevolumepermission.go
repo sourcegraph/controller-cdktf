@@ -18,15 +18,15 @@ type SnapshotCreateVolumePermission interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,29 +53,29 @@ type SnapshotCreateVolumePermission interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotId() *string
 	SetSnapshotId(val *string)
 	SnapshotIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SnapshotCreateVolumePermissionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type SnapshotCreateVolumePermission interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type SnapshotCreateVolumePermission interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type SnapshotCreateVolumePermission interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SnapshotCreateVolumePermission
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) Timeouts() SnapshotCreateVolu
 	return returns
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnapshotCreateVolumePermission) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
 func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, config *SnapshotCreateVolumePermissionConfig) SnapshotCreateVolumePermission {
@@ -388,7 +387,7 @@ func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewSnapshotCreateVolumePermission_Override(s SnapshotCreateVolumePermission
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetAccountId(val *string) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetConnection(val interface{}) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetCount(val interface{}) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetId(val *string) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission)SetSnapshotId(val *string) {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func SnapshotCreateVolumePermission_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func SnapshotCreateVolumePermission_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SnapshotCreateVolumePermission_IsConstruct(x interface{}) *bool {
+func SnapshotCreateVolumePermission_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnapshotCreateVolumePermission_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func SnapshotCreateVolumePermission_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func SnapshotCreateVolumePermission_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SnapshotCreateVolumePermission_IsTerraformElement(x interface{}) *bool {
+func SnapshotCreateVolumePermission_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnapshotCreateVolumePermission_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func SnapshotCreateVolumePermission_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func SnapshotCreateVolumePermission_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SnapshotCreateVolumePermission_IsTerraformResource(x interface{}) *bool {
+func SnapshotCreateVolumePermission_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnapshotCreateVolumePermission_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func SnapshotCreateVolumePermission_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SnapshotCreateVolumePermission) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SnapshotCreateVolumePermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -796,7 +795,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SnapshotCreateVolumePermission) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) PutTimeouts(value *SnapshotCr
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -908,8 +907,8 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -921,8 +920,8 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -934,8 +933,8 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -960,8 +959,8 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnapshotCreateVolumePermission) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -972,4 +971,3 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ToTerraform() interface{} {
 
 	return returns
 }
-

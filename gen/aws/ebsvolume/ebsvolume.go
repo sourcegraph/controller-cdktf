@@ -19,25 +19,25 @@ type EbsVolume interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
-	FinalSnapshot() interface{}
-	SetFinalSnapshot(val interface{})
-	FinalSnapshotInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
+	FinalSnapshot() any
+	SetFinalSnapshot(val any)
+	FinalSnapshotInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,9 +59,9 @@ type EbsVolume interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MultiAttachEnabled() interface{}
-	SetMultiAttachEnabled(val interface{})
-	MultiAttachEnabledInput() interface{}
+	MultiAttachEnabled() any
+	SetMultiAttachEnabled(val any)
+	MultiAttachEnabledInput() any
 	// The tree node.
 	Node() constructs.Node
 	OutpostArn() *string
@@ -72,11 +72,11 @@ type EbsVolume interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -92,14 +92,14 @@ type EbsVolume interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Throughput() *float64
 	SetThroughput(val *float64)
 	ThroughputInput() *float64
 	Timeouts() EbsVolumeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -107,9 +107,9 @@ type EbsVolume interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type EbsVolume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type EbsVolume interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type EbsVolume interface {
 	ResetThroughput()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EbsVolume
@@ -222,8 +222,8 @@ func (j *jsiiProxy_EbsVolume) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_EbsVolume) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EbsVolume) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_EbsVolume) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_EbsVolume) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_EbsVolume) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_EbsVolume) EncryptedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) FinalSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) FinalSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"finalSnapshot",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_EbsVolume) FinalSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) FinalSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) FinalSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"finalSnapshotInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_EbsVolume) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) MultiAttachEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) MultiAttachEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAttachEnabled",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_EbsVolume) MultiAttachEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) MultiAttachEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) MultiAttachEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAttachEnabledInput",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_EbsVolume) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EbsVolume) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_EbsVolume) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_EbsVolume) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EbsVolume) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_EbsVolume) Timeouts() EbsVolumeTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_EbsVolume) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsVolume) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -652,7 +652,6 @@ func (j *jsiiProxy_EbsVolume) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfig) EbsVolume {
 	_init_.Initialize()
@@ -664,7 +663,7 @@ func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -677,12 +676,12 @@ func NewEbsVolume_Override(e EbsVolume, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_EbsVolume) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_EbsVolume)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetConnection(val interface{}) {
+func (j *jsiiProxy_EbsVolume) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_EbsVolume)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetCount(val interface{}) {
+func (j *jsiiProxy_EbsVolume) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_EbsVolume)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EbsVolume) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -723,7 +722,7 @@ func (j *jsiiProxy_EbsVolume)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_EbsVolume) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_EbsVolume)SetEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetFinalSnapshot(val interface{}) {
+func (j *jsiiProxy_EbsVolume) SetFinalSnapshot(val any) {
 	if err := j.validateSetFinalSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_EbsVolume)SetFinalSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EbsVolume) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_EbsVolume)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetId(val *string) {
+func (j *jsiiProxy_EbsVolume) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_EbsVolume)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetIops(val *float64) {
+func (j *jsiiProxy_EbsVolume) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_EbsVolume)SetIops(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_EbsVolume) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_EbsVolume)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EbsVolume) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_EbsVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetMultiAttachEnabled(val interface{}) {
+func (j *jsiiProxy_EbsVolume) SetMultiAttachEnabled(val any) {
 	if err := j.validateSetMultiAttachEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_EbsVolume)SetMultiAttachEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetOutpostArn(val *string) {
+func (j *jsiiProxy_EbsVolume) SetOutpostArn(val *string) {
 	if err := j.validateSetOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_EbsVolume)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EbsVolume) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -827,7 +826,7 @@ func (j *jsiiProxy_EbsVolume)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EbsVolume) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_EbsVolume)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetSize(val *float64) {
+func (j *jsiiProxy_EbsVolume) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_EbsVolume)SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetSnapshotId(val *string) {
+func (j *jsiiProxy_EbsVolume) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_EbsVolume)SetSnapshotId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EbsVolume) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_EbsVolume)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EbsVolume) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_EbsVolume)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetThroughput(val *float64) {
+func (j *jsiiProxy_EbsVolume) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_EbsVolume)SetThroughput(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EbsVolume)SetType(val *string) {
+func (j *jsiiProxy_EbsVolume) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func EbsVolume_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func EbsVolume_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EbsVolume_IsConstruct(x interface{}) *bool {
+func EbsVolume_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsVolume_IsConstructParameters(x); err != nil {
@@ -951,7 +950,7 @@ func EbsVolume_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func EbsVolume_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EbsVolume_IsTerraformElement(x interface{}) *bool {
+func EbsVolume_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsVolume_IsTerraformElementParameters(x); err != nil {
@@ -970,7 +969,7 @@ func EbsVolume_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func EbsVolume_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EbsVolume_IsTerraformResource(x interface{}) *bool {
+func EbsVolume_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsVolume_IsTerraformResourceParameters(x); err != nil {
@@ -989,7 +988,7 @@ func EbsVolume_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1014,31 +1013,31 @@ func (e *jsiiProxy_EbsVolume) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EbsVolume) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EbsVolume) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EbsVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EbsVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (e *jsiiProxy_EbsVolume) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (e *jsiiProxy_EbsVolume) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (e *jsiiProxy_EbsVolume) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (e *jsiiProxy_EbsVolume) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (e *jsiiProxy_EbsVolume) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (e *jsiiProxy_EbsVolume) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (e *jsiiProxy_EbsVolume) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,15 +1165,15 @@ func (e *jsiiProxy_EbsVolume) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EbsVolume) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsVolume) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1193,7 +1192,7 @@ func (e *jsiiProxy_EbsVolume) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (e *jsiiProxy_EbsVolume) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1220,18 +1219,18 @@ func (e *jsiiProxy_EbsVolume) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EbsVolume) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EbsVolume) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1242,7 +1241,7 @@ func (e *jsiiProxy_EbsVolume) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1253,7 +1252,7 @@ func (e *jsiiProxy_EbsVolume) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1264,7 +1263,7 @@ func (e *jsiiProxy_EbsVolume) PutTimeouts(value *EbsVolumeTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1388,8 +1387,8 @@ func (e *jsiiProxy_EbsVolume) ResetType() {
 	)
 }
 
-func (e *jsiiProxy_EbsVolume) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EbsVolume) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1401,8 +1400,8 @@ func (e *jsiiProxy_EbsVolume) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EbsVolume) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EbsVolume) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1414,8 +1413,8 @@ func (e *jsiiProxy_EbsVolume) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (e *jsiiProxy_EbsVolume) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsVolume) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1427,8 +1426,8 @@ func (e *jsiiProxy_EbsVolume) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EbsVolume) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsVolume) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1453,8 +1452,8 @@ func (e *jsiiProxy_EbsVolume) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EbsVolume) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsVolume) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1465,4 +1464,3 @@ func (e *jsiiProxy_EbsVolume) ToTerraform() interface{} {
 
 	return returns
 }
-

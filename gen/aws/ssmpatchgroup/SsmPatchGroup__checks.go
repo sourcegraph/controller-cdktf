@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsmPatchGroup) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsmPatchGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsmPatchGroup) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsmPatchGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSsmPatchGroup_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateSsmPatchGroup_IsConstructParameters(x interface{}) error {
+func validateSsmPatchGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSsmPatchGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSsmPatchGroup_IsTerraformElementParameters(x interface{}) error {
+func validateSsmPatchGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSsmPatchGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSsmPatchGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateSsmPatchGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SsmPatchGroup) validateSetBaselineIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_SsmPatchGroup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_SsmPatchGroup) validateSetPatchGroupParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsmPatchGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewSsmPatchGroupParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

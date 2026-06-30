@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
-		reflect.TypeOf((*EmrInstanceGroup)(nil)).Elem(),
+		reflect.TypeFor[EmrInstanceGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrInstanceGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupConfig",
-		reflect.TypeOf((*EmrInstanceGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrInstanceGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupEbsConfig",
-		reflect.TypeOf((*EmrInstanceGroupEbsConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrInstanceGroupEbsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupEbsConfigList",
-		reflect.TypeOf((*EmrInstanceGroupEbsConfigList)(nil)).Elem(),
+		reflect.TypeFor[EmrInstanceGroupEbsConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrInstanceGroupEbsConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupEbsConfigOutputReference",
-		reflect.TypeOf((*EmrInstanceGroupEbsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrInstanceGroupEbsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstance", GoGetter: "VolumesPerInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "volumesPerInstanceInput", GoGetter: "VolumesPerInstanceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrInstanceGroupEbsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

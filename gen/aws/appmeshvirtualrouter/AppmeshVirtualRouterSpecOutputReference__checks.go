@@ -90,7 +90,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateInterpolatio
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validatePutListenerParameters(value interface{}) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validatePutListenerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewAppmeshVirtualRouterSpecOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

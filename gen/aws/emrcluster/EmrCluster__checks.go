@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmrCluster) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_EmrCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmrCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmrCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmrCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_EmrCluster) validatePutAutoTerminationPolicyParameters(value 
 	return nil
 }
 
-func (e *jsiiProxy_EmrCluster) validatePutBootstrapActionParameters(value interface{}) error {
+func (e *jsiiProxy_EmrCluster) validatePutBootstrapActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func (e *jsiiProxy_EmrCluster) validatePutMasterInstanceGroupParameters(value *E
 	return nil
 }
 
-func (e *jsiiProxy_EmrCluster) validatePutStepParameters(value interface{}) error {
+func (e *jsiiProxy_EmrCluster) validatePutStepParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func validateEmrCluster_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEmrCluster_IsConstructParameters(x interface{}) error {
+func validateEmrCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func validateEmrCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmrCluster_IsTerraformElementParameters(x interface{}) error {
+func validateEmrCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -375,7 +375,7 @@ func validateEmrCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmrCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateEmrCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -423,7 +423,7 @@ func (j *jsiiProxy_EmrCluster) validateSetConfigurationsJsonParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -456,7 +456,7 @@ func (j *jsiiProxy_EmrCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -537,7 +537,7 @@ func (j *jsiiProxy_EmrCluster) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetKeepJobFlowAliveWhenNoStepsParameters(val interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetKeepJobFlowAliveWhenNoStepsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -597,7 +597,7 @@ func (j *jsiiProxy_EmrCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -699,7 +699,7 @@ func (j *jsiiProxy_EmrCluster) validateSetTagsAllParameters(val *map[string]*str
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetTerminationProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetTerminationProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -719,7 +719,7 @@ func (j *jsiiProxy_EmrCluster) validateSetTerminationProtectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetVisibleToAllUsersParameters(val interface{}) error {
+func (j *jsiiProxy_EmrCluster) validateSetVisibleToAllUsersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -757,4 +757,3 @@ func validateNewEmrClusterParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

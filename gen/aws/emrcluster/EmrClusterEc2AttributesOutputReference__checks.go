@@ -114,7 +114,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateSetAdditional
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,4 +270,3 @@ func validateNewEmrClusterEc2AttributesOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

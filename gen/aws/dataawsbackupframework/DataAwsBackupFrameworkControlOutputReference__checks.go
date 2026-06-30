@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsBackupFrameworkControlOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBackupFrameworkControlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsBackupFrameworkControlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsBackupFrameworkControlOutputReferenceParameters(terraform
 
 	return nil
 }
-

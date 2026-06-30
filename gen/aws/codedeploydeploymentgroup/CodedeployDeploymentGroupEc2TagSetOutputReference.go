@@ -12,9 +12,9 @@ type CodedeployDeploymentGroupEc2TagSetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,11 +26,11 @@ type CodedeployDeploymentGroupEc2TagSetOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Ec2TagFilter() CodedeployDeploymentGroupEc2TagSetEc2TagFilterList
-	Ec2TagFilterInput() interface{}
+	Ec2TagFilterInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type CodedeployDeploymentGroupEc2TagSetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type CodedeployDeploymentGroupEc2TagSetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEc2TagFilter(value interface{})
+	PutEc2TagFilter(value any)
 	ResetEc2TagFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Ec2TagFilt
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Ec2TagFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Ec2TagFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ec2TagFilterInput",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) TerraformR
 	return returns
 }
 
-
 func NewCodedeployDeploymentGroupEc2TagSetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupEc2TagSetOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewCodedeployDeploymentGroupEc2TagSetOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewCodedeployDeploymentGroupEc2TagSetOutputReference_Override(c CodedeployD
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) PutEc2TagFilter(value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) PutEc2TagFilter(value any) {
 	if err := c.validatePutEc2TagFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEc2TagFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) ResetEc2Ta
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) ToString()
 
 	return returns
 }
-

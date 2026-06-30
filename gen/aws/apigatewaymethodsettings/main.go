@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
-		reflect.TypeOf((*ApiGatewayMethodSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayMethodSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayMethodSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsConfig",
-		reflect.TypeOf((*ApiGatewayMethodSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayMethodSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings",
-		reflect.TypeOf((*ApiGatewayMethodSettingsSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayMethodSettingsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayMethodSettingsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayMethodSettingsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheDataEncrypted", GoGetter: "CacheDataEncrypted"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheDataEncryptedInput", GoGetter: "CacheDataEncryptedInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unauthorizedCacheControlHeaderStrategy", GoGetter: "UnauthorizedCacheControlHeaderStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "unauthorizedCacheControlHeaderStrategyInput", GoGetter: "UnauthorizedCacheControlHeaderStrategyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

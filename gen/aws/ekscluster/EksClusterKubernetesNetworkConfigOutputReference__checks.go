@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEksClusterKubernetesNetworkConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

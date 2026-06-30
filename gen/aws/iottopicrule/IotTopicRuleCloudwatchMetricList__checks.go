@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleCloudwatchMetricListParameters(terraformResource cdk
 
 	return nil
 }
-

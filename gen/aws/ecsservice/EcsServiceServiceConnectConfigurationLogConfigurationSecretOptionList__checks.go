@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptio
 
 	return nil
 }
-

@@ -13,24 +13,24 @@ import (
 type Vpc interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AssignGeneratedIpv6CidrBlock() interface{}
-	SetAssignGeneratedIpv6CidrBlock(val interface{})
-	AssignGeneratedIpv6CidrBlockInput() interface{}
+	AssignGeneratedIpv6CidrBlock() any
+	SetAssignGeneratedIpv6CidrBlock(val any)
+	AssignGeneratedIpv6CidrBlockInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CidrBlock() *string
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultNetworkAclId() *string
 	DefaultRouteTableId() *string
 	DefaultSecurityGroupId() *string
@@ -39,21 +39,21 @@ type Vpc interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DhcpOptionsId() *string
-	EnableClassiclink() interface{}
-	SetEnableClassiclink(val interface{})
-	EnableClassiclinkDnsSupport() interface{}
-	SetEnableClassiclinkDnsSupport(val interface{})
-	EnableClassiclinkDnsSupportInput() interface{}
-	EnableClassiclinkInput() interface{}
-	EnableDnsHostnames() interface{}
-	SetEnableDnsHostnames(val interface{})
-	EnableDnsHostnamesInput() interface{}
-	EnableDnsSupport() interface{}
-	SetEnableDnsSupport(val interface{})
-	EnableDnsSupportInput() interface{}
-	EnableNetworkAddressUsageMetrics() interface{}
-	SetEnableNetworkAddressUsageMetrics(val interface{})
-	EnableNetworkAddressUsageMetricsInput() interface{}
+	EnableClassiclink() any
+	SetEnableClassiclink(val any)
+	EnableClassiclinkDnsSupport() any
+	SetEnableClassiclinkDnsSupport(val any)
+	EnableClassiclinkDnsSupportInput() any
+	EnableClassiclinkInput() any
+	EnableDnsHostnames() any
+	SetEnableDnsHostnames(val any)
+	EnableDnsHostnamesInput() any
+	EnableDnsSupport() any
+	SetEnableDnsSupport(val any)
+	EnableDnsSupportInput() any
+	EnableNetworkAddressUsageMetrics() any
+	SetEnableNetworkAddressUsageMetrics(val any)
+	EnableNetworkAddressUsageMetricsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -100,11 +100,11 @@ type Vpc interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -114,16 +114,16 @@ type Vpc interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -141,7 +141,7 @@ type Vpc interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -153,7 +153,7 @@ type Vpc interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -180,17 +180,17 @@ type Vpc interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Vpc
@@ -208,8 +208,8 @@ func (j *jsiiProxy_Vpc) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) AssignGeneratedIpv6CidrBlock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) AssignGeneratedIpv6CidrBlock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assignGeneratedIpv6CidrBlock",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_Vpc) AssignGeneratedIpv6CidrBlock() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) AssignGeneratedIpv6CidrBlockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) AssignGeneratedIpv6CidrBlockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assignGeneratedIpv6CidrBlockInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_Vpc) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_Vpc) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Vpc) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_Vpc) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_Vpc) DhcpOptionsId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableClassiclink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableClassiclink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableClassiclink",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_Vpc) EnableClassiclink() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableClassiclinkDnsSupport",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupport() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableClassiclinkDnsSupportInput",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupportInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableClassiclinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableClassiclinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableClassiclinkInput",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_Vpc) EnableClassiclinkInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableDnsHostnames() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableDnsHostnames() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDnsHostnames",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_Vpc) EnableDnsHostnames() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableDnsHostnamesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableDnsHostnamesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDnsHostnamesInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_Vpc) EnableDnsHostnamesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableDnsSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableDnsSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDnsSupport",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_Vpc) EnableDnsSupport() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableDnsSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableDnsSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDnsSupportInput",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_Vpc) EnableDnsSupportInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetrics() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetrics() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNetworkAddressUsageMetrics",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetrics() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetricsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetricsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNetworkAddressUsageMetricsInput",
@@ -688,8 +688,8 @@ func (j *jsiiProxy_Vpc) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Vpc) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -698,8 +698,8 @@ func (j *jsiiProxy_Vpc) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Vpc) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -758,8 +758,8 @@ func (j *jsiiProxy_Vpc) TerraformGeneratorMetadata() *cdktf.TerraformProviderGen
 	return returns
 }
 
-func (j *jsiiProxy_Vpc) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Vpc) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -778,7 +778,6 @@ func (j *jsiiProxy_Vpc) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc aws_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
@@ -790,7 +789,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpc.Vpc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -803,12 +802,12 @@ func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpc.Vpc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetAssignGeneratedIpv6CidrBlock(val interface{}) {
+func (j *jsiiProxy_Vpc) SetAssignGeneratedIpv6CidrBlock(val any) {
 	if err := j.validateSetAssignGeneratedIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_Vpc)SetAssignGeneratedIpv6CidrBlock(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetCidrBlock(val *string) {
+func (j *jsiiProxy_Vpc) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_Vpc)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetConnection(val interface{}) {
+func (j *jsiiProxy_Vpc) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_Vpc)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetCount(val interface{}) {
+func (j *jsiiProxy_Vpc) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_Vpc)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Vpc) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -860,7 +859,7 @@ func (j *jsiiProxy_Vpc)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetEnableClassiclink(val interface{}) {
+func (j *jsiiProxy_Vpc) SetEnableClassiclink(val any) {
 	if err := j.validateSetEnableClassiclinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_Vpc)SetEnableClassiclink(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetEnableClassiclinkDnsSupport(val interface{}) {
+func (j *jsiiProxy_Vpc) SetEnableClassiclinkDnsSupport(val any) {
 	if err := j.validateSetEnableClassiclinkDnsSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_Vpc)SetEnableClassiclinkDnsSupport(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetEnableDnsHostnames(val interface{}) {
+func (j *jsiiProxy_Vpc) SetEnableDnsHostnames(val any) {
 	if err := j.validateSetEnableDnsHostnamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_Vpc)SetEnableDnsHostnames(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetEnableDnsSupport(val interface{}) {
+func (j *jsiiProxy_Vpc) SetEnableDnsSupport(val any) {
 	if err := j.validateSetEnableDnsSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_Vpc)SetEnableDnsSupport(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetEnableNetworkAddressUsageMetrics(val interface{}) {
+func (j *jsiiProxy_Vpc) SetEnableNetworkAddressUsageMetrics(val any) {
 	if err := j.validateSetEnableNetworkAddressUsageMetricsParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_Vpc)SetEnableNetworkAddressUsageMetrics(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Vpc) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -923,7 +922,7 @@ func (j *jsiiProxy_Vpc)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetId(val *string) {
+func (j *jsiiProxy_Vpc) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_Vpc)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetInstanceTenancy(val *string) {
+func (j *jsiiProxy_Vpc) SetInstanceTenancy(val *string) {
 	if err := j.validateSetInstanceTenancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_Vpc)SetInstanceTenancy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv4IpamPoolId(val *string) {
+func (j *jsiiProxy_Vpc) SetIpv4IpamPoolId(val *string) {
 	if err := j.validateSetIpv4IpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_Vpc)SetIpv4IpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv4NetmaskLength(val *float64) {
+func (j *jsiiProxy_Vpc) SetIpv4NetmaskLength(val *float64) {
 	if err := j.validateSetIpv4NetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_Vpc)SetIpv4NetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_Vpc) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_Vpc)SetIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv6CidrBlockNetworkBorderGroup(val *string) {
+func (j *jsiiProxy_Vpc) SetIpv6CidrBlockNetworkBorderGroup(val *string) {
 	if err := j.validateSetIpv6CidrBlockNetworkBorderGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_Vpc)SetIpv6CidrBlockNetworkBorderGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv6IpamPoolId(val *string) {
+func (j *jsiiProxy_Vpc) SetIpv6IpamPoolId(val *string) {
 	if err := j.validateSetIpv6IpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_Vpc)SetIpv6IpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetIpv6NetmaskLength(val *float64) {
+func (j *jsiiProxy_Vpc) SetIpv6NetmaskLength(val *float64) {
 	if err := j.validateSetIpv6NetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_Vpc)SetIpv6NetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Vpc) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_Vpc)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Vpc) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_Vpc)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Vpc) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_Vpc)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Vpc) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_Vpc)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Vpc)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Vpc) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1075,7 +1074,7 @@ func Vpc_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpc.Vpc",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func Vpc_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Vpc_IsConstruct(x interface{}) *bool {
+func Vpc_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpc_IsConstructParameters(x); err != nil {
@@ -1110,7 +1109,7 @@ func Vpc_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpc.Vpc",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func Vpc_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Vpc_IsTerraformElement(x interface{}) *bool {
+func Vpc_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpc_IsTerraformElementParameters(x); err != nil {
@@ -1129,7 +1128,7 @@ func Vpc_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpc.Vpc",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1137,7 +1136,7 @@ func Vpc_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Vpc_IsTerraformResource(x interface{}) *bool {
+func Vpc_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpc_IsTerraformResourceParameters(x); err != nil {
@@ -1148,7 +1147,7 @@ func Vpc_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpc.Vpc",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1173,31 +1172,31 @@ func (v *jsiiProxy_Vpc) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_Vpc) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_Vpc) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_Vpc) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_Vpc) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,7 +1212,7 @@ func (v *jsiiProxy_Vpc) GetBooleanAttribute(terraformAttribute *string) cdktf.IR
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1229,7 +1228,7 @@ func (v *jsiiProxy_Vpc) GetBooleanMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1245,7 +1244,7 @@ func (v *jsiiProxy_Vpc) GetListAttribute(terraformAttribute *string) *[]*string 
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1261,7 +1260,7 @@ func (v *jsiiProxy_Vpc) GetNumberAttribute(terraformAttribute *string) *float64 
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func (v *jsiiProxy_Vpc) GetNumberListAttribute(terraformAttribute *string) *[]*f
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1293,7 +1292,7 @@ func (v *jsiiProxy_Vpc) GetNumberMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1309,7 +1308,7 @@ func (v *jsiiProxy_Vpc) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1325,15 +1324,15 @@ func (v *jsiiProxy_Vpc) GetStringMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_Vpc) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Vpc) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1352,7 +1351,7 @@ func (v *jsiiProxy_Vpc) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1365,7 +1364,7 @@ func (v *jsiiProxy_Vpc) InterpolationForAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1379,18 +1378,18 @@ func (v *jsiiProxy_Vpc) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_Vpc) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_Vpc) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1401,7 +1400,7 @@ func (v *jsiiProxy_Vpc) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1412,7 +1411,7 @@ func (v *jsiiProxy_Vpc) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1560,8 +1559,8 @@ func (v *jsiiProxy_Vpc) ResetTagsAll() {
 	)
 }
 
-func (v *jsiiProxy_Vpc) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_Vpc) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1573,8 +1572,8 @@ func (v *jsiiProxy_Vpc) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Vpc) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_Vpc) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1586,8 +1585,8 @@ func (v *jsiiProxy_Vpc) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Vpc) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Vpc) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1599,8 +1598,8 @@ func (v *jsiiProxy_Vpc) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_Vpc) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Vpc) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1625,8 +1624,8 @@ func (v *jsiiProxy_Vpc) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_Vpc) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_Vpc) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1637,4 +1636,3 @@ func (v *jsiiProxy_Vpc) ToTerraform() interface{} {
 
 	return returns
 }
-

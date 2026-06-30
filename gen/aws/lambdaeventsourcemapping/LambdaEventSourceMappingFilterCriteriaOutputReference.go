@@ -12,9 +12,9 @@ type LambdaEventSourceMappingFilterCriteriaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type LambdaEventSourceMappingFilterCriteriaOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Filter() LambdaEventSourceMappingFilterCriteriaFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *LambdaEventSourceMappingFilterCriteria
@@ -42,7 +42,7 @@ type LambdaEventSourceMappingFilterCriteriaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type LambdaEventSourceMappingFilterCriteriaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFilter(value interface{})
+	PutFilter(value any)
 	ResetFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Filter
 	return returns
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Terraf
 	return returns
 }
 
-
 func NewLambdaEventSourceMappingFilterCriteriaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingFilterCriteriaOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewLambdaEventSourceMappingFilterCriteriaOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewLambdaEventSourceMappingFilterCriteriaOutputReference_Override(l LambdaE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetInternalValue(val *LambdaEventSourceMappingFilterCriteria) {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) SetInternalValue(val *LambdaEventSourceMappingFilterCriteria) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Comput
 	return returns
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetBoo
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetBoo
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetLis
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetStr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) GetStr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Interp
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) PutFilter(value interface{}) {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) PutFilter(value any) {
 	if err := l.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) ResetF
 	)
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference) ToStri
 
 	return returns
 }
-

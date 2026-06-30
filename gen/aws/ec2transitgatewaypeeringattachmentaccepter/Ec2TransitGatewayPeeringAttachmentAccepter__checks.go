@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateAddMoveTa
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateMoveFromI
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEc2TransitGatewayPeeringAttachmentAccepter_GenerateConfigForImportP
 	return nil
 }
 
-func validateEc2TransitGatewayPeeringAttachmentAccepter_IsConstructParameters(x interface{}) error {
+func validateEc2TransitGatewayPeeringAttachmentAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEc2TransitGatewayPeeringAttachmentAccepter_IsConstructParameters(x 
 	return nil
 }
 
-func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformElementParame
 	return nil
 }
 
-func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewEc2TransitGatewayPeeringAttachmentAccepterParameters(scope const
 
 	return nil
 }
-

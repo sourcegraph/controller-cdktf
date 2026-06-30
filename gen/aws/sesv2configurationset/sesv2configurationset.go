@@ -19,15 +19,15 @@ type Sesv2ConfigurationSet interface {
 	SetConfigurationSetName(val *string)
 	ConfigurationSetNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeliveryOptions() Sesv2ConfigurationSetDeliveryOptionsOutputReference
 	DeliveryOptionsInput() *Sesv2ConfigurationSetDeliveryOptions
 	// Experimental.
@@ -56,11 +56,11 @@ type Sesv2ConfigurationSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReputationOptions() Sesv2ConfigurationSetReputationOptionsOutputReference
 	ReputationOptionsInput() *Sesv2ConfigurationSetReputationOptions
 	SendingOptions() Sesv2ConfigurationSetSendingOptionsOutputReference
@@ -76,7 +76,7 @@ type Sesv2ConfigurationSet interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrackingOptions() Sesv2ConfigurationSetTrackingOptionsOutputReference
@@ -85,9 +85,9 @@ type Sesv2ConfigurationSet interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type Sesv2ConfigurationSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type Sesv2ConfigurationSet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type Sesv2ConfigurationSet interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTrackingOptions()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Sesv2ConfigurationSet
@@ -198,8 +198,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) ConfigurationSetNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Sesv2ConfigurationSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -508,7 +508,6 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) TrackingOptionsInput() *Sesv2Configura
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
 func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Sesv2ConfigurationSetConfig) Sesv2ConfigurationSet {
 	_init_.Initialize()
@@ -520,7 +519,7 @@ func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Se
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -533,12 +532,12 @@ func NewSesv2ConfigurationSet_Override(s Sesv2ConfigurationSet, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetConfigurationSetName(val *string) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetConfigurationSetName(val *string) {
 	if err := j.validateSetConfigurationSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetConfigurationSetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetConnection(val interface{}) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetCount(val interface{}) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetId(val *string) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Sesv2ConfigurationSet) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func Sesv2ConfigurationSet_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func Sesv2ConfigurationSet_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Sesv2ConfigurationSet_IsConstruct(x interface{}) *bool {
+func Sesv2ConfigurationSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2ConfigurationSet_IsConstructParameters(x); err != nil {
@@ -697,7 +696,7 @@ func Sesv2ConfigurationSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func Sesv2ConfigurationSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool {
+func Sesv2ConfigurationSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2ConfigurationSet_IsTerraformElementParameters(x); err != nil {
@@ -716,7 +715,7 @@ func Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Sesv2ConfigurationSet_IsTerraformResource(x interface{}) *bool {
+func Sesv2ConfigurationSet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesv2ConfigurationSet_IsTerraformResourceParameters(x); err != nil {
@@ -735,7 +734,7 @@ func Sesv2ConfigurationSet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,31 +759,31 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Sesv2ConfigurationSet) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Sesv2ConfigurationSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,15 +911,15 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -939,7 +938,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -952,7 +951,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,18 +965,18 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Sesv2ConfigurationSet) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -988,7 +987,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -999,7 +998,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutDeliveryOptions(value *Sesv2Configu
 	_jsii_.InvokeVoid(
 		s,
 		"putDeliveryOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutReputationOptions(value *Sesv2Confi
 	_jsii_.InvokeVoid(
 		s,
 		"putReputationOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutSendingOptions(value *Sesv2Configur
 	_jsii_.InvokeVoid(
 		s,
 		"putSendingOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutSuppressionOptions(value *Sesv2Conf
 	_jsii_.InvokeVoid(
 		s,
 		"putSuppressionOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutTrackingOptions(value *Sesv2Configu
 	_jsii_.InvokeVoid(
 		s,
 		"putTrackingOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,8 +1129,8 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ResetTrackingOptions() {
 	)
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1143,8 +1142,8 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1156,8 +1155,8 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1169,8 +1168,8 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1195,8 +1194,8 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSet) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Sesv2ConfigurationSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1207,4 +1206,3 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ToTerraform() interface{} {
 
 	return returns
 }
-

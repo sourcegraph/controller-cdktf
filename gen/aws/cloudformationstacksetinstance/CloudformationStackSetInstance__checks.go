@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudformationStackSetInstance) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudformationStackSetInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudformationStackSetInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateCloudformationStackSetInstance_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateCloudformationStackSetInstance_IsConstructParameters(x interface{}) error {
+func validateCloudformationStackSetInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateCloudformationStackSetInstance_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateCloudformationStackSetInstance_IsTerraformElementParameters(x interface{}) error {
+func validateCloudformationStackSetInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateCloudformationStackSetInstance_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateCloudformationStackSetInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudformationStackSetInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetCallAsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -407,7 +407,7 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetParameterOverrides
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,7 +461,7 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetRegionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstance) validateSetRetainStackParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetRetainStackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,4 +507,3 @@ func validateNewCloudformationStackSetInstanceParameters(scope constructs.Constr
 
 	return nil
 }
-

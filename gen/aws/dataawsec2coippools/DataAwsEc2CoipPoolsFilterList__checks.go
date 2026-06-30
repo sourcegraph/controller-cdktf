@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEc2CoipPoolsFilterListParameters(terraformResource cdktf.
 
 	return nil
 }
-

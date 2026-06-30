@@ -13,35 +13,35 @@ import (
 type LaunchConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AssociatePublicIpAddress() interface{}
-	SetAssociatePublicIpAddress(val interface{})
-	AssociatePublicIpAddressInput() interface{}
+	AssociatePublicIpAddress() any
+	SetAssociatePublicIpAddress(val any)
+	AssociatePublicIpAddressInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EbsBlockDevice() LaunchConfigurationEbsBlockDeviceList
-	EbsBlockDeviceInput() interface{}
-	EbsOptimized() interface{}
-	SetEbsOptimized(val interface{})
-	EbsOptimizedInput() interface{}
-	EnableMonitoring() interface{}
-	SetEnableMonitoring(val interface{})
-	EnableMonitoringInput() interface{}
+	EbsBlockDeviceInput() any
+	EbsOptimized() any
+	SetEbsOptimized(val any)
+	EbsOptimizedInput() any
+	EnableMonitoring() any
+	SetEnableMonitoring(val any)
+	EnableMonitoringInput() any
 	EphemeralBlockDevice() LaunchConfigurationEphemeralBlockDeviceList
-	EphemeralBlockDeviceInput() interface{}
+	EphemeralBlockDeviceInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,11 +87,11 @@ type LaunchConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootBlockDevice() LaunchConfigurationRootBlockDeviceOutputReference
 	RootBlockDeviceInput() *LaunchConfigurationRootBlockDevice
 	SecurityGroups() *[]*string
@@ -103,7 +103,7 @@ type LaunchConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserData() *string
@@ -122,9 +122,9 @@ type LaunchConfiguration interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -142,7 +142,7 @@ type LaunchConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -154,15 +154,15 @@ type LaunchConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEbsBlockDevice(value interface{})
-	PutEphemeralBlockDevice(value interface{})
+	PutEbsBlockDevice(value any)
+	PutEphemeralBlockDevice(value any)
 	PutMetadataOptions(value *LaunchConfigurationMetadataOptions)
 	PutRootBlockDevice(value *LaunchConfigurationRootBlockDevice)
 	ResetAssociatePublicIpAddress()
@@ -187,17 +187,17 @@ type LaunchConfiguration interface {
 	ResetUserDataBase64()
 	ResetVpcClassicLinkId()
 	ResetVpcClassicLinkSecurityGroups()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LaunchConfiguration
@@ -215,8 +215,8 @@ func (j *jsiiProxy_LaunchConfiguration) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) AssociatePublicIpAddress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) AssociatePublicIpAddress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddress",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_LaunchConfiguration) AssociatePublicIpAddress() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) AssociatePublicIpAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) AssociatePublicIpAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddressInput",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_LaunchConfiguration) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_LaunchConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LaunchConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_LaunchConfiguration) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_LaunchConfiguration) EbsBlockDevice() LaunchConfigurationEbsB
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EbsBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EbsBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsBlockDeviceInput",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_LaunchConfiguration) EbsBlockDeviceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EbsOptimized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EbsOptimized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimized",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_LaunchConfiguration) EbsOptimized() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EbsOptimizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EbsOptimizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_LaunchConfiguration) EbsOptimizedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EnableMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EnableMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMonitoring",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_LaunchConfiguration) EnableMonitoring() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EnableMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EnableMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMonitoringInput",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_LaunchConfiguration) EphemeralBlockDevice() LaunchConfigurati
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) EphemeralBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) EphemeralBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralBlockDeviceInput",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_LaunchConfiguration) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LaunchConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -615,8 +615,8 @@ func (j *jsiiProxy_LaunchConfiguration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -695,8 +695,8 @@ func (j *jsiiProxy_LaunchConfiguration) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LaunchConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -795,7 +795,6 @@ func (j *jsiiProxy_LaunchConfiguration) VpcClassicLinkSecurityGroupsInput() *[]*
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
 func NewLaunchConfiguration(scope constructs.Construct, id *string, config *LaunchConfigurationConfig) LaunchConfiguration {
 	_init_.Initialize()
@@ -807,7 +806,7 @@ func NewLaunchConfiguration(scope constructs.Construct, id *string, config *Laun
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -820,12 +819,12 @@ func NewLaunchConfiguration_Override(l LaunchConfiguration, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetAssociatePublicIpAddress(val interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetAssociatePublicIpAddress(val any) {
 	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetAssociatePublicIpAddress(val interface
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LaunchConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -866,7 +865,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetEbsOptimized(val interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetEbsOptimized(val any) {
 	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetEnableMonitoring(val interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetEnableMonitoring(val any) {
 	if err := j.validateSetEnableMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetEnableMonitoring(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LaunchConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -896,7 +895,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetIamInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetId(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetImageId(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetImageId(val *string) {
 	if err := j.validateSetImageIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetInstanceType(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetKeyName(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetKeyName(val *string) {
 	if err := j.validateSetKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LaunchConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetName(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetNamePrefix(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetPlacementTenancy(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetPlacementTenancy(val *string) {
 	if err := j.validateSetPlacementTenancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetPlacementTenancy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LaunchConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LaunchConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_LaunchConfiguration) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1025,7 +1024,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetSpotPrice(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetSpotPrice(val *string) {
 	if err := j.validateSetSpotPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetSpotPrice(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetUserData(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetUserData(val *string) {
 	if err := j.validateSetUserDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetUserData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetUserDataBase64(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetUserDataBase64(val *string) {
 	if err := j.validateSetUserDataBase64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetUserDataBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetVpcClassicLinkId(val *string) {
+func (j *jsiiProxy_LaunchConfiguration) SetVpcClassicLinkId(val *string) {
 	if err := j.validateSetVpcClassicLinkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_LaunchConfiguration)SetVpcClassicLinkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LaunchConfiguration)SetVpcClassicLinkSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_LaunchConfiguration) SetVpcClassicLinkSecurityGroups(val *[]*string) {
 	if err := j.validateSetVpcClassicLinkSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1092,7 +1091,7 @@ func LaunchConfiguration_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func LaunchConfiguration_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LaunchConfiguration_IsConstruct(x interface{}) *bool {
+func LaunchConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchConfiguration_IsConstructParameters(x); err != nil {
@@ -1127,7 +1126,7 @@ func LaunchConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1135,7 +1134,7 @@ func LaunchConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LaunchConfiguration_IsTerraformElement(x interface{}) *bool {
+func LaunchConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -1146,7 +1145,7 @@ func LaunchConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1154,7 +1153,7 @@ func LaunchConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LaunchConfiguration_IsTerraformResource(x interface{}) *bool {
+func LaunchConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLaunchConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -1165,7 +1164,7 @@ func LaunchConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1190,31 +1189,31 @@ func (l *jsiiProxy_LaunchConfiguration) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LaunchConfiguration) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,7 +1229,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1262,7 +1261,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1278,7 +1277,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1294,7 +1293,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1310,7 +1309,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1326,7 +1325,7 @@ func (l *jsiiProxy_LaunchConfiguration) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1342,15 +1341,15 @@ func (l *jsiiProxy_LaunchConfiguration) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1369,7 +1368,7 @@ func (l *jsiiProxy_LaunchConfiguration) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1382,7 +1381,7 @@ func (l *jsiiProxy_LaunchConfiguration) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1396,18 +1395,18 @@ func (l *jsiiProxy_LaunchConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LaunchConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1418,7 +1417,7 @@ func (l *jsiiProxy_LaunchConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1429,29 +1428,29 @@ func (l *jsiiProxy_LaunchConfiguration) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) PutEbsBlockDevice(value interface{}) {
+func (l *jsiiProxy_LaunchConfiguration) PutEbsBlockDevice(value any) {
 	if err := l.validatePutEbsBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putEbsBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) PutEphemeralBlockDevice(value interface{}) {
+func (l *jsiiProxy_LaunchConfiguration) PutEphemeralBlockDevice(value any) {
 	if err := l.validatePutEphemeralBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putEphemeralBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1462,7 +1461,7 @@ func (l *jsiiProxy_LaunchConfiguration) PutMetadataOptions(value *LaunchConfigur
 	_jsii_.InvokeVoid(
 		l,
 		"putMetadataOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1473,7 +1472,7 @@ func (l *jsiiProxy_LaunchConfiguration) PutRootBlockDevice(value *LaunchConfigur
 	_jsii_.InvokeVoid(
 		l,
 		"putRootBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1637,8 +1636,8 @@ func (l *jsiiProxy_LaunchConfiguration) ResetVpcClassicLinkSecurityGroups() {
 	)
 }
 
-func (l *jsiiProxy_LaunchConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LaunchConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1650,8 +1649,8 @@ func (l *jsiiProxy_LaunchConfiguration) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LaunchConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1663,8 +1662,8 @@ func (l *jsiiProxy_LaunchConfiguration) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1676,8 +1675,8 @@ func (l *jsiiProxy_LaunchConfiguration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1702,8 +1701,8 @@ func (l *jsiiProxy_LaunchConfiguration) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LaunchConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1714,4 +1713,3 @@ func (l *jsiiProxy_LaunchConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

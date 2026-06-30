@@ -98,7 +98,7 @@ func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGluePartitionIndexPartitionIndexOutputReferenceParameters(terraf
 
 	return nil
 }
-

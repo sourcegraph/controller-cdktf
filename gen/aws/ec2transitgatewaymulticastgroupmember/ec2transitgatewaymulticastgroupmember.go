@@ -15,15 +15,15 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,15 +56,15 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TransitGatewayMulticastDomainId() *string
@@ -74,9 +74,9 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type Ec2TransitGatewayMulticastGroupMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ec2TransitGatewayMulticastGroupMember
@@ -145,8 +145,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) TransitGatewayMulticas
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_transit_gateway_multicast_group_member aws_ec2_transit_gateway_multicast_group_member} Resource.
 func NewEc2TransitGatewayMulticastGroupMember(scope constructs.Construct, id *string, config *Ec2TransitGatewayMulticastGroupMemberConfig) Ec2TransitGatewayMulticastGroupMember {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewEc2TransitGatewayMulticastGroupMember(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewEc2TransitGatewayMulticastGroupMember_Override(e Ec2TransitGatewayMultic
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetCount(val interface{}) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetGroupIpAddress(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetGroupIpAddress(val *string) {
 	if err := j.validateSetGroupIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetGroupIpAddress(val *
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetId(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetNetworkInterfaceId(v
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember)SetTransitGatewayMulticastDomainId(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SetTransitGatewayMulticastDomainId(val *string) {
 	if err := j.validateSetTransitGatewayMulticastDomainIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func Ec2TransitGatewayMulticastGroupMember_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func Ec2TransitGatewayMulticastGroupMember_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ec2TransitGatewayMulticastGroupMember_IsConstruct(x interface{}) *bool {
+func Ec2TransitGatewayMulticastGroupMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2TransitGatewayMulticastGroupMember_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func Ec2TransitGatewayMulticastGroupMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func Ec2TransitGatewayMulticastGroupMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2TransitGatewayMulticastGroupMember_IsTerraformElement(x interface{}) *bool {
+func Ec2TransitGatewayMulticastGroupMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2TransitGatewayMulticastGroupMember_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func Ec2TransitGatewayMulticastGroupMember_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func Ec2TransitGatewayMulticastGroupMember_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func Ec2TransitGatewayMulticastGroupMember_IsTerraformResource(x interface{}) *bool {
+func Ec2TransitGatewayMulticastGroupMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2TransitGatewayMulticastGroupMember_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func Ec2TransitGatewayMulticastGroupMember_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetListAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetNumberListAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetStringAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) GetStringMapAttribute(
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -806,7 +805,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) InterpolationForAttrib
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,8 +885,8 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ResetOverrideLogicalId
 	)
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -899,8 +898,8 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeAttributes()
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -912,8 +911,8 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) SynthesizeHclAttribute
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -925,8 +924,8 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToHclTerraform() inter
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -951,8 +950,8 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -963,4 +962,3 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupMember) ToTerraform() interfac
 
 	return returns
 }
-

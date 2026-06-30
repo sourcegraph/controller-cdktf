@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2NetworkInsightsPathFilterOutputReferenceParameters(ter
 
 	return nil
 }
-

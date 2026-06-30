@@ -19,7 +19,7 @@ func (c *jsiiProxy_Cloudtrail) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (c *jsiiProxy_Cloudtrail) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_Cloudtrail) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_Cloudtrail) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudtrail) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_Cloudtrail) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_Cloudtrail) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (c *jsiiProxy_Cloudtrail) validatePutAdvancedEventSelectorParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudtrail) validatePutAdvancedEventSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (c *jsiiProxy_Cloudtrail) validatePutAdvancedEventSelectorParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_Cloudtrail) validatePutEventSelectorParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudtrail) validatePutEventSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (c *jsiiProxy_Cloudtrail) validatePutEventSelectorParameters(value interfac
 	return nil
 }
 
-func (c *jsiiProxy_Cloudtrail) validatePutInsightSelectorParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudtrail) validatePutInsightSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateCloudtrail_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateCloudtrail_IsConstructParameters(x interface{}) error {
+func validateCloudtrail_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateCloudtrail_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudtrail_IsTerraformElementParameters(x interface{}) error {
+func validateCloudtrail_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateCloudtrail_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudtrail_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudtrail_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetCloudWatchLogsRoleArnParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -386,7 +386,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetEnableLogFileValidationParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetEnableLogFileValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetEnableLogFileValidationParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -491,7 +491,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetIncludeGlobalServiceEventsParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetIncludeGlobalServiceEventsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetIncludeGlobalServiceEventsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetIsMultiRegionTrailParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetIsMultiRegionTrailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -531,7 +531,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetIsMultiRegionTrailParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetIsOrganizationTrailParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetIsOrganizationTrailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -575,7 +575,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Cloudtrail) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -679,4 +679,3 @@ func validateNewCloudtrailParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

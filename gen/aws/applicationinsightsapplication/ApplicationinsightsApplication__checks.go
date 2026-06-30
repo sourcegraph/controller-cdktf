@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApplicationinsightsApplication) validateAddMoveTargetParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationinsightsApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApplicationinsightsApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApplicationinsightsApplication) validateMoveFromIdParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationinsightsApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApplicationinsightsApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApplicationinsightsApplication_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateApplicationinsightsApplication_IsConstructParameters(x interface{}) error {
+func validateApplicationinsightsApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApplicationinsightsApplication_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateApplicationinsightsApplication_IsTerraformElementParameters(x interface{}) error {
+func validateApplicationinsightsApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApplicationinsightsApplication_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateApplicationinsightsApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateApplicationinsightsApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateApplicationinsightsApplication_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoConfigEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoConfigEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoConfigEnabledP
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoCreateParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoCreateParamete
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -317,7 +317,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCweMonitorEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCweMonitorEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetOpsCenterEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetOpsCenterEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetOpsItemSnsTopicArn
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationinsightsApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -534,4 +534,3 @@ func validateNewApplicationinsightsApplicationParameters(scope constructs.Constr
 
 	return nil
 }
-

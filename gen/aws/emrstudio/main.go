@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrStudio.EmrStudio",
-		reflect.TypeOf((*EmrStudio)(nil)).Elem(),
+		reflect.TypeFor[EmrStudio](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceSecurityGroupId", GoGetter: "WorkspaceSecurityGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceSecurityGroupIdInput", GoGetter: "WorkspaceSecurityGroupIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrStudio{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,6 +100,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrStudio.EmrStudioConfig",
-		reflect.TypeOf((*EmrStudioConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrStudioConfig](),
 	)
 }

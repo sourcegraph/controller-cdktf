@@ -1,6 +1,5 @@
 package lakeformationresourcelftags
 
-
 type LakeformationResourceLfTagsTableWithColumns struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
@@ -13,6 +12,5 @@ type LakeformationResourceLfTagsTableWithColumns struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lakeformation_resource_lf_tags#excluded_column_names LakeformationResourceLfTags#excluded_column_names}.
 	ExcludedColumnNames *[]*string `field:"optional" json:"excludedColumnNames" yaml:"excludedColumnNames"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}.
-	Wildcard interface{} `field:"optional" json:"wildcard" yaml:"wildcard"`
+	Wildcard any `field:"optional" json:"wildcard" yaml:"wildcard"`
 }
-

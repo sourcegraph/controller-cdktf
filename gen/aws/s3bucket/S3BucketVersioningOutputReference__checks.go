@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketVersioningOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetInternalValuePa
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetMfaDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketVersioningOutputReference) validateSetMfaDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewS3BucketVersioningOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

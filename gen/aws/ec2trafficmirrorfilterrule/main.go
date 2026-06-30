@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficMirrorFilterId", GoGetter: "TrafficMirrorFilterId"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficMirrorFilterIdInput", GoGetter: "TrafficMirrorFilterIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TrafficMirrorFilterRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleConfig",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleDestinationPortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRuleDestinationPortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleSourcePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRuleSourcePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference",
-		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

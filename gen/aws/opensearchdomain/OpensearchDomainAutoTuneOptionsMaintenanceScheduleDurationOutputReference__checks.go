@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOut
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutput
 
 	return nil
 }
-

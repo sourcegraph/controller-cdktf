@@ -98,7 +98,7 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewInspector2DelegatedAdminAccountTimeoutsOutputReferenceParameters
 
 	return nil
 }
-

@@ -27,15 +27,15 @@ type StoragegatewayNfsFileShare interface {
 	SetClientList(val *[]*string)
 	ClientListInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultStorageClass() *string
 	SetDefaultStorageClass(val *string)
 	DefaultStorageClassInput() *string
@@ -58,15 +58,15 @@ type StoragegatewayNfsFileShare interface {
 	GatewayArn() *string
 	SetGatewayArn(val *string)
 	GatewayArnInput() *string
-	GuessMimeTypeEnabled() interface{}
-	SetGuessMimeTypeEnabled(val interface{})
-	GuessMimeTypeEnabledInput() interface{}
+	GuessMimeTypeEnabled() any
+	SetGuessMimeTypeEnabled(val any)
+	GuessMimeTypeEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	KmsEncrypted() interface{}
-	SetKmsEncrypted(val interface{})
-	KmsEncryptedInput() interface{}
+	KmsEncrypted() any
+	SetKmsEncrypted(val any)
+	KmsEncryptedInput() any
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
@@ -93,17 +93,17 @@ type StoragegatewayNfsFileShare interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
-	RequesterPays() interface{}
-	SetRequesterPays(val interface{})
-	RequesterPaysInput() interface{}
+	RawOverrides() any
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
+	RequesterPays() any
+	SetRequesterPays(val any)
+	RequesterPaysInput() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -119,11 +119,11 @@ type StoragegatewayNfsFileShare interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StoragegatewayNfsFileShareTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcEndpointDnsName() *string
 	SetVpcEndpointDnsName(val *string)
 	VpcEndpointDnsNameInput() *string
@@ -131,9 +131,9 @@ type StoragegatewayNfsFileShare interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -151,7 +151,7 @@ type StoragegatewayNfsFileShare interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -163,7 +163,7 @@ type StoragegatewayNfsFileShare interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -195,17 +195,17 @@ type StoragegatewayNfsFileShare interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcEndpointDnsName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StoragegatewayNfsFileShare
@@ -313,8 +313,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) ClientListInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) GatewayArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) GuessMimeTypeEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) GuessMimeTypeEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guessMimeTypeEnabled",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) GuessMimeTypeEnabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) GuessMimeTypeEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) GuessMimeTypeEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guessMimeTypeEnabledInput",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) KmsEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) KmsEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncrypted",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) KmsEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) KmsEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) KmsEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncryptedInput",
@@ -653,8 +653,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -673,8 +673,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -683,8 +683,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnly() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -693,8 +693,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnlyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPays() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPays() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPays",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPays() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPaysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPaysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPaysInput",
@@ -803,8 +803,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -833,8 +833,8 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) Timeouts() StoragegatewayNfsFileS
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayNfsFileShare) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -863,7 +863,6 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) VpcEndpointDnsNameInput() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
 func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, config *StoragegatewayNfsFileShareConfig) StoragegatewayNfsFileShare {
 	_init_.Initialize()
@@ -875,7 +874,7 @@ func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -888,12 +887,12 @@ func NewStoragegatewayNfsFileShare_Override(s StoragegatewayNfsFileShare, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetAuditDestinationArn(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetAuditDestinationArn(val *string) {
 	if err := j.validateSetAuditDestinationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetAuditDestinationArn(val *string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetBucketRegion(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetBucketRegion(val *string) {
 	if err := j.validateSetBucketRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetBucketRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetClientList(val *[]*string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetClientList(val *[]*string) {
 	if err := j.validateSetClientListParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetClientList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetConnection(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetCount(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetDefaultStorageClass(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetDefaultStorageClass(val *string) {
 	if err := j.validateSetDefaultStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetDefaultStorageClass(val *string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -967,7 +966,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetFileShareName(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetFileShareName(val *string) {
 	if err := j.validateSetFileShareNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetFileShareName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -986,7 +985,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetGatewayArn(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetGatewayArn(val *string) {
 	if err := j.validateSetGatewayArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetGatewayArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetGuessMimeTypeEnabled(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetGuessMimeTypeEnabled(val any) {
 	if err := j.validateSetGuessMimeTypeEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetGuessMimeTypeEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetId(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetKmsEncrypted(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetKmsEncrypted(val any) {
 	if err := j.validateSetKmsEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetKmsEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetLocationArn(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetLocationArn(val *string) {
 	if err := j.validateSetLocationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetLocationArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetNotificationPolicy(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetNotificationPolicy(val *string) {
 	if err := j.validateSetNotificationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetNotificationPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetObjectAcl(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetObjectAcl(val *string) {
 	if err := j.validateSetObjectAclParameters(val); err != nil {
 		panic(err)
 	}
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetObjectAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetReadOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetRequesterPays(val interface{}) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetRequesterPays(val any) {
 	if err := j.validateSetRequesterPaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetRequesterPays(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetRoleArn(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetSquash(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetSquash(val *string) {
 	if err := j.validateSetSquashParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetSquash(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetTagsAll(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare)SetVpcEndpointDnsName(val *string) {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) SetVpcEndpointDnsName(val *string) {
 	if err := j.validateSetVpcEndpointDnsNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1193,7 +1192,7 @@ func StoragegatewayNfsFileShare_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1217,7 +1216,7 @@ func StoragegatewayNfsFileShare_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool {
+func StoragegatewayNfsFileShare_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayNfsFileShare_IsConstructParameters(x); err != nil {
@@ -1228,7 +1227,7 @@ func StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1236,7 +1235,7 @@ func StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool {
+func StoragegatewayNfsFileShare_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x); err != nil {
@@ -1247,7 +1246,7 @@ func StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1255,7 +1254,7 @@ func StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool {
+func StoragegatewayNfsFileShare_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayNfsFileShare_IsTerraformResourceParameters(x); err != nil {
@@ -1266,7 +1265,7 @@ func StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1291,31 +1290,31 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StoragegatewayNfsFileShare) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StoragegatewayNfsFileShare) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1331,7 +1330,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1347,7 +1346,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1363,7 +1362,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1379,7 +1378,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1395,7 +1394,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1411,7 +1410,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1427,7 +1426,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1443,15 +1442,15 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1470,7 +1469,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1483,7 +1482,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1497,18 +1496,18 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StoragegatewayNfsFileShare) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1519,7 +1518,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1530,7 +1529,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1541,7 +1540,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) PutCacheAttributes(value *Storage
 	_jsii_.InvokeVoid(
 		s,
 		"putCacheAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1552,7 +1551,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) PutNfsFileShareDefaults(value *St
 	_jsii_.InvokeVoid(
 		s,
 		"putNfsFileShareDefaults",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1563,7 +1562,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) PutTimeouts(value *Storagegateway
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1727,8 +1726,8 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ResetVpcEndpointDnsName() {
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1740,8 +1739,8 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1753,8 +1752,8 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1766,8 +1765,8 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1792,8 +1791,8 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayNfsFileShare) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1804,4 +1803,3 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ToTerraform() interface{} {
 
 	return returns
 }
-

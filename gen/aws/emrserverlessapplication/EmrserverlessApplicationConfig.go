@@ -6,9 +6,9 @@ import (
 
 type EmrserverlessApplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EmrserverlessApplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}.
@@ -43,7 +43,7 @@ type EmrserverlessApplicationConfig struct {
 	// initial_capacity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
-	InitialCapacity interface{} `field:"optional" json:"initialCapacity" yaml:"initialCapacity"`
+	InitialCapacity any `field:"optional" json:"initialCapacity" yaml:"initialCapacity"`
 	// maximum_capacity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
@@ -57,4 +57,3 @@ type EmrserverlessApplicationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

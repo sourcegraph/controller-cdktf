@@ -6,9 +6,9 @@ import (
 
 type SagemakerWorkteamConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type SagemakerWorkteamConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}.
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// member_definition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
-	MemberDefinition interface{} `field:"required" json:"memberDefinition" yaml:"memberDefinition"`
+	MemberDefinition any `field:"required" json:"memberDefinition" yaml:"memberDefinition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}.
 	WorkforceName *string `field:"required" json:"workforceName" yaml:"workforceName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}.
@@ -43,4 +43,3 @@ type SagemakerWorkteamConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

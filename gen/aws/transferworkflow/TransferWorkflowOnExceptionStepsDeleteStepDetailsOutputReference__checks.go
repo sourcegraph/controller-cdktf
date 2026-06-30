@@ -98,7 +98,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewTransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference
 
 	return nil
 }
-

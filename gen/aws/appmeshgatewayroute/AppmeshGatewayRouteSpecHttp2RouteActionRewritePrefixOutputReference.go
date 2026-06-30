@@ -12,9 +12,9 @@ type AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference interfa
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	return returns
 }
 
-
 func NewAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetDefaultPrefix(val *string) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetDefaultPrefix(val *string) {
 	if err := j.validateSetDefaultPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetInternalValue(val *AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetInternalValue(val *AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 	)
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputRef
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3AccessPointVpcConfigurationOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewS3AccessPointVpcConfigurationOutputReferenceParameters(terraform
 
 	return nil
 }
-

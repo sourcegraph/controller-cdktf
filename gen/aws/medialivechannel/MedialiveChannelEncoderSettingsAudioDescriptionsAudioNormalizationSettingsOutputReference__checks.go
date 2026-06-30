@@ -114,7 +114,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormaliz
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizati
 
 	return nil
 }
-

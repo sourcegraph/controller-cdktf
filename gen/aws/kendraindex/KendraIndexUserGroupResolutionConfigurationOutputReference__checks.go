@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKendraIndexUserGroupResolutionConfigurationOutputReferenceParame
 
 	return nil
 }
-

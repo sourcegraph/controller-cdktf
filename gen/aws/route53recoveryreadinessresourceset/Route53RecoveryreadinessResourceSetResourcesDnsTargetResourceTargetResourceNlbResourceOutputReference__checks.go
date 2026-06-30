@@ -106,7 +106,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResource
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
 
 	return nil
 }
-

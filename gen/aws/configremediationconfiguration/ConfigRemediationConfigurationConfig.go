@@ -6,9 +6,9 @@ import (
 
 type ConfigRemediationConfigurationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ConfigRemediationConfigurationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#config_rule_name ConfigRemediationConfiguration#config_rule_name}.
 	ConfigRuleName *string `field:"required" json:"configRuleName" yaml:"configRuleName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#target_id ConfigRemediationConfiguration#target_id}.
@@ -26,7 +26,7 @@ type ConfigRemediationConfigurationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#target_type ConfigRemediationConfiguration#target_type}.
 	TargetType *string `field:"required" json:"targetType" yaml:"targetType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#automatic ConfigRemediationConfiguration#automatic}.
-	Automatic interface{} `field:"optional" json:"automatic" yaml:"automatic"`
+	Automatic any `field:"optional" json:"automatic" yaml:"automatic"`
 	// execution_controls block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#execution_controls ConfigRemediationConfiguration#execution_controls}
@@ -41,7 +41,7 @@ type ConfigRemediationConfigurationConfig struct {
 	// parameter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#parameter ConfigRemediationConfiguration#parameter}
-	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
+	Parameter any `field:"optional" json:"parameter" yaml:"parameter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#resource_type ConfigRemediationConfiguration#resource_type}.
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#retry_attempt_seconds ConfigRemediationConfiguration#retry_attempt_seconds}.
@@ -49,4 +49,3 @@ type ConfigRemediationConfigurationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration#target_version ConfigRemediationConfiguration#target_version}.
 	TargetVersion *string `field:"optional" json:"targetVersion" yaml:"targetVersion"`
 }
-

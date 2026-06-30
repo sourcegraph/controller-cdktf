@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetInvertParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference) validateSetInvertParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -261,4 +261,3 @@ func validateNewAppmeshRouteSpecHttpRouteMatchHeaderOutputReferenceParameters(te
 
 	return nil
 }
-

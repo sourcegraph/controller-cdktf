@@ -6,9 +6,9 @@ import (
 
 type LexBotConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,17 +18,17 @@ type LexBotConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// abort_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
 	AbortStatement *LexBotAbortStatement `field:"required" json:"abortStatement" yaml:"abortStatement"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
-	ChildDirected interface{} `field:"required" json:"childDirected" yaml:"childDirected"`
+	ChildDirected any `field:"required" json:"childDirected" yaml:"childDirected"`
 	// intent block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#intent LexBot#intent}
-	Intent interface{} `field:"required" json:"intent" yaml:"intent"`
+	Intent any `field:"required" json:"intent" yaml:"intent"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#name LexBot#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// clarification_prompt block.
@@ -36,13 +36,13 @@ type LexBotConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
 	ClarificationPrompt *LexBotClarificationPrompt `field:"optional" json:"clarificationPrompt" yaml:"clarificationPrompt"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#create_version LexBot#create_version}.
-	CreateVersion interface{} `field:"optional" json:"createVersion" yaml:"createVersion"`
+	CreateVersion any `field:"optional" json:"createVersion" yaml:"createVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#description LexBot#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
-	DetectSentiment interface{} `field:"optional" json:"detectSentiment" yaml:"detectSentiment"`
+	DetectSentiment any `field:"optional" json:"detectSentiment" yaml:"detectSentiment"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
-	EnableModelImprovements interface{} `field:"optional" json:"enableModelImprovements" yaml:"enableModelImprovements"`
+	EnableModelImprovements any `field:"optional" json:"enableModelImprovements" yaml:"enableModelImprovements"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#id LexBot#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -63,4 +63,3 @@ type LexBotConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
 	VoiceId *string `field:"optional" json:"voiceId" yaml:"voiceId"`
 }
-

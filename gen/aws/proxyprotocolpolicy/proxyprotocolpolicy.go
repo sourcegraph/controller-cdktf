@@ -15,15 +15,15 @@ type ProxyProtocolPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,24 +56,24 @@ type ProxyProtocolPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ProxyProtocolPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ProxyProtocolPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type ProxyProtocolPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProxyProtocolPolicy
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ProxyProtocolPolicy) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProxyProtocolPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_ProxyProtocolPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy} Resource.
 func NewProxyProtocolPolicy(scope constructs.Construct, id *string, config *ProxyProtocolPolicyConfig) ProxyProtocolPolicy {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewProxyProtocolPolicy(scope constructs.Construct, id *string, config *Prox
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewProxyProtocolPolicy_Override(p ProxyProtocolPolicy, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetId(val *string) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetInstancePorts(val *[]*string) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetInstancePorts(val *[]*string) {
 	if err := j.validateSetInstancePortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetInstancePorts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetLoadBalancer(val *string) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetLoadBalancer(val *string) {
 	if err := j.validateSetLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetLoadBalancer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ProxyProtocolPolicy)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ProxyProtocolPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProxyProtocolPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func ProxyProtocolPolicy_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func ProxyProtocolPolicy_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProxyProtocolPolicy_IsConstruct(x interface{}) *bool {
+func ProxyProtocolPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProxyProtocolPolicy_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func ProxyProtocolPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func ProxyProtocolPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool {
+func ProxyProtocolPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProxyProtocolPolicy_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProxyProtocolPolicy_IsTerraformResource(x interface{}) *bool {
+func ProxyProtocolPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProxyProtocolPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func ProxyProtocolPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (p *jsiiProxy_ProxyProtocolPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProxyProtocolPolicy) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProxyProtocolPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (p *jsiiProxy_ProxyProtocolPolicy) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -772,7 +771,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (p *jsiiProxy_ProxyProtocolPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProxyProtocolPolicy) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (p *jsiiProxy_ProxyProtocolPolicy) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (p *jsiiProxy_ProxyProtocolPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -865,8 +864,8 @@ func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -878,8 +877,8 @@ func (p *jsiiProxy_ProxyProtocolPolicy) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -891,8 +890,8 @@ func (p *jsiiProxy_ProxyProtocolPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -917,8 +916,8 @@ func (p *jsiiProxy_ProxyProtocolPolicy) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProxyProtocolPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProxyProtocolPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -929,4 +928,3 @@ func (p *jsiiProxy_ProxyProtocolPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

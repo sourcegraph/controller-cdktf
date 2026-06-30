@@ -6,9 +6,9 @@ import (
 
 type DataAwsGlueScriptConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type DataAwsGlueScriptConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// dag_edge block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
-	DagEdge interface{} `field:"required" json:"dagEdge" yaml:"dagEdge"`
+	DagEdge any `field:"required" json:"dagEdge" yaml:"dagEdge"`
 	// dag_node block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
-	DagNode interface{} `field:"required" json:"dagNode" yaml:"dagNode"`
+	DagNode any `field:"required" json:"dagNode" yaml:"dagNode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -35,4 +35,3 @@ type DataAwsGlueScriptConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/glue_script#language DataAwsGlueScript#language}.
 	Language *string `field:"optional" json:"language" yaml:"language"`
 }
-

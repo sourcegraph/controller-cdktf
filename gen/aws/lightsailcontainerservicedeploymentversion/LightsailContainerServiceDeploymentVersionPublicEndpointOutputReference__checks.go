@@ -109,7 +109,7 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutpu
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewLightsailContainerServiceDeploymentVersionPublicEndpointOutputRe
 
 	return nil
 }
-

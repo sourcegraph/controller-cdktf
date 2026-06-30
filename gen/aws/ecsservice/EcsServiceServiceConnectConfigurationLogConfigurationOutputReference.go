@@ -12,9 +12,9 @@ type EcsServiceServiceConnectConfigurationLogConfigurationOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type EcsServiceServiceConnectConfigurationLogConfigurationOutputReference interf
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
 	SecretOption() EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList
-	SecretOptionInput() interface{}
+	SecretOptionInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type EcsServiceServiceConnectConfigurationLogConfigurationOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type EcsServiceServiceConnectConfigurationLogConfigurationOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSecretOption(value interface{})
+	PutSecretOption(value any)
 	ResetLogDriver()
 	ResetOptions()
 	ResetSecretOption()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SecretOptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SecretOptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretOptionInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	return returns
 }
 
-
 func NewEcsServiceServiceConnectConfigurationLogConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcsServiceServiceConnectConfigurationLogConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEcsServiceServiceConnectConfigurationLogConfigurationOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEcsServiceServiceConnectConfigurationLogConfigurationOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetInternalValue(val *EcsServiceServiceConnectConfigurationLogConfiguration) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetInternalValue(val *EcsServiceServiceConnectConfigurationLogConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetLogDriver(val *string) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetLogDriver(val *string) {
 	if err := j.validateSetLogDriverParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetOptions(val *map[string]*string) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetOptions(val *map[string]*string) {
 	if err := j.validateSetOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) PutSecretOption(value interface{}) {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) PutSecretOption(value any) {
 	if err := e.validatePutSecretOptionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putSecretOption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 	)
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationOutputRe
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsVolumeFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEbsVolumeFilterOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

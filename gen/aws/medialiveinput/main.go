@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
-		reflect.TypeOf((*MedialiveInput)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInput](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcInput", GoGetter: "VpcInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInput{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputConfig",
-		reflect.TypeOf((*MedialiveInputConfig)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations",
-		reflect.TypeOf((*MedialiveInputDestinations)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputDestinations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsList",
-		reflect.TypeOf((*MedialiveInputDestinationsList)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputDestinationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputDestinationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference",
-		reflect.TypeOf((*MedialiveInputDestinationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputDestinationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,11 +173,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices",
-		reflect.TypeOf((*MedialiveInputInputDevices)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputInputDevices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesList",
-		reflect.TypeOf((*MedialiveInputInputDevicesList)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputInputDevicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputInputDevicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -199,7 +199,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference",
-		reflect.TypeOf((*MedialiveInputInputDevicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputInputDevicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputInputDevicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,11 +233,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows",
-		reflect.TypeOf((*MedialiveInputMediaConnectFlows)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputMediaConnectFlows](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
-		reflect.TypeOf((*MedialiveInputMediaConnectFlowsList)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputMediaConnectFlowsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputMediaConnectFlowsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -259,7 +259,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
-		reflect.TypeOf((*MedialiveInputMediaConnectFlowsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputMediaConnectFlowsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputMediaConnectFlowsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,11 +293,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputSources",
-		reflect.TypeOf((*MedialiveInputSources)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputSources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesList",
-		reflect.TypeOf((*MedialiveInputSourcesList)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference",
-		reflect.TypeOf((*MedialiveInputSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,11 +357,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts",
-		reflect.TypeOf((*MedialiveInputTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference",
-		reflect.TypeOf((*MedialiveInputTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -394,7 +394,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -402,11 +402,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpc",
-		reflect.TypeOf((*MedialiveInputVpc)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpcOutputReference",
-		reflect.TypeOf((*MedialiveInputVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MedialiveInputVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MedialiveInputVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

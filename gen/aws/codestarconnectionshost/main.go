@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
-		reflect.TypeOf((*CodestarconnectionsHost)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHost](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfiguration", GoGetter: "VpcConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigurationInput", GoGetter: "VpcConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodestarconnectionsHost{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig",
-		reflect.TypeOf((*CodestarconnectionsHostConfig)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHostConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts",
-		reflect.TypeOf((*CodestarconnectionsHostTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHostTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
-		reflect.TypeOf((*CodestarconnectionsHostTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHostTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration",
-		reflect.TypeOf((*CodestarconnectionsHostVpcConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHostVpcConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
-		reflect.TypeOf((*CodestarconnectionsHostVpcConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodestarconnectionsHostVpcConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

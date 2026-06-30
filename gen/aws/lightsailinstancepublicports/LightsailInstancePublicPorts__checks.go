@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateAddMoveTargetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPorts) validatePutPortInfoParameters(value interface{}) error {
+func (l *jsiiProxy_LightsailInstancePublicPorts) validatePutPortInfoParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateLightsailInstancePublicPorts_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateLightsailInstancePublicPorts_IsConstructParameters(x interface{}) error {
+func validateLightsailInstancePublicPorts_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateLightsailInstancePublicPorts_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateLightsailInstancePublicPorts_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailInstancePublicPorts_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateLightsailInstancePublicPorts_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateLightsailInstancePublicPorts_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailInstancePublicPorts_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateLightsailInstancePublicPorts_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewLightsailInstancePublicPortsParameters(scope constructs.Construc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReferenceParame
 
 	return nil
 }
-

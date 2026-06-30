@@ -106,7 +106,7 @@ func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetAddr
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetActionSubscriberOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBudgetsBudgetActionSubscriberOutputReferenceParameters(terraform
 
 	return nil
 }
-

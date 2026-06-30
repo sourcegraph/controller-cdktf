@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewCloudfrontDistributionCustomErrorResponseOutputReferenceParamete
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
-		reflect.TypeOf((*S3ObjectCopy)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectCopy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberProperty{JsiiProperty: "aclInput", GoGetter: "AclInput"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirect", GoGetter: "WebsiteRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirectInput", GoGetter: "WebsiteRedirectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ObjectCopy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -185,15 +185,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig",
-		reflect.TypeOf((*S3ObjectCopyConfig)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectCopyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant",
-		reflect.TypeOf((*S3ObjectCopyGrant)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectCopyGrant](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
-		reflect.TypeOf((*S3ObjectCopyGrantList)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectCopyGrantList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ObjectCopyGrantList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -215,7 +215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
-		reflect.TypeOf((*S3ObjectCopyGrantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectCopyGrantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ObjectCopyGrantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

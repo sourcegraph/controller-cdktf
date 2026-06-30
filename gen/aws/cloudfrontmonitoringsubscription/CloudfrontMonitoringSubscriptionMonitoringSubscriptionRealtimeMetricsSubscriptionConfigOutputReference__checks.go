@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtim
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMe
 
 	return nil
 }
-

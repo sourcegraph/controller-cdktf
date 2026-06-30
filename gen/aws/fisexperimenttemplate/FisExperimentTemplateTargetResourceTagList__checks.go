@@ -34,7 +34,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetResourceTagList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFisExperimentTemplateTargetResourceTagListParameters(terraformRe
 
 	return nil
 }
-

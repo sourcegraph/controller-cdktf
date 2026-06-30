@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallSubnetMappingOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewallSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsNetworkfirewallFirewallSubnetMappingOutputReferenceParame
 
 	return nil
 }
-

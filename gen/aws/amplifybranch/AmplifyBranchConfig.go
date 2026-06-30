@@ -6,9 +6,9 @@ import (
 
 type AmplifyBranchConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AmplifyBranchConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}.
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#branch_name AmplifyBranch#branch_name}.
@@ -32,15 +32,15 @@ type AmplifyBranchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#display_name AmplifyBranch#display_name}.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}.
-	EnableAutoBuild interface{} `field:"optional" json:"enableAutoBuild" yaml:"enableAutoBuild"`
+	EnableAutoBuild any `field:"optional" json:"enableAutoBuild" yaml:"enableAutoBuild"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}.
-	EnableBasicAuth interface{} `field:"optional" json:"enableBasicAuth" yaml:"enableBasicAuth"`
+	EnableBasicAuth any `field:"optional" json:"enableBasicAuth" yaml:"enableBasicAuth"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}.
-	EnableNotification interface{} `field:"optional" json:"enableNotification" yaml:"enableNotification"`
+	EnableNotification any `field:"optional" json:"enableNotification" yaml:"enableNotification"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}.
-	EnablePerformanceMode interface{} `field:"optional" json:"enablePerformanceMode" yaml:"enablePerformanceMode"`
+	EnablePerformanceMode any `field:"optional" json:"enablePerformanceMode" yaml:"enablePerformanceMode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}.
-	EnablePullRequestPreview interface{} `field:"optional" json:"enablePullRequestPreview" yaml:"enablePullRequestPreview"`
+	EnablePullRequestPreview any `field:"optional" json:"enablePullRequestPreview" yaml:"enablePullRequestPreview"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}.
 	EnvironmentVariables *map[string]*string `field:"optional" json:"environmentVariables" yaml:"environmentVariables"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#framework AmplifyBranch#framework}.
@@ -61,4 +61,3 @@ type AmplifyBranchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_branch#ttl AmplifyBranch#ttl}.
 	Ttl *string `field:"optional" json:"ttl" yaml:"ttl"`
 }
-

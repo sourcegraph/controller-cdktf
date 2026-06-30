@@ -98,7 +98,7 @@ func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSyntheticsCanaryArtifactConfigS3EncryptionOutputReferenceParamet
 
 	return nil
 }
-

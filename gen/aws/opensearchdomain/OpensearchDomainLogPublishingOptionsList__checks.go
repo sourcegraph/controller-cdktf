@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpensearchDomainLogPublishingOptionsListParameters(terraformReso
 
 	return nil
 }
-

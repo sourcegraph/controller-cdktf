@@ -106,7 +106,7 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryS3DestinationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEvidentlyProjectDataDeliveryS3DestinationOutputReferenceParamete
 
 	return nil
 }
-

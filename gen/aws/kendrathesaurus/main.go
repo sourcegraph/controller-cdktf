@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
-		reflect.TypeOf((*KendraThesaurus)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurus](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraThesaurus{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig",
-		reflect.TypeOf((*KendraThesaurusConfig)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurusConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path",
-		reflect.TypeOf((*KendraThesaurusSourceS3Path)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurusSourceS3Path](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
-		reflect.TypeOf((*KendraThesaurusSourceS3PathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurusSourceS3PathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraThesaurusSourceS3PathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts",
-		reflect.TypeOf((*KendraThesaurusTimeouts)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurusTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference",
-		reflect.TypeOf((*KendraThesaurusTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KendraThesaurusTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KendraThesaurusTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

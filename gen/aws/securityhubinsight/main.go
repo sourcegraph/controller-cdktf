@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
-		reflect.TypeOf((*SecurityhubInsight)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsight](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsight{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,19 +72,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig",
-		reflect.TypeOf((*SecurityhubInsightConfig)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters",
-		reflect.TypeOf((*SecurityhubInsightFilters)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId",
-		reflect.TypeOf((*SecurityhubInsightFiltersAwsAccountId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersAwsAccountId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersAwsAccountIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersAwsAccountIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersAwsAccountIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersAwsAccountIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersAwsAccountIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName",
-		reflect.TypeOf((*SecurityhubInsightFiltersCompanyName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCompanyName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersCompanyNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCompanyNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCompanyNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersCompanyNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCompanyNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCompanyNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,11 +204,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus",
-		reflect.TypeOf((*SecurityhubInsightFiltersComplianceStatus)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersComplianceStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList",
-		reflect.TypeOf((*SecurityhubInsightFiltersComplianceStatusList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersComplianceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersComplianceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersComplianceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersComplianceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersComplianceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence",
-		reflect.TypeOf((*SecurityhubInsightFiltersConfidence)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersConfidence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList",
-		reflect.TypeOf((*SecurityhubInsightFiltersConfidenceList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersConfidenceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersConfidenceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -292,7 +292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersConfidenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersConfidenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersConfidenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -333,15 +333,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersCreatedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCreatedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersCreatedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCreatedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersCreatedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCreatedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCreatedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,7 +377,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersCreatedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCreatedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -391,7 +391,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCreatedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -399,7 +399,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersCreatedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCreatedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCreatedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -441,11 +441,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality",
-		reflect.TypeOf((*SecurityhubInsightFiltersCriticality)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCriticality](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList",
-		reflect.TypeOf((*SecurityhubInsightFiltersCriticalityList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCriticalityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCriticalityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -467,7 +467,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersCriticalityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersCriticalityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -500,7 +500,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersCriticalityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -508,11 +508,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription",
-		reflect.TypeOf((*SecurityhubInsightFiltersDescription)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersDescription](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList",
-		reflect.TypeOf((*SecurityhubInsightFiltersDescriptionList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersDescriptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -526,7 +526,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersDescriptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -534,7 +534,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersDescriptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersDescriptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -562,7 +562,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersDescriptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -570,11 +570,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsConfidence)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsConfidence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsConfidenceList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsConfidenceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -596,7 +596,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -629,7 +629,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -637,11 +637,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsCriticality)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsCriticality](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsCriticalityList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsCriticalityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -655,7 +655,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsCriticalityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -663,7 +663,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -696,7 +696,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -704,11 +704,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -722,7 +722,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -730,7 +730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -758,7 +758,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -766,11 +766,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -784,7 +784,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -792,7 +792,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -820,7 +820,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -828,11 +828,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -846,7 +846,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -854,7 +854,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -882,7 +882,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -890,11 +890,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -908,7 +908,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -916,7 +916,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -944,7 +944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -952,11 +952,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsTypes)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsTypesList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -970,7 +970,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -978,7 +978,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1006,7 +1006,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1014,15 +1014,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersFirstObservedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFirstObservedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersFirstObservedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFirstObservedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1050,7 +1050,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1058,7 +1058,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersFirstObservedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFirstObservedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1072,7 +1072,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFirstObservedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1080,7 +1080,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersFirstObservedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersFirstObservedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1114,7 +1114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersFirstObservedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1122,11 +1122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId",
-		reflect.TypeOf((*SecurityhubInsightFiltersGeneratorId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersGeneratorId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersGeneratorIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersGeneratorIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1140,7 +1140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersGeneratorIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1148,7 +1148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersGeneratorIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersGeneratorIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1176,7 +1176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersGeneratorIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1184,11 +1184,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId",
-		reflect.TypeOf((*SecurityhubInsightFiltersId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1202,7 +1202,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1210,7 +1210,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1238,7 +1238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1246,11 +1246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword",
-		reflect.TypeOf((*SecurityhubInsightFiltersKeyword)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersKeyword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList",
-		reflect.TypeOf((*SecurityhubInsightFiltersKeywordList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersKeywordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1264,7 +1264,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersKeywordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1272,7 +1272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersKeywordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersKeywordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1298,7 +1298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersKeywordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1306,15 +1306,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersLastObservedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersLastObservedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersLastObservedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersLastObservedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1342,7 +1342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1350,7 +1350,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersLastObservedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersLastObservedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1364,7 +1364,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersLastObservedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1372,7 +1372,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersLastObservedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersLastObservedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1406,7 +1406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersLastObservedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1414,11 +1414,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1432,7 +1432,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1440,7 +1440,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1468,7 +1468,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1476,11 +1476,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwarePath)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwarePath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwarePathList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwarePathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1494,7 +1494,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwarePathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1502,7 +1502,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwarePathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwarePathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1530,7 +1530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwarePathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1538,11 +1538,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareState)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareStateList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1556,7 +1556,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1564,7 +1564,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1592,7 +1592,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1600,11 +1600,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareType)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareType](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareTypeList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareTypeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1618,7 +1618,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareTypeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1626,7 +1626,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersMalwareTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersMalwareTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1654,7 +1654,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersMalwareTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1662,11 +1662,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationDomain)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationDomainList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationDomainList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1680,7 +1680,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationDomainList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1688,7 +1688,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1716,7 +1716,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1724,11 +1724,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv4)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv4](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv4List)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv4List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1742,7 +1742,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationIpv4List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1750,7 +1750,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -1776,7 +1776,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1784,11 +1784,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv6)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv6](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv6List)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv6List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1802,7 +1802,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationIpv6List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1810,7 +1810,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -1836,7 +1836,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1844,11 +1844,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationPort)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationPortList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1862,7 +1862,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1870,7 +1870,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDestinationPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDestinationPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1903,7 +1903,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1911,11 +1911,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDirection)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDirection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDirectionList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDirectionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1929,7 +1929,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDirectionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1937,7 +1937,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkDirectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkDirectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -1965,7 +1965,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkDirectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1973,11 +1973,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkProtocol)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkProtocol](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkProtocolList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkProtocolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1991,7 +1991,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkProtocolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1999,7 +1999,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkProtocolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkProtocolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -2027,7 +2027,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkProtocolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2035,11 +2035,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceDomain)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceDomainList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceDomainList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2053,7 +2053,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2061,7 +2061,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -2089,7 +2089,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2097,11 +2097,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv4)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv4](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv4List)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv4List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2115,7 +2115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv4List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2123,7 +2123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv4OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv4OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -2149,7 +2149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv4OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2157,11 +2157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv6)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv6](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv6List)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv6List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2175,7 +2175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv6List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2183,7 +2183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceIpv6OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceIpv6OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -2209,7 +2209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv6OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2217,11 +2217,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceMac)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceMac](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceMacList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceMacList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2235,7 +2235,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2243,7 +2243,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourceMacOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourceMacOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -2271,7 +2271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2279,11 +2279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourcePort)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourcePort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourcePortList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourcePortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2297,7 +2297,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2305,7 +2305,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNetworkSourcePortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNetworkSourcePortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2338,7 +2338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2346,11 +2346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteText)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteText](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteTextList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteTextList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2364,7 +2364,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteTextList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2372,7 +2372,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteTextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteTextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -2400,7 +2400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteTextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2408,15 +2408,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2444,7 +2444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2452,7 +2452,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2466,7 +2466,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2474,7 +2474,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2508,7 +2508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2516,11 +2516,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedBy)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedByList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2534,7 +2534,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2542,7 +2542,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersNoteUpdatedByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersNoteUpdatedByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -2570,7 +2570,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2578,7 +2578,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountId", GoGetter: "AwsAccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountIdInput", GoGetter: "AwsAccountIdInput"},
@@ -2954,7 +2954,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflowStatus", GoGetter: "WorkflowStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowStatusInput", GoGetter: "WorkflowStatusInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2962,15 +2962,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessLaunchedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessLaunchedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessLaunchedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessLaunchedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2998,7 +2998,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3006,7 +3006,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessLaunchedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessLaunchedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3020,7 +3020,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessLaunchedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3028,7 +3028,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessLaunchedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessLaunchedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3062,7 +3062,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessLaunchedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3070,11 +3070,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3088,7 +3088,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3096,7 +3096,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3124,7 +3124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3132,11 +3132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessParentPid)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessParentPid](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessParentPidList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessParentPidList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3150,7 +3150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessParentPidList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3158,7 +3158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessParentPidOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessParentPidOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3191,7 +3191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessParentPidOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3199,11 +3199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPath)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPathList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3217,7 +3217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessPathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3225,7 +3225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3253,7 +3253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3261,11 +3261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPid)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPid](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPidList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPidList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3279,7 +3279,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessPidList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3287,7 +3287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessPidOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessPidOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3320,7 +3320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3328,15 +3328,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessTerminatedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessTerminatedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessTerminatedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessTerminatedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3364,7 +3364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3372,7 +3372,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessTerminatedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessTerminatedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3386,7 +3386,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3394,7 +3394,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProcessTerminatedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProcessTerminatedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3428,7 +3428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3436,11 +3436,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductArn)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductArn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductArnList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductArnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3454,7 +3454,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductArnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3462,7 +3462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductArnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductArnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3490,7 +3490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductArnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3498,11 +3498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductFields)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductFieldsList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3516,7 +3516,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3524,7 +3524,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3554,7 +3554,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3562,11 +3562,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3580,7 +3580,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3588,7 +3588,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersProductNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersProductNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3616,7 +3616,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersProductNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3624,11 +3624,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecommendationText)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecommendationText](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecommendationTextList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecommendationTextList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3642,7 +3642,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRecommendationTextList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3650,7 +3650,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecommendationTextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecommendationTextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3678,7 +3678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRecommendationTextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3686,11 +3686,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecordState)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecordState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecordStateList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecordStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3704,7 +3704,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRecordStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3712,7 +3712,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersRecordStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRecordStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3740,7 +3740,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRecordStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3748,11 +3748,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3766,7 +3766,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3774,7 +3774,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3802,7 +3802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3810,11 +3810,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsProductArn)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsProductArn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsProductArnList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsProductArnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3828,7 +3828,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3836,7 +3836,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3864,7 +3864,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3872,11 +3872,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3890,7 +3890,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3898,7 +3898,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3926,7 +3926,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3934,11 +3934,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceImageId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3952,7 +3952,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3960,7 +3960,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -3988,7 +3988,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3996,11 +3996,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4014,7 +4014,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4022,7 +4022,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -4048,7 +4048,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4056,11 +4056,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4074,7 +4074,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4082,7 +4082,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -4108,7 +4108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4116,11 +4116,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4134,7 +4134,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4142,7 +4142,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4170,7 +4170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4178,15 +4178,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4214,7 +4214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4222,7 +4222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4236,7 +4236,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4244,7 +4244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4278,7 +4278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4286,11 +4286,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4304,7 +4304,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4312,7 +4312,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4340,7 +4340,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4348,11 +4348,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceType)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceType](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4366,7 +4366,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4374,7 +4374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4402,7 +4402,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4410,11 +4410,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4428,7 +4428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4436,7 +4436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4464,7 +4464,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4472,15 +4472,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4508,7 +4508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4516,7 +4516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4530,7 +4530,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4538,7 +4538,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4572,7 +4572,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4580,11 +4580,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4598,7 +4598,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4606,7 +4606,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4634,7 +4634,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4642,11 +4642,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4660,7 +4660,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4668,7 +4668,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4696,7 +4696,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4704,11 +4704,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4722,7 +4722,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4730,7 +4730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4758,7 +4758,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4766,11 +4766,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4784,7 +4784,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4792,7 +4792,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4820,7 +4820,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4828,11 +4828,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4846,7 +4846,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4854,7 +4854,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4882,7 +4882,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4890,11 +4890,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4908,7 +4908,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4916,7 +4916,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerImageNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerImageNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -4944,7 +4944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4952,15 +4952,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerLaunchedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerLaunchedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4988,7 +4988,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4996,7 +4996,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerLaunchedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerLaunchedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5010,7 +5010,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5018,7 +5018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5052,7 +5052,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5060,11 +5060,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerName)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerNameList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5078,7 +5078,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5086,7 +5086,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceContainerNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceContainerNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5114,7 +5114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceContainerNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5122,11 +5122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceDetailsOther)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceDetailsOther](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceDetailsOtherList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceDetailsOtherList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5140,7 +5140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceDetailsOtherList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5148,7 +5148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceDetailsOtherOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceDetailsOtherOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5178,7 +5178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceDetailsOtherOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5186,11 +5186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceId)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceIdList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceIdList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5204,7 +5204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceIdList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5212,7 +5212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5240,7 +5240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5248,11 +5248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourcePartition)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourcePartition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourcePartitionList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourcePartitionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5266,7 +5266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourcePartitionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5274,7 +5274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourcePartitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourcePartitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5302,7 +5302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourcePartitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5310,11 +5310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceRegion)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceRegion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceRegionList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceRegionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5328,7 +5328,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceRegionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5336,7 +5336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceRegionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceRegionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5364,7 +5364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceRegionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5372,11 +5372,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceTags)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceTagsList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceTagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5390,7 +5390,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5398,7 +5398,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5428,7 +5428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5436,11 +5436,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceType)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceType](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceTypeList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceTypeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5454,7 +5454,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceTypeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5462,7 +5462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersResourceTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersResourceTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5490,7 +5490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersResourceTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5498,11 +5498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel",
-		reflect.TypeOf((*SecurityhubInsightFiltersSeverityLabel)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSeverityLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList",
-		reflect.TypeOf((*SecurityhubInsightFiltersSeverityLabelList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSeverityLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5516,7 +5516,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersSeverityLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5524,7 +5524,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersSeverityLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSeverityLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5552,7 +5552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersSeverityLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5560,11 +5560,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl",
-		reflect.TypeOf((*SecurityhubInsightFiltersSourceUrl)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSourceUrl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList",
-		reflect.TypeOf((*SecurityhubInsightFiltersSourceUrlList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSourceUrlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5578,7 +5578,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersSourceUrlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5586,7 +5586,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersSourceUrlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersSourceUrlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5614,7 +5614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersSourceUrlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5622,11 +5622,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorCategory)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorCategoryList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorCategoryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5640,7 +5640,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5648,7 +5648,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5676,7 +5676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5684,15 +5684,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5720,7 +5720,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5728,7 +5728,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5742,7 +5742,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5750,7 +5750,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5784,7 +5784,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5792,11 +5792,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSource)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSourceList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5810,7 +5810,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5818,7 +5818,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5846,7 +5846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5854,11 +5854,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5872,7 +5872,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5880,7 +5880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5908,7 +5908,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5916,11 +5916,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorType)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorType](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorTypeList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorTypeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5934,7 +5934,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5942,7 +5942,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -5970,7 +5970,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5978,11 +5978,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorValue)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorValueList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorValueList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5996,7 +5996,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorValueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6004,7 +6004,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6032,7 +6032,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6040,11 +6040,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle",
-		reflect.TypeOf((*SecurityhubInsightFiltersTitle)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersTitle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList",
-		reflect.TypeOf((*SecurityhubInsightFiltersTitleList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersTitleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6058,7 +6058,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersTitleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6066,7 +6066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersTitleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersTitleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6094,7 +6094,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersTitleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6102,11 +6102,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType",
-		reflect.TypeOf((*SecurityhubInsightFiltersType)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersType](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList",
-		reflect.TypeOf((*SecurityhubInsightFiltersTypeList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersTypeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6120,7 +6120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersTypeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6128,7 +6128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6156,7 +6156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6164,15 +6164,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt",
-		reflect.TypeOf((*SecurityhubInsightFiltersUpdatedAt)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUpdatedAt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange",
-		reflect.TypeOf((*SecurityhubInsightFiltersUpdatedAtDateRange)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUpdatedAtDateRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6200,7 +6200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6208,7 +6208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList",
-		reflect.TypeOf((*SecurityhubInsightFiltersUpdatedAtList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUpdatedAtList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6222,7 +6222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersUpdatedAtList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6230,7 +6230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersUpdatedAtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUpdatedAtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6264,7 +6264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersUpdatedAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6272,11 +6272,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues",
-		reflect.TypeOf((*SecurityhubInsightFiltersUserDefinedValues)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUserDefinedValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList",
-		reflect.TypeOf((*SecurityhubInsightFiltersUserDefinedValuesList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUserDefinedValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6290,7 +6290,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6298,7 +6298,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersUserDefinedValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersUserDefinedValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6328,7 +6328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6336,11 +6336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState",
-		reflect.TypeOf((*SecurityhubInsightFiltersVerificationState)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersVerificationState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList",
-		reflect.TypeOf((*SecurityhubInsightFiltersVerificationStateList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersVerificationStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6354,7 +6354,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersVerificationStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6362,7 +6362,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersVerificationStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersVerificationStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6390,7 +6390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersVerificationStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6398,11 +6398,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus",
-		reflect.TypeOf((*SecurityhubInsightFiltersWorkflowStatus)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersWorkflowStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList",
-		reflect.TypeOf((*SecurityhubInsightFiltersWorkflowStatusList)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersWorkflowStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6416,7 +6416,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersWorkflowStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6424,7 +6424,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference",
-		reflect.TypeOf((*SecurityhubInsightFiltersWorkflowStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityhubInsightFiltersWorkflowStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -6452,7 +6452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityhubInsightFiltersWorkflowStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

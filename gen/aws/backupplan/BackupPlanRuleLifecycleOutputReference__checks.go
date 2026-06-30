@@ -106,7 +106,7 @@ func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetColdStorag
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBackupPlanRuleLifecycleOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

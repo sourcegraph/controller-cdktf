@@ -90,7 +90,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateI
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validatePutCriterionParameters(value interface{}) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validatePutCriterionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewMacie2FindingsFilterFindingCriteriaOutputReferenceParameters(ter
 
 	return nil
 }
-

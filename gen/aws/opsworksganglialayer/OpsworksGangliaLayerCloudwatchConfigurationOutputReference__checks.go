@@ -90,7 +90,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validatePutLogStreamsParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validatePutLogStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewOpsworksGangliaLayerCloudwatchConfigurationOutputReferenceParame
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersRecommendationTextListParameters(terraf
 
 	return nil
 }
-

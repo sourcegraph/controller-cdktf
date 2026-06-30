@@ -109,7 +109,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewEc2FleetSpotOptionsMaintenanceStrategiesOutputReferenceParameter
 
 	return nil
 }
-

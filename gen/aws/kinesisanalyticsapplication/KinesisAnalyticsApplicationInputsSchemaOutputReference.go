@@ -12,9 +12,9 @@ type KinesisAnalyticsApplicationInputsSchemaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type KinesisAnalyticsApplicationInputsSchemaOutputReference interface {
 	InternalValue() *KinesisAnalyticsApplicationInputsSchema
 	SetInternalValue(val *KinesisAnalyticsApplicationInputsSchema)
 	RecordColumns() KinesisAnalyticsApplicationInputsSchemaRecordColumnsList
-	RecordColumnsInput() interface{}
+	RecordColumnsInput() any
 	RecordEncoding() *string
 	SetRecordEncoding(val *string)
 	RecordEncodingInput() *string
@@ -47,7 +47,7 @@ type KinesisAnalyticsApplicationInputsSchemaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,12 +68,12 @@ type KinesisAnalyticsApplicationInputsSchemaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRecordColumns(value interface{})
+	PutRecordColumns(value any)
 	PutRecordFormat(value *KinesisAnalyticsApplicationInputsSchemaRecordFormat)
 	ResetRecordEncoding()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Recor
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) RecordColumnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) RecordColumnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordColumnsInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Terra
 	return returns
 }
 
-
 func NewKinesisAnalyticsApplicationInputsSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewKinesisAnalyticsApplicationInputsSchemaOutputReference_Override(k Kinesi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetInternalValue(val *KinesisAnalyticsApplicationInputsSchema) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetInternalValue(val *KinesisAnalyticsApplicationInputsSchema) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetRecordEncoding(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetRecordEncoding(val *string) {
 	if err := j.validateSetRecordEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetRec
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Compu
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetBo
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetBo
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetLi
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetNu
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetNu
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetNu
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetSt
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) GetSt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,21 +488,21 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Inter
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) PutRecordColumns(value interface{}) {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) PutRecordColumns(value any) {
 	if err := k.validatePutRecordColumnsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putRecordColumns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -514,7 +513,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) PutRe
 	_jsii_.InvokeVoid(
 		k,
 		"putRecordFormat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Reset
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference) ToStr
 
 	return returns
 }
-

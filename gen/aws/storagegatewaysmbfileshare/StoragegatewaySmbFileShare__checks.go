@@ -19,7 +19,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StoragegatewaySmbFileShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewaySmbFileShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StoragegatewaySmbFileShare) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateStoragegatewaySmbFileShare_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateStoragegatewaySmbFileShare_IsConstructParameters(x interface{}) error {
+func validateStoragegatewaySmbFileShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateStoragegatewaySmbFileShare_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x interface{}) error {
+func validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x interface{}) error {
+func validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetAccessBasedEnumerationParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetAccessBasedEnumerationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetCaseSensitivityParamet
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -440,7 +440,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetGatewayArnParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetGuessMimeTypeEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetGuessMimeTypeEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetInvalidUserListParamet
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetKmsEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetKmsEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetObjectAclParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetOplocksEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetOplocksEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -556,7 +556,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetOplocksEnabledParamete
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -602,7 +602,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -622,7 +622,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetReadOnlyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetRequesterPaysParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetRequesterPaysParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -650,7 +650,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetRoleArnParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetSmbAclEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetSmbAclEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -720,4 +720,3 @@ func validateNewStoragegatewaySmbFileShareParameters(scope constructs.Construct,
 
 	return nil
 }
-

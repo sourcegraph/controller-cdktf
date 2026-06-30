@@ -98,7 +98,7 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateSetUseLatestRestorableTimeParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) validateSetUseLatestRestorableTimeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewDbInstanceRestoreToPointInTimeOutputReferenceParameters(terrafor
 
 	return nil
 }
-

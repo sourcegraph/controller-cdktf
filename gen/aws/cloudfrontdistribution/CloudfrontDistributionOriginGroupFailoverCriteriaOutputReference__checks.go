@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudfrontDistributionOriginGroupFailoverCriteriaOutputReference
 
 	return nil
 }
-

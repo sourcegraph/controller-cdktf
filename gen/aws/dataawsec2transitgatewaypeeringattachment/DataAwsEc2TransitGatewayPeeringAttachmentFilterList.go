@@ -17,8 +17,8 @@ type DataAwsEc2TransitGatewayPeeringAttachmentFilterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsEc2TransitGatewayPeeringAttachmentFilterList interface {
 	Get(index *float64) DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) WrapsSet
 	return returns
 }
 
-
 func NewDataAwsEc2TransitGatewayPeeringAttachmentFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayPeeringAttachmentFilterList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsEc2TransitGatewayPeeringAttachmentFilterList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsEc2TransitGatewayPeeringAttachmentFilterList_Override(d DataAwsEc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) AllWithM
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) Get(inde
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterList) ToString
 
 	return returns
 }
-

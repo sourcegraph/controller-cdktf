@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodepipelineStageList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineStageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineStageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodepipelineStageListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

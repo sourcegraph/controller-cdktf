@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsAvailabilityZonesTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

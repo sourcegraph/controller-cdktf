@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
-		reflect.TypeOf((*ApiGatewayAccount)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,15 +68,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig",
-		reflect.TypeOf((*ApiGatewayAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayAccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettings",
-		reflect.TypeOf((*ApiGatewayAccountThrottleSettings)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayAccountThrottleSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList",
-		reflect.TypeOf((*ApiGatewayAccountThrottleSettingsList)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayAccountThrottleSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayAccountThrottleSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -97,7 +97,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference",
-		reflect.TypeOf((*ApiGatewayAccountThrottleSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayAccountThrottleSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burstLimit", GoGetter: "BurstLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayAccountThrottleSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

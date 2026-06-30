@@ -12,9 +12,9 @@ type CloudtrailEventSelectorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,17 +26,17 @@ type CloudtrailEventSelectorOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataResource() CloudtrailEventSelectorDataResourceList
-	DataResourceInput() interface{}
+	DataResourceInput() any
 	ExcludeManagementEventSources() *[]*string
 	SetExcludeManagementEventSources(val *[]*string)
 	ExcludeManagementEventSourcesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeManagementEvents() interface{}
-	SetIncludeManagementEvents(val interface{})
-	IncludeManagementEventsInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IncludeManagementEvents() any
+	SetIncludeManagementEvents(val any)
+	IncludeManagementEventsInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	ReadWriteType() *string
 	SetReadWriteType(val *string)
 	ReadWriteTypeInput() *string
@@ -51,7 +51,7 @@ type CloudtrailEventSelectorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type CloudtrailEventSelectorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDataResource(value interface{})
+	PutDataResource(value any)
 	ResetDataResource()
 	ResetExcludeManagementEventSources()
 	ResetIncludeManagementEvents()
 	ResetReadWriteType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_CloudtrailEventSelectorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) DataResource() Cloudt
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) DataResourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) DataResourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataResourceInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEvents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEvents() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeManagementEvents",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEven
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEventsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEventsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeManagementEventsInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) IncludeManagementEven
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewCloudtrailEventSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudtrailEventSelectorOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewCloudtrailEventSelectorOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewCloudtrailEventSelectorOutputReference_Override(c CloudtrailEventSelecto
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetExcludeManagementEventSources(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetExcludeManagementEventSources(val *[]*string) {
 	if err := j.validateSetExcludeManagementEventSourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetExcludeManagementEv
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetIncludeManagementEvents(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetIncludeManagementEvents(val any) {
 	if err := j.validateSetIncludeManagementEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetIncludeManagementEv
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetReadWriteType(val *string) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetReadWriteType(val *string) {
 	if err := j.validateSetReadWriteTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetReadWriteType(val *
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) PutDataResource(value interface{}) {
+func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) PutDataResource(value any) {
 	if err := c.validatePutDataResourceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDataResource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) ResetReadWriteType() 
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -16,11 +16,11 @@ type DataAwsQldbLedger interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -53,20 +53,20 @@ type DataAwsQldbLedger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataAwsQldbLedger interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsQldbLedger
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsQldbLedger) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsQldbLedger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsQldbLedger) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsQldbLedger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataAwsQldbLedger) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsQldbLedger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DataAwsQldbLedger) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsQldbLedger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_DataAwsQldbLedger) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/qldb_ledger aws_qldb_ledger} Data Source.
 func NewDataAwsQldbLedger(scope constructs.Construct, id *string, config *DataAwsQldbLedgerConfig) DataAwsQldbLedger {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewDataAwsQldbLedger(scope constructs.Construct, id *string, config *DataAw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewDataAwsQldbLedger_Override(d DataAwsQldbLedger, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetId(val *string) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetName(val *string) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataAwsQldbLedger)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsQldbLedger) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func DataAwsQldbLedger_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func DataAwsQldbLedger_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsQldbLedger_IsConstruct(x interface{}) *bool {
+func DataAwsQldbLedger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsQldbLedger_IsConstructParameters(x); err != nil {
@@ -508,7 +507,7 @@ func DataAwsQldbLedger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func DataAwsQldbLedger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsQldbLedger_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsQldbLedger_IsTerraformDataSourceParameters(x); err != nil {
@@ -527,7 +526,7 @@ func DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsQldbLedger_IsTerraformElement(x interface{}) *bool {
+func DataAwsQldbLedger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsQldbLedger_IsTerraformElementParameters(x); err != nil {
@@ -546,7 +545,7 @@ func DataAwsQldbLedger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -564,27 +563,27 @@ func DataAwsQldbLedger_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsQldbLedger) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsQldbLedger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataAwsQldbLedger) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataAwsQldbLedger) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataAwsQldbLedger) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsQldbLedger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -809,8 +808,8 @@ func (d *jsiiProxy_DataAwsQldbLedger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsQldbLedger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataAwsQldbLedger) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsQldbLedger) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsQldbLedger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -847,4 +846,3 @@ func (d *jsiiProxy_DataAwsQldbLedger) ToTerraform() interface{} {
 
 	return returns
 }
-

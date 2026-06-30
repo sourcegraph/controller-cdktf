@@ -120,7 +120,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAutoscalingGroupMixedInstancesPolicyOutputReferenceParameters(te
 
 	return nil
 }
-

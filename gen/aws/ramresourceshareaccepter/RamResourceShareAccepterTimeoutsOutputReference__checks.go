@@ -98,7 +98,7 @@ func (r *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RamResourceShareAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewRamResourceShareAccepterTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

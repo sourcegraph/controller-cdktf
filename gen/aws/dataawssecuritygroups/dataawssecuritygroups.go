@@ -16,17 +16,17 @@ type DataAwsSecurityGroups interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsSecurityGroupsFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,23 +50,23 @@ type DataAwsSecurityGroups interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsSecurityGroupsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcIds() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type DataAwsSecurityGroups interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsSecurityGroupsTimeouts)
 	ResetFilter()
 	ResetId()
@@ -97,18 +97,18 @@ type DataAwsSecurityGroups interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSecurityGroups
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) Filter() DataAwsSecurityGroupsFilterLi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) Timeouts() DataAwsSecurityGroupsTimeou
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecurityGroups) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -366,7 +366,6 @@ func (j *jsiiProxy_DataAwsSecurityGroups) VpcIds() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/security_groups aws_security_groups} Data Source.
 func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *DataAwsSecurityGroupsConfig) DataAwsSecurityGroups {
 	_init_.Initialize()
@@ -378,7 +377,7 @@ func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -391,12 +390,12 @@ func NewDataAwsSecurityGroups_Override(d DataAwsSecurityGroups, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsSecurityGroups) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func DataAwsSecurityGroups_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func DataAwsSecurityGroups_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSecurityGroups_IsConstruct(x interface{}) *bool {
+func DataAwsSecurityGroups_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecurityGroups_IsConstructParameters(x); err != nil {
@@ -511,7 +510,7 @@ func DataAwsSecurityGroups_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func DataAwsSecurityGroups_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSecurityGroups_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSecurityGroups_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecurityGroups_IsTerraformDataSourceParameters(x); err != nil {
@@ -530,7 +529,7 @@ func DataAwsSecurityGroups_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func DataAwsSecurityGroups_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSecurityGroups_IsTerraformElement(x interface{}) *bool {
+func DataAwsSecurityGroups_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecurityGroups_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func DataAwsSecurityGroups_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -567,27 +566,27 @@ func DataAwsSecurityGroups_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSecurityGroups) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSecurityGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,18 +744,18 @@ func (d *jsiiProxy_DataAwsSecurityGroups) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsSecurityGroups) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataAwsSecurityGroups) PutTimeouts(value *DataAwsSecurityGrou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataAwsSecurityGroups) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -824,8 +823,8 @@ func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -837,8 +836,8 @@ func (d *jsiiProxy_DataAwsSecurityGroups) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecurityGroups) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -850,8 +849,8 @@ func (d *jsiiProxy_DataAwsSecurityGroups) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecurityGroups) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -876,8 +875,8 @@ func (d *jsiiProxy_DataAwsSecurityGroups) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroups) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecurityGroups) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -888,4 +887,3 @@ func (d *jsiiProxy_DataAwsSecurityGroups) ToTerraform() interface{} {
 
 	return returns
 }
-

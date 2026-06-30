@@ -12,9 +12,9 @@ type AuditmanagerControlControlMappingSourcesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type AuditmanagerControlControlMappingSourcesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SourceDescription() *string
 	SetSourceDescription(val *string)
 	SourceDescriptionInput() *string
@@ -37,7 +37,7 @@ type AuditmanagerControlControlMappingSourcesOutputReference interface {
 	SourceFrequencyInput() *string
 	SourceId() *string
 	SourceKeyword() AuditmanagerControlControlMappingSourcesSourceKeywordList
-	SourceKeywordInput() interface{}
+	SourceKeywordInput() any
 	SourceName() *string
 	SetSourceName(val *string)
 	SourceNameInput() *string
@@ -61,7 +61,7 @@ type AuditmanagerControlControlMappingSourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,14 +82,14 @@ type AuditmanagerControlControlMappingSourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSourceKeyword(value interface{})
+	PutSourceKeyword(value any)
 	ResetSourceDescription()
 	ResetSourceFrequency()
 	ResetSourceKeyword()
 	ResetTroubleshootingText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ type jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Sour
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SourceKeywordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SourceKeywordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceKeywordInput",
@@ -322,7 +322,6 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Trou
 	return returns
 }
 
-
 func NewAuditmanagerControlControlMappingSourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AuditmanagerControlControlMappingSourcesOutputReference {
 	_init_.Initialize()
 
@@ -333,7 +332,7 @@ func NewAuditmanagerControlControlMappingSourcesOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -345,12 +344,12 @@ func NewAuditmanagerControlControlMappingSourcesOutputReference_Override(a Audit
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSourceDescription(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetSourceDescription(val *string) {
 	if err := j.validateSetSourceDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSourceFrequency(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetSourceFrequency(val *string) {
 	if err := j.validateSetSourceFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSourceName(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetSourceName(val *string) {
 	if err := j.validateSetSourceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSourceSetUpOption(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetSourceSetUpOption(val *string) {
 	if err := j.validateSetSourceSetUpOptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSourceType(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetSourceType(val *string) {
 	if err := j.validateSetSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference)SetTroubleshootingText(val *string) {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) SetTroubleshootingText(val *string) {
 	if err := j.validateSetTroubleshootingTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,16 +483,16 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Comp
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,21 +649,21 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) PutSourceKeyword(value interface{}) {
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) PutSourceKeyword(value any) {
 	if err := a.validatePutSourceKeywordParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putSourceKeyword",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -700,16 +699,16 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -728,4 +727,3 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference) ToSt
 
 	return returns
 }
-

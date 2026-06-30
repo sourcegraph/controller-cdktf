@@ -17,8 +17,8 @@ type SesReceiptRuleAddHeaderActionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SesReceiptRuleAddHeaderActionList interface {
 	Get(index *float64) SesReceiptRuleAddHeaderActionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewSesReceiptRuleAddHeaderActionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleAddHeaderActionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSesReceiptRuleAddHeaderActionList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSesReceiptRuleAddHeaderActionList_Override(s SesReceiptRuleAddHeaderActi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) Get(index *float64) SesRec
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) ToString() *string {
 
 	return returns
 }
-

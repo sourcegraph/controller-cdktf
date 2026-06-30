@@ -98,7 +98,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKinesisanalyticsv2ApplicationTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -18,17 +18,17 @@ type LambdaFunctionUrl interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Cors() LambdaFunctionUrlCorsOutputReference
 	CorsInput() *LambdaFunctionUrlCors
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,30 +60,30 @@ type LambdaFunctionUrl interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Qualifier() *string
 	SetQualifier(val *string)
 	QualifierInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LambdaFunctionUrlTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UrlId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type LambdaFunctionUrl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type LambdaFunctionUrl interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type LambdaFunctionUrl interface {
 	ResetOverrideLogicalId()
 	ResetQualifier()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LambdaFunctionUrl
@@ -177,8 +177,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) CorsInput() *LambdaFunctionUrlCors {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) QualifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_LambdaFunctionUrl) Timeouts() LambdaFunctionUrlTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionUrl) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_LambdaFunctionUrl) UrlId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
 func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) LambdaFunctionUrl {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *Lambda
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewLambdaFunctionUrl_Override(l LambdaFunctionUrl, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetAuthorizationType(val *string) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetAuthorizationType(val *string) {
 	if err := j.validateSetAuthorizationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetAuthorizationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetConnection(val interface{}) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetCount(val interface{}) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetFunctionName(val *string) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetFunctionName(val *string) {
 	if err := j.validateSetFunctionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetFunctionName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetId(val *string) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl)SetQualifier(val *string) {
+func (j *jsiiProxy_LambdaFunctionUrl) SetQualifier(val *string) {
 	if err := j.validateSetQualifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func LambdaFunctionUrl_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func LambdaFunctionUrl_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LambdaFunctionUrl_IsConstruct(x interface{}) *bool {
+func LambdaFunctionUrl_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaFunctionUrl_IsConstructParameters(x); err != nil {
@@ -646,7 +645,7 @@ func LambdaFunctionUrl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func LambdaFunctionUrl_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
+func LambdaFunctionUrl_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaFunctionUrl_IsTerraformElementParameters(x); err != nil {
@@ -665,7 +664,7 @@ func LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaFunctionUrl_IsTerraformResource(x interface{}) *bool {
+func LambdaFunctionUrl_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaFunctionUrl_IsTerraformResourceParameters(x); err != nil {
@@ -684,7 +683,7 @@ func LambdaFunctionUrl_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,31 +708,31 @@ func (l *jsiiProxy_LambdaFunctionUrl) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LambdaFunctionUrl) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaFunctionUrl) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,15 +860,15 @@ func (l *jsiiProxy_LambdaFunctionUrl) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -888,7 +887,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -901,7 +900,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,18 +914,18 @@ func (l *jsiiProxy_LambdaFunctionUrl) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LambdaFunctionUrl) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -937,7 +936,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -948,7 +947,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -959,7 +958,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) PutCors(value *LambdaFunctionUrlCors) {
 	_jsii_.InvokeVoid(
 		l,
 		"putCors",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -970,7 +969,7 @@ func (l *jsiiProxy_LambdaFunctionUrl) PutTimeouts(value *LambdaFunctionUrlTimeou
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1014,8 +1013,8 @@ func (l *jsiiProxy_LambdaFunctionUrl) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1027,8 +1026,8 @@ func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1040,8 +1039,8 @@ func (l *jsiiProxy_LambdaFunctionUrl) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1053,8 +1052,8 @@ func (l *jsiiProxy_LambdaFunctionUrl) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1079,8 +1078,8 @@ func (l *jsiiProxy_LambdaFunctionUrl) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrl) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaFunctionUrl) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1091,4 +1090,3 @@ func (l *jsiiProxy_LambdaFunctionUrl) ToTerraform() interface{} {
 
 	return returns
 }
-

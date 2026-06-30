@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate",
-		reflect.TypeOf((*DataAwsAcmCertificate)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "types", GoGetter: "Types"},
 			_jsii_.MemberProperty{JsiiProperty: "typesInput", GoGetter: "TypesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAcmCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig",
-		reflect.TypeOf((*DataAwsAcmCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAcmCertificateConfig](),
 	)
 }

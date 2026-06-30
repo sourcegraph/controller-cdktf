@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewElasticacheParameterGroupParameterOutputReferenceParameters(terr
 
 	return nil
 }
-

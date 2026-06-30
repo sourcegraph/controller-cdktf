@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewWafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReferenc
 
 	return nil
 }
-

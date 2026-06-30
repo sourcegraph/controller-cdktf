@@ -14,7 +14,7 @@ type Ec2ClientVpnEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
 	AuthenticationOptions() Ec2ClientVpnEndpointAuthenticationOptionsList
-	AuthenticationOptionsInput() interface{}
+	AuthenticationOptionsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientCidrBlock() *string
@@ -25,17 +25,17 @@ type Ec2ClientVpnEndpoint interface {
 	ClientLoginBannerOptions() Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference
 	ClientLoginBannerOptionsInput() *Ec2ClientVpnEndpointClientLoginBannerOptions
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionLogOptions() Ec2ClientVpnEndpointConnectionLogOptionsOutputReference
 	ConnectionLogOptionsInput() *Ec2ClientVpnEndpointConnectionLogOptions
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,11 +69,11 @@ type Ec2ClientVpnEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -86,9 +86,9 @@ type Ec2ClientVpnEndpoint interface {
 	SessionTimeoutHours() *float64
 	SetSessionTimeoutHours(val *float64)
 	SessionTimeoutHoursInput() *float64
-	SplitTunnel() interface{}
-	SetSplitTunnel(val interface{})
-	SplitTunnelInput() interface{}
+	SplitTunnel() any
+	SetSplitTunnel(val any)
+	SplitTunnelInput() any
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -99,7 +99,7 @@ type Ec2ClientVpnEndpoint interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TransportProtocol() *string
@@ -115,9 +115,9 @@ type Ec2ClientVpnEndpoint interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -135,7 +135,7 @@ type Ec2ClientVpnEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -147,14 +147,14 @@ type Ec2ClientVpnEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthenticationOptions(value interface{})
+	PutAuthenticationOptions(value any)
 	PutClientConnectOptions(value *Ec2ClientVpnEndpointClientConnectOptions)
 	PutClientLoginBannerOptions(value *Ec2ClientVpnEndpointClientLoginBannerOptions)
 	PutConnectionLogOptions(value *Ec2ClientVpnEndpointConnectionLogOptions)
@@ -175,17 +175,17 @@ type Ec2ClientVpnEndpoint interface {
 	ResetTransportProtocol()
 	ResetVpcId()
 	ResetVpnPort()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ec2ClientVpnEndpoint
@@ -213,8 +213,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) AuthenticationOptions() Ec2ClientVpnEnd
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) AuthenticationOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) AuthenticationOptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authenticationOptionsInput",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) ClientLoginBannerOptionsInput() *Ec2Cli
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) ConnectionLogOptionsInput() *Ec2ClientV
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -583,8 +583,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) SessionTimeoutHoursInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) SplitTunnel() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SplitTunnel() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splitTunnel",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) SplitTunnel() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) SplitTunnelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SplitTunnelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splitTunnelInput",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -743,7 +743,6 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) VpnPortInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint {
 	_init_.Initialize()
@@ -755,7 +754,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -768,12 +767,12 @@ func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetClientCidrBlock(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetClientCidrBlock(val *string) {
 	if err := j.validateSetClientCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetClientCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -814,7 +813,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDescription(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDnsServers(val *[]*string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetDnsServers(val *[]*string) {
 	if err := j.validateSetDnsServersParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDnsServers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -874,7 +873,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSelfServicePortal(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetSelfServicePortal(val *string) {
 	if err := j.validateSetSelfServicePortalParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSelfServicePortal(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetServerCertificateArn(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetServerCertificateArn(val *string) {
 	if err := j.validateSetServerCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetServerCertificateArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSessionTimeoutHours(val *float64) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetSessionTimeoutHours(val *float64) {
 	if err := j.validateSetSessionTimeoutHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSessionTimeoutHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSplitTunnel(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetSplitTunnel(val any) {
 	if err := j.validateSetSplitTunnelParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetSplitTunnel(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTransportProtocol(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetTransportProtocol(val *string) {
 	if err := j.validateSetTransportProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTransportProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetVpcId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetVpcId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetVpnPort(val *float64) {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SetVpnPort(val *float64) {
 	if err := j.validateSetVpnPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1006,7 @@ func Ec2ClientVpnEndpoint_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func Ec2ClientVpnEndpoint_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ec2ClientVpnEndpoint_IsConstruct(x interface{}) *bool {
+func Ec2ClientVpnEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnEndpoint_IsConstructParameters(x); err != nil {
@@ -1042,7 +1041,7 @@ func Ec2ClientVpnEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func Ec2ClientVpnEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool {
+func Ec2ClientVpnEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -1061,7 +1060,7 @@ func Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2ClientVpnEndpoint_IsTerraformResource(x interface{}) *bool {
+func Ec2ClientVpnEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -1080,7 +1079,7 @@ func Ec2ClientVpnEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1105,31 +1104,31 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,7 +1160,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1177,7 +1176,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1193,7 +1192,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1209,7 +1208,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1225,7 +1224,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1241,7 +1240,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1257,15 +1256,15 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1284,7 +1283,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1297,7 +1296,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,18 +1310,18 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1333,7 +1332,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1344,18 +1343,18 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutAuthenticationOptions(value interface{}) {
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutAuthenticationOptions(value any) {
 	if err := e.validatePutAuthenticationOptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAuthenticationOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1366,7 +1365,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutClientConnectOptions(value *Ec2Clien
 	_jsii_.InvokeVoid(
 		e,
 		"putClientConnectOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1377,7 +1376,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutClientLoginBannerOptions(value *Ec2C
 	_jsii_.InvokeVoid(
 		e,
 		"putClientLoginBannerOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1388,7 +1387,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutConnectionLogOptions(value *Ec2Clien
 	_jsii_.InvokeVoid(
 		e,
 		"putConnectionLogOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1512,8 +1511,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetVpnPort() {
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1525,8 +1524,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1538,8 +1537,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1551,8 +1550,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1577,8 +1576,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1589,4 +1588,3 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

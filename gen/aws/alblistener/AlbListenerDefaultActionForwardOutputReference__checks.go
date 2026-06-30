@@ -101,7 +101,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validatePutSt
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validatePutTargetGroupParameters(value interface{}) error {
+func (a *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validatePutTargetGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewAlbListenerDefaultActionForwardOutputReferenceParameters(terrafo
 
 	return nil
 }
-

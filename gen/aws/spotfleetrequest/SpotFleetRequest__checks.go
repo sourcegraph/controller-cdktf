@@ -19,7 +19,7 @@ func (s *jsiiProxy_SpotFleetRequest) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequest) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SpotFleetRequest) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SpotFleetRequest) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SpotFleetRequest) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SpotFleetRequest) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequest) validatePutLaunchSpecificationParameters(value interface{}) error {
+func (s *jsiiProxy_SpotFleetRequest) validatePutLaunchSpecificationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (s *jsiiProxy_SpotFleetRequest) validatePutLaunchSpecificationParameters(va
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequest) validatePutLaunchTemplateConfigParameters(value interface{}) error {
+func (s *jsiiProxy_SpotFleetRequest) validatePutLaunchTemplateConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateSpotFleetRequest_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateSpotFleetRequest_IsConstructParameters(x interface{}) error {
+func validateSpotFleetRequest_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateSpotFleetRequest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSpotFleetRequest_IsTerraformElementParameters(x interface{}) error {
+func validateSpotFleetRequest_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateSpotFleetRequest_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateSpotFleetRequest_IsTerraformResourceParameters(x interface{}) error {
+func validateSpotFleetRequest_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetAllocationStrategyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -514,7 +514,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetOnDemandTargetCapacityParameters
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -560,7 +560,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetReplaceUnhealthyInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetReplaceUnhealthyInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -636,7 +636,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetTerminateInstancesOnDeleteParame
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetTerminateInstancesWithExpirationParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetTerminateInstancesWithExpirationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -672,7 +672,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetValidUntilParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetWaitForFulfillmentParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetWaitForFulfillmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -710,4 +710,3 @@ func validateNewSpotFleetRequestParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

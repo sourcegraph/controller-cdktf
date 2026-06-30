@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
-		reflect.TypeOf((*Apigatewayv2DomainName)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainName](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2DomainName{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameConfig",
-		reflect.TypeOf((*Apigatewayv2DomainNameConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfiguration",
-		reflect.TypeOf((*Apigatewayv2DomainNameDomainNameConfiguration)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameDomainNameConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
-		reflect.TypeOf((*Apigatewayv2DomainNameDomainNameConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameDomainNameConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateArnInput", GoGetter: "CertificateArnInput"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthentication",
-		reflect.TypeOf((*Apigatewayv2DomainNameMutualTlsAuthentication)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameMutualTlsAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference",
-		reflect.TypeOf((*Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "truststoreVersion", GoGetter: "TruststoreVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "truststoreVersionInput", GoGetter: "TruststoreVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeouts",
-		reflect.TypeOf((*Apigatewayv2DomainNameTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
-		reflect.TypeOf((*Apigatewayv2DomainNameTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2DomainNameTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2DomainNameTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

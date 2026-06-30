@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetDev
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -282,4 +282,3 @@ func validateNewOpsworksInstanceEbsBlockDeviceOutputReferenceParameters(terrafor
 
 	return nil
 }
-

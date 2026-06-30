@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
-		reflect.TypeOf((*AccountAlternateContact)(nil)).Elem(),
+		reflect.TypeFor[AccountAlternateContact](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountAlternateContact{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactConfig",
-		reflect.TypeOf((*AccountAlternateContactConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountAlternateContactConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts",
-		reflect.TypeOf((*AccountAlternateContactTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AccountAlternateContactTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference",
-		reflect.TypeOf((*AccountAlternateContactTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccountAlternateContactTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountAlternateContactTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

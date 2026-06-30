@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManage
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFi
 
 	return nil
 }
-

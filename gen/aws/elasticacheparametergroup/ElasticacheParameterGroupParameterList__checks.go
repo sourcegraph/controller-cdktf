@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElasticacheParameterGroupParameterList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElasticacheParameterGroupParameterListParameters(terraformResour
 
 	return nil
 }
-

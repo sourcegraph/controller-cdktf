@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftScript.GameliftScript",
-		reflect.TypeOf((*GameliftScript)(nil)).Elem(),
+		reflect.TypeFor[GameliftScript](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipFile", GoGetter: "ZipFile"},
 			_jsii_.MemberProperty{JsiiProperty: "zipFileInput", GoGetter: "ZipFileInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftScript{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftScript.GameliftScriptConfig",
-		reflect.TypeOf((*GameliftScriptConfig)(nil)).Elem(),
+		reflect.TypeFor[GameliftScriptConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation",
-		reflect.TypeOf((*GameliftScriptStorageLocation)(nil)).Elem(),
+		reflect.TypeFor[GameliftScriptStorageLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocationOutputReference",
-		reflect.TypeOf((*GameliftScriptStorageLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftScriptStorageLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftScriptStorageLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

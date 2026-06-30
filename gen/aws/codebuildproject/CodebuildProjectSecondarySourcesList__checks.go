@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodebuildProjectSecondarySourcesListParameters(terraformResource
 
 	return nil
 }
-

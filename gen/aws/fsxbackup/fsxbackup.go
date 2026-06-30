@@ -16,15 +16,15 @@ type FsxBackup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type FsxBackup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -70,11 +70,11 @@ type FsxBackup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FsxBackupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	VolumeId() *string
 	SetVolumeId(val *string)
@@ -83,9 +83,9 @@ type FsxBackup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type FsxBackup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type FsxBackup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type FsxBackup interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVolumeId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxBackup
@@ -170,8 +170,8 @@ func (j *jsiiProxy_FsxBackup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxBackup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FsxBackup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxBackup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_FsxBackup) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxBackup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_FsxBackup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxBackup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_FsxBackup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxBackup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_FsxBackup) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxBackup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_FsxBackup) Timeouts() FsxBackupTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_FsxBackup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxBackup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_FsxBackup) VolumeIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_backup aws_fsx_backup} Resource.
 func NewFsxBackup(scope constructs.Construct, id *string, config *FsxBackupConfig) FsxBackup {
 	_init_.Initialize()
@@ -482,7 +481,7 @@ func NewFsxBackup(scope constructs.Construct, id *string, config *FsxBackupConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewFsxBackup_Override(f FsxBackup, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxBackup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_FsxBackup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxBackup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_FsxBackup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxBackup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_FsxBackup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetFileSystemId(val *string) {
+func (j *jsiiProxy_FsxBackup) SetFileSystemId(val *string) {
 	if err := j.validateSetFileSystemIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_FsxBackup)SetFileSystemId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxBackup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_FsxBackup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetId(val *string) {
+func (j *jsiiProxy_FsxBackup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_FsxBackup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxBackup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_FsxBackup)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxBackup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_FsxBackup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxBackup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_FsxBackup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxBackup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_FsxBackup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxBackup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_FsxBackup)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxBackup)SetVolumeId(val *string) {
+func (j *jsiiProxy_FsxBackup) SetVolumeId(val *string) {
 	if err := j.validateSetVolumeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func FsxBackup_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func FsxBackup_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxBackup_IsConstruct(x interface{}) *bool {
+func FsxBackup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxBackup_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func FsxBackup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func FsxBackup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxBackup_IsTerraformElement(x interface{}) *bool {
+func FsxBackup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxBackup_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func FsxBackup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func FsxBackup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxBackup_IsTerraformResource(x interface{}) *bool {
+func FsxBackup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxBackup_IsTerraformResourceParameters(x); err != nil {
@@ -708,7 +707,7 @@ func FsxBackup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,31 +732,31 @@ func (f *jsiiProxy_FsxBackup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxBackup) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxBackup) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxBackup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxBackup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (f *jsiiProxy_FsxBackup) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (f *jsiiProxy_FsxBackup) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (f *jsiiProxy_FsxBackup) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (f *jsiiProxy_FsxBackup) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (f *jsiiProxy_FsxBackup) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (f *jsiiProxy_FsxBackup) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (f *jsiiProxy_FsxBackup) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,15 +884,15 @@ func (f *jsiiProxy_FsxBackup) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxBackup) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxBackup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -912,7 +911,7 @@ func (f *jsiiProxy_FsxBackup) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -925,7 +924,7 @@ func (f *jsiiProxy_FsxBackup) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,18 +938,18 @@ func (f *jsiiProxy_FsxBackup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxBackup) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxBackup) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -961,7 +960,7 @@ func (f *jsiiProxy_FsxBackup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -972,7 +971,7 @@ func (f *jsiiProxy_FsxBackup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,7 +982,7 @@ func (f *jsiiProxy_FsxBackup) PutTimeouts(value *FsxBackupTimeouts) {
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1043,8 +1042,8 @@ func (f *jsiiProxy_FsxBackup) ResetVolumeId() {
 	)
 }
 
-func (f *jsiiProxy_FsxBackup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxBackup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1056,8 +1055,8 @@ func (f *jsiiProxy_FsxBackup) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxBackup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxBackup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1069,8 +1068,8 @@ func (f *jsiiProxy_FsxBackup) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (f *jsiiProxy_FsxBackup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxBackup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1082,8 +1081,8 @@ func (f *jsiiProxy_FsxBackup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxBackup) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxBackup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1108,8 +1107,8 @@ func (f *jsiiProxy_FsxBackup) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxBackup) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxBackup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1120,4 +1119,3 @@ func (f *jsiiProxy_FsxBackup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -16,22 +16,22 @@ type DmsEventSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EventCategories() *[]*string
 	SetEventCategories(val *[]*string)
 	EventCategoriesInput() *[]*string
@@ -60,11 +60,11 @@ type DmsEventSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnsTopicArn() *string
 	SetSnsTopicArn(val *string)
 	SnsTopicArnInput() *string
@@ -83,18 +83,18 @@ type DmsEventSubscription interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DmsEventSubscriptionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DmsEventSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DmsEventSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type DmsEventSubscription interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DmsEventSubscription
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DmsEventSubscription) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DmsEventSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsEventSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DmsEventSubscription) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DmsEventSubscription) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DmsEventSubscription) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DmsEventSubscription) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DmsEventSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_DmsEventSubscription) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_DmsEventSubscription) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsEventSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_DmsEventSubscription) Timeouts() DmsEventSubscriptionTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEventSubscription) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -529,7 +529,6 @@ func (j *jsiiProxy_DmsEventSubscription) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
 func NewDmsEventSubscription(scope constructs.Construct, id *string, config *DmsEventSubscriptionConfig) DmsEventSubscription {
@@ -542,7 +541,7 @@ func NewDmsEventSubscription(scope constructs.Construct, id *string, config *Dms
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewDmsEventSubscription_Override(d DmsEventSubscription, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_DmsEventSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_DmsEventSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DmsEventSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DmsEventSubscription) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetEventCategories(val *[]*string) {
+func (j *jsiiProxy_DmsEventSubscription) SetEventCategories(val *[]*string) {
 	if err := j.validateSetEventCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetEventCategories(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DmsEventSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetId(val *string) {
+func (j *jsiiProxy_DmsEventSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DmsEventSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetName(val *string) {
+func (j *jsiiProxy_DmsEventSubscription) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DmsEventSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DmsEventSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetSnsTopicArn(val *string) {
+func (j *jsiiProxy_DmsEventSubscription) SetSnsTopicArn(val *string) {
 	if err := j.validateSetSnsTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetSnsTopicArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetSourceIds(val *[]*string) {
+func (j *jsiiProxy_DmsEventSubscription) SetSourceIds(val *[]*string) {
 	if err := j.validateSetSourceIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetSourceIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetSourceType(val *string) {
+func (j *jsiiProxy_DmsEventSubscription) SetSourceType(val *string) {
 	if err := j.validateSetSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetSourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DmsEventSubscription) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_DmsEventSubscription)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DmsEventSubscription) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func DmsEventSubscription_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func DmsEventSubscription_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DmsEventSubscription_IsConstruct(x interface{}) *bool {
+func DmsEventSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEventSubscription_IsConstructParameters(x); err != nil {
@@ -774,7 +773,7 @@ func DmsEventSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func DmsEventSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsEventSubscription_IsTerraformElement(x interface{}) *bool {
+func DmsEventSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEventSubscription_IsTerraformElementParameters(x); err != nil {
@@ -793,7 +792,7 @@ func DmsEventSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func DmsEventSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsEventSubscription_IsTerraformResource(x interface{}) *bool {
+func DmsEventSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEventSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -812,7 +811,7 @@ func DmsEventSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,31 +836,31 @@ func (d *jsiiProxy_DmsEventSubscription) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DmsEventSubscription) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DmsEventSubscription) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DmsEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (d *jsiiProxy_DmsEventSubscription) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,15 +988,15 @@ func (d *jsiiProxy_DmsEventSubscription) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DmsEventSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEventSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DmsEventSubscription) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (d *jsiiProxy_DmsEventSubscription) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,18 +1042,18 @@ func (d *jsiiProxy_DmsEventSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DmsEventSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DmsEventSubscription) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (d *jsiiProxy_DmsEventSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (d *jsiiProxy_DmsEventSubscription) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (d *jsiiProxy_DmsEventSubscription) PutTimeouts(value *DmsEventSubscription
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1155,8 +1154,8 @@ func (d *jsiiProxy_DmsEventSubscription) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DmsEventSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsEventSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1168,8 +1167,8 @@ func (d *jsiiProxy_DmsEventSubscription) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DmsEventSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsEventSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1181,8 +1180,8 @@ func (d *jsiiProxy_DmsEventSubscription) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DmsEventSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEventSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1194,8 +1193,8 @@ func (d *jsiiProxy_DmsEventSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEventSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEventSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DmsEventSubscription) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEventSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEventSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1232,4 +1231,3 @@ func (d *jsiiProxy_DmsEventSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

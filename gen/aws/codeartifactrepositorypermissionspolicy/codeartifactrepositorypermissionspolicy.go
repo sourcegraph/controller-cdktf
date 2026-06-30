@@ -15,15 +15,15 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
@@ -74,16 +74,16 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type CodeartifactRepositoryPermissionsPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyRevision()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodeartifactRepositoryPermissionsPolicy
@@ -154,8 +154,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy} Resource.
 func NewCodeartifactRepositoryPermissionsPolicy(scope constructs.Construct, id *string, config *CodeartifactRepositoryPermissionsPolicyConfig) CodeartifactRepositoryPermissionsPolicy {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewCodeartifactRepositoryPermissionsPolicy(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewCodeartifactRepositoryPermissionsPolicy_Override(c CodeartifactRepositor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDomain(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDomain(val *string
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDomainOwner(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetDomainOwner(val *string) {
 	if err := j.validateSetDomainOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetDomainOwner(val *s
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetId(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetPolicyDocument(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetPolicyDocument(val *string) {
 	if err := j.validateSetPolicyDocumentParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetPolicyDocument(val
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetPolicyRevision(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetPolicyRevision(val *string) {
 	if err := j.validateSetPolicyRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetPolicyRevision(val
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy)SetRepository(val *string) {
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func CodeartifactRepositoryPermissionsPolicy_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func CodeartifactRepositoryPermissionsPolicy_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodeartifactRepositoryPermissionsPolicy_IsConstruct(x interface{}) *bool {
+func CodeartifactRepositoryPermissionsPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodeartifactRepositoryPermissionsPolicy_IsConstructParameters(x); err != nil {
@@ -645,7 +644,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x interface{}) *bool {
+func CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodeartifactRepositoryPermissionsPolicy_IsTerraformElementParameters(x); err != nil {
@@ -664,7 +663,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func CodeartifactRepositoryPermissionsPolicy_IsTerraformResource(x interface{}) *bool {
+func CodeartifactRepositoryPermissionsPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodeartifactRepositoryPermissionsPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -683,7 +682,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,31 +707,31 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetBooleanAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetNumberAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetNumberListAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetNumberMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetStringAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,15 +859,15 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) GetStringMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -887,7 +886,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) InterpolationForAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,18 +913,18 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -947,7 +946,7 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,8 +982,8 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ResetPolicyRevision(
 	)
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -996,8 +995,8 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeAttributes
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1009,8 +1008,8 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) SynthesizeHclAttribu
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1022,8 +1021,8 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToHclTerraform() int
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1048,8 +1047,8 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1060,4 +1059,3 @@ func (c *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) ToTerraform() interf
 
 	return returns
 }
-

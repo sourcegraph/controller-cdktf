@@ -131,7 +131,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOrOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -255,4 +255,3 @@ func validateNewCeCostCategoryRuleRuleOrOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

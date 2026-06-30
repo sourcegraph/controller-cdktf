@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewS3BucketNotificationLambdaFunctionOutputReferenceParameters(terr
 
 	return nil
 }
-

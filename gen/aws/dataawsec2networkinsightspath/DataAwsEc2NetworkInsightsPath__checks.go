@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsEc2NetworkInsightsPath_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataAwsEc2NetworkInsightsPath_IsConstructParameters(x interface{}) error {
+func validateDataAwsEc2NetworkInsightsPath_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsEc2NetworkInsightsPath_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataAwsEc2NetworkInsightsPath_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsEc2NetworkInsightsPath_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsEc2NetworkInsightsPath_IsTerraformDataSourceParameters(x int
 	return nil
 }
 
-func validateDataAwsEc2NetworkInsightsPath_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsEc2NetworkInsightsPath_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsEc2NetworkInsightsPath_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -286,4 +286,3 @@ func validateNewDataAwsEc2NetworkInsightsPathParameters(scope constructs.Constru
 
 	return nil
 }
-

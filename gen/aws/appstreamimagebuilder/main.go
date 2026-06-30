@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
-		reflect.TypeOf((*AppstreamImageBuilder)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilder](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessEndpoint", GoGetter: "AccessEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "accessEndpointInput", GoGetter: "AccessEndpointInput"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamImageBuilder{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,11 +110,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpoint",
-		reflect.TypeOf((*AppstreamImageBuilderAccessEndpoint)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderAccessEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
-		reflect.TypeOf((*AppstreamImageBuilderAccessEndpointList)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderAccessEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamImageBuilderAccessEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -136,7 +136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
-		reflect.TypeOf((*AppstreamImageBuilderAccessEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderAccessEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpceId", GoGetter: "VpceId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpceIdInput", GoGetter: "VpceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamImageBuilderAccessEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,15 +173,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderConfig",
-		reflect.TypeOf((*AppstreamImageBuilderConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfo",
-		reflect.TypeOf((*AppstreamImageBuilderDomainJoinInfo)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderDomainJoinInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
-		reflect.TypeOf((*AppstreamImageBuilderDomainJoinInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderDomainJoinInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,11 +219,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfig",
-		reflect.TypeOf((*AppstreamImageBuilderVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfigOutputReference",
-		reflect.TypeOf((*AppstreamImageBuilderVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamImageBuilderVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOrTagsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOrTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOrTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCeCostCategoryRuleRuleOrTagsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

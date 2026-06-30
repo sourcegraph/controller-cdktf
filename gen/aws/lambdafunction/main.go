@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
-		reflect.TypeOf((*LambdaFunction)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig",
-		reflect.TypeOf((*LambdaFunctionConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfig",
-		reflect.TypeOf((*LambdaFunctionDeadLetterConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionDeadLetterConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference",
-		reflect.TypeOf((*LambdaFunctionDeadLetterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionDeadLetterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionDeadLetterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironment",
-		reflect.TypeOf((*LambdaFunctionEnvironment)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionEnvironment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
-		reflect.TypeOf((*LambdaFunctionEnvironmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionEnvironmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
 			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionEnvironmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorage",
-		reflect.TypeOf((*LambdaFunctionEphemeralStorage)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionEphemeralStorage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
-		reflect.TypeOf((*LambdaFunctionEphemeralStorageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionEphemeralStorageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionEphemeralStorageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig",
-		reflect.TypeOf((*LambdaFunctionFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionFileSystemConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
-		reflect.TypeOf((*LambdaFunctionFileSystemConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionFileSystemConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionFileSystemConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -339,11 +339,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfig",
-		reflect.TypeOf((*LambdaFunctionImageConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionImageConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
-		reflect.TypeOf((*LambdaFunctionImageConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionImageConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -376,7 +376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectoryInput", GoGetter: "WorkingDirectoryInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionImageConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -384,11 +384,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart",
-		reflect.TypeOf((*LambdaFunctionSnapStart)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionSnapStart](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
-		reflect.TypeOf((*LambdaFunctionSnapStartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionSnapStartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyOn", GoGetter: "ApplyOn"},
 			_jsii_.MemberProperty{JsiiProperty: "applyOnInput", GoGetter: "ApplyOnInput"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionSnapStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -423,11 +423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts",
-		reflect.TypeOf((*LambdaFunctionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference",
-		reflect.TypeOf((*LambdaFunctionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -457,7 +457,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -465,11 +465,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfig",
-		reflect.TypeOf((*LambdaFunctionTracingConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionTracingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference",
-		reflect.TypeOf((*LambdaFunctionTracingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionTracingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionTracingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -503,11 +503,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfig",
-		reflect.TypeOf((*LambdaFunctionVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference",
-		reflect.TypeOf((*LambdaFunctionVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -536,7 +536,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

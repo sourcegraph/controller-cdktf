@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateAddMoveTarg
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateMoveFromIdP
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRoute53ResolverQueryLogConfigAssociation_GenerateConfigForImportPar
 	return nil
 }
 
-func validateRoute53ResolverQueryLogConfigAssociation_IsConstructParameters(x interface{}) error {
+func validateRoute53ResolverQueryLogConfigAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRoute53ResolverQueryLogConfigAssociation_IsConstructParameters(x in
 	return nil
 }
 
-func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformElementParamete
 	return nil
 }
 
-func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRoute53ResolverQueryLogConfigAssociationParameters(scope constru
 
 	return nil
 }
-

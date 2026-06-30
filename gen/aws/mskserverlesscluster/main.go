@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
-		reflect.TypeOf((*MskServerlessCluster)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthentication",
-		reflect.TypeOf((*MskServerlessClusterClientAuthentication)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationOutputReference",
-		reflect.TypeOf((*MskServerlessClusterClientAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,15 +122,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl",
-		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSasl)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthenticationSasl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam",
-		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslIam)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthenticationSaslIam](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIamOutputReference",
-		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslIamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthenticationSaslIamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
-		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterClientAuthenticationSaslOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,15 +199,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterConfig",
-		reflect.TypeOf((*MskServerlessClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeouts",
-		reflect.TypeOf((*MskServerlessClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
-		reflect.TypeOf((*MskServerlessClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,11 +245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfig",
-		reflect.TypeOf((*MskServerlessClusterVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
-		reflect.TypeOf((*MskServerlessClusterVpcConfigList)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterVpcConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterVpcConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -271,7 +271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
-		reflect.TypeOf((*MskServerlessClusterVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskServerlessClusterVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskServerlessClusterVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

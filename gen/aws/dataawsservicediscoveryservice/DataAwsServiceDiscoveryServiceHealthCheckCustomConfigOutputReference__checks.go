@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputRefer
 
 	return nil
 }
-

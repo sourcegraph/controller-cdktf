@@ -34,7 +34,7 @@ func (a *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAmiFromInstanceEbsBlockDeviceListParameters(terraformResource cd
 
 	return nil
 }
-

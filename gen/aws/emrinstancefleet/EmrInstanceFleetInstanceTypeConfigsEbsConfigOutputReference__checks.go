@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReferenceParam
 
 	return nil
 }
-

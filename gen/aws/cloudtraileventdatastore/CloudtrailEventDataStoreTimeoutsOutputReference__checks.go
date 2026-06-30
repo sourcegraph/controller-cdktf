@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudtrailEventDataStoreTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

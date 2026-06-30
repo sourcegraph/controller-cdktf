@@ -15,24 +15,24 @@ type Ec2ClientVpnAuthorizationRule interface {
 	AccessGroupId() *string
 	SetAccessGroupId(val *string)
 	AccessGroupIdInput() *string
-	AuthorizeAllGroups() interface{}
-	SetAuthorizeAllGroups(val interface{})
-	AuthorizeAllGroupsInput() interface{}
+	AuthorizeAllGroups() any
+	SetAuthorizeAllGroups(val any)
+	AuthorizeAllGroupsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientVpnEndpointId() *string
 	SetClientVpnEndpointId(val *string)
 	ClientVpnEndpointIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,29 +62,29 @@ type Ec2ClientVpnAuthorizationRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetNetworkCidr() *string
 	SetTargetNetworkCidr(val *string)
 	TargetNetworkCidrInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type Ec2ClientVpnAuthorizationRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type Ec2ClientVpnAuthorizationRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type Ec2ClientVpnAuthorizationRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ec2ClientVpnAuthorizationRule
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AccessGroupIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AuthorizeAllGroups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AuthorizeAllGroups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizeAllGroups",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AuthorizeAllGroups() interface
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AuthorizeAllGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) AuthorizeAllGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizeAllGroupsInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) ClientVpnEndpointIdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Timeouts() Ec2ClientVpnAuthori
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
 func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, config *Ec2ClientVpnAuthorizationRuleConfig) Ec2ClientVpnAuthorizationRule {
@@ -460,7 +459,7 @@ func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewEc2ClientVpnAuthorizationRule_Override(e Ec2ClientVpnAuthorizationRule, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetAccessGroupId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetAccessGroupId(val *string) {
 	if err := j.validateSetAccessGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetAccessGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetAuthorizeAllGroups(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetAuthorizeAllGroups(val any) {
 	if err := j.validateSetAuthorizeAllGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetAuthorizeAllGroups(val inter
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetClientVpnEndpointId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetClientVpnEndpointId(val *string) {
 	if err := j.validateSetClientVpnEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetClientVpnEndpointId(val *str
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetCount(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetDescription(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -560,7 +559,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetTargetNetworkCidr(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) SetTargetNetworkCidr(val *string) {
 	if err := j.validateSetTargetNetworkCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func Ec2ClientVpnAuthorizationRule_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func Ec2ClientVpnAuthorizationRule_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ec2ClientVpnAuthorizationRule_IsConstruct(x interface{}) *bool {
+func Ec2ClientVpnAuthorizationRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnAuthorizationRule_IsConstructParameters(x); err != nil {
@@ -659,7 +658,7 @@ func Ec2ClientVpnAuthorizationRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func Ec2ClientVpnAuthorizationRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2ClientVpnAuthorizationRule_IsTerraformElement(x interface{}) *bool {
+func Ec2ClientVpnAuthorizationRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnAuthorizationRule_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func Ec2ClientVpnAuthorizationRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func Ec2ClientVpnAuthorizationRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Ec2ClientVpnAuthorizationRule_IsTerraformResource(x interface{}) *bool {
+func Ec2ClientVpnAuthorizationRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEc2ClientVpnAuthorizationRule_IsTerraformResourceParameters(x); err != nil {
@@ -697,7 +696,7 @@ func Ec2ClientVpnAuthorizationRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,31 +721,31 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,15 +873,15 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -901,7 +900,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -914,7 +913,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,18 +927,18 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -950,7 +949,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -961,7 +960,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,7 +971,7 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) PutTimeouts(value *Ec2ClientVp
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1037,8 +1036,8 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1050,8 +1049,8 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1063,8 +1062,8 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1089,8 +1088,8 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1101,4 +1100,3 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ToTerraform() interface{} {
 
 	return returns
 }
-

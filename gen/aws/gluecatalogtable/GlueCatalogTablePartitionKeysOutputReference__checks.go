@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetComm
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGlueCatalogTablePartitionKeysOutputReferenceParameters(terraform
 
 	return nil
 }
-

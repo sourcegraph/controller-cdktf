@@ -19,15 +19,15 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotCreationTimestamp() *string
 	SnapshotName() *string
 	SetSnapshotName(val *string)
@@ -66,18 +66,18 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type Kinesisanalyticsv2ApplicationSnapshot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Kinesisanalyticsv2ApplicationSnapshot
@@ -178,8 +178,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) Timeouts() Kinesisanal
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TimeoutsInput() interf
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot} Resource.
 func NewKinesisanalyticsv2ApplicationSnapshot(scope constructs.Construct, id *string, config *Kinesisanalyticsv2ApplicationSnapshotConfig) Kinesisanalyticsv2ApplicationSnapshot {
@@ -410,7 +409,7 @@ func NewKinesisanalyticsv2ApplicationSnapshot(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewKinesisanalyticsv2ApplicationSnapshot_Override(k Kinesisanalyticsv2Appli
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetApplicationName(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetApplicationName(val *string) {
 	if err := j.validateSetApplicationNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetApplicationName(val 
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetId(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot)SetSnapshotName(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SetSnapshotName(val *string) {
 	if err := j.validateSetSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Kinesisanalyticsv2ApplicationSnapshot_IsConstruct(x interface{}) *bool {
+func Kinesisanalyticsv2ApplicationSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisanalyticsv2ApplicationSnapshot_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformElement(x interface{}) *bool {
+func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformResource(x interface{}) *bool {
+func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func Kinesisanalyticsv2ApplicationSnapshot_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetListAttribute(terra
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetNumberListAttribute
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetStringAttribute(ter
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) GetStringMapAttribute(
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -818,7 +817,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) InterpolationForAttrib
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -889,7 +888,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) PutTimeouts(value *Kin
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -917,8 +916,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -930,8 +929,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeAttributes()
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -943,8 +942,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) SynthesizeHclAttribute
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -956,8 +955,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToHclTerraform() inter
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -982,8 +981,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -994,4 +993,3 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) ToTerraform() interfac
 
 	return returns
 }
-

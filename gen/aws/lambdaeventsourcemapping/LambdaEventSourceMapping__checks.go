@@ -19,7 +19,7 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMapping) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LambdaEventSourceMapping) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedKafkaEventSou
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSourceAccessConfigurationParameters(value interface{}) error {
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSourceAccessConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateLambdaEventSourceMapping_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateLambdaEventSourceMapping_IsConstructParameters(x interface{}) error {
+func validateLambdaEventSourceMapping_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateLambdaEventSourceMapping_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateLambdaEventSourceMapping_IsTerraformElementParameters(x interface{}) error {
+func validateLambdaEventSourceMapping_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateLambdaEventSourceMapping_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateLambdaEventSourceMapping_IsTerraformResourceParameters(x interface{}) error {
+func validateLambdaEventSourceMapping_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetBatchSizeParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetBisectBatchOnFunctionErrorParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetBisectBatchOnFunctionErrorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetBisectBatchOnFunctionErr
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -402,7 +402,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -551,7 +551,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetParallelizationFactorPar
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -655,4 +655,3 @@ func validateNewLambdaEventSourceMappingParameters(scope constructs.Construct, i
 
 	return nil
 }
-

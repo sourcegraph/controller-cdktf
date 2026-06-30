@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersUserDefinedValuesListParameters(terrafo
 
 	return nil
 }
-

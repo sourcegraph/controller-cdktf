@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskDefinitionProxyConfigurationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionProxyConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionProxyConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEcsTaskDefinitionProxyConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

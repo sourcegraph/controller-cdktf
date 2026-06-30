@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReferen
 
 	return nil
 }
-

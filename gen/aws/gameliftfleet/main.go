@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
-		reflect.TypeOf((*GameliftFleet)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -120,11 +120,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfiguration",
-		reflect.TypeOf((*GameliftFleetCertificateConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetCertificateConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference",
-		reflect.TypeOf((*GameliftFleetCertificateConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetCertificateConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateType", GoGetter: "CertificateType"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateTypeInput", GoGetter: "CertificateTypeInput"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetCertificateConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,15 +159,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetConfig",
-		reflect.TypeOf((*GameliftFleetConfig)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission",
-		reflect.TypeOf((*GameliftFleetEc2InboundPermission)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetEc2InboundPermission](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList",
-		reflect.TypeOf((*GameliftFleetEc2InboundPermissionList)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetEc2InboundPermissionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetEc2InboundPermissionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
-		reflect.TypeOf((*GameliftFleetEc2InboundPermissionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetEc2InboundPermissionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toPortInput", GoGetter: "ToPortInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,11 +229,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy",
-		reflect.TypeOf((*GameliftFleetResourceCreationLimitPolicy)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetResourceCreationLimitPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference",
-		reflect.TypeOf((*GameliftFleetResourceCreationLimitPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetResourceCreationLimitPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetResourceCreationLimitPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,11 +271,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration",
-		reflect.TypeOf((*GameliftFleetRuntimeConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetRuntimeConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference",
-		reflect.TypeOf((*GameliftFleetRuntimeConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetRuntimeConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -317,11 +317,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess",
-		reflect.TypeOf((*GameliftFleetRuntimeConfigurationServerProcess)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetRuntimeConfigurationServerProcess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList",
-		reflect.TypeOf((*GameliftFleetRuntimeConfigurationServerProcessList)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetRuntimeConfigurationServerProcessList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -343,7 +343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference",
-		reflect.TypeOf((*GameliftFleetRuntimeConfigurationServerProcessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetRuntimeConfigurationServerProcessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,11 +382,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeouts",
-		reflect.TypeOf((*GameliftFleetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeoutsOutputReference",
-		reflect.TypeOf((*GameliftFleetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftFleetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -416,7 +416,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftFleetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

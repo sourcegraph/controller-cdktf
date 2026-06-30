@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateAddMoveTargetP
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveFromIdPara
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSsoadminPermissionsBoundaryAttachment_GenerateConfigForImportParame
 	return nil
 }
 
-func validateSsoadminPermissionsBoundaryAttachment_IsConstructParameters(x interface{}) error {
+func validateSsoadminPermissionsBoundaryAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSsoadminPermissionsBoundaryAttachment_IsConstructParameters(x inter
 	return nil
 }
 
-func validateSsoadminPermissionsBoundaryAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateSsoadminPermissionsBoundaryAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSsoadminPermissionsBoundaryAttachment_IsTerraformElementParameters(
 	return nil
 }
 
-func validateSsoadminPermissionsBoundaryAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateSsoadminPermissionsBoundaryAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSsoadminPermissionsBoundaryAttachment_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetPermissionS
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewSsoadminPermissionsBoundaryAttachmentParameters(scope constructs
 
 	return nil
 }
-

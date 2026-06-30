@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
-		reflect.TypeOf((*IvsPlaybackKeyPair)(nil)).Elem(),
+		reflect.TypeFor[IvsPlaybackKeyPair](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsPlaybackKeyPair{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig",
-		reflect.TypeOf((*IvsPlaybackKeyPairConfig)(nil)).Elem(),
+		reflect.TypeFor[IvsPlaybackKeyPairConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts",
-		reflect.TypeOf((*IvsPlaybackKeyPairTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IvsPlaybackKeyPairTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
-		reflect.TypeOf((*IvsPlaybackKeyPairTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsPlaybackKeyPairTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

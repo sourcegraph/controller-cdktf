@@ -13,9 +13,9 @@ type MemorydbClusterShardsNodesEndpointOutputReference interface {
 	Address() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type MemorydbClusterShardsNodesEndpointOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type MemorydbClusterShardsNodesEndpointOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) Address() 
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) TerraformR
 	return returns
 }
 
-
 func NewMemorydbClusterShardsNodesEndpointOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemorydbClusterShardsNodesEndpointOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewMemorydbClusterShardsNodesEndpointOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewMemorydbClusterShardsNodesEndpointOutputReference_Override(m MemorydbClu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetInternalValue(val *MemorydbClusterShardsNodesEndpoint) {
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) SetInternalValue(val *MemorydbClusterShardsNodesEndpoint) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) ComputeFqn
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetBoolean
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetBoolean
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetListAtt
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetNumberA
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetNumberL
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetNumberM
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetStringA
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) GetStringM
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) Interpolat
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference) ToString()
 
 	return returns
 }
-

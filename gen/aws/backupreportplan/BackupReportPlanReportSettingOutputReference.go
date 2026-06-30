@@ -12,9 +12,9 @@ type BackupReportPlanReportSettingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type BackupReportPlanReportSettingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type BackupReportPlanReportSettingOutputReference interface {
 	ResetNumberOfFrameworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_BackupReportPlanReportSettingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupReportPlanReportSettingOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewBackupReportPlanReportSettingOutputReference_Override(b BackupReportPlan
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetFrameworkArns(val *[]*string) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetFrameworkArns(val *[]*string) {
 	if err := j.validateSetFrameworkArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetFrameworkArns
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetInternalValue(val *BackupReportPlanReportSetting) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetInternalValue(val *BackupReportPlanReportSetting) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetNumberOfFrameworks(val *float64) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetNumberOfFrameworks(val *float64) {
 	if err := j.validateSetNumberOfFrameworksParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetNumberOfFrame
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetReportTemplate(val *string) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetReportTemplate(val *string) {
 	if err := j.validateSetReportTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetReportTemplat
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetNumberOfFr
 	)
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ToString() *str
 
 	return returns
 }
-

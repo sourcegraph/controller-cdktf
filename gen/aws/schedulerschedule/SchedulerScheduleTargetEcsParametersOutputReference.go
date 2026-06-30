@@ -11,12 +11,12 @@ import (
 type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	cdktf.ComplexObject
 	CapacityProviderStrategy() SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList
-	CapacityProviderStrategyInput() interface{}
+	CapacityProviderStrategyInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,12 +27,12 @@ type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableEcsManagedTags() interface{}
-	SetEnableEcsManagedTags(val interface{})
-	EnableEcsManagedTagsInput() interface{}
-	EnableExecuteCommand() interface{}
-	SetEnableExecuteCommand(val interface{})
-	EnableExecuteCommandInput() interface{}
+	EnableEcsManagedTags() any
+	SetEnableEcsManagedTags(val any)
+	EnableEcsManagedTagsInput() any
+	EnableExecuteCommand() any
+	SetEnableExecuteCommand(val any)
+	EnableExecuteCommandInput() any
 	// Experimental.
 	Fqn() *string
 	Group() *string
@@ -46,9 +46,9 @@ type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	NetworkConfiguration() SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference
 	NetworkConfigurationInput() *SchedulerScheduleTargetEcsParametersNetworkConfiguration
 	PlacementConstraints() SchedulerScheduleTargetEcsParametersPlacementConstraintsList
-	PlacementConstraintsInput() interface{}
+	PlacementConstraintsInput() any
 	PlacementStrategy() SchedulerScheduleTargetEcsParametersPlacementStrategyList
-	PlacementStrategyInput() interface{}
+	PlacementStrategyInput() any
 	PlatformVersion() *string
 	SetPlatformVersion(val *string)
 	PlatformVersionInput() *string
@@ -78,7 +78,7 @@ type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,10 +99,10 @@ type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCapacityProviderStrategy(value interface{})
+	PutCapacityProviderStrategy(value any)
 	PutNetworkConfiguration(value *SchedulerScheduleTargetEcsParametersNetworkConfiguration)
-	PutPlacementConstraints(value interface{})
-	PutPlacementStrategy(value interface{})
+	PutPlacementConstraints(value any)
+	PutPlacementStrategy(value any)
 	ResetCapacityProviderStrategy()
 	ResetEnableEcsManagedTags()
 	ResetEnableExecuteCommand()
@@ -118,7 +118,7 @@ type SchedulerScheduleTargetEcsParametersOutputReference interface {
 	ResetTaskCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Capacity
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) CapacityProviderStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) CapacityProviderStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"capacityProviderStrategyInput",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Capacity
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEcsManagedTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEcsManagedTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTags",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEc
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEcsManagedTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEcsManagedTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTagsInput",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEc
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableExecuteCommand() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableExecuteCommand() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommand",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableEx
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableExecuteCommandInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) EnableExecuteCommandInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommandInput",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Placemen
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PlacementConstraintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PlacementConstraintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementConstraintsInput",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Placemen
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PlacementStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PlacementStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementStrategyInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Terrafor
 	return returns
 }
 
-
 func NewSchedulerScheduleTargetEcsParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEcsParametersOutputReference {
 	_init_.Initialize()
 
@@ -492,7 +491,7 @@ func NewSchedulerScheduleTargetEcsParametersOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewSchedulerScheduleTargetEcsParametersOutputReference_Override(s Scheduler
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetEnableEcsManagedTags(val interface{}) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetEnableEcsManagedTags(val any) {
 	if err := j.validateSetEnableEcsManagedTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetEnableExecuteCommand(val interface{}) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetEnableExecuteCommand(val any) {
 	if err := j.validateSetEnableExecuteCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetGroup(
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetInternalValue(val *SchedulerScheduleTargetEcsParameters) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetInternalValue(val *SchedulerScheduleTargetEcsParameters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetLaunchType(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetLaunchType(val *string) {
 	if err := j.validateSetLaunchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetLaunch
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetPlatformVersion(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetPlatformVersion(val *string) {
 	if err := j.validateSetPlatformVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetPlatfo
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetPropagateTags(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetPropagateTags(val *string) {
 	if err := j.validateSetPropagateTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetPropag
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetReferenceId(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetReferenceId(val *string) {
 	if err := j.validateSetReferenceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetRefere
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTags(v
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTaskCount(val *float64) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetTaskCount(val *float64) {
 	if err := j.validateSetTaskCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTaskCo
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTaskDefinitionArn(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetTaskDefinitionArn(val *string) {
 	if err := j.validateSetTaskDefinitionArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTaskDe
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,16 +686,16 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,21 +852,21 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutCapacityProviderStrategy(value interface{}) {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutCapacityProviderStrategy(value any) {
 	if err := s.validatePutCapacityProviderStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCapacityProviderStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -878,29 +877,29 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutNetwo
 	_jsii_.InvokeVoid(
 		s,
 		"putNetworkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutPlacementConstraints(value interface{}) {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutPlacementConstraints(value any) {
 	if err := s.validatePutPlacementConstraintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPlacementConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutPlacementStrategy(value interface{}) {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) PutPlacementStrategy(value any) {
 	if err := s.validatePutPlacementStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPlacementStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1008,16 +1007,16 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) ResetTas
 	)
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1036,4 +1035,3 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) ToString
 
 	return returns
 }
-

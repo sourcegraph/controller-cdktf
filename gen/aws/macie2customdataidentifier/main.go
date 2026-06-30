@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
-		reflect.TypeOf((*Macie2CustomDataIdentifier)(nil)).Elem(),
+		reflect.TypeFor[Macie2CustomDataIdentifier](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2CustomDataIdentifier{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,6 +93,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifierConfig",
-		reflect.TypeOf((*Macie2CustomDataIdentifierConfig)(nil)).Elem(),
+		reflect.TypeFor[Macie2CustomDataIdentifierConfig](),
 	)
 }

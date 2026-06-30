@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsInstancePrivateDnsNameOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInstancePrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsInstancePrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsInstancePrivateDnsNameOptionsOutputReferenceParameters(te
 
 	return nil
 }
-

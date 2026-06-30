@@ -106,7 +106,7 @@ func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetAuthSchemeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetIamAuthParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbProxyAuthOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewDbProxyAuthOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

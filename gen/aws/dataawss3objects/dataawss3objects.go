@@ -19,11 +19,11 @@ type DataAwsS3Objects interface {
 	CdktfStack() cdktf.TerraformStack
 	CommonPrefixes() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Delimiter() *string
 	SetDelimiter(val *string)
 	DelimiterInput() *string
@@ -34,9 +34,9 @@ type DataAwsS3Objects interface {
 	EncodingType() *string
 	SetEncodingType(val *string)
 	EncodingTypeInput() *string
-	FetchOwner() interface{}
-	SetFetchOwner(val interface{})
-	FetchOwnerInput() interface{}
+	FetchOwner() any
+	SetFetchOwner(val any)
+	FetchOwnerInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,20 +67,20 @@ type DataAwsS3Objects interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StartAfter() *string
 	SetStartAfter(val *string)
 	StartAfterInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,18 +112,18 @@ type DataAwsS3Objects interface {
 	ResetOverrideLogicalId()
 	ResetPrefix()
 	ResetStartAfter()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsS3Objects
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataAwsS3Objects) CommonPrefixes() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsS3Objects) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataAwsS3Objects) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3Objects) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataAwsS3Objects) EncodingTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) FetchOwner() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3Objects) FetchOwner() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchOwner",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataAwsS3Objects) FetchOwner() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) FetchOwnerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3Objects) FetchOwnerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchOwnerInput",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_DataAwsS3Objects) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsS3Objects) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DataAwsS3Objects) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3Objects) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsS3Objects) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -461,7 +461,6 @@ func (j *jsiiProxy_DataAwsS3Objects) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects aws_s3_objects} Data Source.
 func NewDataAwsS3Objects(scope constructs.Construct, id *string, config *DataAwsS3ObjectsConfig) DataAwsS3Objects {
 	_init_.Initialize()
@@ -473,7 +472,7 @@ func NewDataAwsS3Objects(scope constructs.Construct, id *string, config *DataAws
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -486,12 +485,12 @@ func NewDataAwsS3Objects_Override(d DataAwsS3Objects, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetBucket(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsS3Objects) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetDelimiter(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetDelimiter(val *string) {
 	if err := j.validateSetDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetDelimiter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetEncodingType(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetEncodingType(val *string) {
 	if err := j.validateSetEncodingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetEncodingType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetFetchOwner(val interface{}) {
+func (j *jsiiProxy_DataAwsS3Objects) SetFetchOwner(val any) {
 	if err := j.validateSetFetchOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetFetchOwner(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsS3Objects) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetId(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsS3Objects) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetMaxKeys(val *float64) {
+func (j *jsiiProxy_DataAwsS3Objects) SetMaxKeys(val *float64) {
 	if err := j.validateSetMaxKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetMaxKeys(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetPrefix(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsS3Objects) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DataAwsS3Objects)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3Objects)SetStartAfter(val *string) {
+func (j *jsiiProxy_DataAwsS3Objects) SetStartAfter(val *string) {
 	if err := j.validateSetStartAfterParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func DataAwsS3Objects_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func DataAwsS3Objects_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsS3Objects_IsConstruct(x interface{}) *bool {
+func DataAwsS3Objects_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3Objects_IsConstructParameters(x); err != nil {
@@ -672,7 +671,7 @@ func DataAwsS3Objects_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func DataAwsS3Objects_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsS3Objects_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsS3Objects_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3Objects_IsTerraformDataSourceParameters(x); err != nil {
@@ -691,7 +690,7 @@ func DataAwsS3Objects_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func DataAwsS3Objects_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsS3Objects_IsTerraformElement(x interface{}) *bool {
+func DataAwsS3Objects_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsS3Objects_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func DataAwsS3Objects_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -728,27 +727,27 @@ func DataAwsS3Objects_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsS3Objects) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsS3Objects) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (d *jsiiProxy_DataAwsS3Objects) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (d *jsiiProxy_DataAwsS3Objects) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (d *jsiiProxy_DataAwsS3Objects) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -974,8 +973,8 @@ func (d *jsiiProxy_DataAwsS3Objects) ResetStartAfter() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsS3Objects) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -987,8 +986,8 @@ func (d *jsiiProxy_DataAwsS3Objects) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsS3Objects) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1000,8 +999,8 @@ func (d *jsiiProxy_DataAwsS3Objects) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3Objects) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1013,8 +1012,8 @@ func (d *jsiiProxy_DataAwsS3Objects) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3Objects) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1039,8 +1038,8 @@ func (d *jsiiProxy_DataAwsS3Objects) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsS3Objects) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsS3Objects) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1051,4 +1050,3 @@ func (d *jsiiProxy_DataAwsS3Objects) ToTerraform() interface{} {
 
 	return returns
 }
-

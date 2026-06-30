@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutput
 	return nil
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputRef
 
 	return nil
 }
-

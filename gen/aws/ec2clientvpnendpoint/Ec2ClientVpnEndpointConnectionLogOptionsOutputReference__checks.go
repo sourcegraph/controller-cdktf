@@ -114,7 +114,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewEc2ClientVpnEndpointConnectionLogOptionsOutputReferenceParameter
 
 	return nil
 }
-

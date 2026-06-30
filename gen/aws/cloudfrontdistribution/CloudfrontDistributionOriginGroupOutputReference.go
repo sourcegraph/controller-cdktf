@@ -12,9 +12,9 @@ type CloudfrontDistributionOriginGroupOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,10 +29,10 @@ type CloudfrontDistributionOriginGroupOutputReference interface {
 	FailoverCriteriaInput() *CloudfrontDistributionOriginGroupFailoverCriteria
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Member() CloudfrontDistributionOriginGroupMemberList
-	MemberInput() interface{}
+	MemberInput() any
 	OriginId() *string
 	SetOriginId(val *string)
 	OriginIdInput() *string
@@ -47,7 +47,7 @@ type CloudfrontDistributionOriginGroupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,10 +69,10 @@ type CloudfrontDistributionOriginGroupOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFailoverCriteria(value *CloudfrontDistributionOriginGroupFailoverCriteria)
-	PutMember(value interface{})
+	PutMember(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_CloudfrontDistributionOriginGroupOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) Member() Cl
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) MemberInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) MemberInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"memberInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewCloudfrontDistributionOriginGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginGroupOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewCloudfrontDistributionOriginGroupOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewCloudfrontDistributionOriginGroupOutputReference_Override(c CloudfrontDi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetOriginId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetOriginId(val *string) {
 	if err := j.validateSetOriginIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetOriginId(
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,16 +321,16 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -502,31 +501,31 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) PutFailover
 	_jsii_.InvokeVoid(
 		c,
 		"putFailoverCriteria",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) PutMember(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) PutMember(value any) {
 	if err := c.validatePutMemberParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMember",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupOutputReference) ToString() 
 
 	return returns
 }
-

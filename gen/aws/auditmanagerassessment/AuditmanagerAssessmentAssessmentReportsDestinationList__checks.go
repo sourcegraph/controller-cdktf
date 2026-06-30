@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) valid
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuditmanagerAssessmentAssessmentReportsDestinationListParameters
 
 	return nil
 }
-

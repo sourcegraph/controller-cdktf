@@ -12,9 +12,9 @@ type CodestarconnectionsHostVpcConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type CodestarconnectionsHostVpcConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type CodestarconnectionsHostVpcConfigurationOutputReference interface {
 	ResetTlsCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) VpcId
 	return returns
 }
 
-
 func NewCodestarconnectionsHostVpcConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodestarconnectionsHostVpcConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewCodestarconnectionsHostVpcConfigurationOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewCodestarconnectionsHostVpcConfigurationOutputReference_Override(c Codest
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetInternalValue(val *CodestarconnectionsHostVpcConfiguration) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetInternalValue(val *CodestarconnectionsHostVpcConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetSec
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetSub
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTlsCertificate(val *string) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetTlsCertificate(val *string) {
 	if err := j.validateSetTlsCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetTls
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference)SetVpcId(val *string) {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) ToStr
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFisExperimentTemplateActionTargetOutputReferenceParameters(terra
 
 	return nil
 }
-

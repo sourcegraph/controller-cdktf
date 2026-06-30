@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
-		reflect.TypeOf((*S3BucketVersioningA)(nil)).Elem(),
+		reflect.TypeFor[S3BucketVersioningA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versioningConfiguration", GoGetter: "VersioningConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "versioningConfigurationInput", GoGetter: "VersioningConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketVersioningA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningAConfig",
-		reflect.TypeOf((*S3BucketVersioningAConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketVersioningAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningVersioningConfiguration",
-		reflect.TypeOf((*S3BucketVersioningVersioningConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3BucketVersioningVersioningConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningVersioningConfigurationOutputReference",
-		reflect.TypeOf((*S3BucketVersioningVersioningConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketVersioningVersioningConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketVersioningVersioningConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

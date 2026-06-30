@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkmanagerAttachmentAccepterTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

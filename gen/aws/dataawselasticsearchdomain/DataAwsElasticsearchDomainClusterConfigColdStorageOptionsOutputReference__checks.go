@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputR
 
 	return nil
 }
-

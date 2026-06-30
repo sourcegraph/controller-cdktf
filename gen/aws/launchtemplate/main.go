@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
-		reflect.TypeOf((*LaunchTemplate)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -199,15 +199,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings",
-		reflect.TypeOf((*LaunchTemplateBlockDeviceMappings)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateBlockDeviceMappings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs",
-		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsEbs)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateBlockDeviceMappingsEbs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
-		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsEbsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateBlockDeviceMappingsEbsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,7 +263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
-		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsList)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateBlockDeviceMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -277,7 +277,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -285,7 +285,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
-		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateBlockDeviceMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,15 +330,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification",
-		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecification)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCapacityReservationSpecification](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget",
-		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
-		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationId", GoGetter: "CapacityReservationId"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationIdInput", GoGetter: "CapacityReservationIdInput"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -376,7 +376,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
-		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCapacityReservationSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationPreference", GoGetter: "CapacityReservationPreference"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationPreferenceInput", GoGetter: "CapacityReservationPreferenceInput"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,15 +415,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig",
-		reflect.TypeOf((*LaunchTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions",
-		reflect.TypeOf((*LaunchTemplateCpuOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCpuOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateCpuOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCpuOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "threadsPerCoreInput", GoGetter: "ThreadsPerCoreInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateCpuOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification",
-		reflect.TypeOf((*LaunchTemplateCreditSpecification)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCreditSpecification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
-		reflect.TypeOf((*LaunchTemplateCreditSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateCreditSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -492,7 +492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateCreditSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -500,11 +500,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications",
-		reflect.TypeOf((*LaunchTemplateElasticGpuSpecifications)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateElasticGpuSpecifications](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
-		reflect.TypeOf((*LaunchTemplateElasticGpuSpecificationsList)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateElasticGpuSpecificationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -526,7 +526,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
-		reflect.TypeOf((*LaunchTemplateElasticGpuSpecificationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateElasticGpuSpecificationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -552,7 +552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -560,11 +560,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator",
-		reflect.TypeOf((*LaunchTemplateElasticInferenceAccelerator)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateElasticInferenceAccelerator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
-		reflect.TypeOf((*LaunchTemplateElasticInferenceAcceleratorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateElasticInferenceAcceleratorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -590,7 +590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -598,11 +598,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions",
-		reflect.TypeOf((*LaunchTemplateEnclaveOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateEnclaveOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateEnclaveOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateEnclaveOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -629,7 +629,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -637,11 +637,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions",
-		reflect.TypeOf((*LaunchTemplateHibernationOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateHibernationOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateHibernationOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateHibernationOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateHibernationOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,11 +675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile",
-		reflect.TypeOf((*LaunchTemplateIamInstanceProfile)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateIamInstanceProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
-		reflect.TypeOf((*LaunchTemplateIamInstanceProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateIamInstanceProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -709,7 +709,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -717,11 +717,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions",
-		reflect.TypeOf((*LaunchTemplateInstanceMarketOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceMarketOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceMarketOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -752,7 +752,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -760,11 +760,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions",
-		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsSpotOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceMarketOptionsSpotOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutes", GoGetter: "BlockDurationMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutesInput", GoGetter: "BlockDurationMinutesInput"},
@@ -803,7 +803,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validUntil", GoGetter: "ValidUntil"},
 			_jsii_.MemberProperty{JsiiProperty: "validUntilInput", GoGetter: "ValidUntilInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -811,15 +811,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirements)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirements](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorCount)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsAcceleratorCount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -849,7 +849,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -857,11 +857,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -891,7 +891,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -899,11 +899,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -933,7 +933,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -941,11 +941,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryGibPerVcpu)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsMemoryGibPerVcpu](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -975,7 +975,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -983,11 +983,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryMib)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsMemoryMib](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryMibOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsMemoryMibOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1016,7 +1016,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1024,11 +1024,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsNetworkInterfaceCount)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsNetworkInterfaceCount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1058,7 +1058,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1066,7 +1066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -1159,7 +1159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcpuCount", GoGetter: "VcpuCount"},
 			_jsii_.MemberProperty{JsiiProperty: "vcpuCountInput", GoGetter: "VcpuCountInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1167,11 +1167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsTotalLocalStorageGb)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsTotalLocalStorageGb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1201,7 +1201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1209,11 +1209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsVcpuCount)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsVcpuCount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
-		reflect.TypeOf((*LaunchTemplateInstanceRequirementsVcpuCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateInstanceRequirementsVcpuCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1242,7 +1242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1250,11 +1250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification",
-		reflect.TypeOf((*LaunchTemplateLicenseSpecification)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateLicenseSpecification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
-		reflect.TypeOf((*LaunchTemplateLicenseSpecificationList)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateLicenseSpecificationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1268,7 +1268,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateLicenseSpecificationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1276,7 +1276,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
-		reflect.TypeOf((*LaunchTemplateLicenseSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateLicenseSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1302,7 +1302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1310,11 +1310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions",
-		reflect.TypeOf((*LaunchTemplateMaintenanceOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMaintenanceOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateMaintenanceOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMaintenanceOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRecovery", GoGetter: "AutoRecovery"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRecoveryInput", GoGetter: "AutoRecoveryInput"},
@@ -1341,7 +1341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateMaintenanceOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1349,11 +1349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions",
-		reflect.TypeOf((*LaunchTemplateMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplateMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1392,7 +1392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1400,11 +1400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring",
-		reflect.TypeOf((*LaunchTemplateMonitoring)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMonitoring](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
-		reflect.TypeOf((*LaunchTemplateMonitoringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateMonitoringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1431,7 +1431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateMonitoringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1439,11 +1439,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces",
-		reflect.TypeOf((*LaunchTemplateNetworkInterfaces)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateNetworkInterfaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList",
-		reflect.TypeOf((*LaunchTemplateNetworkInterfacesList)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateNetworkInterfacesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1457,7 +1457,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateNetworkInterfacesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1465,7 +1465,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
-		reflect.TypeOf((*LaunchTemplateNetworkInterfacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateNetworkInterfacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "associateCarrierIpAddress", GoGetter: "AssociateCarrierIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "associateCarrierIpAddressInput", GoGetter: "AssociateCarrierIpAddressInput"},
@@ -1546,7 +1546,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1554,11 +1554,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement",
-		reflect.TypeOf((*LaunchTemplatePlacement)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplatePlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference",
-		reflect.TypeOf((*LaunchTemplatePlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplatePlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "affinity", GoGetter: "Affinity"},
 			_jsii_.MemberProperty{JsiiProperty: "affinityInput", GoGetter: "AffinityInput"},
@@ -1606,7 +1606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplatePlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1614,11 +1614,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions",
-		reflect.TypeOf((*LaunchTemplatePrivateDnsNameOptions)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplatePrivateDnsNameOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
-		reflect.TypeOf((*LaunchTemplatePrivateDnsNameOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplatePrivateDnsNameOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1651,7 +1651,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplatePrivateDnsNameOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1659,11 +1659,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications",
-		reflect.TypeOf((*LaunchTemplateTagSpecifications)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateTagSpecifications](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList",
-		reflect.TypeOf((*LaunchTemplateTagSpecificationsList)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateTagSpecificationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1677,7 +1677,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateTagSpecificationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1685,7 +1685,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
-		reflect.TypeOf((*LaunchTemplateTagSpecificationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LaunchTemplateTagSpecificationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1715,7 +1715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LaunchTemplateTagSpecificationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

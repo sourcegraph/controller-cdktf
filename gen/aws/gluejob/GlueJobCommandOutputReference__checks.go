@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueJobCommandOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGlueJobCommandOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type Ec2ManagedPrefixListEntryOutputReference interface {
 	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type Ec2ManagedPrefixListEntryOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type Ec2ManagedPrefixListEntryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type Ec2ManagedPrefixListEntryOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) CidrInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewEc2ManagedPrefixListEntryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Ec2ManagedPrefixListEntryOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEc2ManagedPrefixListEntryOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEc2ManagedPrefixListEntryOutputReference_Override(e Ec2ManagedPrefixList
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetCidr(val *string) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetCidr(val *string)
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetDescription(val *
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) ResetDescription() 
 	)
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) ToString() *string 
 
 	return returns
 }
-

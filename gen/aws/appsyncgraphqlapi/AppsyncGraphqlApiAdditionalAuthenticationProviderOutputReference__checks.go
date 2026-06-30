@@ -139,7 +139,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -204,7 +204,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -263,4 +263,3 @@ func validateNewAppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference
 
 	return nil
 }
-

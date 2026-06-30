@@ -17,8 +17,8 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceList interface {
 	Get(index *float64) SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) WrapsS
 	return returns
 }
 
-
 func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchSpecificationEbsBlockDeviceList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList_Override(s SpotFle
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetInte
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) AllWit
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) Get(in
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) ToStri
 
 	return returns
 }
-

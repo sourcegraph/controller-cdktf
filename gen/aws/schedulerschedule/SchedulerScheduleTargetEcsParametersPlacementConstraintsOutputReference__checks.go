@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSchedulerScheduleTargetEcsParametersPlacementConstraintsOutputRe
 
 	return nil
 }
-

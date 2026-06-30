@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationDomainList) valida
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationDomainList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationDomainList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersNetworkDestinationDomainListParameters(
 
 	return nil
 }
-

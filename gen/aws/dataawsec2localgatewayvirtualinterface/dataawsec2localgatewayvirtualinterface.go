@@ -15,17 +15,17 @@ type DataAwsEc2LocalGatewayVirtualInterface interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsEc2LocalGatewayVirtualInterfaceFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,23 +54,23 @@ type DataAwsEc2LocalGatewayVirtualInterface interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Vlan() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type DataAwsEc2LocalGatewayVirtualInterface interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2LocalGatewayVirtualInterfaceTimeouts)
 	ResetFilter()
 	ResetId()
@@ -101,18 +101,18 @@ type DataAwsEc2LocalGatewayVirtualInterface interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2LocalGatewayVirtualInterface
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Filter() DataAwsEc2Lo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Timeouts() DataAwsEc2
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) Vlan() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_local_gateway_virtual_interface aws_ec2_local_gateway_virtual_interface} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterface(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceConfig) DataAwsEc2LocalGatewayVirtualInterface {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterface(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewDataAwsEc2LocalGatewayVirtualInterface_Override(d DataAwsEc2LocalGateway
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x interface{}) *bool {
+func DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayVirtualInterface_IsConstructParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSourceParameters(x); err != nil {
@@ -574,7 +573,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2LocalGatewayVirtualInterface_IsTerraformElementParameters(x); err != nil {
@@ -593,7 +592,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -611,27 +610,27 @@ func DataAwsEc2LocalGatewayVirtualInterface_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) PutTimeouts(value *Da
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -855,8 +854,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,4 +931,3 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface) ToTerraform() interfa
 
 	return returns
 }
-

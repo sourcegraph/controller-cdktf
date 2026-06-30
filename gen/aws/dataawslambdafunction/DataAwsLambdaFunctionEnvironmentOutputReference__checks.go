@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLambdaFunctionEnvironmentOutputReferenceParameters(terraf
 
 	return nil
 }
-

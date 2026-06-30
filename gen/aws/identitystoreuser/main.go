@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
-		reflect.TypeOf((*IdentitystoreUser)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeInput", GoGetter: "UserTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,11 +108,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddresses",
-		reflect.TypeOf((*IdentitystoreUserAddresses)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserAddresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
-		reflect.TypeOf((*IdentitystoreUserAddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserAddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserAddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,15 +168,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserConfig",
-		reflect.TypeOf((*IdentitystoreUserConfig)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmails",
-		reflect.TypeOf((*IdentitystoreUserEmails)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserEmails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
-		reflect.TypeOf((*IdentitystoreUserEmailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserEmailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserEmailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -217,11 +217,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIds",
-		reflect.TypeOf((*IdentitystoreUserExternalIds)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserExternalIds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList",
-		reflect.TypeOf((*IdentitystoreUserExternalIdsList)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserExternalIdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserExternalIdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -242,7 +242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsOutputReference",
-		reflect.TypeOf((*IdentitystoreUserExternalIdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserExternalIdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserExternalIdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,11 +276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserName",
-		reflect.TypeOf((*IdentitystoreUserName)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference",
-		reflect.TypeOf((*IdentitystoreUserNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,11 +328,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers",
-		reflect.TypeOf((*IdentitystoreUserPhoneNumbers)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserPhoneNumbers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
-		reflect.TypeOf((*IdentitystoreUserPhoneNumbersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreUserPhoneNumbersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

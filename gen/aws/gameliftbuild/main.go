@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
-		reflect.TypeOf((*GameliftBuild)(nil)).Elem(),
+		reflect.TypeFor[GameliftBuild](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftBuild{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftBuild.GameliftBuildConfig",
-		reflect.TypeOf((*GameliftBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[GameliftBuildConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocation",
-		reflect.TypeOf((*GameliftBuildStorageLocation)(nil)).Elem(),
+		reflect.TypeFor[GameliftBuildStorageLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocationOutputReference",
-		reflect.TypeOf((*GameliftBuildStorageLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftBuildStorageLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftBuildStorageLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -18,15 +18,15 @@ type S3BucketLoggingA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,32 +56,32 @@ type S3BucketLoggingA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetBucket() *string
 	SetTargetBucket(val *string)
 	TargetBucketInput() *string
 	TargetGrant() S3BucketLoggingTargetGrantList
-	TargetGrantInput() interface{}
+	TargetGrantInput() any
 	TargetPrefix() *string
 	SetTargetPrefix(val *string)
 	TargetPrefixInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type S3BucketLoggingA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,31 +111,31 @@ type S3BucketLoggingA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTargetGrant(value interface{})
+	PutTargetGrant(value any)
 	ResetExpectedBucketOwner()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTargetGrant()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketLoggingA
@@ -173,8 +173,8 @@ func (j *jsiiProxy_S3BucketLoggingA) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLoggingA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_S3BucketLoggingA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketLoggingA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_S3BucketLoggingA) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLoggingA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_S3BucketLoggingA) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketLoggingA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_S3BucketLoggingA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLoggingA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_S3BucketLoggingA) TargetGrant() S3BucketLoggingTargetGrantLis
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) TargetGrantInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLoggingA) TargetGrantInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetGrantInput",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketLoggingA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) S3BucketLoggingA {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3Bucke
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewS3BucketLoggingA_Override(s S3BucketLoggingA, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketLoggingA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketLoggingA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetExpectedBucketOwner(val *string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetExpectedBucketOwner(val *string) {
 	if err := j.validateSetExpectedBucketOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetExpectedBucketOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketLoggingA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetId(val *string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketLoggingA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketLoggingA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketLoggingA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetTargetBucket(val *string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetTargetBucket(val *string) {
 	if err := j.validateSetTargetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_S3BucketLoggingA)SetTargetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetTargetPrefix(val *string) {
+func (j *jsiiProxy_S3BucketLoggingA) SetTargetPrefix(val *string) {
 	if err := j.validateSetTargetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func S3BucketLoggingA_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func S3BucketLoggingA_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketLoggingA_IsConstruct(x interface{}) *bool {
+func S3BucketLoggingA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketLoggingA_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func S3BucketLoggingA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func S3BucketLoggingA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketLoggingA_IsTerraformElement(x interface{}) *bool {
+func S3BucketLoggingA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketLoggingA_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func S3BucketLoggingA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func S3BucketLoggingA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketLoggingA_IsTerraformResource(x interface{}) *bool {
+func S3BucketLoggingA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketLoggingA_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func S3BucketLoggingA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (s *jsiiProxy_S3BucketLoggingA) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketLoggingA) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketLoggingA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (s *jsiiProxy_S3BucketLoggingA) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (s *jsiiProxy_S3BucketLoggingA) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketLoggingA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -865,7 +864,7 @@ func (s *jsiiProxy_S3BucketLoggingA) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (s *jsiiProxy_S3BucketLoggingA) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (s *jsiiProxy_S3BucketLoggingA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketLoggingA) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (s *jsiiProxy_S3BucketLoggingA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,18 +924,18 @@ func (s *jsiiProxy_S3BucketLoggingA) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) PutTargetGrant(value interface{}) {
+func (s *jsiiProxy_S3BucketLoggingA) PutTargetGrant(value any) {
 	if err := s.validatePutTargetGrantParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTargetGrant",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,8 +971,8 @@ func (s *jsiiProxy_S3BucketLoggingA) ResetTargetGrant() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketLoggingA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -985,8 +984,8 @@ func (s *jsiiProxy_S3BucketLoggingA) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketLoggingA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -998,8 +997,8 @@ func (s *jsiiProxy_S3BucketLoggingA) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketLoggingA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1011,8 +1010,8 @@ func (s *jsiiProxy_S3BucketLoggingA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketLoggingA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1037,8 +1036,8 @@ func (s *jsiiProxy_S3BucketLoggingA) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLoggingA) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketLoggingA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1049,4 +1048,3 @@ func (s *jsiiProxy_S3BucketLoggingA) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReferenceP
 
 	return nil
 }
-

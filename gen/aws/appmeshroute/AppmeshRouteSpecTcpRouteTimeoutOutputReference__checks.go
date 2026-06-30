@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewAppmeshRouteSpecTcpRouteTimeoutOutputReferenceParameters(terrafo
 
 	return nil
 }
-

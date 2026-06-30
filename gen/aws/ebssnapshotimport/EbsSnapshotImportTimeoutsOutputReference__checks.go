@@ -98,7 +98,7 @@ func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEbsSnapshotImportTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

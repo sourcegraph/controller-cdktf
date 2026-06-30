@@ -34,7 +34,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSsmPatchBaselineApprovalRuleListParameters(terraformResource cdk
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
-		reflect.TypeOf((*EmrManagedScalingPolicy)(nil)).Elem(),
+		reflect.TypeFor[EmrManagedScalingPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrManagedScalingPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,11 +69,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimits",
-		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimits)(nil)).Elem(),
+		reflect.TypeFor[EmrManagedScalingPolicyComputeLimits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
-		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimitsList)(nil)).Elem(),
+		reflect.TypeFor[EmrManagedScalingPolicyComputeLimitsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrManagedScalingPolicyComputeLimitsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
-		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EmrManagedScalingPolicyComputeLimitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unitType", GoGetter: "UnitType"},
 			_jsii_.MemberProperty{JsiiProperty: "unitTypeInput", GoGetter: "UnitTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,6 +139,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyConfig",
-		reflect.TypeOf((*EmrManagedScalingPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[EmrManagedScalingPolicyConfig](),
 	)
 }

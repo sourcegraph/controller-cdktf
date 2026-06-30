@@ -106,7 +106,7 @@ func (j *jsiiProxy_LakeformationPermissionsDatabaseOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsDatabaseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationPermissionsDatabaseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLakeformationPermissionsDatabaseOutputReferenceParameters(terraf
 
 	return nil
 }
-

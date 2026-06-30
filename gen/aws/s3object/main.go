@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3Object.S3Object",
-		reflect.TypeOf((*S3Object)(nil)).Elem(),
+		reflect.TypeFor[S3Object](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberProperty{JsiiProperty: "aclInput", GoGetter: "AclInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirect", GoGetter: "WebsiteRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirectInput", GoGetter: "WebsiteRedirectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3Object{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -138,6 +138,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3Object.S3ObjectConfig",
-		reflect.TypeOf((*S3ObjectConfig)(nil)).Elem(),
+		reflect.TypeFor[S3ObjectConfig](),
 	)
 }

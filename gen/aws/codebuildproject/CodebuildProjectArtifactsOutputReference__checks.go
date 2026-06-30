@@ -114,7 +114,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetBucketOw
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetEncryptionDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetEncryptionDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetNamespac
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetOverrideArtifactNameParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) validateSetOverrideArtifactNameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,4 +302,3 @@ func validateNewCodebuildProjectArtifactsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

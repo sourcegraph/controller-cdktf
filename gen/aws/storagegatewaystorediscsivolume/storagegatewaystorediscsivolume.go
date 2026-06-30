@@ -17,15 +17,15 @@ type StoragegatewayStoredIscsiVolume interface {
 	CdktfStack() cdktf.TerraformStack
 	ChapEnabled() cdktf.IResolvable
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,9 +47,9 @@ type StoragegatewayStoredIscsiVolume interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	KmsEncrypted() interface{}
-	SetKmsEncrypted(val interface{})
-	KmsEncryptedInput() interface{}
+	KmsEncrypted() any
+	SetKmsEncrypted(val any)
+	KmsEncryptedInput() any
 	KmsKey() *string
 	SetKmsKey(val *string)
 	KmsKeyInput() *string
@@ -64,19 +64,19 @@ type StoragegatewayStoredIscsiVolume interface {
 	NetworkInterfacePort() *float64
 	// The tree node.
 	Node() constructs.Node
-	PreserveExistingData() interface{}
-	SetPreserveExistingData(val interface{})
-	PreserveExistingDataInput() interface{}
+	PreserveExistingData() any
+	SetPreserveExistingData(val any)
+	PreserveExistingDataInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotId() *string
 	SetSnapshotId(val *string)
 	SnapshotIdInput() *string
@@ -93,7 +93,7 @@ type StoragegatewayStoredIscsiVolume interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VolumeAttachmentStatus() *string
@@ -105,9 +105,9 @@ type StoragegatewayStoredIscsiVolume interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type StoragegatewayStoredIscsiVolume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type StoragegatewayStoredIscsiVolume interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type StoragegatewayStoredIscsiVolume interface {
 	ResetSnapshotId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StoragegatewayStoredIscsiVolume
@@ -201,8 +201,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) ChapEnabled() cdktf.IResolva
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) KmsEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) KmsEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncrypted",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) KmsEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) KmsEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) KmsEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kmsEncryptedInput",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) PreserveExistingData() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) PreserveExistingData() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveExistingData",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) PreserveExistingData() inter
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) PreserveExistingDataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) PreserveExistingDataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveExistingDataInput",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -581,8 +581,8 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -651,7 +651,6 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) VolumeType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_stored_iscsi_volume aws_storagegateway_stored_iscsi_volume} Resource.
 func NewStoragegatewayStoredIscsiVolume(scope constructs.Construct, id *string, config *StoragegatewayStoredIscsiVolumeConfig) StoragegatewayStoredIscsiVolume {
 	_init_.Initialize()
@@ -663,7 +662,7 @@ func NewStoragegatewayStoredIscsiVolume(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -676,12 +675,12 @@ func NewStoragegatewayStoredIscsiVolume_Override(s StoragegatewayStoredIscsiVolu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetConnection(val interface{}) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetCount(val interface{}) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetDiskId(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetDiskId(val *string) {
 	if err := j.validateSetDiskIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetDiskId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetGatewayArn(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetGatewayArn(val *string) {
 	if err := j.validateSetGatewayArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetGatewayArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetId(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetKmsEncrypted(val interface{}) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetKmsEncrypted(val any) {
 	if err := j.validateSetKmsEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetKmsEncrypted(val interface
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetKmsKey(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetNetworkInterfaceId(val *string) {
 	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetNetworkInterfaceId(val *st
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetPreserveExistingData(val interface{}) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetPreserveExistingData(val any) {
 	if err := j.validateSetPreserveExistingDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetPreserveExistingData(val i
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -815,7 +814,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetSnapshotId(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetSnapshotId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetTags(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetTagsAll(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayStoredIscsiVolume)SetTargetName(val *string) {
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) SetTargetName(val *string) {
 	if err := j.validateSetTargetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func StoragegatewayStoredIscsiVolume_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func StoragegatewayStoredIscsiVolume_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StoragegatewayStoredIscsiVolume_IsConstruct(x interface{}) *bool {
+func StoragegatewayStoredIscsiVolume_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayStoredIscsiVolume_IsConstructParameters(x); err != nil {
@@ -917,7 +916,7 @@ func StoragegatewayStoredIscsiVolume_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func StoragegatewayStoredIscsiVolume_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayStoredIscsiVolume_IsTerraformElement(x interface{}) *bool {
+func StoragegatewayStoredIscsiVolume_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayStoredIscsiVolume_IsTerraformElementParameters(x); err != nil {
@@ -936,7 +935,7 @@ func StoragegatewayStoredIscsiVolume_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func StoragegatewayStoredIscsiVolume_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayStoredIscsiVolume_IsTerraformResource(x interface{}) *bool {
+func StoragegatewayStoredIscsiVolume_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayStoredIscsiVolume_IsTerraformResourceParameters(x); err != nil {
@@ -955,7 +954,7 @@ func StoragegatewayStoredIscsiVolume_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -980,31 +979,31 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,15 +1131,15 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1159,7 +1158,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1186,18 +1185,18 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1208,7 +1207,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1219,7 +1218,7 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1279,8 +1278,8 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1292,8 +1291,8 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1305,8 +1304,8 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1318,8 +1317,8 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToHclTerraform() interface{}
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1344,8 +1343,8 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1356,4 +1355,3 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) ToTerraform() interface{} {
 
 	return returns
 }
-

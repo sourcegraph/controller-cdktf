@@ -19,7 +19,7 @@ func (d *jsiiProxy_DxPublicVirtualInterface) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DxPublicVirtualInterface) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DxPublicVirtualInterface) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DxPublicVirtualInterface) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DxPublicVirtualInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DxPublicVirtualInterface) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDxPublicVirtualInterface_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDxPublicVirtualInterface_IsConstructParameters(x interface{}) error {
+func validateDxPublicVirtualInterface_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDxPublicVirtualInterface_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDxPublicVirtualInterface_IsTerraformElementParameters(x interface{}) error {
+func validateDxPublicVirtualInterface_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDxPublicVirtualInterface_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDxPublicVirtualInterface_IsTerraformResourceParameters(x interface{}) error {
+func validateDxPublicVirtualInterface_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DxPublicVirtualInterface) validateSetBgpAuthKeyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DxPublicVirtualInterface) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DxPublicVirtualInterface) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DxPublicVirtualInterface) validateSetConnectionIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DxPublicVirtualInterface) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DxPublicVirtualInterface) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DxPublicVirtualInterface) validateSetNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DxPublicVirtualInterface) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DxPublicVirtualInterface) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewDxPublicVirtualInterfaceParameters(scope constructs.Construct, i
 
 	return nil
 }
-

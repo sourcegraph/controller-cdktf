@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary",
-		reflect.TypeOf((*TranscribeVocabulary)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabulary](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vocabularyName", GoGetter: "VocabularyName"},
 			_jsii_.MemberProperty{JsiiProperty: "vocabularyNameInput", GoGetter: "VocabularyNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeVocabulary{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyConfig",
-		reflect.TypeOf((*TranscribeVocabularyConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabularyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeouts",
-		reflect.TypeOf((*TranscribeVocabularyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabularyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
-		reflect.TypeOf((*TranscribeVocabularyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabularyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeVocabularyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedSignersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionTrustedSignersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionTrustedSignersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudfrontDistributionTrustedSignersOutputReferenceParameters(te
 
 	return nil
 }
-

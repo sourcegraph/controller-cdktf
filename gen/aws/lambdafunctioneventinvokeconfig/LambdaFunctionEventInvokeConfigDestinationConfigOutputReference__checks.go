@@ -120,7 +120,7 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewLambdaFunctionEventInvokeConfigDestinationConfigOutputReferenceP
 
 	return nil
 }
-

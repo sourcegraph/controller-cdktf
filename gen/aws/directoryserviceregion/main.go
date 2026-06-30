@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
-		reflect.TypeOf((*DirectoryServiceRegion)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSettings", GoGetter: "VpcSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSettingsInput", GoGetter: "VpcSettingsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceRegion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionConfig",
-		reflect.TypeOf((*DirectoryServiceRegionConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeouts",
-		reflect.TypeOf((*DirectoryServiceRegionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeoutsOutputReference",
-		reflect.TypeOf((*DirectoryServiceRegionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceRegionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettings",
-		reflect.TypeOf((*DirectoryServiceRegionVpcSettings)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegionVpcSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
-		reflect.TypeOf((*DirectoryServiceRegionVpcSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRegionVpcSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceRegionVpcSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

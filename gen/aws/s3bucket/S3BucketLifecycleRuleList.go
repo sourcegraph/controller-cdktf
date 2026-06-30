@@ -17,8 +17,8 @@ type S3BucketLifecycleRuleList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type S3BucketLifecycleRuleList interface {
 	Get(index *float64) S3BucketLifecycleRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_S3BucketLifecycleRuleList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketLifecycleRuleList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_S3BucketLifecycleRuleList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewS3BucketLifecycleRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLifecycleRuleList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewS3BucketLifecycleRuleList(terraformResource cdktf.IInterpolatingParent, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewS3BucketLifecycleRuleList_Override(s S3BucketLifecycleRuleList, terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketLifecycleRuleList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleList)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleList)SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_S3BucketLifecycleRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleList) AllWithMapKey(mapKeyAttributeName 
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_S3BucketLifecycleRuleList) Get(index *float64) S3BucketLifecy
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketLifecycleRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_S3BucketLifecycleRuleList) ToString() *string {
 
 	return returns
 }
-

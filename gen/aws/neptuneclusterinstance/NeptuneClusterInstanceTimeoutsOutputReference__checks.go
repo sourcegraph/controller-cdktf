@@ -98,7 +98,7 @@ func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNeptuneClusterInstanceTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

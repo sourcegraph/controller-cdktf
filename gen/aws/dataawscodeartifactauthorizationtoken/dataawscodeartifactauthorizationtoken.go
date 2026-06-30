@@ -16,11 +16,11 @@ type DataAwsCodeartifactAuthorizationToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,17 +57,17 @@ type DataAwsCodeartifactAuthorizationToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataAwsCodeartifactAuthorizationToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCodeartifactAuthorizationToken
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
 func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) DataAwsCodeartifactAuthorizationToken {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataAwsCodeartifactAuthorizationToken_Override(d DataAwsCodeartifactAuth
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDomain(val *string) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDomain(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDomainOwner(val *string) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetDomainOwner(val *string) {
 	if err := j.validateSetDomainOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDomainOwner(val *str
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDurationSeconds(val *float64) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetDurationSeconds(val *float64) {
 	if err := j.validateSetDurationSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetDurationSeconds(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func DataAwsCodeartifactAuthorizationToken_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataAwsCodeartifactAuthorizationToken_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCodeartifactAuthorizationToken_IsConstruct(x interface{}) *bool {
+func DataAwsCodeartifactAuthorizationToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodeartifactAuthorizationToken_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataAwsCodeartifactAuthorizationToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataAwsCodeartifactAuthorizationToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodeartifactAuthorizationToken_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataAwsCodeartifactAuthorizationToken_IsTerraformElement(x interface{}) *bool {
+func DataAwsCodeartifactAuthorizationToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCodeartifactAuthorizationToken_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataAwsCodeartifactAuthorizationToken_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataAwsCodeartifactAuthorizationToken_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ResetOverrideLogicalId
 	)
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ToTerraform() interfac
 
 	return returns
 }
-

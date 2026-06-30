@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueUserDefinedFunctionResourceUrisListParameters(terraformResou
 
 	return nil
 }
-

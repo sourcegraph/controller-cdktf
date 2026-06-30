@@ -17,8 +17,8 @@ type DataAwsEc2LocalGatewayFilterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsEc2LocalGatewayFilterList interface {
 	Get(index *float64) DataAwsEc2LocalGatewayFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsEc2LocalGatewayFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2LocalGatewayFilterList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsEc2LocalGatewayFilterList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsEc2LocalGatewayFilterList_Override(d DataAwsEc2LocalGatewayFilter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterList) Get(index *float64) DataAws
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterList) ToString() *string {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (m *jsiiProxy_MskScramSecretAssociation) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (m *jsiiProxy_MskScramSecretAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MskScramSecretAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MskScramSecretAssociation) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (m *jsiiProxy_MskScramSecretAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MskScramSecretAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateMskScramSecretAssociation_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateMskScramSecretAssociation_IsConstructParameters(x interface{}) error {
+func validateMskScramSecretAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateMskScramSecretAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateMskScramSecretAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateMskScramSecretAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateMskScramSecretAssociation_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateMskScramSecretAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateMskScramSecretAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_MskScramSecretAssociation) validateSetClusterArnParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_MskScramSecretAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MskScramSecretAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_MskScramSecretAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_MskScramSecretAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MskScramSecretAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_MskScramSecretAssociation) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MskScramSecretAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MskScramSecretAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewMskScramSecretAssociationParameters(scope constructs.Construct, 
 
 	return nil
 }
-

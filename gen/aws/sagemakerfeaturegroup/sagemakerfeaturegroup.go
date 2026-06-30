@@ -16,15 +16,15 @@ type SagemakerFeatureGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,7 +36,7 @@ type SagemakerFeatureGroup interface {
 	SetEventTimeFeatureName(val *string)
 	EventTimeFeatureNameInput() *string
 	FeatureDefinition() SagemakerFeatureGroupFeatureDefinitionList
-	FeatureDefinitionInput() interface{}
+	FeatureDefinitionInput() any
 	FeatureGroupName() *string
 	SetFeatureGroupName(val *string)
 	FeatureGroupNameInput() *string
@@ -66,11 +66,11 @@ type SagemakerFeatureGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecordIdentifierFeatureName() *string
 	SetRecordIdentifierFeatureName(val *string)
 	RecordIdentifierFeatureNameInput() *string
@@ -86,16 +86,16 @@ type SagemakerFeatureGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type SagemakerFeatureGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,14 +125,14 @@ type SagemakerFeatureGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFeatureDefinition(value interface{})
+	PutFeatureDefinition(value any)
 	PutOfflineStoreConfig(value *SagemakerFeatureGroupOfflineStoreConfig)
 	PutOnlineStoreConfig(value *SagemakerFeatureGroupOnlineStoreConfig)
 	ResetDescription()
@@ -144,17 +144,17 @@ type SagemakerFeatureGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerFeatureGroup
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) FeatureDefinition() SagemakerFeatureGr
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) FeatureDefinitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) FeatureDefinitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"featureDefinitionInput",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_SagemakerFeatureGroup) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerFeatureGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -552,7 +552,6 @@ func (j *jsiiProxy_SagemakerFeatureGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
 func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *SagemakerFeatureGroupConfig) SagemakerFeatureGroup {
 	_init_.Initialize()
@@ -564,7 +563,7 @@ func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *Sa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -577,12 +576,12 @@ func NewSagemakerFeatureGroup_Override(s SagemakerFeatureGroup, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetDescription(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetEventTimeFeatureName(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetEventTimeFeatureName(val *string) {
 	if err := j.validateSetEventTimeFeatureNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetEventTimeFeatureName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetFeatureGroupName(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetFeatureGroupName(val *string) {
 	if err := j.validateSetFeatureGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetFeatureGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -653,7 +652,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetId(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,7 +682,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetRecordIdentifierFeatureName(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetRecordIdentifierFeatureName(val *string) {
 	if err := j.validateSetRecordIdentifierFeatureNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetRecordIdentifierFeatureName(val *str
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetRoleArn(val *string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerFeatureGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func SagemakerFeatureGroup_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func SagemakerFeatureGroup_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerFeatureGroup_IsConstruct(x interface{}) *bool {
+func SagemakerFeatureGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerFeatureGroup_IsConstructParameters(x); err != nil {
@@ -785,7 +784,7 @@ func SagemakerFeatureGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func SagemakerFeatureGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerFeatureGroup_IsTerraformElement(x interface{}) *bool {
+func SagemakerFeatureGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerFeatureGroup_IsTerraformElementParameters(x); err != nil {
@@ -804,7 +803,7 @@ func SagemakerFeatureGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func SagemakerFeatureGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerFeatureGroup_IsTerraformResource(x interface{}) *bool {
+func SagemakerFeatureGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerFeatureGroup_IsTerraformResourceParameters(x); err != nil {
@@ -823,7 +822,7 @@ func SagemakerFeatureGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,31 +847,31 @@ func (s *jsiiProxy_SagemakerFeatureGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerFeatureGroup) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerFeatureGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,15 +999,15 @@ func (s *jsiiProxy_SagemakerFeatureGroup) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1027,7 +1026,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,18 +1053,18 @@ func (s *jsiiProxy_SagemakerFeatureGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerFeatureGroup) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1087,18 +1086,18 @@ func (s *jsiiProxy_SagemakerFeatureGroup) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) PutFeatureDefinition(value interface{}) {
+func (s *jsiiProxy_SagemakerFeatureGroup) PutFeatureDefinition(value any) {
 	if err := s.validatePutFeatureDefinitionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putFeatureDefinition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,7 +1108,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) PutOfflineStoreConfig(value *Sagemaker
 	_jsii_.InvokeVoid(
 		s,
 		"putOfflineStoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1120,7 +1119,7 @@ func (s *jsiiProxy_SagemakerFeatureGroup) PutOnlineStoreConfig(value *SagemakerF
 	_jsii_.InvokeVoid(
 		s,
 		"putOnlineStoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,8 +1179,8 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1193,8 +1192,8 @@ func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1206,8 +1205,8 @@ func (s *jsiiProxy_SagemakerFeatureGroup) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1219,8 +1218,8 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1245,8 +1244,8 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerFeatureGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1257,4 +1256,3 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

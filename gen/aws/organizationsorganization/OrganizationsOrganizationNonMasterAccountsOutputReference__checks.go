@@ -98,7 +98,7 @@ func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationNonMasterAccountsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationsOrganizationNonMasterAccountsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOrganizationsOrganizationNonMasterAccountsOutputReferenceParamet
 
 	return nil
 }
-

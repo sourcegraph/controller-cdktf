@@ -98,7 +98,7 @@ func (d *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DxGatewayAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDxGatewayAssociationTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

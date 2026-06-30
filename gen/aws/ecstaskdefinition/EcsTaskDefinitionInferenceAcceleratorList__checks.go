@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsTaskDefinitionInferenceAcceleratorListParameters(terraformRes
 
 	return nil
 }
-

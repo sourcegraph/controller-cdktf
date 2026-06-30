@@ -12,9 +12,9 @@ type CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,12 +34,12 @@ type CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference in
 	HeadersInput() *[]*string
 	InternalValue() *CloudfrontDistributionOrderedCacheBehaviorForwardedValues
 	SetInternalValue(val *CloudfrontDistributionOrderedCacheBehaviorForwardedValues)
-	QueryString() interface{}
-	SetQueryString(val interface{})
+	QueryString() any
+	SetQueryString(val any)
 	QueryStringCacheKeys() *[]*string
 	SetQueryStringCacheKeys(val *[]*string)
 	QueryStringCacheKeysInput() *[]*string
-	QueryStringInput() interface{}
+	QueryStringInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference in
 	ResetQueryStringCacheKeys()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) QueryString() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) QueryString() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryString",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) QueryStringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) QueryStringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryStringInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	return returns
 }
 
-
 func NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetHeaders(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetHeaders(val *[]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetInternalValue(val *CloudfrontDistributionOrderedCacheBehaviorForwardedValues) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetInternalValue(val *CloudfrontDistributionOrderedCacheBehaviorForwardedValues) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetQueryString(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetQueryString(val any) {
 	if err := j.validateSetQueryStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetQueryStringCacheKeys(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetQueryStringCacheKeys(val *[]*string) {
 	if err := j.validateSetQueryStringCacheKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	_jsii_.InvokeVoid(
 		c,
 		"putCookies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutp
 
 	return returns
 }
-

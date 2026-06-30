@@ -12,9 +12,9 @@ type Kinesisanalyticsv2ApplicationTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type Kinesisanalyticsv2ApplicationTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type Kinesisanalyticsv2ApplicationTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type Kinesisanalyticsv2ApplicationTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) UpdateI
 	return returns
 }
 
-
 func NewKinesisanalyticsv2ApplicationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Kinesisanalyticsv2ApplicationTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewKinesisanalyticsv2ApplicationTimeoutsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewKinesisanalyticsv2ApplicationTimeoutsOutputReference_Override(k Kinesisa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetCreat
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetDelet
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) Compute
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetBool
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetBool
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetList
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetStri
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) GetStri
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) Interpo
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) ResetUp
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationTimeoutsOutputReference) ToStrin
 
 	return returns
 }
-

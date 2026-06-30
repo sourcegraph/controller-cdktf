@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUser.CognitoUser",
-		reflect.TypeOf((*CognitoUser)(nil)).Elem(),
+		reflect.TypeFor[CognitoUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validationData", GoGetter: "ValidationData"},
 			_jsii_.MemberProperty{JsiiProperty: "validationDataInput", GoGetter: "ValidationDataInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,6 +101,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUser.CognitoUserConfig",
-		reflect.TypeOf((*CognitoUserConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserConfig](),
 	)
 }

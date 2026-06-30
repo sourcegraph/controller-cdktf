@@ -24,11 +24,11 @@ type DataAwsRdsCluster interface {
 	ClusterMembers() *[]*string
 	ClusterResourceId() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseName() *string
 	DbClusterParameterGroupName() *string
 	DbSubnetGroupName() *string
@@ -73,7 +73,7 @@ type DataAwsRdsCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReaderEndpoint() *string
 	ReplicationSourceIdentifier() *string
 	StorageEncrypted() cdktf.IResolvable
@@ -83,14 +83,14 @@ type DataAwsRdsCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcSecurityGroupIds() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,18 +117,18 @@ type DataAwsRdsCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRdsCluster
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DataAwsRdsCluster) ClusterResourceId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataAwsRdsCluster) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_DataAwsRdsCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRdsCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_DataAwsRdsCluster) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRdsCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -616,7 +616,6 @@ func (j *jsiiProxy_DataAwsRdsCluster) VpcSecurityGroupIds() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
 func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAwsRdsClusterConfig) DataAwsRdsCluster {
 	_init_.Initialize()
@@ -628,7 +627,7 @@ func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -641,12 +640,12 @@ func NewDataAwsRdsCluster_Override(d DataAwsRdsCluster, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DataAwsRdsCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsRdsCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func DataAwsRdsCluster_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func DataAwsRdsCluster_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRdsCluster_IsConstruct(x interface{}) *bool {
+func DataAwsRdsCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCluster_IsConstructParameters(x); err != nil {
@@ -772,7 +771,7 @@ func DataAwsRdsCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func DataAwsRdsCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRdsCluster_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCluster_IsTerraformDataSourceParameters(x); err != nil {
@@ -791,7 +790,7 @@ func DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRdsCluster_IsTerraformElement(x interface{}) *bool {
+func DataAwsRdsCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRdsCluster_IsTerraformElementParameters(x); err != nil {
@@ -810,7 +809,7 @@ func DataAwsRdsCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -828,27 +827,27 @@ func DataAwsRdsCluster_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRdsCluster) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRdsCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (d *jsiiProxy_DataAwsRdsCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1034,8 +1033,8 @@ func (d *jsiiProxy_DataAwsRdsCluster) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1047,8 +1046,8 @@ func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1060,8 +1059,8 @@ func (d *jsiiProxy_DataAwsRdsCluster) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1073,8 +1072,8 @@ func (d *jsiiProxy_DataAwsRdsCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1099,8 +1098,8 @@ func (d *jsiiProxy_DataAwsRdsCluster) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRdsCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRdsCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1111,4 +1110,3 @@ func (d *jsiiProxy_DataAwsRdsCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

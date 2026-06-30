@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetAllSupportedParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetAllSupportedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetIncludeGlobalResourceTypesParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateSetIncludeGlobalResourceTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewConfigConfigurationRecorderRecordingGroupOutputReferenceParamete
 
 	return nil
 }
-

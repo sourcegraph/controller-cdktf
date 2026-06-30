@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetNegatedParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetNegatedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewWafregionalRateBasedRulePredicateOutputReferenceParameters(terra
 
 	return nil
 }
-

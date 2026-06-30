@@ -16,15 +16,15 @@ type SagemakerNotebookInstanceLifecycleConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type SagemakerNotebookInstanceLifecycleConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type SagemakerNotebookInstanceLifecycleConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type SagemakerNotebookInstanceLifecycleConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type SagemakerNotebookInstanceLifecycleConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerNotebookInstanceLifecycleConfiguration
@@ -159,8 +159,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Connection()
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Provisioners
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) TerraformGen
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,7 +389,6 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) TerraformRes
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_notebook_instance_lifecycle_configuration aws_sagemaker_notebook_instance_lifecycle_configuration} Resource.
 func NewSagemakerNotebookInstanceLifecycleConfiguration(scope constructs.Construct, id *string, config *SagemakerNotebookInstanceLifecycleConfigurationConfig) SagemakerNotebookInstanceLifecycleConfiguration {
 	_init_.Initialize()
@@ -401,7 +400,7 @@ func NewSagemakerNotebookInstanceLifecycleConfiguration(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -414,12 +413,12 @@ func NewSagemakerNotebookInstanceLifecycleConfiguration_Override(s SagemakerNote
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetConnection
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetId(val *string) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetName(val *string) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetName(val *
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetOnCreate(val *string) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetOnCreate(val *string) {
 	if err := j.validateSetOnCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetOnCreate(v
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetOnStart(val *string) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetOnStart(val *string) {
 	if err := j.validateSetOnStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetOnStart(va
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerNotebookInstanceLifecycleConfiguration_IsConstruct(x interface{}) *bool {
+func SagemakerNotebookInstanceLifecycleConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerNotebookInstanceLifecycleConfiguration_IsConstructParameters(x); err != nil {
@@ -578,7 +577,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElement(x interface{}) *bool {
+func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -597,7 +596,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElement(x interf
 }
 
 // Experimental.
-func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResource(x interface{}) *bool {
+func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -616,7 +615,7 @@ func SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResource(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,31 +640,31 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) AddMoveTarge
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetBooleanAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetBooleanMa
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetListAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetNumberAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetNumberLis
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetNumberMap
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetStringAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,15 +792,15 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) GetStringMap
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -820,7 +819,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ImportFrom(i
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) Interpolatio
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,18 +846,18 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) MoveFromId(i
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -869,7 +868,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) MoveToId(id 
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -880,7 +879,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) OverrideLogi
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -924,8 +923,8 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ResetOverrid
 	)
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -937,8 +936,8 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeAt
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -950,8 +949,8 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) SynthesizeHc
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -963,8 +962,8 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToHclTerrafo
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -989,8 +988,8 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToString() *
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1001,4 +1000,3 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) ToTerraform(
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,27 +76,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilter)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilter)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionCondition", GoGetter: "ActionCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "actionConditionInput", GoGetter: "ActionConditionInput"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -252,7 +252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "behavior", GoGetter: "Behavior"},
 			_jsii_.MemberProperty{JsiiProperty: "behaviorInput", GoGetter: "BehaviorInput"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,7 +291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,15 +328,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFields",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFields)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFields](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -368,11 +368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBody",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsBody)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsBody](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,7 +404,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -418,7 +418,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -426,11 +426,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsMethod)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -462,7 +462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allQueryArguments", GoGetter: "AllQueryArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "allQueryArgumentsInput", GoGetter: "AllQueryArgumentsInput"},
@@ -514,7 +514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriPath", GoGetter: "UriPath"},
 			_jsii_.MemberProperty{JsiiProperty: "uriPathInput", GoGetter: "UriPathInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -522,11 +522,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -550,7 +550,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -558,11 +558,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -596,11 +596,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -626,7 +626,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -634,11 +634,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
-		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -662,7 +662,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -130,7 +130,7 @@ func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -286,4 +286,3 @@ func validateNewLbListenerDefaultActionAuthenticateOidcOutputReferenceParameters
 
 	return nil
 }
-

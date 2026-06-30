@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsFsxOpenzfsSnapshot_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataAwsFsxOpenzfsSnapshot_IsConstructParameters(x interface{}) error {
+func validateDataAwsFsxOpenzfsSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsFsxOpenzfsSnapshot_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataAwsFsxOpenzfsSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsFsxOpenzfsSnapshot_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsFsxOpenzfsSnapshot_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataAwsFsxOpenzfsSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsFsxOpenzfsSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsFsxOpenzfsSnapshot_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetMostRecentParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetMostRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -314,4 +314,3 @@ func validateNewDataAwsFsxOpenzfsSnapshotParameters(scope constructs.Construct, 
 
 	return nil
 }
-

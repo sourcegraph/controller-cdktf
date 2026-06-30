@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
-		reflect.TypeOf((*AppconfigExtensionAssociation)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig",
-		reflect.TypeOf((*AppconfigExtensionAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionAssociationConfig](),
 	)
 }

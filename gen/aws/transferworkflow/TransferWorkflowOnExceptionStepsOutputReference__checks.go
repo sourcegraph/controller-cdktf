@@ -142,7 +142,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -274,4 +274,3 @@ func validateNewTransferWorkflowOnExceptionStepsOutputReferenceParameters(terraf
 
 	return nil
 }
-

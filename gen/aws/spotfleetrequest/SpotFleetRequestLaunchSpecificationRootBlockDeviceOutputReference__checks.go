@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -302,4 +302,3 @@ func validateNewSpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReferenc
 
 	return nil
 }
-

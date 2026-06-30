@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamGroupPolicyAttachment) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (i *jsiiProxy_IamGroupPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamGroupPolicyAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamGroupPolicyAttachment) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (i *jsiiProxy_IamGroupPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamGroupPolicyAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamGroupPolicyAttachment_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateIamGroupPolicyAttachment_IsConstructParameters(x interface{}) error {
+func validateIamGroupPolicyAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamGroupPolicyAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateIamGroupPolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateIamGroupPolicyAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamGroupPolicyAttachment_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateIamGroupPolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateIamGroupPolicyAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIamGroupPolicyAttachment_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetPolicyArnParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewIamGroupPolicyAttachmentParameters(scope constructs.Construct, i
 
 	return nil
 }
-

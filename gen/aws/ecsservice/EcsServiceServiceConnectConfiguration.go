@@ -1,9 +1,8 @@
 package ecsservice
 
-
 type EcsServiceServiceConnectConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#enabled EcsService#enabled}.
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// log_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
@@ -15,4 +14,3 @@ type EcsServiceServiceConnectConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#service EcsService#service}
 	Service *EcsServiceServiceConnectConfigurationService `field:"optional" json:"service" yaml:"service"`
 }
-

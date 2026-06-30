@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
-		reflect.TypeOf((*DirectoryServiceRadiusSettings)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRadiusSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useSameUsername", GoGetter: "UseSameUsername"},
 			_jsii_.MemberProperty{JsiiProperty: "useSameUsernameInput", GoGetter: "UseSameUsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceRadiusSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsConfig",
-		reflect.TypeOf((*DirectoryServiceRadiusSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRadiusSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeouts",
-		reflect.TypeOf((*DirectoryServiceRadiusSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRadiusSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*DirectoryServiceRadiusSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectoryServiceRadiusSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

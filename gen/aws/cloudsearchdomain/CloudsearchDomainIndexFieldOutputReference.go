@@ -15,9 +15,9 @@ type CloudsearchDomainIndexFieldOutputReference interface {
 	AnalysisSchemeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,28 +31,28 @@ type CloudsearchDomainIndexFieldOutputReference interface {
 	DefaultValue() *string
 	SetDefaultValue(val *string)
 	DefaultValueInput() *string
-	Facet() interface{}
-	SetFacet(val interface{})
-	FacetInput() interface{}
+	Facet() any
+	SetFacet(val any)
+	FacetInput() any
 	// Experimental.
 	Fqn() *string
-	Highlight() interface{}
-	SetHighlight(val interface{})
-	HighlightInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	Highlight() any
+	SetHighlight(val any)
+	HighlightInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Return() interface{}
-	SetReturn(val interface{})
-	ReturnInput() interface{}
-	Search() interface{}
-	SetSearch(val interface{})
-	SearchInput() interface{}
-	Sort() interface{}
-	SetSort(val interface{})
-	SortInput() interface{}
+	Return() any
+	SetReturn(val any)
+	ReturnInput() any
+	Search() any
+	SetSearch(val any)
+	SearchInput() any
+	Sort() any
+	SetSort(val any)
+	SortInput() any
 	SourceFields() *string
 	SetSourceFields(val *string)
 	SourceFieldsInput() *string
@@ -70,7 +70,7 @@ type CloudsearchDomainIndexFieldOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type CloudsearchDomainIndexFieldOutputReference interface {
 	ResetSourceFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) AnalysisSchemeInp
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) DefaultValueInput
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Facet() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Facet() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"facet",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Facet() interface
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) FacetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) FacetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"facetInput",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Highlight() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Highlight() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"highlight",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Highlight() inter
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) HighlightInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) HighlightInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"highlightInput",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) HighlightInput() 
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) NameInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Return() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Return() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"return",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Return() interfac
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ReturnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ReturnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnInput",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ReturnInput() int
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Search() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Search() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"search",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Search() interfac
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SearchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SearchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"searchInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SearchInput() int
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Sort() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Sort() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sort",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Sort() interface{
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sortInput",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) TypeInput() *stri
 	return returns
 }
 
-
 func NewCloudsearchDomainIndexFieldOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudsearchDomainIndexFieldOutputReference {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewCloudsearchDomainIndexFieldOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewCloudsearchDomainIndexFieldOutputReference_Override(c CloudsearchDomainI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetAnalysisScheme(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetAnalysisScheme(val *string) {
 	if err := j.validateSetAnalysisSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetAnalysisScheme(
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetDefaultValue(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetDefaultValue(val *string) {
 	if err := j.validateSetDefaultValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetDefaultValue(va
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetFacet(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetFacet(val any) {
 	if err := j.validateSetFacetParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetFacet(val inter
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetHighlight(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetHighlight(val any) {
 	if err := j.validateSetHighlightParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetHighlight(val i
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetReturn(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetReturn(val any) {
 	if err := j.validateSetReturnParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetReturn(val inte
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSearch(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetSearch(val any) {
 	if err := j.validateSetSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSearch(val inte
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSort(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetSort(val any) {
 	if err := j.validateSetSortParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSort(val interf
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSourceFields(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetSourceFields(val *string) {
 	if err := j.validateSetSourceFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetSourceFields(va
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,16 +589,16 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -827,16 +826,16 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ResetSourceFields
 	)
 }
 
-func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -855,4 +854,3 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
-		reflect.TypeOf((*DataAwsKmsCustomKeyStore)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKmsCustomKeyStore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchorCertificate", GoGetter: "TrustAnchorCertificate"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsKmsCustomKeyStore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig",
-		reflect.TypeOf((*DataAwsKmsCustomKeyStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsKmsCustomKeyStoreConfig](),
 	)
 }

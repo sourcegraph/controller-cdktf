@@ -16,17 +16,17 @@ type DataAwsImagebuilderContainerRecipes interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsImagebuilderContainerRecipesFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,17 +53,17 @@ type DataAwsImagebuilderContainerRecipes interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,25 +85,25 @@ type DataAwsImagebuilderContainerRecipes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsImagebuilderContainerRecipes
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Filter() DataAwsImagebui
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -331,7 +331,6 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/imagebuilder_container_recipes aws_imagebuilder_container_recipes} Data Source.
 func NewDataAwsImagebuilderContainerRecipes(scope constructs.Construct, id *string, config *DataAwsImagebuilderContainerRecipesConfig) DataAwsImagebuilderContainerRecipes {
 	_init_.Initialize()
@@ -343,7 +342,7 @@ func NewDataAwsImagebuilderContainerRecipes(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -356,12 +355,12 @@ func NewDataAwsImagebuilderContainerRecipes_Override(d DataAwsImagebuilderContai
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetId(val *string) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetOwner(val *string) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetOwner(val *string) {
 	if err := j.validateSetOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -441,7 +440,7 @@ func DataAwsImagebuilderContainerRecipes_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func DataAwsImagebuilderContainerRecipes_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsImagebuilderContainerRecipes_IsConstruct(x interface{}) *bool {
+func DataAwsImagebuilderContainerRecipes_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsImagebuilderContainerRecipes_IsConstructParameters(x); err != nil {
@@ -476,7 +475,7 @@ func DataAwsImagebuilderContainerRecipes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataAwsImagebuilderContainerRecipes_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsImagebuilderContainerRecipes_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsImagebuilderContainerRecipes_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsImagebuilderContainerRecipes_IsTerraformDataSourceParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataAwsImagebuilderContainerRecipes_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataAwsImagebuilderContainerRecipes_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataAwsImagebuilderContainerRecipes_IsTerraformElement(x interface{}) *bool {
+func DataAwsImagebuilderContainerRecipes_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsImagebuilderContainerRecipes_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataAwsImagebuilderContainerRecipes_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipes",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,27 +531,27 @@ func DataAwsImagebuilderContainerRecipes_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,18 +709,18 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -757,8 +756,8 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ResetOwner() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -822,8 +821,8 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -834,4 +833,3 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) ToTerraform() interface{
 
 	return returns
 }
-

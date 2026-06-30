@@ -16,15 +16,15 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataAccessRoleArn() *string
 	SetDataAccessRoleArn(val *string)
 	DataAccessRoleArnInput() *string
@@ -65,11 +65,11 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -79,11 +79,11 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComprehendEntityRecognizerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VersionName() *string
 	SetVersionName(val *string)
 	VersionNameInput() *string
@@ -99,9 +99,9 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type ComprehendEntityRecognizer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type ComprehendEntityRecognizer interface {
 	ResetVersionNamePrefix()
 	ResetVolumeKmsKeyId()
 	ResetVpcConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComprehendEntityRecognizer
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) Timeouts() ComprehendEntityRecogn
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizer) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -601,7 +601,6 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) VpcConfigInput() *ComprehendEntit
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) ComprehendEntityRecognizer {
 	_init_.Initialize()
@@ -613,7 +612,7 @@ func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -626,12 +625,12 @@ func NewComprehendEntityRecognizer_Override(c ComprehendEntityRecognizer, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetCount(val interface{}) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetDataAccessRoleArn(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetDataAccessRoleArn(val *string) {
 	if err := j.validateSetDataAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetDataAccessRoleArn(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetId(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetLanguageCode(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetModelKmsKeyId(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetModelKmsKeyId(val *string) {
 	if err := j.validateSetModelKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetModelKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetName(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetTagsAll(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetVersionName(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetVersionName(val *string) {
 	if err := j.validateSetVersionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetVersionName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetVersionNamePrefix(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetVersionNamePrefix(val *string) {
 	if err := j.validateSetVersionNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer)SetVersionNamePrefix(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer)SetVolumeKmsKeyId(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizer) SetVolumeKmsKeyId(val *string) {
 	if err := j.validateSetVolumeKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func ComprehendEntityRecognizer_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func ComprehendEntityRecognizer_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComprehendEntityRecognizer_IsConstruct(x interface{}) *bool {
+func ComprehendEntityRecognizer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComprehendEntityRecognizer_IsConstructParameters(x); err != nil {
@@ -856,7 +855,7 @@ func ComprehendEntityRecognizer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func ComprehendEntityRecognizer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComprehendEntityRecognizer_IsTerraformElement(x interface{}) *bool {
+func ComprehendEntityRecognizer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComprehendEntityRecognizer_IsTerraformElementParameters(x); err != nil {
@@ -875,7 +874,7 @@ func ComprehendEntityRecognizer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func ComprehendEntityRecognizer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComprehendEntityRecognizer_IsTerraformResource(x interface{}) *bool {
+func ComprehendEntityRecognizer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComprehendEntityRecognizer_IsTerraformResourceParameters(x); err != nil {
@@ -894,7 +893,7 @@ func ComprehendEntityRecognizer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -919,31 +918,31 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComprehendEntityRecognizer) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComprehendEntityRecognizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,15 +1070,15 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1098,7 +1097,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,18 +1124,18 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComprehendEntityRecognizer) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) PutInputDataConfig(value *Compreh
 	_jsii_.InvokeVoid(
 		c,
 		"putInputDataConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) PutTimeouts(value *ComprehendEnti
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) PutVpcConfig(value *ComprehendEnt
 	_jsii_.InvokeVoid(
 		c,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,8 +1274,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) ResetVpcConfig() {
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1288,8 +1287,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1301,8 +1300,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1314,8 +1313,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1340,8 +1339,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizer) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComprehendEntityRecognizer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1352,4 +1351,3 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) ToTerraform() interface{} {
 
 	return returns
 }
-

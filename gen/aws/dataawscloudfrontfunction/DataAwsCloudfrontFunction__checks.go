@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCloudfrontFunction) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsCloudfrontFunction_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataAwsCloudfrontFunction_IsConstructParameters(x interface{}) error {
+func validateDataAwsCloudfrontFunction_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsCloudfrontFunction_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataAwsCloudfrontFunction_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCloudfrontFunction_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsCloudfrontFunction_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataAwsCloudfrontFunction_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCloudfrontFunction_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsCloudfrontFunction_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsCloudfrontFunctionParameters(scope constructs.Construct, 
 
 	return nil
 }
-

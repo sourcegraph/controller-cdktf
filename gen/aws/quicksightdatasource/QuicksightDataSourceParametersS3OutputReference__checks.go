@@ -109,7 +109,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewQuicksightDataSourceParametersS3OutputReferenceParameters(terraf
 
 	return nil
 }
-

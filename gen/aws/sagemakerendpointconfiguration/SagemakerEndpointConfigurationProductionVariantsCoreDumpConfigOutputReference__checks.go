@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfi
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOu
 
 	return nil
 }
-

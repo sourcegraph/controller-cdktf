@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeCostCategoryRuleInheritedValueOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleInheritedValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleInheritedValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCeCostCategoryRuleInheritedValueOutputReferenceParameters(terraf
 
 	return nil
 }
-

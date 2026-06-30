@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
-		reflect.TypeOf((*AcmpcaCertificateAuthority)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthority](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageMode", GoGetter: "UsageMode"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModeInput", GoGetter: "UsageModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthority{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,11 +101,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfiguration",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityCertificateAuthorityConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityCertificateAuthorityConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,19 +219,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityConfig",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityConfig)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfiguration",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -318,7 +318,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityRevocationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityRevocationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -350,7 +350,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -358,11 +358,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeouts",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateAuthorityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateAuthorityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

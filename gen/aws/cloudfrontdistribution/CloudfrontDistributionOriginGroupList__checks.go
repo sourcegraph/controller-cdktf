@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontDistributionOriginGroupListParameters(terraformResourc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewRoute53RecoveryreadinessResourceSetTimeoutsOutputReferenceParame
 
 	return nil
 }
-

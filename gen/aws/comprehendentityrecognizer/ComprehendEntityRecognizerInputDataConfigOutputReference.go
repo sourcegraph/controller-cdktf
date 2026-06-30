@@ -13,12 +13,12 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	Annotations() ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference
 	AnnotationsInput() *ComprehendEntityRecognizerInputDataConfigAnnotations
 	AugmentedManifests() ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList
-	AugmentedManifestsInput() interface{}
+	AugmentedManifestsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,7 +37,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	EntityList() ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference
 	EntityListInput() *ComprehendEntityRecognizerInputDataConfigEntityListStruct
 	EntityTypes() ComprehendEntityRecognizerInputDataConfigEntityTypesList
-	EntityTypesInput() interface{}
+	EntityTypesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComprehendEntityRecognizerInputDataConfig
@@ -53,7 +53,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,10 +75,10 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAnnotations(value *ComprehendEntityRecognizerInputDataConfigAnnotations)
-	PutAugmentedManifests(value interface{})
+	PutAugmentedManifests(value any)
 	PutDocuments(value *ComprehendEntityRecognizerInputDataConfigDocuments)
 	PutEntityList(value *ComprehendEntityRecognizerInputDataConfigEntityListStruct)
-	PutEntityTypes(value interface{})
+	PutEntityTypes(value any)
 	ResetAnnotations()
 	ResetAugmentedManifests()
 	ResetDataFormat()
@@ -86,7 +86,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	ResetEntityList()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Aug
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) AugmentedManifestsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) AugmentedManifestsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"augmentedManifestsInput",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Aug
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Ent
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"entityTypesInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Ter
 	return returns
 }
 
-
 func NewComprehendEntityRecognizerInputDataConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewComprehendEntityRecognizerInputDataConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewComprehendEntityRecognizerInputDataConfigOutputReference_Override(c Comp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetDataFormat(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetDataFormat(val *string) {
 	if err := j.validateSetDataFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetInternalValue(val *ComprehendEntityRecognizerInputDataConfig) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetInternalValue(val *ComprehendEntityRecognizerInputDataConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,16 +395,16 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -576,18 +575,18 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putAnnotations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutAugmentedManifests(value interface{}) {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutAugmentedManifests(value any) {
 	if err := c.validatePutAugmentedManifestsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAugmentedManifests",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,7 +597,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putDocuments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -609,18 +608,18 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putEntityList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutEntityTypes(value interface{}) {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutEntityTypes(value any) {
 	if err := c.validatePutEntityTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEntityTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) ToS
 
 	return returns
 }
-

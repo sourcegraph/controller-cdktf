@@ -21,22 +21,22 @@ type PinpointBaiduChannel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,27 +59,27 @@ type PinpointBaiduChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type PinpointBaiduChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type PinpointBaiduChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type PinpointBaiduChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PinpointBaiduChannel
@@ -189,8 +189,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PinpointBaiduChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_PinpointBaiduChannel) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/pinpoint_baidu_channel aws_pinpoint_baidu_channel} Resource.
 func NewPinpointBaiduChannel(scope constructs.Construct, id *string, config *PinpointBaiduChannelConfig) PinpointBaiduChannel {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewPinpointBaiduChannel(scope constructs.Construct, id *string, config *Pin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewPinpointBaiduChannel_Override(p PinpointBaiduChannel, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetApiKey(val *string) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetApiKey(val *string) {
 	if err := j.validateSetApiKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetApplicationId(val *string) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetEnabled(val interface{}) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +499,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetId(val *string) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetSecretKey(val *string) {
+func (j *jsiiProxy_PinpointBaiduChannel) SetSecretKey(val *string) {
 	if err := j.validateSetSecretKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func PinpointBaiduChannel_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func PinpointBaiduChannel_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PinpointBaiduChannel_IsConstruct(x interface{}) *bool {
+func PinpointBaiduChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointBaiduChannel_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func PinpointBaiduChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func PinpointBaiduChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointBaiduChannel_IsTerraformElement(x interface{}) *bool {
+func PinpointBaiduChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointBaiduChannel_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func PinpointBaiduChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func PinpointBaiduChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PinpointBaiduChannel_IsTerraformResource(x interface{}) *bool {
+func PinpointBaiduChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePinpointBaiduChannel_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func PinpointBaiduChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (p *jsiiProxy_PinpointBaiduChannel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PinpointBaiduChannel) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PinpointBaiduChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (p *jsiiProxy_PinpointBaiduChannel) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -841,7 +840,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (p *jsiiProxy_PinpointBaiduChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PinpointBaiduChannel) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (p *jsiiProxy_PinpointBaiduChannel) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -929,8 +928,8 @@ func (p *jsiiProxy_PinpointBaiduChannel) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -942,8 +941,8 @@ func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -955,8 +954,8 @@ func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -968,8 +967,8 @@ func (p *jsiiProxy_PinpointBaiduChannel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -994,8 +993,8 @@ func (p *jsiiProxy_PinpointBaiduChannel) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PinpointBaiduChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PinpointBaiduChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1006,4 +1005,3 @@ func (p *jsiiProxy_PinpointBaiduChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

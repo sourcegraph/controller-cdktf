@@ -90,7 +90,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validateInter
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAudioDescriptionsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAudioDescriptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAv
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutOutputGroupsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutOutputGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutTi
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutVideoDescriptionsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutVideoDescriptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -313,4 +313,3 @@ func validateNewMedialiveChannelEncoderSettingsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetDisplayableParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetDisplayableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetFacetableParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetFacetableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetSearchableParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetSearchableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetSortableParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateSetSortableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputRefer
 
 	return nil
 }
-

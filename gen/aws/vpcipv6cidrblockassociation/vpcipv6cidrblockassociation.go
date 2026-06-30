@@ -15,15 +15,15 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,19 +59,19 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VpcIpv6CidrBlockAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -79,9 +79,9 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type VpcIpv6CidrBlockAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcIpv6CidrBlockAssociation
@@ -154,8 +154,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Timeouts() VpcIpv6CidrBlockAssoc
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -424,7 +424,6 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
 func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, config *VpcIpv6CidrBlockAssociationConfig) VpcIpv6CidrBlockAssociation {
 	_init_.Initialize()
@@ -436,7 +435,7 @@ func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewVpcIpv6CidrBlockAssociation_Override(v VpcIpv6CidrBlockAssociation, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetId(val *string) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6IpamPoolId(val *string) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetIpv6IpamPoolId(val *string) {
 	if err := j.validateSetIpv6IpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6IpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6NetmaskLength(val *float64) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetIpv6NetmaskLength(val *float64) {
 	if err := j.validateSetIpv6NetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6NetmaskLength(val *float64
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetVpcId(val *string) {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func VpcIpv6CidrBlockAssociation_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func VpcIpv6CidrBlockAssociation_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcIpv6CidrBlockAssociation_IsConstruct(x interface{}) *bool {
+func VpcIpv6CidrBlockAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpv6CidrBlockAssociation_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func VpcIpv6CidrBlockAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func VpcIpv6CidrBlockAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpv6CidrBlockAssociation_IsTerraformElement(x interface{}) *bool {
+func VpcIpv6CidrBlockAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpv6CidrBlockAssociation_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func VpcIpv6CidrBlockAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func VpcIpv6CidrBlockAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpv6CidrBlockAssociation_IsTerraformResource(x interface{}) *bool {
+func VpcIpv6CidrBlockAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpv6CidrBlockAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func VpcIpv6CidrBlockAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -866,7 +865,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) PutTimeouts(value *VpcIpv6CidrBl
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -994,8 +993,8 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1007,8 +1006,8 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1020,8 +1019,8 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1046,8 +1045,8 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1058,4 +1057,3 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

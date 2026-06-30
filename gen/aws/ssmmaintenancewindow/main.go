@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
-		reflect.TypeOf((*SsmMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmMaintenanceWindow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,6 +99,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig",
-		reflect.TypeOf((*SsmMaintenanceWindowConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmMaintenanceWindowConfig](),
 	)
 }

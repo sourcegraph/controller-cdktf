@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuditmanagerControlControlMappingSourcesListParameters(terraform
 
 	return nil
 }
-

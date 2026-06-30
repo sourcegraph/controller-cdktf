@@ -16,9 +16,9 @@ type DxLag interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
@@ -26,18 +26,18 @@ type DxLag interface {
 	SetConnectionsBandwidth(val *string)
 	ConnectionsBandwidthInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,11 +72,11 @@ type DxLag interface {
 	SetProviderName(val *string)
 	ProviderNameInput() *string
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -86,16 +86,16 @@ type DxLag interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type DxLag interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type DxLag interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type DxLag interface {
 	ResetProviderName()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DxLag
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DxLag) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxLag) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DxLag) ConnectionsBandwidthInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxLag) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DxLag) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxLag) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DxLag) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxLag) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DxLag) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxLag) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_DxLag) ProviderNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DxLag) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_DxLag) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxLag) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_DxLag) TerraformGeneratorMetadata() *cdktf.TerraformProviderG
 	return returns
 }
 
-func (j *jsiiProxy_DxLag) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxLag) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -539,7 +539,6 @@ func (j *jsiiProxy_DxLag) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dx_lag aws_dx_lag} Resource.
 func NewDxLag(scope constructs.Construct, id *string, config *DxLagConfig) DxLag {
 	_init_.Initialize()
@@ -551,7 +550,7 @@ func NewDxLag(scope constructs.Construct, id *string, config *DxLagConfig) DxLag
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxLag.DxLag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewDxLag_Override(d DxLag, scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxLag.DxLag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetConnection(val interface{}) {
+func (j *jsiiProxy_DxLag) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DxLag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetConnectionId(val *string) {
+func (j *jsiiProxy_DxLag) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DxLag)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetConnectionsBandwidth(val *string) {
+func (j *jsiiProxy_DxLag) SetConnectionsBandwidth(val *string) {
 	if err := j.validateSetConnectionsBandwidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DxLag)SetConnectionsBandwidth(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetCount(val interface{}) {
+func (j *jsiiProxy_DxLag) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DxLag)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DxLag) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DxLag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_DxLag) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DxLag)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DxLag) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_DxLag)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetId(val *string) {
+func (j *jsiiProxy_DxLag) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DxLag)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DxLag) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DxLag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetLocation(val *string) {
+func (j *jsiiProxy_DxLag) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DxLag)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetName(val *string) {
+func (j *jsiiProxy_DxLag) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DxLag)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DxLag) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_DxLag)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetProviderName(val *string) {
+func (j *jsiiProxy_DxLag) SetProviderName(val *string) {
 	if err := j.validateSetProviderNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_DxLag)SetProviderName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DxLag) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DxLag)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DxLag) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_DxLag)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DxLag)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DxLag) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func DxLag_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxLag.DxLag",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func DxLag_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DxLag_IsConstruct(x interface{}) *bool {
+func DxLag_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxLag_IsConstructParameters(x); err != nil {
@@ -783,7 +782,7 @@ func DxLag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxLag.DxLag",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func DxLag_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DxLag_IsTerraformElement(x interface{}) *bool {
+func DxLag_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxLag_IsTerraformElementParameters(x); err != nil {
@@ -802,7 +801,7 @@ func DxLag_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxLag.DxLag",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func DxLag_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DxLag_IsTerraformResource(x interface{}) *bool {
+func DxLag_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxLag_IsTerraformResourceParameters(x); err != nil {
@@ -821,7 +820,7 @@ func DxLag_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxLag.DxLag",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -846,31 +845,31 @@ func (d *jsiiProxy_DxLag) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DxLag) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DxLag) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DxLag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DxLag) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (d *jsiiProxy_DxLag) GetBooleanAttribute(terraformAttribute *string) cdktf.
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DxLag) GetBooleanMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DxLag) GetListAttribute(terraformAttribute *string) *[]*strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DxLag) GetNumberAttribute(terraformAttribute *string) *float6
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DxLag) GetNumberListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DxLag) GetNumberMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DxLag) GetStringAttribute(terraformAttribute *string) *string
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,15 +997,15 @@ func (d *jsiiProxy_DxLag) GetStringMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DxLag) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxLag) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1025,7 +1024,7 @@ func (d *jsiiProxy_DxLag) ImportFrom(id *string, provider cdktf.TerraformProvide
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (d *jsiiProxy_DxLag) InterpolationForAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,18 +1051,18 @@ func (d *jsiiProxy_DxLag) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DxLag) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DxLag) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (d *jsiiProxy_DxLag) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (d *jsiiProxy_DxLag) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,8 +1144,8 @@ func (d *jsiiProxy_DxLag) ResetTagsAll() {
 	)
 }
 
-func (d *jsiiProxy_DxLag) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxLag) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1158,8 +1157,8 @@ func (d *jsiiProxy_DxLag) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DxLag) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxLag) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1171,8 +1170,8 @@ func (d *jsiiProxy_DxLag) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DxLag) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxLag) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1184,8 +1183,8 @@ func (d *jsiiProxy_DxLag) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DxLag) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxLag) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1210,8 +1209,8 @@ func (d *jsiiProxy_DxLag) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DxLag) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxLag) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1222,4 +1221,3 @@ func (d *jsiiProxy_DxLag) ToTerraform() interface{} {
 
 	return returns
 }
-

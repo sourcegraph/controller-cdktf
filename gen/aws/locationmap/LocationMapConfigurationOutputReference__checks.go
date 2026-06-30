@@ -98,7 +98,7 @@ func (l *jsiiProxy_LocationMapConfigurationOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_LocationMapConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LocationMapConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLocationMapConfigurationOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

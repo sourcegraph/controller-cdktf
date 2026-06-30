@@ -106,7 +106,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewS3ControlMultiRegionAccessPointDetailsRegionOutputReferenceParam
 
 	return nil
 }
-

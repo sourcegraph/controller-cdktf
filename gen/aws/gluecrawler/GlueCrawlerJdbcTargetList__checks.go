@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCrawlerJdbcTargetList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerJdbcTargetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerJdbcTargetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCrawlerJdbcTargetListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

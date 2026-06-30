@@ -98,7 +98,7 @@ func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSyntheticsCanaryTimelineOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

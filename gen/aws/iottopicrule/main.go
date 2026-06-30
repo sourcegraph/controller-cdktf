@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
-		reflect.TypeOf((*IotTopicRule)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm",
-		reflect.TypeOf((*IotTopicRuleCloudwatchAlarm)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchAlarm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
-		reflect.TypeOf((*IotTopicRuleCloudwatchAlarmList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchAlarmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchAlarmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -188,7 +188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
-		reflect.TypeOf((*IotTopicRuleCloudwatchAlarmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchAlarmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmNameInput", GoGetter: "AlarmNameInput"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs",
-		reflect.TypeOf((*IotTopicRuleCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
-		reflect.TypeOf((*IotTopicRuleCloudwatchLogsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchLogsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchLogsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -254,7 +254,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference",
-		reflect.TypeOf((*IotTopicRuleCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -290,11 +290,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric",
-		reflect.TypeOf((*IotTopicRuleCloudwatchMetric)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
-		reflect.TypeOf((*IotTopicRuleCloudwatchMetricList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchMetricList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchMetricList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -316,7 +316,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference",
-		reflect.TypeOf((*IotTopicRuleCloudwatchMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleCloudwatchMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleCloudwatchMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,15 +361,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig",
-		reflect.TypeOf((*IotTopicRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb",
-		reflect.TypeOf((*IotTopicRuleDynamodb)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList",
-		reflect.TypeOf((*IotTopicRuleDynamodbList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDynamodbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -391,7 +391,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference",
-		reflect.TypeOf((*IotTopicRuleDynamodbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -441,7 +441,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDynamodbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -449,11 +449,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2",
-		reflect.TypeOf((*IotTopicRuleDynamodbv2)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbv2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
-		reflect.TypeOf((*IotTopicRuleDynamodbv2List)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbv2List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -467,7 +467,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDynamodbv2List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -475,7 +475,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
-		reflect.TypeOf((*IotTopicRuleDynamodbv2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbv2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -505,7 +505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDynamodbv2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -513,11 +513,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem",
-		reflect.TypeOf((*IotTopicRuleDynamodbv2PutItem)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbv2PutItem](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference",
-		reflect.TypeOf((*IotTopicRuleDynamodbv2PutItemOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDynamodbv2PutItemOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -543,7 +543,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDynamodbv2PutItemOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -551,11 +551,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch",
-		reflect.TypeOf((*IotTopicRuleElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList",
-		reflect.TypeOf((*IotTopicRuleElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -569,7 +569,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -577,7 +577,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
-		reflect.TypeOf((*IotTopicRuleElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -611,7 +611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -619,15 +619,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction",
-		reflect.TypeOf((*IotTopicRuleErrorAction)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchAlarm)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchAlarm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchAlarmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchAlarmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmNameInput", GoGetter: "AlarmNameInput"},
@@ -659,7 +659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -667,11 +667,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -699,7 +699,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -707,11 +707,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchMetric)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionCloudwatchMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,11 +756,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodb)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -810,7 +810,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionDynamodbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -818,11 +818,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodbv2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodbv2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -852,7 +852,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -860,11 +860,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2PutItem)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodbv2PutItem](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2PutItemOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionDynamodbv2PutItemOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -890,7 +890,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionDynamodbv2PutItemOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -898,11 +898,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch",
-		reflect.TypeOf((*IotTopicRuleErrorActionElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -936,7 +936,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -944,11 +944,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose",
-		reflect.TypeOf((*IotTopicRuleErrorActionFirehose)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionFirehose](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionFirehoseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionFirehoseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -979,7 +979,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -987,15 +987,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp",
-		reflect.TypeOf((*IotTopicRuleErrorActionHttp)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionHttp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader",
-		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionHttpHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList",
-		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionHttpHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1009,7 +1009,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1017,7 +1017,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionHttpHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1045,7 +1045,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1053,7 +1053,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1086,7 +1086,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1094,11 +1094,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics",
-		reflect.TypeOf((*IotTopicRuleErrorActionIotAnalytics)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionIotAnalytics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionIotAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionIotAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelName", GoGetter: "ChannelName"},
 			_jsii_.MemberProperty{JsiiProperty: "channelNameInput", GoGetter: "ChannelNameInput"},
@@ -1126,7 +1126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1134,11 +1134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents",
-		reflect.TypeOf((*IotTopicRuleErrorActionIotEvents)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionIotEvents](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionIotEventsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionIotEventsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1169,7 +1169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionIotEventsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1177,11 +1177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka",
-		reflect.TypeOf((*IotTopicRuleErrorActionKafka)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionKafka](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionKafkaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionKafkaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientProperties", GoGetter: "ClientProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "clientPropertiesInput", GoGetter: "ClientPropertiesInput"},
@@ -1217,7 +1217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1225,11 +1225,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis",
-		reflect.TypeOf((*IotTopicRuleErrorActionKinesis)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionKinesis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionKinesisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionKinesisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1260,7 +1260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionKinesisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1268,11 +1268,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambda",
-		reflect.TypeOf((*IotTopicRuleErrorActionLambda)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionLambda](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionLambdaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionLambdaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1298,7 +1298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionLambdaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1306,7 +1306,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchAlarm", GoGetter: "CloudwatchAlarm"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchAlarmInput", GoGetter: "CloudwatchAlarmInput"},
@@ -1406,7 +1406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestreamInput", GoGetter: "TimestreamInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1414,11 +1414,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish",
-		reflect.TypeOf((*IotTopicRuleErrorActionRepublish)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionRepublish](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionRepublishOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionRepublishOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1449,7 +1449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionRepublishOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1457,11 +1457,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3",
-		reflect.TypeOf((*IotTopicRuleErrorActionS3)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -1494,7 +1494,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1502,11 +1502,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns",
-		reflect.TypeOf((*IotTopicRuleErrorActionSns)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionSns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionSnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionSnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1537,7 +1537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionSnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1545,11 +1545,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs",
-		reflect.TypeOf((*IotTopicRuleErrorActionSqs)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionSqs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionSqsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionSqsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1579,7 +1579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useBase64", GoGetter: "UseBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "useBase64Input", GoGetter: "UseBase64Input"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionSqsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1587,11 +1587,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions",
-		reflect.TypeOf((*IotTopicRuleErrorActionStepFunctions)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionStepFunctions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionStepFunctionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionStepFunctionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1622,7 +1622,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionStepFunctionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1630,15 +1630,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestream)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestream](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimension)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimensionList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamDimensionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1652,7 +1652,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1660,7 +1660,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1688,7 +1688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1696,7 +1696,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1733,7 +1733,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampInput", GoGetter: "TimestampInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionTimestreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1741,11 +1741,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamTimestamp)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamTimestamp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
-		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamTimestampOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleErrorActionTimestreamTimestampOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1773,7 +1773,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1781,11 +1781,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose",
-		reflect.TypeOf((*IotTopicRuleFirehose)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleFirehose](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList",
-		reflect.TypeOf((*IotTopicRuleFirehoseList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleFirehoseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1799,7 +1799,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleFirehoseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1807,7 +1807,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
-		reflect.TypeOf((*IotTopicRuleFirehoseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleFirehoseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1838,7 +1838,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleFirehoseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1846,15 +1846,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp",
-		reflect.TypeOf((*IotTopicRuleHttp)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader",
-		reflect.TypeOf((*IotTopicRuleHttpHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttpHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList",
-		reflect.TypeOf((*IotTopicRuleHttpHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttpHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1868,7 +1868,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleHttpHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1876,7 +1876,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference",
-		reflect.TypeOf((*IotTopicRuleHttpHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttpHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1904,7 +1904,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleHttpHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1912,7 +1912,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
-		reflect.TypeOf((*IotTopicRuleHttpList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1926,7 +1926,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleHttpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1934,7 +1934,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference",
-		reflect.TypeOf((*IotTopicRuleHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1967,7 +1967,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1975,11 +1975,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics",
-		reflect.TypeOf((*IotTopicRuleIotAnalytics)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotAnalytics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList",
-		reflect.TypeOf((*IotTopicRuleIotAnalyticsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotAnalyticsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1993,7 +1993,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleIotAnalyticsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2001,7 +2001,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference",
-		reflect.TypeOf((*IotTopicRuleIotAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelName", GoGetter: "ChannelName"},
 			_jsii_.MemberProperty{JsiiProperty: "channelNameInput", GoGetter: "ChannelNameInput"},
@@ -2029,7 +2029,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleIotAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2037,11 +2037,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents",
-		reflect.TypeOf((*IotTopicRuleIotEvents)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotEvents](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
-		reflect.TypeOf((*IotTopicRuleIotEventsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotEventsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2055,7 +2055,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleIotEventsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2063,7 +2063,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference",
-		reflect.TypeOf((*IotTopicRuleIotEventsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleIotEventsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2094,7 +2094,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleIotEventsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2102,11 +2102,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka",
-		reflect.TypeOf((*IotTopicRuleKafka)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKafka](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList",
-		reflect.TypeOf((*IotTopicRuleKafkaList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKafkaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2120,7 +2120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleKafkaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2128,7 +2128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
-		reflect.TypeOf((*IotTopicRuleKafkaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKafkaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientProperties", GoGetter: "ClientProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "clientPropertiesInput", GoGetter: "ClientPropertiesInput"},
@@ -2164,7 +2164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleKafkaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2172,11 +2172,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis",
-		reflect.TypeOf((*IotTopicRuleKinesis)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKinesis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList",
-		reflect.TypeOf((*IotTopicRuleKinesisList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKinesisList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2190,7 +2190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleKinesisList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2198,7 +2198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference",
-		reflect.TypeOf((*IotTopicRuleKinesisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleKinesisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2229,7 +2229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleKinesisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2237,11 +2237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda",
-		reflect.TypeOf((*IotTopicRuleLambda)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleLambda](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList",
-		reflect.TypeOf((*IotTopicRuleLambdaList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleLambdaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2255,7 +2255,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleLambdaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2263,7 +2263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference",
-		reflect.TypeOf((*IotTopicRuleLambdaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleLambdaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2289,7 +2289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleLambdaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2297,11 +2297,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish",
-		reflect.TypeOf((*IotTopicRuleRepublish)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleRepublish](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList",
-		reflect.TypeOf((*IotTopicRuleRepublishList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleRepublishList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2315,7 +2315,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleRepublishList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2323,7 +2323,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference",
-		reflect.TypeOf((*IotTopicRuleRepublishOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleRepublishOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2354,7 +2354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleRepublishOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2362,11 +2362,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3",
-		reflect.TypeOf((*IotTopicRuleS3)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List",
-		reflect.TypeOf((*IotTopicRuleS3List)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleS3List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2380,7 +2380,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleS3List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2388,7 +2388,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference",
-		reflect.TypeOf((*IotTopicRuleS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -2421,7 +2421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2429,11 +2429,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns",
-		reflect.TypeOf((*IotTopicRuleSns)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList",
-		reflect.TypeOf((*IotTopicRuleSnsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2447,7 +2447,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleSnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2455,7 +2455,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference",
-		reflect.TypeOf((*IotTopicRuleSnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2486,7 +2486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleSnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2494,11 +2494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs",
-		reflect.TypeOf((*IotTopicRuleSqs)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSqs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList",
-		reflect.TypeOf((*IotTopicRuleSqsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSqsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2512,7 +2512,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleSqsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2520,7 +2520,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference",
-		reflect.TypeOf((*IotTopicRuleSqsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleSqsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2550,7 +2550,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useBase64", GoGetter: "UseBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "useBase64Input", GoGetter: "UseBase64Input"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleSqsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2558,11 +2558,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions",
-		reflect.TypeOf((*IotTopicRuleStepFunctions)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleStepFunctions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList",
-		reflect.TypeOf((*IotTopicRuleStepFunctionsList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleStepFunctionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2576,7 +2576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleStepFunctionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2584,7 +2584,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
-		reflect.TypeOf((*IotTopicRuleStepFunctionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleStepFunctionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2615,7 +2615,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleStepFunctionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2623,15 +2623,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream",
-		reflect.TypeOf((*IotTopicRuleTimestream)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestream](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension",
-		reflect.TypeOf((*IotTopicRuleTimestreamDimension)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
-		reflect.TypeOf((*IotTopicRuleTimestreamDimensionList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamDimensionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2645,7 +2645,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleTimestreamDimensionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2653,7 +2653,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference",
-		reflect.TypeOf((*IotTopicRuleTimestreamDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2681,7 +2681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2689,7 +2689,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList",
-		reflect.TypeOf((*IotTopicRuleTimestreamList)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2703,7 +2703,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleTimestreamList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2711,7 +2711,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
-		reflect.TypeOf((*IotTopicRuleTimestreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2748,7 +2748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampInput", GoGetter: "TimestampInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleTimestreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2756,11 +2756,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp",
-		reflect.TypeOf((*IotTopicRuleTimestreamTimestamp)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamTimestamp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference",
-		reflect.TypeOf((*IotTopicRuleTimestreamTimestampOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleTimestreamTimestampOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2788,7 +2788,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleTimestreamTimestampOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

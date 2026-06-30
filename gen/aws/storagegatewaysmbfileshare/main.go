@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
-		reflect.TypeOf((*StoragegatewaySmbFileShare)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShare](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBasedEnumeration", GoGetter: "AccessBasedEnumeration"},
 			_jsii_.MemberProperty{JsiiProperty: "accessBasedEnumerationInput", GoGetter: "AccessBasedEnumerationInput"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsName", GoGetter: "VpcEndpointDnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsNameInput", GoGetter: "VpcEndpointDnsNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewaySmbFileShare{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributes",
-		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributes)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShareCacheAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
-		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShareCacheAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSecondsInput", GoGetter: "CacheStaleTimeoutInSecondsInput"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewaySmbFileShareCacheAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareConfig",
-		reflect.TypeOf((*StoragegatewaySmbFileShareConfig)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeouts",
-		reflect.TypeOf((*StoragegatewaySmbFileShareTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShareTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
-		reflect.TypeOf((*StoragegatewaySmbFileShareTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewaySmbFileShareTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewaySmbFileShareTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

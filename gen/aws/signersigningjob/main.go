@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
-		reflect.TypeOf((*SignerSigningJob)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobConfig",
-		reflect.TypeOf((*SignerSigningJobConfig)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestination",
-		reflect.TypeOf((*SignerSigningJobDestination)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestinationOutputReference",
-		reflect.TypeOf((*SignerSigningJobDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestinationS3",
-		reflect.TypeOf((*SignerSigningJobDestinationS3)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobDestinationS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestinationS3OutputReference",
-		reflect.TypeOf((*SignerSigningJobDestinationS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobDestinationS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobDestinationS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,11 +173,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobRevocationRecord",
-		reflect.TypeOf((*SignerSigningJobRevocationRecord)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobRevocationRecord](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobRevocationRecordList",
-		reflect.TypeOf((*SignerSigningJobRevocationRecordList)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobRevocationRecordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobRevocationRecordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -198,7 +198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobRevocationRecordOutputReference",
-		reflect.TypeOf((*SignerSigningJobRevocationRecordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobRevocationRecordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobRevocationRecordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,11 +233,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObject",
-		reflect.TypeOf((*SignerSigningJobSignedObject)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectList",
-		reflect.TypeOf((*SignerSigningJobSignedObjectList)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObjectList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSignedObjectList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,7 +258,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectOutputReference",
-		reflect.TypeOf((*SignerSigningJobSignedObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSignedObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,11 +291,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3",
-		reflect.TypeOf((*SignerSigningJobSignedObjectS3)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObjectS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3List",
-		reflect.TypeOf((*SignerSigningJobSignedObjectS3List)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObjectS3List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSignedObjectS3List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -316,7 +316,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference",
-		reflect.TypeOf((*SignerSigningJobSignedObjectS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSignedObjectS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSignedObjectS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,11 +350,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSource",
-		reflect.TypeOf((*SignerSigningJobSource)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSourceOutputReference",
-		reflect.TypeOf((*SignerSigningJobSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,11 +389,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSourceS3",
-		reflect.TypeOf((*SignerSigningJobSourceS3)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSourceS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference",
-		reflect.TypeOf((*SignerSigningJobSourceS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningJobSourceS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningJobSourceS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerPortMappingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshVirtualNodeSpecListenerPortMappingOutputReferenceParamete
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEc2FleetLaunchTemplateConfigOverrideListParameters(terraformReso
 
 	return nil
 }
-

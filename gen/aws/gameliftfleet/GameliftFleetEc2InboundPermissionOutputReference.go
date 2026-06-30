@@ -12,9 +12,9 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	FromPort() *float64
 	SetFromPort(val *float64)
 	FromPortInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpRange() *string
 	SetIpRange(val *string)
 	IpRangeInput() *string
@@ -52,7 +52,7 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) FromPortInp
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ToPortInput
 	return returns
 }
 
-
 func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GameliftFleetEc2InboundPermissionOutputReference {
 	_init_.Initialize()
 
@@ -249,7 +248,7 @@ func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -261,12 +260,12 @@ func NewGameliftFleetEc2InboundPermissionOutputReference_Override(g GameliftFlee
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetFromPort(val *float64) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetFromPort(val *float64) {
 	if err := j.validateSetFromPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetFromPort(
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetIpRange(val *string) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetIpRange(val *string) {
 	if err := j.validateSetIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetIpRange(v
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -332,7 +331,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetProtocol(
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +353,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetToPort(val *float64) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) SetToPort(val *float64) {
 	if err := j.validateSetToPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,16 +377,16 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,23 +543,23 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -579,4 +578,3 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ToString() 
 
 	return returns
 }
-

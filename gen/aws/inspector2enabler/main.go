@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
-		reflect.TypeOf((*Inspector2Enabler)(nil)).Elem(),
+		reflect.TypeFor[Inspector2Enabler](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountIds", GoGetter: "AccountIds"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdsInput", GoGetter: "AccountIdsInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Inspector2Enabler{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig",
-		reflect.TypeOf((*Inspector2EnablerConfig)(nil)).Elem(),
+		reflect.TypeFor[Inspector2EnablerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts",
-		reflect.TypeOf((*Inspector2EnablerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Inspector2EnablerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeoutsOutputReference",
-		reflect.TypeOf((*Inspector2EnablerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Inspector2EnablerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Inspector2EnablerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

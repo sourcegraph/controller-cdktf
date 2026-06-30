@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
-		reflect.TypeOf((*EbsSnapshotImport)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImport](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotImport{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,11 +109,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientData",
-		reflect.TypeOf((*EbsSnapshotImportClientData)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportClientData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
-		reflect.TypeOf((*EbsSnapshotImportClientDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportClientDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadStart", GoGetter: "UploadStart"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadStartInput", GoGetter: "UploadStartInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotImportClientDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,15 +157,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportConfig",
-		reflect.TypeOf((*EbsSnapshotImportConfig)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainer",
-		reflect.TypeOf((*EbsSnapshotImportDiskContainer)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportDiskContainer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
-		reflect.TypeOf((*EbsSnapshotImportDiskContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportDiskContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userBucket", GoGetter: "UserBucket"},
 			_jsii_.MemberProperty{JsiiProperty: "userBucketInput", GoGetter: "UserBucketInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotImportDiskContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket",
-		reflect.TypeOf((*EbsSnapshotImportDiskContainerUserBucket)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportDiskContainerUserBucket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucketOutputReference",
-		reflect.TypeOf((*EbsSnapshotImportDiskContainerUserBucketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportDiskContainerUserBucketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotImportDiskContainerUserBucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeouts",
-		reflect.TypeOf((*EbsSnapshotImportTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeoutsOutputReference",
-		reflect.TypeOf((*EbsSnapshotImportTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotImportTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotImportTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

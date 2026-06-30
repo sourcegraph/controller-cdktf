@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
-		reflect.TypeOf((*EcrPullThroughCacheRule)(nil)).Elem(),
+		reflect.TypeFor[EcrPullThroughCacheRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upstreamRegistryUrl", GoGetter: "UpstreamRegistryUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamRegistryUrlInput", GoGetter: "UpstreamRegistryUrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrPullThroughCacheRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRuleConfig",
-		reflect.TypeOf((*EcrPullThroughCacheRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[EcrPullThroughCacheRuleConfig](),
 	)
 }

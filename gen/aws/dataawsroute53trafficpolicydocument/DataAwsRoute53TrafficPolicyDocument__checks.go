@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateOverrideLogicalI
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutEndpointParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutEndpointParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutEndpointParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutRuleParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -189,7 +189,7 @@ func validateDataAwsRoute53TrafficPolicyDocument_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataAwsRoute53TrafficPolicyDocument_IsConstructParameters(x interface{}) error {
+func validateDataAwsRoute53TrafficPolicyDocument_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -197,7 +197,7 @@ func validateDataAwsRoute53TrafficPolicyDocument_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -333,4 +333,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentParameters(scope constructs.C
 
 	return nil
 }
-

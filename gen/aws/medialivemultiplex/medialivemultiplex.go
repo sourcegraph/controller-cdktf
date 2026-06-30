@@ -19,15 +19,15 @@ type MedialiveMultiplex interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,14 +59,14 @@ type MedialiveMultiplex interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	StartMultiplex() interface{}
-	SetStartMultiplex(val interface{})
-	StartMultiplexInput() interface{}
+	RawOverrides() any
+	StartMultiplex() any
+	SetStartMultiplex(val any)
+	StartMultiplexInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -76,18 +76,18 @@ type MedialiveMultiplex interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MedialiveMultiplexTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type MedialiveMultiplex interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type MedialiveMultiplex interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type MedialiveMultiplex interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MedialiveMultiplex
@@ -193,8 +193,8 @@ func (j *jsiiProxy_MedialiveMultiplex) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_MedialiveMultiplex) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MedialiveMultiplex) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_MedialiveMultiplex) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_MedialiveMultiplex) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MedialiveMultiplex) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_MedialiveMultiplex) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_MedialiveMultiplex) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) StartMultiplex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) StartMultiplex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startMultiplex",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_MedialiveMultiplex) StartMultiplex() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) StartMultiplexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) StartMultiplexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startMultiplexInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_MedialiveMultiplex) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MedialiveMultiplex) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_MedialiveMultiplex) Timeouts() MedialiveMultiplexTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveMultiplex) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_MedialiveMultiplex) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex aws_medialive_multiplex} Resource.
 func NewMedialiveMultiplex(scope constructs.Construct, id *string, config *MedialiveMultiplexConfig) MedialiveMultiplex {
@@ -495,7 +494,7 @@ func NewMedialiveMultiplex(scope constructs.Construct, id *string, config *Media
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -508,12 +507,12 @@ func NewMedialiveMultiplex_Override(m MedialiveMultiplex, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetAvailabilityZones(val *[]*string) {
 	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetAvailabilityZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetConnection(val interface{}) {
+func (j *jsiiProxy_MedialiveMultiplex) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetCount(val interface{}) {
+func (j *jsiiProxy_MedialiveMultiplex) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MedialiveMultiplex) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetId(val *string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MedialiveMultiplex) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetName(val *string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MedialiveMultiplex) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MedialiveMultiplex) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetStartMultiplex(val interface{}) {
+func (j *jsiiProxy_MedialiveMultiplex) SetStartMultiplex(val any) {
 	if err := j.validateSetStartMultiplexParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetStartMultiplex(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_MedialiveMultiplex)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplex)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MedialiveMultiplex) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func MedialiveMultiplex_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func MedialiveMultiplex_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MedialiveMultiplex_IsConstruct(x interface{}) *bool {
+func MedialiveMultiplex_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveMultiplex_IsConstructParameters(x); err != nil {
@@ -694,7 +693,7 @@ func MedialiveMultiplex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func MedialiveMultiplex_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MedialiveMultiplex_IsTerraformElement(x interface{}) *bool {
+func MedialiveMultiplex_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveMultiplex_IsTerraformElementParameters(x); err != nil {
@@ -713,7 +712,7 @@ func MedialiveMultiplex_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func MedialiveMultiplex_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MedialiveMultiplex_IsTerraformResource(x interface{}) *bool {
+func MedialiveMultiplex_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMedialiveMultiplex_IsTerraformResourceParameters(x); err != nil {
@@ -732,7 +731,7 @@ func MedialiveMultiplex_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplex",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,31 +756,31 @@ func (m *jsiiProxy_MedialiveMultiplex) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MedialiveMultiplex) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveMultiplex) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (m *jsiiProxy_MedialiveMultiplex) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,15 +908,15 @@ func (m *jsiiProxy_MedialiveMultiplex) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveMultiplex) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -936,7 +935,7 @@ func (m *jsiiProxy_MedialiveMultiplex) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -949,7 +948,7 @@ func (m *jsiiProxy_MedialiveMultiplex) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,18 +962,18 @@ func (m *jsiiProxy_MedialiveMultiplex) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MedialiveMultiplex) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -985,7 +984,7 @@ func (m *jsiiProxy_MedialiveMultiplex) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -996,7 +995,7 @@ func (m *jsiiProxy_MedialiveMultiplex) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (m *jsiiProxy_MedialiveMultiplex) PutMultiplexSettings(value *MedialiveMult
 	_jsii_.InvokeVoid(
 		m,
 		"putMultiplexSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (m *jsiiProxy_MedialiveMultiplex) PutTimeouts(value *MedialiveMultiplexTime
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,8 +1077,8 @@ func (m *jsiiProxy_MedialiveMultiplex) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MedialiveMultiplex) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1091,8 +1090,8 @@ func (m *jsiiProxy_MedialiveMultiplex) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MedialiveMultiplex) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1104,8 +1103,8 @@ func (m *jsiiProxy_MedialiveMultiplex) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveMultiplex) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1117,8 +1116,8 @@ func (m *jsiiProxy_MedialiveMultiplex) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveMultiplex) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1143,8 +1142,8 @@ func (m *jsiiProxy_MedialiveMultiplex) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MedialiveMultiplex) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1155,4 +1154,3 @@ func (m *jsiiProxy_MedialiveMultiplex) ToTerraform() interface{} {
 
 	return returns
 }
-

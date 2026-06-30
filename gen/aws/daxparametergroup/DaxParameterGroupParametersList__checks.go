@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaxParameterGroupParametersList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_DaxParameterGroupParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaxParameterGroupParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaxParameterGroupParametersListParameters(terraformResource cdkt
 
 	return nil
 }
-

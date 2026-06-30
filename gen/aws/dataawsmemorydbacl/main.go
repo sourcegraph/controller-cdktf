@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
-		reflect.TypeOf((*DataAwsMemorydbAcl)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbAcl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userNames", GoGetter: "UserNames"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMemorydbAcl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig",
-		reflect.TypeOf((*DataAwsMemorydbAclConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMemorydbAclConfig](),
 	)
 }

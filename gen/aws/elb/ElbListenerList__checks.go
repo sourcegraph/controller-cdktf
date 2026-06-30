@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElbListenerList) validateResolveParameters(_context cdktf.IRe
 	return nil
 }
 
-func (j *jsiiProxy_ElbListenerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElbListenerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElbListenerListParameters(terraformResource cdktf.IInterpolating
 
 	return nil
 }
-

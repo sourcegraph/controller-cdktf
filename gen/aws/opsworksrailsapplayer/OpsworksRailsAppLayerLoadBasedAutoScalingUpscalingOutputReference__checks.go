@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReferenc
 
 	return nil
 }
-

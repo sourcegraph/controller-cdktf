@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) va
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuditmanagerControlControlMappingSourcesSourceKeywordListParamet
 
 	return nil
 }
-

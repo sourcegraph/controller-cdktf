@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersJiraOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersJiraOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersJiraOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQuicksightDataSourceParametersJiraOutputReferenceParameters(terr
 
 	return nil
 }
-

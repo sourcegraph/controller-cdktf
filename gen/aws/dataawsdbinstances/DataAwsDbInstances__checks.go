@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsDbInstances) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsDbInstances) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsDbInstances) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDbInstances) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsDbInstances) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsDbInstances_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataAwsDbInstances_IsConstructParameters(x interface{}) error {
+func validateDataAwsDbInstances_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsDbInstances_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsDbInstances_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsDbInstances_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsDbInstances_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataAwsDbInstances_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsDbInstances_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsDbInstances_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbInstances) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbInstances) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -270,4 +270,3 @@ func validateNewDataAwsDbInstancesParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

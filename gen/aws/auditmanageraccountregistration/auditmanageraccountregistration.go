@@ -15,15 +15,15 @@ type AuditmanagerAccountRegistration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DelegatedAdminAccount() *string
 	SetDelegatedAdminAccount(val *string)
 	DelegatedAdminAccountInput() *string
@@ -31,9 +31,9 @@ type AuditmanagerAccountRegistration interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DeregisterOnDestroy() interface{}
-	SetDeregisterOnDestroy(val interface{})
-	DeregisterOnDestroyInput() interface{}
+	DeregisterOnDestroy() any
+	SetDeregisterOnDestroy(val any)
+	DeregisterOnDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,25 +57,25 @@ type AuditmanagerAccountRegistration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type AuditmanagerAccountRegistration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type AuditmanagerAccountRegistration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type AuditmanagerAccountRegistration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AuditmanagerAccountRegistration
@@ -146,8 +146,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) DeregisterOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) DeregisterOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deregisterOnDestroy",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) DeregisterOnDestroy() interf
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) DeregisterOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) DeregisterOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deregisterOnDestroyInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuditmanagerAccountRegistration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_account_registration aws_auditmanager_account_registration} Resource.
 func NewAuditmanagerAccountRegistration(scope constructs.Construct, id *string, config *AuditmanagerAccountRegistrationConfig) AuditmanagerAccountRegistration {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewAuditmanagerAccountRegistration(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewAuditmanagerAccountRegistration_Override(a AuditmanagerAccountRegistrati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetConnection(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetCount(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDelegatedAdminAccount(val *string) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetDelegatedAdminAccount(val *string) {
 	if err := j.validateSetDelegatedAdminAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDelegatedAdminAccount(val 
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDeregisterOnDestroy(val interface{}) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetDeregisterOnDestroy(val any) {
 	if err := j.validateSetDeregisterOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetDeregisterOnDestroy(val in
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetKmsKey(val *string) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func AuditmanagerAccountRegistration_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func AuditmanagerAccountRegistration_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AuditmanagerAccountRegistration_IsConstruct(x interface{}) *bool {
+func AuditmanagerAccountRegistration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAccountRegistration_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func AuditmanagerAccountRegistration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func AuditmanagerAccountRegistration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerAccountRegistration_IsTerraformElement(x interface{}) *bool {
+func AuditmanagerAccountRegistration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAccountRegistration_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func AuditmanagerAccountRegistration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func AuditmanagerAccountRegistration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AuditmanagerAccountRegistration_IsTerraformResource(x interface{}) *bool {
+func AuditmanagerAccountRegistration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuditmanagerAccountRegistration_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func AuditmanagerAccountRegistration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AuditmanagerAccountRegistration) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuditmanagerAccountRegistration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -796,7 +795,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AuditmanagerAccountRegistration) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -892,8 +891,8 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -905,8 +904,8 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -918,8 +917,8 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -931,8 +930,8 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) ToHclTerraform() interface{}
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -957,8 +956,8 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AuditmanagerAccountRegistration) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuditmanagerAccountRegistration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -969,4 +968,3 @@ func (a *jsiiProxy_AuditmanagerAccountRegistration) ToTerraform() interface{} {
 
 	return returns
 }
-

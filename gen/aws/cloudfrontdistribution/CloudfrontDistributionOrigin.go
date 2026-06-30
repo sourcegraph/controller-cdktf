@@ -1,6 +1,5 @@
 package cloudfrontdistribution
 
-
 type CloudfrontDistributionOrigin struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#domain_name CloudfrontDistribution#domain_name}.
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
@@ -13,7 +12,7 @@ type CloudfrontDistributionOrigin struct {
 	// custom_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#custom_header CloudfrontDistribution#custom_header}
-	CustomHeader interface{} `field:"optional" json:"customHeader" yaml:"customHeader"`
+	CustomHeader any `field:"optional" json:"customHeader" yaml:"customHeader"`
 	// custom_origin_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#custom_origin_config CloudfrontDistribution#custom_origin_config}
@@ -31,4 +30,3 @@ type CloudfrontDistributionOrigin struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#s3_origin_config CloudfrontDistribution#s3_origin_config}
 	S3OriginConfig *CloudfrontDistributionOriginS3OriginConfig `field:"optional" json:"s3OriginConfig" yaml:"s3OriginConfig"`
 }
-

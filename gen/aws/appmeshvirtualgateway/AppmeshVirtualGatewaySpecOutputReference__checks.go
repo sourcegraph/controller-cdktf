@@ -101,7 +101,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutBackendD
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutListenerParameters(value interface{}) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutListenerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewAppmeshVirtualGatewaySpecOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

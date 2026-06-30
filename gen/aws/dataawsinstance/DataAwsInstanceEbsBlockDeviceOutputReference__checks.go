@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsInstanceEbsBlockDeviceOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsInstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsInstanceEbsBlockDeviceOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
-		reflect.TypeOf((*RdsExportTask)(nil)).Elem(),
+		reflect.TypeFor[RdsExportTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "warningMessage", GoGetter: "WarningMessage"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsExportTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskConfig",
-		reflect.TypeOf((*RdsExportTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[RdsExportTaskConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeouts",
-		reflect.TypeOf((*RdsExportTaskTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RdsExportTaskTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
-		reflect.TypeOf((*RdsExportTaskTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RdsExportTaskTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsExportTaskTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

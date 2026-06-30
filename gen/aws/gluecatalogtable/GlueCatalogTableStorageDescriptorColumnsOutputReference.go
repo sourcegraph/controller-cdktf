@@ -15,9 +15,9 @@ type GlueCatalogTableStorageDescriptorColumnsOutputReference interface {
 	CommentInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type GlueCatalogTableStorageDescriptorColumnsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type GlueCatalogTableStorageDescriptorColumnsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GlueCatalogTableStorageDescriptorColumnsOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Comm
 	return returns
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Type
 	return returns
 }
 
-
 func NewGlueCatalogTableStorageDescriptorColumnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GlueCatalogTableStorageDescriptorColumnsOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGlueCatalogTableStorageDescriptorColumnsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGlueCatalogTableStorageDescriptorColumnsOutputReference_Override(g GlueC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetComment(val *string) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetNa
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetParameters(val *map[string]*string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference) ToSt
 
 	return returns
 }
-

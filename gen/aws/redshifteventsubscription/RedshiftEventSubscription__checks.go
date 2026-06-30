@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftEventSubscription) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftEventSubscription) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateRedshiftEventSubscription_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateRedshiftEventSubscription_IsConstructParameters(x interface{}) error {
+func validateRedshiftEventSubscription_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateRedshiftEventSubscription_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateRedshiftEventSubscription_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftEventSubscription_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateRedshiftEventSubscription_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateRedshiftEventSubscription_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftEventSubscription_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateRedshiftEventSubscription_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewRedshiftEventSubscriptionParameters(scope constructs.Construct, 
 
 	return nil
 }
-

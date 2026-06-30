@@ -153,7 +153,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -301,4 +301,3 @@ func validateNewAlbListenerRuleActionOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

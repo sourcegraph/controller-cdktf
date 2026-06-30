@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudfrontDistributionRestrictionsGeoRestrictionOutputReferenceP
 
 	return nil
 }
-

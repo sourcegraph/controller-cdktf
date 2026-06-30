@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup",
-		reflect.TypeOf((*DataAwsIdentitystoreGroup)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alternateIdentifier", GoGetter: "AlternateIdentifier"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifier)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifier](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifierExternalId)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifierExternalId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueAttribute", GoGetter: "UniqueAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueAttributeInput", GoGetter: "UniqueAttributeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
 			_jsii_.MemberProperty{JsiiProperty: "attributePathInput", GoGetter: "AttributePathInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,15 +196,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIds",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupExternalIds)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupExternalIds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsList",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupExternalIdsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupExternalIdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupExternalIdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupExternalIdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupExternalIdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupExternalIdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,11 +259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilter",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreGroupFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreGroupFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
 			_jsii_.MemberProperty{JsiiProperty: "attributePathInput", GoGetter: "AttributePathInput"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

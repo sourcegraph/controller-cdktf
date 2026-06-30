@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateAddMoveTargetParameters
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateVpcEndpointSubnetAssociation_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateVpcEndpointSubnetAssociation_IsConstructParameters(x interface{}) error {
+func validateVpcEndpointSubnetAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateVpcEndpointSubnetAssociation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateVpcEndpointSubnetAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateVpcEndpointSubnetAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateVpcEndpointSubnetAssociation_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateVpcEndpointSubnetAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateVpcEndpointSubnetAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateVpcEndpointSubnetAssociation_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewVpcEndpointSubnetAssociationParameters(scope constructs.Construc
 
 	return nil
 }
-

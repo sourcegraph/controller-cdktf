@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsAvailabilityZones) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsAvailabilityZones) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZones) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZones) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsAvailabilityZones) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsAvailabilityZones_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataAwsAvailabilityZones_IsConstructParameters(x interface{}) error {
+func validateDataAwsAvailabilityZones_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsAvailabilityZones_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataAwsAvailabilityZones_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsAvailabilityZones_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsAvailabilityZones_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataAwsAvailabilityZones_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsAvailabilityZones_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsAvailabilityZones_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetAllAvailabilityZonesParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetAllAvailabilityZonesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetAllAvailabilityZonesPara
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -325,4 +325,3 @@ func validateNewDataAwsAvailabilityZonesParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IotProvisioningTemplate) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IotProvisioningTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IotProvisioningTemplate) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IotProvisioningTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIotProvisioningTemplate_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateIotProvisioningTemplate_IsConstructParameters(x interface{}) error {
+func validateIotProvisioningTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIotProvisioningTemplate_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateIotProvisioningTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateIotProvisioningTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIotProvisioningTemplate_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateIotProvisioningTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateIotProvisioningTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIotProvisioningTemplate_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_IotProvisioningTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IotProvisioningTemplate) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_IotProvisioningTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_IotProvisioningTemplate) validateSetDescriptionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IotProvisioningTemplate) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_IotProvisioningTemplate) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_IotProvisioningTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,4 +493,3 @@ func validateNewIotProvisioningTemplateParameters(scope constructs.Construct, id
 
 	return nil
 }
-

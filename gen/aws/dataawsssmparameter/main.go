@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter",
-		reflect.TypeOf((*DataAwsSsmParameter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSsmParameter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "withDecryption", GoGetter: "WithDecryption"},
 			_jsii_.MemberProperty{JsiiProperty: "withDecryptionInput", GoGetter: "WithDecryptionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSsmParameter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,6 +65,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig",
-		reflect.TypeOf((*DataAwsSsmParameterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSsmParameterConfig](),
 	)
 }

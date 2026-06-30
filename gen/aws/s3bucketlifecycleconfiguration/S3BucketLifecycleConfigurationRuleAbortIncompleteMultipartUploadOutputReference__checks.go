@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
 
 	return nil
 }
-

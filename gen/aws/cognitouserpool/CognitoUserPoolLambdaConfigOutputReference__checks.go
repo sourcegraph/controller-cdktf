@@ -120,7 +120,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -308,4 +308,3 @@ func validateNewCognitoUserPoolLambdaConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

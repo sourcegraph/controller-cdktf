@@ -36,7 +36,7 @@ type OrganizationsOrganizationRootsPolicyTypesList interface {
 	Get(index *float64) OrganizationsOrganizationRootsPolicyTypesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewOrganizationsOrganizationRootsPolicyTypesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationRootsPolicyTypesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewOrganizationsOrganizationRootsPolicyTypesList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewOrganizationsOrganizationRootsPolicyTypesList_Override(o OrganizationsOr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) AllWithMapKey(
 	_jsii_.Invoke(
 		o,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) Get(index *flo
 	_jsii_.Invoke(
 		o,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) ToString() *st
 
 	return returns
 }
-

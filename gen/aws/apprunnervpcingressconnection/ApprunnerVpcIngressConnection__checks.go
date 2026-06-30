@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateAddMoveTargetParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApprunnerVpcIngressConnection_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateApprunnerVpcIngressConnection_IsConstructParameters(x interface{}) error {
+func validateApprunnerVpcIngressConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApprunnerVpcIngressConnection_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateApprunnerVpcIngressConnection_IsTerraformElementParameters(x interface{}) error {
+func validateApprunnerVpcIngressConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApprunnerVpcIngressConnection_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateApprunnerVpcIngressConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateApprunnerVpcIngressConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateApprunnerVpcIngressConnection_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewApprunnerVpcIngressConnectionParameters(scope constructs.Constru
 
 	return nil
 }
-

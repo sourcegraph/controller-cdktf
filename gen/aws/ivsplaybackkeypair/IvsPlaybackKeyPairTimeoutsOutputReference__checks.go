@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIvsPlaybackKeyPairTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

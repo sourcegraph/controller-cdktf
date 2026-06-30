@@ -34,7 +34,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEvidentlyLaunchMetricMonitorsListParameters(terraformResource cd
 
 	return nil
 }
-

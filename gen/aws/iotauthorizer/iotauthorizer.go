@@ -19,22 +19,22 @@ type IotAuthorizer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableCachingForHttp() interface{}
-	SetEnableCachingForHttp(val interface{})
-	EnableCachingForHttpInput() interface{}
+	EnableCachingForHttp() any
+	SetEnableCachingForHttp(val any)
+	EnableCachingForHttpInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,21 +60,21 @@ type IotAuthorizer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	SigningDisabled() interface{}
-	SetSigningDisabled(val interface{})
-	SigningDisabledInput() interface{}
+	RawOverrides() any
+	SigningDisabled() any
+	SetSigningDisabled(val any)
+	SigningDisabledInput() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TokenKeyName() *string
@@ -87,9 +87,9 @@ type IotAuthorizer interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type IotAuthorizer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type IotAuthorizer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type IotAuthorizer interface {
 	ResetStatus()
 	ResetTokenKeyName()
 	ResetTokenSigningPublicKeys()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IotAuthorizer
@@ -193,8 +193,8 @@ func (j *jsiiProxy_IotAuthorizer) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_IotAuthorizer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotAuthorizer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_IotAuthorizer) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_IotAuthorizer) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) EnableCachingForHttp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) EnableCachingForHttp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCachingForHttp",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_IotAuthorizer) EnableCachingForHttp() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) EnableCachingForHttpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) EnableCachingForHttpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCachingForHttpInput",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_IotAuthorizer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IotAuthorizer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_IotAuthorizer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_IotAuthorizer) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) SigningDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) SigningDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"signingDisabled",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_IotAuthorizer) SigningDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) SigningDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotAuthorizer) SigningDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"signingDisabledInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_IotAuthorizer) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_IotAuthorizer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotAuthorizer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -483,7 +483,6 @@ func (j *jsiiProxy_IotAuthorizer) TokenSigningPublicKeysInput() *map[string]*str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iot_authorizer aws_iot_authorizer} Resource.
 func NewIotAuthorizer(scope constructs.Construct, id *string, config *IotAuthorizerConfig) IotAuthorizer {
 	_init_.Initialize()
@@ -495,7 +494,7 @@ func NewIotAuthorizer(scope constructs.Construct, id *string, config *IotAuthori
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -508,12 +507,12 @@ func NewIotAuthorizer_Override(i IotAuthorizer, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetAuthorizerFunctionArn(val *string) {
+func (j *jsiiProxy_IotAuthorizer) SetAuthorizerFunctionArn(val *string) {
 	if err := j.validateSetAuthorizerFunctionArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IotAuthorizer)SetAuthorizerFunctionArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetConnection(val interface{}) {
+func (j *jsiiProxy_IotAuthorizer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IotAuthorizer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetCount(val interface{}) {
+func (j *jsiiProxy_IotAuthorizer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IotAuthorizer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IotAuthorizer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_IotAuthorizer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetEnableCachingForHttp(val interface{}) {
+func (j *jsiiProxy_IotAuthorizer) SetEnableCachingForHttp(val any) {
 	if err := j.validateSetEnableCachingForHttpParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IotAuthorizer)SetEnableCachingForHttp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IotAuthorizer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_IotAuthorizer)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetId(val *string) {
+func (j *jsiiProxy_IotAuthorizer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_IotAuthorizer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IotAuthorizer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_IotAuthorizer)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetName(val *string) {
+func (j *jsiiProxy_IotAuthorizer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_IotAuthorizer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IotAuthorizer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_IotAuthorizer)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IotAuthorizer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_IotAuthorizer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetSigningDisabled(val interface{}) {
+func (j *jsiiProxy_IotAuthorizer) SetSigningDisabled(val any) {
 	if err := j.validateSetSigningDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_IotAuthorizer)SetSigningDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetStatus(val *string) {
+func (j *jsiiProxy_IotAuthorizer) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_IotAuthorizer)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetTokenKeyName(val *string) {
+func (j *jsiiProxy_IotAuthorizer) SetTokenKeyName(val *string) {
 	if err := j.validateSetTokenKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_IotAuthorizer)SetTokenKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotAuthorizer)SetTokenSigningPublicKeys(val *map[string]*string) {
+func (j *jsiiProxy_IotAuthorizer) SetTokenSigningPublicKeys(val *map[string]*string) {
 	if err := j.validateSetTokenSigningPublicKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func IotAuthorizer_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func IotAuthorizer_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IotAuthorizer_IsConstruct(x interface{}) *bool {
+func IotAuthorizer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotAuthorizer_IsConstructParameters(x); err != nil {
@@ -716,7 +715,7 @@ func IotAuthorizer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func IotAuthorizer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IotAuthorizer_IsTerraformElement(x interface{}) *bool {
+func IotAuthorizer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotAuthorizer_IsTerraformElementParameters(x); err != nil {
@@ -735,7 +734,7 @@ func IotAuthorizer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func IotAuthorizer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IotAuthorizer_IsTerraformResource(x interface{}) *bool {
+func IotAuthorizer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotAuthorizer_IsTerraformResourceParameters(x); err != nil {
@@ -754,7 +753,7 @@ func IotAuthorizer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,31 +778,31 @@ func (i *jsiiProxy_IotAuthorizer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IotAuthorizer) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IotAuthorizer) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IotAuthorizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotAuthorizer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (i *jsiiProxy_IotAuthorizer) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (i *jsiiProxy_IotAuthorizer) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (i *jsiiProxy_IotAuthorizer) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_IotAuthorizer) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (i *jsiiProxy_IotAuthorizer) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (i *jsiiProxy_IotAuthorizer) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (i *jsiiProxy_IotAuthorizer) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,15 +930,15 @@ func (i *jsiiProxy_IotAuthorizer) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotAuthorizer) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotAuthorizer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -958,7 +957,7 @@ func (i *jsiiProxy_IotAuthorizer) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -971,7 +970,7 @@ func (i *jsiiProxy_IotAuthorizer) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,18 +984,18 @@ func (i *jsiiProxy_IotAuthorizer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IotAuthorizer) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IotAuthorizer) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (i *jsiiProxy_IotAuthorizer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (i *jsiiProxy_IotAuthorizer) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1078,8 +1077,8 @@ func (i *jsiiProxy_IotAuthorizer) ResetTokenSigningPublicKeys() {
 	)
 }
 
-func (i *jsiiProxy_IotAuthorizer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotAuthorizer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1091,8 +1090,8 @@ func (i *jsiiProxy_IotAuthorizer) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (i *jsiiProxy_IotAuthorizer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotAuthorizer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1104,8 +1103,8 @@ func (i *jsiiProxy_IotAuthorizer) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (i *jsiiProxy_IotAuthorizer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotAuthorizer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1117,8 +1116,8 @@ func (i *jsiiProxy_IotAuthorizer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IotAuthorizer) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotAuthorizer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1143,8 +1142,8 @@ func (i *jsiiProxy_IotAuthorizer) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IotAuthorizer) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotAuthorizer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1155,4 +1154,3 @@ func (i *jsiiProxy_IotAuthorizer) ToTerraform() interface{} {
 
 	return returns
 }
-

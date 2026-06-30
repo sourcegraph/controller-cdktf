@@ -6,9 +6,9 @@ import (
 
 type OpsworksStackConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OpsworksStackConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#default_instance_profile_arn OpsworksStack#default_instance_profile_arn}.
 	DefaultInstanceProfileArn *string `field:"required" json:"defaultInstanceProfileArn" yaml:"defaultInstanceProfileArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#name OpsworksStack#name}.
@@ -61,7 +61,7 @@ type OpsworksStackConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#manage_berkshelf OpsworksStack#manage_berkshelf}.
-	ManageBerkshelf interface{} `field:"optional" json:"manageBerkshelf" yaml:"manageBerkshelf"`
+	ManageBerkshelf any `field:"optional" json:"manageBerkshelf" yaml:"manageBerkshelf"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#tags OpsworksStack#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#tags_all OpsworksStack#tags_all}.
@@ -71,10 +71,9 @@ type OpsworksStackConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#timeouts OpsworksStack#timeouts}
 	Timeouts *OpsworksStackTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#use_custom_cookbooks OpsworksStack#use_custom_cookbooks}.
-	UseCustomCookbooks interface{} `field:"optional" json:"useCustomCookbooks" yaml:"useCustomCookbooks"`
+	UseCustomCookbooks any `field:"optional" json:"useCustomCookbooks" yaml:"useCustomCookbooks"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#use_opsworks_security_groups OpsworksStack#use_opsworks_security_groups}.
-	UseOpsworksSecurityGroups interface{} `field:"optional" json:"useOpsworksSecurityGroups" yaml:"useOpsworksSecurityGroups"`
+	UseOpsworksSecurityGroups any `field:"optional" json:"useOpsworksSecurityGroups" yaml:"useOpsworksSecurityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_stack#vpc_id OpsworksStack#vpc_id}.
 	VpcId *string `field:"optional" json:"vpcId" yaml:"vpcId"`
 }
-

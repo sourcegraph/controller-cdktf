@@ -14,22 +14,22 @@ type DbProxy interface {
 	cdktf.TerraformResource
 	Arn() *string
 	Auth() DbProxyAuthList
-	AuthInput() interface{}
+	AuthInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DebugLogging() interface{}
-	SetDebugLogging(val interface{})
-	DebugLoggingInput() interface{}
+	SetCount(val any)
+	DebugLogging() any
+	SetDebugLogging(val any)
+	DebugLoggingInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,14 +66,14 @@ type DbProxy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RequireTls() interface{}
-	SetRequireTls(val interface{})
-	RequireTlsInput() interface{}
+	RawOverrides() any
+	RequireTls() any
+	SetRequireTls(val any)
+	RequireTlsInput() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -86,11 +86,11 @@ type DbProxy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DbProxyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcSecurityGroupIds() *[]*string
 	SetVpcSecurityGroupIds(val *[]*string)
 	VpcSecurityGroupIdsInput() *[]*string
@@ -101,9 +101,9 @@ type DbProxy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type DbProxy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,14 +133,14 @@ type DbProxy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuth(value interface{})
+	PutAuth(value any)
 	PutTimeouts(value *DbProxyTimeouts)
 	ResetDebugLogging()
 	ResetId()
@@ -153,17 +153,17 @@ type DbProxy interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DbProxy
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DbProxy) Auth() DbProxyAuthList {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) AuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) AuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authInput",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DbProxy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DbProxy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbProxy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DbProxy) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DbProxy) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) DebugLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) DebugLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debugLogging",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DbProxy) DebugLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) DebugLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) DebugLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debugLoggingInput",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_DbProxy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DbProxy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_DbProxy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DbProxy) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) RequireTls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) RequireTls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireTls",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_DbProxy) RequireTls() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) RequireTlsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) RequireTlsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireTlsInput",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_DbProxy) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbProxy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_DbProxy) Timeouts() DbProxyTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -611,7 +611,6 @@ func (j *jsiiProxy_DbProxy) VpcSubnetIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy aws_db_proxy} Resource.
 func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) DbProxy {
 	_init_.Initialize()
@@ -623,7 +622,7 @@ func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewDbProxy_Override(d DbProxy, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DbProxy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_DbProxy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetCount(val interface{}) {
+func (j *jsiiProxy_DbProxy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_DbProxy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetDebugLogging(val interface{}) {
+func (j *jsiiProxy_DbProxy) SetDebugLogging(val any) {
 	if err := j.validateSetDebugLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_DbProxy)SetDebugLogging(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DbProxy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DbProxy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetEngineFamily(val *string) {
+func (j *jsiiProxy_DbProxy) SetEngineFamily(val *string) {
 	if err := j.validateSetEngineFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DbProxy)SetEngineFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbProxy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -701,7 +700,7 @@ func (j *jsiiProxy_DbProxy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetId(val *string) {
+func (j *jsiiProxy_DbProxy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_DbProxy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetIdleClientTimeout(val *float64) {
+func (j *jsiiProxy_DbProxy) SetIdleClientTimeout(val *float64) {
 	if err := j.validateSetIdleClientTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_DbProxy)SetIdleClientTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbProxy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_DbProxy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetName(val *string) {
+func (j *jsiiProxy_DbProxy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_DbProxy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbProxy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_DbProxy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DbProxy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_DbProxy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetRequireTls(val interface{}) {
+func (j *jsiiProxy_DbProxy) SetRequireTls(val any) {
 	if err := j.validateSetRequireTlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_DbProxy)SetRequireTls(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetRoleArn(val *string) {
+func (j *jsiiProxy_DbProxy) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_DbProxy)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DbProxy) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DbProxy)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DbProxy) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DbProxy)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_DbProxy) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DbProxy)SetVpcSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxy)SetVpcSubnetIds(val *[]*string) {
+func (j *jsiiProxy_DbProxy) SetVpcSubnetIds(val *[]*string) {
 	if err := j.validateSetVpcSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func DbProxy_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func DbProxy_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DbProxy_IsConstruct(x interface{}) *bool {
+func DbProxy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxy_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func DbProxy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func DbProxy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DbProxy_IsTerraformElement(x interface{}) *bool {
+func DbProxy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxy_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func DbProxy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func DbProxy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DbProxy_IsTerraformResource(x interface{}) *bool {
+func DbProxy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxy_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func DbProxy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxy.DbProxy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (d *jsiiProxy_DbProxy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DbProxy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DbProxy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DbProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (d *jsiiProxy_DbProxy) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (d *jsiiProxy_DbProxy) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (d *jsiiProxy_DbProxy) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (d *jsiiProxy_DbProxy) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (d *jsiiProxy_DbProxy) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (d *jsiiProxy_DbProxy) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (d *jsiiProxy_DbProxy) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (d *jsiiProxy_DbProxy) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DbProxy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1119,7 +1118,7 @@ func (d *jsiiProxy_DbProxy) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (d *jsiiProxy_DbProxy) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (d *jsiiProxy_DbProxy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DbProxy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DbProxy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (d *jsiiProxy_DbProxy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,18 +1178,18 @@ func (d *jsiiProxy_DbProxy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DbProxy) PutAuth(value interface{}) {
+func (d *jsiiProxy_DbProxy) PutAuth(value any) {
 	if err := d.validatePutAuthParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAuth",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (d *jsiiProxy_DbProxy) PutTimeouts(value *DbProxyTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1277,8 +1276,8 @@ func (d *jsiiProxy_DbProxy) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (d *jsiiProxy_DbProxy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbProxy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1290,8 +1289,8 @@ func (d *jsiiProxy_DbProxy) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbProxy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1303,8 +1302,8 @@ func (d *jsiiProxy_DbProxy) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1316,8 +1315,8 @@ func (d *jsiiProxy_DbProxy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1342,8 +1341,8 @@ func (d *jsiiProxy_DbProxy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1354,4 +1353,3 @@ func (d *jsiiProxy_DbProxy) ToTerraform() interface{} {
 
 	return returns
 }
-

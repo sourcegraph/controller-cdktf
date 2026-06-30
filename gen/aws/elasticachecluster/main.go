@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
-		reflect.TypeOf((*ElasticacheCluster)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodes",
-		reflect.TypeOf((*ElasticacheClusterCacheNodes)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterCacheNodes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
-		reflect.TypeOf((*ElasticacheClusterCacheNodesList)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterCacheNodesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheClusterCacheNodesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
-		reflect.TypeOf((*ElasticacheClusterCacheNodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterCacheNodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheClusterCacheNodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,15 +221,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterConfig",
-		reflect.TypeOf((*ElasticacheClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfiguration",
-		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterLogDeliveryConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
-		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterLogDeliveryConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -243,7 +243,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheClusterLogDeliveryConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -251,7 +251,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
-		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheClusterLogDeliveryConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheClusterLogDeliveryConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewApiGatewayUsagePlanApiStagesThrottleOutputReferenceParameters(te
 
 	return nil
 }
-

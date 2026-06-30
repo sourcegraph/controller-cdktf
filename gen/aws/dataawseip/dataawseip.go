@@ -17,11 +17,11 @@ type DataAwsEip interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIp() *string
 	CustomerOwnedIpv4Pool() *string
 	// Experimental.
@@ -30,7 +30,7 @@ type DataAwsEip interface {
 	SetDependsOn(val *[]*string)
 	Domain() *string
 	Filter() DataAwsEipFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,22 +63,22 @@ type DataAwsEip interface {
 	PublicIpInput() *string
 	PublicIpv4Pool() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEipTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type DataAwsEip interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEipTimeouts)
 	ResetFilter()
 	ResetId()
@@ -110,18 +110,18 @@ type DataAwsEip interface {
 	ResetPublicIp()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEip
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsEip) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEip) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsEip) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEip) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DataAwsEip) Filter() DataAwsEipFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEip) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_DataAwsEip) PublicIpv4Pool() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEip) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_DataAwsEip) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEip) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_DataAwsEip) Timeouts() DataAwsEipTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEip) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEip) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -488,7 +488,6 @@ func (j *jsiiProxy_DataAwsEip) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/eip aws_eip} Data Source.
 func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipConfig) DataAwsEip {
@@ -501,7 +500,7 @@ func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -514,12 +513,12 @@ func NewDataAwsEip_Override(d DataAwsEip, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEip) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataAwsEip)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEip) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_DataAwsEip)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEip) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -546,7 +545,7 @@ func (j *jsiiProxy_DataAwsEip)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEip) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_DataAwsEip)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEip) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_DataAwsEip)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEip) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_DataAwsEip)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetPublicIp(val *string) {
+func (j *jsiiProxy_DataAwsEip) SetPublicIp(val *string) {
 	if err := j.validateSetPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DataAwsEip)SetPublicIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEip)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEip) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func DataAwsEip_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func DataAwsEip_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEip_IsConstruct(x interface{}) *bool {
+func DataAwsEip_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEip_IsConstructParameters(x); err != nil {
@@ -645,7 +644,7 @@ func DataAwsEip_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func DataAwsEip_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEip_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEip_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEip_IsTerraformDataSourceParameters(x); err != nil {
@@ -664,7 +663,7 @@ func DataAwsEip_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func DataAwsEip_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEip_IsTerraformElement(x interface{}) *bool {
+func DataAwsEip_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEip_IsTerraformElementParameters(x); err != nil {
@@ -683,7 +682,7 @@ func DataAwsEip_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEip.DataAwsEip",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,27 +700,27 @@ func DataAwsEip_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEip) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEip) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEip) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEip) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataAwsEip) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsEip) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DataAwsEip) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataAwsEip) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataAwsEip) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DataAwsEip) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataAwsEip) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DataAwsEip) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataAwsEip) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (d *jsiiProxy_DataAwsEip) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEip) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEip) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (d *jsiiProxy_DataAwsEip) PutTimeouts(value *DataAwsEipTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -953,8 +952,8 @@ func (d *jsiiProxy_DataAwsEip) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEip) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEip) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -966,8 +965,8 @@ func (d *jsiiProxy_DataAwsEip) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEip) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEip) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -979,8 +978,8 @@ func (d *jsiiProxy_DataAwsEip) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEip) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEip) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -992,8 +991,8 @@ func (d *jsiiProxy_DataAwsEip) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEip) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEip) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1018,8 +1017,8 @@ func (d *jsiiProxy_DataAwsEip) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEip) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEip) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1030,4 +1029,3 @@ func (d *jsiiProxy_DataAwsEip) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -77,7 +77,7 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	ResetVerifyAuthChallengeResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ type jsiiProxy_CognitoUserPoolLambdaConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) VerifyAuthChallen
 	return returns
 }
 
-
 func NewCognitoUserPoolLambdaConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolLambdaConfigOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewCognitoUserPoolLambdaConfigOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewCognitoUserPoolLambdaConfigOutputReference_Override(c CognitoUserPoolLam
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetCreateAuthChallenge(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetCreateAuthChallenge(val *string) {
 	if err := j.validateSetCreateAuthChallengeParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetCreateAuthChall
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetCustomMessage(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetCustomMessage(val *string) {
 	if err := j.validateSetCustomMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetCustomMessage(v
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetDefineAuthChallenge(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetDefineAuthChallenge(val *string) {
 	if err := j.validateSetDefineAuthChallengeParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetDefineAuthChall
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetInternalValue(val *CognitoUserPoolLambdaConfig) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetInternalValue(val *CognitoUserPoolLambdaConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetKmsKeyId(val *s
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPostAuthentication(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetPostAuthentication(val *string) {
 	if err := j.validateSetPostAuthenticationParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPostAuthenticat
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPostConfirmation(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetPostConfirmation(val *string) {
 	if err := j.validateSetPostConfirmationParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPostConfirmatio
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreAuthentication(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetPreAuthentication(val *string) {
 	if err := j.validateSetPreAuthenticationParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreAuthenticati
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreSignUp(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetPreSignUp(val *string) {
 	if err := j.validateSetPreSignUpParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreSignUp(val *
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreTokenGeneration(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetPreTokenGeneration(val *string) {
 	if err := j.validateSetPreTokenGenerationParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetPreTokenGenerat
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetUserMigration(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetUserMigration(val *string) {
 	if err := j.validateSetUserMigrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetUserMigration(v
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference)SetVerifyAuthChallengeResponse(val *string) {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) SetVerifyAuthChallengeResponse(val *string) {
 	if err := j.validateSetVerifyAuthChallengeResponseParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,16 +674,16 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PutCustomEmailSen
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomEmailSender",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PutCustomSmsSende
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomSmsSender",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,16 +973,16 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ResetVerifyAuthCh
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ToString() *strin
 
 	return returns
 }
-

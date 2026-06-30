@@ -12,9 +12,9 @@ type EcsTaskDefinitionInferenceAcceleratorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type EcsTaskDefinitionInferenceAcceleratorOutputReference interface {
 	DeviceTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type EcsTaskDefinitionInferenceAcceleratorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type EcsTaskDefinitionInferenceAcceleratorOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Terrafo
 	return returns
 }
 
-
 func NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcsTaskDefinitionInferenceAcceleratorOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewEcsTaskDefinitionInferenceAcceleratorOutputReference_Override(e EcsTaskD
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetDevic
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetDeviceType(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetDeviceType(val *string) {
 	if err := j.validateSetDeviceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetDevic
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Compute
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetBool
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetBool
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetList
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetStri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) GetStri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Interpo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference) ToStrin
 
 	return returns
 }
-

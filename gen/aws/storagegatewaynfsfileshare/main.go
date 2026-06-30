@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
-		reflect.TypeOf((*StoragegatewayNfsFileShare)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShare](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsName", GoGetter: "VpcEndpointDnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointDnsNameInput", GoGetter: "VpcEndpointDnsNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayNfsFileShare{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes",
-		reflect.TypeOf((*StoragegatewayNfsFileShareCacheAttributes)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareCacheAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributesOutputReference",
-		reflect.TypeOf((*StoragegatewayNfsFileShareCacheAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareCacheAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSecondsInput", GoGetter: "CacheStaleTimeoutInSecondsInput"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,15 +171,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareConfig",
-		reflect.TypeOf((*StoragegatewayNfsFileShareConfig)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults",
-		reflect.TypeOf((*StoragegatewayNfsFileShareNfsFileShareDefaults)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareNfsFileShareDefaults](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
-		reflect.TypeOf((*StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts",
-		reflect.TypeOf((*StoragegatewayNfsFileShareTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
-		reflect.TypeOf((*StoragegatewayNfsFileShareTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayNfsFileShareTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

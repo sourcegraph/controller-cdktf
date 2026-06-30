@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
-		reflect.TypeOf((*LightsailLbCertificate)(nil)).Elem(),
+		reflect.TypeFor[LightsailLbCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailLbCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateConfig",
-		reflect.TypeOf((*LightsailLbCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[LightsailLbCertificateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecords",
-		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecords)(nil)).Elem(),
+		reflect.TypeFor[LightsailLbCertificateDomainValidationRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
-		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecordsList)(nil)).Elem(),
+		reflect.TypeFor[LightsailLbCertificateDomainValidationRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailLbCertificateDomainValidationRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -107,7 +107,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsOutputReference",
-		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailLbCertificateDomainValidationRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailLbCertificateDomainValidationRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

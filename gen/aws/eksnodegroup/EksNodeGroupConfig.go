@@ -6,9 +6,9 @@ import (
 
 type EksNodeGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EksNodeGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
@@ -36,7 +36,7 @@ type EksNodeGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
 	DiskSize *float64 `field:"optional" json:"diskSize" yaml:"diskSize"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
-	ForceUpdateVersion interface{} `field:"optional" json:"forceUpdateVersion" yaml:"forceUpdateVersion"`
+	ForceUpdateVersion any `field:"optional" json:"forceUpdateVersion" yaml:"forceUpdateVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -67,7 +67,7 @@ type EksNodeGroupConfig struct {
 	// taint block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
-	Taint interface{} `field:"optional" json:"taint" yaml:"taint"`
+	Taint any `field:"optional" json:"taint" yaml:"taint"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
@@ -79,4 +79,3 @@ type EksNodeGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

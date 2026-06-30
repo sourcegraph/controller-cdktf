@@ -1,9 +1,8 @@
 package cloudfrontresponseheaderspolicy
 
-
 type CloudfrontResponseHeadersPolicyCorsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_credentials CloudfrontResponseHeadersPolicy#access_control_allow_credentials}.
-	AccessControlAllowCredentials interface{} `field:"required" json:"accessControlAllowCredentials" yaml:"accessControlAllowCredentials"`
+	AccessControlAllowCredentials any `field:"required" json:"accessControlAllowCredentials" yaml:"accessControlAllowCredentials"`
 	// access_control_allow_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_headers CloudfrontResponseHeadersPolicy#access_control_allow_headers}
@@ -17,7 +16,7 @@ type CloudfrontResponseHeadersPolicyCorsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#access_control_allow_origins CloudfrontResponseHeadersPolicy#access_control_allow_origins}
 	AccessControlAllowOrigins *CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins `field:"required" json:"accessControlAllowOrigins" yaml:"accessControlAllowOrigins"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#origin_override CloudfrontResponseHeadersPolicy#origin_override}.
-	OriginOverride interface{} `field:"required" json:"originOverride" yaml:"originOverride"`
+	OriginOverride any `field:"required" json:"originOverride" yaml:"originOverride"`
 	// access_control_expose_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#access_control_expose_headers CloudfrontResponseHeadersPolicy#access_control_expose_headers}
@@ -25,4 +24,3 @@ type CloudfrontResponseHeadersPolicyCorsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_response_headers_policy#access_control_max_age_sec CloudfrontResponseHeadersPolicy#access_control_max_age_sec}.
 	AccessControlMaxAgeSec *float64 `field:"optional" json:"accessControlMaxAgeSec" yaml:"accessControlMaxAgeSec"`
 }
-

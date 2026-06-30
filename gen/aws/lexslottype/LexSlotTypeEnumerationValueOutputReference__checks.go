@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexSlotTypeEnumerationValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLexSlotTypeEnumerationValueOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

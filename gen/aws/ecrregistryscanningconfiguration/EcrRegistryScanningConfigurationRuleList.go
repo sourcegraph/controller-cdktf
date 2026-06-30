@@ -17,8 +17,8 @@ type EcrRegistryScanningConfigurationRuleList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type EcrRegistryScanningConfigurationRuleList interface {
 	Get(index *float64) EcrRegistryScanningConfigurationRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewEcrRegistryScanningConfigurationRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRegistryScanningConfigurationRuleList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewEcrRegistryScanningConfigurationRuleList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewEcrRegistryScanningConfigurationRuleList_Override(e EcrRegistryScanningC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) Get(index *float64)
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) ToString() *string 
 
 	return returns
 }
-

@@ -19,11 +19,11 @@ type DataAwsInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreditSpecification() DataAwsInstanceCreditSpecificationList
 	// Experimental.
 	DependsOn() *[]*string
@@ -35,14 +35,14 @@ type DataAwsInstance interface {
 	EbsOptimized() cdktf.IResolvable
 	EnclaveOptions() DataAwsInstanceEnclaveOptionsList
 	EphemeralBlockDevice() DataAwsInstanceEphemeralBlockDeviceList
-	FetchPasswordData() interface{}
-	SetFetchPasswordData(val interface{})
-	FetchPasswordDataInput() interface{}
-	FetchUserData() interface{}
-	SetFetchUserData(val interface{})
-	FetchUserDataInput() interface{}
+	FetchPasswordData() any
+	SetFetchPasswordData(val any)
+	FetchPasswordDataInput() any
+	FetchUserData() any
+	SetFetchUserData(val any)
+	FetchUserDataInput() any
 	Filter() DataAwsInstanceFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -91,7 +91,7 @@ type DataAwsInstance interface {
 	PublicDns() *string
 	PublicIp() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootBlockDevice() DataAwsInstanceRootBlockDeviceList
 	SecondaryPrivateIps() *[]*string
 	SecurityGroups() *[]*string
@@ -104,18 +104,18 @@ type DataAwsInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserData() *string
 	UserDataBase64() *string
 	VpcSecurityGroupIds() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -137,7 +137,7 @@ type DataAwsInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsInstanceTimeouts)
 	ResetFetchPasswordData()
 	ResetFetchUserData()
@@ -150,18 +150,18 @@ type DataAwsInstance interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsInstance
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataAwsInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DataAwsInstance) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataAwsInstance) EphemeralBlockDevice() DataAwsInstanceEpheme
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) FetchPasswordData() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) FetchPasswordData() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchPasswordData",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DataAwsInstance) FetchPasswordData() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) FetchPasswordDataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) FetchPasswordDataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchPasswordDataInput",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_DataAwsInstance) FetchPasswordDataInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) FetchUserData() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) FetchUserData() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchUserData",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_DataAwsInstance) FetchUserData() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) FetchUserDataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) FetchUserDataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fetchUserDataInput",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataAwsInstance) Filter() DataAwsInstanceFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -699,8 +699,8 @@ func (j *jsiiProxy_DataAwsInstance) PublicIp() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -799,8 +799,8 @@ func (j *jsiiProxy_DataAwsInstance) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -829,8 +829,8 @@ func (j *jsiiProxy_DataAwsInstance) Timeouts() DataAwsInstanceTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -869,7 +869,6 @@ func (j *jsiiProxy_DataAwsInstance) VpcSecurityGroupIds() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/instance aws_instance} Data Source.
 func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsInstanceConfig) DataAwsInstance {
 	_init_.Initialize()
@@ -881,7 +880,7 @@ func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -894,12 +893,12 @@ func NewDataAwsInstance_Override(d DataAwsInstance, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_DataAwsInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -918,7 +917,7 @@ func (j *jsiiProxy_DataAwsInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetFetchPasswordData(val interface{}) {
+func (j *jsiiProxy_DataAwsInstance) SetFetchPasswordData(val any) {
 	if err := j.validateSetFetchPasswordDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_DataAwsInstance)SetFetchPasswordData(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetFetchUserData(val interface{}) {
+func (j *jsiiProxy_DataAwsInstance) SetFetchUserData(val any) {
 	if err := j.validateSetFetchUserDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_DataAwsInstance)SetFetchUserData(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -948,7 +947,7 @@ func (j *jsiiProxy_DataAwsInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetId(val *string) {
+func (j *jsiiProxy_DataAwsInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_DataAwsInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsInstance) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_DataAwsInstance)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetInstanceTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsInstance) SetInstanceTags(val *map[string]*string) {
 	if err := j.validateSetInstanceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_DataAwsInstance)SetInstanceTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_DataAwsInstance)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_DataAwsInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func DataAwsInstance_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func DataAwsInstance_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsInstance_IsConstruct(x interface{}) *bool {
+func DataAwsInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsInstance_IsConstructParameters(x); err != nil {
@@ -1058,7 +1057,7 @@ func DataAwsInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func DataAwsInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsInstance_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsInstance_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsInstance_IsTerraformDataSourceParameters(x); err != nil {
@@ -1077,7 +1076,7 @@ func DataAwsInstance_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func DataAwsInstance_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsInstance_IsTerraformElement(x interface{}) *bool {
+func DataAwsInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsInstance_IsTerraformElementParameters(x); err != nil {
@@ -1096,7 +1095,7 @@ func DataAwsInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1114,27 +1113,27 @@ func DataAwsInstance_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (d *jsiiProxy_DataAwsInstance) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,7 +1165,7 @@ func (d *jsiiProxy_DataAwsInstance) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,7 +1181,7 @@ func (d *jsiiProxy_DataAwsInstance) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func (d *jsiiProxy_DataAwsInstance) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1214,7 +1213,7 @@ func (d *jsiiProxy_DataAwsInstance) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,7 +1229,7 @@ func (d *jsiiProxy_DataAwsInstance) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func (d *jsiiProxy_DataAwsInstance) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1262,7 +1261,7 @@ func (d *jsiiProxy_DataAwsInstance) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1278,7 +1277,7 @@ func (d *jsiiProxy_DataAwsInstance) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1292,18 +1291,18 @@ func (d *jsiiProxy_DataAwsInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsInstance) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsInstance) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1314,7 +1313,7 @@ func (d *jsiiProxy_DataAwsInstance) PutTimeouts(value *DataAwsInstanceTimeouts) 
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1390,8 +1389,8 @@ func (d *jsiiProxy_DataAwsInstance) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1403,8 +1402,8 @@ func (d *jsiiProxy_DataAwsInstance) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1416,8 +1415,8 @@ func (d *jsiiProxy_DataAwsInstance) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1429,8 +1428,8 @@ func (d *jsiiProxy_DataAwsInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1455,8 +1454,8 @@ func (d *jsiiProxy_DataAwsInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1467,4 +1466,3 @@ func (d *jsiiProxy_DataAwsInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

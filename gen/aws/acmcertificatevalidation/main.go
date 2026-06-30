@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
-		reflect.TypeOf((*AcmCertificateValidation)(nil)).Elem(),
+		reflect.TypeFor[AcmCertificateValidation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validationRecordFqdns", GoGetter: "ValidationRecordFqdns"},
 			_jsii_.MemberProperty{JsiiProperty: "validationRecordFqdnsInput", GoGetter: "ValidationRecordFqdnsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmCertificateValidation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationConfig",
-		reflect.TypeOf((*AcmCertificateValidationConfig)(nil)).Elem(),
+		reflect.TypeFor[AcmCertificateValidationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeouts",
-		reflect.TypeOf((*AcmCertificateValidationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AcmCertificateValidationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
-		reflect.TypeOf((*AcmCertificateValidationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmCertificateValidationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmCertificateValidationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

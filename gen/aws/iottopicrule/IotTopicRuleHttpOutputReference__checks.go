@@ -90,7 +90,7 @@ func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateInterpolationForAttr
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validatePutHttpHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetConfirmationUrlPa
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewIotTopicRuleHttpOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateInt
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validatePutColumnsParameters(value interface{}) error {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validatePutColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validatePutSortColumnsParameters(value interface{}) error {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validatePutSortColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetCompressedParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetCompressedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetStoredAsSubDirectoriesParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetStoredAsSubDirectoriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -381,4 +381,3 @@ func validateNewGlueCatalogTableStorageDescriptorOutputReferenceParameters(terra
 
 	return nil
 }
-

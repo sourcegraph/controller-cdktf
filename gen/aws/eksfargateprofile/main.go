@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
-		reflect.TypeOf((*EksFargateProfile)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksFargateProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileConfig",
-		reflect.TypeOf((*EksFargateProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelector",
-		reflect.TypeOf((*EksFargateProfileSelector)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorList",
-		reflect.TypeOf((*EksFargateProfileSelectorList)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksFargateProfileSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
-		reflect.TypeOf((*EksFargateProfileSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksFargateProfileSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeouts",
-		reflect.TypeOf((*EksFargateProfileTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
-		reflect.TypeOf((*EksFargateProfileTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EksFargateProfileTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksFargateProfileTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

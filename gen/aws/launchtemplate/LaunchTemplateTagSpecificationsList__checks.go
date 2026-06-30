@@ -34,7 +34,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLaunchTemplateTagSpecificationsListParameters(terraformResource 
 
 	return nil
 }
-

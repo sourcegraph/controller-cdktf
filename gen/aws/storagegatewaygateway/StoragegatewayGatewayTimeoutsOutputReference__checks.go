@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateSetCrea
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewStoragegatewayGatewayTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

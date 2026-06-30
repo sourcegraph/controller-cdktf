@@ -120,7 +120,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetDedi
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetDedicatedMasterEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetDedicatedMasterEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetWarm
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetWarmEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetWarmEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetWarm
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetZoneAwarenessEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetZoneAwarenessEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,4 +328,3 @@ func validateNewOpensearchDomainClusterConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -16,11 +16,11 @@ type DataAwsSesv2DedicatedIpPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DedicatedIps() DataAwsSesv2DedicatedIpPoolDedicatedIpsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -51,7 +51,7 @@ type DataAwsSesv2DedicatedIpPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScalingMode() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -59,13 +59,13 @@ type DataAwsSesv2DedicatedIpPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataAwsSesv2DedicatedIpPool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSesv2DedicatedIpPool
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -341,7 +341,6 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
 func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *DataAwsSesv2DedicatedIpPoolConfig) DataAwsSesv2DedicatedIpPool {
 	_init_.Initialize()
@@ -353,7 +352,7 @@ func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -366,12 +365,12 @@ func NewDataAwsSesv2DedicatedIpPool_Override(d DataAwsSesv2DedicatedIpPool, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetPoolName(val *string) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetPoolName(val *string) {
 	if err := j.validateSetPoolNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetPoolName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func DataAwsSesv2DedicatedIpPool_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func DataAwsSesv2DedicatedIpPool_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSesv2DedicatedIpPool_IsConstruct(x interface{}) *bool {
+func DataAwsSesv2DedicatedIpPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSesv2DedicatedIpPool_IsConstructParameters(x); err != nil {
@@ -497,7 +496,7 @@ func DataAwsSesv2DedicatedIpPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func DataAwsSesv2DedicatedIpPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSesv2DedicatedIpPool_IsTerraformDataSourceParameters(x); err != nil {
@@ -516,7 +515,7 @@ func DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool {
+func DataAwsSesv2DedicatedIpPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSesv2DedicatedIpPool_IsTerraformElementParameters(x); err != nil {
@@ -535,7 +534,7 @@ func DataAwsSesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -553,27 +552,27 @@ func DataAwsSesv2DedicatedIpPool_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -798,8 +797,8 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -824,8 +823,8 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,4 +835,3 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) ToTerraform() interface{} {
 
 	return returns
 }
-

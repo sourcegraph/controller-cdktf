@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectQueueOutboundCallerConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQueueOutboundCallerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectQueueOutboundCallerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewConnectQueueOutboundCallerConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

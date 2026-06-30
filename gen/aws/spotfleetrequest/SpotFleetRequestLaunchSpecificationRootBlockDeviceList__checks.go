@@ -34,7 +34,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) valid
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSpotFleetRequestLaunchSpecificationRootBlockDeviceListParameters
 
 	return nil
 }
-

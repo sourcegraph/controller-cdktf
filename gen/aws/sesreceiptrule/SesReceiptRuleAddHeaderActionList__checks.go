@@ -34,7 +34,7 @@ func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSesReceiptRuleAddHeaderActionListParameters(terraformResource cd
 
 	return nil
 }
-

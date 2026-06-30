@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppconfigExtension) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigExtension) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppconfigExtension) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppconfigExtension) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppconfigExtension) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppconfigExtension) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigExtension) validatePutActionPointParameters(value interface{}) error {
+func (a *jsiiProxy_AppconfigExtension) validatePutActionPointParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_AppconfigExtension) validatePutActionPointParameters(value in
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigExtension) validatePutParameterParameters(value interface{}) error {
+func (a *jsiiProxy_AppconfigExtension) validatePutParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateAppconfigExtension_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateAppconfigExtension_IsConstructParameters(x interface{}) error {
+func validateAppconfigExtension_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateAppconfigExtension_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppconfigExtension_IsTerraformElementParameters(x interface{}) error {
+func validateAppconfigExtension_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateAppconfigExtension_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateAppconfigExtension_IsTerraformResourceParameters(x interface{}) error {
+func validateAppconfigExtension_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateAppconfigExtension_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigExtension) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigExtension) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_AppconfigExtension) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigExtension) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigExtension) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_AppconfigExtension) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigExtension) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppconfigExtension) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -508,4 +508,3 @@ func validateNewAppconfigExtensionParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

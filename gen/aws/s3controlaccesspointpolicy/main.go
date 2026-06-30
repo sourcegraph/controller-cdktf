@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
-		reflect.TypeOf((*S3ControlAccessPointPolicy)(nil)).Elem(),
+		reflect.TypeFor[S3ControlAccessPointPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointArn", GoGetter: "AccessPointArn"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPointArnInput", GoGetter: "AccessPointArnInput"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlAccessPointPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig",
-		reflect.TypeOf((*S3ControlAccessPointPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[S3ControlAccessPointPolicyConfig](),
 	)
 }

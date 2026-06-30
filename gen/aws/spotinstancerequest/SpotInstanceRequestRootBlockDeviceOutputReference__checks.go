@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewSpotInstanceRequestRootBlockDeviceOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -19,11 +19,11 @@ type DataAwsServicecatalogProduct interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -56,7 +56,7 @@ type DataAwsServicecatalogProduct interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SupportDescription() *string
 	SupportEmail() *string
@@ -67,16 +67,16 @@ type DataAwsServicecatalogProduct interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsServicecatalogProductTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,18 +105,18 @@ type DataAwsServicecatalogProduct interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsServicecatalogProduct
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsServicecatalogProduct) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogProduct) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogProduct) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsServicecatalogProduct) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) Timeouts() DataAwsServicecatalo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogProduct) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -464,7 +464,6 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product} Data Source.
 func NewDataAwsServicecatalogProduct(scope constructs.Construct, id *string, config *DataAwsServicecatalogProductConfig) DataAwsServicecatalogProduct {
 	_init_.Initialize()
@@ -476,7 +475,7 @@ func NewDataAwsServicecatalogProduct(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -489,12 +488,12 @@ func NewDataAwsServicecatalogProduct_Override(d DataAwsServicecatalogProduct, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetAcceptLanguage(val *string) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetAcceptLanguage(val *string) {
 	if err := j.validateSetAcceptLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetAcceptLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetId(val *string) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProduct)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsServicecatalogProduct) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func DataAwsServicecatalogProduct_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func DataAwsServicecatalogProduct_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool {
+func DataAwsServicecatalogProduct_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogProduct_IsConstructParameters(x); err != nil {
@@ -620,7 +619,7 @@ func DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsServicecatalogProduct_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogProduct_IsTerraformDataSourceParameters(x); err != nil {
@@ -639,7 +638,7 @@ func DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsServicecatalogProduct_IsTerraformElement(x interface{}) *bool {
+func DataAwsServicecatalogProduct_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogProduct_IsTerraformElementParameters(x); err != nil {
@@ -658,7 +657,7 @@ func DataAwsServicecatalogProduct_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,27 +675,27 @@ func DataAwsServicecatalogProduct_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsServicecatalogProduct) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsServicecatalogProduct) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) PutTimeouts(value *DataAwsServi
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,8 +900,8 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -914,8 +913,8 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -927,8 +926,8 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogProduct) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -940,8 +939,8 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogProduct) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -966,8 +965,8 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProduct) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogProduct) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -978,4 +977,3 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) ToTerraform() interface{} {
 
 	return returns
 }
-

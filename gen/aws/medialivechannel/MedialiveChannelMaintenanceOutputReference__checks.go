@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMedialiveChannelMaintenanceOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMemorydbParameterGroupParameterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

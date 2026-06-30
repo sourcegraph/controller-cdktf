@@ -19,7 +19,7 @@ func (s *jsiiProxy_SesReceiptRule) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SesReceiptRule) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SesReceiptRule) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutAddHeaderActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutAddHeaderActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutAddHeaderActionParameters(value in
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutBounceActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutBounceActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutBounceActionParameters(value inter
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutLambdaActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutLambdaActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutLambdaActionParameters(value inter
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutS3ActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutS3ActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutS3ActionParameters(value interface
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutSnsActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutSnsActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutSnsActionParameters(value interfac
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutStopActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutStopActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (s *jsiiProxy_SesReceiptRule) validatePutStopActionParameters(value interfa
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRule) validatePutWorkmailActionParameters(value interface{}) error {
+func (s *jsiiProxy_SesReceiptRule) validatePutWorkmailActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func validateSesReceiptRule_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateSesReceiptRule_IsConstructParameters(x interface{}) error {
+func validateSesReceiptRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func validateSesReceiptRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSesReceiptRule_IsTerraformElementParameters(x interface{}) error {
+func validateSesReceiptRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func validateSesReceiptRule_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSesReceiptRule_IsTerraformResourceParameters(x interface{}) error {
+func validateSesReceiptRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -469,7 +469,7 @@ func (j *jsiiProxy_SesReceiptRule) validateSetAfterParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -502,7 +502,7 @@ func (j *jsiiProxy_SesReceiptRule) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -559,7 +559,7 @@ func (j *jsiiProxy_SesReceiptRule) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRule) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRule) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -603,7 +603,7 @@ func (j *jsiiProxy_SesReceiptRule) validateSetNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SesReceiptRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -665,7 +665,7 @@ func (j *jsiiProxy_SesReceiptRule) validateSetRuleSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRule) validateSetScanEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRule) validateSetScanEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -711,4 +711,3 @@ func validateNewSesReceiptRuleParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

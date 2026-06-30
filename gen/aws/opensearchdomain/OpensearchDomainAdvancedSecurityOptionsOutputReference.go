@@ -10,14 +10,14 @@ import (
 
 type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	cdktf.ComplexObject
-	AnonymousAuthEnabled() interface{}
-	SetAnonymousAuthEnabled(val interface{})
-	AnonymousAuthEnabledInput() interface{}
+	AnonymousAuthEnabled() any
+	SetAnonymousAuthEnabled(val any)
+	AnonymousAuthEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,14 +28,14 @@ type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalUserDatabaseEnabled() interface{}
-	SetInternalUserDatabaseEnabled(val interface{})
-	InternalUserDatabaseEnabledInput() interface{}
+	InternalUserDatabaseEnabled() any
+	SetInternalUserDatabaseEnabled(val any)
+	InternalUserDatabaseEnabledInput() any
 	InternalValue() *OpensearchDomainAdvancedSecurityOptions
 	SetInternalValue(val *OpensearchDomainAdvancedSecurityOptions)
 	MasterUserOptions() OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference
@@ -51,7 +51,7 @@ type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	ResetMasterUserOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"anonymousAuthEnabled",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Anony
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"anonymousAuthEnabledInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Anony
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) InternalUserDatabaseEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) InternalUserDatabaseEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalUserDatabaseEnabled",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) InternalUserDatabaseEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) InternalUserDatabaseEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalUserDatabaseEnabledInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Terra
 	return returns
 }
 
-
 func NewOpensearchDomainAdvancedSecurityOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainAdvancedSecurityOptionsOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewOpensearchDomainAdvancedSecurityOptionsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewOpensearchDomainAdvancedSecurityOptionsOutputReference_Override(o Opense
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetAnonymousAuthEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetAnonymousAuthEnabled(val any) {
 	if err := j.validateSetAnonymousAuthEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetAno
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetInternalUserDatabaseEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetInternalUserDatabaseEnabled(val any) {
 	if err := j.validateSetInternalUserDatabaseEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetInternalValue(val *OpensearchDomainAdvancedSecurityOptions) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetInternalValue(val *OpensearchDomainAdvancedSecurityOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Compu
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetBo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetBo
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetLi
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetSt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) GetSt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Inter
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) PutMa
 	_jsii_.InvokeVoid(
 		o,
 		"putMasterUserOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Reset
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) ToStr
 
 	return returns
 }
-

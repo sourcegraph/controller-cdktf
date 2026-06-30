@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewImagebuilderImagePipelineScheduleOutputReferenceParameters(terra
 
 	return nil
 }
-

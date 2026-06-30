@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVpcPeeringConnectionTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

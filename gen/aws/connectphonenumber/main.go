@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
-		reflect.TypeOf((*ConnectPhoneNumber)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumber](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectPhoneNumber{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberConfig",
-		reflect.TypeOf((*ConnectPhoneNumberConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatus",
-		reflect.TypeOf((*ConnectPhoneNumberStatus)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
-		reflect.TypeOf((*ConnectPhoneNumberStatusList)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectPhoneNumberStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
-		reflect.TypeOf((*ConnectPhoneNumberStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectPhoneNumberStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeouts",
-		reflect.TypeOf((*ConnectPhoneNumberTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
-		reflect.TypeOf((*ConnectPhoneNumberTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectPhoneNumberTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

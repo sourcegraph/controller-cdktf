@@ -16,12 +16,12 @@ type DataAwsLambdaFunctionUrl interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Cors() DataAwsLambdaFunctionUrlCorsList
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,18 +58,18 @@ type DataAwsLambdaFunctionUrl interface {
 	SetQualifier(val *string)
 	QualifierInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UrlId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataAwsLambdaFunctionUrl interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQualifier()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLambdaFunctionUrl
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) Cors() DataAwsLambdaFunctionUrlCors
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) QualifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) UrlId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lambda_function_url aws_lambda_function_url} Data Source.
 func NewDataAwsLambdaFunctionUrl(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionUrlConfig) DataAwsLambdaFunctionUrl {
 	_init_.Initialize()
@@ -397,7 +396,7 @@ func NewDataAwsLambdaFunctionUrl(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -410,12 +409,12 @@ func NewDataAwsLambdaFunctionUrl_Override(d DataAwsLambdaFunctionUrl, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetFunctionName(val *string) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetFunctionName(val *string) {
 	if err := j.validateSetFunctionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetFunctionName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrl)SetQualifier(val *string) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) SetQualifier(val *string) {
 	if err := j.validateSetQualifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func DataAwsLambdaFunctionUrl_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func DataAwsLambdaFunctionUrl_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLambdaFunctionUrl_IsConstruct(x interface{}) *bool {
+func DataAwsLambdaFunctionUrl_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLambdaFunctionUrl_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func DataAwsLambdaFunctionUrl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func DataAwsLambdaFunctionUrl_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLambdaFunctionUrl_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLambdaFunctionUrl_IsTerraformDataSourceParameters(x); err != nil {
@@ -560,7 +559,7 @@ func DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
+func DataAwsLambdaFunctionUrl_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLambdaFunctionUrl_IsTerraformElementParameters(x); err != nil {
@@ -579,7 +578,7 @@ func DataAwsLambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,27 +596,27 @@ func DataAwsLambdaFunctionUrl_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ResetQualifier() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -816,8 +815,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -829,8 +828,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -842,8 +841,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -880,4 +879,3 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrl) ToTerraform() interface{} {
 
 	return returns
 }
-

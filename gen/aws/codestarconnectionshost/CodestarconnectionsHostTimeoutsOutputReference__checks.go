@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCodestarconnectionsHostTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

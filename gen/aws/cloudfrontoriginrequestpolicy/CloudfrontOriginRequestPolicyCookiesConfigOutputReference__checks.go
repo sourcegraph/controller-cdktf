@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewCloudfrontOriginRequestPolicyCookiesConfigOutputReferenceParamet
 
 	return nil
 }
-

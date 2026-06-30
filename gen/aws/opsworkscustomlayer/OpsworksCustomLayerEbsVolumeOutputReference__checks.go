@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetEncry
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewOpsworksCustomLayerEbsVolumeOutputReferenceParameters(terraformR
 
 	return nil
 }
-

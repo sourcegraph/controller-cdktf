@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
-		reflect.TypeOf((*EcsClusterCapacityProviders)(nil)).Elem(),
+		reflect.TypeFor[EcsClusterCapacityProviders](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsClusterCapacityProviders{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersConfig",
-		reflect.TypeOf((*EcsClusterCapacityProvidersConfig)(nil)).Elem(),
+		reflect.TypeFor[EcsClusterCapacityProvidersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategy",
-		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategy)(nil)).Elem(),
+		reflect.TypeFor[EcsClusterCapacityProvidersDefaultCapacityProviderStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList",
-		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList)(nil)).Elem(),
+		reflect.TypeFor[EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference",
-		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
 			_jsii_.MemberProperty{JsiiProperty: "baseInput", GoGetter: "BaseInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

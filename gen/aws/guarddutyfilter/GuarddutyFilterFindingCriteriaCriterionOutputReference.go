@@ -12,9 +12,9 @@ type GuarddutyFilterFindingCriteriaCriterionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type GuarddutyFilterFindingCriteriaCriterionOutputReference interface {
 	GreaterThanOrEqual() *string
 	SetGreaterThanOrEqual(val *string)
 	GreaterThanOrEqualInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LessThan() *string
 	SetLessThan(val *string)
 	LessThanInput() *string
@@ -61,7 +61,7 @@ type GuarddutyFilterFindingCriteriaCriterionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type GuarddutyFilterFindingCriteriaCriterionOutputReference interface {
 	ResetNotEquals()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ type jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Great
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Terra
 	return returns
 }
 
-
 func NewGuarddutyFilterFindingCriteriaCriterionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GuarddutyFilterFindingCriteriaCriterionOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewGuarddutyFilterFindingCriteriaCriterionOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewGuarddutyFilterFindingCriteriaCriterionOutputReference_Override(g Guardd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetEqualTo(val *[]*string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetEqualTo(val *[]*string) {
 	if err := j.validateSetEqualToParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetEqu
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetField(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetField(val *string) {
 	if err := j.validateSetFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetFie
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetGreaterThan(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetGreaterThan(val *string) {
 	if err := j.validateSetGreaterThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetGre
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetGreaterThanOrEqual(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetGreaterThanOrEqual(val *string) {
 	if err := j.validateSetGreaterThanOrEqualParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetGre
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetLessThan(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetLessThan(val *string) {
 	if err := j.validateSetLessThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetLes
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetLessThanOrEqual(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetLessThanOrEqual(val *string) {
 	if err := j.validateSetLessThanOrEqualParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetLes
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetNotEquals(val *[]*string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetNotEquals(val *[]*string) {
 	if err := j.validateSetNotEqualsParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetNot
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,16 +485,16 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -707,16 +706,16 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) ToStr
 
 	return returns
 }
-

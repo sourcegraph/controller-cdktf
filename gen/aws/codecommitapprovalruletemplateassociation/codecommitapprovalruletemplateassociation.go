@@ -18,15 +18,15 @@ type CodecommitApprovalRuleTemplateAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,27 +53,27 @@ type CodecommitApprovalRuleTemplateAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryName() *string
 	SetRepositoryName(val *string)
 	RepositoryNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type CodecommitApprovalRuleTemplateAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type CodecommitApprovalRuleTemplateAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type CodecommitApprovalRuleTemplateAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodecommitApprovalRuleTemplateAssociation
@@ -162,8 +162,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformResourceT
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
 func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateAssociationConfig) CodecommitApprovalRuleTemplateAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewCodecommitApprovalRuleTemplateAssociation_Override(c CodecommitApprovalR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetApprovalRuleTemplateName(val *string) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetApprovalRuleTemplateName(val *string) {
 	if err := j.validateSetApprovalRuleTemplateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetApprovalRuleTemp
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetId(val *string) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation)SetRepositoryName(val *string) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SetRepositoryName(val *string) {
 	if err := j.validateSetRepositoryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func CodecommitApprovalRuleTemplateAssociation_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func CodecommitApprovalRuleTemplateAssociation_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodecommitApprovalRuleTemplateAssociation_IsConstruct(x interface{}) *bool {
+func CodecommitApprovalRuleTemplateAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitApprovalRuleTemplateAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func CodecommitApprovalRuleTemplateAssociation_IsTerraformElement(x interface{}) *bool {
+func CodecommitApprovalRuleTemplateAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitApprovalRuleTemplateAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func CodecommitApprovalRuleTemplateAssociation_IsTerraformResource(x interface{}) *bool {
+func CodecommitApprovalRuleTemplateAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodecommitApprovalRuleTemplateAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -772,7 +771,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ResetOverrideLogic
 	)
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -865,8 +864,8 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeAttribut
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -878,8 +877,8 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) SynthesizeHclAttri
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -891,8 +890,8 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToHclTerraform() i
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -917,8 +916,8 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToString() *string
 	return returns
 }
 
-func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -929,4 +928,3 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) ToTerraform() inte
 
 	return returns
 }
-

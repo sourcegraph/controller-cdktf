@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReferenceParameters(te
 
 	return nil
 }
-

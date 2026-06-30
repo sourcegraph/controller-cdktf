@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplatePlacementOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplatePlacementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplatePlacementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplatePlacementOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -16,11 +16,11 @@ type DataAwsSsmParametersByPath interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,25 +51,25 @@ type DataAwsSsmParametersByPath interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
-	Recursive() interface{}
-	SetRecursive(val interface{})
-	RecursiveInput() interface{}
+	RawOverrides() any
+	Recursive() any
+	SetRecursive(val any)
+	RecursiveInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Types() *[]*string
 	Values() *[]*string
-	WithDecryption() interface{}
-	SetWithDecryption(val interface{})
-	WithDecryptionInput() interface{}
+	WithDecryption() any
+	SetWithDecryption(val any)
+	WithDecryptionInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataAwsSsmParametersByPath interface {
 	ResetOverrideLogicalId()
 	ResetRecursive()
 	ResetWithDecryption()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSsmParametersByPath
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) Recursive() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) Recursive() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recursive",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) Recursive() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) RecursiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) RecursiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recursiveInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) Values() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryption() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryption() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withDecryption",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryption() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withDecryptionInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryptionInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
 func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, config *DataAwsSsmParametersByPathConfig) DataAwsSsmParametersByPath {
@@ -388,7 +387,7 @@ func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewDataAwsSsmParametersByPath_Override(d DataAwsSsmParametersByPath, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetPath(val *string) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetRecursive(val interface{}) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetRecursive(val any) {
 	if err := j.validateSetRecursiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetRecursive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetWithDecryption(val interface{}) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath) SetWithDecryption(val any) {
 	if err := j.validateSetWithDecryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func DataAwsSsmParametersByPath_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsSsmParametersByPath_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool {
+func DataAwsSsmParametersByPath_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSsmParametersByPath_IsConstructParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSsmParametersByPath_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSsmParametersByPath_IsTerraformDataSourceParameters(x); err != nil {
@@ -562,7 +561,7 @@ func DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSsmParametersByPath_IsTerraformElement(x interface{}) *bool {
+func DataAwsSsmParametersByPath_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSsmParametersByPath_IsTerraformElementParameters(x); err != nil {
@@ -581,7 +580,7 @@ func DataAwsSsmParametersByPath_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -599,27 +598,27 @@ func DataAwsSsmParametersByPath_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSsmParametersByPath) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSsmParametersByPath) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -813,8 +812,8 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) ResetWithDecryption() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -826,8 +825,8 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -839,8 +838,8 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSsmParametersByPath) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -852,8 +851,8 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSsmParametersByPath) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -878,8 +877,8 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmParametersByPath) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSsmParametersByPath) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -890,4 +889,3 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) ToTerraform() interface{} {
 
 	return returns
 }
-

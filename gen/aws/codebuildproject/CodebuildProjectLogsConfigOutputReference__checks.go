@@ -120,7 +120,7 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewCodebuildProjectLogsConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

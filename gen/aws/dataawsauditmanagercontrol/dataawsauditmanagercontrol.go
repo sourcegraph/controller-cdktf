@@ -18,13 +18,13 @@ type DataAwsAuditmanagerControl interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlMappingSources() DataAwsAuditmanagerControlControlMappingSourcesList
-	ControlMappingSourcesInput() interface{}
+	ControlMappingSourcesInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,12 +53,12 @@ type DataAwsAuditmanagerControl interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TestingInformation() *string
@@ -66,9 +66,9 @@ type DataAwsAuditmanagerControl interface {
 	SetType(val *string)
 	TypeInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,23 +90,23 @@ type DataAwsAuditmanagerControl interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutControlMappingSources(value interface{})
+	PutControlMappingSources(value any)
 	ResetControlMappingSources()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsAuditmanagerControl
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControl) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSources() DataAwsAu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"controlMappingSourcesInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSourcesInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControl) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControl) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControl) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl {
 	_init_.Initialize()
@@ -396,7 +395,7 @@ func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetName(val *string) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetType(val *string) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func DataAwsAuditmanagerControl_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataAwsAuditmanagerControl_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool {
+func DataAwsAuditmanagerControl_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAuditmanagerControl_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsAuditmanagerControl_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAuditmanagerControl_IsTerraformDataSourceParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAuditmanagerControl_IsTerraformElement(x interface{}) *bool {
+func DataAwsAuditmanagerControl_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAuditmanagerControl_IsTerraformElementParameters(x); err != nil {
@@ -567,7 +566,7 @@ func DataAwsAuditmanagerControl_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,27 +584,27 @@ func DataAwsAuditmanagerControl_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsAuditmanagerControl) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsAuditmanagerControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,18 +762,18 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) PutControlMappingSources(value interface{}) {
+func (d *jsiiProxy_DataAwsAuditmanagerControl) PutControlMappingSources(value any) {
 	if err := d.validatePutControlMappingSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putControlMappingSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAuditmanagerControl) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -833,8 +832,8 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAuditmanagerControl) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -859,8 +858,8 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAuditmanagerControl) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -871,4 +870,3 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) ToTerraform() interface{} {
 
 	return returns
 }
-

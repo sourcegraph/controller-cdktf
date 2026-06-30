@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEc2InstanceTypeGpusOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

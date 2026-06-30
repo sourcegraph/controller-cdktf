@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAlias",
-		reflect.TypeOf((*LambdaAlias)(nil)).Elem(),
+		reflect.TypeFor[LambdaAlias](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaAlias{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig",
-		reflect.TypeOf((*LambdaAliasConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaAliasConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfig",
-		reflect.TypeOf((*LambdaAliasRoutingConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaAliasRoutingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
-		reflect.TypeOf((*LambdaAliasRoutingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaAliasRoutingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVersionWeights", GoGetter: "AdditionalVersionWeights"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalVersionWeightsInput", GoGetter: "AdditionalVersionWeightsInput"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaAliasRoutingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

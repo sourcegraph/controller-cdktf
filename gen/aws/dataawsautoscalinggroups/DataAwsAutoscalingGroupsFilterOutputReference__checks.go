@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsAutoscalingGroupsFilterOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAutoscalingPolicyStepAdjustmentListParameters(terraformResource 
 
 	return nil
 }
-

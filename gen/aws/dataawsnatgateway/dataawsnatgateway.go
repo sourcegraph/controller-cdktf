@@ -17,17 +17,17 @@ type DataAwsNatGateway interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectivityType() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsNatGatewayFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,7 +53,7 @@ type DataAwsNatGateway interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PublicIp() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -66,18 +66,18 @@ type DataAwsNatGateway interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsNatGatewayTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataAwsNatGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsNatGatewayTimeouts)
 	ResetFilter()
 	ResetId()
@@ -111,18 +111,18 @@ type DataAwsNatGateway interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVpcId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsNatGateway
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataAwsNatGateway) ConnectivityType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNatGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataAwsNatGateway) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNatGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DataAwsNatGateway) Filter() DataAwsNatGatewayFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNatGateway) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataAwsNatGateway) PublicIp() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNatGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_DataAwsNatGateway) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNatGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_DataAwsNatGateway) Timeouts() DataAwsNatGatewayTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNatGateway) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNatGateway) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -460,7 +460,6 @@ func (j *jsiiProxy_DataAwsNatGateway) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) DataAwsNatGateway {
 	_init_.Initialize()
@@ -472,7 +471,7 @@ func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewDataAwsNatGateway_Override(d DataAwsNatGateway, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsNatGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsNatGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetId(val *string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsNatGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsNatGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetState(val *string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetSubnetId(val *string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DataAwsNatGateway)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNatGateway)SetVpcId(val *string) {
+func (j *jsiiProxy_DataAwsNatGateway) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func DataAwsNatGateway_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func DataAwsNatGateway_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsNatGateway_IsConstruct(x interface{}) *bool {
+func DataAwsNatGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNatGateway_IsConstructParameters(x); err != nil {
@@ -638,7 +637,7 @@ func DataAwsNatGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func DataAwsNatGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNatGateway_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsNatGateway_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNatGateway_IsTerraformDataSourceParameters(x); err != nil {
@@ -657,7 +656,7 @@ func DataAwsNatGateway_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func DataAwsNatGateway_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNatGateway_IsTerraformElement(x interface{}) *bool {
+func DataAwsNatGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNatGateway_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func DataAwsNatGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,27 +693,27 @@ func DataAwsNatGateway_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsNatGateway) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsNatGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataAwsNatGateway) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DataAwsNatGateway) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,18 +871,18 @@ func (d *jsiiProxy_DataAwsNatGateway) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsNatGateway) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -894,7 +893,7 @@ func (d *jsiiProxy_DataAwsNatGateway) PutTimeouts(value *DataAwsNatGatewayTimeou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -962,8 +961,8 @@ func (d *jsiiProxy_DataAwsNatGateway) ResetVpcId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNatGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -975,8 +974,8 @@ func (d *jsiiProxy_DataAwsNatGateway) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNatGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -988,8 +987,8 @@ func (d *jsiiProxy_DataAwsNatGateway) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNatGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1001,8 +1000,8 @@ func (d *jsiiProxy_DataAwsNatGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNatGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1027,8 +1026,8 @@ func (d *jsiiProxy_DataAwsNatGateway) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNatGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNatGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1039,4 +1038,3 @@ func (d *jsiiProxy_DataAwsNatGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

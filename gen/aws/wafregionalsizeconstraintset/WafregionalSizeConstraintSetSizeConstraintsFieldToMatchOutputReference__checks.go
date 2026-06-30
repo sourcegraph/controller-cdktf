@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutput
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewWafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputRef
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailBucket) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (l *jsiiProxy_LightsailBucket) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailBucket) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailBucket) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (l *jsiiProxy_LightsailBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailBucket) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLightsailBucket_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateLightsailBucket_IsConstructParameters(x interface{}) error {
+func validateLightsailBucket_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLightsailBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLightsailBucket_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailBucket_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLightsailBucket_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLightsailBucket_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailBucket_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LightsailBucket) validateSetBundleIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_LightsailBucket) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailBucket) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LightsailBucket) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_LightsailBucket) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailBucket) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LightsailBucket) validateSetNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_LightsailBucket) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailBucket) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewLightsailBucketParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

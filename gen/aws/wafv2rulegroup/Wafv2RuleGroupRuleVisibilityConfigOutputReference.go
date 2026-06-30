@@ -10,14 +10,14 @@ import (
 
 type Wafv2RuleGroupRuleVisibilityConfigOutputReference interface {
 	cdktf.ComplexObject
-	CloudwatchMetricsEnabled() interface{}
-	SetCloudwatchMetricsEnabled(val interface{})
-	CloudwatchMetricsEnabledInput() interface{}
+	CloudwatchMetricsEnabled() any
+	SetCloudwatchMetricsEnabled(val any)
+	CloudwatchMetricsEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type Wafv2RuleGroupRuleVisibilityConfigOutputReference interface {
 	MetricName() *string
 	SetMetricName(val *string)
 	MetricNameInput() *string
-	SampledRequestsEnabled() interface{}
-	SetSampledRequestsEnabled(val interface{})
-	SampledRequestsEnabledInput() interface{}
+	SampledRequestsEnabled() any
+	SetSampledRequestsEnabled(val any)
+	SampledRequestsEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type Wafv2RuleGroupRuleVisibilityConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type Wafv2RuleGroupRuleVisibilityConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) CloudwatchMetricsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) CloudwatchMetricsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudwatchMetricsEnabled",
@@ -95,8 +95,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) Cloudwatch
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) CloudwatchMetricsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) CloudwatchMetricsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudwatchMetricsEnabledInput",
@@ -105,8 +105,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) Cloudwatch
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) MetricName
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SampledRequestsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SampledRequestsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sampledRequestsEnabled",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SampledReq
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SampledRequestsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SampledRequestsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sampledRequestsEnabledInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewWafv2RuleGroupRuleVisibilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleVisibilityConfigOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewWafv2RuleGroupRuleVisibilityConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewWafv2RuleGroupRuleVisibilityConfigOutputReference_Override(w Wafv2RuleGr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetCloudwatchMetricsEnabled(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetCloudwatchMetricsEnabled(val any) {
 	if err := j.validateSetCloudwatchMetricsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetCloudwat
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetInternalValue(val *Wafv2RuleGroupRuleVisibilityConfig) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetInternalValue(val *Wafv2RuleGroupRuleVisibilityConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetMetricName(val *string) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetMetricName(val *string) {
 	if err := j.validateSetMetricNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetMetricNa
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetSampledRequestsEnabled(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetSampledRequestsEnabled(val any) {
 	if err := j.validateSetSampledRequestsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetSampledR
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference) ToString()
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsNetworkmanagerLinks) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsNetworkmanagerLinks) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsNetworkmanagerLinks_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataAwsNetworkmanagerLinks_IsConstructParameters(x interface{}) error {
+func validateDataAwsNetworkmanagerLinks_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsNetworkmanagerLinks_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataAwsNetworkmanagerLinks_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsNetworkmanagerLinks_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsNetworkmanagerLinks_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataAwsNetworkmanagerLinks_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsNetworkmanagerLinks_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsNetworkmanagerLinks_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerLinks) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerLinks) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -282,4 +282,3 @@ func validateNewDataAwsNetworkmanagerLinksParameters(scope constructs.Construct,
 
 	return nil
 }
-

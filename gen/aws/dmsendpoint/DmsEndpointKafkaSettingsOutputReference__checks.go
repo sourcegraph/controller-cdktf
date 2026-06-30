@@ -106,7 +106,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetBrokerPar
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeControlDetailsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeControlDetailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeCo
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeNullAndEmptyParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeNullAndEmptyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeNu
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludePartitionValueParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludePartitionValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludePa
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeTableAlterOperationsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeTableAlterOperationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeTa
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeTransactionDetailsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetIncludeTransactionDetailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetMessageMa
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetNoHexPrefixParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetNoHexPrefixParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetNoHexPref
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetPartitionIncludeSchemaTableParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetPartitionIncludeSchemaTableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -426,4 +426,3 @@ func validateNewDmsEndpointKafkaSettingsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

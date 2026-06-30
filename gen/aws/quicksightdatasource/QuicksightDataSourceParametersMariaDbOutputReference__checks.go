@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersMariaDbOutputReferenceParameters(t
 
 	return nil
 }
-

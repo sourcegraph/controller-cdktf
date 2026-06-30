@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleCloudwatchAlarmListParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
-		reflect.TypeOf((*ComprehendEntityRecognizer)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,19 +100,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerConfig",
-		reflect.TypeOf((*ComprehendEntityRecognizerConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAnnotations)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigAnnotations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testS3UriInput", GoGetter: "TestS3UriInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifests",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifests)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigAugmentedManifests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3Uri", GoGetter: "AnnotationDataS3Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3UriInput", GoGetter: "AnnotationDataS3UriInput"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigDocuments)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigDocuments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testS3UriInput", GoGetter: "TestS3UriInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStruct)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigEntityListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypes",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypes)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigEntityTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypesList)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigEntityTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -331,7 +331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -365,7 +365,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerInputDataConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,11 +419,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts",
-		reflect.TypeOf((*ComprehendEntityRecognizerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,11 +464,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig",
-		reflect.TypeOf((*ComprehendEntityRecognizerVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfigOutputReference",
-		reflect.TypeOf((*ComprehendEntityRecognizerVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendEntityRecognizerVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -496,7 +496,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendEntityRecognizerVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

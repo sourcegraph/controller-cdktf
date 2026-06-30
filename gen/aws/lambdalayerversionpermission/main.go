@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
-		reflect.TypeOf((*LambdaLayerVersionPermission)(nil)).Elem(),
+		reflect.TypeFor[LambdaLayerVersionPermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionNumber", GoGetter: "VersionNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNumberInput", GoGetter: "VersionNumberInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaLayerVersionPermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermissionConfig",
-		reflect.TypeOf((*LambdaLayerVersionPermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaLayerVersionPermissionConfig](),
 	)
 }

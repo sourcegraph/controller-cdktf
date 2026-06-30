@@ -15,11 +15,11 @@ type DataAwsSecretsmanagerSecretRotation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,7 +46,7 @@ type DataAwsSecretsmanagerSecretRotation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RotationEnabled() cdktf.IResolvable
 	RotationLambdaArn() *string
 	RotationRules() DataAwsSecretsmanagerSecretRotationRotationRulesList
@@ -56,13 +56,13 @@ type DataAwsSecretsmanagerSecretRotation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,18 +88,18 @@ type DataAwsSecretsmanagerSecretRotation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSecretsmanagerSecretRotation
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -317,7 +317,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Data Source.
 func NewDataAwsSecretsmanagerSecretRotation(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretRotationConfig) DataAwsSecretsmanagerSecretRotation {
 	_init_.Initialize()
@@ -329,7 +328,7 @@ func NewDataAwsSecretsmanagerSecretRotation(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -342,12 +341,12 @@ func NewDataAwsSecretsmanagerSecretRotation_Override(d DataAwsSecretsmanagerSecr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -366,7 +365,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation)SetSecretId(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SetSecretId(val *string) {
 	if err := j.validateSetSecretIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func DataAwsSecretsmanagerSecretRotation_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func DataAwsSecretsmanagerSecretRotation_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
+func DataAwsSecretsmanagerSecretRotation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerSecretRotation_IsConstructParameters(x); err != nil {
@@ -462,7 +461,7 @@ func DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerSecretRotation_IsTerraformDataSourceParameters(x); err != nil {
@@ -481,7 +480,7 @@ func DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool {
+func DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerSecretRotation_IsTerraformElementParameters(x); err != nil {
@@ -500,7 +499,7 @@ func DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,27 +517,27 @@ func DataAwsSecretsmanagerSecretRotation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ResetOverrideLogicalId()
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -755,8 +754,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -781,8 +780,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -793,4 +792,3 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) ToTerraform() interface{
 
 	return returns
 }
-

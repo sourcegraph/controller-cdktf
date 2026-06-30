@@ -10,14 +10,14 @@ import (
 
 type CognitoUserPoolDeviceConfigurationOutputReference interface {
 	cdktf.ComplexObject
-	ChallengeRequiredOnNewDevice() interface{}
-	SetChallengeRequiredOnNewDevice(val interface{})
-	ChallengeRequiredOnNewDeviceInput() interface{}
+	ChallengeRequiredOnNewDevice() any
+	SetChallengeRequiredOnNewDevice(val any)
+	ChallengeRequiredOnNewDeviceInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type CognitoUserPoolDeviceConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeviceOnlyRememberedOnUserPrompt() interface{}
-	SetDeviceOnlyRememberedOnUserPrompt(val interface{})
-	DeviceOnlyRememberedOnUserPromptInput() interface{}
+	DeviceOnlyRememberedOnUserPrompt() any
+	SetDeviceOnlyRememberedOnUserPrompt(val any)
+	DeviceOnlyRememberedOnUserPromptInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CognitoUserPoolDeviceConfiguration
@@ -46,7 +46,7 @@ type CognitoUserPoolDeviceConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type CognitoUserPoolDeviceConfigurationOutputReference interface {
 	ResetDeviceOnlyRememberedOnUserPrompt()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeRequiredOnNewDevice() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeRequiredOnNewDevice() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"challengeRequiredOnNewDevice",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeR
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeRequiredOnNewDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeRequiredOnNewDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"challengeRequiredOnNewDeviceInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ChallengeR
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) DeviceOnlyRememberedOnUserPrompt() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) DeviceOnlyRememberedOnUserPrompt() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceOnlyRememberedOnUserPrompt",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) DeviceOnly
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) DeviceOnlyRememberedOnUserPromptInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) DeviceOnlyRememberedOnUserPromptInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceOnlyRememberedOnUserPromptInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) TerraformR
 	return returns
 }
 
-
 func NewCognitoUserPoolDeviceConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolDeviceConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewCognitoUserPoolDeviceConfigurationOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewCognitoUserPoolDeviceConfigurationOutputReference_Override(c CognitoUser
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetChallengeRequiredOnNewDevice(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetChallengeRequiredOnNewDevice(val any) {
 	if err := j.validateSetChallengeRequiredOnNewDeviceParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetChalleng
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetDeviceOnlyRememberedOnUserPrompt(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetDeviceOnlyRememberedOnUserPrompt(val any) {
 	if err := j.validateSetDeviceOnlyRememberedOnUserPromptParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetDeviceOn
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetInternalValue(val *CognitoUserPoolDeviceConfiguration) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetInternalValue(val *CognitoUserPoolDeviceConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ResetDevic
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_CognitoUserPoolDeviceConfigurationOutputReference) ToString()
 
 	return returns
 }
-

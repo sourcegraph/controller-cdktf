@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCeCostCategory) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCeCostCategory) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsCeCostCategory_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsCeCostCategory_IsConstructParameters(x interface{}) error {
+func validateDataAwsCeCostCategory_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsCeCostCategory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsCeCostCategory_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCeCostCategory_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsCeCostCategory_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsCeCostCategory_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCeCostCategory_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCostCategoryArnParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsCeCostCategoryParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

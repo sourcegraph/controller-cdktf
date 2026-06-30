@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewWafRegexMatchSetRegexMatchTupleOutputReferenceParameters(terrafo
 
 	return nil
 }
-

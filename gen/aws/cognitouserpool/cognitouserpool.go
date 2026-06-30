@@ -26,15 +26,15 @@ type CognitoUserPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	CustomDomain() *string
 	DeletionProtection() *string
@@ -90,13 +90,13 @@ type CognitoUserPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schema() CognitoUserPoolSchemaList
-	SchemaInput() interface{}
+	SchemaInput() any
 	SmsAuthenticationMessage() *string
 	SetSmsAuthenticationMessage(val *string)
 	SmsAuthenticationMessageInput() *string
@@ -116,7 +116,7 @@ type CognitoUserPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserAttributeUpdateSettings() CognitoUserPoolUserAttributeUpdateSettingsOutputReference
@@ -134,9 +134,9 @@ type CognitoUserPool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -154,7 +154,7 @@ type CognitoUserPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -166,7 +166,7 @@ type CognitoUserPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -179,7 +179,7 @@ type CognitoUserPool interface {
 	PutEmailConfiguration(value *CognitoUserPoolEmailConfiguration)
 	PutLambdaConfig(value *CognitoUserPoolLambdaConfig)
 	PutPasswordPolicy(value *CognitoUserPoolPasswordPolicy)
-	PutSchema(value interface{})
+	PutSchema(value any)
 	PutSmsConfiguration(value *CognitoUserPoolSmsConfiguration)
 	PutSoftwareTokenMfaConfiguration(value *CognitoUserPoolSoftwareTokenMfaConfiguration)
 	PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings)
@@ -214,17 +214,17 @@ type CognitoUserPool interface {
 	ResetUsernameConfiguration()
 	ResetUserPoolAddOns()
 	ResetVerificationMessageTemplate()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CognitoUserPool
@@ -332,8 +332,8 @@ func (j *jsiiProxy_CognitoUserPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_CognitoUserPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoUserPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_CognitoUserPool) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_CognitoUserPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CognitoUserPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -702,8 +702,8 @@ func (j *jsiiProxy_CognitoUserPool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_CognitoUserPool) Schema() CognitoUserPoolSchemaList {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) SchemaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPool) SchemaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"schemaInput",
@@ -862,8 +862,8 @@ func (j *jsiiProxy_CognitoUserPool) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoUserPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -982,7 +982,6 @@ func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplateInput() *CognitoU
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
 func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoUserPoolConfig) CognitoUserPool {
 	_init_.Initialize()
@@ -994,7 +993,7 @@ func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoU
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1007,12 +1006,12 @@ func NewCognitoUserPool_Override(c CognitoUserPool, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetAliasAttributes(val *[]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetAliasAttributes(val *[]*string) {
 	if err := j.validateSetAliasAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func (j *jsiiProxy_CognitoUserPool)SetAliasAttributes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetAutoVerifiedAttributes(val *[]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetAutoVerifiedAttributes(val *[]*string) {
 	if err := j.validateSetAutoVerifiedAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1034,7 +1033,7 @@ func (j *jsiiProxy_CognitoUserPool)SetAutoVerifiedAttributes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_CognitoUserPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1045,7 +1044,7 @@ func (j *jsiiProxy_CognitoUserPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetCount(val interface{}) {
+func (j *jsiiProxy_CognitoUserPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1056,7 +1055,7 @@ func (j *jsiiProxy_CognitoUserPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetDeletionProtection(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetDeletionProtection(val *string) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_CognitoUserPool)SetDeletionProtection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1075,7 +1074,7 @@ func (j *jsiiProxy_CognitoUserPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationMessage(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetEmailVerificationMessage(val *string) {
 	if err := j.validateSetEmailVerificationMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1086,7 +1085,7 @@ func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationSubject(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetEmailVerificationSubject(val *string) {
 	if err := j.validateSetEmailVerificationSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func (j *jsiiProxy_CognitoUserPool)SetEmailVerificationSubject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CognitoUserPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1105,7 +1104,7 @@ func (j *jsiiProxy_CognitoUserPool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetId(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1116,7 +1115,7 @@ func (j *jsiiProxy_CognitoUserPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CognitoUserPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1127,7 +1126,7 @@ func (j *jsiiProxy_CognitoUserPool)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetMfaConfiguration(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetMfaConfiguration(val *string) {
 	if err := j.validateSetMfaConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1138,7 +1137,7 @@ func (j *jsiiProxy_CognitoUserPool)SetMfaConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetName(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1149,7 +1148,7 @@ func (j *jsiiProxy_CognitoUserPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CognitoUserPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1157,7 +1156,7 @@ func (j *jsiiProxy_CognitoUserPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CognitoUserPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1168,7 +1167,7 @@ func (j *jsiiProxy_CognitoUserPool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetSmsAuthenticationMessage(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetSmsAuthenticationMessage(val *string) {
 	if err := j.validateSetSmsAuthenticationMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1179,7 +1178,7 @@ func (j *jsiiProxy_CognitoUserPool)SetSmsAuthenticationMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetSmsVerificationMessage(val *string) {
+func (j *jsiiProxy_CognitoUserPool) SetSmsVerificationMessage(val *string) {
 	if err := j.validateSetSmsVerificationMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1190,7 +1189,7 @@ func (j *jsiiProxy_CognitoUserPool)SetSmsVerificationMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_CognitoUserPool)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_CognitoUserPool)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPool)SetUsernameAttributes(val *[]*string) {
+func (j *jsiiProxy_CognitoUserPool) SetUsernameAttributes(val *[]*string) {
 	if err := j.validateSetUsernameAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func CognitoUserPool_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1259,7 +1258,7 @@ func CognitoUserPool_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CognitoUserPool_IsConstruct(x interface{}) *bool {
+func CognitoUserPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUserPool_IsConstructParameters(x); err != nil {
@@ -1270,7 +1269,7 @@ func CognitoUserPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1278,7 +1277,7 @@ func CognitoUserPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoUserPool_IsTerraformElement(x interface{}) *bool {
+func CognitoUserPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUserPool_IsTerraformElementParameters(x); err != nil {
@@ -1289,7 +1288,7 @@ func CognitoUserPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1297,7 +1296,7 @@ func CognitoUserPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoUserPool_IsTerraformResource(x interface{}) *bool {
+func CognitoUserPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoUserPool_IsTerraformResourceParameters(x); err != nil {
@@ -1308,7 +1307,7 @@ func CognitoUserPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1333,31 +1332,31 @@ func (c *jsiiProxy_CognitoUserPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPool) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CognitoUserPool) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUserPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1373,7 +1372,7 @@ func (c *jsiiProxy_CognitoUserPool) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1389,7 +1388,7 @@ func (c *jsiiProxy_CognitoUserPool) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1405,7 +1404,7 @@ func (c *jsiiProxy_CognitoUserPool) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1421,7 +1420,7 @@ func (c *jsiiProxy_CognitoUserPool) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1437,7 +1436,7 @@ func (c *jsiiProxy_CognitoUserPool) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1453,7 +1452,7 @@ func (c *jsiiProxy_CognitoUserPool) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1469,7 +1468,7 @@ func (c *jsiiProxy_CognitoUserPool) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1485,15 +1484,15 @@ func (c *jsiiProxy_CognitoUserPool) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUserPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1512,7 +1511,7 @@ func (c *jsiiProxy_CognitoUserPool) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1525,7 +1524,7 @@ func (c *jsiiProxy_CognitoUserPool) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1539,18 +1538,18 @@ func (c *jsiiProxy_CognitoUserPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPool) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CognitoUserPool) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1561,7 +1560,7 @@ func (c *jsiiProxy_CognitoUserPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1572,7 +1571,7 @@ func (c *jsiiProxy_CognitoUserPool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1583,7 +1582,7 @@ func (c *jsiiProxy_CognitoUserPool) PutAccountRecoverySetting(value *CognitoUser
 	_jsii_.InvokeVoid(
 		c,
 		"putAccountRecoverySetting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1594,7 +1593,7 @@ func (c *jsiiProxy_CognitoUserPool) PutAdminCreateUserConfig(value *CognitoUserP
 	_jsii_.InvokeVoid(
 		c,
 		"putAdminCreateUserConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1605,7 +1604,7 @@ func (c *jsiiProxy_CognitoUserPool) PutDeviceConfiguration(value *CognitoUserPoo
 	_jsii_.InvokeVoid(
 		c,
 		"putDeviceConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1616,7 +1615,7 @@ func (c *jsiiProxy_CognitoUserPool) PutEmailConfiguration(value *CognitoUserPool
 	_jsii_.InvokeVoid(
 		c,
 		"putEmailConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1627,7 +1626,7 @@ func (c *jsiiProxy_CognitoUserPool) PutLambdaConfig(value *CognitoUserPoolLambda
 	_jsii_.InvokeVoid(
 		c,
 		"putLambdaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1638,18 +1637,18 @@ func (c *jsiiProxy_CognitoUserPool) PutPasswordPolicy(value *CognitoUserPoolPass
 	_jsii_.InvokeVoid(
 		c,
 		"putPasswordPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPool) PutSchema(value interface{}) {
+func (c *jsiiProxy_CognitoUserPool) PutSchema(value any) {
 	if err := c.validatePutSchemaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSchema",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1660,7 +1659,7 @@ func (c *jsiiProxy_CognitoUserPool) PutSmsConfiguration(value *CognitoUserPoolSm
 	_jsii_.InvokeVoid(
 		c,
 		"putSmsConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1671,7 +1670,7 @@ func (c *jsiiProxy_CognitoUserPool) PutSoftwareTokenMfaConfiguration(value *Cogn
 	_jsii_.InvokeVoid(
 		c,
 		"putSoftwareTokenMfaConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1682,7 +1681,7 @@ func (c *jsiiProxy_CognitoUserPool) PutUserAttributeUpdateSettings(value *Cognit
 	_jsii_.InvokeVoid(
 		c,
 		"putUserAttributeUpdateSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1693,7 +1692,7 @@ func (c *jsiiProxy_CognitoUserPool) PutUsernameConfiguration(value *CognitoUserP
 	_jsii_.InvokeVoid(
 		c,
 		"putUsernameConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1704,7 +1703,7 @@ func (c *jsiiProxy_CognitoUserPool) PutUserPoolAddOns(value *CognitoUserPoolUser
 	_jsii_.InvokeVoid(
 		c,
 		"putUserPoolAddOns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1715,7 +1714,7 @@ func (c *jsiiProxy_CognitoUserPool) PutVerificationMessageTemplate(value *Cognit
 	_jsii_.InvokeVoid(
 		c,
 		"putVerificationMessageTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1927,8 +1926,8 @@ func (c *jsiiProxy_CognitoUserPool) ResetVerificationMessageTemplate() {
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoUserPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1940,8 +1939,8 @@ func (c *jsiiProxy_CognitoUserPool) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoUserPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1953,8 +1952,8 @@ func (c *jsiiProxy_CognitoUserPool) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUserPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1966,8 +1965,8 @@ func (c *jsiiProxy_CognitoUserPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPool) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUserPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1992,8 +1991,8 @@ func (c *jsiiProxy_CognitoUserPool) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPool) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoUserPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2004,4 +2003,3 @@ func (c *jsiiProxy_CognitoUserPool) ToTerraform() interface{} {
 
 	return returns
 }
-

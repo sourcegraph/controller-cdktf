@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksHaproxyLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutCloudwatchConfigurationParam
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksHaproxyLayer_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateOpsworksHaproxyLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksHaproxyLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksHaproxyLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksHaproxyLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksHaproxyLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksHaproxyLayer_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateOpsworksHaproxyLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksHaproxyLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateOpsworksHaproxyLayer_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignElasticIpsParamete
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignPublicIpsParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoHealingParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -511,7 +511,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetCustomUndeployRecipesParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -607,7 +607,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -661,7 +661,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetStackIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetStatsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetStatsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -729,7 +729,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetTagsAllParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -767,4 +767,3 @@ func validateNewOpsworksHaproxyLayerParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

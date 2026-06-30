@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkmanagerLinkBandwidthOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

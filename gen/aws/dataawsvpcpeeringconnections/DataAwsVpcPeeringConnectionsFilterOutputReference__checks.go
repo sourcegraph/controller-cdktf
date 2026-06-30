@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsVpcPeeringConnectionsFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

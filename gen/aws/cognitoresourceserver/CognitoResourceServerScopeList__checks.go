@@ -34,7 +34,7 @@ func (c *jsiiProxy_CognitoResourceServerScopeList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CognitoResourceServerScopeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoResourceServerScopeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCognitoResourceServerScopeListParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -101,7 +101,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validatePutOverridesParameters(value interface{}) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validatePutOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewSpotFleetRequestLaunchTemplateConfigOutputReferenceParameters(te
 
 	return nil
 }
-

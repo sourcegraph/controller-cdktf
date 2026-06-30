@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateNetworkInterfacesOutputReferenceParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewConnectUserIdentityInfoOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

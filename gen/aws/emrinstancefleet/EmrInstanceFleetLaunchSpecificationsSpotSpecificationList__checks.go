@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsSpotSpecificationList) va
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsSpotSpecificationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsSpotSpecificationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrInstanceFleetLaunchSpecificationsSpotSpecificationListParamet
 
 	return nil
 }
-

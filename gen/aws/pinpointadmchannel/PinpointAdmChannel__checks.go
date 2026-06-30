@@ -19,7 +19,7 @@ func (p *jsiiProxy_PinpointAdmChannel) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAdmChannel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PinpointAdmChannel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PinpointAdmChannel) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAdmChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PinpointAdmChannel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePinpointAdmChannel_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validatePinpointAdmChannel_IsConstructParameters(x interface{}) error {
+func validatePinpointAdmChannel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePinpointAdmChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePinpointAdmChannel_IsTerraformElementParameters(x interface{}) error {
+func validatePinpointAdmChannel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePinpointAdmChannel_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validatePinpointAdmChannel_IsTerraformResourceParameters(x interface{}) error {
+func validatePinpointAdmChannel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetClientSecretParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAdmChannel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointAdmChannel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAdmChannel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointAdmChannel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAdmChannel) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointAdmChannel) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAdmChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PinpointAdmChannel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewPinpointAdmChannelParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

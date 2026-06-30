@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateSetCr
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewTranscribeLanguageModelTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

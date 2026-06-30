@@ -90,7 +90,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validatePutSegmentOverridesParameters(value interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validatePutSegmentOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewEvidentlyLaunchScheduledSplitsConfigStepsOutputReferenceParamete
 
 	return nil
 }
-

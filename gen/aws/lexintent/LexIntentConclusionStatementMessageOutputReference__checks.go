@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentConclusionStatementMessageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLexIntentConclusionStatementMessageOutputReferenceParameters(ter
 
 	return nil
 }
-

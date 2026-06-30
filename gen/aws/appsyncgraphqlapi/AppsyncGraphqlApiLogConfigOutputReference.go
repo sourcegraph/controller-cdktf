@@ -15,9 +15,9 @@ type AppsyncGraphqlApiLogConfigOutputReference interface {
 	CloudwatchLogsRoleArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type AppsyncGraphqlApiLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExcludeVerboseContent() interface{}
-	SetExcludeVerboseContent(val interface{})
-	ExcludeVerboseContentInput() interface{}
+	ExcludeVerboseContent() any
+	SetExcludeVerboseContent(val any)
+	ExcludeVerboseContentInput() any
 	FieldLogLevel() *string
 	SetFieldLogLevel(val *string)
 	FieldLogLevelInput() *string
@@ -49,7 +49,7 @@ type AppsyncGraphqlApiLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type AppsyncGraphqlApiLogConfigOutputReference interface {
 	ResetExcludeVerboseContent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) CloudwatchLogsRole
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) CreationStack() *[
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ExcludeVerboseContent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ExcludeVerboseContent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeVerboseContent",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ExcludeVerboseCont
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ExcludeVerboseContentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ExcludeVerboseContentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeVerboseContentInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewAppsyncGraphqlApiLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewAppsyncGraphqlApiLogConfigOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewAppsyncGraphqlApiLogConfigOutputReference_Override(a AppsyncGraphqlApiLo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetCloudwatchLogsRoleArn(val *string) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetCloudwatchLogsRoleArn(val *string) {
 	if err := j.validateSetCloudwatchLogsRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetCloudwatchLogsRo
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetExcludeVerboseContent(val interface{}) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetExcludeVerboseContent(val any) {
 	if err := j.validateSetExcludeVerboseContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetExcludeVerboseCo
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetFieldLogLevel(val *string) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetFieldLogLevel(val *string) {
 	if err := j.validateSetFieldLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetFieldLogLevel(va
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetInternalValue(val *AppsyncGraphqlApiLogConfig) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetInternalValue(val *AppsyncGraphqlApiLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ResetExcludeVerbos
 	)
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (a *jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference) ToString() *string
 
 	return returns
 }
-

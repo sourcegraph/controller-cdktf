@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsAaaaRecordParameters(val interface{}) error {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsAaaaRecordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetEnab
 	return nil
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsARecordParameters(val interface{}) error {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) validateSetEnableResourceNameDnsARecordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewInstancePrivateDnsNameOptionsOutputReferenceParameters(terraform
 
 	return nil
 }
-

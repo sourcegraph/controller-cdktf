@@ -12,9 +12,9 @@ type AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference interface {
 	ResetTcpRetryEvents()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) Terrafo
 	return returns
 }
 
-
 func NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference_Override(a AppmeshR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetHttpRetryEvents(val *[]*string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetHttpRetryEvents(val *[]*string) {
 	if err := j.validateSetHttpRetryEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetHttpR
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetInternalValue(val *AppmeshRouteSpecHttp2RouteRetryPolicy) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetInternalValue(val *AppmeshRouteSpecHttp2RouteRetryPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetMaxRetries(val *float64) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetMaxRetries(val *float64) {
 	if err := j.validateSetMaxRetriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetMaxRe
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetTcpRetryEvents(val *[]*string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetTcpRetryEvents(val *[]*string) {
 	if err := j.validateSetTcpRetryEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetTcpRe
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) Compute
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetList
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) Interpo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) PutPerR
 	_jsii_.InvokeVoid(
 		a,
 		"putPerRetryTimeout",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) ResetTc
 	)
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference) ToStrin
 
 	return returns
 }
-

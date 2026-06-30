@@ -1,11 +1,10 @@
 package imagebuilderdistributionconfiguration
 
-
 type ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#account_id ImagebuilderDistributionConfiguration#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#enabled ImagebuilderDistributionConfiguration#enabled}.
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// launch_template block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#launch_template ImagebuilderDistributionConfiguration#launch_template}
@@ -17,4 +16,3 @@ type ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration st
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#snapshot_configuration ImagebuilderDistributionConfiguration#snapshot_configuration}
 	SnapshotConfiguration *ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration `field:"optional" json:"snapshotConfiguration" yaml:"snapshotConfiguration"`
 }
-

@@ -12,9 +12,9 @@ type IotTopicRuleTimestreamDimensionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type IotTopicRuleTimestreamDimensionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -46,7 +46,7 @@ type IotTopicRuleTimestreamDimensionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type IotTopicRuleTimestreamDimensionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) ValueInput() 
 	return returns
 }
 
-
 func NewIotTopicRuleTimestreamDimensionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotTopicRuleTimestreamDimensionOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewIotTopicRuleTimestreamDimensionOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewIotTopicRuleTimestreamDimensionOutputReference_Override(i IotTopicRuleTi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetName(val *string) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetName(val *s
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetNumberList
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) Interpolation
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) ToString() *s
 
 	return returns
 }
-

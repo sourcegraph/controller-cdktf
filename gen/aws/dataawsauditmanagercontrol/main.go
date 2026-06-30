@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
-		reflect.TypeOf((*DataAwsAuditmanagerControl)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControl](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionPlanInstructions", GoGetter: "ActionPlanInstructions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionPlanTitle", GoGetter: "ActionPlanTitle"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAuditmanagerControl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,15 +68,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig",
-		reflect.TypeOf((*DataAwsAuditmanagerControlConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSources",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSources)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesList",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSourcesList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -98,7 +98,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesOutputReference",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "troubleshootingText", GoGetter: "TroubleshootingText"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference",
-		reflect.TypeOf((*DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

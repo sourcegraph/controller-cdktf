@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsSecretsmanagerSecretsFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type ElbAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,24 +56,24 @@ type ElbAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ElbAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ElbAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type ElbAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElbAttachment
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ElbAttachment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElbAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ElbAttachment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElbAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ElbAttachment) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElbAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ElbAttachment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElbAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_ElbAttachment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElbAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ElbAttachment) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ElbAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElbAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_ElbAttachment) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb_attachment aws_elb_attachment} Resource.
 func NewElbAttachment(scope constructs.Construct, id *string, config *ElbAttachmentConfig) ElbAttachment {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewElbAttachment(scope constructs.Construct, id *string, config *ElbAttachm
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewElbAttachment_Override(e ElbAttachment, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElbAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ElbAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_ElbAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ElbAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElbAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ElbAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetElb(val *string) {
+func (j *jsiiProxy_ElbAttachment) SetElb(val *string) {
 	if err := j.validateSetElbParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_ElbAttachment)SetElb(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElbAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ElbAttachment)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetId(val *string) {
+func (j *jsiiProxy_ElbAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ElbAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetInstance(val *string) {
+func (j *jsiiProxy_ElbAttachment) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_ElbAttachment)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElbAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_ElbAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElbAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ElbAttachment)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ElbAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElbAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func ElbAttachment_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func ElbAttachment_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElbAttachment_IsConstruct(x interface{}) *bool {
+func ElbAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElbAttachment_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func ElbAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func ElbAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElbAttachment_IsTerraformElement(x interface{}) *bool {
+func ElbAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElbAttachment_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func ElbAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func ElbAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElbAttachment_IsTerraformResource(x interface{}) *bool {
+func ElbAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElbAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func ElbAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (e *jsiiProxy_ElbAttachment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElbAttachment) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElbAttachment) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElbAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElbAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (e *jsiiProxy_ElbAttachment) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (e *jsiiProxy_ElbAttachment) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (e *jsiiProxy_ElbAttachment) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (e *jsiiProxy_ElbAttachment) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (e *jsiiProxy_ElbAttachment) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (e *jsiiProxy_ElbAttachment) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (e *jsiiProxy_ElbAttachment) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (e *jsiiProxy_ElbAttachment) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElbAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElbAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -772,7 +771,7 @@ func (e *jsiiProxy_ElbAttachment) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (e *jsiiProxy_ElbAttachment) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (e *jsiiProxy_ElbAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElbAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElbAttachment) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (e *jsiiProxy_ElbAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (e *jsiiProxy_ElbAttachment) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (e *jsiiProxy_ElbAttachment) ResetOverrideLogicalId() {
 	)
 }
 
-func (e *jsiiProxy_ElbAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElbAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -865,8 +864,8 @@ func (e *jsiiProxy_ElbAttachment) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_ElbAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElbAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -878,8 +877,8 @@ func (e *jsiiProxy_ElbAttachment) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_ElbAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElbAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -891,8 +890,8 @@ func (e *jsiiProxy_ElbAttachment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ElbAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElbAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -917,8 +916,8 @@ func (e *jsiiProxy_ElbAttachment) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElbAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElbAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -929,4 +928,3 @@ func (e *jsiiProxy_ElbAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

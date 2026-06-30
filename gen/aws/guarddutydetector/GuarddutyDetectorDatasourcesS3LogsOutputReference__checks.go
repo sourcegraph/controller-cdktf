@@ -98,7 +98,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGuarddutyDetectorDatasourcesS3LogsOutputReferenceParameters(terr
 
 	return nil
 }
-

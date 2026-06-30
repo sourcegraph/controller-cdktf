@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodedeployDeploymentConfigMinimumHealthyHostsOutputReferencePara
 
 	return nil
 }
-

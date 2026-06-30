@@ -19,7 +19,7 @@ func (l *jsiiProxy_LaunchConfiguration) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LaunchConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LaunchConfiguration) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LaunchConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LaunchConfiguration) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfiguration) validatePutEbsBlockDeviceParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchConfiguration) validatePutEbsBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (l *jsiiProxy_LaunchConfiguration) validatePutEbsBlockDeviceParameters(valu
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfiguration) validatePutEphemeralBlockDeviceParameters(value interface{}) error {
+func (l *jsiiProxy_LaunchConfiguration) validatePutEphemeralBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateLaunchConfiguration_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateLaunchConfiguration_IsConstructParameters(x interface{}) error {
+func validateLaunchConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateLaunchConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLaunchConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateLaunchConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateLaunchConfiguration_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateLaunchConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateLaunchConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateLaunchConfiguration_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetAssociatePublicIpAddressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetAssociatePublicIpAddressParam
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -381,7 +381,7 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -438,7 +438,7 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetEbsOptimizedParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetEbsOptimizedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetEbsOptimizedParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetEnableMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetEnableMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -550,7 +550,7 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetPlacementTenancyParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LaunchConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -662,4 +662,3 @@ func validateNewLaunchConfigurationParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

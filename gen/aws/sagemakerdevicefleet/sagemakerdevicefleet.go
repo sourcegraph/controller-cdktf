@@ -16,15 +16,15 @@ type SagemakerDeviceFleet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -35,9 +35,9 @@ type SagemakerDeviceFleet interface {
 	DeviceFleetName() *string
 	SetDeviceFleetName(val *string)
 	DeviceFleetNameInput() *string
-	EnableIotRoleAlias() interface{}
-	SetEnableIotRoleAlias(val interface{})
-	EnableIotRoleAliasInput() interface{}
+	EnableIotRoleAlias() any
+	SetEnableIotRoleAlias(val any)
+	EnableIotRoleAliasInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,11 +63,11 @@ type SagemakerDeviceFleet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -80,16 +80,16 @@ type SagemakerDeviceFleet interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type SagemakerDeviceFleet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type SagemakerDeviceFleet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type SagemakerDeviceFleet interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerDeviceFleet
@@ -173,8 +173,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) DeviceFleetNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) EnableIotRoleAlias() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) EnableIotRoleAlias() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIotRoleAlias",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) EnableIotRoleAlias() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) EnableIotRoleAliasInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) EnableIotRoleAliasInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIotRoleAliasInput",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_SagemakerDeviceFleet) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerDeviceFleet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_SagemakerDeviceFleet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet} Resource.
 func NewSagemakerDeviceFleet(scope constructs.Construct, id *string, config *SagemakerDeviceFleetConfig) SagemakerDeviceFleet {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewSagemakerDeviceFleet(scope constructs.Construct, id *string, config *Sag
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewSagemakerDeviceFleet_Override(s SagemakerDeviceFleet, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetDescription(val *string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetDeviceFleetName(val *string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetDeviceFleetName(val *string) {
 	if err := j.validateSetDeviceFleetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetDeviceFleetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetEnableIotRoleAlias(val interface{}) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetEnableIotRoleAlias(val any) {
 	if err := j.validateSetEnableIotRoleAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetEnableIotRoleAlias(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetId(val *string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -624,7 +623,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetRoleArn(val *string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDeviceFleet)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerDeviceFleet) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func SagemakerDeviceFleet_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func SagemakerDeviceFleet_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerDeviceFleet_IsConstruct(x interface{}) *bool {
+func SagemakerDeviceFleet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDeviceFleet_IsConstructParameters(x); err != nil {
@@ -715,7 +714,7 @@ func SagemakerDeviceFleet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func SagemakerDeviceFleet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerDeviceFleet_IsTerraformElement(x interface{}) *bool {
+func SagemakerDeviceFleet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDeviceFleet_IsTerraformElementParameters(x); err != nil {
@@ -734,7 +733,7 @@ func SagemakerDeviceFleet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func SagemakerDeviceFleet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerDeviceFleet_IsTerraformResource(x interface{}) *bool {
+func SagemakerDeviceFleet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerDeviceFleet_IsTerraformResourceParameters(x); err != nil {
@@ -753,7 +752,7 @@ func SagemakerDeviceFleet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,31 +777,31 @@ func (s *jsiiProxy_SagemakerDeviceFleet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerDeviceFleet) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerDeviceFleet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,15 +929,15 @@ func (s *jsiiProxy_SagemakerDeviceFleet) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -957,7 +956,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,18 +983,18 @@ func (s *jsiiProxy_SagemakerDeviceFleet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerDeviceFleet) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (s *jsiiProxy_SagemakerDeviceFleet) PutOutputConfig(value *SagemakerDeviceF
 	_jsii_.InvokeVoid(
 		s,
 		"putOutputConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1080,8 +1079,8 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1093,8 +1092,8 @@ func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1106,8 +1105,8 @@ func (s *jsiiProxy_SagemakerDeviceFleet) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1119,8 +1118,8 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1145,8 +1144,8 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDeviceFleet) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerDeviceFleet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1157,4 +1156,3 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ToTerraform() interface{} {
 
 	return returns
 }
-

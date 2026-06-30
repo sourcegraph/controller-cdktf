@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaInvocation.LambdaInvocation",
-		reflect.TypeOf((*LambdaInvocation)(nil)).Elem(),
+		reflect.TypeFor[LambdaInvocation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggers", GoGetter: "Triggers"},
 			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaInvocation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig",
-		reflect.TypeOf((*LambdaInvocationConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaInvocationConfig](),
 	)
 }

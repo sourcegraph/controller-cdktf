@@ -18,9 +18,9 @@ type CodebuildProjectArtifactsOutputReference interface {
 	BucketOwnerAccessInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type CodebuildProjectArtifactsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EncryptionDisabled() interface{}
-	SetEncryptionDisabled(val interface{})
-	EncryptionDisabledInput() interface{}
+	EncryptionDisabled() any
+	SetEncryptionDisabled(val any)
+	EncryptionDisabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CodebuildProjectArtifacts
@@ -47,9 +47,9 @@ type CodebuildProjectArtifactsOutputReference interface {
 	NamespaceType() *string
 	SetNamespaceType(val *string)
 	NamespaceTypeInput() *string
-	OverrideArtifactName() interface{}
-	SetOverrideArtifactName(val interface{})
-	OverrideArtifactNameInput() interface{}
+	OverrideArtifactName() any
+	SetOverrideArtifactName(val any)
+	OverrideArtifactNameInput() any
 	Packaging() *string
 	SetPackaging(val *string)
 	PackagingInput() *string
@@ -70,7 +70,7 @@ type CodebuildProjectArtifactsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type CodebuildProjectArtifactsOutputReference interface {
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) BucketOwnerAccessIn
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) EncryptionDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) EncryptionDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionDisabled",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) EncryptionDisabled(
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) EncryptionDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) EncryptionDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionDisabledInput",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) NamespaceTypeInput(
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) OverrideArtifactName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) OverrideArtifactName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideArtifactName",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) OverrideArtifactNam
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) OverrideArtifactNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) OverrideArtifactNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideArtifactNameInput",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) TypeInput() *string
 	return returns
 }
 
-
 func NewCodebuildProjectArtifactsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodebuildProjectArtifactsOutputReference {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewCodebuildProjectArtifactsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -408,12 +407,12 @@ func NewCodebuildProjectArtifactsOutputReference_Override(c CodebuildProjectArti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetArtifactIdentifier(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetArtifactIdentifier(val *string) {
 	if err := j.validateSetArtifactIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetArtifactIdentifie
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetBucketOwnerAccess(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetBucketOwnerAccess(val *string) {
 	if err := j.validateSetBucketOwnerAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetBucketOwnerAccess
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetEncryptionDisabled(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetEncryptionDisabled(val any) {
 	if err := j.validateSetEncryptionDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetEncryptionDisable
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetInternalValue(val *CodebuildProjectArtifacts) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetInternalValue(val *CodebuildProjectArtifacts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetName(val *string)
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetNamespaceType(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetNamespaceType(val *string) {
 	if err := j.validateSetNamespaceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetNamespaceType(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetOverrideArtifactName(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetOverrideArtifactName(val any) {
 	if err := j.validateSetOverrideArtifactNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetOverrideArtifactN
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetPackaging(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetPackaging(val *string) {
 	if err := j.validateSetPackagingParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetPackaging(val *st
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetPath(val *string)
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodebuildProjectArtifactsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,16 +590,16 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -836,16 +835,16 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) ResetPath() {
 	)
 }
 
-func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -864,4 +863,3 @@ func (c *jsiiProxy_CodebuildProjectArtifactsOutputReference) ToString() *string 
 
 	return returns
 }
-

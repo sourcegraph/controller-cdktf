@@ -106,7 +106,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsDatabaseOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsDatabaseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTagsDatabaseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLakeformationResourceLfTagsDatabaseOutputReferenceParameters(ter
 
 	return nil
 }
-

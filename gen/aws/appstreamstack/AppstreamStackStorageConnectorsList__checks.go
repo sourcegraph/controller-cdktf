@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppstreamStackStorageConnectorsListParameters(terraformResource 
 
 	return nil
 }
-

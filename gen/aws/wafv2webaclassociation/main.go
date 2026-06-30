@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
-		reflect.TypeOf((*Wafv2WebAclAssociation)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webAclArn", GoGetter: "WebAclArn"},
 			_jsii_.MemberProperty{JsiiProperty: "webAclArnInput", GoGetter: "WebAclArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2WebAclAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationConfig",
-		reflect.TypeOf((*Wafv2WebAclAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[Wafv2WebAclAssociationConfig](),
 	)
 }

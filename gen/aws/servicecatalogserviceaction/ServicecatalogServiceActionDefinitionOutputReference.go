@@ -15,9 +15,9 @@ type ServicecatalogServiceActionDefinitionOutputReference interface {
 	AssumeRoleInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type ServicecatalogServiceActionDefinitionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type ServicecatalogServiceActionDefinitionOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) AssumeR
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) Version
 	return returns
 }
 
-
 func NewServicecatalogServiceActionDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicecatalogServiceActionDefinitionOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewServicecatalogServiceActionDefinitionOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewServicecatalogServiceActionDefinitionOutputReference_Override(s Servicec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetAssumeRole(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetAssumeRole(val *string) {
 	if err := j.validateSetAssumeRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetAssum
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetInternalValue(val *ServicecatalogServiceActionDefinition) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetInternalValue(val *ServicecatalogServiceActionDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetName(
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetParameters(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetParameters(val *string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetParam
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetType(
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) Compute
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetList
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) Interpo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) ResetTy
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (s *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) ToStrin
 
 	return returns
 }
-

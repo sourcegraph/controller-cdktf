@@ -90,7 +90,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutFieldToMatchParameters(value interface{}) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutFieldToMatchParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReferen
 
 	return nil
 }
-

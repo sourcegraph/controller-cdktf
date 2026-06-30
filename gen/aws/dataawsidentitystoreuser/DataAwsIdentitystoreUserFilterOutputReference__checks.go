@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetAtt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terrafor
 
 	return nil
 }
-

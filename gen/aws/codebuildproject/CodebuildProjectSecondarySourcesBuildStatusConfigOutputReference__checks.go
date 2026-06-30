@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesBuildStatusConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodebuildProjectSecondarySourcesBuildStatusConfigOutputReference
 
 	return nil
 }
-

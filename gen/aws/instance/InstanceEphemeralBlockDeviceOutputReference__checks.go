@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetDevic
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetNoDeviceParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateSetNoDeviceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewInstanceEphemeralBlockDeviceOutputReferenceParameters(terraformR
 
 	return nil
 }
-

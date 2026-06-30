@@ -1,6 +1,5 @@
 package defaultsecuritygroup
 
-
 type DefaultSecurityGroupEgress struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_security_group#cidr_blocks DefaultSecurityGroup#cidr_blocks}.
 	CidrBlocks *[]*string `field:"optional" json:"cidrBlocks" yaml:"cidrBlocks"`
@@ -17,8 +16,7 @@ type DefaultSecurityGroupEgress struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_security_group#security_groups DefaultSecurityGroup#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_security_group#self DefaultSecurityGroup#self}.
-	SelfAttribute interface{} `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
+	SelfAttribute any `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/default_security_group#to_port DefaultSecurityGroup#to_port}.
 	ToPort *float64 `field:"optional" json:"toPort" yaml:"toPort"`
 }
-

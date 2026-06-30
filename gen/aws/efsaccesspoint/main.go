@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
-		reflect.TypeOf((*EfsAccessPoint)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsAccessPoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointConfig",
-		reflect.TypeOf((*EfsAccessPointConfig)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUser",
-		reflect.TypeOf((*EfsAccessPointPosixUser)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointPosixUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
-		reflect.TypeOf((*EfsAccessPointPosixUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointPosixUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "uidInput", GoGetter: "UidInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsAccessPointPosixUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,15 +130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory",
-		reflect.TypeOf((*EfsAccessPointRootDirectory)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointRootDirectory](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo",
-		reflect.TypeOf((*EfsAccessPointRootDirectoryCreationInfo)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointRootDirectoryCreationInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference",
-		reflect.TypeOf((*EfsAccessPointRootDirectoryCreationInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointRootDirectoryCreationInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsAccessPointRootDirectoryCreationInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,7 +176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryOutputReference",
-		reflect.TypeOf((*EfsAccessPointRootDirectoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsAccessPointRootDirectoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsAccessPointRootDirectoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

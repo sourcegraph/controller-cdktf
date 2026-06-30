@@ -18,15 +18,15 @@ type CloudwatchLogDestinationPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +34,9 @@ type CloudwatchLogDestinationPolicy interface {
 	DestinationName() *string
 	SetDestinationName(val *string)
 	DestinationNameInput() *string
-	ForceUpdate() interface{}
-	SetForceUpdate(val interface{})
-	ForceUpdateInput() interface{}
+	ForceUpdate() any
+	SetForceUpdate(val any)
+	ForceUpdateInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,24 +59,24 @@ type CloudwatchLogDestinationPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type CloudwatchLogDestinationPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type CloudwatchLogDestinationPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type CloudwatchLogDestinationPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudwatchLogDestinationPolicy
@@ -166,8 +166,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) DestinationNameInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ForceUpdate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ForceUpdate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceUpdate",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ForceUpdate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ForceUpdateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) ForceUpdateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceUpdateInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy} Resource.
 func NewCloudwatchLogDestinationPolicy(scope constructs.Construct, id *string, config *CloudwatchLogDestinationPolicyConfig) CloudwatchLogDestinationPolicy {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewCloudwatchLogDestinationPolicy(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewCloudwatchLogDestinationPolicy_Override(c CloudwatchLogDestinationPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetAccessPolicy(val *string) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetAccessPolicy(val *string) {
 	if err := j.validateSetAccessPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetAccessPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetDestinationName(val *string) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetDestinationName(val *string) {
 	if err := j.validateSetDestinationNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetDestinationName(val *string
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetForceUpdate(val interface{}) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetForceUpdate(val any) {
 	if err := j.validateSetForceUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetForceUpdate(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetId(val *string) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_CloudwatchLogDestinationPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudwatchLogDestinationPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func CloudwatchLogDestinationPolicy_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func CloudwatchLogDestinationPolicy_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudwatchLogDestinationPolicy_IsConstruct(x interface{}) *bool {
+func CloudwatchLogDestinationPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchLogDestinationPolicy_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func CloudwatchLogDestinationPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func CloudwatchLogDestinationPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchLogDestinationPolicy_IsTerraformElement(x interface{}) *bool {
+func CloudwatchLogDestinationPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchLogDestinationPolicy_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func CloudwatchLogDestinationPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func CloudwatchLogDestinationPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchLogDestinationPolicy_IsTerraformResource(x interface{}) *bool {
+func CloudwatchLogDestinationPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchLogDestinationPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func CloudwatchLogDestinationPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -807,7 +806,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -895,8 +894,8 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -908,8 +907,8 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -921,8 +920,8 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -934,8 +933,8 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,4 +971,3 @@ func (c *jsiiProxy_CloudwatchLogDestinationPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

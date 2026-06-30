@@ -20,15 +20,15 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -75,9 +75,9 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicAddress() *string
 	PublicKey() *string
 	SetPublicKey(val *string)
@@ -86,7 +86,7 @@ type GlueDevEndpoint interface {
 	SetPublicKeys(val *[]*string)
 	PublicKeysInput() *[]*string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -109,7 +109,7 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
@@ -122,9 +122,9 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -142,7 +142,7 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -154,7 +154,7 @@ type GlueDevEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -179,17 +179,17 @@ type GlueDevEndpoint interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetWorkerType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlueDevEndpoint
@@ -247,8 +247,8 @@ func (j *jsiiProxy_GlueDevEndpoint) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueDevEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_GlueDevEndpoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueDevEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_GlueDevEndpoint) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueDevEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_GlueDevEndpoint) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlueDevEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_GlueDevEndpoint) PublicKeysInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueDevEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_GlueDevEndpoint) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueDevEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -787,7 +787,6 @@ func (j *jsiiProxy_GlueDevEndpoint) ZeppelinRemoteSparkInterpreterPort() *float6
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
 func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevEndpointConfig) GlueDevEndpoint {
 	_init_.Initialize()
@@ -799,7 +798,7 @@ func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -812,12 +811,12 @@ func NewGlueDevEndpoint_Override(g GlueDevEndpoint, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetArguments(val *map[string]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetArguments(val *map[string]*string) {
 	if err := j.validateSetArgumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetArguments(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlueDevEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_GlueDevEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -858,7 +857,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetExtraJarsS3Path(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetExtraJarsS3Path(val *string) {
 	if err := j.validateSetExtraJarsS3PathParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetExtraJarsS3Path(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetExtraPythonLibsS3Path(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetExtraPythonLibsS3Path(val *string) {
 	if err := j.validateSetExtraPythonLibsS3PathParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetExtraPythonLibsS3Path(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlueDevEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -888,7 +887,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetGlueVersion(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetGlueVersion(val *string) {
 	if err := j.validateSetGlueVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetGlueVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetId(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlueDevEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetName(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetNumberOfNodes(val *float64) {
+func (j *jsiiProxy_GlueDevEndpoint) SetNumberOfNodes(val *float64) {
 	if err := j.validateSetNumberOfNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetNumberOfNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetNumberOfWorkers(val *float64) {
+func (j *jsiiProxy_GlueDevEndpoint) SetNumberOfWorkers(val *float64) {
 	if err := j.validateSetNumberOfWorkersParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetNumberOfWorkers(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlueDevEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -962,7 +961,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlueDevEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetPublicKey(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetPublicKey(val *string) {
 	if err := j.validateSetPublicKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetPublicKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetPublicKeys(val *[]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetPublicKeys(val *[]*string) {
 	if err := j.validateSetPublicKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetPublicKeys(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetRoleArn(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetSecurityConfiguration(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetSecurityConfiguration(val *string) {
 	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1016,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetSecurityConfiguration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1027,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetSubnetId(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1039,7 +1038,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1050,7 +1049,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1061,7 +1060,7 @@ func (j *jsiiProxy_GlueDevEndpoint)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetWorkerType(val *string) {
+func (j *jsiiProxy_GlueDevEndpoint) SetWorkerType(val *string) {
 	if err := j.validateSetWorkerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func GlueDevEndpoint_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func GlueDevEndpoint_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlueDevEndpoint_IsConstruct(x interface{}) *bool {
+func GlueDevEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueDevEndpoint_IsConstructParameters(x); err != nil {
@@ -1119,7 +1118,7 @@ func GlueDevEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func GlueDevEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueDevEndpoint_IsTerraformElement(x interface{}) *bool {
+func GlueDevEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueDevEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -1138,7 +1137,7 @@ func GlueDevEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1146,7 +1145,7 @@ func GlueDevEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueDevEndpoint_IsTerraformResource(x interface{}) *bool {
+func GlueDevEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueDevEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -1157,7 +1156,7 @@ func GlueDevEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1182,31 +1181,31 @@ func (g *jsiiProxy_GlueDevEndpoint) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlueDevEndpoint) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueDevEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1222,7 +1221,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1238,7 +1237,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1254,7 +1253,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,7 +1269,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1286,7 +1285,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1302,7 +1301,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1318,7 +1317,7 @@ func (g *jsiiProxy_GlueDevEndpoint) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1334,15 +1333,15 @@ func (g *jsiiProxy_GlueDevEndpoint) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueDevEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1361,7 +1360,7 @@ func (g *jsiiProxy_GlueDevEndpoint) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1374,7 +1373,7 @@ func (g *jsiiProxy_GlueDevEndpoint) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1388,18 +1387,18 @@ func (g *jsiiProxy_GlueDevEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlueDevEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1410,7 +1409,7 @@ func (g *jsiiProxy_GlueDevEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1421,7 +1420,7 @@ func (g *jsiiProxy_GlueDevEndpoint) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1553,8 +1552,8 @@ func (g *jsiiProxy_GlueDevEndpoint) ResetWorkerType() {
 	)
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueDevEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1566,8 +1565,8 @@ func (g *jsiiProxy_GlueDevEndpoint) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueDevEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1579,8 +1578,8 @@ func (g *jsiiProxy_GlueDevEndpoint) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueDevEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1592,8 +1591,8 @@ func (g *jsiiProxy_GlueDevEndpoint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueDevEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1618,8 +1617,8 @@ func (g *jsiiProxy_GlueDevEndpoint) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueDevEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1630,4 +1629,3 @@ func (g *jsiiProxy_GlueDevEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

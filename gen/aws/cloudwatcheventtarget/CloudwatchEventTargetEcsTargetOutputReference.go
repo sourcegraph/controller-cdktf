@@ -11,12 +11,12 @@ import (
 type CloudwatchEventTargetEcsTargetOutputReference interface {
 	cdktf.ComplexObject
 	CapacityProviderStrategy() CloudwatchEventTargetEcsTargetCapacityProviderStrategyList
-	CapacityProviderStrategyInput() interface{}
+	CapacityProviderStrategyInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,12 +27,12 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableEcsManagedTags() interface{}
-	SetEnableEcsManagedTags(val interface{})
-	EnableEcsManagedTagsInput() interface{}
-	EnableExecuteCommand() interface{}
-	SetEnableExecuteCommand(val interface{})
-	EnableExecuteCommandInput() interface{}
+	EnableEcsManagedTags() any
+	SetEnableEcsManagedTags(val any)
+	EnableEcsManagedTagsInput() any
+	EnableExecuteCommand() any
+	SetEnableExecuteCommand(val any)
+	EnableExecuteCommandInput() any
 	// Experimental.
 	Fqn() *string
 	Group() *string
@@ -46,7 +46,7 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	NetworkConfiguration() CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference
 	NetworkConfigurationInput() *CloudwatchEventTargetEcsTargetNetworkConfiguration
 	PlacementConstraint() CloudwatchEventTargetEcsTargetPlacementConstraintList
-	PlacementConstraintInput() interface{}
+	PlacementConstraintInput() any
 	PlatformVersion() *string
 	SetPlatformVersion(val *string)
 	PlatformVersionInput() *string
@@ -73,7 +73,7 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,9 +94,9 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCapacityProviderStrategy(value interface{})
+	PutCapacityProviderStrategy(value any)
 	PutNetworkConfiguration(value *CloudwatchEventTargetEcsTargetNetworkConfiguration)
-	PutPlacementConstraint(value interface{})
+	PutPlacementConstraint(value any)
 	ResetCapacityProviderStrategy()
 	ResetEnableEcsManagedTags()
 	ResetEnableExecuteCommand()
@@ -110,7 +110,7 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	ResetTaskCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProvid
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProviderStrategyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProviderStrategyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"capacityProviderStrategyInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProvid
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManagedTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManagedTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTags",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManag
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManagedTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManagedTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEcsManagedTagsInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableEcsManag
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableExecuteCommand() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableExecuteCommand() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommand",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableExecuteC
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableExecuteCommandInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) EnableExecuteCommandInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExecuteCommandInput",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PlacementConst
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PlacementConstraintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PlacementConstraintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementConstraintInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewCloudwatchEventTargetEcsTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetEcsTargetOutputReference {
 	_init_.Initialize()
 
@@ -444,7 +443,7 @@ func NewCloudwatchEventTargetEcsTargetOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -456,12 +455,12 @@ func NewCloudwatchEventTargetEcsTargetOutputReference_Override(c CloudwatchEvent
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetEnableEcsManagedTags(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetEnableEcsManagedTags(val any) {
 	if err := j.validateSetEnableEcsManagedTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetEnableEcsMan
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetEnableExecuteCommand(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetEnableExecuteCommand(val any) {
 	if err := j.validateSetEnableExecuteCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetEnableExecut
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetGroup(val *s
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetInternalValue(val *CloudwatchEventTargetEcsTarget) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetInternalValue(val *CloudwatchEventTargetEcsTarget) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetLaunchType(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetLaunchType(val *string) {
 	if err := j.validateSetLaunchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetLaunchType(v
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetPlatformVersion(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetPlatformVersion(val *string) {
 	if err := j.validateSetPlatformVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetPlatformVers
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetPropagateTags(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetPropagateTags(val *string) {
 	if err := j.validateSetPropagateTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetPropagateTag
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTags(val *ma
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTaskCount(val *float64) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetTaskCount(val *float64) {
 	if err := j.validateSetTaskCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTaskCount(va
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTaskDefinitionArn(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetTaskDefinitionArn(val *string) {
 	if err := j.validateSetTaskDefinitionArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTaskDefiniti
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,16 +627,16 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,21 +793,21 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutCapacityProviderStrategy(value interface{}) {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutCapacityProviderStrategy(value any) {
 	if err := c.validatePutCapacityProviderStrategyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCapacityProviderStrategy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -819,18 +818,18 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutNetworkConf
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutPlacementConstraint(value interface{}) {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutPlacementConstraint(value any) {
 	if err := c.validatePutPlacementConstraintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPlacementConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -922,16 +921,16 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ResetTaskCount
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -950,4 +949,3 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ToString() *st
 
 	return returns
 }
-

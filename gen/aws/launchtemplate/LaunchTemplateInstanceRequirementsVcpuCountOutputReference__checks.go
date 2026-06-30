@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateInstanceRequirementsVcpuCountOutputReferenceParame
 
 	return nil
 }
-

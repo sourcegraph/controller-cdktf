@@ -15,9 +15,9 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	ChannelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Chann
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Terra
 	return returns
 }
 
-
 func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConnectRoutingProfileMediaConcurrenciesOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewConnectRoutingProfileMediaConcurrenciesOutputReference_Override(c Connec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetChannel(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetChannel(val *string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetCha
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetConcurrency(val *float64) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetConcurrency(val *float64) {
 	if err := j.validateSetConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetCon
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) ToStr
 
 	return returns
 }
-

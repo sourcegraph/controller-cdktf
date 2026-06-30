@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
-		reflect.TypeOf((*LexSlotType)(nil)).Elem(),
+		reflect.TypeFor[LexSlotType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueSelectionStrategyInput", GoGetter: "ValueSelectionStrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexSlotType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeConfig",
-		reflect.TypeOf((*LexSlotTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValue",
-		reflect.TypeOf((*LexSlotTypeEnumerationValue)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeEnumerationValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueList",
-		reflect.TypeOf((*LexSlotTypeEnumerationValueList)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeEnumerationValueList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexSlotTypeEnumerationValueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
-		reflect.TypeOf((*LexSlotTypeEnumerationValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeEnumerationValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexSlotTypeEnumerationValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeouts",
-		reflect.TypeOf((*LexSlotTypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
-		reflect.TypeOf((*LexSlotTypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexSlotTypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexSlotTypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotTopicRuleDestinationTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

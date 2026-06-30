@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
-		reflect.TypeOf((*GlueMlTransform)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransform](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerType", GoGetter: "WorkerType"},
 			_jsii_.MemberProperty{JsiiProperty: "workerTypeInput", GoGetter: "WorkerTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransform{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig",
-		reflect.TypeOf((*GlueMlTransformConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables",
-		reflect.TypeOf((*GlueMlTransformInputRecordTables)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformInputRecordTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
-		reflect.TypeOf((*GlueMlTransformInputRecordTablesList)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformInputRecordTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformInputRecordTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference",
-		reflect.TypeOf((*GlueMlTransformInputRecordTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformInputRecordTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformInputRecordTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,15 +176,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters",
-		reflect.TypeOf((*GlueMlTransformParameters)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters",
-		reflect.TypeOf((*GlueMlTransformParametersFindMatchesParameters)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformParametersFindMatchesParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
-		reflect.TypeOf((*GlueMlTransformParametersFindMatchesParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformParametersFindMatchesParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accuracyCostTradeOff", GoGetter: "AccuracyCostTradeOff"},
 			_jsii_.MemberProperty{JsiiProperty: "accuracyCostTradeOffInput", GoGetter: "AccuracyCostTradeOffInput"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformParametersFindMatchesParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference",
-		reflect.TypeOf((*GlueMlTransformParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformType", GoGetter: "TransformType"},
 			_jsii_.MemberProperty{JsiiProperty: "transformTypeInput", GoGetter: "TransformTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchema",
-		reflect.TypeOf((*GlueMlTransformSchema)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList",
-		reflect.TypeOf((*GlueMlTransformSchemaList)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -290,7 +290,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
-		reflect.TypeOf((*GlueMlTransformSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueMlTransformSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueMlTransformSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

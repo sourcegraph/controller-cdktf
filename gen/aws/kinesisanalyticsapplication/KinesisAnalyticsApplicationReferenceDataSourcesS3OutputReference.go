@@ -15,9 +15,9 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 	BucketArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-
 func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetBucketArn(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetBucketArn(val *string) {
 	if err := j.validateSetBucketArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetFileKey(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetFileKey(val *string) {
 	if err := j.validateSetFileKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetInternalValue(val *KinesisAnalyticsApplicationReferenceDataSourcesS3) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetInternalValue(val *KinesisAnalyticsApplicationReferenceDataSourcesS3) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 
 	return returns
 }
-

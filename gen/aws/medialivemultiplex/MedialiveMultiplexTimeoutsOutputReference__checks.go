@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMedialiveMultiplexTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

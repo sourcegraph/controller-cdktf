@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEksClusterCertificateAuthorityOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEksClusterCertificateAuthorityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEksClusterCertificateAuthorityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEksClusterCertificateAuthorityOutputReferenceParameters(t
 
 	return nil
 }
-

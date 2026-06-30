@@ -106,7 +106,7 @@ func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDevicefarmDevicePoolRuleOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

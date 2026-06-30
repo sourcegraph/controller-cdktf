@@ -19,18 +19,18 @@ type DxHostedConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,17 +70,17 @@ type DxHostedConnection interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProviderName() *string
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Vlan() *float64
@@ -90,9 +90,9 @@ type DxHostedConnection interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type DxHostedConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type DxHostedConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type DxHostedConnection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DxHostedConnection
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DxHostedConnection) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxHostedConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DxHostedConnection) ConnectionIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxHostedConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DxHostedConnection) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxHostedConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DxHostedConnection) ProviderName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DxHostedConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_DxHostedConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxHostedConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_DxHostedConnection) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxHostedConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_DxHostedConnection) VlanInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
 func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHostedConnectionConfig) DxHostedConnection {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHos
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewDxHostedConnection_Override(d DxHostedConnection, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetBandwidth(val *string) {
+func (j *jsiiProxy_DxHostedConnection) SetBandwidth(val *string) {
 	if err := j.validateSetBandwidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DxHostedConnection)SetBandwidth(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_DxHostedConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DxHostedConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetConnectionId(val *string) {
+func (j *jsiiProxy_DxHostedConnection) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_DxHostedConnection)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_DxHostedConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_DxHostedConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DxHostedConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DxHostedConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DxHostedConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DxHostedConnection)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetId(val *string) {
+func (j *jsiiProxy_DxHostedConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DxHostedConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DxHostedConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DxHostedConnection)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetName(val *string) {
+func (j *jsiiProxy_DxHostedConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DxHostedConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetOwnerAccountId(val *string) {
+func (j *jsiiProxy_DxHostedConnection) SetOwnerAccountId(val *string) {
 	if err := j.validateSetOwnerAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DxHostedConnection)SetOwnerAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DxHostedConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DxHostedConnection)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DxHostedConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DxHostedConnection)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxHostedConnection)SetVlan(val *float64) {
+func (j *jsiiProxy_DxHostedConnection) SetVlan(val *float64) {
 	if err := j.validateSetVlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func DxHostedConnection_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func DxHostedConnection_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DxHostedConnection_IsConstruct(x interface{}) *bool {
+func DxHostedConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxHostedConnection_IsConstructParameters(x); err != nil {
@@ -742,7 +741,7 @@ func DxHostedConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func DxHostedConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DxHostedConnection_IsTerraformElement(x interface{}) *bool {
+func DxHostedConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxHostedConnection_IsTerraformElementParameters(x); err != nil {
@@ -761,7 +760,7 @@ func DxHostedConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func DxHostedConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DxHostedConnection_IsTerraformResource(x interface{}) *bool {
+func DxHostedConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxHostedConnection_IsTerraformResourceParameters(x); err != nil {
@@ -780,7 +779,7 @@ func DxHostedConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -805,31 +804,31 @@ func (d *jsiiProxy_DxHostedConnection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DxHostedConnection) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DxHostedConnection) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DxHostedConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DxHostedConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (d *jsiiProxy_DxHostedConnection) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (d *jsiiProxy_DxHostedConnection) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DxHostedConnection) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (d *jsiiProxy_DxHostedConnection) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (d *jsiiProxy_DxHostedConnection) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (d *jsiiProxy_DxHostedConnection) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (d *jsiiProxy_DxHostedConnection) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,15 +956,15 @@ func (d *jsiiProxy_DxHostedConnection) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DxHostedConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxHostedConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -984,7 +983,7 @@ func (d *jsiiProxy_DxHostedConnection) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -997,7 +996,7 @@ func (d *jsiiProxy_DxHostedConnection) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,18 +1010,18 @@ func (d *jsiiProxy_DxHostedConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DxHostedConnection) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DxHostedConnection) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1033,7 +1032,7 @@ func (d *jsiiProxy_DxHostedConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1044,7 +1043,7 @@ func (d *jsiiProxy_DxHostedConnection) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1064,8 +1063,8 @@ func (d *jsiiProxy_DxHostedConnection) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DxHostedConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxHostedConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1077,8 +1076,8 @@ func (d *jsiiProxy_DxHostedConnection) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DxHostedConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxHostedConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1090,8 +1089,8 @@ func (d *jsiiProxy_DxHostedConnection) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DxHostedConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxHostedConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1103,8 +1102,8 @@ func (d *jsiiProxy_DxHostedConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DxHostedConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxHostedConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1129,8 +1128,8 @@ func (d *jsiiProxy_DxHostedConnection) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DxHostedConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxHostedConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1141,4 +1140,3 @@ func (d *jsiiProxy_DxHostedConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package dataawsnetworkmanagercorenetworkpolicydocument
 
-
 type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#name DataAwsNetworkmanagerCoreNetworkPolicyDocument#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -13,8 +12,7 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#edge_locations DataAwsNetworkmanagerCoreNetworkPolicyDocument#edge_locations}.
 	EdgeLocations *[]*string `field:"optional" json:"edgeLocations" yaml:"edgeLocations"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#isolate_attachments DataAwsNetworkmanagerCoreNetworkPolicyDocument#isolate_attachments}.
-	IsolateAttachments interface{} `field:"optional" json:"isolateAttachments" yaml:"isolateAttachments"`
+	IsolateAttachments any `field:"optional" json:"isolateAttachments" yaml:"isolateAttachments"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document#require_attachment_acceptance DataAwsNetworkmanagerCoreNetworkPolicyDocument#require_attachment_acceptance}.
-	RequireAttachmentAcceptance interface{} `field:"optional" json:"requireAttachmentAcceptance" yaml:"requireAttachmentAcceptance"`
+	RequireAttachmentAcceptance any `field:"optional" json:"requireAttachmentAcceptance" yaml:"requireAttachmentAcceptance"`
 }
-

@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFsxOntapVolumeTieringPolicyOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

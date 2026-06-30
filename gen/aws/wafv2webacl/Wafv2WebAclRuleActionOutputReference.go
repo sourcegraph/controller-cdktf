@@ -20,9 +20,9 @@ type Wafv2WebAclRuleActionOutputReference interface {
 	ChallengeInput() *Wafv2WebAclRuleActionChallenge
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type Wafv2WebAclRuleActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type Wafv2WebAclRuleActionOutputReference interface {
 	ResetCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ChallengeInput() *Wafv2
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewWafv2WebAclRuleActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewWafv2WebAclRuleActionOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewWafv2WebAclRuleActionOutputReference_Override(w Wafv2WebAclRuleActionOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetInternalValue(val *Wafv2WebAclRuleAction) {
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) SetInternalValue(val *Wafv2WebAclRuleAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetInternalValue(val *Wa
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,16 +361,16 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutAllow(value *Wafv2We
 	_jsii_.InvokeVoid(
 		w,
 		"putAllow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -553,7 +552,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutBlock(value *Wafv2We
 	_jsii_.InvokeVoid(
 		w,
 		"putBlock",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -564,7 +563,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutCaptcha(value *Wafv2
 	_jsii_.InvokeVoid(
 		w,
 		"putCaptcha",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutChallenge(value *Waf
 	_jsii_.InvokeVoid(
 		w,
 		"putChallenge",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutCount(value *Wafv2We
 	_jsii_.InvokeVoid(
 		w,
 		"putCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ResetCount() {
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ToString() *string {
 
 	return returns
 }
-

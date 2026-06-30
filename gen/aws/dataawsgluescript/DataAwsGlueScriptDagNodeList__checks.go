@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsGlueScriptDagNodeListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

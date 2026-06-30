@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
-		reflect.TypeOf((*IvsChannel)(nil)).Elem(),
+		reflect.TypeFor[IvsChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsChannel.IvsChannelConfig",
-		reflect.TypeOf((*IvsChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[IvsChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts",
-		reflect.TypeOf((*IvsChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IvsChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference",
-		reflect.TypeOf((*IvsChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

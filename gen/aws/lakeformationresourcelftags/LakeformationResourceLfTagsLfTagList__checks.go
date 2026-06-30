@@ -34,7 +34,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsLfTagList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsLfTagList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTagsLfTagList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLakeformationResourceLfTagsLfTagListParameters(terraformResource
 
 	return nil
 }
-

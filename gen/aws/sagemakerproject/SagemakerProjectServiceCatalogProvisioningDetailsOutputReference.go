@@ -12,9 +12,9 @@ type SagemakerProjectServiceCatalogProvisioningDetailsOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,7 +39,7 @@ type SagemakerProjectServiceCatalogProvisioningDetailsOutputReference interface 
 	SetProvisioningArtifactId(val *string)
 	ProvisioningArtifactIdInput() *string
 	ProvisioningParameter() SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList
-	ProvisioningParameterInput() interface{}
+	ProvisioningParameterInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type SagemakerProjectServiceCatalogProvisioningDetailsOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,13 +72,13 @@ type SagemakerProjectServiceCatalogProvisioningDetailsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutProvisioningParameter(value interface{})
+	PutProvisioningParameter(value any)
 	ResetPathId()
 	ResetProvisioningArtifactId()
 	ResetProvisioningParameter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) ProvisioningParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) ProvisioningParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"provisioningParameterInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return returns
 }
 
-
 func NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerProjectServiceCatalogProvisioningDetailsOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetInternalValue(val *SagemakerProjectServiceCatalogProvisioningDetails) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetInternalValue(val *SagemakerProjectServiceCatalogProvisioningDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetPathId(val *string) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetPathId(val *string) {
 	if err := j.validateSetPathIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetProductId(val *string) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetProductId(val *string) {
 	if err := j.validateSetProductIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetProvisioningArtifactId(val *string) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetProvisioningArtifactId(val *string) {
 	if err := j.validateSetProvisioningArtifactIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,21 +535,21 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) PutProvisioningParameter(value interface{}) {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) PutProvisioningParameter(value any) {
 	if err := s.validatePutProvisioningParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putProvisioningParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	)
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 
 	return returns
 }
-

@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewSagemakerDomainDefaultSpaceSettingsOutputReferenceParameters(ter
 
 	return nil
 }
-

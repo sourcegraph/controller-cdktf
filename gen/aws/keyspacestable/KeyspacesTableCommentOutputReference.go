@@ -12,9 +12,9 @@ type KeyspacesTableCommentOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type KeyspacesTableCommentOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type KeyspacesTableCommentOutputReference interface {
 	ResetMessage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_KeyspacesTableCommentOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewKeyspacesTableCommentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KeyspacesTableCommentOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewKeyspacesTableCommentOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewKeyspacesTableCommentOutputReference_Override(k KeyspacesTableCommentOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetInternalValue(val *KeyspacesTableComment) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetInternalValue(val *KeyspacesTableComment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetInternalValue(val *Ke
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetMessage(val *string) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetMessage(val *string) {
 	if err := j.validateSetMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetMessage(val *string) 
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCommentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KeyspacesTableCommentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) ResetMessage() {
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableCommentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KeyspacesTableCommentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (k *jsiiProxy_KeyspacesTableCommentOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
-		reflect.TypeOf((*SsmDefaultPatchBaseline)(nil)).Elem(),
+		reflect.TypeFor[SsmDefaultPatchBaseline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmDefaultPatchBaseline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaselineConfig",
-		reflect.TypeOf((*SsmDefaultPatchBaselineConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmDefaultPatchBaselineConfig](),
 	)
 }

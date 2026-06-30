@@ -34,7 +34,7 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLexBotClarificationPromptMessageListParameters(terraformResource
 
 	return nil
 }
-

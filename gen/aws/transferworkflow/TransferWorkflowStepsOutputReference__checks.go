@@ -142,7 +142,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -274,4 +274,3 @@ func validateNewTransferWorkflowStepsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

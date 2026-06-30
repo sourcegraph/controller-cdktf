@@ -6,9 +6,9 @@ import (
 
 type CloudsearchDomainConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudsearchDomainConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// endpoint_options block.
@@ -33,9 +33,9 @@ type CloudsearchDomainConfig struct {
 	// index_field block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
-	IndexField interface{} `field:"optional" json:"indexField" yaml:"indexField"`
+	IndexField any `field:"optional" json:"indexField" yaml:"indexField"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}.
-	MultiAz interface{} `field:"optional" json:"multiAz" yaml:"multiAz"`
+	MultiAz any `field:"optional" json:"multiAz" yaml:"multiAz"`
 	// scaling_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
@@ -45,4 +45,3 @@ type CloudsearchDomainConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
 	Timeouts *CloudsearchDomainTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

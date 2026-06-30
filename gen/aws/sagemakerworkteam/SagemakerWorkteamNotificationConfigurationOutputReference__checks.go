@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerWorkteamNotificationConfigurationOutputReferenceParamet
 
 	return nil
 }
-

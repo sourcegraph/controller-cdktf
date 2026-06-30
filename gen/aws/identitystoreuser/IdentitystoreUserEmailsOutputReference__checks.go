@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetInternalVa
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetPrimaryParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetPrimaryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewIdentitystoreUserEmailsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

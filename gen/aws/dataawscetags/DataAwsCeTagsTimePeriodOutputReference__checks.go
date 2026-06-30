@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCeTagsTimePeriodOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsTimePeriodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsTimePeriodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsCeTagsTimePeriodOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

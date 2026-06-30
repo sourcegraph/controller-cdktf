@@ -34,7 +34,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMemorydbParameterGroupParameterListParameters(terraformResource 
 
 	return nil
 }
-

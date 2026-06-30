@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
-		reflect.TypeOf((*CodeartifactRepository)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upstream", GoGetter: "Upstream"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamInput", GoGetter: "UpstreamInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodeartifactRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryConfig",
-		reflect.TypeOf((*CodeartifactRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnections",
-		reflect.TypeOf((*CodeartifactRepositoryExternalConnections)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryExternalConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
-		reflect.TypeOf((*CodeartifactRepositoryExternalConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryExternalConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,11 +134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstream",
-		reflect.TypeOf((*CodeartifactRepositoryUpstream)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryUpstream](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
-		reflect.TypeOf((*CodeartifactRepositoryUpstreamList)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryUpstreamList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodeartifactRepositoryUpstreamList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -160,7 +160,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
-		reflect.TypeOf((*CodeartifactRepositoryUpstreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodeartifactRepositoryUpstreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodeartifactRepositoryUpstreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

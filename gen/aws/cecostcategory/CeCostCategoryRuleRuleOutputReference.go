@@ -11,12 +11,12 @@ import (
 type CeCostCategoryRuleRuleOutputReference interface {
 	cdktf.ComplexObject
 	And() CeCostCategoryRuleRuleAndList
-	AndInput() interface{}
+	AndInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,7 +38,7 @@ type CeCostCategoryRuleRuleOutputReference interface {
 	Not() CeCostCategoryRuleRuleNotOutputReference
 	NotInput() *CeCostCategoryRuleRuleNot
 	Or() CeCostCategoryRuleRuleOrList
-	OrInput() interface{}
+	OrInput() any
 	Tags() CeCostCategoryRuleRuleTagsOutputReference
 	TagsInput() *CeCostCategoryRuleRuleTags
 	// Experimental.
@@ -52,7 +52,7 @@ type CeCostCategoryRuleRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,11 +73,11 @@ type CeCostCategoryRuleRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAnd(value interface{})
+	PutAnd(value any)
 	PutCostCategory(value *CeCostCategoryRuleRuleCostCategory)
 	PutDimension(value *CeCostCategoryRuleRuleDimension)
 	PutNot(value *CeCostCategoryRuleRuleNot)
-	PutOr(value interface{})
+	PutOr(value any)
 	PutTags(value *CeCostCategoryRuleRuleTags)
 	ResetAnd()
 	ResetCostCategory()
@@ -87,7 +87,7 @@ type CeCostCategoryRuleRuleOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) And() CeCostCategoryRu
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) AndInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) AndInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"andInput",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) AndInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) Or() CeCostCategoryRul
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) OrInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) OrInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"orInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewCeCostCategoryRuleRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewCeCostCategoryRuleRuleOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewCeCostCategoryRuleRuleOutputReference_Override(c CeCostCategoryRuleRuleO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetInternalValue(val *CeCostCategoryRuleRule) {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) SetInternalValue(val *CeCostCategoryRuleRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetInternalValue(val *C
 	)
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,16 +385,16 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,21 +551,21 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutAnd(value interface{}) {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutAnd(value any) {
 	if err := c.validatePutAndParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAnd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -577,7 +576,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutCostCategory(value 
 	_jsii_.InvokeVoid(
 		c,
 		"putCostCategory",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutDimension(value *Ce
 	_jsii_.InvokeVoid(
 		c,
 		"putDimension",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -599,18 +598,18 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutNot(value *CeCostCa
 	_jsii_.InvokeVoid(
 		c,
 		"putNot",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutOr(value interface{}) {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutOr(value any) {
 	if err := c.validatePutOrParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOr",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) PutTags(value *CeCostC
 	_jsii_.InvokeVoid(
 		c,
 		"putTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) ResetTags() {
 	)
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) ToString() *string {
 
 	return returns
 }
-

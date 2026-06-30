@@ -15,11 +15,11 @@ type DataAwsIamPolicyDocument interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,7 +56,7 @@ type DataAwsIamPolicyDocument interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceJson() *string
 	SetSourceJson(val *string)
 	SourceJsonInput() *string
@@ -64,20 +64,20 @@ type DataAwsIamPolicyDocument interface {
 	SetSourcePolicyDocuments(val *[]*string)
 	SourcePolicyDocumentsInput() *[]*string
 	Statement() DataAwsIamPolicyDocumentStatementList
-	StatementInput() interface{}
+	StatementInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataAwsIamPolicyDocument interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStatement(value interface{})
+	PutStatement(value any)
 	ResetId()
 	ResetOverrideJson()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -111,18 +111,18 @@ type DataAwsIamPolicyDocument interface {
 	ResetSourcePolicyDocuments()
 	ResetStatement()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsIamPolicyDocument
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocument) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocument) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocument) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) Statement() DataAwsIamPolicyDocumen
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) StatementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocument) StatementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocument) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -440,7 +440,6 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
 func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config *DataAwsIamPolicyDocumentConfig) DataAwsIamPolicyDocument {
 	_init_.Initialize()
@@ -452,7 +451,7 @@ func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -465,12 +464,12 @@ func NewDataAwsIamPolicyDocument_Override(d DataAwsIamPolicyDocument, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetId(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverrideJson(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetOverrideJson(val *string) {
 	if err := j.validateSetOverrideJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverrideJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverridePolicyDocuments(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetOverridePolicyDocuments(val *[]*string) {
 	if err := j.validateSetOverridePolicyDocumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverridePolicyDocuments(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetPolicyId(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetSourceJson(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetSourceJson(val *string) {
 	if err := j.validateSetSourceJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetSourceJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetSourcePolicyDocuments(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetSourcePolicyDocuments(val *[]*string) {
 	if err := j.validateSetSourcePolicyDocumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetSourcePolicyDocuments(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func DataAwsIamPolicyDocument_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func DataAwsIamPolicyDocument_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsIamPolicyDocument_IsConstruct(x interface{}) *bool {
+func DataAwsIamPolicyDocument_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIamPolicyDocument_IsConstructParameters(x); err != nil {
@@ -640,7 +639,7 @@ func DataAwsIamPolicyDocument_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func DataAwsIamPolicyDocument_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsIamPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsIamPolicyDocument_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIamPolicyDocument_IsTerraformDataSourceParameters(x); err != nil {
@@ -659,7 +658,7 @@ func DataAwsIamPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func DataAwsIamPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsIamPolicyDocument_IsTerraformElement(x interface{}) *bool {
+func DataAwsIamPolicyDocument_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIamPolicyDocument_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func DataAwsIamPolicyDocument_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,27 +695,27 @@ func DataAwsIamPolicyDocument_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsIamPolicyDocument) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsIamPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,18 +873,18 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) PutStatement(value interface{}) {
+func (d *jsiiProxy_DataAwsIamPolicyDocument) PutStatement(value any) {
 	if err := d.validatePutStatementParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putStatement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -961,8 +960,8 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -974,8 +973,8 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -987,8 +986,8 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIamPolicyDocument) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1000,8 +999,8 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIamPolicyDocument) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1026,8 +1025,8 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocument) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIamPolicyDocument) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1038,4 +1037,3 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ToTerraform() interface{} {
 
 	return returns
 }
-

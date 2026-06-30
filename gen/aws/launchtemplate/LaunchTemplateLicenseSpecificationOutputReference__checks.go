@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLaunchTemplateLicenseSpecificationOutputReferenceParameters(terr
 
 	return nil
 }
-

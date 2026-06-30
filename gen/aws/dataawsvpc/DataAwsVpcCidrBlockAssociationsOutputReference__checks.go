@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsVpcCidrBlockAssociationsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

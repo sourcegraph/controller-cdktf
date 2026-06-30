@@ -16,15 +16,15 @@ type KinesisVideoStream interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	DataRetentionInHours() *float64
 	SetDataRetentionInHours(val *float64)
@@ -67,11 +67,11 @@ type KinesisVideoStream interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -81,19 +81,19 @@ type KinesisVideoStream interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KinesisVideoStreamTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type KinesisVideoStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type KinesisVideoStream interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type KinesisVideoStream interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KinesisVideoStream
@@ -180,8 +180,8 @@ func (j *jsiiProxy_KinesisVideoStream) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisVideoStream) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_KinesisVideoStream) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisVideoStream) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_KinesisVideoStream) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisVideoStream) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_KinesisVideoStream) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KinesisVideoStream) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_KinesisVideoStream) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisVideoStream) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_KinesisVideoStream) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisVideoStream) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_KinesisVideoStream) Timeouts() KinesisVideoStreamTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStream) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisVideoStream) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_KinesisVideoStream) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_video_stream aws_kinesis_video_stream} Resource.
 func NewKinesisVideoStream(scope constructs.Construct, id *string, config *KinesisVideoStreamConfig) KinesisVideoStream {
 	_init_.Initialize()
@@ -542,7 +541,7 @@ func NewKinesisVideoStream(scope constructs.Construct, id *string, config *Kines
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewKinesisVideoStream_Override(k KinesisVideoStream, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetConnection(val interface{}) {
+func (j *jsiiProxy_KinesisVideoStream) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetCount(val interface{}) {
+func (j *jsiiProxy_KinesisVideoStream) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetDataRetentionInHours(val *float64) {
+func (j *jsiiProxy_KinesisVideoStream) SetDataRetentionInHours(val *float64) {
 	if err := j.validateSetDataRetentionInHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetDataRetentionInHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KinesisVideoStream) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetDeviceName(val *string) {
+func (j *jsiiProxy_KinesisVideoStream) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetDeviceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KinesisVideoStream) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetId(val *string) {
+func (j *jsiiProxy_KinesisVideoStream) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_KinesisVideoStream) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KinesisVideoStream) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetMediaType(val *string) {
+func (j *jsiiProxy_KinesisVideoStream) SetMediaType(val *string) {
 	if err := j.validateSetMediaTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetMediaType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetName(val *string) {
+func (j *jsiiProxy_KinesisVideoStream) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KinesisVideoStream) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,7 +682,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KinesisVideoStream) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KinesisVideoStream) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_KinesisVideoStream)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStream)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KinesisVideoStream) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func KinesisVideoStream_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func KinesisVideoStream_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KinesisVideoStream_IsConstruct(x interface{}) *bool {
+func KinesisVideoStream_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisVideoStream_IsConstructParameters(x); err != nil {
@@ -763,7 +762,7 @@ func KinesisVideoStream_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func KinesisVideoStream_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisVideoStream_IsTerraformElement(x interface{}) *bool {
+func KinesisVideoStream_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisVideoStream_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func KinesisVideoStream_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func KinesisVideoStream_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisVideoStream_IsTerraformResource(x interface{}) *bool {
+func KinesisVideoStream_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisVideoStream_IsTerraformResourceParameters(x); err != nil {
@@ -801,7 +800,7 @@ func KinesisVideoStream_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,31 +825,31 @@ func (k *jsiiProxy_KinesisVideoStream) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KinesisVideoStream) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KinesisVideoStream) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KinesisVideoStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisVideoStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (k *jsiiProxy_KinesisVideoStream) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,15 +977,15 @@ func (k *jsiiProxy_KinesisVideoStream) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStream) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisVideoStream) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1005,7 +1004,7 @@ func (k *jsiiProxy_KinesisVideoStream) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (k *jsiiProxy_KinesisVideoStream) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,18 +1031,18 @@ func (k *jsiiProxy_KinesisVideoStream) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KinesisVideoStream) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KinesisVideoStream) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (k *jsiiProxy_KinesisVideoStream) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (k *jsiiProxy_KinesisVideoStream) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (k *jsiiProxy_KinesisVideoStream) PutTimeouts(value *KinesisVideoStreamTime
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,8 +1151,8 @@ func (k *jsiiProxy_KinesisVideoStream) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KinesisVideoStream) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisVideoStream) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1165,8 +1164,8 @@ func (k *jsiiProxy_KinesisVideoStream) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStream) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisVideoStream) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1178,8 +1177,8 @@ func (k *jsiiProxy_KinesisVideoStream) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStream) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisVideoStream) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1191,8 +1190,8 @@ func (k *jsiiProxy_KinesisVideoStream) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStream) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisVideoStream) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1217,8 +1216,8 @@ func (k *jsiiProxy_KinesisVideoStream) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStream) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisVideoStream) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1229,4 +1228,3 @@ func (k *jsiiProxy_KinesisVideoStream) ToTerraform() interface{} {
 
 	return returns
 }
-

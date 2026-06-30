@@ -17,8 +17,8 @@ type LaunchConfigurationEphemeralBlockDeviceList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LaunchConfigurationEphemeralBlockDeviceList interface {
 	Get(index *float64) LaunchConfigurationEphemeralBlockDeviceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewLaunchConfigurationEphemeralBlockDeviceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEphemeralBlockDeviceList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLaunchConfigurationEphemeralBlockDeviceList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLaunchConfigurationEphemeralBlockDeviceList_Override(l LaunchConfigurati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) Get(index *float
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList) ToString() *stri
 
 	return returns
 }
-

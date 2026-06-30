@@ -117,7 +117,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewSpotInstanceRequestCapacityReservationSpecificationOutputReferen
 
 	return nil
 }
-

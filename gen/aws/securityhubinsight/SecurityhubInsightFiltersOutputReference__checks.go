@@ -90,7 +90,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateInterpolati
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutAwsAccountIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutAwsAccountIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutAwsAccou
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCompanyNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCompanyNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCompanyN
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutComplianceStatusParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutComplianceStatusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutComplian
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutConfidenceParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutConfidenceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutConfiden
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCreatedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCreatedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCreatedA
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCriticalityParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCriticalityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutCritical
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutDescriptionParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutDescriptionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutDescript
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsConfidenceParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsConfidenceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -338,7 +338,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsCriticalityParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsCriticalityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsRelatedFindingsIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsRelatedFindingsIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -400,7 +400,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsRelatedFindingsProductArnParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsRelatedFindingsProductArnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsSeverityLabelParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsSeverityLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -462,7 +462,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsSeverityOriginalParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsSeverityOriginalParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -493,7 +493,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsTypesParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingProviderFieldsTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -524,7 +524,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFindingP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFirstObservedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFirstObservedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -555,7 +555,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutFirstObs
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutGeneratorIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutGeneratorIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -586,7 +586,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutGenerato
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -617,7 +617,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutIdParame
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutKeywordParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutKeywordParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -648,7 +648,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutKeywordP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutLastObservedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutLastObservedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -679,7 +679,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutLastObse
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -710,7 +710,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareN
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwarePathParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwarePathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -741,7 +741,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareStateParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareStateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -772,7 +772,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareTypeParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareTypeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -803,7 +803,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutMalwareT
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationDomainParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationDomainParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -834,7 +834,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkD
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationIpv4Parameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationIpv4Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -865,7 +865,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkD
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationIpv6Parameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationIpv6Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -896,7 +896,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkD
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationPortParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDestinationPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -927,7 +927,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkD
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDirectionParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkDirectionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -958,7 +958,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkD
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkProtocolParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkProtocolParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -989,7 +989,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceDomainParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceDomainParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1020,7 +1020,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceIpv4Parameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceIpv4Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1051,7 +1051,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceIpv6Parameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceIpv6Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1082,7 +1082,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceMacParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourceMacParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1113,7 +1113,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourcePortParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkSourcePortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1144,7 +1144,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNetworkS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteTextParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteTextParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1175,7 +1175,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteText
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpdatedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpdatedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1206,7 +1206,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpda
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpdatedByParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpdatedByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1237,7 +1237,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutNoteUpda
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessLaunchedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessLaunchedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1268,7 +1268,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessL
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1299,7 +1299,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessN
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessParentPidParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessParentPidParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1330,7 +1330,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessPathParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1361,7 +1361,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessPidParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessPidParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1392,7 +1392,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessTerminatedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessTerminatedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1423,7 +1423,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProcessT
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductArnParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductArnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1454,7 +1454,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductA
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductFieldsParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1485,7 +1485,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductF
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1516,7 +1516,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutProductN
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecommendationTextParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecommendationTextParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1547,7 +1547,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecommen
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecordStateParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecordStateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1578,7 +1578,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRecordSt
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedFindingsIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedFindingsIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1609,7 +1609,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedF
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedFindingsProductArnParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedFindingsProductArnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1640,7 +1640,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutRelatedF
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIamInstanceProfileArnParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIamInstanceProfileArnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1671,7 +1671,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceImageIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceImageIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1702,7 +1702,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIpv4AddressesParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIpv4AddressesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1733,7 +1733,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIpv6AddressesParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceIpv6AddressesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1764,7 +1764,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceKeyNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceKeyNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1795,7 +1795,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceLaunchedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceLaunchedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1826,7 +1826,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceSubnetIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceSubnetIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1857,7 +1857,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceTypeParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceTypeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1888,7 +1888,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceVpcIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsEc2InstanceVpcIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1919,7 +1919,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyCreatedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyCreatedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1950,7 +1950,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyStatusParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyStatusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1981,7 +1981,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyUserNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsIamAccessKeyUserNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2012,7 +2012,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsS3BucketOwnerIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsS3BucketOwnerIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2043,7 +2043,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsS3BucketOwnerNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceAwsS3BucketOwnerNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2074,7 +2074,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerImageIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerImageIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2105,7 +2105,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerImageNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerImageNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2136,7 +2136,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerLaunchedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerLaunchedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2167,7 +2167,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerNameParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceContainerNameParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2198,7 +2198,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceDetailsOtherParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceDetailsOtherParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2229,7 +2229,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceIdParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceIdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2260,7 +2260,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourcePartitionParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourcePartitionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2291,7 +2291,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceRegionParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceRegionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2322,7 +2322,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceTagsParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2353,7 +2353,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceTypeParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResourceTypeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2384,7 +2384,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutResource
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSeverityLabelParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSeverityLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2415,7 +2415,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSeverity
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSourceUrlParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSourceUrlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2446,7 +2446,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutSourceUr
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorCategoryParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorCategoryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2477,7 +2477,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorLastObservedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorLastObservedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2508,7 +2508,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorSourceParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorSourceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2539,7 +2539,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorSourceUrlParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorSourceUrlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2570,7 +2570,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorTypeParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorTypeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2601,7 +2601,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorValueParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIntelIndicatorValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2632,7 +2632,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutThreatIn
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTitleParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTitleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2663,7 +2663,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTitlePar
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTypeParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTypeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2694,7 +2694,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutTypePara
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUpdatedAtParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUpdatedAtParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2725,7 +2725,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUpdatedA
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUserDefinedValuesParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUserDefinedValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2756,7 +2756,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutUserDefi
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutVerificationStateParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutVerificationStateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2787,7 +2787,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutVerifica
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutWorkflowStatusParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutWorkflowStatusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -2826,7 +2826,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -2926,4 +2926,3 @@ func validateNewSecurityhubInsightFiltersOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

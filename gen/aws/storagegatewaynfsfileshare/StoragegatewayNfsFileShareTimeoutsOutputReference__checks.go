@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStoragegatewayNfsFileShareTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

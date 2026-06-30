@@ -12,9 +12,9 @@ type SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference inter
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	return returns
 }
 
-
 func NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)SetInternalValue(val *SagemakerUserProfileUserSettingsTensorBoardAppSettings) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) SetInternalValue(val *SagemakerUserProfileUserSettingsTensorBoardAppSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -445,20 +444,20 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 	_jsii_.InvokeVoid(
 		s,
 		"putDefaultResourceSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 
 	return returns
 }
-

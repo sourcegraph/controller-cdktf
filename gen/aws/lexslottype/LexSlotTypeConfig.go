@@ -6,9 +6,9 @@ import (
 
 type LexSlotTypeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type LexSlotTypeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// enumeration_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#enumeration_value LexSlotType#enumeration_value}
-	EnumerationValue interface{} `field:"required" json:"enumerationValue" yaml:"enumerationValue"`
+	EnumerationValue any `field:"required" json:"enumerationValue" yaml:"enumerationValue"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#name LexSlotType#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#create_version LexSlotType#create_version}.
-	CreateVersion interface{} `field:"optional" json:"createVersion" yaml:"createVersion"`
+	CreateVersion any `field:"optional" json:"createVersion" yaml:"createVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#description LexSlotType#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#id LexSlotType#id}.
@@ -41,4 +41,3 @@ type LexSlotTypeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type#value_selection_strategy LexSlotType#value_selection_strategy}.
 	ValueSelectionStrategy *string `field:"optional" json:"valueSelectionStrategy" yaml:"valueSelectionStrategy"`
 }
-

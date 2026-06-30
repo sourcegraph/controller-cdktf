@@ -106,7 +106,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewElastictranscoderPresetThumbnailsOutputReferenceParameters(terra
 
 	return nil
 }
-

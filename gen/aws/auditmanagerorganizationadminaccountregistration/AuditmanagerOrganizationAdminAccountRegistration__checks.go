@@ -19,7 +19,7 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateAdd
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMov
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAuditmanagerOrganizationAdminAccountRegistration_GenerateConfigForI
 	return nil
 }
 
-func validateAuditmanagerOrganizationAdminAccountRegistration_IsConstructParameters(x interface{}) error {
+func validateAuditmanagerOrganizationAdminAccountRegistration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAuditmanagerOrganizationAdminAccountRegistration_IsConstructParamet
 	return nil
 }
 
-func validateAuditmanagerOrganizationAdminAccountRegistration_IsTerraformElementParameters(x interface{}) error {
+func validateAuditmanagerOrganizationAdminAccountRegistration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAuditmanagerOrganizationAdminAccountRegistration_IsTerraformElement
 	return nil
 }
 
-func validateAuditmanagerOrganizationAdminAccountRegistration_IsTerraformResourceParameters(x interface{}) error {
+func validateAuditmanagerOrganizationAdminAccountRegistration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -414,4 +414,3 @@ func validateNewAuditmanagerOrganizationAdminAccountRegistrationParameters(scope
 
 	return nil
 }
-

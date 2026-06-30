@@ -90,7 +90,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateInte
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validatePutDnsRecordsParameters(value interface{}) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validatePutDnsRecordsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewServiceDiscoveryServiceDnsConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

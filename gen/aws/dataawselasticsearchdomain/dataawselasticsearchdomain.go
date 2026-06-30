@@ -22,11 +22,11 @@ type DataAwsElasticsearchDomain interface {
 	ClusterConfig() DataAwsElasticsearchDomainClusterConfigList
 	CognitoOptions() DataAwsElasticsearchDomainCognitoOptionsList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() cdktf.IResolvable
 	Deleted() cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DataAwsElasticsearchDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotOptions() DataAwsElasticsearchDomainSnapshotOptionsList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -75,14 +75,14 @@ type DataAwsElasticsearchDomain interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcOptions() DataAwsElasticsearchDomainVpcOptionsList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,18 +109,18 @@ type DataAwsElasticsearchDomain interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsElasticsearchDomain
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) CognitoOptions() DataAwsElasticse
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticsearchDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticsearchDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticsearchDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticsearchDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -528,7 +528,6 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) VpcOptions() DataAwsElasticsearch
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/elasticsearch_domain aws_elasticsearch_domain} Data Source.
 func NewDataAwsElasticsearchDomain(scope constructs.Construct, id *string, config *DataAwsElasticsearchDomainConfig) DataAwsElasticsearchDomain {
 	_init_.Initialize()
@@ -540,7 +539,7 @@ func NewDataAwsElasticsearchDomain(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewDataAwsElasticsearchDomain_Override(d DataAwsElasticsearchDomain, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetDomainName(val *string) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetId(val *string) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -626,7 +625,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomain)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsElasticsearchDomain) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func DataAwsElasticsearchDomain_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func DataAwsElasticsearchDomain_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsElasticsearchDomain_IsConstruct(x interface{}) *bool {
+func DataAwsElasticsearchDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticsearchDomain_IsConstructParameters(x); err != nil {
@@ -684,7 +683,7 @@ func DataAwsElasticsearchDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func DataAwsElasticsearchDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElasticsearchDomain_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsElasticsearchDomain_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticsearchDomain_IsTerraformDataSourceParameters(x); err != nil {
@@ -703,7 +702,7 @@ func DataAwsElasticsearchDomain_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func DataAwsElasticsearchDomain_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElasticsearchDomain_IsTerraformElement(x interface{}) *bool {
+func DataAwsElasticsearchDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticsearchDomain_IsTerraformElementParameters(x); err != nil {
@@ -722,7 +721,7 @@ func DataAwsElasticsearchDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -740,27 +739,27 @@ func DataAwsElasticsearchDomain_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsElasticsearchDomain) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsElasticsearchDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,8 +945,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -959,8 +958,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -972,8 +971,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticsearchDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -985,8 +984,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticsearchDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1011,8 +1010,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticsearchDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1023,4 +1022,3 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

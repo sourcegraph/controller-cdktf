@@ -15,9 +15,9 @@ type ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguratio
 	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,13 +28,13 @@ type ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguratio
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Default() interface{}
-	SetDefault(val interface{})
-	DefaultInput() interface{}
+	Default() any
+	SetDefault(val any)
+	DefaultInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LaunchTemplateId() *string
 	SetLaunchTemplateId(val *string)
 	LaunchTemplateIdInput() *string
@@ -49,7 +49,7 @@ type ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguratio
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguratio
 	ResetDefault()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) Default() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) Default() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"default",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) DefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) DefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-
 func NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigura
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigura
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetAccountId(val *string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetDefault(val interface{}) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetDefault(val any) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetLaunchTemplateId(val *string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetLaunchTemplateId(val *string) {
 	if err := j.validateSetLaunchTemplateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 
 	return returns
 }
-

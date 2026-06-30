@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamRoleInlinePolicyOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_IamRoleInlinePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamRoleInlinePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IamRoleInlinePolicyOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_IamRoleInlinePolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamRoleInlinePolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamRoleInlinePolicyOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

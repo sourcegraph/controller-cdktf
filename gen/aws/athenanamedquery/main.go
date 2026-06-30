@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
-		reflect.TypeOf((*AthenaNamedQuery)(nil)).Elem(),
+		reflect.TypeFor[AthenaNamedQuery](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workgroup", GoGetter: "Workgroup"},
 			_jsii_.MemberProperty{JsiiProperty: "workgroupInput", GoGetter: "WorkgroupInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaNamedQuery{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQueryConfig",
-		reflect.TypeOf((*AthenaNamedQueryConfig)(nil)).Elem(),
+		reflect.TypeFor[AthenaNamedQueryConfig](),
 	)
 }

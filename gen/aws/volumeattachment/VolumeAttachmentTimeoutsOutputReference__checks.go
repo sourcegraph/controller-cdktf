@@ -98,7 +98,7 @@ func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVolumeAttachmentTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

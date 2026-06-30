@@ -18,21 +18,21 @@ type AppsyncApiCache interface {
 	ApiId() *string
 	SetApiId(val *string)
 	ApiIdInput() *string
-	AtRestEncryptionEnabled() interface{}
-	SetAtRestEncryptionEnabled(val interface{})
-	AtRestEncryptionEnabledInput() interface{}
+	AtRestEncryptionEnabled() any
+	SetAtRestEncryptionEnabled(val any)
+	AtRestEncryptionEnabledInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,20 +59,20 @@ type AppsyncApiCache interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	TransitEncryptionEnabled() interface{}
-	SetTransitEncryptionEnabled(val interface{})
-	TransitEncryptionEnabledInput() interface{}
+	TransitEncryptionEnabled() any
+	SetTransitEncryptionEnabled(val any)
+	TransitEncryptionEnabledInput() any
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -83,9 +83,9 @@ type AppsyncApiCache interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type AppsyncApiCache interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type AppsyncApiCache interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type AppsyncApiCache interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTransitEncryptionEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppsyncApiCache
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AppsyncApiCache) ApiIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) AtRestEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) AtRestEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabled",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_AppsyncApiCache) AtRestEncryptionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) AtRestEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) AtRestEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabledInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_AppsyncApiCache) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_AppsyncApiCache) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppsyncApiCache) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_AppsyncApiCache) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_AppsyncApiCache) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppsyncApiCache) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_AppsyncApiCache) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_AppsyncApiCache) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppsyncApiCache) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_AppsyncApiCache) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) TransitEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) TransitEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitEncryptionEnabled",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_AppsyncApiCache) TransitEncryptionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiCache) TransitEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncApiCache) TransitEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitEncryptionEnabledInput",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_AppsyncApiCache) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource.
 func NewAppsyncApiCache(scope constructs.Construct, id *string, config *AppsyncApiCacheConfig) AppsyncApiCache {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewAppsyncApiCache(scope constructs.Construct, id *string, config *AppsyncA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewAppsyncApiCache_Override(a AppsyncApiCache, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetApiCachingBehavior(val *string) {
+func (j *jsiiProxy_AppsyncApiCache) SetApiCachingBehavior(val *string) {
 	if err := j.validateSetApiCachingBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetApiCachingBehavior(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetApiId(val *string) {
+func (j *jsiiProxy_AppsyncApiCache) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetAtRestEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_AppsyncApiCache) SetAtRestEncryptionEnabled(val any) {
 	if err := j.validateSetAtRestEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetAtRestEncryptionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppsyncApiCache) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetCount(val interface{}) {
+func (j *jsiiProxy_AppsyncApiCache) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppsyncApiCache) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppsyncApiCache) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -547,7 +546,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetId(val *string) {
+func (j *jsiiProxy_AppsyncApiCache) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppsyncApiCache) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppsyncApiCache) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppsyncApiCache) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetTransitEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_AppsyncApiCache) SetTransitEncryptionEnabled(val any) {
 	if err := j.validateSetTransitEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetTransitEncryptionEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetTtl(val *float64) {
+func (j *jsiiProxy_AppsyncApiCache) SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_AppsyncApiCache)SetTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiCache)SetType(val *string) {
+func (j *jsiiProxy_AppsyncApiCache) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func AppsyncApiCache_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func AppsyncApiCache_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppsyncApiCache_IsConstruct(x interface{}) *bool {
+func AppsyncApiCache_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncApiCache_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func AppsyncApiCache_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func AppsyncApiCache_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppsyncApiCache_IsTerraformElement(x interface{}) *bool {
+func AppsyncApiCache_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncApiCache_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func AppsyncApiCache_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func AppsyncApiCache_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppsyncApiCache_IsTerraformResource(x interface{}) *bool {
+func AppsyncApiCache_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncApiCache_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func AppsyncApiCache_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (a *jsiiProxy_AppsyncApiCache) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppsyncApiCache) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppsyncApiCache) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppsyncApiCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncApiCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (a *jsiiProxy_AppsyncApiCache) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (a *jsiiProxy_AppsyncApiCache) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncApiCache) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncApiCache) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -910,7 +909,7 @@ func (a *jsiiProxy_AppsyncApiCache) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (a *jsiiProxy_AppsyncApiCache) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (a *jsiiProxy_AppsyncApiCache) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppsyncApiCache) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppsyncApiCache) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (a *jsiiProxy_AppsyncApiCache) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (a *jsiiProxy_AppsyncApiCache) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1006,8 +1005,8 @@ func (a *jsiiProxy_AppsyncApiCache) ResetTransitEncryptionEnabled() {
 	)
 }
 
-func (a *jsiiProxy_AppsyncApiCache) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppsyncApiCache) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1019,8 +1018,8 @@ func (a *jsiiProxy_AppsyncApiCache) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncApiCache) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppsyncApiCache) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1032,8 +1031,8 @@ func (a *jsiiProxy_AppsyncApiCache) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncApiCache) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncApiCache) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1045,8 +1044,8 @@ func (a *jsiiProxy_AppsyncApiCache) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncApiCache) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncApiCache) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1071,8 +1070,8 @@ func (a *jsiiProxy_AppsyncApiCache) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncApiCache) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncApiCache) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1083,4 +1082,3 @@ func (a *jsiiProxy_AppsyncApiCache) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
-		reflect.TypeOf((*CloudwatchEventApiDestination)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventApiDestination](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventApiDestination{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestinationConfig",
-		reflect.TypeOf((*CloudwatchEventApiDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventApiDestinationConfig](),
 	)
 }

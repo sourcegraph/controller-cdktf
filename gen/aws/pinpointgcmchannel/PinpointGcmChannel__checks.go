@@ -19,7 +19,7 @@ func (p *jsiiProxy_PinpointGcmChannel) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (p *jsiiProxy_PinpointGcmChannel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PinpointGcmChannel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PinpointGcmChannel) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (p *jsiiProxy_PinpointGcmChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PinpointGcmChannel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePinpointGcmChannel_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validatePinpointGcmChannel_IsConstructParameters(x interface{}) error {
+func validatePinpointGcmChannel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePinpointGcmChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePinpointGcmChannel_IsTerraformElementParameters(x interface{}) error {
+func validatePinpointGcmChannel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePinpointGcmChannel_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validatePinpointGcmChannel_IsTerraformResourceParameters(x interface{}) error {
+func validatePinpointGcmChannel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetApplicationIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_PinpointGcmChannel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointGcmChannel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_PinpointGcmChannel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointGcmChannel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_PinpointGcmChannel) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PinpointGcmChannel) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_PinpointGcmChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PinpointGcmChannel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -450,4 +450,3 @@ func validateNewPinpointGcmChannelParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

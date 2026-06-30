@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystem",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystem)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,23 +83,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemConfig",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocol",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocol)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocol](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfs",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocolNfs)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocolNfs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference",
-		reflect.TypeOf((*DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -6,9 +6,9 @@ import (
 
 type GlueCatalogTableConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GlueCatalogTableConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}.
@@ -39,11 +39,11 @@ type GlueCatalogTableConfig struct {
 	// partition_index block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#partition_index GlueCatalogTable#partition_index}
-	PartitionIndex interface{} `field:"optional" json:"partitionIndex" yaml:"partitionIndex"`
+	PartitionIndex any `field:"optional" json:"partitionIndex" yaml:"partitionIndex"`
 	// partition_keys block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#partition_keys GlueCatalogTable#partition_keys}
-	PartitionKeys interface{} `field:"optional" json:"partitionKeys" yaml:"partitionKeys"`
+	PartitionKeys any `field:"optional" json:"partitionKeys" yaml:"partitionKeys"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#retention GlueCatalogTable#retention}.
 	Retention *float64 `field:"optional" json:"retention" yaml:"retention"`
 	// storage_descriptor block.
@@ -61,4 +61,3 @@ type GlueCatalogTableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_catalog_table#view_original_text GlueCatalogTable#view_original_text}.
 	ViewOriginalText *string `field:"optional" json:"viewOriginalText" yaml:"viewOriginalText"`
 }
-

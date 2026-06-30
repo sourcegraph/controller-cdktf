@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelDestinationsSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewMedialiveChannelDestinationsSettingsOutputReferenceParameters(te
 
 	return nil
 }
-

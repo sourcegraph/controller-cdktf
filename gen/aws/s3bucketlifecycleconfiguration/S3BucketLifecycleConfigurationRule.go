@@ -1,6 +1,5 @@
 package s3bucketlifecycleconfiguration
 
-
 type S3BucketLifecycleConfigurationRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}.
 	//
@@ -28,12 +27,11 @@ type S3BucketLifecycleConfigurationRule struct {
 	// noncurrent_version_transition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_transition S3BucketLifecycleConfiguration#noncurrent_version_transition}
-	NoncurrentVersionTransition interface{} `field:"optional" json:"noncurrentVersionTransition" yaml:"noncurrentVersionTransition"`
+	NoncurrentVersionTransition any `field:"optional" json:"noncurrentVersionTransition" yaml:"noncurrentVersionTransition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 	// transition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_lifecycle_configuration#transition S3BucketLifecycleConfiguration#transition}
-	Transition interface{} `field:"optional" json:"transition" yaml:"transition"`
+	Transition any `field:"optional" json:"transition" yaml:"transition"`
 }
-

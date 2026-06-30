@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DaxParameterGroupParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaxParameterGroupParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DaxParameterGroupParametersOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_DaxParameterGroupParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaxParameterGroupParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDaxParameterGroupParametersOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

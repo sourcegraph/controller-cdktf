@@ -16,15 +16,15 @@ type LicensemanagerLicenseConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,9 +45,9 @@ type LicensemanagerLicenseConfiguration interface {
 	IdInput() *string
 	LicenseCount() *float64
 	SetLicenseCount(val *float64)
-	LicenseCountHardLimit() interface{}
-	SetLicenseCountHardLimit(val interface{})
-	LicenseCountHardLimitInput() interface{}
+	LicenseCountHardLimit() any
+	SetLicenseCountHardLimit(val any)
+	LicenseCountHardLimitInput() any
 	LicenseCountingType() *string
 	SetLicenseCountingType(val *string)
 	LicenseCountingTypeInput() *string
@@ -70,11 +70,11 @@ type LicensemanagerLicenseConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -84,16 +84,16 @@ type LicensemanagerLicenseConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type LicensemanagerLicenseConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type LicensemanagerLicenseConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type LicensemanagerLicenseConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LicensemanagerLicenseConfiguration
@@ -178,8 +178,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCount() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCountHardLimit() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCountHardLimit() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"licenseCountHardLimit",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCountHardLimit() i
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCountHardLimitInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) LicenseCountHardLimitInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"licenseCountHardLimitInput",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration} Resource.
 func NewLicensemanagerLicenseConfiguration(scope constructs.Construct, id *string, config *LicensemanagerLicenseConfigurationConfig) LicensemanagerLicenseConfiguration {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewLicensemanagerLicenseConfiguration(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewLicensemanagerLicenseConfiguration_Override(l LicensemanagerLicenseConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetDescription(val *string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetId(val *string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCount(val *float64) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetLicenseCount(val *float64) {
 	if err := j.validateSetLicenseCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCount(val *float
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCountHardLimit(val interface{}) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetLicenseCountHardLimit(val any) {
 	if err := j.validateSetLicenseCountHardLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCountHardLimit(v
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCountingType(val *string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetLicenseCountingType(val *string) {
 	if err := j.validateSetLicenseCountingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseCountingType(val
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseRules(val *[]*string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetLicenseRules(val *[]*string) {
 	if err := j.validateSetLicenseRulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLicenseRules(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetName(val *string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetTags(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_LicensemanagerLicenseConfiguration)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func LicensemanagerLicenseConfiguration_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func LicensemanagerLicenseConfiguration_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LicensemanagerLicenseConfiguration_IsConstruct(x interface{}) *bool {
+func LicensemanagerLicenseConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLicensemanagerLicenseConfiguration_IsConstructParameters(x); err != nil {
@@ -762,7 +761,7 @@ func LicensemanagerLicenseConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func LicensemanagerLicenseConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LicensemanagerLicenseConfiguration_IsTerraformElement(x interface{}) *bool {
+func LicensemanagerLicenseConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLicensemanagerLicenseConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -781,7 +780,7 @@ func LicensemanagerLicenseConfiguration_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func LicensemanagerLicenseConfiguration_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func LicensemanagerLicenseConfiguration_IsTerraformResource(x interface{}) *bool {
+func LicensemanagerLicenseConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLicensemanagerLicenseConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -800,7 +799,7 @@ func LicensemanagerLicenseConfiguration_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,31 +824,31 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,15 +976,15 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1004,7 +1003,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) InterpolationForAttribute
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,18 +1030,18 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1132,8 +1131,8 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ResetTagsAll() {
 	)
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1145,8 +1144,8 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeAttributes() *m
 	return returns
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1158,8 +1157,8 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) SynthesizeHclAttributes()
 	return returns
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1171,8 +1170,8 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToHclTerraform() interfac
 	return returns
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1197,8 +1196,8 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1209,4 +1208,3 @@ func (l *jsiiProxy_LicensemanagerLicenseConfiguration) ToTerraform() interface{}
 
 	return returns
 }
-

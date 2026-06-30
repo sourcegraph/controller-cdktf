@@ -15,9 +15,9 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	CertificateInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EnvironmentVariable() CodebuildProjectEnvironmentEnvironmentVariableList
-	EnvironmentVariableInput() interface{}
+	EnvironmentVariableInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -43,9 +43,9 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	ImagePullCredentialsTypeInput() *string
 	InternalValue() *CodebuildProjectEnvironment
 	SetInternalValue(val *CodebuildProjectEnvironment)
-	PrivilegedMode() interface{}
-	SetPrivilegedMode(val interface{})
-	PrivilegedModeInput() interface{}
+	PrivilegedMode() any
+	SetPrivilegedMode(val any)
+	PrivilegedModeInput() any
 	RegistryCredential() CodebuildProjectEnvironmentRegistryCredentialOutputReference
 	RegistryCredentialInput() *CodebuildProjectEnvironmentRegistryCredential
 	// Experimental.
@@ -62,7 +62,7 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnvironmentVariable(value interface{})
+	PutEnvironmentVariable(value any)
 	PutRegistryCredential(value *CodebuildProjectEnvironmentRegistryCredential)
 	ResetCertificate()
 	ResetEnvironmentVariable()
@@ -92,7 +92,7 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	ResetRegistryCredential()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) CertificateInput(
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) EnvironmentVariab
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) EnvironmentVariableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) EnvironmentVariableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"environmentVariableInput",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) InternalValue() *
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PrivilegedMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PrivilegedMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privilegedMode",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PrivilegedMode() 
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PrivilegedModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PrivilegedModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privilegedModeInput",
@@ -335,7 +335,6 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) TypeInput() *stri
 	return returns
 }
 
-
 func NewCodebuildProjectEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodebuildProjectEnvironmentOutputReference {
 	_init_.Initialize()
 
@@ -346,7 +345,7 @@ func NewCodebuildProjectEnvironmentOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -358,12 +357,12 @@ func NewCodebuildProjectEnvironmentOutputReference_Override(c CodebuildProjectEn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetCertificate(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetCertificate(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComputeType(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetComputeType(val *string) {
 	if err := j.validateSetComputeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetComputeType(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetImage(val *stri
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetImagePullCredentialsType(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetImagePullCredentialsType(val *string) {
 	if err := j.validateSetImagePullCredentialsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetImagePullCreden
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetInternalValue(val *CodebuildProjectEnvironment) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetInternalValue(val *CodebuildProjectEnvironment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetPrivilegedMode(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetPrivilegedMode(val any) {
 	if err := j.validateSetPrivilegedModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetPrivilegedMode(
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,16 +496,16 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,21 +662,21 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutEnvironmentVariable(value interface{}) {
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutEnvironmentVariable(value any) {
 	if err := c.validatePutEnvironmentVariableParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEnvironmentVariable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -688,7 +687,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutRegistryCreden
 	_jsii_.InvokeVoid(
 		c,
 		"putRegistryCredential",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -732,16 +731,16 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ResetRegistryCred
 	)
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -760,4 +759,3 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ToString() *strin
 
 	return returns
 }
-

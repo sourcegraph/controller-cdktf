@@ -98,7 +98,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAuditmanagerAssessmentRolesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

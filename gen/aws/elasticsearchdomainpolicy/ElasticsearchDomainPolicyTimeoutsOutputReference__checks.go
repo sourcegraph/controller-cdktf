@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewElasticsearchDomainPolicyTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

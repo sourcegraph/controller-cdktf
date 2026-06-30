@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppmeshRouteSpecHttp2RouteMatchHeaderListParameters(terraformRes
 
 	return nil
 }
-

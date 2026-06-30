@@ -98,7 +98,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEvidentlyProjectDataDeliveryCloudwatchLogsOutputReferenceParamet
 
 	return nil
 }
-

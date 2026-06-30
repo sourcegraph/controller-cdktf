@@ -109,7 +109,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewIotTopicRuleErrorActionDynamodbv2OutputReferenceParameters(terra
 
 	return nil
 }
-

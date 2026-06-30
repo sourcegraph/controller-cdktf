@@ -12,9 +12,9 @@ type PinpointAppCampaignHookOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type PinpointAppCampaignHookOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type PinpointAppCampaignHookOutputReference interface {
 	ResetWebUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_PinpointAppCampaignHookOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) WebUrlInput() *string
 	return returns
 }
 
-
 func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PinpointAppCampaignHookOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewPinpointAppCampaignHookOutputReference_Override(p PinpointAppCampaignHoo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetInternalValue(val *PinpointAppCampaignHook) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetInternalValue(val *PinpointAppCampaignHook) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetLambdaFunctionName(val *string) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetLambdaFunctionName(val *string) {
 	if err := j.validateSetLambdaFunctionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetLambdaFunctionName(
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetWebUrl(val *string) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) SetWebUrl(val *string) {
 	if err := j.validateSetWebUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) ResetWebUrl() {
 	)
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) ToString() *string {
 
 	return returns
 }
-

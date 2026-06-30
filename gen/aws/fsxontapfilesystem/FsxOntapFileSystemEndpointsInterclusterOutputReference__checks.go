@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFsxOntapFileSystemEndpointsInterclusterOutputReferenceParameters
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAutoscalingPolicyStepAdjustmentOutputReferenceParameters(terrafo
 
 	return nil
 }
-

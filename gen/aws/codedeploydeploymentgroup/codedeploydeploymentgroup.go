@@ -29,15 +29,15 @@ type CodedeployDeploymentGroup interface {
 	CdktfStack() cdktf.TerraformStack
 	ComputePlatform() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,9 +52,9 @@ type CodedeployDeploymentGroup interface {
 	DeploymentStyle() CodedeployDeploymentGroupDeploymentStyleOutputReference
 	DeploymentStyleInput() *CodedeployDeploymentGroupDeploymentStyle
 	Ec2TagFilter() CodedeployDeploymentGroupEc2TagFilterList
-	Ec2TagFilterInput() interface{}
+	Ec2TagFilterInput() any
 	Ec2TagSet() CodedeployDeploymentGroupEc2TagSetList
-	Ec2TagSetInput() interface{}
+	Ec2TagSetInput() any
 	EcsService() CodedeployDeploymentGroupEcsServiceOutputReference
 	EcsServiceInput() *CodedeployDeploymentGroupEcsService
 	// Experimental.
@@ -77,17 +77,17 @@ type CodedeployDeploymentGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	OnPremisesInstanceTagFilter() CodedeployDeploymentGroupOnPremisesInstanceTagFilterList
-	OnPremisesInstanceTagFilterInput() interface{}
+	OnPremisesInstanceTagFilterInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceRoleArn() *string
 	SetServiceRoleArn(val *string)
 	ServiceRoleArnInput() *string
@@ -100,18 +100,18 @@ type CodedeployDeploymentGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TriggerConfiguration() CodedeployDeploymentGroupTriggerConfigurationList
-	TriggerConfigurationInput() interface{}
+	TriggerConfigurationInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -129,7 +129,7 @@ type CodedeployDeploymentGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -141,7 +141,7 @@ type CodedeployDeploymentGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,12 +152,12 @@ type CodedeployDeploymentGroup interface {
 	PutAutoRollbackConfiguration(value *CodedeployDeploymentGroupAutoRollbackConfiguration)
 	PutBlueGreenDeploymentConfig(value *CodedeployDeploymentGroupBlueGreenDeploymentConfig)
 	PutDeploymentStyle(value *CodedeployDeploymentGroupDeploymentStyle)
-	PutEc2TagFilter(value interface{})
-	PutEc2TagSet(value interface{})
+	PutEc2TagFilter(value any)
+	PutEc2TagSet(value any)
 	PutEcsService(value *CodedeployDeploymentGroupEcsService)
 	PutLoadBalancerInfo(value *CodedeployDeploymentGroupLoadBalancerInfo)
-	PutOnPremisesInstanceTagFilter(value interface{})
-	PutTriggerConfiguration(value interface{})
+	PutOnPremisesInstanceTagFilter(value any)
+	PutTriggerConfiguration(value any)
 	ResetAlarmConfiguration()
 	ResetAutoRollbackConfiguration()
 	ResetAutoscalingGroups()
@@ -176,17 +176,17 @@ type CodedeployDeploymentGroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTriggerConfiguration()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodedeployDeploymentGroup
@@ -324,8 +324,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) ComputePlatform() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagFilter() CodedeployDeploymen
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ec2TagFilterInput",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagSet() CodedeployDeploymentGr
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagSetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) Ec2TagSetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ec2TagSetInput",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) OnPremisesInstanceTagFilter() Code
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) OnPremisesInstanceTagFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) OnPremisesInstanceTagFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onPremisesInstanceTagFilterInput",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -704,8 +704,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -734,8 +734,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfiguration() CodedeployD
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggerConfigurationInput",
@@ -743,7 +743,6 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfigurationInput() interf
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
 func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) CodedeployDeploymentGroup {
@@ -756,7 +755,7 @@ func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -769,12 +768,12 @@ func NewCodedeployDeploymentGroup_Override(c CodedeployDeploymentGroup, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetAppName(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetAppName(val *string) {
 	if err := j.validateSetAppNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetAppName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetAutoscalingGroups(val *[]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetAutoscalingGroups(val *[]*string) {
 	if err := j.validateSetAutoscalingGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetAutoscalingGroups(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -826,7 +825,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetDeploymentConfigName(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetDeploymentConfigName(val *string) {
 	if err := j.validateSetDeploymentConfigNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetDeploymentConfigName(val *string
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetDeploymentGroupName(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetDeploymentGroupName(val *string) {
 	if err := j.validateSetDeploymentGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetDeploymentGroupName(val *string)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -856,7 +855,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetId(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -886,7 +885,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetServiceRoleArn(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetServiceRoleArn(val *string) {
 	if err := j.validateSetServiceRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetServiceRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func CodedeployDeploymentGroup_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func CodedeployDeploymentGroup_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodedeployDeploymentGroup_IsConstruct(x interface{}) *bool {
+func CodedeployDeploymentGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodedeployDeploymentGroup_IsConstructParameters(x); err != nil {
@@ -977,7 +976,7 @@ func CodedeployDeploymentGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func CodedeployDeploymentGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodedeployDeploymentGroup_IsTerraformElement(x interface{}) *bool {
+func CodedeployDeploymentGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodedeployDeploymentGroup_IsTerraformElementParameters(x); err != nil {
@@ -996,7 +995,7 @@ func CodedeployDeploymentGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func CodedeployDeploymentGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CodedeployDeploymentGroup_IsTerraformResource(x interface{}) *bool {
+func CodedeployDeploymentGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodedeployDeploymentGroup_IsTerraformResourceParameters(x); err != nil {
@@ -1015,7 +1014,7 @@ func CodedeployDeploymentGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1040,31 +1039,31 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,7 +1143,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1160,7 +1159,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1176,7 +1175,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1192,15 +1191,15 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1219,7 +1218,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,18 +1245,18 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1268,7 +1267,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1279,7 +1278,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1290,7 +1289,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutAlarmConfiguration(value *Coded
 	_jsii_.InvokeVoid(
 		c,
 		"putAlarmConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,7 +1300,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutAutoRollbackConfiguration(value
 	_jsii_.InvokeVoid(
 		c,
 		"putAutoRollbackConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1312,7 +1311,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutBlueGreenDeploymentConfig(value
 	_jsii_.InvokeVoid(
 		c,
 		"putBlueGreenDeploymentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,29 +1322,29 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutDeploymentStyle(value *Codedepl
 	_jsii_.InvokeVoid(
 		c,
 		"putDeploymentStyle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) PutEc2TagFilter(value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) PutEc2TagFilter(value any) {
 	if err := c.validatePutEc2TagFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEc2TagFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) PutEc2TagSet(value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) PutEc2TagSet(value any) {
 	if err := c.validatePutEc2TagSetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEc2TagSet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1356,7 +1355,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutEcsService(value *CodedeployDep
 	_jsii_.InvokeVoid(
 		c,
 		"putEcsService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1367,29 +1366,29 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) PutLoadBalancerInfo(value *Codedep
 	_jsii_.InvokeVoid(
 		c,
 		"putLoadBalancerInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) PutOnPremisesInstanceTagFilter(value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) PutOnPremisesInstanceTagFilter(value any) {
 	if err := c.validatePutOnPremisesInstanceTagFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOnPremisesInstanceTagFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) PutTriggerConfiguration(value interface{}) {
+func (c *jsiiProxy_CodedeployDeploymentGroup) PutTriggerConfiguration(value any) {
 	if err := c.validatePutTriggerConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTriggerConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1521,8 +1520,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ResetTriggerConfiguration() {
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1534,8 +1533,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1547,8 +1546,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1560,8 +1559,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1586,8 +1585,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodedeployDeploymentGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1598,4 +1597,3 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

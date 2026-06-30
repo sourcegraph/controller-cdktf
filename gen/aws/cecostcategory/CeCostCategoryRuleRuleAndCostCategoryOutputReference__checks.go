@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndCostCategoryOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleAndCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndCostCategoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCeCostCategoryRuleRuleAndCostCategoryOutputReferenceParameters(t
 
 	return nil
 }
-

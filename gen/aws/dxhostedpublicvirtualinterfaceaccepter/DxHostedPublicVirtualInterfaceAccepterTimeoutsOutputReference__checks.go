@@ -98,7 +98,7 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReferencePar
 
 	return nil
 }
-

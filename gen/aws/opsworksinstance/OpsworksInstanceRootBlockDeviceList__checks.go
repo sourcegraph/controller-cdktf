@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksInstanceRootBlockDeviceList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceRootBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksInstanceRootBlockDeviceListParameters(terraformResource 
 
 	return nil
 }
-

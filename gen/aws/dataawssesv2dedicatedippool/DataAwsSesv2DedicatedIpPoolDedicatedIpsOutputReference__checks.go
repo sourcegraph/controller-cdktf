@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReferenceParameters
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudwatchEventTarget) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTarget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudwatchEventTarget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudwatchEventTarget) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudwatchEventTarget) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (c *jsiiProxy_CloudwatchEventTarget) validatePutRetryPolicyParameters(value
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTarget) validatePutRunCommandTargetsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudwatchEventTarget) validatePutRunCommandTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -350,7 +350,7 @@ func validateCloudwatchEventTarget_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateCloudwatchEventTarget_IsConstructParameters(x interface{}) error {
+func validateCloudwatchEventTarget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -358,7 +358,7 @@ func validateCloudwatchEventTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudwatchEventTarget_IsTerraformElementParameters(x interface{}) error {
+func validateCloudwatchEventTarget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -366,7 +366,7 @@ func validateCloudwatchEventTarget_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateCloudwatchEventTarget_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudwatchEventTarget_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) validateSetArnParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTarget) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTarget) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -415,7 +415,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTarget) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTarget) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -512,7 +512,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTarget) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTarget) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -600,4 +600,3 @@ func validateNewCloudwatchEventTargetParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference) validateSetAutoAd
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewBudgetsBudgetAutoAdjustDataOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

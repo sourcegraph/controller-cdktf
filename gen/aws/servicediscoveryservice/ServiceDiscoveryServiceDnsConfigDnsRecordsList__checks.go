@@ -34,7 +34,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewServiceDiscoveryServiceDnsConfigDnsRecordsListParameters(terrafo
 
 	return nil
 }
-

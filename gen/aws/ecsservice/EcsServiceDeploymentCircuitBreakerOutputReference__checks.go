@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetRollbackParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetRollbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewEcsServiceDeploymentCircuitBreakerOutputReferenceParameters(terr
 
 	return nil
 }
-

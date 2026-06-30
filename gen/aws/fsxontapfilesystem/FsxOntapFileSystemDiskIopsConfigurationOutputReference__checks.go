@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapFileSystemDiskIopsConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapFileSystemDiskIopsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapFileSystemDiskIopsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFsxOntapFileSystemDiskIopsConfigurationOutputReferenceParameters
 
 	return nil
 }
-

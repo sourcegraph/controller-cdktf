@@ -98,7 +98,7 @@ func (a *jsiiProxy_AcmCertificateRenewalSummaryOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateRenewalSummaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmCertificateRenewalSummaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAcmCertificateRenewalSummaryOutputReferenceParameters(terraformR
 
 	return nil
 }
-

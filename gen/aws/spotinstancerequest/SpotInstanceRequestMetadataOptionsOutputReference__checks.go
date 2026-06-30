@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSpotInstanceRequestMetadataOptionsOutputReferenceParameters(terr
 
 	return nil
 }
-

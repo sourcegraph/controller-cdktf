@@ -19,7 +19,7 @@ func (e *jsiiProxy_EvidentlyLaunch) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunch) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EvidentlyLaunch) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunch) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EvidentlyLaunch) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) validatePutGroupsParameters(value interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunch) validatePutGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (e *jsiiProxy_EvidentlyLaunch) validatePutGroupsParameters(value interface{
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunch) validatePutMetricMonitorsParameters(value interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunch) validatePutMetricMonitorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateEvidentlyLaunch_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateEvidentlyLaunch_IsConstructParameters(x interface{}) error {
+func validateEvidentlyLaunch_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateEvidentlyLaunch_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEvidentlyLaunch_IsTerraformElementParameters(x interface{}) error {
+func validateEvidentlyLaunch_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateEvidentlyLaunch_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEvidentlyLaunch_IsTerraformResourceParameters(x interface{}) error {
+func validateEvidentlyLaunch_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateEvidentlyLaunch_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunch) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_EvidentlyLaunch) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunch) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -458,7 +458,7 @@ func (j *jsiiProxy_EvidentlyLaunch) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunch) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -546,4 +546,3 @@ func validateNewEvidentlyLaunchParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

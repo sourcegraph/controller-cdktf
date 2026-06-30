@@ -6,9 +6,9 @@ import (
 
 type DynamodbTableConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,19 +18,19 @@ type DynamodbTableConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// attribute block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
-	Attribute interface{} `field:"optional" json:"attribute" yaml:"attribute"`
+	Attribute any `field:"optional" json:"attribute" yaml:"attribute"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
 	BillingMode *string `field:"optional" json:"billingMode" yaml:"billingMode"`
 	// global_secondary_index block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
-	GlobalSecondaryIndex interface{} `field:"optional" json:"globalSecondaryIndex" yaml:"globalSecondaryIndex"`
+	GlobalSecondaryIndex any `field:"optional" json:"globalSecondaryIndex" yaml:"globalSecondaryIndex"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
 	HashKey *string `field:"optional" json:"hashKey" yaml:"hashKey"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#id DynamodbTable#id}.
@@ -41,7 +41,7 @@ type DynamodbTableConfig struct {
 	// local_secondary_index block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
-	LocalSecondaryIndex interface{} `field:"optional" json:"localSecondaryIndex" yaml:"localSecondaryIndex"`
+	LocalSecondaryIndex any `field:"optional" json:"localSecondaryIndex" yaml:"localSecondaryIndex"`
 	// point_in_time_recovery block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
@@ -53,19 +53,19 @@ type DynamodbTableConfig struct {
 	// replica block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
-	Replica interface{} `field:"optional" json:"replica" yaml:"replica"`
+	Replica any `field:"optional" json:"replica" yaml:"replica"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}.
 	RestoreDateTime *string `field:"optional" json:"restoreDateTime" yaml:"restoreDateTime"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}.
 	RestoreSourceName *string `field:"optional" json:"restoreSourceName" yaml:"restoreSourceName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}.
-	RestoreToLatestTime interface{} `field:"optional" json:"restoreToLatestTime" yaml:"restoreToLatestTime"`
+	RestoreToLatestTime any `field:"optional" json:"restoreToLatestTime" yaml:"restoreToLatestTime"`
 	// server_side_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
 	ServerSideEncryption *DynamodbTableServerSideEncryption `field:"optional" json:"serverSideEncryption" yaml:"serverSideEncryption"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}.
-	StreamEnabled interface{} `field:"optional" json:"streamEnabled" yaml:"streamEnabled"`
+	StreamEnabled any `field:"optional" json:"streamEnabled" yaml:"streamEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}.
 	StreamViewType *string `field:"optional" json:"streamViewType" yaml:"streamViewType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}.
@@ -85,4 +85,3 @@ type DynamodbTableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
 	WriteCapacity *float64 `field:"optional" json:"writeCapacity" yaml:"writeCapacity"`
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewImagebuilderInfrastructureConfigurationLoggingS3LogsOutputRefere
 
 	return nil
 }
-

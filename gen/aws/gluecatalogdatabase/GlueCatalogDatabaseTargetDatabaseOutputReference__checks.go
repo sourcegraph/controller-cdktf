@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGlueCatalogDatabaseTargetDatabaseOutputReferenceParameters(terra
 
 	return nil
 }
-

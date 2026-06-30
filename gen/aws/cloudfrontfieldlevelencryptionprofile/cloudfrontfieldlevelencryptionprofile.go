@@ -19,15 +19,15 @@ type CloudfrontFieldLevelEncryptionProfile interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type CloudfrontFieldLevelEncryptionProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type CloudfrontFieldLevelEncryptionProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type CloudfrontFieldLevelEncryptionProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type CloudfrontFieldLevelEncryptionProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudfrontFieldLevelEncryptionProfile
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) CommentInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_field_level_encryption_profile aws_cloudfront_field_level_encryption_profile} Resource.
 func NewCloudfrontFieldLevelEncryptionProfile(scope constructs.Construct, id *string, config *CloudfrontFieldLevelEncryptionProfileConfig) CloudfrontFieldLevelEncryptionProfile {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewCloudfrontFieldLevelEncryptionProfile(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewCloudfrontFieldLevelEncryptionProfile_Override(c CloudfrontFieldLevelEnc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetComment(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetComment(val *string)
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetId(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetName(val *string) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func CloudfrontFieldLevelEncryptionProfile_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func CloudfrontFieldLevelEncryptionProfile_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudfrontFieldLevelEncryptionProfile_IsConstruct(x interface{}) *bool {
+func CloudfrontFieldLevelEncryptionProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontFieldLevelEncryptionProfile_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func CloudfrontFieldLevelEncryptionProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func CloudfrontFieldLevelEncryptionProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontFieldLevelEncryptionProfile_IsTerraformElement(x interface{}) *bool {
+func CloudfrontFieldLevelEncryptionProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontFieldLevelEncryptionProfile_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func CloudfrontFieldLevelEncryptionProfile_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func CloudfrontFieldLevelEncryptionProfile_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func CloudfrontFieldLevelEncryptionProfile_IsTerraformResource(x interface{}) *bool {
+func CloudfrontFieldLevelEncryptionProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontFieldLevelEncryptionProfile_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func CloudfrontFieldLevelEncryptionProfile_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetNumberListAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetStringAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) GetStringMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -818,7 +817,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) InterpolationForAttrib
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -889,7 +888,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) PutEncryptionEntities(
 	_jsii_.InvokeVoid(
 		c,
 		"putEncryptionEntities",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -917,8 +916,8 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ResetOverrideLogicalId
 	)
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -930,8 +929,8 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeAttributes()
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -943,8 +942,8 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) SynthesizeHclAttribute
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -956,8 +955,8 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToHclTerraform() inter
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -982,8 +981,8 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -994,4 +993,3 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) ToTerraform() interfac
 
 	return returns
 }
-

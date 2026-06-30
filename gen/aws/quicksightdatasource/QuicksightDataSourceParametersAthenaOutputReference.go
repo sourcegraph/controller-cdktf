@@ -12,9 +12,9 @@ type QuicksightDataSourceParametersAthenaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type QuicksightDataSourceParametersAthenaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type QuicksightDataSourceParametersAthenaOutputReference interface {
 	ResetWorkGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) WorkGrou
 	return returns
 }
 
-
 func NewQuicksightDataSourceParametersAthenaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAthenaOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewQuicksightDataSourceParametersAthenaOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewQuicksightDataSourceParametersAthenaOutputReference_Override(q Quicksigh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetInternalValue(val *QuicksightDataSourceParametersAthena) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetInternalValue(val *QuicksightDataSourceParametersAthena) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference)SetWorkGroup(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) SetWorkGroup(val *string) {
 	if err := j.validateSetWorkGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) ComputeF
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetBoole
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetBoole
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetListA
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetNumbe
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetNumbe
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetNumbe
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetStrin
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) GetStrin
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) Interpol
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) ResetWor
 	)
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) ToString
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type DataAwsKmsSecretSecretOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DataAwsKmsSecretSecretOutputReference interface {
 	GrantTokens() *[]*string
 	SetGrantTokens(val *[]*string)
 	GrantTokensInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type DataAwsKmsSecretSecretOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type DataAwsKmsSecretSecretOutputReference interface {
 	ResetGrantTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_DataAwsKmsSecretSecretOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GrantTokensInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewDataAwsKmsSecretSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsKmsSecretSecretOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewDataAwsKmsSecretSecretOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewDataAwsKmsSecretSecretOutputReference_Override(d DataAwsKmsSecretSecretO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetContext(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetContext(val *map[string]*string) {
 	if err := j.validateSetContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetContext(val *map[str
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetGrantTokens(val *[]*string) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetGrantTokens(val *[]*string) {
 	if err := j.validateSetGrantTokensParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetGrantTokens(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetPayload(val *string) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetPayload(val *string) {
 	if err := j.validateSetPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetPayload(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsKmsSecretSecretOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) ResetGrantTokens() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretOutputReference) ToString() *string {
 
 	return returns
 }
-

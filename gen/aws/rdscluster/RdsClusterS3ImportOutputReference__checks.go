@@ -114,7 +114,7 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetBucketPrefixPar
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRdsClusterS3ImportOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

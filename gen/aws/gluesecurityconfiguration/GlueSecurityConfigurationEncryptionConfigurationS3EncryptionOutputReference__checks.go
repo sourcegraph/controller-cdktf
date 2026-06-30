@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionO
 	return nil
 }
 
-func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutp
 
 	return nil
 }
-

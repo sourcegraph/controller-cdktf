@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewConnectRoutingProfileQueueConfigsAssociatedOutputReferenceParame
 
 	return nil
 }
-

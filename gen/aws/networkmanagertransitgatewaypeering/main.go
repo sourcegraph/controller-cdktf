@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayPeering)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayPeering](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayArnInput", GoGetter: "TransitGatewayArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayPeeringAttachmentId", GoGetter: "TransitGatewayPeeringAttachmentId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayPeering{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeeringConfig",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayPeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayPeeringConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeeringTimeouts",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayPeeringTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayPeeringTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayPeeringTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

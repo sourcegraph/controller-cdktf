@@ -23,17 +23,17 @@ type CloudfrontDistribution interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomErrorResponse() CloudfrontDistributionCustomErrorResponseList
-	CustomErrorResponseInput() interface{}
+	CustomErrorResponseInput() any
 	DefaultCacheBehavior() CloudfrontDistributionDefaultCacheBehaviorOutputReference
 	DefaultCacheBehaviorInput() *CloudfrontDistributionDefaultCacheBehavior
 	DefaultRootObject() *string
@@ -44,9 +44,9 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DomainName() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -64,9 +64,9 @@ type CloudfrontDistribution interface {
 	SetId(val *string)
 	IdInput() *string
 	InProgressValidationBatches() *float64
-	IsIpv6Enabled() interface{}
-	SetIsIpv6Enabled(val interface{})
-	IsIpv6EnabledInput() interface{}
+	IsIpv6Enabled() any
+	SetIsIpv6Enabled(val any)
+	IsIpv6EnabledInput() any
 	LastModifiedTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -77,11 +77,11 @@ type CloudfrontDistribution interface {
 	// The tree node.
 	Node() constructs.Node
 	OrderedCacheBehavior() CloudfrontDistributionOrderedCacheBehaviorList
-	OrderedCacheBehaviorInput() interface{}
+	OrderedCacheBehaviorInput() any
 	Origin() CloudfrontDistributionOriginList
 	OriginGroup() CloudfrontDistributionOriginGroupList
-	OriginGroupInput() interface{}
-	OriginInput() interface{}
+	OriginGroupInput() any
+	OriginInput() any
 	PriceClass() *string
 	SetPriceClass(val *string)
 	PriceClassInput() *string
@@ -90,16 +90,16 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Restrictions() CloudfrontDistributionRestrictionsOutputReference
 	RestrictionsInput() *CloudfrontDistributionRestrictions
-	RetainOnDelete() interface{}
-	SetRetainOnDelete(val interface{})
-	RetainOnDeleteInput() interface{}
+	RetainOnDelete() any
+	SetRetainOnDelete(val any)
+	RetainOnDeleteInput() any
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -110,16 +110,16 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrustedKeyGroups() CloudfrontDistributionTrustedKeyGroupsList
 	TrustedSigners() CloudfrontDistributionTrustedSignersList
 	ViewerCertificate() CloudfrontDistributionViewerCertificateOutputReference
 	ViewerCertificateInput() *CloudfrontDistributionViewerCertificate
-	WaitForDeployment() interface{}
-	SetWaitForDeployment(val interface{})
-	WaitForDeploymentInput() interface{}
+	WaitForDeployment() any
+	SetWaitForDeployment(val any)
+	WaitForDeploymentInput() any
 	WebAclId() *string
 	SetWebAclId(val *string)
 	WebAclIdInput() *string
@@ -127,9 +127,9 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -147,7 +147,7 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -159,19 +159,19 @@ type CloudfrontDistribution interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCustomErrorResponse(value interface{})
+	PutCustomErrorResponse(value any)
 	PutDefaultCacheBehavior(value *CloudfrontDistributionDefaultCacheBehavior)
 	PutLoggingConfig(value *CloudfrontDistributionLoggingConfig)
-	PutOrderedCacheBehavior(value interface{})
-	PutOrigin(value interface{})
-	PutOriginGroup(value interface{})
+	PutOrderedCacheBehavior(value any)
+	PutOrigin(value any)
+	PutOriginGroup(value any)
 	PutRestrictions(value *CloudfrontDistributionRestrictions)
 	PutViewerCertificate(value *CloudfrontDistributionViewerCertificate)
 	ResetAliases()
@@ -193,17 +193,17 @@ type CloudfrontDistribution interface {
 	ResetTagsAll()
 	ResetWaitForDeployment()
 	ResetWebAclId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudfrontDistribution
@@ -281,8 +281,8 @@ func (j *jsiiProxy_CloudfrontDistribution) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_CloudfrontDistribution) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontDistribution) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_CloudfrontDistribution) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_CloudfrontDistribution) CustomErrorResponse() CloudfrontDistr
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) CustomErrorResponseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) CustomErrorResponseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customErrorResponseInput",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_CloudfrontDistribution) DomainName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_CloudfrontDistribution) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_CloudfrontDistribution) InProgressValidationBatches() *float6
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) IsIpv6Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) IsIpv6Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isIpv6Enabled",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_CloudfrontDistribution) IsIpv6Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) IsIpv6EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) IsIpv6EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isIpv6EnabledInput",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_CloudfrontDistribution) OrderedCacheBehavior() CloudfrontDist
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) OrderedCacheBehaviorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) OrderedCacheBehaviorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"orderedCacheBehaviorInput",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_CloudfrontDistribution) OriginGroup() CloudfrontDistributionO
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) OriginGroupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) OriginGroupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originGroupInput",
@@ -631,8 +631,8 @@ func (j *jsiiProxy_CloudfrontDistribution) OriginGroupInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) OriginInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) OriginInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originInput",
@@ -671,8 +671,8 @@ func (j *jsiiProxy_CloudfrontDistribution) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudfrontDistribution) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -681,8 +681,8 @@ func (j *jsiiProxy_CloudfrontDistribution) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -711,8 +711,8 @@ func (j *jsiiProxy_CloudfrontDistribution) RestrictionsInput() *CloudfrontDistri
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) RetainOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) RetainOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainOnDelete",
@@ -721,8 +721,8 @@ func (j *jsiiProxy_CloudfrontDistribution) RetainOnDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) RetainOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) RetainOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainOnDeleteInput",
@@ -791,8 +791,8 @@ func (j *jsiiProxy_CloudfrontDistribution) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontDistribution) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -851,8 +851,8 @@ func (j *jsiiProxy_CloudfrontDistribution) ViewerCertificateInput() *CloudfrontD
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) WaitForDeployment() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) WaitForDeployment() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForDeployment",
@@ -861,8 +861,8 @@ func (j *jsiiProxy_CloudfrontDistribution) WaitForDeployment() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) WaitForDeploymentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistribution) WaitForDeploymentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForDeploymentInput",
@@ -891,7 +891,6 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
@@ -903,7 +902,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -916,12 +915,12 @@ func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetAliases(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetAliases(val *[]*string) {
 	if err := j.validateSetAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetAliases(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetComment(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -965,7 +964,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetDefaultRootObject(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetDefaultRootObject(val *string) {
 	if err := j.validateSetDefaultRootObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetDefaultRootObject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -984,7 +983,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetEnabled(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudfrontDistribution) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetHttpVersion(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetHttpVersion(val *string) {
 	if err := j.validateSetHttpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetHttpVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetId(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1025,7 +1024,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetIsIpv6Enabled(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetIsIpv6Enabled(val any) {
 	if err := j.validateSetIsIpv6EnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetIsIpv6Enabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudfrontDistribution) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetPriceClass(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetPriceClass(val *string) {
 	if err := j.validateSetPriceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetPriceClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudfrontDistribution) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetRetainOnDelete(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetRetainOnDelete(val any) {
 	if err := j.validateSetRetainOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetRetainOnDelete(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1110,7 +1109,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetWaitForDeployment(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistribution) SetWaitForDeployment(val any) {
 	if err := j.validateSetWaitForDeploymentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_CloudfrontDistribution)SetWaitForDeployment(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetWebAclId(val *string) {
+func (j *jsiiProxy_CloudfrontDistribution) SetWebAclId(val *string) {
 	if err := j.validateSetWebAclIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func CloudfrontDistribution_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func CloudfrontDistribution_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudfrontDistribution_IsConstruct(x interface{}) *bool {
+func CloudfrontDistribution_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontDistribution_IsConstructParameters(x); err != nil {
@@ -1179,7 +1178,7 @@ func CloudfrontDistribution_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func CloudfrontDistribution_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontDistribution_IsTerraformElement(x interface{}) *bool {
+func CloudfrontDistribution_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontDistribution_IsTerraformElementParameters(x); err != nil {
@@ -1198,7 +1197,7 @@ func CloudfrontDistribution_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1206,7 +1205,7 @@ func CloudfrontDistribution_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontDistribution_IsTerraformResource(x interface{}) *bool {
+func CloudfrontDistribution_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontDistribution_IsTerraformResourceParameters(x); err != nil {
@@ -1217,7 +1216,7 @@ func CloudfrontDistribution_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1242,31 +1241,31 @@ func (c *jsiiProxy_CloudfrontDistribution) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistribution) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1282,7 +1281,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1298,7 +1297,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1314,7 +1313,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1330,7 +1329,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1346,7 +1345,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1362,7 +1361,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1378,7 +1377,7 @@ func (c *jsiiProxy_CloudfrontDistribution) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1394,15 +1393,15 @@ func (c *jsiiProxy_CloudfrontDistribution) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontDistribution) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1421,7 +1420,7 @@ func (c *jsiiProxy_CloudfrontDistribution) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1434,7 +1433,7 @@ func (c *jsiiProxy_CloudfrontDistribution) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1448,18 +1447,18 @@ func (c *jsiiProxy_CloudfrontDistribution) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1470,7 +1469,7 @@ func (c *jsiiProxy_CloudfrontDistribution) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1481,18 +1480,18 @@ func (c *jsiiProxy_CloudfrontDistribution) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) PutCustomErrorResponse(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) PutCustomErrorResponse(value any) {
 	if err := c.validatePutCustomErrorResponseParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomErrorResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1503,7 +1502,7 @@ func (c *jsiiProxy_CloudfrontDistribution) PutDefaultCacheBehavior(value *Cloudf
 	_jsii_.InvokeVoid(
 		c,
 		"putDefaultCacheBehavior",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1514,40 +1513,40 @@ func (c *jsiiProxy_CloudfrontDistribution) PutLoggingConfig(value *CloudfrontDis
 	_jsii_.InvokeVoid(
 		c,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) PutOrderedCacheBehavior(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) PutOrderedCacheBehavior(value any) {
 	if err := c.validatePutOrderedCacheBehaviorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOrderedCacheBehavior",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) PutOrigin(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) PutOrigin(value any) {
 	if err := c.validatePutOriginParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOrigin",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) PutOriginGroup(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistribution) PutOriginGroup(value any) {
 	if err := c.validatePutOriginGroupParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putOriginGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1558,7 +1557,7 @@ func (c *jsiiProxy_CloudfrontDistribution) PutRestrictions(value *CloudfrontDist
 	_jsii_.InvokeVoid(
 		c,
 		"putRestrictions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1569,7 +1568,7 @@ func (c *jsiiProxy_CloudfrontDistribution) PutViewerCertificate(value *Cloudfron
 	_jsii_.InvokeVoid(
 		c,
 		"putViewerCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1709,8 +1708,8 @@ func (c *jsiiProxy_CloudfrontDistribution) ResetWebAclId() {
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontDistribution) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1722,8 +1721,8 @@ func (c *jsiiProxy_CloudfrontDistribution) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontDistribution) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1735,8 +1734,8 @@ func (c *jsiiProxy_CloudfrontDistribution) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontDistribution) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1748,8 +1747,8 @@ func (c *jsiiProxy_CloudfrontDistribution) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontDistribution) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1774,8 +1773,8 @@ func (c *jsiiProxy_CloudfrontDistribution) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontDistribution) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1786,4 +1785,3 @@ func (c *jsiiProxy_CloudfrontDistribution) ToTerraform() interface{} {
 
 	return returns
 }
-

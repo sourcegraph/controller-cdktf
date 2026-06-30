@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReferencePara
 
 	return nil
 }
-

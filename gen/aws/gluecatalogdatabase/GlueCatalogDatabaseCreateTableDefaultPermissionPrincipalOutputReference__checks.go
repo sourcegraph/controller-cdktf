@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputRe
 
 	return nil
 }
-

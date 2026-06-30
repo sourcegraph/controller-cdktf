@@ -106,7 +106,7 @@ func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewServicecatalogServiceActionDefinitionOutputReferenceParameters(t
 
 	return nil
 }
-

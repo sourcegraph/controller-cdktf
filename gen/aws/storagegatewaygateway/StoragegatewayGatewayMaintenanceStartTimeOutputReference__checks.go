@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewStoragegatewayGatewayMaintenanceStartTimeOutputReferenceParamete
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateAddMoveTargetPara
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateMoveFromIdParamet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateServiceDiscoveryPublicDnsNamespace_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateServiceDiscoveryPublicDnsNamespace_IsConstructParameters(x interface{}) error {
+func validateServiceDiscoveryPublicDnsNamespace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateServiceDiscoveryPublicDnsNamespace_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateServiceDiscoveryPublicDnsNamespace_IsTerraformElementParameters(x interface{}) error {
+func validateServiceDiscoveryPublicDnsNamespace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateServiceDiscoveryPublicDnsNamespace_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateServiceDiscoveryPublicDnsNamespace_IsTerraformResourceParameters(x interface{}) error {
+func validateServiceDiscoveryPublicDnsNamespace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateServiceDiscoveryPublicDnsNamespace_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewServiceDiscoveryPublicDnsNamespaceParameters(scope constructs.Co
 
 	return nil
 }
-

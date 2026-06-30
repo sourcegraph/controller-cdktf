@@ -15,9 +15,9 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	BucketNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
@@ -55,7 +55,7 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	ResetTopicArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) BucketNameInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) TopicArnInput() *strin
 	return returns
 }
 
-
 func NewSesReceiptRuleS3ActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SesReceiptRuleS3ActionOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewSesReceiptRuleS3ActionOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewSesReceiptRuleS3ActionOutputReference_Override(s SesReceiptRuleS3ActionO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetBucketName(val *string) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetBucketName(val *stri
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetKmsKeyArn(val *strin
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetObjectKeyPrefix(val *string) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetObjectKeyPrefix(val *string) {
 	if err := j.validateSetObjectKeyPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetObjectKeyPrefix(val 
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetPosition(val *float64) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetPosition(val *float64) {
 	if err := j.validateSetPositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetPosition(val *float6
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetTopicArn(val *string) {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) SetTopicArn(val *string) {
 	if err := j.validateSetTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ResetTopicArn() {
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ToString() *string {
 
 	return returns
 }
-

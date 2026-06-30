@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAclLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafWebAclLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewWafWebAclLoggingConfigurationOutputReferenceParameters(terraform
 
 	return nil
 }
-

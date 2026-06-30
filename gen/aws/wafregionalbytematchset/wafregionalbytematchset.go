@@ -13,19 +13,19 @@ import (
 type WafregionalByteMatchSet interface {
 	cdktf.TerraformResource
 	ByteMatchTuples() WafregionalByteMatchSetByteMatchTuplesList
-	ByteMatchTuplesInput() interface{}
+	ByteMatchTuplesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,24 +55,24 @@ type WafregionalByteMatchSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type WafregionalByteMatchSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,30 +102,30 @@ type WafregionalByteMatchSet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutByteMatchTuples(value interface{})
+	PutByteMatchTuples(value any)
 	ResetByteMatchTuples()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafregionalByteMatchSet
@@ -143,8 +143,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) ByteMatchTuples() WafregionalByteMat
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) ByteMatchTuplesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) ByteMatchTuplesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"byteMatchTuplesInput",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_WafregionalByteMatchSet) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalByteMatchSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_WafregionalByteMatchSet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafregional_byte_match_set aws_wafregional_byte_match_set} Resource.
 func NewWafregionalByteMatchSet(scope constructs.Construct, id *string, config *WafregionalByteMatchSetConfig) WafregionalByteMatchSet {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewWafregionalByteMatchSet(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewWafregionalByteMatchSet_Override(w WafregionalByteMatchSet, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetCount(val interface{}) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetId(val *string) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetName(val *string) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_WafregionalByteMatchSet)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafregionalByteMatchSet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func WafregionalByteMatchSet_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func WafregionalByteMatchSet_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafregionalByteMatchSet_IsConstruct(x interface{}) *bool {
+func WafregionalByteMatchSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalByteMatchSet_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func WafregionalByteMatchSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func WafregionalByteMatchSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalByteMatchSet_IsTerraformElement(x interface{}) *bool {
+func WafregionalByteMatchSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalByteMatchSet_IsTerraformElementParameters(x); err != nil {
@@ -539,7 +538,7 @@ func WafregionalByteMatchSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func WafregionalByteMatchSet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalByteMatchSet_IsTerraformResource(x interface{}) *bool {
+func WafregionalByteMatchSet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalByteMatchSet_IsTerraformResourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func WafregionalByteMatchSet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,31 +582,31 @@ func (w *jsiiProxy_WafregionalByteMatchSet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafregionalByteMatchSet) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalByteMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,15 +734,15 @@ func (w *jsiiProxy_WafregionalByteMatchSet) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -762,7 +761,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -775,7 +774,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (w *jsiiProxy_WafregionalByteMatchSet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafregionalByteMatchSet) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -811,7 +810,7 @@ func (w *jsiiProxy_WafregionalByteMatchSet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -822,18 +821,18 @@ func (w *jsiiProxy_WafregionalByteMatchSet) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) PutByteMatchTuples(value interface{}) {
+func (w *jsiiProxy_WafregionalByteMatchSet) PutByteMatchTuples(value any) {
 	if err := w.validatePutByteMatchTuplesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putByteMatchTuples",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (w *jsiiProxy_WafregionalByteMatchSet) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -874,8 +873,8 @@ func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -887,8 +886,8 @@ func (w *jsiiProxy_WafregionalByteMatchSet) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -900,8 +899,8 @@ func (w *jsiiProxy_WafregionalByteMatchSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -926,8 +925,8 @@ func (w *jsiiProxy_WafregionalByteMatchSet) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalByteMatchSet) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalByteMatchSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -938,4 +937,3 @@ func (w *jsiiProxy_WafregionalByteMatchSet) ToTerraform() interface{} {
 
 	return returns
 }
-

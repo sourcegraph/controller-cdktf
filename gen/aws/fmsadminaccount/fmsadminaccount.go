@@ -18,15 +18,15 @@ type FmsAdminAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type FmsAdminAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type FmsAdminAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type FmsAdminAccount interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -112,17 +112,17 @@ type FmsAdminAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FmsAdminAccount
@@ -160,8 +160,8 @@ func (j *jsiiProxy_FmsAdminAccount) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsAdminAccount) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_FmsAdminAccount) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FmsAdminAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FmsAdminAccount) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsAdminAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_FmsAdminAccount) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FmsAdminAccount) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_FmsAdminAccount) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FmsAdminAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_FmsAdminAccount) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_FmsAdminAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FmsAdminAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -330,7 +330,6 @@ func (j *jsiiProxy_FmsAdminAccount) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_admin_account aws_fms_admin_account} Resource.
 func NewFmsAdminAccount(scope constructs.Construct, id *string, config *FmsAdminAccountConfig) FmsAdminAccount {
 	_init_.Initialize()
@@ -342,7 +341,7 @@ func NewFmsAdminAccount(scope constructs.Construct, id *string, config *FmsAdmin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -355,12 +354,12 @@ func NewFmsAdminAccount_Override(f FmsAdminAccount, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetAccountId(val *string) {
+func (j *jsiiProxy_FmsAdminAccount) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetConnection(val interface{}) {
+func (j *jsiiProxy_FmsAdminAccount) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_FmsAdminAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FmsAdminAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -401,7 +400,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FmsAdminAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -409,7 +408,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetId(val *string) {
+func (j *jsiiProxy_FmsAdminAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FmsAdminAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FmsAdminAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_FmsAdminAccount)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FmsAdminAccount)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FmsAdminAccount) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func FmsAdminAccount_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func FmsAdminAccount_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FmsAdminAccount_IsConstruct(x interface{}) *bool {
+func FmsAdminAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsAdminAccount_IsConstructParameters(x); err != nil {
@@ -497,7 +496,7 @@ func FmsAdminAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func FmsAdminAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FmsAdminAccount_IsTerraformElement(x interface{}) *bool {
+func FmsAdminAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsAdminAccount_IsTerraformElementParameters(x); err != nil {
@@ -516,7 +515,7 @@ func FmsAdminAccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func FmsAdminAccount_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FmsAdminAccount_IsTerraformResource(x interface{}) *bool {
+func FmsAdminAccount_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFmsAdminAccount_IsTerraformResourceParameters(x); err != nil {
@@ -535,7 +534,7 @@ func FmsAdminAccount_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,31 +559,31 @@ func (f *jsiiProxy_FmsAdminAccount) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FmsAdminAccount) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FmsAdminAccount) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FmsAdminAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FmsAdminAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (f *jsiiProxy_FmsAdminAccount) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,15 +711,15 @@ func (f *jsiiProxy_FmsAdminAccount) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FmsAdminAccount) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsAdminAccount) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -739,7 +738,7 @@ func (f *jsiiProxy_FmsAdminAccount) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -752,7 +751,7 @@ func (f *jsiiProxy_FmsAdminAccount) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,18 +765,18 @@ func (f *jsiiProxy_FmsAdminAccount) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FmsAdminAccount) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FmsAdminAccount) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -788,7 +787,7 @@ func (f *jsiiProxy_FmsAdminAccount) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -799,7 +798,7 @@ func (f *jsiiProxy_FmsAdminAccount) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -827,8 +826,8 @@ func (f *jsiiProxy_FmsAdminAccount) ResetOverrideLogicalId() {
 	)
 }
 
-func (f *jsiiProxy_FmsAdminAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FmsAdminAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -840,8 +839,8 @@ func (f *jsiiProxy_FmsAdminAccount) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (f *jsiiProxy_FmsAdminAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FmsAdminAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -853,8 +852,8 @@ func (f *jsiiProxy_FmsAdminAccount) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (f *jsiiProxy_FmsAdminAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsAdminAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -866,8 +865,8 @@ func (f *jsiiProxy_FmsAdminAccount) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FmsAdminAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsAdminAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -892,8 +891,8 @@ func (f *jsiiProxy_FmsAdminAccount) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FmsAdminAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FmsAdminAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -904,4 +903,3 @@ func (f *jsiiProxy_FmsAdminAccount) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -16,15 +16,15 @@ type LightsailLbCertificate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,11 +62,11 @@ type LightsailLbCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubjectAlternativeNames() *[]*string
 	SetSubjectAlternativeNames(val *[]*string)
 	SubjectAlternativeNamesInput() *[]*string
@@ -74,16 +74,16 @@ type LightsailLbCertificate interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type LightsailLbCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type LightsailLbCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type LightsailLbCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSubjectAlternativeNames()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LightsailLbCertificate
@@ -164,8 +164,8 @@ func (j *jsiiProxy_LightsailLbCertificate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_LightsailLbCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailLbCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_LightsailLbCertificate) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_LightsailLbCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LightsailLbCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_LightsailLbCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailLbCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_LightsailLbCertificate) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_LightsailLbCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailLbCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -444,7 +444,6 @@ func (j *jsiiProxy_LightsailLbCertificate) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource.
 func NewLightsailLbCertificate(scope constructs.Construct, id *string, config *LightsailLbCertificateConfig) LightsailLbCertificate {
 	_init_.Initialize()
@@ -456,7 +455,7 @@ func NewLightsailLbCertificate(scope constructs.Construct, id *string, config *L
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -469,12 +468,12 @@ func NewLightsailLbCertificate_Override(l LightsailLbCertificate, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_LightsailLbCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_LightsailLbCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetDomainName(val *string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LightsailLbCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -523,7 +522,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetId(val *string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetLbName(val *string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetLbName(val *string) {
 	if err := j.validateSetLbNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetLbName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LightsailLbCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetName(val *string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LightsailLbCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LightsailLbCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_LightsailLbCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificate)SetSubjectAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_LightsailLbCertificate) SetSubjectAlternativeNames(val *[]*string) {
 	if err := j.validateSetSubjectAlternativeNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func LightsailLbCertificate_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func LightsailLbCertificate_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LightsailLbCertificate_IsConstruct(x interface{}) *bool {
+func LightsailLbCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbCertificate_IsConstructParameters(x); err != nil {
@@ -644,7 +643,7 @@ func LightsailLbCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func LightsailLbCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailLbCertificate_IsTerraformElement(x interface{}) *bool {
+func LightsailLbCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbCertificate_IsTerraformElementParameters(x); err != nil {
@@ -663,7 +662,7 @@ func LightsailLbCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func LightsailLbCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailLbCertificate_IsTerraformResource(x interface{}) *bool {
+func LightsailLbCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailLbCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -682,7 +681,7 @@ func LightsailLbCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,31 +706,31 @@ func (l *jsiiProxy_LightsailLbCertificate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LightsailLbCertificate) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailLbCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LightsailLbCertificate) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,15 +858,15 @@ func (l *jsiiProxy_LightsailLbCertificate) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -886,7 +885,7 @@ func (l *jsiiProxy_LightsailLbCertificate) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -899,7 +898,7 @@ func (l *jsiiProxy_LightsailLbCertificate) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,18 +912,18 @@ func (l *jsiiProxy_LightsailLbCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LightsailLbCertificate) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -935,7 +934,7 @@ func (l *jsiiProxy_LightsailLbCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -946,7 +945,7 @@ func (l *jsiiProxy_LightsailLbCertificate) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,8 +981,8 @@ func (l *jsiiProxy_LightsailLbCertificate) ResetSubjectAlternativeNames() {
 	)
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailLbCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -995,8 +994,8 @@ func (l *jsiiProxy_LightsailLbCertificate) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailLbCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1008,8 +1007,8 @@ func (l *jsiiProxy_LightsailLbCertificate) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1021,8 +1020,8 @@ func (l *jsiiProxy_LightsailLbCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1047,8 +1046,8 @@ func (l *jsiiProxy_LightsailLbCertificate) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailLbCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1059,4 +1058,3 @@ func (l *jsiiProxy_LightsailLbCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

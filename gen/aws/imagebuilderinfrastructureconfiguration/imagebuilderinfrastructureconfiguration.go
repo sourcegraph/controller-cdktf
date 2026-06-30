@@ -16,15 +16,15 @@ type ImagebuilderInfrastructureConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DateCreated() *string
 	DateUpdated() *string
 	// Experimental.
@@ -72,11 +72,11 @@ type ImagebuilderInfrastructureConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceTags() *map[string]*string
 	SetResourceTags(val *map[string]*string)
 	ResourceTagsInput() *map[string]*string
@@ -95,22 +95,22 @@ type ImagebuilderInfrastructureConfiguration interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
-	TerminateInstanceOnFailure() interface{}
-	SetTerminateInstanceOnFailure(val interface{})
-	TerminateInstanceOnFailureInput() interface{}
+	TerminateInstanceOnFailure() any
+	SetTerminateInstanceOnFailure(val any)
+	TerminateInstanceOnFailureInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -128,7 +128,7 @@ type ImagebuilderInfrastructureConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -140,7 +140,7 @@ type ImagebuilderInfrastructureConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -165,17 +165,17 @@ type ImagebuilderInfrastructureConfiguration interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTerminateInstanceOnFailure()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ImagebuilderInfrastructureConfiguration
@@ -203,8 +203,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -623,8 +623,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TagsInput() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerminateInstanceOnFailure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerminateInstanceOnFailure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminateInstanceOnFailure",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerminateInstanceOnF
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerminateInstanceOnFailureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerminateInstanceOnFailureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminateInstanceOnFailureInput",
@@ -653,8 +653,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -673,7 +673,6 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
 func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *string, config *ImagebuilderInfrastructureConfigurationConfig) ImagebuilderInfrastructureConfiguration {
 	_init_.Initialize()
@@ -685,7 +684,7 @@ func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -698,12 +697,12 @@ func NewImagebuilderInfrastructureConfiguration_Override(i ImagebuilderInfrastru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetDescription(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetId(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetInstanceProfileName(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetInstanceProfileName(val *string) {
 	if err := j.validateSetInstanceProfileNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetInstanceProfileNam
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetInstanceTypes(val *[]*string) {
 	if err := j.validateSetInstanceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetInstanceTypes(val 
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetKeyPair(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetKeyPair(val *string) {
 	if err := j.validateSetKeyPairParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetKeyPair(val *strin
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetName(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -826,7 +825,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetResourceTags(val *map[string]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetResourceTags(val *map[string]*string) {
 	if err := j.validateSetResourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetResourceTags(val *
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSecurityGroupIds(v
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSnsTopicArn(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetSnsTopicArn(val *string) {
 	if err := j.validateSetSnsTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSnsTopicArn(val *s
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSubnetId(val *string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +880,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetSubnetId(val *stri
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetTags(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetTagsAll(val *map[s
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetTerminateInstanceOnFailure(val interface{}) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) SetTerminateInstanceOnFailure(val any) {
 	if err := j.validateSetTerminateInstanceOnFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func ImagebuilderInfrastructureConfiguration_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func ImagebuilderInfrastructureConfiguration_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ImagebuilderInfrastructureConfiguration_IsConstruct(x interface{}) *bool {
+func ImagebuilderInfrastructureConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateImagebuilderInfrastructureConfiguration_IsConstructParameters(x); err != nil {
@@ -961,7 +960,7 @@ func ImagebuilderInfrastructureConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func ImagebuilderInfrastructureConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ImagebuilderInfrastructureConfiguration_IsTerraformElement(x interface{}) *bool {
+func ImagebuilderInfrastructureConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateImagebuilderInfrastructureConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -980,7 +979,7 @@ func ImagebuilderInfrastructureConfiguration_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func ImagebuilderInfrastructureConfiguration_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func ImagebuilderInfrastructureConfiguration_IsTerraformResource(x interface{}) *bool {
+func ImagebuilderInfrastructureConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateImagebuilderInfrastructureConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -999,7 +998,7 @@ func ImagebuilderInfrastructureConfiguration_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1024,31 +1023,31 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetBooleanAttribute(
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetListAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetNumberAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetNumberListAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,7 +1143,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetNumberMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1160,7 +1159,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetStringAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1176,15 +1175,15 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) GetStringMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1203,7 +1202,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) InterpolationForAttr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,18 +1229,18 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1252,7 +1251,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1263,7 +1262,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1274,7 +1273,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) PutInstanceMetadataO
 	_jsii_.InvokeVoid(
 		i,
 		"putInstanceMetadataOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,7 +1284,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) PutLogging(value *Im
 	_jsii_.InvokeVoid(
 		i,
 		"putLogging",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1401,8 +1400,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetTerminateInstan
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1414,8 +1413,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeAttributes
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1427,8 +1426,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) SynthesizeHclAttribu
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1440,8 +1439,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToHclTerraform() int
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1466,8 +1465,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1478,4 +1477,3 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ToTerraform() interf
 
 	return returns
 }
-

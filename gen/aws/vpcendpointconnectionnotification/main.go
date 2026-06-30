@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
-		reflect.TypeOf((*VpcEndpointConnectionNotification)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointConnectionNotification](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointServiceId", GoGetter: "VpcEndpointServiceId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointServiceIdInput", GoGetter: "VpcEndpointServiceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcEndpointConnectionNotification{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotificationConfig",
-		reflect.TypeOf((*VpcEndpointConnectionNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcEndpointConnectionNotificationConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSesv2EmailIdentityDkimSigningAttributesOutputReferenceParameters
 
 	return nil
 }
-

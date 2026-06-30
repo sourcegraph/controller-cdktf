@@ -90,7 +90,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validateInterpo
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validatePutEbsConfigParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validatePutEbsConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validateSetBidP
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewEmrClusterMasterInstanceGroupOutputReferenceParameters(terraform
 
 	return nil
 }
-

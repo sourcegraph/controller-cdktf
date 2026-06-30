@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEksClusterCertificateAuthorityOutputReferenceParameters(terrafor
 
 	return nil
 }
-

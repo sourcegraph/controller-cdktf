@@ -98,7 +98,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetFileForm
 	return nil
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetHiveCompatiblePartitionsParameters(val interface{}) error {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetHiveCompatiblePartitionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetPerHourPartitionParameters(val interface{}) error {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateSetPerHourPartitionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewFlowLogDestinationOptionsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

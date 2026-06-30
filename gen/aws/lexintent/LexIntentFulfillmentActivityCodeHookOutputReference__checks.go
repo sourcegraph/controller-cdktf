@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLexIntentFulfillmentActivityCodeHookOutputReferenceParameters(te
 
 	return nil
 }
-

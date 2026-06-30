@@ -6,9 +6,9 @@ import (
 
 type AppstreamStackConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type AppstreamStackConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#name AppstreamStack#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// access_endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
-	AccessEndpoints interface{} `field:"optional" json:"accessEndpoints" yaml:"accessEndpoints"`
+	AccessEndpoints any `field:"optional" json:"accessEndpoints" yaml:"accessEndpoints"`
 	// application_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
@@ -47,7 +47,7 @@ type AppstreamStackConfig struct {
 	// storage_connectors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
-	StorageConnectors interface{} `field:"optional" json:"storageConnectors" yaml:"storageConnectors"`
+	StorageConnectors any `field:"optional" json:"storageConnectors" yaml:"storageConnectors"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#tags AppstreamStack#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}.
@@ -55,6 +55,5 @@ type AppstreamStackConfig struct {
 	// user_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
-	UserSettings interface{} `field:"optional" json:"userSettings" yaml:"userSettings"`
+	UserSettings any `field:"optional" json:"userSettings" yaml:"userSettings"`
 }
-

@@ -12,23 +12,23 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/availability_zone aws_availability_zone}.
 type DataAwsAvailabilityZone interface {
 	cdktf.TerraformDataSource
-	AllAvailabilityZones() interface{}
-	SetAllAvailabilityZones(val interface{})
-	AllAvailabilityZonesInput() interface{}
+	AllAvailabilityZones() any
+	SetAllAvailabilityZones(val any)
+	AllAvailabilityZonesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsAvailabilityZoneFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,7 +60,7 @@ type DataAwsAvailabilityZone interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	State() *string
 	SetState(val *string)
@@ -68,19 +68,19 @@ type DataAwsAvailabilityZone interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsAvailabilityZoneTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	ZoneType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type DataAwsAvailabilityZone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsAvailabilityZoneTimeouts)
 	ResetAllAvailabilityZones()
 	ResetFilter()
@@ -114,18 +114,18 @@ type DataAwsAvailabilityZone interface {
 	ResetState()
 	ResetTimeouts()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsAvailabilityZone
@@ -133,8 +133,8 @@ type jsiiProxy_DataAwsAvailabilityZone struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) AllAvailabilityZones() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) AllAvailabilityZones() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allAvailabilityZones",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) AllAvailabilityZones() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) AllAvailabilityZonesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) AllAvailabilityZonesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allAvailabilityZonesInput",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) Filter() DataAwsAvailabilityZoneFilt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) Timeouts() DataAwsAvailabilityZoneTi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAvailabilityZone) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) ZoneType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/availability_zone aws_availability_zone} Data Source.
 func NewDataAwsAvailabilityZone(scope constructs.Construct, id *string, config *DataAwsAvailabilityZoneConfig) DataAwsAvailabilityZone {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewDataAwsAvailabilityZone(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewDataAwsAvailabilityZone_Override(d DataAwsAvailabilityZone, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetAllAvailabilityZones(val interface{}) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetAllAvailabilityZones(val any) {
 	if err := j.validateSetAllAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetAllAvailabilityZones(val interface
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetId(val *string) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetName(val *string) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetState(val *string) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetZoneId(val *string) {
+func (j *jsiiProxy_DataAwsAvailabilityZone) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func DataAwsAvailabilityZone_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func DataAwsAvailabilityZone_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsAvailabilityZone_IsConstruct(x interface{}) *bool {
+func DataAwsAvailabilityZone_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAvailabilityZone_IsConstructParameters(x); err != nil {
@@ -671,7 +670,7 @@ func DataAwsAvailabilityZone_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func DataAwsAvailabilityZone_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAvailabilityZone_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsAvailabilityZone_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAvailabilityZone_IsTerraformDataSourceParameters(x); err != nil {
@@ -690,7 +689,7 @@ func DataAwsAvailabilityZone_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func DataAwsAvailabilityZone_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsAvailabilityZone_IsTerraformElement(x interface{}) *bool {
+func DataAwsAvailabilityZone_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsAvailabilityZone_IsTerraformElementParameters(x); err != nil {
@@ -709,7 +708,7 @@ func DataAwsAvailabilityZone_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZone",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -727,27 +726,27 @@ func DataAwsAvailabilityZone_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsAvailabilityZone) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsAvailabilityZone) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,18 +904,18 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsAvailabilityZone) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -927,7 +926,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) PutTimeouts(value *DataAwsAvailabili
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -995,8 +994,8 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) ResetZoneId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1008,8 +1007,8 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1021,8 +1020,8 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAvailabilityZone) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1034,8 +1033,8 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAvailabilityZone) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1060,8 +1059,8 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZone) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsAvailabilityZone) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1072,4 +1071,3 @@ func (d *jsiiProxy_DataAwsAvailabilityZone) ToTerraform() interface{} {
 
 	return returns
 }
-

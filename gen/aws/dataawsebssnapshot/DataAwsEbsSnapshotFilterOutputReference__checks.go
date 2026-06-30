@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEbsSnapshotFilterOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

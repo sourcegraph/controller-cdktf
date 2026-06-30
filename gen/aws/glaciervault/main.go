@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glacierVault.GlacierVault",
-		reflect.TypeOf((*GlacierVault)(nil)).Elem(),
+		reflect.TypeFor[GlacierVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicy", GoGetter: "AccessPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicyInput", GoGetter: "AccessPolicyInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlacierVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glacierVault.GlacierVaultConfig",
-		reflect.TypeOf((*GlacierVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[GlacierVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glacierVault.GlacierVaultNotification",
-		reflect.TypeOf((*GlacierVaultNotification)(nil)).Elem(),
+		reflect.TypeFor[GlacierVaultNotification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glacierVault.GlacierVaultNotificationOutputReference",
-		reflect.TypeOf((*GlacierVaultNotificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlacierVaultNotificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlacierVaultNotificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

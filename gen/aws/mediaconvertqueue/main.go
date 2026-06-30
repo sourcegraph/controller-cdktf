@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
-		reflect.TypeOf((*MediaConvertQueue)(nil)).Elem(),
+		reflect.TypeFor[MediaConvertQueue](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaConvertQueue{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig",
-		reflect.TypeOf((*MediaConvertQueueConfig)(nil)).Elem(),
+		reflect.TypeFor[MediaConvertQueueConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings",
-		reflect.TypeOf((*MediaConvertQueueReservationPlanSettings)(nil)).Elem(),
+		reflect.TypeFor[MediaConvertQueueReservationPlanSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
-		reflect.TypeOf((*MediaConvertQueueReservationPlanSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MediaConvertQueueReservationPlanSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitment", GoGetter: "Commitment"},
 			_jsii_.MemberProperty{JsiiProperty: "commitmentInput", GoGetter: "CommitmentInput"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

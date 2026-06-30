@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctions
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsPar
 
 	return nil
 }
-

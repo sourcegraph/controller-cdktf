@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCeTags) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCeTags) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -122,7 +122,7 @@ func (d *jsiiProxy_DataAwsCeTags) validatePutFilterParameters(value *DataAwsCeTa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTags) validatePutSortByParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsCeTags) validatePutSortByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -180,7 +180,7 @@ func validateDataAwsCeTags_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDataAwsCeTags_IsConstructParameters(x interface{}) error {
+func validateDataAwsCeTags_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -188,7 +188,7 @@ func validateDataAwsCeTags_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsCeTags_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCeTags_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -196,7 +196,7 @@ func validateDataAwsCeTags_IsTerraformDataSourceParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsCeTags_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCeTags_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func validateDataAwsCeTags_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTags) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTags) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -311,4 +311,3 @@ func validateNewDataAwsCeTagsParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

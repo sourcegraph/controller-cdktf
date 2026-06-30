@@ -15,9 +15,9 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	BrokerInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,21 +30,21 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeControlDetails() interface{}
-	SetIncludeControlDetails(val interface{})
-	IncludeControlDetailsInput() interface{}
-	IncludeNullAndEmpty() interface{}
-	SetIncludeNullAndEmpty(val interface{})
-	IncludeNullAndEmptyInput() interface{}
-	IncludePartitionValue() interface{}
-	SetIncludePartitionValue(val interface{})
-	IncludePartitionValueInput() interface{}
-	IncludeTableAlterOperations() interface{}
-	SetIncludeTableAlterOperations(val interface{})
-	IncludeTableAlterOperationsInput() interface{}
-	IncludeTransactionDetails() interface{}
-	SetIncludeTransactionDetails(val interface{})
-	IncludeTransactionDetailsInput() interface{}
+	IncludeControlDetails() any
+	SetIncludeControlDetails(val any)
+	IncludeControlDetailsInput() any
+	IncludeNullAndEmpty() any
+	SetIncludeNullAndEmpty(val any)
+	IncludeNullAndEmptyInput() any
+	IncludePartitionValue() any
+	SetIncludePartitionValue(val any)
+	IncludePartitionValueInput() any
+	IncludeTableAlterOperations() any
+	SetIncludeTableAlterOperations(val any)
+	IncludeTableAlterOperationsInput() any
+	IncludeTransactionDetails() any
+	SetIncludeTransactionDetails(val any)
+	IncludeTransactionDetailsInput() any
 	InternalValue() *DmsEndpointKafkaSettings
 	SetInternalValue(val *DmsEndpointKafkaSettings)
 	MessageFormat() *string
@@ -53,12 +53,12 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	MessageMaxBytes() *float64
 	SetMessageMaxBytes(val *float64)
 	MessageMaxBytesInput() *float64
-	NoHexPrefix() interface{}
-	SetNoHexPrefix(val interface{})
-	NoHexPrefixInput() interface{}
-	PartitionIncludeSchemaTable() interface{}
-	SetPartitionIncludeSchemaTable(val interface{})
-	PartitionIncludeSchemaTableInput() interface{}
+	NoHexPrefix() any
+	SetNoHexPrefix(val any)
+	NoHexPrefixInput() any
+	PartitionIncludeSchemaTable() any
+	SetPartitionIncludeSchemaTable(val any)
+	PartitionIncludeSchemaTableInput() any
 	SaslPassword() *string
 	SetSaslPassword(val *string)
 	SaslPasswordInput() *string
@@ -94,7 +94,7 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	ResetTopic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) BrokerInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeControlDetails",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetail
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeControlDetailsInput",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeControlDetail
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmpty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmpty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeNullAndEmpty",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmpty(
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmptyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmptyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeNullAndEmptyInput",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeNullAndEmptyI
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePartitionValue",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValu
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePartitionValueInput",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludePartitionValu
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOperations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOperations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTableAlterOperations",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOpe
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTableAlterOperationsInput",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTableAlterOpe
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTransactionDetails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTransactionDetails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTransactionDetails",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTransactionDe
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTransactionDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) IncludeTransactionDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTransactionDetailsInput",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) MessageMaxBytesInput
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefix() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefix() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noHexPrefix",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefix() interf
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefixInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefixInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noHexPrefixInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) NoHexPrefixInput() i
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSchemaTable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSchemaTable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTable",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSche
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSchemaTableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSchemaTableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTableInput",
@@ -577,7 +577,6 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) TopicInput() *string
 	return returns
 }
 
-
 func NewDmsEndpointKafkaSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointKafkaSettingsOutputReference {
 	_init_.Initialize()
 
@@ -588,7 +587,7 @@ func NewDmsEndpointKafkaSettingsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -600,12 +599,12 @@ func NewDmsEndpointKafkaSettingsOutputReference_Override(d DmsEndpointKafkaSetti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetBroker(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetBroker(val *string) {
 	if err := j.validateSetBrokerParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetBroker(val *string
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeControlDetails(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetIncludeControlDetails(val any) {
 	if err := j.validateSetIncludeControlDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeControlDeta
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeNullAndEmpty(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetIncludeNullAndEmpty(val any) {
 	if err := j.validateSetIncludeNullAndEmptyParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeNullAndEmpt
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludePartitionValue(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetIncludePartitionValue(val any) {
 	if err := j.validateSetIncludePartitionValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludePartitionVa
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeTableAlterOperations(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetIncludeTableAlterOperations(val any) {
 	if err := j.validateSetIncludeTableAlterOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeTableAlterO
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeTransactionDetails(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetIncludeTransactionDetails(val any) {
 	if err := j.validateSetIncludeTransactionDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetIncludeTransaction
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetInternalValue(val *DmsEndpointKafkaSettings) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetInternalValue(val *DmsEndpointKafkaSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetMessageFormat(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetMessageFormat(val *string) {
 	if err := j.validateSetMessageFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetMessageFormat(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetMessageMaxBytes(val *float64) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetMessageMaxBytes(val *float64) {
 	if err := j.validateSetMessageMaxBytesParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetMessageMaxBytes(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetNoHexPrefix(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetNoHexPrefix(val any) {
 	if err := j.validateSetNoHexPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetNoHexPrefix(val in
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetPartitionIncludeSchemaTable(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetPartitionIncludeSchemaTable(val any) {
 	if err := j.validateSetPartitionIncludeSchemaTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetPartitionIncludeSc
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSaslPassword(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSaslPassword(val *string) {
 	if err := j.validateSetSaslPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSaslPassword(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSaslUsername(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSaslUsername(val *string) {
 	if err := j.validateSetSaslUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSaslUsername(val *
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSecurityProtocol(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSecurityProtocol(val *string) {
 	if err := j.validateSetSecurityProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSecurityProtocol(v
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslCaCertificateArn(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSslCaCertificateArn(val *string) {
 	if err := j.validateSetSslCaCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslCaCertificateAr
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientCertificateArn(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSslClientCertificateArn(val *string) {
 	if err := j.validateSetSslClientCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientCertifica
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientKeyArn(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSslClientKeyArn(val *string) {
 	if err := j.validateSetSslClientKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientKeyArn(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientKeyPassword(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetSslClientKeyPassword(val *string) {
 	if err := j.validateSetSslClientKeyPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSslClientKeyPasswo
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,16 +870,16 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,7 +1036,7 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1180,16 +1179,16 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ResetTopic() {
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1208,4 +1207,3 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

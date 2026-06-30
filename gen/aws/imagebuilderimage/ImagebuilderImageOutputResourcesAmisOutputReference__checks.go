@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderImageOutputResourcesAmisOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageOutputResourcesAmisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewImagebuilderImageOutputResourcesAmisOutputReferenceParameters(te
 
 	return nil
 }
-

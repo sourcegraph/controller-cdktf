@@ -12,16 +12,16 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker aws_mq_broker}.
 type MqBroker interface {
 	cdktf.TerraformResource
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
 	AuthenticationStrategy() *string
 	SetAuthenticationStrategy(val *string)
 	AuthenticationStrategyInput() *string
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	BrokerName() *string
 	SetBrokerName(val *string)
 	BrokerNameInput() *string
@@ -30,15 +30,15 @@ type MqBroker interface {
 	Configuration() MqBrokerConfigurationOutputReference
 	ConfigurationInput() *MqBrokerConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,14 +86,14 @@ type MqBroker interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	PubliclyAccessible() interface{}
-	SetPubliclyAccessible(val interface{})
-	PubliclyAccessibleInput() interface{}
+	SetProvisioners(val *[]any)
+	PubliclyAccessible() any
+	SetPubliclyAccessible(val any)
+	PubliclyAccessibleInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -112,20 +112,20 @@ type MqBroker interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MqBrokerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	User() MqBrokerUserList
-	UserInput() interface{}
+	UserInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type MqBroker interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type MqBroker interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -168,7 +168,7 @@ type MqBroker interface {
 	PutLogs(value *MqBrokerLogs)
 	PutMaintenanceWindowStartTime(value *MqBrokerMaintenanceWindowStartTime)
 	PutTimeouts(value *MqBrokerTimeouts)
-	PutUser(value interface{})
+	PutUser(value any)
 	ResetApplyImmediately()
 	ResetAuthenticationStrategy()
 	ResetAutoMinorVersionUpgrade()
@@ -189,17 +189,17 @@ type MqBroker interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MqBroker
@@ -207,8 +207,8 @@ type jsiiProxy_MqBroker struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_MqBroker) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_MqBroker) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_MqBroker) AuthenticationStrategyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_MqBroker) AutoMinorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_MqBroker) ConfigurationInput() *MqBrokerConfiguration {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_MqBroker) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MqBroker) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_MqBroker) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_MqBroker) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MqBroker) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_MqBroker) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) PubliclyAccessible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) PubliclyAccessible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessible",
@@ -637,8 +637,8 @@ func (j *jsiiProxy_MqBroker) PubliclyAccessible() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) PubliclyAccessibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) PubliclyAccessibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessibleInput",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_MqBroker) PubliclyAccessibleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -767,8 +767,8 @@ func (j *jsiiProxy_MqBroker) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MqBroker) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -797,8 +797,8 @@ func (j *jsiiProxy_MqBroker) Timeouts() MqBrokerTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -817,8 +817,8 @@ func (j *jsiiProxy_MqBroker) User() MqBrokerUserList {
 	return returns
 }
 
-func (j *jsiiProxy_MqBroker) UserInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBroker) UserInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userInput",
@@ -826,7 +826,6 @@ func (j *jsiiProxy_MqBroker) UserInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig) MqBroker {
@@ -839,7 +838,7 @@ func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -852,12 +851,12 @@ func NewMqBroker_Override(m MqBroker, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_MqBroker) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_MqBroker)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetAuthenticationStrategy(val *string) {
+func (j *jsiiProxy_MqBroker) SetAuthenticationStrategy(val *string) {
 	if err := j.validateSetAuthenticationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_MqBroker)SetAuthenticationStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_MqBroker) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_MqBroker)SetAutoMinorVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetBrokerName(val *string) {
+func (j *jsiiProxy_MqBroker) SetBrokerName(val *string) {
 	if err := j.validateSetBrokerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_MqBroker)SetBrokerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetConnection(val interface{}) {
+func (j *jsiiProxy_MqBroker) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_MqBroker)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetCount(val interface{}) {
+func (j *jsiiProxy_MqBroker) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_MqBroker)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MqBroker) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -931,7 +930,7 @@ func (j *jsiiProxy_MqBroker)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetDeploymentMode(val *string) {
+func (j *jsiiProxy_MqBroker) SetDeploymentMode(val *string) {
 	if err := j.validateSetDeploymentModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func (j *jsiiProxy_MqBroker)SetDeploymentMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetEngineType(val *string) {
+func (j *jsiiProxy_MqBroker) SetEngineType(val *string) {
 	if err := j.validateSetEngineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,7 +952,7 @@ func (j *jsiiProxy_MqBroker)SetEngineType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetEngineVersion(val *string) {
+func (j *jsiiProxy_MqBroker) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_MqBroker)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MqBroker) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -972,7 +971,7 @@ func (j *jsiiProxy_MqBroker)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetHostInstanceType(val *string) {
+func (j *jsiiProxy_MqBroker) SetHostInstanceType(val *string) {
 	if err := j.validateSetHostInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -983,7 +982,7 @@ func (j *jsiiProxy_MqBroker)SetHostInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetId(val *string) {
+func (j *jsiiProxy_MqBroker) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func (j *jsiiProxy_MqBroker)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MqBroker) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1005,7 +1004,7 @@ func (j *jsiiProxy_MqBroker)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MqBroker) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_MqBroker)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MqBroker) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1023,7 @@ func (j *jsiiProxy_MqBroker)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetPubliclyAccessible(val interface{}) {
+func (j *jsiiProxy_MqBroker) SetPubliclyAccessible(val any) {
 	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1034,7 @@ func (j *jsiiProxy_MqBroker)SetPubliclyAccessible(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_MqBroker) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_MqBroker)SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetStorageType(val *string) {
+func (j *jsiiProxy_MqBroker) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func (j *jsiiProxy_MqBroker)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_MqBroker) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1068,7 +1067,7 @@ func (j *jsiiProxy_MqBroker)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MqBroker) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1078,7 @@ func (j *jsiiProxy_MqBroker)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MqBroker)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MqBroker) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func MqBroker_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1126,7 +1125,7 @@ func MqBroker_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MqBroker_IsConstruct(x interface{}) *bool {
+func MqBroker_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqBroker_IsConstructParameters(x); err != nil {
@@ -1137,7 +1136,7 @@ func MqBroker_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func MqBroker_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MqBroker_IsTerraformElement(x interface{}) *bool {
+func MqBroker_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqBroker_IsTerraformElementParameters(x); err != nil {
@@ -1156,7 +1155,7 @@ func MqBroker_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func MqBroker_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MqBroker_IsTerraformResource(x interface{}) *bool {
+func MqBroker_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMqBroker_IsTerraformResourceParameters(x); err != nil {
@@ -1175,7 +1174,7 @@ func MqBroker_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1200,31 +1199,31 @@ func (m *jsiiProxy_MqBroker) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MqBroker) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MqBroker) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MqBroker) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MqBroker) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1240,7 +1239,7 @@ func (m *jsiiProxy_MqBroker) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1256,7 +1255,7 @@ func (m *jsiiProxy_MqBroker) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1272,7 +1271,7 @@ func (m *jsiiProxy_MqBroker) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1288,7 +1287,7 @@ func (m *jsiiProxy_MqBroker) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1304,7 +1303,7 @@ func (m *jsiiProxy_MqBroker) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1320,7 +1319,7 @@ func (m *jsiiProxy_MqBroker) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1336,7 +1335,7 @@ func (m *jsiiProxy_MqBroker) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1352,15 +1351,15 @@ func (m *jsiiProxy_MqBroker) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MqBroker) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqBroker) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1379,7 +1378,7 @@ func (m *jsiiProxy_MqBroker) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1392,7 +1391,7 @@ func (m *jsiiProxy_MqBroker) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1406,18 +1405,18 @@ func (m *jsiiProxy_MqBroker) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MqBroker) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MqBroker) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1428,7 +1427,7 @@ func (m *jsiiProxy_MqBroker) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1439,7 +1438,7 @@ func (m *jsiiProxy_MqBroker) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1450,7 +1449,7 @@ func (m *jsiiProxy_MqBroker) PutConfiguration(value *MqBrokerConfiguration) {
 	_jsii_.InvokeVoid(
 		m,
 		"putConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1461,7 +1460,7 @@ func (m *jsiiProxy_MqBroker) PutEncryptionOptions(value *MqBrokerEncryptionOptio
 	_jsii_.InvokeVoid(
 		m,
 		"putEncryptionOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1472,7 +1471,7 @@ func (m *jsiiProxy_MqBroker) PutLdapServerMetadata(value *MqBrokerLdapServerMeta
 	_jsii_.InvokeVoid(
 		m,
 		"putLdapServerMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1483,7 +1482,7 @@ func (m *jsiiProxy_MqBroker) PutLogs(value *MqBrokerLogs) {
 	_jsii_.InvokeVoid(
 		m,
 		"putLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1494,7 +1493,7 @@ func (m *jsiiProxy_MqBroker) PutMaintenanceWindowStartTime(value *MqBrokerMainte
 	_jsii_.InvokeVoid(
 		m,
 		"putMaintenanceWindowStartTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1505,18 +1504,18 @@ func (m *jsiiProxy_MqBroker) PutTimeouts(value *MqBrokerTimeouts) {
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MqBroker) PutUser(value interface{}) {
+func (m *jsiiProxy_MqBroker) PutUser(value any) {
 	if err := m.validatePutUserParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putUser",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1664,8 +1663,8 @@ func (m *jsiiProxy_MqBroker) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MqBroker) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MqBroker) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1677,8 +1676,8 @@ func (m *jsiiProxy_MqBroker) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MqBroker) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MqBroker) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1690,8 +1689,8 @@ func (m *jsiiProxy_MqBroker) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MqBroker) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqBroker) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1703,8 +1702,8 @@ func (m *jsiiProxy_MqBroker) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MqBroker) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqBroker) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1729,8 +1728,8 @@ func (m *jsiiProxy_MqBroker) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MqBroker) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MqBroker) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1741,4 +1740,3 @@ func (m *jsiiProxy_MqBroker) ToTerraform() interface{} {
 
 	return returns
 }
-

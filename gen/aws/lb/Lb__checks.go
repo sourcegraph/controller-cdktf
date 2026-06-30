@@ -19,7 +19,7 @@ func (l *jsiiProxy_Lb) validateAddMoveTargetParameters(moveTarget *string) error
 	return nil
 }
 
-func (l *jsiiProxy_Lb) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_Lb) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_Lb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_Lb) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_Lb) validatePutAccessLogsParameters(value *LbAccessLogs) erro
 	return nil
 }
 
-func (l *jsiiProxy_Lb) validatePutSubnetMappingParameters(value interface{}) error {
+func (l *jsiiProxy_Lb) validatePutSubnetMappingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateLb_GenerateConfigForImportParameters(scope constructs.Construct, im
 	return nil
 }
 
-func validateLb_IsConstructParameters(x interface{}) error {
+func validateLb_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateLb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLb_IsTerraformElementParameters(x interface{}) error {
+func validateLb_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateLb_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLb_IsTerraformResourceParameters(x interface{}) error {
+func validateLb_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateLb_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_Lb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Lb) validateSetDesyncMitigationModeParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetDropInvalidHeaderFieldsParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetDropInvalidHeaderFieldsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -423,7 +423,7 @@ func (j *jsiiProxy_Lb) validateSetDropInvalidHeaderFieldsParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetEnableCrossZoneLoadBalancingParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetEnableCrossZoneLoadBalancingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Lb) validateSetEnableCrossZoneLoadBalancingParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetEnableDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetEnableDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_Lb) validateSetEnableDeletionProtectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetEnableHttp2Parameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetEnableHttp2Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_Lb) validateSetEnableHttp2Parameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetEnableWafFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetEnableWafFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_Lb) validateSetIdleTimeoutParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetInternalParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetInternalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -579,7 +579,7 @@ func (j *jsiiProxy_Lb) validateSetNamePrefixParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetPreserveHostHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_Lb) validateSetPreserveHostHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +599,7 @@ func (j *jsiiProxy_Lb) validateSetPreserveHostHeaderParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Lb) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Lb) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -692,4 +692,3 @@ func validateNewLbParameters(scope constructs.Construct, id *string, config *LbC
 
 	return nil
 }
-

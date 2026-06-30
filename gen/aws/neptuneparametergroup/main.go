@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
-		reflect.TypeOf((*NeptuneParameterGroup)(nil)).Elem(),
+		reflect.TypeFor[NeptuneParameterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneParameterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupConfig",
-		reflect.TypeOf((*NeptuneParameterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[NeptuneParameterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameter",
-		reflect.TypeOf((*NeptuneParameterGroupParameter)(nil)).Elem(),
+		reflect.TypeFor[NeptuneParameterGroupParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterList",
-		reflect.TypeOf((*NeptuneParameterGroupParameterList)(nil)).Elem(),
+		reflect.TypeFor[NeptuneParameterGroupParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneParameterGroupParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
-		reflect.TypeOf((*NeptuneParameterGroupParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NeptuneParameterGroupParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "applyMethodInput", GoGetter: "ApplyMethodInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneParameterGroupParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

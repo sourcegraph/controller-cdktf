@@ -136,7 +136,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetClie
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewMskClusterBrokerNodeGroupInfoOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validatePutOnDemandSpecificationParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validatePutOnDemandSpecificationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validatePutSpotSpecificationParameters(value interface{}) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validatePutSpotSpecificationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewEmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference
 
 	return nil
 }
-

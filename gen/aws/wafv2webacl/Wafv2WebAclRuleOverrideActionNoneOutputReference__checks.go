@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionNoneOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionNoneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionNoneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewWafv2WebAclRuleOverrideActionNoneOutputReferenceParameters(terra
 
 	return nil
 }
-

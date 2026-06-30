@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
-		reflect.TypeOf((*IamInstanceProfile)(nil)).Elem(),
+		reflect.TypeFor[IamInstanceProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamInstanceProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,6 +85,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfileConfig",
-		reflect.TypeOf((*IamInstanceProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[IamInstanceProfileConfig](),
 	)
 }

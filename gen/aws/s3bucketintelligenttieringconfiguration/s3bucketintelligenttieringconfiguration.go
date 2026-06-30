@@ -18,15 +18,15 @@ type S3BucketIntelligentTieringConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,29 +58,29 @@ type S3BucketIntelligentTieringConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tiering() S3BucketIntelligentTieringConfigurationTieringList
-	TieringInput() interface{}
+	TieringInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type S3BucketIntelligentTieringConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type S3BucketIntelligentTieringConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,24 +118,24 @@ type S3BucketIntelligentTieringConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *S3BucketIntelligentTieringConfigurationFilter)
-	PutTiering(value interface{})
+	PutTiering(value any)
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketIntelligentTieringConfiguration
@@ -173,8 +173,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) Tiering() S3BucketIn
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TieringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TieringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tieringInput",
@@ -422,7 +422,6 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) TieringInput() inter
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_intelligent_tiering_configuration aws_s3_bucket_intelligent_tiering_configuration} Resource.
 func NewS3BucketIntelligentTieringConfiguration(scope constructs.Construct, id *string, config *S3BucketIntelligentTieringConfigurationConfig) S3BucketIntelligentTieringConfiguration {
@@ -435,7 +434,7 @@ func NewS3BucketIntelligentTieringConfiguration(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewS3BucketIntelligentTieringConfiguration_Override(s S3BucketIntelligentTi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetBucket(val *string
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetId(val *string) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetName(val *string) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration)SetStatus(val *string) {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func S3BucketIntelligentTieringConfiguration_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func S3BucketIntelligentTieringConfiguration_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketIntelligentTieringConfiguration_IsConstruct(x interface{}) *bool {
+func S3BucketIntelligentTieringConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketIntelligentTieringConfiguration_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func S3BucketIntelligentTieringConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func S3BucketIntelligentTieringConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketIntelligentTieringConfiguration_IsTerraformElement(x interface{}) *bool {
+func S3BucketIntelligentTieringConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketIntelligentTieringConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func S3BucketIntelligentTieringConfiguration_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func S3BucketIntelligentTieringConfiguration_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func S3BucketIntelligentTieringConfiguration_IsTerraformResource(x interface{}) *bool {
+func S3BucketIntelligentTieringConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketIntelligentTieringConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func S3BucketIntelligentTieringConfiguration_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetBooleanAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetNumberAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetNumberListAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetNumberMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetStringAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) GetStringMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -854,7 +853,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) InterpolationForAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,7 +913,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -925,18 +924,18 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) PutFilter(value *S3B
 	_jsii_.InvokeVoid(
 		s,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) PutTiering(value interface{}) {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) PutTiering(value any) {
 	if err := s.validatePutTieringParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTiering",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,8 +971,8 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ResetStatus() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -985,8 +984,8 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeAttributes
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -998,8 +997,8 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) SynthesizeHclAttribu
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1011,8 +1010,8 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToHclTerraform() int
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1037,8 +1036,8 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1049,4 +1048,3 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) ToTerraform() interf
 
 	return returns
 }
-

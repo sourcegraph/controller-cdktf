@@ -106,7 +106,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetAlarmNamesParamet
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetInternalValuePara
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetRollbackParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) validateSetRollbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewEcsServiceAlarmsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

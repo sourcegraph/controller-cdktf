@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcrRepository) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepository) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcrRepository) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcrRepository) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcrRepository) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EcrRepository) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepository) validatePutEncryptionConfigurationParameters(value interface{}) error {
+func (e *jsiiProxy_EcrRepository) validatePutEncryptionConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateEcrRepository_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateEcrRepository_IsConstructParameters(x interface{}) error {
+func validateEcrRepository_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateEcrRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcrRepository_IsTerraformElementParameters(x interface{}) error {
+func validateEcrRepository_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateEcrRepository_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcrRepository_IsTerraformResourceParameters(x interface{}) error {
+func validateEcrRepository_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateEcrRepository_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepository) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepository) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_EcrRepository) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepository) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepository) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -387,7 +387,7 @@ func (j *jsiiProxy_EcrRepository) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepository) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepository) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -439,7 +439,7 @@ func (j *jsiiProxy_EcrRepository) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepository) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcrRepository) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewEcrRepositoryParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

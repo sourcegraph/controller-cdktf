@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewS3BucketLoggingTargetGrantGranteeOutputReferenceParameters(terra
 
 	return nil
 }
-

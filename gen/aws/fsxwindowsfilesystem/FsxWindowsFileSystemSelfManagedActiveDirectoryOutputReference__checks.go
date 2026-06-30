@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFsxWindowsFileSystemSelfManagedActiveDirectoryOutputReferencePar
 
 	return nil
 }
-

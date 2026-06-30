@@ -19,7 +19,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CodepipelineCustomActionType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) validatePutConfigurationPropertyParameters(value interface{}) error {
+func (c *jsiiProxy_CodepipelineCustomActionType) validatePutConfigurationPropertyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateCodepipelineCustomActionType_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateCodepipelineCustomActionType_IsConstructParameters(x interface{}) error {
+func validateCodepipelineCustomActionType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateCodepipelineCustomActionType_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateCodepipelineCustomActionType_IsTerraformElementParameters(x interface{}) error {
+func validateCodepipelineCustomActionType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateCodepipelineCustomActionType_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateCodepipelineCustomActionType_IsTerraformResourceParameters(x interface{}) error {
+func validateCodepipelineCustomActionType_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) validateSetCategoryParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionType) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -430,7 +430,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) validateSetProviderNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CodepipelineCustomActionType) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -518,4 +518,3 @@ func validateNewCodepipelineCustomActionTypeParameters(scope constructs.Construc
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type BackupFrameworkControlOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type BackupFrameworkControlOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	InputParameter() BackupFrameworkControlInputParameterList
-	InputParameterInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InputParameterInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -47,7 +47,7 @@ type BackupFrameworkControlOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,13 +68,13 @@ type BackupFrameworkControlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInputParameter(value interface{})
+	PutInputParameter(value any)
 	PutScope(value *BackupFrameworkControlScope)
 	ResetInputParameter()
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_BackupFrameworkControlOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference) InputParameter() Backu
 	return returns
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference) InputParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) InputParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inputParameterInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference) InputParameterInput() 
 	return returns
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewBackupFrameworkControlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BackupFrameworkControlOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewBackupFrameworkControlOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewBackupFrameworkControlOutputReference_Override(b BackupFrameworkControlO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetName(val *string) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,21 +489,21 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupFrameworkControlOutputReference) PutInputParameter(value interface{}) {
+func (b *jsiiProxy_BackupFrameworkControlOutputReference) PutInputParameter(value any) {
 	if err := b.validatePutInputParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putInputParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -515,7 +514,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) PutScope(value *Backup
 	_jsii_.InvokeVoid(
 		b,
 		"putScope",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) ResetScope() {
 	)
 }
 
-func (b *jsiiProxy_BackupFrameworkControlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupFrameworkControlOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) ToString() *string {
 
 	return returns
 }
-

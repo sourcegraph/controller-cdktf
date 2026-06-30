@@ -16,15 +16,15 @@ type SesDomainIdentityVerification interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,26 +54,26 @@ type SesDomainIdentityVerification interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SesDomainIdentityVerificationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type SesDomainIdentityVerification interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type SesDomainIdentityVerification interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,17 +116,17 @@ type SesDomainIdentityVerification interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SesDomainIdentityVerification
@@ -154,8 +154,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) Timeouts() SesDomainIdentityVe
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesDomainIdentityVerification) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_SesDomainIdentityVerification) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource.
 func NewSesDomainIdentityVerification(scope constructs.Construct, id *string, config *SesDomainIdentityVerificationConfig) SesDomainIdentityVerification {
@@ -376,7 +375,7 @@ func NewSesDomainIdentityVerification(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewSesDomainIdentityVerification_Override(s SesDomainIdentityVerification, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetConnection(val interface{}) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetCount(val interface{}) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetDomain(val *string) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetId(val *string) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SesDomainIdentityVerification) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func SesDomainIdentityVerification_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func SesDomainIdentityVerification_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SesDomainIdentityVerification_IsConstruct(x interface{}) *bool {
+func SesDomainIdentityVerification_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesDomainIdentityVerification_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func SesDomainIdentityVerification_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func SesDomainIdentityVerification_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SesDomainIdentityVerification_IsTerraformElement(x interface{}) *bool {
+func SesDomainIdentityVerification_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesDomainIdentityVerification_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func SesDomainIdentityVerification_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func SesDomainIdentityVerification_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SesDomainIdentityVerification_IsTerraformResource(x interface{}) *bool {
+func SesDomainIdentityVerification_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesDomainIdentityVerification_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func SesDomainIdentityVerification_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (s *jsiiProxy_SesDomainIdentityVerification) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SesDomainIdentityVerification) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesDomainIdentityVerification) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (s *jsiiProxy_SesDomainIdentityVerification) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -773,7 +772,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (s *jsiiProxy_SesDomainIdentityVerification) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SesDomainIdentityVerification) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -844,7 +843,7 @@ func (s *jsiiProxy_SesDomainIdentityVerification) PutTimeouts(value *SesDomainId
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,8 +871,8 @@ func (s *jsiiProxy_SesDomainIdentityVerification) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -885,8 +884,8 @@ func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -898,8 +897,8 @@ func (s *jsiiProxy_SesDomainIdentityVerification) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -911,8 +910,8 @@ func (s *jsiiProxy_SesDomainIdentityVerification) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -937,8 +936,8 @@ func (s *jsiiProxy_SesDomainIdentityVerification) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerification) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesDomainIdentityVerification) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -949,4 +948,3 @@ func (s *jsiiProxy_SesDomainIdentityVerification) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -21,15 +21,15 @@ type ChimeVoiceConnectorTermination interface {
 	SetCidrAllowList(val *[]*string)
 	CidrAllowListInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CpsLimit() *float64
 	SetCpsLimit(val *float64)
 	CpsLimitInput() *float64
@@ -40,9 +40,9 @@ type ChimeVoiceConnectorTermination interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,15 +65,15 @@ type ChimeVoiceConnectorTermination interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VoiceConnectorId() *string
@@ -83,9 +83,9 @@ type ChimeVoiceConnectorTermination interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ChimeVoiceConnectorTermination interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ChimeVoiceConnectorTermination interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type ChimeVoiceConnectorTermination interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ChimeVoiceConnectorTermination
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) CidrAllowListInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination) VoiceConnectorIdInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector_termination aws_chime_voice_connector_termination} Resource.
 func NewChimeVoiceConnectorTermination(scope constructs.Construct, id *string, config *ChimeVoiceConnectorTerminationConfig) ChimeVoiceConnectorTermination {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewChimeVoiceConnectorTermination(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewChimeVoiceConnectorTermination_Override(c ChimeVoiceConnectorTermination
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCallingRegions(val *[]*string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetCallingRegions(val *[]*string) {
 	if err := j.validateSetCallingRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCallingRegions(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCidrAllowList(val *[]*string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetCidrAllowList(val *[]*string) {
 	if err := j.validateSetCidrAllowListParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCidrAllowList(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetConnection(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCount(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCpsLimit(val *float64) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetCpsLimit(val *float64) {
 	if err := j.validateSetCpsLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetCpsLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDefaultPhoneNumber(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetDefaultPhoneNumber(val *string) {
 	if err := j.validateSetDefaultPhoneNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDefaultPhoneNumber(val *str
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDisabled(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTermination)SetVoiceConnectorId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorTermination) SetVoiceConnectorId(val *string) {
 	if err := j.validateSetVoiceConnectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ChimeVoiceConnectorTermination_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ChimeVoiceConnectorTermination_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ChimeVoiceConnectorTermination_IsConstruct(x interface{}) *bool {
+func ChimeVoiceConnectorTermination_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorTermination_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ChimeVoiceConnectorTermination_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ChimeVoiceConnectorTermination_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorTermination_IsTerraformElement(x interface{}) *bool {
+func ChimeVoiceConnectorTermination_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorTermination_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ChimeVoiceConnectorTermination_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ChimeVoiceConnectorTermination_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorTermination_IsTerraformResource(x interface{}) *bool {
+func ChimeVoiceConnectorTermination_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorTermination_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ChimeVoiceConnectorTermination_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1015,8 +1014,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1028,8 +1027,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1041,8 +1040,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1054,8 +1053,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1080,8 +1079,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1092,4 +1091,3 @@ func (c *jsiiProxy_ChimeVoiceConnectorTermination) ToTerraform() interface{} {
 
 	return returns
 }
-

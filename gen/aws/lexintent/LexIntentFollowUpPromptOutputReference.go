@@ -12,9 +12,9 @@ type LexIntentFollowUpPromptOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type LexIntentFollowUpPromptOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type LexIntentFollowUpPromptOutputReference interface {
 	PutRejectionStatement(value *LexIntentFollowUpPromptRejectionStatement)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_LexIntentFollowUpPromptOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewLexIntentFollowUpPromptOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewLexIntentFollowUpPromptOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewLexIntentFollowUpPromptOutputReference_Override(l LexIntentFollowUpPromp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetInternalValue(val *LexIntentFollowUpPrompt) {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) SetInternalValue(val *LexIntentFollowUpPrompt) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentFollowUpPromptOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) PutPrompt(value *LexI
 	_jsii_.InvokeVoid(
 		l,
 		"putPrompt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -479,20 +478,20 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) PutRejectionStatement
 	_jsii_.InvokeVoid(
 		l,
 		"putRejectionStatement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) ToString() *string {
 
 	return returns
 }
-

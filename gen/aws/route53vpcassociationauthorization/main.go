@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
-		reflect.TypeOf((*Route53VpcAssociationAuthorization)(nil)).Elem(),
+		reflect.TypeFor[Route53VpcAssociationAuthorization](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53VpcAssociationAuthorization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorizationConfig",
-		reflect.TypeOf((*Route53VpcAssociationAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53VpcAssociationAuthorizationConfig](),
 	)
 }

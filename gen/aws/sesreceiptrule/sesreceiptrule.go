@@ -13,32 +13,32 @@ import (
 type SesReceiptRule interface {
 	cdktf.TerraformResource
 	AddHeaderAction() SesReceiptRuleAddHeaderActionList
-	AddHeaderActionInput() interface{}
+	AddHeaderActionInput() any
 	After() *string
 	SetAfter(val *string)
 	AfterInput() *string
 	Arn() *string
 	BounceAction() SesReceiptRuleBounceActionList
-	BounceActionInput() interface{}
+	BounceActionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,7 +51,7 @@ type SesReceiptRule interface {
 	SetId(val *string)
 	IdInput() *string
 	LambdaAction() SesReceiptRuleLambdaActionList
-	LambdaActionInput() interface{}
+	LambdaActionInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,11 +66,11 @@ type SesReceiptRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Recipients() *[]*string
 	SetRecipients(val *[]*string)
 	RecipientsInput() *[]*string
@@ -78,32 +78,32 @@ type SesReceiptRule interface {
 	SetRuleSetName(val *string)
 	RuleSetNameInput() *string
 	S3Action() SesReceiptRuleS3ActionList
-	S3ActionInput() interface{}
-	ScanEnabled() interface{}
-	SetScanEnabled(val interface{})
-	ScanEnabledInput() interface{}
+	S3ActionInput() any
+	ScanEnabled() any
+	SetScanEnabled(val any)
+	ScanEnabledInput() any
 	SnsAction() SesReceiptRuleSnsActionList
-	SnsActionInput() interface{}
+	SnsActionInput() any
 	StopAction() SesReceiptRuleStopActionList
-	StopActionInput() interface{}
+	StopActionInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TlsPolicy() *string
 	SetTlsPolicy(val *string)
 	TlsPolicyInput() *string
 	WorkmailAction() SesReceiptRuleWorkmailActionList
-	WorkmailActionInput() interface{}
+	WorkmailActionInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type SesReceiptRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,20 +133,20 @@ type SesReceiptRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAddHeaderAction(value interface{})
-	PutBounceAction(value interface{})
-	PutLambdaAction(value interface{})
-	PutS3Action(value interface{})
-	PutSnsAction(value interface{})
-	PutStopAction(value interface{})
-	PutWorkmailAction(value interface{})
+	PutAddHeaderAction(value any)
+	PutBounceAction(value any)
+	PutLambdaAction(value any)
+	PutS3Action(value any)
+	PutSnsAction(value any)
+	PutStopAction(value any)
+	PutWorkmailAction(value any)
 	ResetAddHeaderAction()
 	ResetAfter()
 	ResetBounceAction()
@@ -163,17 +163,17 @@ type SesReceiptRule interface {
 	ResetStopAction()
 	ResetTlsPolicy()
 	ResetWorkmailAction()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SesReceiptRule
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SesReceiptRule) AddHeaderAction() SesReceiptRuleAddHeaderActi
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) AddHeaderActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) AddHeaderActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"addHeaderActionInput",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_SesReceiptRule) BounceAction() SesReceiptRuleBounceActionList
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) BounceActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) BounceActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bounceActionInput",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_SesReceiptRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_SesReceiptRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesReceiptRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_SesReceiptRule) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_SesReceiptRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_SesReceiptRule) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_SesReceiptRule) LambdaAction() SesReceiptRuleLambdaActionList
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) LambdaActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) LambdaActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lambdaActionInput",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_SesReceiptRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SesReceiptRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_SesReceiptRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_SesReceiptRule) S3Action() SesReceiptRuleS3ActionList {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) S3ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) S3ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"s3ActionInput",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_SesReceiptRule) S3ActionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) ScanEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) ScanEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scanEnabled",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_SesReceiptRule) ScanEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) ScanEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) ScanEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scanEnabledInput",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_SesReceiptRule) SnsAction() SesReceiptRuleSnsActionList {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) SnsActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) SnsActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"snsActionInput",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_SesReceiptRule) StopAction() SesReceiptRuleStopActionList {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) StopActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) StopActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stopActionInput",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_SesReceiptRule) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SesReceiptRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_SesReceiptRule) WorkmailAction() SesReceiptRuleWorkmailAction
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRule) WorkmailActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRule) WorkmailActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"workmailActionInput",
@@ -650,7 +650,6 @@ func (j *jsiiProxy_SesReceiptRule) WorkmailActionInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource.
 func NewSesReceiptRule(scope constructs.Construct, id *string, config *SesReceiptRuleConfig) SesReceiptRule {
@@ -663,7 +662,7 @@ func NewSesReceiptRule(scope constructs.Construct, id *string, config *SesReceip
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -676,12 +675,12 @@ func NewSesReceiptRule_Override(s SesReceiptRule, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetAfter(val *string) {
+func (j *jsiiProxy_SesReceiptRule) SetAfter(val *string) {
 	if err := j.validateSetAfterParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_SesReceiptRule)SetAfter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_SesReceiptRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_SesReceiptRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetCount(val interface{}) {
+func (j *jsiiProxy_SesReceiptRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_SesReceiptRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SesReceiptRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -722,7 +721,7 @@ func (j *jsiiProxy_SesReceiptRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SesReceiptRule) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_SesReceiptRule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SesReceiptRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -741,7 +740,7 @@ func (j *jsiiProxy_SesReceiptRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetId(val *string) {
+func (j *jsiiProxy_SesReceiptRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_SesReceiptRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SesReceiptRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_SesReceiptRule)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetName(val *string) {
+func (j *jsiiProxy_SesReceiptRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_SesReceiptRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SesReceiptRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -782,7 +781,7 @@ func (j *jsiiProxy_SesReceiptRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SesReceiptRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_SesReceiptRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetRecipients(val *[]*string) {
+func (j *jsiiProxy_SesReceiptRule) SetRecipients(val *[]*string) {
 	if err := j.validateSetRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_SesReceiptRule)SetRecipients(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetRuleSetName(val *string) {
+func (j *jsiiProxy_SesReceiptRule) SetRuleSetName(val *string) {
 	if err := j.validateSetRuleSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_SesReceiptRule)SetRuleSetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetScanEnabled(val interface{}) {
+func (j *jsiiProxy_SesReceiptRule) SetScanEnabled(val any) {
 	if err := j.validateSetScanEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_SesReceiptRule)SetScanEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRule)SetTlsPolicy(val *string) {
+func (j *jsiiProxy_SesReceiptRule) SetTlsPolicy(val *string) {
 	if err := j.validateSetTlsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func SesReceiptRule_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func SesReceiptRule_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SesReceiptRule_IsConstruct(x interface{}) *bool {
+func SesReceiptRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesReceiptRule_IsConstructParameters(x); err != nil {
@@ -884,7 +883,7 @@ func SesReceiptRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func SesReceiptRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SesReceiptRule_IsTerraformElement(x interface{}) *bool {
+func SesReceiptRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesReceiptRule_IsTerraformElementParameters(x); err != nil {
@@ -903,7 +902,7 @@ func SesReceiptRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func SesReceiptRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SesReceiptRule_IsTerraformResource(x interface{}) *bool {
+func SesReceiptRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSesReceiptRule_IsTerraformResourceParameters(x); err != nil {
@@ -922,7 +921,7 @@ func SesReceiptRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -947,31 +946,31 @@ func (s *jsiiProxy_SesReceiptRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesReceiptRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (s *jsiiProxy_SesReceiptRule) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (s *jsiiProxy_SesReceiptRule) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (s *jsiiProxy_SesReceiptRule) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (s *jsiiProxy_SesReceiptRule) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (s *jsiiProxy_SesReceiptRule) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (s *jsiiProxy_SesReceiptRule) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (s *jsiiProxy_SesReceiptRule) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,15 +1098,15 @@ func (s *jsiiProxy_SesReceiptRule) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesReceiptRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1126,7 +1125,7 @@ func (s *jsiiProxy_SesReceiptRule) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (s *jsiiProxy_SesReceiptRule) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1153,18 +1152,18 @@ func (s *jsiiProxy_SesReceiptRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SesReceiptRule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (s *jsiiProxy_SesReceiptRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1186,84 +1185,84 @@ func (s *jsiiProxy_SesReceiptRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutAddHeaderAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutAddHeaderAction(value any) {
 	if err := s.validatePutAddHeaderActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAddHeaderAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutBounceAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutBounceAction(value any) {
 	if err := s.validatePutBounceActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putBounceAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutLambdaAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutLambdaAction(value any) {
 	if err := s.validatePutLambdaActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLambdaAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutS3Action(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutS3Action(value any) {
 	if err := s.validatePutS3ActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putS3Action",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutSnsAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutSnsAction(value any) {
 	if err := s.validatePutSnsActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSnsAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutStopAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutStopAction(value any) {
 	if err := s.validatePutStopActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putStopAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) PutWorkmailAction(value interface{}) {
+func (s *jsiiProxy_SesReceiptRule) PutWorkmailAction(value any) {
 	if err := s.validatePutWorkmailActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putWorkmailAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1379,8 +1378,8 @@ func (s *jsiiProxy_SesReceiptRule) ResetWorkmailAction() {
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesReceiptRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1392,8 +1391,8 @@ func (s *jsiiProxy_SesReceiptRule) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SesReceiptRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1405,8 +1404,8 @@ func (s *jsiiProxy_SesReceiptRule) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesReceiptRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1418,8 +1417,8 @@ func (s *jsiiProxy_SesReceiptRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesReceiptRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1444,8 +1443,8 @@ func (s *jsiiProxy_SesReceiptRule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SesReceiptRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1456,4 +1455,3 @@ func (s *jsiiProxy_SesReceiptRule) ToTerraform() interface{} {
 
 	return returns
 }
-

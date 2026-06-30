@@ -12,9 +12,9 @@ type EfsAccessPointPosixUserOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type EfsAccessPointPosixUserOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type EfsAccessPointPosixUserOutputReference interface {
 	ResetSecondaryGids()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_EfsAccessPointPosixUserOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) UidInput() *float64 {
 	return returns
 }
 
-
 func NewEfsAccessPointPosixUserOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EfsAccessPointPosixUserOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewEfsAccessPointPosixUserOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewEfsAccessPointPosixUserOutputReference_Override(e EfsAccessPointPosixUse
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetGid(val *float64) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetGid(val *float64) {
 	if err := j.validateSetGidParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetGid(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetInternalValue(val *EfsAccessPointPosixUser) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetInternalValue(val *EfsAccessPointPosixUser) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetSecondaryGids(val *[]*float64) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetSecondaryGids(val *[]*float64) {
 	if err := j.validateSetSecondaryGidsParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetSecondaryGids(val *
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference)SetUid(val *float64) {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) SetUid(val *float64) {
 	if err := j.validateSetUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) ResetSecondaryGids() 
 	)
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRoute53RecoveryreadinessResourceSetResourcesListParameters(terra
 
 	return nil
 }
-

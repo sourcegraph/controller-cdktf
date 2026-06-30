@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppconfigDeployment) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppconfigDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppconfigDeployment) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppconfigDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppconfigDeployment_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateAppconfigDeployment_IsConstructParameters(x interface{}) error {
+func validateAppconfigDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppconfigDeployment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppconfigDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateAppconfigDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppconfigDeployment_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateAppconfigDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateAppconfigDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (j *jsiiProxy_AppconfigDeployment) validateSetConfigurationVersionParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_AppconfigDeployment) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -398,7 +398,7 @@ func (j *jsiiProxy_AppconfigDeployment) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppconfigDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewAppconfigDeploymentParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

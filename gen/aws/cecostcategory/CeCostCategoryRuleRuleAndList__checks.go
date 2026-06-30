@@ -34,7 +34,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleAndList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCeCostCategoryRuleRuleAndListParameters(terraformResource cdktf.
 
 	return nil
 }
-

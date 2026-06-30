@@ -120,7 +120,7 @@ func (w *jsiiProxy_WafregionalWebAclRuleOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_WafregionalWebAclRuleOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -268,4 +268,3 @@ func validateNewWafregionalWebAclRuleOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

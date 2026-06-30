@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStaticWebLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksStaticWebLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStaticWebLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksStaticWebLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutCloudwatchConfigurationPar
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksStaticWebLayer_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateOpsworksStaticWebLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksStaticWebLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksStaticWebLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksStaticWebLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksStaticWebLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksStaticWebLayer_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateOpsworksStaticWebLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksStaticWebLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateOpsworksStaticWebLayer_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignElasticIpsParame
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignPublicIpsParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoHealingParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -511,7 +511,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetCustomUndeployRecipesParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -591,7 +591,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -669,7 +669,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetTagsAllParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -707,4 +707,3 @@ func validateNewOpsworksStaticWebLayerParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

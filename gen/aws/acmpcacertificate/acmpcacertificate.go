@@ -24,15 +24,15 @@ type AcmpcaCertificate interface {
 	SetCertificateSigningRequest(val *string)
 	CertificateSigningRequestInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SigningAlgorithm() *string
 	SetSigningAlgorithm(val *string)
 	SigningAlgorithmInput() *string
@@ -73,7 +73,7 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Validity() AcmpcaCertificateValidityOutputReference
@@ -82,9 +82,9 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type AcmpcaCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTemplateArn()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AcmpcaCertificate
@@ -225,8 +225,8 @@ func (j *jsiiProxy_AcmpcaCertificate) CertificateSigningRequestInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_AcmpcaCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AcmpcaCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_AcmpcaCertificate) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_AcmpcaCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AcmpcaCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_AcmpcaCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AcmpcaCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_AcmpcaCertificate) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AcmpcaCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -455,7 +455,6 @@ func (j *jsiiProxy_AcmpcaCertificate) ValidityInput() *AcmpcaCertificateValidity
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/acmpca_certificate aws_acmpca_certificate} Resource.
 func NewAcmpcaCertificate(scope constructs.Construct, id *string, config *AcmpcaCertificateConfig) AcmpcaCertificate {
 	_init_.Initialize()
@@ -467,7 +466,7 @@ func NewAcmpcaCertificate(scope constructs.Construct, id *string, config *Acmpca
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -480,12 +479,12 @@ func NewAcmpcaCertificate_Override(a AcmpcaCertificate, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetCertificateAuthorityArn(val *string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetCertificateAuthorityArn(val *string) {
 	if err := j.validateSetCertificateAuthorityArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetCertificateAuthorityArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetCertificateSigningRequest(val *string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetCertificateSigningRequest(val *string) {
 	if err := j.validateSetCertificateSigningRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetCertificateSigningRequest(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_AcmpcaCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_AcmpcaCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AcmpcaCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetId(val *string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AcmpcaCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AcmpcaCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AcmpcaCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetSigningAlgorithm(val *string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetSigningAlgorithm(val *string) {
 	if err := j.validateSetSigningAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_AcmpcaCertificate)SetSigningAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetTemplateArn(val *string) {
+func (j *jsiiProxy_AcmpcaCertificate) SetTemplateArn(val *string) {
 	if err := j.validateSetTemplateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func AcmpcaCertificate_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func AcmpcaCertificate_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AcmpcaCertificate_IsConstruct(x interface{}) *bool {
+func AcmpcaCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaCertificate_IsConstructParameters(x); err != nil {
@@ -655,7 +654,7 @@ func AcmpcaCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func AcmpcaCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AcmpcaCertificate_IsTerraformElement(x interface{}) *bool {
+func AcmpcaCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaCertificate_IsTerraformElementParameters(x); err != nil {
@@ -674,7 +673,7 @@ func AcmpcaCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func AcmpcaCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AcmpcaCertificate_IsTerraformResource(x interface{}) *bool {
+func AcmpcaCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAcmpcaCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -693,7 +692,7 @@ func AcmpcaCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,31 +717,31 @@ func (a *jsiiProxy_AcmpcaCertificate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AcmpcaCertificate) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AcmpcaCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (a *jsiiProxy_AcmpcaCertificate) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,15 +869,15 @@ func (a *jsiiProxy_AcmpcaCertificate) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -897,7 +896,7 @@ func (a *jsiiProxy_AcmpcaCertificate) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -910,7 +909,7 @@ func (a *jsiiProxy_AcmpcaCertificate) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,18 +923,18 @@ func (a *jsiiProxy_AcmpcaCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AcmpcaCertificate) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -946,7 +945,7 @@ func (a *jsiiProxy_AcmpcaCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -957,7 +956,7 @@ func (a *jsiiProxy_AcmpcaCertificate) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -968,7 +967,7 @@ func (a *jsiiProxy_AcmpcaCertificate) PutValidity(value *AcmpcaCertificateValidi
 	_jsii_.InvokeVoid(
 		a,
 		"putValidity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -996,8 +995,8 @@ func (a *jsiiProxy_AcmpcaCertificate) ResetTemplateArn() {
 	)
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AcmpcaCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1009,8 +1008,8 @@ func (a *jsiiProxy_AcmpcaCertificate) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AcmpcaCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1022,8 +1021,8 @@ func (a *jsiiProxy_AcmpcaCertificate) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1035,8 +1034,8 @@ func (a *jsiiProxy_AcmpcaCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1061,8 +1060,8 @@ func (a *jsiiProxy_AcmpcaCertificate) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AcmpcaCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AcmpcaCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1073,4 +1072,3 @@ func (a *jsiiProxy_AcmpcaCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

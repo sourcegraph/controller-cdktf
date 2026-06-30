@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
-		reflect.TypeOf((*SecretsmanagerSecret)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecret](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecret{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig",
-		reflect.TypeOf((*SecretsmanagerSecretConfig)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica",
-		reflect.TypeOf((*SecretsmanagerSecretReplica)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretReplica](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
-		reflect.TypeOf((*SecretsmanagerSecretReplicaList)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretReplicaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretReplicaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
-		reflect.TypeOf((*SecretsmanagerSecretReplicaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretReplicaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretReplicaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -174,11 +174,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRules",
-		reflect.TypeOf((*SecretsmanagerSecretRotationRules)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotationRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRulesOutputReference",
-		reflect.TypeOf((*SecretsmanagerSecretRotationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDays", GoGetter: "AutomaticallyAfterDays"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDaysInput", GoGetter: "AutomaticallyAfterDaysInput"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -28,24 +28,24 @@ type VpcIpamPool interface {
 	SetAllocationResourceTags(val *map[string]*string)
 	AllocationResourceTagsInput() *map[string]*string
 	Arn() *string
-	AutoImport() interface{}
-	SetAutoImport(val interface{})
-	AutoImportInput() interface{}
+	AutoImport() any
+	SetAutoImport(val any)
+	AutoImportInput() any
 	AwsService() *string
 	SetAwsService(val *string)
 	AwsServiceInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -83,17 +83,17 @@ type VpcIpamPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicIpSource() *string
 	SetPublicIpSource(val *string)
 	PublicIpSourceInput() *string
-	PubliclyAdvertisable() interface{}
-	SetPubliclyAdvertisable(val interface{})
-	PubliclyAdvertisableInput() interface{}
+	PubliclyAdvertisable() any
+	SetPubliclyAdvertisable(val any)
+	PubliclyAdvertisableInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceIpamPoolId() *string
 	SetSourceIpamPoolId(val *string)
 	SourceIpamPoolIdInput() *string
@@ -107,18 +107,18 @@ type VpcIpamPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VpcIpamPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -136,7 +136,7 @@ type VpcIpamPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -148,7 +148,7 @@ type VpcIpamPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,17 +174,17 @@ type VpcIpamPool interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcIpamPool
@@ -302,8 +302,8 @@ func (j *jsiiProxy_VpcIpamPool) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) AutoImport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) AutoImport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoImport",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_VpcIpamPool) AutoImport() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) AutoImportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) AutoImportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoImportInput",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_VpcIpamPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_VpcIpamPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpamPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_VpcIpamPool) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_VpcIpamPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcIpamPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_VpcIpamPool) PublicIpSourceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAdvertisable",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisable() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAdvertisableInput",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisableInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_VpcIpamPool) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcIpamPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_VpcIpamPool) Timeouts() VpcIpamPoolTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -731,7 +731,6 @@ func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolConfig) VpcIpamPool {
@@ -744,7 +743,7 @@ func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -757,12 +756,12 @@ func NewVpcIpamPool_Override(v VpcIpamPool, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAddressFamily(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetAddressFamily(val *string) {
 	if err := j.validateSetAddressFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAddressFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAllocationDefaultNetmaskLength(val *float64) {
+func (j *jsiiProxy_VpcIpamPool) SetAllocationDefaultNetmaskLength(val *float64) {
 	if err := j.validateSetAllocationDefaultNetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAllocationDefaultNetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAllocationMaxNetmaskLength(val *float64) {
+func (j *jsiiProxy_VpcIpamPool) SetAllocationMaxNetmaskLength(val *float64) {
 	if err := j.validateSetAllocationMaxNetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAllocationMaxNetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAllocationMinNetmaskLength(val *float64) {
+func (j *jsiiProxy_VpcIpamPool) SetAllocationMinNetmaskLength(val *float64) {
 	if err := j.validateSetAllocationMinNetmaskLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAllocationMinNetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAllocationResourceTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcIpamPool) SetAllocationResourceTags(val *map[string]*string) {
 	if err := j.validateSetAllocationResourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAllocationResourceTags(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAutoImport(val interface{}) {
+func (j *jsiiProxy_VpcIpamPool) SetAutoImport(val any) {
 	if err := j.validateSetAutoImportParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAutoImport(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetAwsService(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetAwsService(val *string) {
 	if err := j.validateSetAwsServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_VpcIpamPool)SetAwsService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcIpamPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_VpcIpamPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcIpamPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_VpcIpamPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcIpamPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -869,7 +868,7 @@ func (j *jsiiProxy_VpcIpamPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetDescription(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_VpcIpamPool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcIpamPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -888,7 +887,7 @@ func (j *jsiiProxy_VpcIpamPool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetId(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_VpcIpamPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetIpamScopeId(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetIpamScopeId(val *string) {
 	if err := j.validateSetIpamScopeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_VpcIpamPool)SetIpamScopeId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcIpamPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_VpcIpamPool)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetLocale(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetLocale(val *string) {
 	if err := j.validateSetLocaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_VpcIpamPool)SetLocale(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcIpamPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -940,7 +939,7 @@ func (j *jsiiProxy_VpcIpamPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcIpamPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_VpcIpamPool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetPublicIpSource(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetPublicIpSource(val *string) {
 	if err := j.validateSetPublicIpSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_VpcIpamPool)SetPublicIpSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetPubliclyAdvertisable(val interface{}) {
+func (j *jsiiProxy_VpcIpamPool) SetPubliclyAdvertisable(val any) {
 	if err := j.validateSetPubliclyAdvertisableParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_VpcIpamPool)SetPubliclyAdvertisable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetSourceIpamPoolId(val *string) {
+func (j *jsiiProxy_VpcIpamPool) SetSourceIpamPoolId(val *string) {
 	if err := j.validateSetSourceIpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_VpcIpamPool)SetSourceIpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcIpamPool) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_VpcIpamPool)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPool)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_VpcIpamPool) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func VpcIpamPool_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func VpcIpamPool_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcIpamPool_IsConstruct(x interface{}) *bool {
+func VpcIpamPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPool_IsConstructParameters(x); err != nil {
@@ -1053,7 +1052,7 @@ func VpcIpamPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func VpcIpamPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpamPool_IsTerraformElement(x interface{}) *bool {
+func VpcIpamPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPool_IsTerraformElementParameters(x); err != nil {
@@ -1072,7 +1071,7 @@ func VpcIpamPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func VpcIpamPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcIpamPool_IsTerraformResource(x interface{}) *bool {
+func VpcIpamPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcIpamPool_IsTerraformResourceParameters(x); err != nil {
@@ -1091,7 +1090,7 @@ func VpcIpamPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1116,31 +1115,31 @@ func (v *jsiiProxy_VpcIpamPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPool) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcIpamPool) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcIpamPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1156,7 +1155,7 @@ func (v *jsiiProxy_VpcIpamPool) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1172,7 +1171,7 @@ func (v *jsiiProxy_VpcIpamPool) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1188,7 +1187,7 @@ func (v *jsiiProxy_VpcIpamPool) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1204,7 +1203,7 @@ func (v *jsiiProxy_VpcIpamPool) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1220,7 +1219,7 @@ func (v *jsiiProxy_VpcIpamPool) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1236,7 +1235,7 @@ func (v *jsiiProxy_VpcIpamPool) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1252,7 +1251,7 @@ func (v *jsiiProxy_VpcIpamPool) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1268,15 +1267,15 @@ func (v *jsiiProxy_VpcIpamPool) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1295,7 +1294,7 @@ func (v *jsiiProxy_VpcIpamPool) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1308,7 +1307,7 @@ func (v *jsiiProxy_VpcIpamPool) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1322,18 +1321,18 @@ func (v *jsiiProxy_VpcIpamPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPool) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcIpamPool) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1344,7 +1343,7 @@ func (v *jsiiProxy_VpcIpamPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1355,7 +1354,7 @@ func (v *jsiiProxy_VpcIpamPool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1366,7 +1365,7 @@ func (v *jsiiProxy_VpcIpamPool) PutTimeouts(value *VpcIpamPoolTimeouts) {
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1498,8 +1497,8 @@ func (v *jsiiProxy_VpcIpamPool) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VpcIpamPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpamPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1511,8 +1510,8 @@ func (v *jsiiProxy_VpcIpamPool) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcIpamPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1524,8 +1523,8 @@ func (v *jsiiProxy_VpcIpamPool) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1537,8 +1536,8 @@ func (v *jsiiProxy_VpcIpamPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPool) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1563,8 +1562,8 @@ func (v *jsiiProxy_VpcIpamPool) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcIpamPool) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcIpamPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1575,4 +1574,3 @@ func (v *jsiiProxy_VpcIpamPool) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
-		reflect.TypeOf((*AutoscalingGroupTagA)(nil)).Elem(),
+		reflect.TypeFor[AutoscalingGroupTagA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AutoscalingGroupTagA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig",
-		reflect.TypeOf((*AutoscalingGroupTagAConfig)(nil)).Elem(),
+		reflect.TypeFor[AutoscalingGroupTagAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag",
-		reflect.TypeOf((*AutoscalingGroupTagTag)(nil)).Elem(),
+		reflect.TypeFor[AutoscalingGroupTagTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
-		reflect.TypeOf((*AutoscalingGroupTagTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AutoscalingGroupTagTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AutoscalingGroupTagTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -114,7 +114,7 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetCidrBlockParameter
 	return nil
 }
 
-func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInstanceIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -334,4 +334,3 @@ func validateNewRouteTableRouteOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

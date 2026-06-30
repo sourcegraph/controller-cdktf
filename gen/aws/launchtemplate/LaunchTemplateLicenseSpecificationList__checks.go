@@ -34,7 +34,7 @@ func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLaunchTemplateLicenseSpecificationListParameters(terraformResour
 
 	return nil
 }
-

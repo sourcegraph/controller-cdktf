@@ -18,11 +18,11 @@ type DataAwsOrganizationsOrganization interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,18 +55,18 @@ type DataAwsOrganizationsOrganization interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Roots() DataAwsOrganizationsOrganizationRootsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataAwsOrganizationsOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsOrganizationsOrganization
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -371,7 +371,6 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/organizations_organization aws_organizations_organization} Data Source.
 func NewDataAwsOrganizationsOrganization(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationConfig) DataAwsOrganizationsOrganization {
 	_init_.Initialize()
@@ -383,7 +382,7 @@ func NewDataAwsOrganizationsOrganization(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -396,12 +395,12 @@ func NewDataAwsOrganizationsOrganization_Override(d DataAwsOrganizationsOrganiza
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetId(val *string) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -470,7 +469,7 @@ func DataAwsOrganizationsOrganization_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func DataAwsOrganizationsOrganization_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsOrganizationsOrganization_IsConstruct(x interface{}) *bool {
+func DataAwsOrganizationsOrganization_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOrganizationsOrganization_IsConstructParameters(x); err != nil {
@@ -505,7 +504,7 @@ func DataAwsOrganizationsOrganization_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataAwsOrganizationsOrganization_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsOrganizationsOrganization_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsOrganizationsOrganization_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOrganizationsOrganization_IsTerraformDataSourceParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataAwsOrganizationsOrganization_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsOrganizationsOrganization_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataAwsOrganizationsOrganization_IsTerraformElement(x interface{}) *bool {
+func DataAwsOrganizationsOrganization_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOrganizationsOrganization_IsTerraformElementParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsOrganizationsOrganization_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -561,27 +560,27 @@ func DataAwsOrganizationsOrganization_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -798,8 +797,8 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -824,8 +823,8 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,4 +835,3 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganization) ToTerraform() interface{} {
 
 	return returns
 }
-

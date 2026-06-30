@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
-		reflect.TypeOf((*DataAwsInspectorRulesPackages)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInspectorRulesPackages](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arns", GoGetter: "Arns"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsInspectorRulesPackages{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,6 +57,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig",
-		reflect.TypeOf((*DataAwsInspectorRulesPackagesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsInspectorRulesPackagesConfig](),
 	)
 }

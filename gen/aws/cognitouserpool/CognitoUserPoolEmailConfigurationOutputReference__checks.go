@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCognitoUserPoolEmailConfigurationOutputReferenceParameters(terra
 
 	return nil
 }
-

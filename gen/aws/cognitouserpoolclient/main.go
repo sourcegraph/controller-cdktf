@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
-		reflect.TypeOf((*CognitoUserPoolClient)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClient](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenValidity", GoGetter: "AccessTokenValidity"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenValidityInput", GoGetter: "AccessTokenValidityInput"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeAttributes", GoGetter: "WriteAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "writeAttributesInput", GoGetter: "WriteAttributesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolClient{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfiguration",
-		reflect.TypeOf((*CognitoUserPoolClientAnalyticsConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClientAnalyticsConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
-		reflect.TypeOf((*CognitoUserPoolClientAnalyticsConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClientAnalyticsConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationArn", GoGetter: "ApplicationArn"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationArnInput", GoGetter: "ApplicationArnInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDataShared", GoGetter: "UserDataShared"},
 			_jsii_.MemberProperty{JsiiProperty: "userDataSharedInput", GoGetter: "UserDataSharedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientConfig",
-		reflect.TypeOf((*CognitoUserPoolClientConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClientConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnits",
-		reflect.TypeOf((*CognitoUserPoolClientTokenValidityUnits)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClientTokenValidityUnits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
-		reflect.TypeOf((*CognitoUserPoolClientTokenValidityUnitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoUserPoolClientTokenValidityUnitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

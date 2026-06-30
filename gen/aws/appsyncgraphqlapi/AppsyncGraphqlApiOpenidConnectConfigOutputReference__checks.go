@@ -114,7 +114,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAppsyncGraphqlApiOpenidConnectConfigOutputReferenceParameters(te
 
 	return nil
 }
-

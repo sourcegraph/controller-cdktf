@@ -13,9 +13,9 @@ type MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference interface {
 	CloudWatchLogGroupArn() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,9 +26,9 @@ type MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MwaaEnvironmentLoggingConfigurationWebserverLogs
@@ -47,7 +47,7 @@ type MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference interface {
 	ResetLogLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return returns
 }
 
-
 func NewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetInternalValue(val *MwaaEnvironmentLoggingConfigurationWebserverLogs) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetInternalValue(val *MwaaEnvironmentLoggingConfigurationWebserverLogs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetLogLevel(val *string) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetLogLevel(val *string) {
 	if err := j.validateSetLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return returns
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	)
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 
 	return returns
 }
-

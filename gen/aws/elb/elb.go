@@ -21,24 +21,24 @@ type Elb interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
-	ConnectionDraining() interface{}
-	SetConnectionDraining(val interface{})
-	ConnectionDrainingInput() interface{}
+	SetConnection(val any)
+	ConnectionDraining() any
+	SetConnectionDraining(val any)
+	ConnectionDrainingInput() any
 	ConnectionDrainingTimeout() *float64
 	SetConnectionDrainingTimeout(val *float64)
 	ConnectionDrainingTimeoutInput() *float64
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CrossZoneLoadBalancing() interface{}
-	SetCrossZoneLoadBalancing(val interface{})
-	CrossZoneLoadBalancingInput() interface{}
+	SetCount(val any)
+	CrossZoneLoadBalancing() any
+	SetCrossZoneLoadBalancing(val any)
+	CrossZoneLoadBalancingInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,15 +66,15 @@ type Elb interface {
 	Instances() *[]*string
 	SetInstances(val *[]*string)
 	InstancesInput() *[]*string
-	Internal() interface{}
-	SetInternal(val interface{})
-	InternalInput() interface{}
+	Internal() any
+	SetInternal(val any)
+	InternalInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Listener() ElbListenerList
-	ListenerInput() interface{}
+	ListenerInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -88,11 +88,11 @@ type Elb interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -112,7 +112,7 @@ type Elb interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -120,9 +120,9 @@ type Elb interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -140,7 +140,7 @@ type Elb interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -152,7 +152,7 @@ type Elb interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,7 +161,7 @@ type Elb interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *ElbAccessLogs)
 	PutHealthCheck(value *ElbHealthCheck)
-	PutListener(value interface{})
+	PutListener(value any)
 	ResetAccessLogs()
 	ResetAvailabilityZones()
 	ResetConnectionDraining()
@@ -183,17 +183,17 @@ type Elb interface {
 	ResetSubnets()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Elb
@@ -261,8 +261,8 @@ func (j *jsiiProxy_Elb) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_Elb) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) ConnectionDraining() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) ConnectionDraining() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionDraining",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_Elb) ConnectionDraining() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) ConnectionDrainingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) ConnectionDrainingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionDrainingInput",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_Elb) ConnectionDrainingTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Elb) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_Elb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_Elb) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) CrossZoneLoadBalancing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) CrossZoneLoadBalancing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"crossZoneLoadBalancing",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_Elb) CrossZoneLoadBalancing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) CrossZoneLoadBalancingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) CrossZoneLoadBalancingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"crossZoneLoadBalancingInput",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_Elb) InstancesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) Internal() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) Internal() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internal",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_Elb) Internal() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) InternalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) InternalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalInput",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_Elb) Listener() ElbListenerList {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) ListenerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) ListenerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"listenerInput",
@@ -611,8 +611,8 @@ func (j *jsiiProxy_Elb) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Elb) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_Elb) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Elb) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -751,8 +751,8 @@ func (j *jsiiProxy_Elb) TerraformGeneratorMetadata() *cdktf.TerraformProviderGen
 	return returns
 }
 
-func (j *jsiiProxy_Elb) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Elb) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -781,7 +781,6 @@ func (j *jsiiProxy_Elb) ZoneId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb aws_elb} Resource.
 func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	_init_.Initialize()
@@ -793,7 +792,7 @@ func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elb.Elb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -806,12 +805,12 @@ func NewElb_Override(e Elb, scope constructs.Construct, id *string, config *ElbC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elb.Elb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Elb)SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_Elb) SetAvailabilityZones(val *[]*string) {
 	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_Elb)SetAvailabilityZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetConnection(val interface{}) {
+func (j *jsiiProxy_Elb) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_Elb)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetConnectionDraining(val interface{}) {
+func (j *jsiiProxy_Elb) SetConnectionDraining(val any) {
 	if err := j.validateSetConnectionDrainingParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_Elb)SetConnectionDraining(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetConnectionDrainingTimeout(val *float64) {
+func (j *jsiiProxy_Elb) SetConnectionDrainingTimeout(val *float64) {
 	if err := j.validateSetConnectionDrainingTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_Elb)SetConnectionDrainingTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetCount(val interface{}) {
+func (j *jsiiProxy_Elb) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_Elb)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetCrossZoneLoadBalancing(val interface{}) {
+func (j *jsiiProxy_Elb) SetCrossZoneLoadBalancing(val any) {
 	if err := j.validateSetCrossZoneLoadBalancingParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_Elb)SetCrossZoneLoadBalancing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Elb) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -885,7 +884,7 @@ func (j *jsiiProxy_Elb)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetDesyncMitigationMode(val *string) {
+func (j *jsiiProxy_Elb) SetDesyncMitigationMode(val *string) {
 	if err := j.validateSetDesyncMitigationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_Elb)SetDesyncMitigationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Elb) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -904,7 +903,7 @@ func (j *jsiiProxy_Elb)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetId(val *string) {
+func (j *jsiiProxy_Elb) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_Elb)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetIdleTimeout(val *float64) {
+func (j *jsiiProxy_Elb) SetIdleTimeout(val *float64) {
 	if err := j.validateSetIdleTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_Elb)SetIdleTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetInstances(val *[]*string) {
+func (j *jsiiProxy_Elb) SetInstances(val *[]*string) {
 	if err := j.validateSetInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_Elb)SetInstances(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetInternal(val interface{}) {
+func (j *jsiiProxy_Elb) SetInternal(val any) {
 	if err := j.validateSetInternalParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_Elb)SetInternal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Elb) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_Elb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetName(val *string) {
+func (j *jsiiProxy_Elb) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_Elb)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetNamePrefix(val *string) {
+func (j *jsiiProxy_Elb) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_Elb)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Elb) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -989,7 +988,7 @@ func (j *jsiiProxy_Elb)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Elb) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_Elb)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_Elb) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_Elb)SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetSourceSecurityGroup(val *string) {
+func (j *jsiiProxy_Elb) SetSourceSecurityGroup(val *string) {
 	if err := j.validateSetSourceSecurityGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_Elb)SetSourceSecurityGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetSubnets(val *[]*string) {
+func (j *jsiiProxy_Elb) SetSubnets(val *[]*string) {
 	if err := j.validateSetSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_Elb)SetSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Elb) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_Elb)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Elb) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func Elb_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elb.Elb",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func Elb_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Elb_IsConstruct(x interface{}) *bool {
+func Elb_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElb_IsConstructParameters(x); err != nil {
@@ -1102,7 +1101,7 @@ func Elb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elb.Elb",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1110,7 +1109,7 @@ func Elb_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Elb_IsTerraformElement(x interface{}) *bool {
+func Elb_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElb_IsTerraformElementParameters(x); err != nil {
@@ -1121,7 +1120,7 @@ func Elb_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elb.Elb",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func Elb_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Elb_IsTerraformResource(x interface{}) *bool {
+func Elb_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElb_IsTerraformResourceParameters(x); err != nil {
@@ -1140,7 +1139,7 @@ func Elb_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elb.Elb",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1165,31 +1164,31 @@ func (e *jsiiProxy_Elb) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Elb) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Elb) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Elb) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Elb) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1205,7 +1204,7 @@ func (e *jsiiProxy_Elb) GetBooleanAttribute(terraformAttribute *string) cdktf.IR
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1221,7 +1220,7 @@ func (e *jsiiProxy_Elb) GetBooleanMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1237,7 +1236,7 @@ func (e *jsiiProxy_Elb) GetListAttribute(terraformAttribute *string) *[]*string 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1253,7 +1252,7 @@ func (e *jsiiProxy_Elb) GetNumberAttribute(terraformAttribute *string) *float64 
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1269,7 +1268,7 @@ func (e *jsiiProxy_Elb) GetNumberListAttribute(terraformAttribute *string) *[]*f
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1285,7 +1284,7 @@ func (e *jsiiProxy_Elb) GetNumberMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1301,7 +1300,7 @@ func (e *jsiiProxy_Elb) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1317,15 +1316,15 @@ func (e *jsiiProxy_Elb) GetStringMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Elb) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Elb) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1344,7 +1343,7 @@ func (e *jsiiProxy_Elb) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1357,7 +1356,7 @@ func (e *jsiiProxy_Elb) InterpolationForAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1371,18 +1370,18 @@ func (e *jsiiProxy_Elb) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Elb) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Elb) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1393,7 +1392,7 @@ func (e *jsiiProxy_Elb) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (e *jsiiProxy_Elb) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (e *jsiiProxy_Elb) PutAccessLogs(value *ElbAccessLogs) {
 	_jsii_.InvokeVoid(
 		e,
 		"putAccessLogs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1426,18 +1425,18 @@ func (e *jsiiProxy_Elb) PutHealthCheck(value *ElbHealthCheck) {
 	_jsii_.InvokeVoid(
 		e,
 		"putHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_Elb) PutListener(value interface{}) {
+func (e *jsiiProxy_Elb) PutListener(value any) {
 	if err := e.validatePutListenerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putListener",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1593,8 +1592,8 @@ func (e *jsiiProxy_Elb) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_Elb) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Elb) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1606,8 +1605,8 @@ func (e *jsiiProxy_Elb) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Elb) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Elb) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1619,8 +1618,8 @@ func (e *jsiiProxy_Elb) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Elb) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Elb) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1632,8 +1631,8 @@ func (e *jsiiProxy_Elb) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Elb) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Elb) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1658,8 +1657,8 @@ func (e *jsiiProxy_Elb) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Elb) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Elb) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1670,4 +1669,3 @@ func (e *jsiiProxy_Elb) ToTerraform() interface{} {
 
 	return returns
 }
-

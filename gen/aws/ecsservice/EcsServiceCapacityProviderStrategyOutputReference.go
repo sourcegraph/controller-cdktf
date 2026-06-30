@@ -18,9 +18,9 @@ type EcsServiceCapacityProviderStrategyOutputReference interface {
 	CapacityProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type EcsServiceCapacityProviderStrategyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type EcsServiceCapacityProviderStrategyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type EcsServiceCapacityProviderStrategyOutputReference interface {
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) CapacityPr
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) WeightInpu
 	return returns
 }
 
-
 func NewEcsServiceCapacityProviderStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcsServiceCapacityProviderStrategyOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewEcsServiceCapacityProviderStrategyOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewEcsServiceCapacityProviderStrategyOutputReference_Override(e EcsServiceC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetBase(val *float64) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetBase(val *float64) {
 	if err := j.validateSetBaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetBase(val
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetCapacityProvider(val *string) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetCapacityProvider(val *string) {
 	if err := j.validateSetCapacityProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetCapacity
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference)SetWeight(val *float64) {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) SetWeight(val *float64) {
 	if err := j.validateSetWeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) ComputeFqn
 	return returns
 }
 
-func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetBoolean
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetBoolean
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetListAtt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetNumberA
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetNumberL
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetNumberM
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetStringA
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) GetStringM
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) Interpolat
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) ResetWeigh
 	)
 }
 
-func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) ToString()
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableReplicaA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DynamodbTableReplicaA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDynamodbTableReplicaA_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDynamodbTableReplicaA_IsConstructParameters(x interface{}) error {
+func validateDynamodbTableReplicaA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDynamodbTableReplicaA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDynamodbTableReplicaA_IsTerraformElementParameters(x interface{}) error {
+func validateDynamodbTableReplicaA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDynamodbTableReplicaA_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateDynamodbTableReplicaA_IsTerraformResourceParameters(x interface{}) error {
+func validateDynamodbTableReplicaA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDynamodbTableReplicaA_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaA) validateSetPointInTimeRecoveryParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetPointInTimeRecoveryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetPointInTimeRecoveryParamete
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewDynamodbTableReplicaAParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

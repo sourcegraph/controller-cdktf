@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
-		reflect.TypeOf((*AmplifyApp)(nil)).Elem(),
+		reflect.TypeFor[AmplifyApp](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyApp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig",
-		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfig)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppAutoBranchCreationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
-		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppAutoBranchCreationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentials", GoGetter: "BasicAuthCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentialsInput", GoGetter: "BasicAuthCredentialsInput"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,15 +191,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppConfig",
-		reflect.TypeOf((*AmplifyAppConfig)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule",
-		reflect.TypeOf((*AmplifyAppCustomRule)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppCustomRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
-		reflect.TypeOf((*AmplifyAppCustomRuleList)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppCustomRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyAppCustomRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
-		reflect.TypeOf((*AmplifyAppCustomRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppCustomRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyAppCustomRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch",
-		reflect.TypeOf((*AmplifyAppProductionBranch)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppProductionBranch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
-		reflect.TypeOf((*AmplifyAppProductionBranchList)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppProductionBranchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyAppProductionBranchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -288,7 +288,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
-		reflect.TypeOf((*AmplifyAppProductionBranchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmplifyAppProductionBranchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thumbnailUrl", GoGetter: "ThumbnailUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyAppProductionBranchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

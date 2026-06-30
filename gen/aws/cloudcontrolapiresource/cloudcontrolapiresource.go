@@ -15,15 +15,15 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -68,11 +68,11 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudcontrolapiResourceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TypeName() *string
 	SetTypeName(val *string)
 	TypeNameInput() *string
@@ -83,9 +83,9 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type CloudcontrolapiResource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type CloudcontrolapiResource interface {
 	ResetSchema()
 	ResetTimeouts()
 	ResetTypeVersionId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudcontrolapiResource
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) Timeouts() CloudcontrolapiResourceTi
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudcontrolapiResource) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_CloudcontrolapiResource) TypeVersionIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource.
 func NewCloudcontrolapiResource(scope constructs.Construct, id *string, config *CloudcontrolapiResourceConfig) CloudcontrolapiResource {
 	_init_.Initialize()
@@ -471,7 +470,7 @@ func NewCloudcontrolapiResource(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewCloudcontrolapiResource_Override(c CloudcontrolapiResource, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetDesiredState(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetId(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetRoleArn(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetSchema(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetTypeName(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetTypeName(val *string) {
 	if err := j.validateSetTypeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetTypeName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetTypeVersionId(val *string) {
+func (j *jsiiProxy_CloudcontrolapiResource) SetTypeVersionId(val *string) {
 	if err := j.validateSetTypeVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func CloudcontrolapiResource_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func CloudcontrolapiResource_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudcontrolapiResource_IsConstruct(x interface{}) *bool {
+func CloudcontrolapiResource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudcontrolapiResource_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func CloudcontrolapiResource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func CloudcontrolapiResource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudcontrolapiResource_IsTerraformElement(x interface{}) *bool {
+func CloudcontrolapiResource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudcontrolapiResource_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func CloudcontrolapiResource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func CloudcontrolapiResource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudcontrolapiResource_IsTerraformResource(x interface{}) *bool {
+func CloudcontrolapiResource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudcontrolapiResource_IsTerraformResourceParameters(x); err != nil {
@@ -708,7 +707,7 @@ func CloudcontrolapiResource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,31 +732,31 @@ func (c *jsiiProxy_CloudcontrolapiResource) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudcontrolapiResource) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudcontrolapiResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,15 +884,15 @@ func (c *jsiiProxy_CloudcontrolapiResource) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -912,7 +911,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -925,7 +924,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,18 +938,18 @@ func (c *jsiiProxy_CloudcontrolapiResource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudcontrolapiResource) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -961,7 +960,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -972,7 +971,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,7 +982,7 @@ func (c *jsiiProxy_CloudcontrolapiResource) PutTimeouts(value *CloudcontrolapiRe
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (c *jsiiProxy_CloudcontrolapiResource) ResetTypeVersionId() {
 	)
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1048,8 +1047,8 @@ func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1061,8 +1060,8 @@ func (c *jsiiProxy_CloudcontrolapiResource) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1074,8 +1073,8 @@ func (c *jsiiProxy_CloudcontrolapiResource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1100,8 +1099,8 @@ func (c *jsiiProxy_CloudcontrolapiResource) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudcontrolapiResource) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudcontrolapiResource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1112,4 +1111,3 @@ func (c *jsiiProxy_CloudcontrolapiResource) ToTerraform() interface{} {
 
 	return returns
 }
-

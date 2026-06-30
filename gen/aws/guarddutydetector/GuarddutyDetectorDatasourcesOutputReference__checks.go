@@ -131,7 +131,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewGuarddutyDetectorDatasourcesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

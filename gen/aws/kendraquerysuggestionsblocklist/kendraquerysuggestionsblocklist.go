@@ -16,15 +16,15 @@ type KendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,12 +60,12 @@ type KendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QuerySuggestionsBlockListId() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -81,18 +81,18 @@ type KendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KendraQuerySuggestionsBlockListTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type KendraQuerySuggestionsBlockList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type KendraQuerySuggestionsBlockList interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type KendraQuerySuggestionsBlockList interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KendraQuerySuggestionsBlockList
@@ -177,8 +177,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) QuerySuggestionsBlockListId(
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Timeouts() KendraQuerySugges
 	return returns
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -526,7 +526,6 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TimeoutsInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
 func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, config *KendraQuerySuggestionsBlockListConfig) KendraQuerySuggestionsBlockList {
@@ -539,7 +538,7 @@ func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewKendraQuerySuggestionsBlockList_Override(k KendraQuerySuggestionsBlockLi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetConnection(val interface{}) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetCount(val interface{}) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetDescription(val *string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetId(val *string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetIndexId(val *string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetIndexId(val *string) {
 	if err := j.validateSetIndexIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetIndexId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetName(val *string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetRoleArn(val *string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetTags(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func KendraQuerySuggestionsBlockList_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func KendraQuerySuggestionsBlockList_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
+func KendraQuerySuggestionsBlockList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraQuerySuggestionsBlockList_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func KendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func KendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool {
+func KendraQuerySuggestionsBlockList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func KendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func KendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KendraQuerySuggestionsBlockList_IsTerraformResource(x interface{}) *bool {
+func KendraQuerySuggestionsBlockList_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraQuerySuggestionsBlockList_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func KendraQuerySuggestionsBlockList_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -991,7 +990,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) PutSourceS3Path(value *Kendr
 	_jsii_.InvokeVoid(
 		k,
 		"putSourceS3Path",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) PutTimeouts(value *KendraQue
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1125,8 +1124,8 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1138,8 +1137,8 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1151,8 +1150,8 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1164,8 +1163,8 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToHclTerraform() interface{}
 	return returns
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1190,8 +1189,8 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1202,4 +1201,3 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ToTerraform() interface{} {
 
 	return returns
 }
-

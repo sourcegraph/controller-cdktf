@@ -109,7 +109,7 @@ func (l *jsiiProxy_LexIntentSlotOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentSlotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentSlotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_LexIntentSlotOutputReference) validateSetDescriptionParameter
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentSlotOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentSlotOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -297,4 +297,3 @@ func validateNewLexIntentSlotOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

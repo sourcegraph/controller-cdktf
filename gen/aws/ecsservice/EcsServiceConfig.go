@@ -6,9 +6,9 @@ import (
 
 type EcsServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EcsServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#name EcsService#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// alarms block.
@@ -28,7 +28,7 @@ type EcsServiceConfig struct {
 	// capacity_provider_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
-	CapacityProviderStrategy interface{} `field:"optional" json:"capacityProviderStrategy" yaml:"capacityProviderStrategy"`
+	CapacityProviderStrategy any `field:"optional" json:"capacityProviderStrategy" yaml:"capacityProviderStrategy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#cluster EcsService#cluster}.
 	Cluster *string `field:"optional" json:"cluster" yaml:"cluster"`
 	// deployment_circuit_breaker block.
@@ -46,11 +46,11 @@ type EcsServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#desired_count EcsService#desired_count}.
 	DesiredCount *float64 `field:"optional" json:"desiredCount" yaml:"desiredCount"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}.
-	EnableEcsManagedTags interface{} `field:"optional" json:"enableEcsManagedTags" yaml:"enableEcsManagedTags"`
+	EnableEcsManagedTags any `field:"optional" json:"enableEcsManagedTags" yaml:"enableEcsManagedTags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}.
-	EnableExecuteCommand interface{} `field:"optional" json:"enableExecuteCommand" yaml:"enableExecuteCommand"`
+	EnableExecuteCommand any `field:"optional" json:"enableExecuteCommand" yaml:"enableExecuteCommand"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}.
-	ForceNewDeployment interface{} `field:"optional" json:"forceNewDeployment" yaml:"forceNewDeployment"`
+	ForceNewDeployment any `field:"optional" json:"forceNewDeployment" yaml:"forceNewDeployment"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}.
 	HealthCheckGracePeriodSeconds *float64 `field:"optional" json:"healthCheckGracePeriodSeconds" yaml:"healthCheckGracePeriodSeconds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#iam_role EcsService#iam_role}.
@@ -65,7 +65,7 @@ type EcsServiceConfig struct {
 	// load_balancer block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
-	LoadBalancer interface{} `field:"optional" json:"loadBalancer" yaml:"loadBalancer"`
+	LoadBalancer any `field:"optional" json:"loadBalancer" yaml:"loadBalancer"`
 	// network_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
@@ -73,11 +73,11 @@ type EcsServiceConfig struct {
 	// ordered_placement_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
-	OrderedPlacementStrategy interface{} `field:"optional" json:"orderedPlacementStrategy" yaml:"orderedPlacementStrategy"`
+	OrderedPlacementStrategy any `field:"optional" json:"orderedPlacementStrategy" yaml:"orderedPlacementStrategy"`
 	// placement_constraints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
-	PlacementConstraints interface{} `field:"optional" json:"placementConstraints" yaml:"placementConstraints"`
+	PlacementConstraints any `field:"optional" json:"placementConstraints" yaml:"placementConstraints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#platform_version EcsService#platform_version}.
 	PlatformVersion *string `field:"optional" json:"platformVersion" yaml:"platformVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
@@ -105,6 +105,5 @@ type EcsServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#triggers EcsService#triggers}.
 	Triggers *map[string]*string `field:"optional" json:"triggers" yaml:"triggers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
-	WaitForSteadyState interface{} `field:"optional" json:"waitForSteadyState" yaml:"waitForSteadyState"`
+	WaitForSteadyState any `field:"optional" json:"waitForSteadyState" yaml:"waitForSteadyState"`
 }
-

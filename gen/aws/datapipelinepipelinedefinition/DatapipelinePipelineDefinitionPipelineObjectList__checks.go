@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinitionPipelineObjectList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinitionPipelineObjectList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinitionPipelineObjectList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatapipelinePipelineDefinitionPipelineObjectListParameters(terra
 
 	return nil
 }
-

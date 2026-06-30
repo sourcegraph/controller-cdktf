@@ -18,9 +18,9 @@ type EmrClusterEc2AttributesOutputReference interface {
 	AdditionalSlaveSecurityGroupsInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type EmrClusterEc2AttributesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type EmrClusterEc2AttributesOutputReference interface {
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) AdditionalSlaveSecuri
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewEmrClusterEc2AttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmrClusterEc2AttributesOutputReference {
 	_init_.Initialize()
 
@@ -372,7 +371,7 @@ func NewEmrClusterEc2AttributesOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterEc2AttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -384,12 +383,12 @@ func NewEmrClusterEc2AttributesOutputReference_Override(e EmrClusterEc2Attribute
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterEc2AttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetAdditionalMasterSecurityGroups(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetAdditionalMasterSecurityGroups(val *string) {
 	if err := j.validateSetAdditionalMasterSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetAdditionalMasterSec
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetAdditionalSlaveSecurityGroups(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetAdditionalSlaveSecurityGroups(val *string) {
 	if err := j.validateSetAdditionalSlaveSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetAdditionalSlaveSecu
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetEmrManagedMasterSecurityGroup(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetEmrManagedMasterSecurityGroup(val *string) {
 	if err := j.validateSetEmrManagedMasterSecurityGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetEmrManagedMasterSec
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetEmrManagedSlaveSecurityGroup(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetEmrManagedSlaveSecurityGroup(val *string) {
 	if err := j.validateSetEmrManagedSlaveSecurityGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetEmrManagedSlaveSecu
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetInstanceProfile(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetInstanceProfile(val *string) {
 	if err := j.validateSetInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetInstanceProfile(val
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetInternalValue(val *EmrClusterEc2Attributes) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetInternalValue(val *EmrClusterEc2Attributes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetKeyName(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetKeyName(val *string) {
 	if err := j.validateSetKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetKeyName(val *string
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetServiceAccessSecurityGroup(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetServiceAccessSecurityGroup(val *string) {
 	if err := j.validateSetServiceAccessSecurityGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetServiceAccessSecuri
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetSubnetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetSubnetIds(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrClusterEc2AttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,16 +555,16 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -793,16 +792,16 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) ResetSubnetIds() {
 	)
 }
 
-func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -821,4 +820,3 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) ToString() *string {
 
 	return returns
 }
-

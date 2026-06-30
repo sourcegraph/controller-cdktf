@@ -18,11 +18,11 @@ type DataAwsGrafanaWorkspace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	DataSources() *[]*string
 	// Experimental.
@@ -60,7 +60,7 @@ type DataAwsGrafanaWorkspace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SamlConfigurationStatus() *string
 	StackSetName() *string
@@ -71,16 +71,16 @@ type DataAwsGrafanaWorkspace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,18 +107,18 @@ type DataAwsGrafanaWorkspace interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsGrafanaWorkspace
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) WorkspaceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/grafana_workspace aws_grafana_workspace} Data Source.
 func NewDataAwsGrafanaWorkspace(scope constructs.Construct, id *string, config *DataAwsGrafanaWorkspaceConfig) DataAwsGrafanaWorkspace {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewDataAwsGrafanaWorkspace(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewDataAwsGrafanaWorkspace_Override(d DataAwsGrafanaWorkspace, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetId(val *string) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func DataAwsGrafanaWorkspace_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func DataAwsGrafanaWorkspace_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool {
+func DataAwsGrafanaWorkspace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGrafanaWorkspace_IsConstructParameters(x); err != nil {
@@ -662,7 +661,7 @@ func DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsGrafanaWorkspace_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGrafanaWorkspace_IsTerraformDataSourceParameters(x); err != nil {
@@ -681,7 +680,7 @@ func DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}) *bool {
+func DataAwsGrafanaWorkspace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsGrafanaWorkspace_IsTerraformElementParameters(x); err != nil {
@@ -700,7 +699,7 @@ func DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,27 +717,27 @@ func DataAwsGrafanaWorkspace_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -924,8 +923,8 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -937,8 +936,8 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -950,8 +949,8 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -963,8 +962,8 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -989,8 +988,8 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1001,4 +1000,3 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) ToTerraform() interface{} {
 
 	return returns
 }
-

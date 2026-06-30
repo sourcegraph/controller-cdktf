@@ -12,9 +12,9 @@ type AmplifyAppCustomRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AmplifyAppCustomRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
@@ -52,7 +52,7 @@ type AmplifyAppCustomRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type AmplifyAppCustomRuleOutputReference interface {
 	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_AmplifyAppCustomRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewAmplifyAppCustomRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AmplifyAppCustomRuleOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewAmplifyAppCustomRuleOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewAmplifyAppCustomRuleOutputReference_Override(a AmplifyAppCustomRuleOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetCondition(val *string) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetCondition(val *string) {
 	if err := j.validateSetConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetCondition(val *string)
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetSource(val *string) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetStatus(val *string) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetTarget(val *string) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) ResetStatus() {
 	)
 }
 
-func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) ToString() *string {
 
 	return returns
 }
-

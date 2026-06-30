@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewLexBotAliasConversationLogsLogSettingsOutputReferenceParameters(
 
 	return nil
 }
-

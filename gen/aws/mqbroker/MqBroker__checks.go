@@ -19,7 +19,7 @@ func (m *jsiiProxy_MqBroker) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (m *jsiiProxy_MqBroker) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MqBroker) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MqBroker) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBroker) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MqBroker) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (m *jsiiProxy_MqBroker) validatePutTimeoutsParameters(value *MqBrokerTimeou
 	return nil
 }
 
-func (m *jsiiProxy_MqBroker) validatePutUserParameters(value interface{}) error {
+func (m *jsiiProxy_MqBroker) validatePutUserParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateMqBroker_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateMqBroker_IsConstructParameters(x interface{}) error {
+func validateMqBroker_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateMqBroker_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMqBroker_IsTerraformElementParameters(x interface{}) error {
+func validateMqBroker_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateMqBroker_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMqBroker_IsTerraformResourceParameters(x interface{}) error {
+func validateMqBroker_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func validateMqBroker_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (j *jsiiProxy_MqBroker) validateSetAuthenticationStrategyParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_MqBroker) validateSetBrokerNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -430,7 +430,7 @@ func (j *jsiiProxy_MqBroker) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -535,7 +535,7 @@ func (j *jsiiProxy_MqBroker) validateSetLifecycleParameters(val *cdktf.Terraform
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,7 +581,7 @@ func (j *jsiiProxy_MqBroker) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_MqBroker) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -659,4 +659,3 @@ func validateNewMqBrokerParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

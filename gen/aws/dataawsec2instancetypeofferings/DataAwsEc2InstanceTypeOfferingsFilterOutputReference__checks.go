@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2InstanceTypeOfferingsFilterOutputReferenceParameters(t
 
 	return nil
 }
-

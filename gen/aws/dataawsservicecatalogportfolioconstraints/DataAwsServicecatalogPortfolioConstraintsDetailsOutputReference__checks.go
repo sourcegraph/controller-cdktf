@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsServicecatalogPortfolioConstraintsDetailsOutputReferenceP
 
 	return nil
 }
-

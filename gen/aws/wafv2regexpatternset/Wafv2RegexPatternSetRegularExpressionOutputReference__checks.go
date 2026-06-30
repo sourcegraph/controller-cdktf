@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWafv2RegexPatternSetRegularExpressionOutputReferenceParameters(t
 
 	return nil
 }
-

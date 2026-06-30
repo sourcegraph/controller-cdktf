@@ -12,9 +12,9 @@ type AmiEbsBlockDeviceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type AmiEbsBlockDeviceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteOnTermination() interface{}
-	SetDeleteOnTermination(val interface{})
-	DeleteOnTerminationInput() interface{}
+	DeleteOnTermination() any
+	SetDeleteOnTermination(val any)
+	DeleteOnTerminationInput() any
 	DeviceName() *string
 	SetDeviceName(val *string)
 	DeviceNameInput() *string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
@@ -67,7 +67,7 @@ type AmiEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type AmiEbsBlockDeviceOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ type jsiiProxy_AmiEbsBlockDeviceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeleteOnTermination() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeleteOnTermination() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTermination",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeleteOnTermination() inter
 	return returns
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeleteOnTerminationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeleteOnTerminationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTerminationInput",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) DeviceNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) VolumeTypeInput() *string {
 	return returns
 }
 
-
 func NewAmiEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AmiEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
@@ -372,7 +371,7 @@ func NewAmiEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -384,12 +383,12 @@ func NewAmiEbsBlockDeviceOutputReference_Override(a AmiEbsBlockDeviceOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetDeleteOnTermination(val interface{}) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetDeleteOnTermination(val any) {
 	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetDeleteOnTermination(val i
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetDeviceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetEncrypted(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetIops(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetOutpostArn(val *string) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetOutpostArn(val *string) {
 	if err := j.validateSetOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetSnapshotId(val *string) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetSnapshotId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetThroughput(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetVolumeSize(val *float64) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetVolumeSize(val *float64) {
 	if err := j.validateSetVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetVolumeSize(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,16 +555,16 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -793,16 +792,16 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) ResetVolumeType() {
 	)
 }
 
-func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -821,4 +820,3 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type AutoscalingGroupInitialLifecycleHookOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type AutoscalingGroupInitialLifecycleHookOutputReference interface {
 	HeartbeatTimeout() *float64
 	SetHeartbeatTimeout(val *float64)
 	HeartbeatTimeoutInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LifecycleTransition() *string
 	SetLifecycleTransition(val *string)
 	LifecycleTransitionInput() *string
@@ -61,7 +61,7 @@ type AutoscalingGroupInitialLifecycleHookOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type AutoscalingGroupInitialLifecycleHookOutputReference interface {
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ type jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) Heartbea
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -312,7 +312,6 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) Terrafor
 	return returns
 }
 
-
 func NewAutoscalingGroupInitialLifecycleHookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutoscalingGroupInitialLifecycleHookOutputReference {
 	_init_.Initialize()
 
@@ -323,7 +322,7 @@ func NewAutoscalingGroupInitialLifecycleHookOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -335,12 +334,12 @@ func NewAutoscalingGroupInitialLifecycleHookOutputReference_Override(a Autoscali
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetDefaultResult(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetDefaultResult(val *string) {
 	if err := j.validateSetDefaultResultParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetDefaul
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetHeartbeatTimeout(val *float64) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetHeartbeatTimeout(val *float64) {
 	if err := j.validateSetHeartbeatTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetHeartb
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetLifecycleTransition(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetLifecycleTransition(val *string) {
 	if err := j.validateSetLifecycleTransitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetLifecy
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetName(v
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetNotificationMetadata(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetNotificationMetadata(val *string) {
 	if err := j.validateSetNotificationMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetNotifi
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetNotificationTargetArn(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetNotificationTargetArn(val *string) {
 	if err := j.validateSetNotificationTargetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetNotifi
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetRoleAr
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,16 +484,16 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) ComputeF
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetBoole
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetBoole
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetListA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetNumbe
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetStrin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) GetStrin
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) Interpol
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -698,16 +697,16 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) ResetRol
 	)
 }
 
-func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -726,4 +725,3 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookOutputReference) ToString
 
 	return returns
 }
-

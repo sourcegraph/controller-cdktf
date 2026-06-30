@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessCon
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerEndpointConfigurationProductionVariantsServerlessConfig
 
 	return nil
 }
-

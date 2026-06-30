@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) validateInterpolation
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) validatePutDataResourceParameters(value interface{}) error {
+func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) validatePutDataResourceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudtrailEventSelectorOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetExcludeMan
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetIncludeManagementEventsParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetIncludeManagementEventsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetIncludeMan
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -289,4 +289,3 @@ func validateNewCloudtrailEventSelectorOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

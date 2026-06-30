@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamRoleInlinePolicyList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamRoleInlinePolicyListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputRefer
 
 	return nil
 }
-

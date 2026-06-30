@@ -19,15 +19,15 @@ type DataexchangeRevision interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataSetId() *string
 	SetDataSetId(val *string)
 	DataSetIdInput() *string
@@ -57,11 +57,11 @@ type DataexchangeRevision interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RevisionId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -72,16 +72,16 @@ type DataexchangeRevision interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DataexchangeRevision interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type DataexchangeRevision interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type DataexchangeRevision interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataexchangeRevision
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataexchangeRevision) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataexchangeRevision) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DataexchangeRevision) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataexchangeRevision) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_DataexchangeRevision) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataexchangeRevision) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataexchangeRevision) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataexchangeRevision) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataexchangeRevision) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataexchangeRevision) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_DataexchangeRevision) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataexchangeRevision) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataexchangeRevision) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_DataexchangeRevision) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
 func NewDataexchangeRevision(scope constructs.Construct, id *string, config *DataexchangeRevisionConfig) DataexchangeRevision {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewDataexchangeRevision(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewDataexchangeRevision_Override(d DataexchangeRevision, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetComment(val *string) {
+func (j *jsiiProxy_DataexchangeRevision) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataexchangeRevision) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetCount(val interface{}) {
+func (j *jsiiProxy_DataexchangeRevision) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetDataSetId(val *string) {
+func (j *jsiiProxy_DataexchangeRevision) SetDataSetId(val *string) {
 	if err := j.validateSetDataSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetDataSetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataexchangeRevision) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataexchangeRevision) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetId(val *string) {
+func (j *jsiiProxy_DataexchangeRevision) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataexchangeRevision) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataexchangeRevision) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataexchangeRevision) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataexchangeRevision) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DataexchangeRevision)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataexchangeRevision)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DataexchangeRevision) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func DataexchangeRevision_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func DataexchangeRevision_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataexchangeRevision_IsConstruct(x interface{}) *bool {
+func DataexchangeRevision_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataexchangeRevision_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func DataexchangeRevision_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func DataexchangeRevision_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataexchangeRevision_IsTerraformElement(x interface{}) *bool {
+func DataexchangeRevision_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataexchangeRevision_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func DataexchangeRevision_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func DataexchangeRevision_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataexchangeRevision_IsTerraformResource(x interface{}) *bool {
+func DataexchangeRevision_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataexchangeRevision_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func DataexchangeRevision_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (d *jsiiProxy_DataexchangeRevision) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataexchangeRevision) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataexchangeRevision) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataexchangeRevision) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataexchangeRevision) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataexchangeRevision) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (d *jsiiProxy_DataexchangeRevision) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataexchangeRevision) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataexchangeRevision) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataexchangeRevision) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DataexchangeRevision) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (d *jsiiProxy_DataexchangeRevision) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataexchangeRevision) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataexchangeRevision) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (d *jsiiProxy_DataexchangeRevision) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,7 +924,7 @@ func (d *jsiiProxy_DataexchangeRevision) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -969,8 +968,8 @@ func (d *jsiiProxy_DataexchangeRevision) ResetTagsAll() {
 	)
 }
 
-func (d *jsiiProxy_DataexchangeRevision) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataexchangeRevision) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -982,8 +981,8 @@ func (d *jsiiProxy_DataexchangeRevision) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataexchangeRevision) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataexchangeRevision) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -995,8 +994,8 @@ func (d *jsiiProxy_DataexchangeRevision) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataexchangeRevision) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataexchangeRevision) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1008,8 +1007,8 @@ func (d *jsiiProxy_DataexchangeRevision) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataexchangeRevision) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataexchangeRevision) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1034,8 +1033,8 @@ func (d *jsiiProxy_DataexchangeRevision) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataexchangeRevision) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataexchangeRevision) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1046,4 +1045,3 @@ func (d *jsiiProxy_DataexchangeRevision) ToTerraform() interface{} {
 
 	return returns
 }
-

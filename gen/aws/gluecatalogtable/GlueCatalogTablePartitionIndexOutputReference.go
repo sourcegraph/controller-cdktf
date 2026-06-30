@@ -12,9 +12,9 @@ type GlueCatalogTablePartitionIndexOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type GlueCatalogTablePartitionIndexOutputReference interface {
 	SetIndexName(val *string)
 	IndexNameInput() *string
 	IndexStatus() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Keys() *[]*string
 	SetKeys(val *[]*string)
 	KeysInput() *[]*string
@@ -47,7 +47,7 @@ type GlueCatalogTablePartitionIndexOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GlueCatalogTablePartitionIndexOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GlueCatalogTablePartitionIndexOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) IndexStatus() 
 	return returns
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -203,7 +203,6 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewGlueCatalogTablePartitionIndexOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GlueCatalogTablePartitionIndexOutputReference {
 	_init_.Initialize()
 
@@ -214,7 +213,7 @@ func NewGlueCatalogTablePartitionIndexOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -226,12 +225,12 @@ func NewGlueCatalogTablePartitionIndexOutputReference_Override(g GlueCatalogTabl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetIndexName(val *string) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetIndexName(val *string) {
 	if err := j.validateSetIndexNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetIndexName(va
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetKeys(val *[]*string) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetKeys(val *[]*string) {
 	if err := j.validateSetKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetKeys(val *[]
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +296,7 @@ func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,16 +320,16 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,23 +486,23 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -522,4 +521,3 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexOutputReference) ToString() *st
 
 	return returns
 }
-

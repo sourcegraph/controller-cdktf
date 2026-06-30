@@ -98,7 +98,7 @@ func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAthenaDatabaseEncryptionConfigurationOutputReferenceParameters(t
 
 	return nil
 }
-

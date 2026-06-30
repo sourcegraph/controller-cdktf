@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringNotEqualsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionStringNotEqualsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupSelectionConditionStringNotEqualsListParameters(terraformR
 
 	return nil
 }
-

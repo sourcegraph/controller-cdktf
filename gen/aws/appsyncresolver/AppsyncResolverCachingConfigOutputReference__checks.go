@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) validateSetCachi
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppsyncResolverCachingConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

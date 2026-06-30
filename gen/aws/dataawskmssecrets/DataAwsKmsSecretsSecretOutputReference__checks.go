@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetGrantToken
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewDataAwsKmsSecretsSecretOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

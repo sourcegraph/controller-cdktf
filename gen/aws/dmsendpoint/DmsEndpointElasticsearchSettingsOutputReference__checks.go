@@ -98,7 +98,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDmsEndpointElasticsearchSettingsOutputReferenceParameters(terraf
 
 	return nil
 }
-

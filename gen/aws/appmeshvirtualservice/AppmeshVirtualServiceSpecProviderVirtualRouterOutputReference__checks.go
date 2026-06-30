@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshVirtualServiceSpecProviderVirtualRouterOutputReferencePar
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateAddMoveT
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateMoveFrom
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogPrincipalPortfolioAssociation_GenerateConfigForImport
 	return nil
 }
 
-func validateServicecatalogPrincipalPortfolioAssociation_IsConstructParameters(x interface{}) error {
+func validateServicecatalogPrincipalPortfolioAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogPrincipalPortfolioAssociation_IsConstructParameters(x
 	return nil
 }
 
-func validateServicecatalogPrincipalPortfolioAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogPrincipalPortfolioAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogPrincipalPortfolioAssociation_IsTerraformElementParam
 	return nil
 }
 
-func validateServicecatalogPrincipalPortfolioAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogPrincipalPortfolioAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetAccep
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetPrinc
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewServicecatalogPrincipalPortfolioAssociationParameters(scope cons
 
 	return nil
 }
-

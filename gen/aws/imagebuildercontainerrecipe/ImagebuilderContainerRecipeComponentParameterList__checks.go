@@ -34,7 +34,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeComponentParameterList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeComponentParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipeComponentParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewImagebuilderContainerRecipeComponentParameterListParameters(terr
 
 	return nil
 }
-

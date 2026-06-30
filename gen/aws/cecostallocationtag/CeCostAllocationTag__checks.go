@@ -19,7 +19,7 @@ func (c *jsiiProxy_CeCostAllocationTag) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CeCostAllocationTag) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CeCostAllocationTag) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CeCostAllocationTag) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCeCostAllocationTag_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateCeCostAllocationTag_IsConstructParameters(x interface{}) error {
+func validateCeCostAllocationTag_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCeCostAllocationTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCeCostAllocationTag_IsTerraformElementParameters(x interface{}) error {
+func validateCeCostAllocationTag_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCeCostAllocationTag_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateCeCostAllocationTag_IsTerraformResourceParameters(x interface{}) error {
+func validateCeCostAllocationTag_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCeCostAllocationTag_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostAllocationTag) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CeCostAllocationTag) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostAllocationTag) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_CeCostAllocationTag) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CeCostAllocationTag) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewCeCostAllocationTagParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

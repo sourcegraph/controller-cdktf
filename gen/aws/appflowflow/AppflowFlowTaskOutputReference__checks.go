@@ -90,7 +90,7 @@ func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateInterpolationForAttri
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskOutputReference) validatePutConnectorOperatorParameters(value interface{}) error {
+func (a *jsiiProxy_AppflowFlowTaskOutputReference) validatePutConnectorOperatorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTaskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_AppflowFlowTaskOutputReference) validateSetDestinationFieldPa
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTaskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewAppflowFlowTaskOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

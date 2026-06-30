@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewDynamodbTableGlobalSecondaryIndexOutputReferenceParameters(terra
 
 	return nil
 }
-

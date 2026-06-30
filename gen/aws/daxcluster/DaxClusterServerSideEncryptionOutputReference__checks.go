@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DaxClusterServerSideEncryptionOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewDaxClusterServerSideEncryptionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

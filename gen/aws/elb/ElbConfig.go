@@ -6,9 +6,9 @@ import (
 
 type ElbConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type ElbConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// listener block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#listener Elb#listener}
-	Listener interface{} `field:"required" json:"listener" yaml:"listener"`
+	Listener any `field:"required" json:"listener" yaml:"listener"`
 	// access_logs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#access_logs Elb#access_logs}
@@ -30,11 +30,11 @@ type ElbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#availability_zones Elb#availability_zones}.
 	AvailabilityZones *[]*string `field:"optional" json:"availabilityZones" yaml:"availabilityZones"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#connection_draining Elb#connection_draining}.
-	ConnectionDraining interface{} `field:"optional" json:"connectionDraining" yaml:"connectionDraining"`
+	ConnectionDraining any `field:"optional" json:"connectionDraining" yaml:"connectionDraining"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}.
 	ConnectionDrainingTimeout *float64 `field:"optional" json:"connectionDrainingTimeout" yaml:"connectionDrainingTimeout"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}.
-	CrossZoneLoadBalancing interface{} `field:"optional" json:"crossZoneLoadBalancing" yaml:"crossZoneLoadBalancing"`
+	CrossZoneLoadBalancing any `field:"optional" json:"crossZoneLoadBalancing" yaml:"crossZoneLoadBalancing"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}.
 	DesyncMitigationMode *string `field:"optional" json:"desyncMitigationMode" yaml:"desyncMitigationMode"`
 	// health_check block.
@@ -51,7 +51,7 @@ type ElbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#instances Elb#instances}.
 	Instances *[]*string `field:"optional" json:"instances" yaml:"instances"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#internal Elb#internal}.
-	Internal interface{} `field:"optional" json:"internal" yaml:"internal"`
+	Internal any `field:"optional" json:"internal" yaml:"internal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#name Elb#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#name_prefix Elb#name_prefix}.
@@ -67,4 +67,3 @@ type ElbConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elb#tags_all Elb#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

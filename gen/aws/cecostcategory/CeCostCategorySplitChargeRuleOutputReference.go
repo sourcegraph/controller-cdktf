@@ -12,9 +12,9 @@ type CeCostCategorySplitChargeRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,13 +27,13 @@ type CeCostCategorySplitChargeRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
 	Parameter() CeCostCategorySplitChargeRuleParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
@@ -51,7 +51,7 @@ type CeCostCategorySplitChargeRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,11 +72,11 @@ type CeCostCategorySplitChargeRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetParameter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_CeCostCategorySplitChargeRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) Parameter() CeC
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewCeCostCategorySplitChargeRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CeCostCategorySplitChargeRuleOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewCeCostCategorySplitChargeRuleOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewCeCostCategorySplitChargeRuleOutputReference_Override(c CeCostCategorySp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetMethod(val *string) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetMethod(val *string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetMethod(val *s
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetSource(val *string) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetSource(val *s
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetTargets(val *[]*string) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetTargets(val *[]*string) {
 	if err := j.validateSetTargetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetTargets(val *
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,21 +533,21 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) PutParameter(value interface{}) {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) PutParameter(value any) {
 	if err := c.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -560,16 +559,16 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ResetParameter(
 	)
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) ToString() *str
 
 	return returns
 }
-

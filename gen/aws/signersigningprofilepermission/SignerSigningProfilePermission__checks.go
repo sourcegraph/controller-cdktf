@@ -19,7 +19,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SignerSigningProfilePermission) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SignerSigningProfilePermission) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SignerSigningProfilePermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SignerSigningProfilePermission) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSignerSigningProfilePermission_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateSignerSigningProfilePermission_IsConstructParameters(x interface{}) error {
+func validateSignerSigningProfilePermission_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSignerSigningProfilePermission_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateSignerSigningProfilePermission_IsTerraformElementParameters(x interface{}) error {
+func validateSignerSigningProfilePermission_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSignerSigningProfilePermission_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateSignerSigningProfilePermission_IsTerraformResourceParameters(x interface{}) error {
+func validateSignerSigningProfilePermission_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission) validateSetActionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningProfilePermission) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningProfilePermission) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission) validateSetProfileVersionPara
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningProfilePermission) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SignerSigningProfilePermission) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewSignerSigningProfilePermissionParameters(scope constructs.Constr
 
 	return nil
 }
-

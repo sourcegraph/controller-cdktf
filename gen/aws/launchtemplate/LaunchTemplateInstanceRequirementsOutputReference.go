@@ -33,9 +33,9 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	BurstablePerformanceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -74,9 +74,9 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
 	SetOnDemandMaxPricePercentageOverLowestPrice(val *float64)
 	OnDemandMaxPricePercentageOverLowestPriceInput() *float64
-	RequireHibernateSupport() interface{}
-	SetRequireHibernateSupport(val interface{})
-	RequireHibernateSupportInput() interface{}
+	RequireHibernateSupport() any
+	SetRequireHibernateSupport(val any)
+	RequireHibernateSupportInput() any
 	SpotMaxPricePercentageOverLowestPrice() *float64
 	SetSpotMaxPricePercentageOverLowestPrice(val *float64)
 	SpotMaxPricePercentageOverLowestPriceInput() *float64
@@ -95,7 +95,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	ResetTotalLocalStorageGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -318,8 +318,8 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) BurstableP
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) OnDemandMa
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) RequireHibernateSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) RequireHibernateSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireHibernateSupport",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) RequireHib
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) RequireHibernateSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) RequireHibernateSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireHibernateSupportInput",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) VcpuCountI
 	return returns
 }
 
-
 func NewLaunchTemplateInstanceRequirementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsOutputReference {
 	_init_.Initialize()
 
@@ -659,7 +658,7 @@ func NewLaunchTemplateInstanceRequirementsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewLaunchTemplateInstanceRequirementsOutputReference_Override(l LaunchTempl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAcceleratorManufacturers(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetAcceleratorManufacturers(val *[]*string) {
 	if err := j.validateSetAcceleratorManufacturersParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAccelera
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAcceleratorNames(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetAcceleratorNames(val *[]*string) {
 	if err := j.validateSetAcceleratorNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAccelera
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAcceleratorTypes(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetAcceleratorTypes(val *[]*string) {
 	if err := j.validateSetAcceleratorTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAccelera
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetBareMetal(val *string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetBareMetal(val *string) {
 	if err := j.validateSetBareMetalParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetBareMeta
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetBurstablePerformance(val *string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetBurstablePerformance(val *string) {
 	if err := j.validateSetBurstablePerformanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetBurstabl
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetCpuManufacturers(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetCpuManufacturers(val *[]*string) {
 	if err := j.validateSetCpuManufacturersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetCpuManuf
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetExcludedInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetExcludedInstanceTypes(val *[]*string) {
 	if err := j.validateSetExcludedInstanceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetExcluded
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetInstanceGenerations(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetInstanceGenerations(val *[]*string) {
 	if err := j.validateSetInstanceGenerationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetInstance
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetInternalValue(val *LaunchTemplateInstanceRequirements) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetInternalValue(val *LaunchTemplateInstanceRequirements) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetLocalStorage(val *string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetLocalStorage(val *string) {
 	if err := j.validateSetLocalStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetLocalSto
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetLocalStorageTypes(val *[]*string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetLocalStorageTypes(val *[]*string) {
 	if err := j.validateSetLocalStorageTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetLocalSto
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetOnDemandMaxPricePercentageOverLowestPrice(val *float64) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetOnDemandMaxPricePercentageOverLowestPrice(val *float64) {
 	if err := j.validateSetOnDemandMaxPricePercentageOverLowestPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetOnDemand
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetRequireHibernateSupport(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetRequireHibernateSupport(val any) {
 	if err := j.validateSetRequireHibernateSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetRequireH
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetSpotMaxPricePercentageOverLowestPrice(val *float64) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetSpotMaxPricePercentageOverLowestPrice(val *float64) {
 	if err := j.validateSetSpotMaxPricePercentageOverLowestPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetSpotMaxP
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,16 +886,16 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ComputeFqn
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetStringA
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) GetStringM
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) Interpolat
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutAcceler
 	_jsii_.InvokeVoid(
 		l,
 		"putAcceleratorCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutAcceler
 	_jsii_.InvokeVoid(
 		l,
 		"putAcceleratorTotalMemoryMib",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutBaselin
 	_jsii_.InvokeVoid(
 		l,
 		"putBaselineEbsBandwidthMbps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutMemoryG
 	_jsii_.InvokeVoid(
 		l,
 		"putMemoryGibPerVcpu",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutMemoryM
 	_jsii_.InvokeVoid(
 		l,
 		"putMemoryMib",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutNetwork
 	_jsii_.InvokeVoid(
 		l,
 		"putNetworkInterfaceCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutTotalLo
 	_jsii_.InvokeVoid(
 		l,
 		"putTotalLocalStorageGb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutVcpuCou
 	_jsii_.InvokeVoid(
 		l,
 		"putVcpuCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1300,16 +1299,16 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetTotal
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1328,4 +1327,3 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ToString()
 
 	return returns
 }
-

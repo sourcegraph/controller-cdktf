@@ -90,7 +90,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateInterpolat
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validatePutClientConfigurationsParameters(value interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validatePutClientConfigurationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewFsxOpenzfsVolumeNfsExportsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

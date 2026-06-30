@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerNotebookInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerNotebookInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSagemakerNotebookInstance_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateSagemakerNotebookInstance_IsConstructParameters(x interface{}) error {
+func validateSagemakerNotebookInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSagemakerNotebookInstance_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateSagemakerNotebookInstance_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerNotebookInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSagemakerNotebookInstance_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateSagemakerNotebookInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerNotebookInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetAdditionalCodeRepositor
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetPlatformIdentifierParam
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -553,4 +553,3 @@ func validateNewSagemakerNotebookInstanceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

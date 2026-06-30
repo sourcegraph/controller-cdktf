@@ -15,9 +15,9 @@ type IotTopicRuleCloudwatchAlarmOutputReference interface {
 	AlarmNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type IotTopicRuleCloudwatchAlarmOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -52,7 +52,7 @@ type IotTopicRuleCloudwatchAlarmOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type IotTopicRuleCloudwatchAlarmOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) AlarmNameInput() 
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewIotTopicRuleCloudwatchAlarmOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotTopicRuleCloudwatchAlarmOutputReference {
 	_init_.Initialize()
 
@@ -249,7 +248,7 @@ func NewIotTopicRuleCloudwatchAlarmOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -261,12 +260,12 @@ func NewIotTopicRuleCloudwatchAlarmOutputReference_Override(i IotTopicRuleCloudw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetAlarmName(val *string) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetAlarmName(val *string) {
 	if err := j.validateSetAlarmNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetAlarmName(val *
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetRoleArn(val *st
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetStateReason(val *string) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetStateReason(val *string) {
 	if err := j.validateSetStateReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -332,7 +331,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetStateReason(val
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetStateValue(val *string) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetStateValue(val *string) {
 	if err := j.validateSetStateValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetStateValue(val 
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +353,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,16 +377,16 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,23 +543,23 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -579,4 +578,3 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEcsClusterServiceConnectDefaultsOutputReferenceParameters(terraf
 
 	return nil
 }
-

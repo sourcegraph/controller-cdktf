@@ -1,9 +1,8 @@
 package opsworksinstance
 
-
 type OpsworksInstanceRootBlockDevice struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#delete_on_termination OpsworksInstance#delete_on_termination}.
-	DeleteOnTermination interface{} `field:"optional" json:"deleteOnTermination" yaml:"deleteOnTermination"`
+	DeleteOnTermination any `field:"optional" json:"deleteOnTermination" yaml:"deleteOnTermination"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#iops OpsworksInstance#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#volume_size OpsworksInstance#volume_size}.
@@ -11,4 +10,3 @@ type OpsworksInstanceRootBlockDevice struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance#volume_type OpsworksInstance#volume_type}.
 	VolumeType *string `field:"optional" json:"volumeType" yaml:"volumeType"`
 }
-

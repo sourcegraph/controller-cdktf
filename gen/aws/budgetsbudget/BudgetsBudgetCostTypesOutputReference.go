@@ -12,9 +12,9 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,33 +27,33 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeCredit() interface{}
-	SetIncludeCredit(val interface{})
-	IncludeCreditInput() interface{}
-	IncludeDiscount() interface{}
-	SetIncludeDiscount(val interface{})
-	IncludeDiscountInput() interface{}
-	IncludeOtherSubscription() interface{}
-	SetIncludeOtherSubscription(val interface{})
-	IncludeOtherSubscriptionInput() interface{}
-	IncludeRecurring() interface{}
-	SetIncludeRecurring(val interface{})
-	IncludeRecurringInput() interface{}
-	IncludeRefund() interface{}
-	SetIncludeRefund(val interface{})
-	IncludeRefundInput() interface{}
-	IncludeSubscription() interface{}
-	SetIncludeSubscription(val interface{})
-	IncludeSubscriptionInput() interface{}
-	IncludeSupport() interface{}
-	SetIncludeSupport(val interface{})
-	IncludeSupportInput() interface{}
-	IncludeTax() interface{}
-	SetIncludeTax(val interface{})
-	IncludeTaxInput() interface{}
-	IncludeUpfront() interface{}
-	SetIncludeUpfront(val interface{})
-	IncludeUpfrontInput() interface{}
+	IncludeCredit() any
+	SetIncludeCredit(val any)
+	IncludeCreditInput() any
+	IncludeDiscount() any
+	SetIncludeDiscount(val any)
+	IncludeDiscountInput() any
+	IncludeOtherSubscription() any
+	SetIncludeOtherSubscription(val any)
+	IncludeOtherSubscriptionInput() any
+	IncludeRecurring() any
+	SetIncludeRecurring(val any)
+	IncludeRecurringInput() any
+	IncludeRefund() any
+	SetIncludeRefund(val any)
+	IncludeRefundInput() any
+	IncludeSubscription() any
+	SetIncludeSubscription(val any)
+	IncludeSubscriptionInput() any
+	IncludeSupport() any
+	SetIncludeSupport(val any)
+	IncludeSupportInput() any
+	IncludeTax() any
+	SetIncludeTax(val any)
+	IncludeTaxInput() any
+	IncludeUpfront() any
+	SetIncludeUpfront(val any)
+	IncludeUpfrontInput() any
 	InternalValue() *BudgetsBudgetCostTypes
 	SetInternalValue(val *BudgetsBudgetCostTypes)
 	// Experimental.
@@ -64,16 +64,16 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseAmortized() interface{}
-	SetUseAmortized(val interface{})
-	UseAmortizedInput() interface{}
-	UseBlended() interface{}
-	SetUseBlended(val interface{})
-	UseBlendedInput() interface{}
+	UseAmortized() any
+	SetUseAmortized(val any)
+	UseAmortizedInput() any
+	UseBlended() any
+	SetUseBlended(val any)
+	UseBlendedInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	ResetUseBlended()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ type jsiiProxy_BudgetsBudgetCostTypesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCredit() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCredit() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeCredit",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCredit() interf
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCreditInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCreditInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeCreditInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeCreditInput() i
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscount() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscount() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeDiscount",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscount() inte
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeDiscountInput",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeDiscountInput()
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscription() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscription() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeOtherSubscription",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscripti
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscriptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscriptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeOtherSubscriptionInput",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeOtherSubscripti
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRecurring",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurring() int
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRecurringInput",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRecurringInput(
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefund() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefund() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRefund",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefund() interf
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefundInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefundInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeRefundInput",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeRefundInput() i
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscription() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscription() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubscription",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscription() 
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscriptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscriptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubscriptionInput",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSubscriptionInp
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSupport",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupport() inter
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSupportInput",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeSupportInput() 
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTax() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTax() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTax",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTax() interface
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTaxInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTaxInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTaxInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeTaxInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeUpfront() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeUpfront() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeUpfront",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeUpfront() inter
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeUpfrontInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) IncludeUpfrontInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeUpfrontInput",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) TerraformResource() cd
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useAmortized",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortized() interfa
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useAmortizedInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseAmortizedInput() in
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlended() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlended() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useBlended",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlended() interface
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlendedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlendedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useBlendedInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlendedInput() inte
 	)
 	return returns
 }
-
 
 func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewBudgetsBudgetCostTypesOutputReference_Override(b BudgetsBudgetCostTypesO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeCredit(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeCredit(val any) {
 	if err := j.validateSetIncludeCreditParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeCredit(val in
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeDiscount(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeDiscount(val any) {
 	if err := j.validateSetIncludeDiscountParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeDiscount(val 
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeOtherSubscription(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeOtherSubscription(val any) {
 	if err := j.validateSetIncludeOtherSubscriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeOtherSubscrip
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeRecurring(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeRecurring(val any) {
 	if err := j.validateSetIncludeRecurringParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeRecurring(val
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeRefund(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeRefund(val any) {
 	if err := j.validateSetIncludeRefundParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeRefund(val in
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeSubscription(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeSubscription(val any) {
 	if err := j.validateSetIncludeSubscriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeSubscription(
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeSupport(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeSupport(val any) {
 	if err := j.validateSetIncludeSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeSupport(val i
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeTax(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeTax(val any) {
 	if err := j.validateSetIncludeTaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeTax(val inter
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeUpfront(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetIncludeUpfront(val any) {
 	if err := j.validateSetIncludeUpfrontParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetIncludeUpfront(val i
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetInternalValue(val *BudgetsBudgetCostTypes) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetInternalValue(val *BudgetsBudgetCostTypes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetInternalValue(val *B
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetUseAmortized(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetUseAmortized(val any) {
 	if err := j.validateSetUseAmortizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetUseAmortized(val int
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetUseBlended(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) SetUseBlended(val any) {
 	if err := j.validateSetUseBlendedParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ResetUseBlended() {
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ToString() *string {
 
 	return returns
 }
-

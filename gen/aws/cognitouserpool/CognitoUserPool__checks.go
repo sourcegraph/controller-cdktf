@@ -19,7 +19,7 @@ func (c *jsiiProxy_CognitoUserPool) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CognitoUserPool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CognitoUserPool) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CognitoUserPool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (c *jsiiProxy_CognitoUserPool) validatePutPasswordPolicyParameters(value *C
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPool) validatePutSchemaParameters(value interface{}) error {
+func (c *jsiiProxy_CognitoUserPool) validatePutSchemaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -383,7 +383,7 @@ func validateCognitoUserPool_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateCognitoUserPool_IsConstructParameters(x interface{}) error {
+func validateCognitoUserPool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -391,7 +391,7 @@ func validateCognitoUserPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCognitoUserPool_IsTerraformElementParameters(x interface{}) error {
+func validateCognitoUserPool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -399,7 +399,7 @@ func validateCognitoUserPool_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCognitoUserPool_IsTerraformResourceParameters(x interface{}) error {
+func validateCognitoUserPool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -423,7 +423,7 @@ func (j *jsiiProxy_CognitoUserPool) validateSetAutoVerifiedAttributesParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -456,7 +456,7 @@ func (j *jsiiProxy_CognitoUserPool) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -569,7 +569,7 @@ func (j *jsiiProxy_CognitoUserPool) validateSetNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CognitoUserPool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -673,4 +673,3 @@ func validateNewCognitoUserPoolParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

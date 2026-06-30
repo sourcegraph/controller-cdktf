@@ -19,7 +19,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateAddMoveTargetP
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveFromIdPara
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateKinesisanalyticsv2ApplicationSnapshot_GenerateConfigForImportParame
 	return nil
 }
 
-func validateKinesisanalyticsv2ApplicationSnapshot_IsConstructParameters(x interface{}) error {
+func validateKinesisanalyticsv2ApplicationSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateKinesisanalyticsv2ApplicationSnapshot_IsConstructParameters(x inter
 	return nil
 }
 
-func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformElementParameters(
 	return nil
 }
 
-func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformResourceParameters(x interface{}) error {
+func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetApplication
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetLifecyclePa
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewKinesisanalyticsv2ApplicationSnapshotParameters(scope constructs
 
 	return nil
 }
-

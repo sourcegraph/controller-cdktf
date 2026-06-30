@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
-		reflect.TypeOf((*RumAppMonitor)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RumAppMonitor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration",
-		reflect.TypeOf((*RumAppMonitorAppMonitorConfiguration)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitorAppMonitorConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
-		reflect.TypeOf((*RumAppMonitorAppMonitorConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitorAppMonitorConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCookies", GoGetter: "AllowCookies"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCookiesInput", GoGetter: "AllowCookiesInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,15 +151,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorConfig",
-		reflect.TypeOf((*RumAppMonitorConfig)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents",
-		reflect.TypeOf((*RumAppMonitorCustomEvents)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitorCustomEvents](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
-		reflect.TypeOf((*RumAppMonitorCustomEventsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RumAppMonitorCustomEventsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RumAppMonitorCustomEventsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

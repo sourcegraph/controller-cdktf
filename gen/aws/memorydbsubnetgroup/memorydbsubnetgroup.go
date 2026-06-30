@@ -16,15 +16,15 @@ type MemorydbSubnetGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type MemorydbSubnetGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -77,7 +77,7 @@ type MemorydbSubnetGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
@@ -85,9 +85,9 @@ type MemorydbSubnetGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type MemorydbSubnetGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type MemorydbSubnetGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type MemorydbSubnetGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MemorydbSubnetGroup
@@ -171,8 +171,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_MemorydbSubnetGroup) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbSubnetGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_MemorydbSubnetGroup) VpcId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group} Resource.
 func NewMemorydbSubnetGroup(scope constructs.Construct, id *string, config *MemorydbSubnetGroupConfig) MemorydbSubnetGroup {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewMemorydbSubnetGroup(scope constructs.Construct, id *string, config *Memo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewMemorydbSubnetGroup_Override(m MemorydbSubnetGroup, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetDescription(val *string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetId(val *string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetName(val *string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetNamePrefix(val *string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSubnetGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbSubnetGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func MemorydbSubnetGroup_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func MemorydbSubnetGroup_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MemorydbSubnetGroup_IsConstruct(x interface{}) *bool {
+func MemorydbSubnetGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSubnetGroup_IsConstructParameters(x); err != nil {
@@ -693,7 +692,7 @@ func MemorydbSubnetGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func MemorydbSubnetGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool {
+func MemorydbSubnetGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSubnetGroup_IsTerraformElementParameters(x); err != nil {
@@ -712,7 +711,7 @@ func MemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func MemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbSubnetGroup_IsTerraformResource(x interface{}) *bool {
+func MemorydbSubnetGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSubnetGroup_IsTerraformResourceParameters(x); err != nil {
@@ -731,7 +730,7 @@ func MemorydbSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,31 +755,31 @@ func (m *jsiiProxy_MemorydbSubnetGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MemorydbSubnetGroup) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorydbSubnetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,15 +907,15 @@ func (m *jsiiProxy_MemorydbSubnetGroup) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -935,7 +934,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -948,7 +947,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,18 +961,18 @@ func (m *jsiiProxy_MemorydbSubnetGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MemorydbSubnetGroup) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -984,7 +983,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -995,7 +994,7 @@ func (m *jsiiProxy_MemorydbSubnetGroup) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1055,8 +1054,8 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ResetTagsAll() {
 	)
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1068,8 +1067,8 @@ func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1081,8 +1080,8 @@ func (m *jsiiProxy_MemorydbSubnetGroup) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1094,8 +1093,8 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1120,8 +1119,8 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSubnetGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSubnetGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1132,4 +1131,3 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type InstanceEphemeralBlockDeviceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type InstanceEphemeralBlockDeviceOutputReference interface {
 	DeviceNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	NoDevice() interface{}
-	SetNoDevice(val interface{})
-	NoDeviceInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	NoDevice() any
+	SetNoDevice(val any)
+	NoDeviceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type InstanceEphemeralBlockDeviceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type InstanceEphemeralBlockDeviceOutputReference interface {
 	ResetVirtualName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_InstanceEphemeralBlockDeviceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) NoDevice() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) NoDevice() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noDevice",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) NoDevice() inter
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) NoDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) NoDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noDeviceInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) VirtualNameInput
 	return returns
 }
 
-
 func NewInstanceEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstanceEphemeralBlockDeviceOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewInstanceEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewInstanceEphemeralBlockDeviceOutputReference_Override(i InstanceEphemeral
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetDeviceName(val
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetNoDevice(val interface{}) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetNoDevice(val any) {
 	if err := j.validateSetNoDeviceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetNoDevice(val i
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference)SetVirtualName(val *string) {
+func (j *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) SetVirtualName(val *string) {
 	if err := j.validateSetVirtualNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) ResetVirtualName
 	)
 }
 
-func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) ToString() *stri
 
 	return returns
 }
-

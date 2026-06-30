@@ -19,15 +19,15 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionPeriod() *float64
 	SetRetentionPeriod(val *float64)
 	RetentionPeriodInput() *float64
@@ -74,16 +74,16 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type RedshiftserverlessSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionPeriod()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftserverlessSnapshot
@@ -193,8 +193,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -453,7 +453,6 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
 func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, config *RedshiftserverlessSnapshotConfig) RedshiftserverlessSnapshot {
 	_init_.Initialize()
@@ -465,7 +464,7 @@ func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -478,12 +477,12 @@ func NewRedshiftserverlessSnapshot_Override(r RedshiftserverlessSnapshot, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetId(val *string) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetNamespaceName(val *string) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetNamespaceName(val *string) {
 	if err := j.validateSetNamespaceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetNamespaceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetRetentionPeriod(val *float64) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetRetentionPeriod(val *float64) {
 	if err := j.validateSetRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetSnapshotName(val *string) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot) SetSnapshotName(val *string) {
 	if err := j.validateSetSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func RedshiftserverlessSnapshot_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func RedshiftserverlessSnapshot_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool {
+func RedshiftserverlessSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftserverlessSnapshot_IsConstructParameters(x); err != nil {
@@ -642,7 +641,7 @@ func RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool {
+func RedshiftserverlessSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftserverlessSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -661,7 +660,7 @@ func RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftserverlessSnapshot_IsTerraformResource(x interface{}) *bool {
+func RedshiftserverlessSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftserverlessSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -680,7 +679,7 @@ func RedshiftserverlessSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,31 +704,31 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftserverlessSnapshot) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftserverlessSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,15 +856,15 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -884,7 +883,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -897,7 +896,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,18 +910,18 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftserverlessSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -933,7 +932,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -944,7 +943,7 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,8 +971,8 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) ResetRetentionPeriod() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -985,8 +984,8 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -998,8 +997,8 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1011,8 +1010,8 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1037,8 +1036,8 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftserverlessSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1049,4 +1048,3 @@ func (r *jsiiProxy_RedshiftserverlessSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

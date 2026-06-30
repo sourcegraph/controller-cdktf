@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetCloudWatchEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetCloudWatchEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -199,7 +199,7 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetS3BucketEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) validateSetS3BucketEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurati
 
 	return nil
 }
-

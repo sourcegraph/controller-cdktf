@@ -18,9 +18,9 @@ type DatasyncTaskOptionsOutputReference interface {
 	BytesPerSecondInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -82,7 +82,7 @@ type DatasyncTaskOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type DatasyncTaskOptionsOutputReference interface {
 	ResetVerifyMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) BytesPerSecondInput() *fl
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) VerifyModeInput() *string
 	return returns
 }
 
-
 func NewDatasyncTaskOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatasyncTaskOptionsOutputReference {
 	_init_.Initialize()
 
@@ -493,7 +492,7 @@ func NewDatasyncTaskOptionsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewDatasyncTaskOptionsOutputReference_Override(d DatasyncTaskOptionsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTaskOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetAtime(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetAtime(val *string) {
 	if err := j.validateSetAtimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetAtime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetBytesPerSecond(val *float64) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetBytesPerSecond(val *float64) {
 	if err := j.validateSetBytesPerSecondParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetBytesPerSecond(val *flo
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetGid(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetGid(val *string) {
 	if err := j.validateSetGidParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetGid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetInternalValue(val *DatasyncTaskOptions) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetInternalValue(val *DatasyncTaskOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetInternalValue(val *Data
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetLogLevel(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetLogLevel(val *string) {
 	if err := j.validateSetLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetLogLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetMtime(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetMtime(val *string) {
 	if err := j.validateSetMtimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetMtime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetOverwriteMode(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetOverwriteMode(val *string) {
 	if err := j.validateSetOverwriteModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetOverwriteMode(val *stri
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPosixPermissions(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetPosixPermissions(val *string) {
 	if err := j.validateSetPosixPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPosixPermissions(val *s
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPreserveDeletedFiles(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetPreserveDeletedFiles(val *string) {
 	if err := j.validateSetPreserveDeletedFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPreserveDeletedFiles(va
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPreserveDevices(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetPreserveDevices(val *string) {
 	if err := j.validateSetPreserveDevicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPreserveDevices(val *st
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetSecurityDescriptorCopyFlags(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetSecurityDescriptorCopyFlags(val *string) {
 	if err := j.validateSetSecurityDescriptorCopyFlagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetSecurityDescriptorCopyF
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTaskQueueing(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetTaskQueueing(val *string) {
 	if err := j.validateSetTaskQueueingParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTaskQueueing(val *strin
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTransferMode(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetTransferMode(val *string) {
 	if err := j.validateSetTransferModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetTransferMode(val *strin
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetUid(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetUid(val *string) {
 	if err := j.validateSetUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetUid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetVerifyMode(val *string) {
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SetVerifyMode(val *string) {
 	if err := j.validateSetVerifyModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,16 +731,16 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1017,16 +1016,16 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ResetVerifyMode() {
 	)
 }
 
-func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ToString() *string {
 
 	return returns
 }
-

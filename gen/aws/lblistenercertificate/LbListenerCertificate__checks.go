@@ -19,7 +19,7 @@ func (l *jsiiProxy_LbListenerCertificate) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LbListenerCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LbListenerCertificate) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LbListenerCertificate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLbListenerCertificate_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateLbListenerCertificate_IsConstructParameters(x interface{}) error {
+func validateLbListenerCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLbListenerCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbListenerCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateLbListenerCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLbListenerCertificate_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateLbListenerCertificate_IsTerraformResourceParameters(x interface{}) error {
+func validateLbListenerCertificate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LbListenerCertificate) validateSetCertificateArnParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerCertificate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerCertificate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LbListenerCertificate) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LbListenerCertificate) validateSetListenerArnParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LbListenerCertificate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewLbListenerCertificateParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

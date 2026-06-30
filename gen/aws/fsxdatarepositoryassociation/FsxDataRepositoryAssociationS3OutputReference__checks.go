@@ -120,7 +120,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewFsxDataRepositoryAssociationS3OutputReferenceParameters(terrafor
 
 	return nil
 }
-

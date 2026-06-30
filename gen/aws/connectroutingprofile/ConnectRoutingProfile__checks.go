@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConnectRoutingProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConnectRoutingProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) validatePutMediaConcurrenciesParameters(value interface{}) error {
+func (c *jsiiProxy_ConnectRoutingProfile) validatePutMediaConcurrenciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (c *jsiiProxy_ConnectRoutingProfile) validatePutMediaConcurrenciesParameter
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfile) validatePutQueueConfigsParameters(value interface{}) error {
+func (c *jsiiProxy_ConnectRoutingProfile) validatePutQueueConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateConnectRoutingProfile_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateConnectRoutingProfile_IsConstructParameters(x interface{}) error {
+func validateConnectRoutingProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateConnectRoutingProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateConnectRoutingProfile_IsTerraformElementParameters(x interface{}) error {
+func validateConnectRoutingProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateConnectRoutingProfile_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateConnectRoutingProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateConnectRoutingProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateConnectRoutingProfile_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -444,7 +444,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConnectRoutingProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -524,4 +524,3 @@ func validateNewConnectRoutingProfileParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

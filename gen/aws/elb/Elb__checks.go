@@ -19,7 +19,7 @@ func (e *jsiiProxy_Elb) validateAddMoveTargetParameters(moveTarget *string) erro
 	return nil
 }
 
-func (e *jsiiProxy_Elb) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Elb) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Elb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Elb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Elb) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (e *jsiiProxy_Elb) validatePutHealthCheckParameters(value *ElbHealthCheck) 
 	return nil
 }
 
-func (e *jsiiProxy_Elb) validatePutListenerParameters(value interface{}) error {
+func (e *jsiiProxy_Elb) validatePutListenerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateElb_GenerateConfigForImportParameters(scope constructs.Construct, i
 	return nil
 }
 
-func validateElb_IsConstructParameters(x interface{}) error {
+func validateElb_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateElb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateElb_IsTerraformElementParameters(x interface{}) error {
+func validateElb_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateElb_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateElb_IsTerraformResourceParameters(x interface{}) error {
+func validateElb_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_Elb) validateSetAvailabilityZonesParameters(val *[]*string) e
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Elb) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_Elb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetConnectionDrainingParameters(val interface{}) error {
+func (j *jsiiProxy_Elb) validateSetConnectionDrainingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Elb) validateSetConnectionDrainingTimeoutParameters(val *floa
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Elb) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_Elb) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetCrossZoneLoadBalancingParameters(val interface{}) error {
+func (j *jsiiProxy_Elb) validateSetCrossZoneLoadBalancingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -475,7 +475,7 @@ func (j *jsiiProxy_Elb) validateSetInstancesParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetInternalParameters(val interface{}) error {
+func (j *jsiiProxy_Elb) validateSetInternalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_Elb) validateSetNamePrefixParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Elb) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Elb) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -623,4 +623,3 @@ func validateNewElbParameters(scope constructs.Construct, id *string, config *El
 
 	return nil
 }
-

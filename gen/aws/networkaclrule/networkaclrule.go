@@ -18,22 +18,22 @@ type NetworkAclRule interface {
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Egress() interface{}
-	SetEgress(val interface{})
-	EgressInput() interface{}
+	Egress() any
+	SetEgress(val any)
+	EgressInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,11 +74,11 @@ type NetworkAclRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleAction() *string
 	SetRuleAction(val *string)
 	RuleActionInput() *string
@@ -88,7 +88,7 @@ type NetworkAclRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ToPort() *float64
@@ -98,9 +98,9 @@ type NetworkAclRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type NetworkAclRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type NetworkAclRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type NetworkAclRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetToPort()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkAclRule
@@ -196,8 +196,8 @@ func (j *jsiiProxy_NetworkAclRule) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_NetworkAclRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkAclRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_NetworkAclRule) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_NetworkAclRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) Egress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclRule) Egress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egress",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_NetworkAclRule) Egress() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) EgressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclRule) EgressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egressInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_NetworkAclRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkAclRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_NetworkAclRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkAclRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_NetworkAclRule) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAclRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkAclRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_NetworkAclRule) ToPortInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource.
 func NewNetworkAclRule(scope constructs.Construct, id *string, config *NetworkAclRuleConfig) NetworkAclRule {
 	_init_.Initialize()
@@ -578,7 +577,7 @@ func NewNetworkAclRule(scope constructs.Construct, id *string, config *NetworkAc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -591,12 +590,12 @@ func NewNetworkAclRule_Override(n NetworkAclRule, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetCidrBlock(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_NetworkAclRule)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkAclRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_NetworkAclRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkAclRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_NetworkAclRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkAclRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_NetworkAclRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetEgress(val interface{}) {
+func (j *jsiiProxy_NetworkAclRule) SetEgress(val any) {
 	if err := j.validateSetEgressParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_NetworkAclRule)SetEgress(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkAclRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_NetworkAclRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetFromPort(val *float64) {
+func (j *jsiiProxy_NetworkAclRule) SetFromPort(val *float64) {
 	if err := j.validateSetFromPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_NetworkAclRule)SetFromPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetIcmpCode(val *float64) {
+func (j *jsiiProxy_NetworkAclRule) SetIcmpCode(val *float64) {
 	if err := j.validateSetIcmpCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_NetworkAclRule)SetIcmpCode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetIcmpType(val *float64) {
+func (j *jsiiProxy_NetworkAclRule) SetIcmpType(val *float64) {
 	if err := j.validateSetIcmpTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_NetworkAclRule)SetIcmpType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetId(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_NetworkAclRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_NetworkAclRule)SetIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkAclRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_NetworkAclRule)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetNetworkAclId(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetNetworkAclId(val *string) {
 	if err := j.validateSetNetworkAclIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_NetworkAclRule)SetNetworkAclId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetProtocol(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_NetworkAclRule)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkAclRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_NetworkAclRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkAclRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_NetworkAclRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetRuleAction(val *string) {
+func (j *jsiiProxy_NetworkAclRule) SetRuleAction(val *string) {
 	if err := j.validateSetRuleActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_NetworkAclRule)SetRuleAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetRuleNumber(val *float64) {
+func (j *jsiiProxy_NetworkAclRule) SetRuleNumber(val *float64) {
 	if err := j.validateSetRuleNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_NetworkAclRule)SetRuleNumber(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAclRule)SetToPort(val *float64) {
+func (j *jsiiProxy_NetworkAclRule) SetToPort(val *float64) {
 	if err := j.validateSetToPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func NetworkAclRule_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func NetworkAclRule_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkAclRule_IsConstruct(x interface{}) *bool {
+func NetworkAclRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkAclRule_IsConstructParameters(x); err != nil {
@@ -843,7 +842,7 @@ func NetworkAclRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func NetworkAclRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkAclRule_IsTerraformElement(x interface{}) *bool {
+func NetworkAclRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkAclRule_IsTerraformElementParameters(x); err != nil {
@@ -862,7 +861,7 @@ func NetworkAclRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func NetworkAclRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkAclRule_IsTerraformResource(x interface{}) *bool {
+func NetworkAclRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkAclRule_IsTerraformResourceParameters(x); err != nil {
@@ -881,7 +880,7 @@ func NetworkAclRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -906,31 +905,31 @@ func (n *jsiiProxy_NetworkAclRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkAclRule) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkAclRule) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkAclRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkAclRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (n *jsiiProxy_NetworkAclRule) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (n *jsiiProxy_NetworkAclRule) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (n *jsiiProxy_NetworkAclRule) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (n *jsiiProxy_NetworkAclRule) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (n *jsiiProxy_NetworkAclRule) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (n *jsiiProxy_NetworkAclRule) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (n *jsiiProxy_NetworkAclRule) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,15 +1057,15 @@ func (n *jsiiProxy_NetworkAclRule) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkAclRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1085,7 +1084,7 @@ func (n *jsiiProxy_NetworkAclRule) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (n *jsiiProxy_NetworkAclRule) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,18 +1111,18 @@ func (n *jsiiProxy_NetworkAclRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkAclRule) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkAclRule) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (n *jsiiProxy_NetworkAclRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (n *jsiiProxy_NetworkAclRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1221,8 +1220,8 @@ func (n *jsiiProxy_NetworkAclRule) ResetToPort() {
 	)
 }
 
-func (n *jsiiProxy_NetworkAclRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkAclRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1234,8 +1233,8 @@ func (n *jsiiProxy_NetworkAclRule) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkAclRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1247,8 +1246,8 @@ func (n *jsiiProxy_NetworkAclRule) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkAclRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1260,8 +1259,8 @@ func (n *jsiiProxy_NetworkAclRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclRule) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkAclRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1286,8 +1285,8 @@ func (n *jsiiProxy_NetworkAclRule) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclRule) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkAclRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1298,4 +1297,3 @@ func (n *jsiiProxy_NetworkAclRule) ToTerraform() interface{} {
 
 	return returns
 }
-

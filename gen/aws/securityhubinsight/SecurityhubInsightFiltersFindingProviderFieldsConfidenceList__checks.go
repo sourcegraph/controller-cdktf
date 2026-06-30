@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList)
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersFindingProviderFieldsConfidenceListPara
 
 	return nil
 }
-

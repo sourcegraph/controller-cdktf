@@ -90,7 +90,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validatePutShareDistributionParameters(value interface{}) error {
+func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validatePutShareDistributionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewBatchSchedulingPolicyFairSharePolicyOutputReferenceParameters(te
 
 	return nil
 }
-

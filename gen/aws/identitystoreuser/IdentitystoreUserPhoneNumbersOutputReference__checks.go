@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateSetPrimaryParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateSetPrimaryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewIdentitystoreUserPhoneNumbersOutputReferenceParameters(terraform
 
 	return nil
 }
-

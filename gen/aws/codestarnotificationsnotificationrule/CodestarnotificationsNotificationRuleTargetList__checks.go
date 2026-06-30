@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodestarnotificationsNotificationRuleTargetListParameters(terraf
 
 	return nil
 }
-

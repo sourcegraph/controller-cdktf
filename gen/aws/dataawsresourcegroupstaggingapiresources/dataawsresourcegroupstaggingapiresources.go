@@ -15,18 +15,18 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ExcludeCompliantResources() interface{}
-	SetExcludeCompliantResources(val interface{})
-	ExcludeCompliantResourcesInput() interface{}
+	ExcludeCompliantResources() any
+	SetExcludeCompliantResources(val any)
+	ExcludeCompliantResourcesInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -38,9 +38,9 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeComplianceDetails() interface{}
-	SetIncludeComplianceDetails(val interface{})
-	IncludeComplianceDetailsInput() interface{}
+	IncludeComplianceDetails() any
+	SetIncludeComplianceDetails(val any)
+	IncludeComplianceDetailsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,7 +52,7 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArnList() *[]*string
 	SetResourceArnList(val *[]*string)
 	ResourceArnListInput() *[]*string
@@ -61,17 +61,17 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	SetResourceTypeFilters(val *[]*string)
 	ResourceTypeFiltersInput() *[]*string
 	TagFilter() DataAwsResourcegroupstaggingapiResourcesTagFilterList
-	TagFilterInput() interface{}
+	TagFilterInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTagFilter(value interface{})
+	PutTagFilter(value any)
 	ResetExcludeCompliantResources()
 	ResetId()
 	ResetIncludeComplianceDetails()
@@ -103,18 +103,18 @@ type DataAwsResourcegroupstaggingapiResources interface {
 	ResetResourceArnList()
 	ResetResourceTypeFilters()
 	ResetTagFilter()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsResourcegroupstaggingapiResources
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) DependsOn() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ExcludeCompliantResources() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ExcludeCompliantResources() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeCompliantResources",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ExcludeCompliantRes
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ExcludeCompliantResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ExcludeCompliantResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeCompliantResourcesInput",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IncludeComplianceDetails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IncludeComplianceDetails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeComplianceDetails",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IncludeComplianceDe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IncludeComplianceDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) IncludeComplianceDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeComplianceDetailsInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TagFilter() DataAws
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TagFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TagFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tagFilterInput",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -392,7 +392,6 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) TerraformResourceTy
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/resourcegroupstaggingapi_resources aws_resourcegroupstaggingapi_resources} Data Source.
 func NewDataAwsResourcegroupstaggingapiResources(scope constructs.Construct, id *string, config *DataAwsResourcegroupstaggingapiResourcesConfig) DataAwsResourcegroupstaggingapiResources {
 	_init_.Initialize()
@@ -404,7 +403,7 @@ func NewDataAwsResourcegroupstaggingapiResources(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -417,12 +416,12 @@ func NewDataAwsResourcegroupstaggingapiResources_Override(d DataAwsResourcegroup
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetExcludeCompliantResources(val interface{}) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetExcludeCompliantResources(val any) {
 	if err := j.validateSetExcludeCompliantResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetExcludeCompliantR
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetId(val *string) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetIncludeComplianceDetails(val interface{}) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetIncludeComplianceDetails(val any) {
 	if err := j.validateSetIncludeComplianceDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetIncludeCompliance
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetResourceArnList(val *[]*string) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetResourceArnList(val *[]*string) {
 	if err := j.validateSetResourceArnListParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetResourceArnList(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources)SetResourceTypeFilters(val *[]*string) {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SetResourceTypeFilters(val *[]*string) {
 	if err := j.validateSetResourceTypeFiltersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func DataAwsResourcegroupstaggingapiResources_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func DataAwsResourcegroupstaggingapiResources_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsResourcegroupstaggingapiResources_IsConstruct(x interface{}) *bool {
+func DataAwsResourcegroupstaggingapiResources_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsResourcegroupstaggingapiResources_IsConstructParameters(x); err != nil {
@@ -570,7 +569,7 @@ func DataAwsResourcegroupstaggingapiResources_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func DataAwsResourcegroupstaggingapiResources_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsResourcegroupstaggingapiResources_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsResourcegroupstaggingapiResources_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsResourcegroupstaggingapiResources_IsTerraformDataSourceParameters(x); err != nil {
@@ -589,7 +588,7 @@ func DataAwsResourcegroupstaggingapiResources_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func DataAwsResourcegroupstaggingapiResources_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataAwsResourcegroupstaggingapiResources_IsTerraformElement(x interface{}) *bool {
+func DataAwsResourcegroupstaggingapiResources_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func DataAwsResourcegroupstaggingapiResources_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,27 +625,27 @@ func DataAwsResourcegroupstaggingapiResources_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,18 +803,18 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) PutTagFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) PutTagFilter(value any) {
 	if err := d.validatePutTagFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTagFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -875,8 +874,8 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ResetTagFilter() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -888,8 +887,8 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -901,8 +900,8 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -914,8 +913,8 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -940,8 +939,8 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -952,4 +951,3 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) ToTerraform() inter
 
 	return returns
 }
-

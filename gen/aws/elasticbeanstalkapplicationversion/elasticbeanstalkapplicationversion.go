@@ -22,15 +22,15 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -38,9 +38,9 @@ type ElasticBeanstalkApplicationVersion interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	ForceDelete() interface{}
-	SetForceDelete(val interface{})
-	ForceDeleteInput() interface{}
+	ForceDelete() any
+	SetForceDelete(val any)
+	ForceDeleteInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,11 +69,11 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -83,16 +83,16 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type ElasticBeanstalkApplicationVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type ElasticBeanstalkApplicationVersion interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticBeanstalkApplicationVersion
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) DescriptionInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ForceDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ForceDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDelete",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ForceDelete() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ForceDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ForceDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDeleteInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
 func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationVersionConfig) ElasticBeanstalkApplicationVersion {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewElasticBeanstalkApplicationVersion_Override(e ElasticBeanstalkApplicatio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetApplication(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetApplication(val *string) {
 	if err := j.validateSetApplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetApplication(val *string
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetBucket(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetDescription(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetForceDelete(val interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetForceDelete(val any) {
 	if err := j.validateSetForceDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetForceDelete(val interfa
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetId(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetKey(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetName(val *string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetTags(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func ElasticBeanstalkApplicationVersion_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func ElasticBeanstalkApplicationVersion_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticBeanstalkApplicationVersion_IsConstruct(x interface{}) *bool {
+func ElasticBeanstalkApplicationVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkApplicationVersion_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func ElasticBeanstalkApplicationVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func ElasticBeanstalkApplicationVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticBeanstalkApplicationVersion_IsTerraformElement(x interface{}) *bool {
+func ElasticBeanstalkApplicationVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkApplicationVersion_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func ElasticBeanstalkApplicationVersion_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func ElasticBeanstalkApplicationVersion_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func ElasticBeanstalkApplicationVersion_IsTerraformResource(x interface{}) *bool {
+func ElasticBeanstalkApplicationVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticBeanstalkApplicationVersion_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func ElasticBeanstalkApplicationVersion_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -991,7 +990,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) InterpolationForAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1103,8 +1102,8 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1116,8 +1115,8 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeAttributes() *m
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1129,8 +1128,8 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) SynthesizeHclAttributes()
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1142,8 +1141,8 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToHclTerraform() interfac
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1168,8 +1167,8 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1180,4 +1179,3 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ToTerraform() interface{}
 
 	return returns
 }
-

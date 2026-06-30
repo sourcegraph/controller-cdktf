@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateAddMoveTarget
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveFromIdPar
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSagemakerServicecatalogPortfolioStatus_GenerateConfigForImportParam
 	return nil
 }
 
-func validateSagemakerServicecatalogPortfolioStatus_IsConstructParameters(x interface{}) error {
+func validateSagemakerServicecatalogPortfolioStatus_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSagemakerServicecatalogPortfolioStatus_IsConstructParameters(x inte
 	return nil
 }
 
-func validateSagemakerServicecatalogPortfolioStatus_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerServicecatalogPortfolioStatus_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSagemakerServicecatalogPortfolioStatus_IsTerraformElementParameters
 	return nil
 }
 
-func validateSagemakerServicecatalogPortfolioStatus_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerServicecatalogPortfolioStatus_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSagemakerServicecatalogPortfolioStatus_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetLifecycleP
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewSagemakerServicecatalogPortfolioStatusParameters(scope construct
 
 	return nil
 }
-

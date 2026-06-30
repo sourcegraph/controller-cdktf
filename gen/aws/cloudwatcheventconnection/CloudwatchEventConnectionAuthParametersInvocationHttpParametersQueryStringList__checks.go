@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
 
 	return nil
 }
-

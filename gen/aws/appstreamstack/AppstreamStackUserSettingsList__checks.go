@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppstreamStackUserSettingsList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackUserSettingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackUserSettingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppstreamStackUserSettingsListParameters(terraformResource cdktf
 
 	return nil
 }
-

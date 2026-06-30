@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsWorkspacesDirectorySelfServicePermissionsOutputReferenceP
 
 	return nil
 }
-

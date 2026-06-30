@@ -106,7 +106,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetBucketNameP
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewSesReceiptRuleS3ActionOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

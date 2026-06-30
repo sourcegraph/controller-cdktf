@@ -15,9 +15,9 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	ApplyMethodInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	ResetApplyMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ApplyMethodInp
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ValueInput() *
 	return returns
 }
 
-
 func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NeptuneParameterGroupParameterOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewNeptuneParameterGroupParameterOutputReference_Override(n NeptuneParamete
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetApplyMethod(val *string) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetApplyMethod(val *string) {
 	if err := j.validateSetApplyMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetApplyMethod(
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationF
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ResetApplyMeth
 	)
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ToString() *st
 
 	return returns
 }
-

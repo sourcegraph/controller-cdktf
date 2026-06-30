@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewAppmeshVirtualGatewaySpecListenerHealthCheckOutputReferenceParam
 
 	return nil
 }
-

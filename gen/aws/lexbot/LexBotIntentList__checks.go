@@ -34,7 +34,7 @@ func (l *jsiiProxy_LexBotIntentList) validateResolveParameters(_context cdktf.IR
 	return nil
 }
 
-func (j *jsiiProxy_LexBotIntentList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotIntentList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLexBotIntentListParameters(terraformResource cdktf.IInterpolatin
 
 	return nil
 }
-

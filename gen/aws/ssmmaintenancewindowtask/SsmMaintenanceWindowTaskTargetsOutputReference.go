@@ -12,9 +12,9 @@ type SsmMaintenanceWindowTaskTargetsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SsmMaintenanceWindowTaskTargetsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -46,7 +46,7 @@ type SsmMaintenanceWindowTaskTargetsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type SsmMaintenanceWindowTaskTargetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) ValuesInput()
 	return returns
 }
 
-
 func NewSsmMaintenanceWindowTaskTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SsmMaintenanceWindowTaskTargetsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewSsmMaintenanceWindowTaskTargetsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewSsmMaintenanceWindowTaskTargetsOutputReference_Override(s SsmMaintenance
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetKey(val *st
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) ToString() *s
 
 	return returns
 }
-

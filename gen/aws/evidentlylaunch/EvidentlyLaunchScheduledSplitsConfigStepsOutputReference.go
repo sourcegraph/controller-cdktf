@@ -12,9 +12,9 @@ type EvidentlyLaunchScheduledSplitsConfigStepsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,10 +30,10 @@ type EvidentlyLaunchScheduledSplitsConfigStepsOutputReference interface {
 	GroupWeights() *map[string]*float64
 	SetGroupWeights(val *map[string]*float64)
 	GroupWeightsInput() *map[string]*float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SegmentOverrides() EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList
-	SegmentOverridesInput() interface{}
+	SegmentOverridesInput() any
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -48,7 +48,7 @@ type EvidentlyLaunchScheduledSplitsConfigStepsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,11 +69,11 @@ type EvidentlyLaunchScheduledSplitsConfigStepsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSegmentOverrides(value interface{})
+	PutSegmentOverrides(value any)
 	ResetSegmentOverrides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Gro
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Seg
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SegmentOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SegmentOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"segmentOverridesInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Ter
 	return returns
 }
 
-
 func NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EvidentlyLaunchScheduledSplitsConfigStepsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference_Override(e Evid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetGroupWeights(val *map[string]*float64) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetGroupWeights(val *map[string]*float64) {
 	if err := j.validateSetGroupWeightsParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetG
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Com
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,21 +499,21 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Int
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) PutSegmentOverrides(value interface{}) {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) PutSegmentOverrides(value any) {
 	if err := e.validatePutSegmentOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putSegmentOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Res
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) ToS
 
 	return returns
 }
-

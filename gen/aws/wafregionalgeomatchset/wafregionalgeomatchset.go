@@ -15,15 +15,15 @@ type WafregionalGeoMatchSet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,7 +37,7 @@ type WafregionalGeoMatchSet interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeoMatchConstraint() WafregionalGeoMatchSetGeoMatchConstraintList
-	GeoMatchConstraintInput() interface{}
+	GeoMatchConstraintInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -55,24 +55,24 @@ type WafregionalGeoMatchSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type WafregionalGeoMatchSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,30 +102,30 @@ type WafregionalGeoMatchSet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutGeoMatchConstraint(value interface{})
+	PutGeoMatchConstraint(value any)
 	ResetGeoMatchConstraint()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafregionalGeoMatchSet
@@ -143,8 +143,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) GeoMatchConstraint() WafregionalGeoMa
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) GeoMatchConstraintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) GeoMatchConstraintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"geoMatchConstraintInput",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalGeoMatchSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafregional_geo_match_set aws_wafregional_geo_match_set} Resource.
 func NewWafregionalGeoMatchSet(scope constructs.Construct, id *string, config *WafregionalGeoMatchSetConfig) WafregionalGeoMatchSet {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewWafregionalGeoMatchSet(scope constructs.Construct, id *string, config *W
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewWafregionalGeoMatchSet_Override(w WafregionalGeoMatchSet, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetCount(val interface{}) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetId(val *string) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetName(val *string) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafregionalGeoMatchSet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func WafregionalGeoMatchSet_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func WafregionalGeoMatchSet_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool {
+func WafregionalGeoMatchSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalGeoMatchSet_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool {
+func WafregionalGeoMatchSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalGeoMatchSet_IsTerraformElementParameters(x); err != nil {
@@ -539,7 +538,7 @@ func WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalGeoMatchSet_IsTerraformResource(x interface{}) *bool {
+func WafregionalGeoMatchSet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalGeoMatchSet_IsTerraformResourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func WafregionalGeoMatchSet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,31 +582,31 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafregionalGeoMatchSet) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalGeoMatchSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,15 +734,15 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -762,7 +761,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -775,7 +774,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafregionalGeoMatchSet) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -811,7 +810,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -822,18 +821,18 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) PutGeoMatchConstraint(value interface{}) {
+func (w *jsiiProxy_WafregionalGeoMatchSet) PutGeoMatchConstraint(value any) {
 	if err := w.validatePutGeoMatchConstraintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putGeoMatchConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -874,8 +873,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -887,8 +886,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -900,8 +899,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -926,8 +925,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSet) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalGeoMatchSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -938,4 +937,3 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) ToTerraform() interface{} {
 
 	return returns
 }
-

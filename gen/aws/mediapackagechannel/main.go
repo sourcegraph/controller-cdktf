@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
-		reflect.TypeOf((*MediaPackageChannel)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaPackageChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,19 +77,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelConfig",
-		reflect.TypeOf((*MediaPackageChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngest",
-		reflect.TypeOf((*MediaPackageChannelHlsIngest)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpoints",
-		reflect.TypeOf((*MediaPackageChannelHlsIngestIngestEndpoints)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngestIngestEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList",
-		reflect.TypeOf((*MediaPackageChannelHlsIngestIngestEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngestIngestEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference",
-		reflect.TypeOf((*MediaPackageChannelHlsIngestIngestEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngestIngestEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestList",
-		reflect.TypeOf((*MediaPackageChannelHlsIngestList)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngestList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaPackageChannelHlsIngestList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestOutputReference",
-		reflect.TypeOf((*MediaPackageChannelHlsIngestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MediaPackageChannelHlsIngestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MediaPackageChannelHlsIngestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

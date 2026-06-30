@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
-		reflect.TypeOf((*S3BucketInventory)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,23 +86,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig",
-		reflect.TypeOf((*S3BucketInventoryConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestination",
-		reflect.TypeOf((*S3BucketInventoryDestination)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestination](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucket)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucket](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryption)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryptionSseKms)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryptionSseKms](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,11 +180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryptionSseS3)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryptionSseS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference",
-		reflect.TypeOf((*S3BucketInventoryDestinationBucketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationBucketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryDestinationBucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,7 +262,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference",
-		reflect.TypeOf((*S3BucketInventoryDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -297,11 +297,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter",
-		reflect.TypeOf((*S3BucketInventoryFilter)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilterOutputReference",
-		reflect.TypeOf((*S3BucketInventoryFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule",
-		reflect.TypeOf((*S3BucketInventorySchedule)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventorySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference",
-		reflect.TypeOf((*S3BucketInventoryScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketInventoryScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketInventoryScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

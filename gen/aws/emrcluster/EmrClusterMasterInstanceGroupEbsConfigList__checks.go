@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrClusterMasterInstanceGroupEbsConfigListParameters(terraformRe
 
 	return nil
 }
-

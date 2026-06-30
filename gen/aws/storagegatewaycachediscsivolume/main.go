@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
-		reflect.TypeOf((*StoragegatewayCachedIscsiVolume)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayCachedIscsiVolume](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInBytes", GoGetter: "VolumeSizeInBytes"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInBytesInput", GoGetter: "VolumeSizeInBytesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayCachedIscsiVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,6 +97,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolumeConfig",
-		reflect.TypeOf((*StoragegatewayCachedIscsiVolumeConfig)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayCachedIscsiVolumeConfig](),
 	)
 }

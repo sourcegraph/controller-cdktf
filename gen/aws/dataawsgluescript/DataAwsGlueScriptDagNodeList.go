@@ -17,8 +17,8 @@ type DataAwsGlueScriptDagNodeList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsGlueScriptDagNodeList interface {
 	Get(index *float64) DataAwsGlueScriptDagNodeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsGlueScriptDagNodeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueScriptDagNodeList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsGlueScriptDagNodeList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsGlueScriptDagNodeList_Override(d DataAwsGlueScriptDagNodeList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) Get(index *float64) DataAwsGlue
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeList) ToString() *string {
 
 	return returns
 }
-

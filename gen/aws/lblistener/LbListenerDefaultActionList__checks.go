@@ -34,7 +34,7 @@ func (l *jsiiProxy_LbListenerDefaultActionList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLbListenerDefaultActionListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

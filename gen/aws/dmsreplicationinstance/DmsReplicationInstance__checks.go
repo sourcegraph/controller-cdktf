@@ -19,7 +19,7 @@ func (d *jsiiProxy_DmsReplicationInstance) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DmsReplicationInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DmsReplicationInstance) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DmsReplicationInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDmsReplicationInstance_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDmsReplicationInstance_IsConstructParameters(x interface{}) error {
+func validateDmsReplicationInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDmsReplicationInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDmsReplicationInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDmsReplicationInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDmsReplicationInstance_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateDmsReplicationInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateDmsReplicationInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetAllocatedStorageParameters
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetAllowMajorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetAllowMajorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetAllowMajorVersionUpgradePa
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetApplyImmediatelyParameters
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetAvailabilityZoneParameters
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetMultiAzParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetMultiAzParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetPreferredMaintenanceWindow
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -527,7 +527,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -613,4 +613,3 @@ func validateNewDmsReplicationInstanceParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

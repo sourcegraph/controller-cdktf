@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsAuditmanagerFramework) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFramework) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerFramework) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFramework) validatePutControlSetsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFramework) validatePutControlSetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsAuditmanagerFramework_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataAwsAuditmanagerFramework_IsConstructParameters(x interface{}) error {
+func validateDataAwsAuditmanagerFramework_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsAuditmanagerFramework_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataAwsAuditmanagerFramework_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsAuditmanagerFramework_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsAuditmanagerFramework_IsTerraformDataSourceParameters(x inte
 	return nil
 }
 
-func validateDataAwsAuditmanagerFramework_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsAuditmanagerFramework_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsAuditmanagerFramework_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -281,4 +281,3 @@ func validateNewDataAwsAuditmanagerFrameworkParameters(scope constructs.Construc
 
 	return nil
 }
-

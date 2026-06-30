@@ -15,15 +15,15 @@ type IotThingPrincipalAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,15 +53,15 @@ type IotThingPrincipalAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Thing() *string
@@ -71,9 +71,9 @@ type IotThingPrincipalAttachment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type IotThingPrincipalAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type IotThingPrincipalAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type IotThingPrincipalAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IotThingPrincipalAttachment
@@ -142,8 +142,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IotThingPrincipalAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) ThingInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment} Resource.
 func NewIotThingPrincipalAttachment(scope constructs.Construct, id *string, config *IotThingPrincipalAttachmentConfig) IotThingPrincipalAttachment {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewIotThingPrincipalAttachment(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewIotThingPrincipalAttachment_Override(i IotThingPrincipalAttachment, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetId(val *string) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetPrincipal(val *string) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetPrincipal(val *string) {
 	if err := j.validateSetPrincipalParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetPrincipal(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_IotThingPrincipalAttachment)SetThing(val *string) {
+func (j *jsiiProxy_IotThingPrincipalAttachment) SetThing(val *string) {
 	if err := j.validateSetThingParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func IotThingPrincipalAttachment_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func IotThingPrincipalAttachment_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IotThingPrincipalAttachment_IsConstruct(x interface{}) *bool {
+func IotThingPrincipalAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingPrincipalAttachment_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func IotThingPrincipalAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func IotThingPrincipalAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IotThingPrincipalAttachment_IsTerraformElement(x interface{}) *bool {
+func IotThingPrincipalAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingPrincipalAttachment_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func IotThingPrincipalAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func IotThingPrincipalAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IotThingPrincipalAttachment_IsTerraformResource(x interface{}) *bool {
+func IotThingPrincipalAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIotThingPrincipalAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func IotThingPrincipalAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IotThingPrincipalAttachment) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotThingPrincipalAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -772,7 +771,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IotThingPrincipalAttachment) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -865,8 +864,8 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -878,8 +877,8 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -891,8 +890,8 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -917,8 +916,8 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IotThingPrincipalAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IotThingPrincipalAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -929,4 +928,3 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Zone.Route53Zone",
-		reflect.TypeOf((*Route53Zone)(nil)).Elem(),
+		reflect.TypeFor[Route53Zone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcInput", GoGetter: "VpcInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53Zone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Zone.Route53ZoneConfig",
-		reflect.TypeOf((*Route53ZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53ZoneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Zone.Route53ZoneVpc",
-		reflect.TypeOf((*Route53ZoneVpc)(nil)).Elem(),
+		reflect.TypeFor[Route53ZoneVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcList",
-		reflect.TypeOf((*Route53ZoneVpcList)(nil)).Elem(),
+		reflect.TypeFor[Route53ZoneVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ZoneVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference",
-		reflect.TypeOf((*Route53ZoneVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53ZoneVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcRegion", GoGetter: "VpcRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcRegionInput", GoGetter: "VpcRegionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ZoneVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

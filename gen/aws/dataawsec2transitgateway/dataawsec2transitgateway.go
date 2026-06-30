@@ -19,11 +19,11 @@ type DataAwsEc2TransitGateway interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultRouteTableAssociation() *string
 	DefaultRouteTablePropagation() *string
 	// Experimental.
@@ -33,7 +33,7 @@ type DataAwsEc2TransitGateway interface {
 	Description() *string
 	DnsSupport() *string
 	Filter() DataAwsEc2TransitGatewayFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,24 +59,24 @@ type DataAwsEc2TransitGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2TransitGatewayTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitGatewayCidrBlocks() *[]*string
 	VpnEcmpSupport() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type DataAwsEc2TransitGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2TransitGatewayTimeouts)
 	ResetFilter()
 	ResetId()
@@ -107,18 +107,18 @@ type DataAwsEc2TransitGateway interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2TransitGateway
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) Filter() DataAwsEc2TransitGatewayFi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) Timeouts() DataAwsEc2TransitGateway
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGateway) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -476,7 +476,6 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) VpnEcmpSupport() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
 func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConfig) DataAwsEc2TransitGateway {
 	_init_.Initialize()
@@ -488,7 +487,7 @@ func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -501,12 +500,12 @@ func NewDataAwsEc2TransitGateway_Override(d DataAwsEc2TransitGateway, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGateway)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func DataAwsEc2TransitGateway_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func DataAwsEc2TransitGateway_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2TransitGateway_IsConstruct(x interface{}) *bool {
+func DataAwsEc2TransitGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGateway_IsConstructParameters(x); err != nil {
@@ -621,7 +620,7 @@ func DataAwsEc2TransitGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func DataAwsEc2TransitGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2TransitGateway_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2TransitGateway_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGateway_IsTerraformDataSourceParameters(x); err != nil {
@@ -640,7 +639,7 @@ func DataAwsEc2TransitGateway_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func DataAwsEc2TransitGateway_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2TransitGateway_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2TransitGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGateway_IsTerraformElementParameters(x); err != nil {
@@ -659,7 +658,7 @@ func DataAwsEc2TransitGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,27 +676,27 @@ func DataAwsEc2TransitGateway_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGateway) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2TransitGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,18 +854,18 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGateway) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) PutTimeouts(value *DataAwsEc2Transi
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -921,8 +920,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -934,8 +933,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -947,8 +946,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -960,8 +959,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -986,8 +985,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -998,4 +997,3 @@ func (d *jsiiProxy_DataAwsEc2TransitGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

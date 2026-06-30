@@ -34,7 +34,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLightsailInstancePublicPortsPortInfoListParameters(terraformReso
 
 	return nil
 }
-

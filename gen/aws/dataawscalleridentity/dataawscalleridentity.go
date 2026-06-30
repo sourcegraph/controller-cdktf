@@ -17,11 +17,11 @@ type DataAwsCallerIdentity interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,18 +48,18 @@ type DataAwsCallerIdentity interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataAwsCallerIdentity interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCallerIdentity
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsCallerIdentity) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCallerIdentity) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataAwsCallerIdentity) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCallerIdentity) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataAwsCallerIdentity) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCallerIdentity) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DataAwsCallerIdentity) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCallerIdentity) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataAwsCallerIdentity) UserId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/caller_identity aws_caller_identity} Data Source.
 func NewDataAwsCallerIdentity(scope constructs.Construct, id *string, config *DataAwsCallerIdentityConfig) DataAwsCallerIdentity {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataAwsCallerIdentity(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataAwsCallerIdentity_Override(d DataAwsCallerIdentity, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCallerIdentity) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -393,7 +392,7 @@ func DataAwsCallerIdentity_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func DataAwsCallerIdentity_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCallerIdentity_IsConstruct(x interface{}) *bool {
+func DataAwsCallerIdentity_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCallerIdentity_IsConstructParameters(x); err != nil {
@@ -428,7 +427,7 @@ func DataAwsCallerIdentity_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func DataAwsCallerIdentity_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCallerIdentity_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCallerIdentity_IsTerraformDataSourceParameters(x); err != nil {
@@ -447,7 +446,7 @@ func DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCallerIdentity_IsTerraformElement(x interface{}) *bool {
+func DataAwsCallerIdentity_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCallerIdentity_IsTerraformElementParameters(x); err != nil {
@@ -466,7 +465,7 @@ func DataAwsCallerIdentity_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,27 +483,27 @@ func DataAwsCallerIdentity_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCallerIdentity) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCallerIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataAwsCallerIdentity) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -682,8 +681,8 @@ func (d *jsiiProxy_DataAwsCallerIdentity) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -695,8 +694,8 @@ func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -708,8 +707,8 @@ func (d *jsiiProxy_DataAwsCallerIdentity) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCallerIdentity) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -721,8 +720,8 @@ func (d *jsiiProxy_DataAwsCallerIdentity) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCallerIdentity) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -747,8 +746,8 @@ func (d *jsiiProxy_DataAwsCallerIdentity) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCallerIdentity) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCallerIdentity) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,4 +758,3 @@ func (d *jsiiProxy_DataAwsCallerIdentity) ToTerraform() interface{} {
 
 	return returns
 }
-

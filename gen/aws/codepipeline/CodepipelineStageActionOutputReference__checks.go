@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetCategoryPa
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetInputArtif
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -318,4 +318,3 @@ func validateNewCodepipelineStageActionOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

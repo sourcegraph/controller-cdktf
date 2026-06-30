@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53ZoneAssociation) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53ZoneAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53ZoneAssociation) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53ZoneAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRoute53ZoneAssociation_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateRoute53ZoneAssociation_IsConstructParameters(x interface{}) error {
+func validateRoute53ZoneAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRoute53ZoneAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoute53ZoneAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53ZoneAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRoute53ZoneAssociation_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateRoute53ZoneAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53ZoneAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRoute53ZoneAssociation_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ZoneAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Route53ZoneAssociation) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ZoneAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Route53ZoneAssociation) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53ZoneAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewRoute53ZoneAssociationParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type SyntheticsCanaryVpcConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type SyntheticsCanaryVpcConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type SyntheticsCanaryVpcConfigOutputReference interface {
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_SyntheticsCanaryVpcConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) VpcId() *string {
 	return returns
 }
 
-
 func NewSyntheticsCanaryVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryVpcConfigOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewSyntheticsCanaryVpcConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewSyntheticsCanaryVpcConfigOutputReference_Override(s SyntheticsCanaryVpcC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetInternalValue(val *SyntheticsCanaryVpcConfig) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetInternalValue(val *SyntheticsCanaryVpcConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetSecurityGroupIds(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetSubnetIds(val *[]
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ResetSubnetIds() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

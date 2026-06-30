@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPoint",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPoint)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfig",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfig)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfiguration",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationOutputReference",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedFeatures", GoGetter: "AllowedFeatures"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedFeaturesInput", GoGetter: "AllowedFeaturesInput"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformationConfiguration", GoGetter: "TransformationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "transformationConfigurationInput", GoGetter: "TransformationConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,19 +124,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsLambda", GoGetter: "AwsLambda"},
 			_jsii_.MemberProperty{JsiiProperty: "awsLambdaInput", GoGetter: "AwsLambdaInput"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,7 +208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference",
-		reflect.TypeOf((*S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

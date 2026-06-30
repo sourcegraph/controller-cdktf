@@ -34,7 +34,7 @@ func (a *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAmplifyDomainAssociationSubDomainListParameters(terraformResourc
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type AthenaWorkgroup interface {
 	Configuration() AthenaWorkgroupConfigurationOutputReference
 	ConfigurationInput() *AthenaWorkgroupConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,9 +34,9 @@ type AthenaWorkgroup interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,11 +62,11 @@ type AthenaWorkgroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -79,16 +79,16 @@ type AthenaWorkgroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type AthenaWorkgroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type AthenaWorkgroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type AthenaWorkgroup interface {
 	ResetState()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AthenaWorkgroup
@@ -194,8 +194,8 @@ func (j *jsiiProxy_AthenaWorkgroup) ConfigurationInput() *AthenaWorkgroupConfigu
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_AthenaWorkgroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AthenaWorkgroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AthenaWorkgroup) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_AthenaWorkgroup) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroup) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AthenaWorkgroup) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroup) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_AthenaWorkgroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AthenaWorkgroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_AthenaWorkgroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_AthenaWorkgroup) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AthenaWorkgroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -484,7 +484,6 @@ func (j *jsiiProxy_AthenaWorkgroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource.
 func NewAthenaWorkgroup(scope constructs.Construct, id *string, config *AthenaWorkgroupConfig) AthenaWorkgroup {
 	_init_.Initialize()
@@ -496,7 +495,7 @@ func NewAthenaWorkgroup(scope constructs.Construct, id *string, config *AthenaWo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -509,12 +508,12 @@ func NewAthenaWorkgroup_Override(a AthenaWorkgroup, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetCount(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetDescription(val *string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroup) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AthenaWorkgroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetId(val *string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AthenaWorkgroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetName(val *string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AthenaWorkgroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -615,7 +614,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AthenaWorkgroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetState(val *string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_AthenaWorkgroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AthenaWorkgroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func AthenaWorkgroup_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func AthenaWorkgroup_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AthenaWorkgroup_IsConstruct(x interface{}) *bool {
+func AthenaWorkgroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAthenaWorkgroup_IsConstructParameters(x); err != nil {
@@ -706,7 +705,7 @@ func AthenaWorkgroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func AthenaWorkgroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AthenaWorkgroup_IsTerraformElement(x interface{}) *bool {
+func AthenaWorkgroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAthenaWorkgroup_IsTerraformElementParameters(x); err != nil {
@@ -725,7 +724,7 @@ func AthenaWorkgroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func AthenaWorkgroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AthenaWorkgroup_IsTerraformResource(x interface{}) *bool {
+func AthenaWorkgroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAthenaWorkgroup_IsTerraformResourceParameters(x); err != nil {
@@ -744,7 +743,7 @@ func AthenaWorkgroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,31 +768,31 @@ func (a *jsiiProxy_AthenaWorkgroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AthenaWorkgroup) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AthenaWorkgroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (a *jsiiProxy_AthenaWorkgroup) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,15 +920,15 @@ func (a *jsiiProxy_AthenaWorkgroup) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AthenaWorkgroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -948,7 +947,7 @@ func (a *jsiiProxy_AthenaWorkgroup) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -961,7 +960,7 @@ func (a *jsiiProxy_AthenaWorkgroup) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,18 +974,18 @@ func (a *jsiiProxy_AthenaWorkgroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AthenaWorkgroup) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -997,7 +996,7 @@ func (a *jsiiProxy_AthenaWorkgroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (a *jsiiProxy_AthenaWorkgroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (a *jsiiProxy_AthenaWorkgroup) PutConfiguration(value *AthenaWorkgroupConfi
 	_jsii_.InvokeVoid(
 		a,
 		"putConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,8 +1086,8 @@ func (a *jsiiProxy_AthenaWorkgroup) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AthenaWorkgroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1100,8 +1099,8 @@ func (a *jsiiProxy_AthenaWorkgroup) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AthenaWorkgroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1113,8 +1112,8 @@ func (a *jsiiProxy_AthenaWorkgroup) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AthenaWorkgroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1126,8 +1125,8 @@ func (a *jsiiProxy_AthenaWorkgroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AthenaWorkgroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1152,8 +1151,8 @@ func (a *jsiiProxy_AthenaWorkgroup) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroup) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AthenaWorkgroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1164,4 +1163,3 @@ func (a *jsiiProxy_AthenaWorkgroup) ToTerraform() interface{} {
 
 	return returns
 }
-

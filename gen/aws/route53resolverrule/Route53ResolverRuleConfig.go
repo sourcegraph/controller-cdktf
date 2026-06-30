@@ -6,9 +6,9 @@ import (
 
 type Route53ResolverRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Route53ResolverRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_rule#domain_name Route53ResolverRule#domain_name}.
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_rule#rule_type Route53ResolverRule#rule_type}.
@@ -39,10 +39,9 @@ type Route53ResolverRuleConfig struct {
 	// target_ip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
-	TargetIp interface{} `field:"optional" json:"targetIp" yaml:"targetIp"`
+	TargetIp any `field:"optional" json:"targetIp" yaml:"targetIp"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
 	Timeouts *Route53ResolverRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

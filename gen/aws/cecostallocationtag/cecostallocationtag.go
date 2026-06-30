@@ -15,15 +15,15 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,11 +50,11 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -64,7 +64,7 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -72,9 +72,9 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type CeCostAllocationTag interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type CeCostAllocationTag interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CeCostAllocationTag
@@ -143,8 +143,8 @@ func (j *jsiiProxy_CeCostAllocationTag) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostAllocationTag) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_CeCostAllocationTag) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CeCostAllocationTag) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_CeCostAllocationTag) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostAllocationTag) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_CeCostAllocationTag) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CeCostAllocationTag) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_CeCostAllocationTag) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostAllocationTag) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_CeCostAllocationTag) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CeCostAllocationTag) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_CeCostAllocationTag) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource.
 func NewCeCostAllocationTag(scope constructs.Construct, id *string, config *CeCostAllocationTagConfig) CeCostAllocationTag {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewCeCostAllocationTag(scope constructs.Construct, id *string, config *CeCo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewCeCostAllocationTag_Override(c CeCostAllocationTag, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetConnection(val interface{}) {
+func (j *jsiiProxy_CeCostAllocationTag) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetCount(val interface{}) {
+func (j *jsiiProxy_CeCostAllocationTag) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CeCostAllocationTag) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CeCostAllocationTag) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetId(val *string) {
+func (j *jsiiProxy_CeCostAllocationTag) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CeCostAllocationTag) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CeCostAllocationTag) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CeCostAllocationTag) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetStatus(val *string) {
+func (j *jsiiProxy_CeCostAllocationTag) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_CeCostAllocationTag)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetTagKey(val *string) {
+func (j *jsiiProxy_CeCostAllocationTag) SetTagKey(val *string) {
 	if err := j.validateSetTagKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func CeCostAllocationTag_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func CeCostAllocationTag_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CeCostAllocationTag_IsConstruct(x interface{}) *bool {
+func CeCostAllocationTag_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostAllocationTag_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func CeCostAllocationTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func CeCostAllocationTag_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CeCostAllocationTag_IsTerraformElement(x interface{}) *bool {
+func CeCostAllocationTag_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostAllocationTag_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func CeCostAllocationTag_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func CeCostAllocationTag_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CeCostAllocationTag_IsTerraformResource(x interface{}) *bool {
+func CeCostAllocationTag_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostAllocationTag_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func CeCostAllocationTag_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (c *jsiiProxy_CeCostAllocationTag) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CeCostAllocationTag) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CeCostAllocationTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (c *jsiiProxy_CeCostAllocationTag) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (c *jsiiProxy_CeCostAllocationTag) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostAllocationTag) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -783,7 +782,7 @@ func (c *jsiiProxy_CeCostAllocationTag) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (c *jsiiProxy_CeCostAllocationTag) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (c *jsiiProxy_CeCostAllocationTag) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CeCostAllocationTag) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (c *jsiiProxy_CeCostAllocationTag) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,7 +842,7 @@ func (c *jsiiProxy_CeCostAllocationTag) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -863,8 +862,8 @@ func (c *jsiiProxy_CeCostAllocationTag) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CeCostAllocationTag) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -876,8 +875,8 @@ func (c *jsiiProxy_CeCostAllocationTag) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CeCostAllocationTag) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -889,8 +888,8 @@ func (c *jsiiProxy_CeCostAllocationTag) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostAllocationTag) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -902,8 +901,8 @@ func (c *jsiiProxy_CeCostAllocationTag) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostAllocationTag) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -928,8 +927,8 @@ func (c *jsiiProxy_CeCostAllocationTag) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CeCostAllocationTag) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostAllocationTag) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -940,4 +939,3 @@ func (c *jsiiProxy_CeCostAllocationTag) ToTerraform() interface{} {
 
 	return returns
 }
-

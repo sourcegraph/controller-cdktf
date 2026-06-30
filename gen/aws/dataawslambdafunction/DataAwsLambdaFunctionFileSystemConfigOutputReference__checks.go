@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLambdaFunctionFileSystemConfigOutputReferenceParameters(t
 
 	return nil
 }
-

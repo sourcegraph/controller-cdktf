@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReferenceParam
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type MedialiveMultiplexConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MedialiveMultiplexConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}.
 	AvailabilityZones *[]*string `field:"required" json:"availabilityZones" yaml:"availabilityZones"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}.
@@ -33,7 +33,7 @@ type MedialiveMultiplexConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#multiplex_settings MedialiveMultiplex#multiplex_settings}
 	MultiplexSettings *MedialiveMultiplexMultiplexSettings `field:"optional" json:"multiplexSettings" yaml:"multiplexSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}.
-	StartMultiplex interface{} `field:"optional" json:"startMultiplex" yaml:"startMultiplex"`
+	StartMultiplex any `field:"optional" json:"startMultiplex" yaml:"startMultiplex"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}.
@@ -43,4 +43,3 @@ type MedialiveMultiplexConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_multiplex#timeouts MedialiveMultiplex#timeouts}
 	Timeouts *MedialiveMultiplexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

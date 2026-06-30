@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationUserIdentityConfigurationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKendraExperienceConfigurationUserIdentityConfigurationOutputRefe
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationTracker.LocationTracker",
-		reflect.TypeOf((*LocationTracker)(nil)).Elem(),
+		reflect.TypeFor[LocationTracker](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trackerNameInput", GoGetter: "TrackerNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationTracker{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,6 +84,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationTracker.LocationTrackerConfig",
-		reflect.TypeOf((*LocationTrackerConfig)(nil)).Elem(),
+		reflect.TypeFor[LocationTrackerConfig](),
 	)
 }

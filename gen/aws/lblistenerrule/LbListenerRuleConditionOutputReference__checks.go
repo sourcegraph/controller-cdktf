@@ -134,7 +134,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) validatePutPathPatter
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value interface{}) error {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -184,7 +184,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,7 +249,7 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -308,4 +308,3 @@ func validateNewLbListenerRuleConditionOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

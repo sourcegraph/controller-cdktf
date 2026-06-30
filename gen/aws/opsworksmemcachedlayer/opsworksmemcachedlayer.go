@@ -16,29 +16,29 @@ type OpsworksMemcachedLayer interface {
 	SetAllocatedMemory(val *float64)
 	AllocatedMemoryInput() *float64
 	Arn() *string
-	AutoAssignElasticIps() interface{}
-	SetAutoAssignElasticIps(val interface{})
-	AutoAssignElasticIpsInput() interface{}
-	AutoAssignPublicIps() interface{}
-	SetAutoAssignPublicIps(val interface{})
-	AutoAssignPublicIpsInput() interface{}
-	AutoHealing() interface{}
-	SetAutoHealing(val interface{})
-	AutoHealingInput() interface{}
+	AutoAssignElasticIps() any
+	SetAutoAssignElasticIps(val any)
+	AutoAssignElasticIpsInput() any
+	AutoAssignPublicIps() any
+	SetAutoAssignPublicIps(val any)
+	AutoAssignPublicIpsInput() any
+	AutoHealing() any
+	SetAutoHealing(val any)
+	AutoHealingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudwatchConfiguration() OpsworksMemcachedLayerCloudwatchConfigurationOutputReference
 	CloudwatchConfigurationInput() *OpsworksMemcachedLayerCloudwatchConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomConfigureRecipes() *[]*string
 	SetCustomConfigureRecipes(val *[]*string)
 	CustomConfigureRecipesInput() *[]*string
@@ -67,11 +67,11 @@ type OpsworksMemcachedLayer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DrainElbOnShutdown() interface{}
-	SetDrainElbOnShutdown(val interface{})
-	DrainElbOnShutdownInput() interface{}
+	DrainElbOnShutdown() any
+	SetDrainElbOnShutdown(val any)
+	DrainElbOnShutdownInput() any
 	EbsVolume() OpsworksMemcachedLayerEbsVolumeList
-	EbsVolumeInput() interface{}
+	EbsVolumeInput() any
 	ElasticLoadBalancer() *string
 	SetElasticLoadBalancer(val *string)
 	ElasticLoadBalancerInput() *string
@@ -86,9 +86,9 @@ type OpsworksMemcachedLayer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InstallUpdatesOnBoot() interface{}
-	SetInstallUpdatesOnBoot(val interface{})
-	InstallUpdatesOnBootInput() interface{}
+	InstallUpdatesOnBoot() any
+	SetInstallUpdatesOnBoot(val any)
+	InstallUpdatesOnBootInput() any
 	InstanceShutdownTimeout() *float64
 	SetInstanceShutdownTimeout(val *float64)
 	InstanceShutdownTimeoutInput() *float64
@@ -108,11 +108,11 @@ type OpsworksMemcachedLayer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StackId() *string
 	SetStackId(val *string)
 	StackIdInput() *string
@@ -128,19 +128,19 @@ type OpsworksMemcachedLayer interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	UseEbsOptimizedInstances() interface{}
-	SetUseEbsOptimizedInstances(val interface{})
-	UseEbsOptimizedInstancesInput() interface{}
+	UseEbsOptimizedInstances() any
+	SetUseEbsOptimizedInstances(val any)
+	UseEbsOptimizedInstancesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -158,7 +158,7 @@ type OpsworksMemcachedLayer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -170,7 +170,7 @@ type OpsworksMemcachedLayer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -178,7 +178,7 @@ type OpsworksMemcachedLayer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksMemcachedLayerCloudwatchConfiguration)
-	PutEbsVolume(value interface{})
+	PutEbsVolume(value any)
 	PutLoadBasedAutoScaling(value *OpsworksMemcachedLayerLoadBasedAutoScaling)
 	ResetAllocatedMemory()
 	ResetAutoAssignElasticIps()
@@ -208,17 +208,17 @@ type OpsworksMemcachedLayer interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetUseEbsOptimizedInstances()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksMemcachedLayer
@@ -256,8 +256,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIps",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIpsInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignElasticIpsInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIps",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIpsInput",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) AutoAssignPublicIpsInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoHealing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoHealing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealing",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) AutoHealing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) AutoHealingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) AutoHealingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealingInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) CloudwatchConfigurationInput() *Opswo
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) DrainElbOnShutdown() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) DrainElbOnShutdown() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdown",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) DrainElbOnShutdown() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) DrainElbOnShutdownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) DrainElbOnShutdownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdownInput",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) EbsVolume() OpsworksMemcachedLayerEbs
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) EbsVolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) EbsVolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsVolumeInput",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) InstallUpdatesOnBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) InstallUpdatesOnBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBoot",
@@ -666,8 +666,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) InstallUpdatesOnBoot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) InstallUpdatesOnBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) InstallUpdatesOnBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBootInput",
@@ -766,8 +766,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -776,8 +776,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -876,8 +876,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -896,8 +896,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstances() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstances() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstances",
@@ -906,8 +906,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstances() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstancesInput",
@@ -915,7 +915,6 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstancesInput() inter
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
 func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *OpsworksMemcachedLayerConfig) OpsworksMemcachedLayer {
@@ -928,7 +927,7 @@ func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *O
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -941,12 +940,12 @@ func NewOpsworksMemcachedLayer_Override(o OpsworksMemcachedLayer, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetAllocatedMemory(val *float64) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetAllocatedMemory(val *float64) {
 	if err := j.validateSetAllocatedMemoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,7 +956,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetAllocatedMemory(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoAssignElasticIps(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetAutoAssignElasticIps(val any) {
 	if err := j.validateSetAutoAssignElasticIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -968,7 +967,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoAssignElasticIps(val interface{
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoAssignPublicIps(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetAutoAssignPublicIps(val any) {
 	if err := j.validateSetAutoAssignPublicIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -979,7 +978,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoAssignPublicIps(val interface{}
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetAutoHealing(val any) {
 	if err := j.validateSetAutoHealingParameters(val); err != nil {
 		panic(err)
 	}
@@ -990,7 +989,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetAutoHealing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1012,7 +1011,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomConfigureRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomConfigureRecipes(val *[]*string) {
 	if err := j.validateSetCustomConfigureRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomConfigureRecipes(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomDeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomDeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomDeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1034,7 +1033,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomDeployRecipes(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomInstanceProfileArn(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomInstanceProfileArn(val *string) {
 	if err := j.validateSetCustomInstanceProfileArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1045,7 +1044,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomInstanceProfileArn(val *strin
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomJson(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomJson(val *string) {
 	if err := j.validateSetCustomJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1056,7 +1055,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetCustomSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomSecurityGroupIds(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomSetupRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomSetupRecipes(val *[]*string) {
 	if err := j.validateSetCustomSetupRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1078,7 +1077,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomSetupRecipes(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomShutdownRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomShutdownRecipes(val *[]*string) {
 	if err := j.validateSetCustomShutdownRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1089,7 +1088,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomShutdownRecipes(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomUndeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetCustomUndeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomUndeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1100,7 +1099,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetCustomUndeployRecipes(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1108,7 +1107,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetDrainElbOnShutdown(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetDrainElbOnShutdown(val any) {
 	if err := j.validateSetDrainElbOnShutdownParameters(val); err != nil {
 		panic(err)
 	}
@@ -1119,7 +1118,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetDrainElbOnShutdown(val interface{})
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetElasticLoadBalancer(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetElasticLoadBalancer(val *string) {
 	if err := j.validateSetElasticLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1130,7 +1129,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetElasticLoadBalancer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1138,7 +1137,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetId(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1149,7 +1148,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetInstallUpdatesOnBoot(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetInstallUpdatesOnBoot(val any) {
 	if err := j.validateSetInstallUpdatesOnBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -1160,7 +1159,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetInstallUpdatesOnBoot(val interface{
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetInstanceShutdownTimeout(val *float64) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetInstanceShutdownTimeout(val *float64) {
 	if err := j.validateSetInstanceShutdownTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1171,7 +1170,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetInstanceShutdownTimeout(val *float6
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1182,7 +1181,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetName(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1193,7 +1192,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1223,7 +1222,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetStackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetSystemPackages(val *[]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetSystemPackages(val *[]*string) {
 	if err := j.validateSetSystemPackagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetSystemPackages(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1245,7 +1244,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1256,7 +1255,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer)SetUseEbsOptimizedInstances(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayer) SetUseEbsOptimizedInstances(val any) {
 	if err := j.validateSetUseEbsOptimizedInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func OpsworksMemcachedLayer_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1303,7 +1302,7 @@ func OpsworksMemcachedLayer_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool {
+func OpsworksMemcachedLayer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksMemcachedLayer_IsConstructParameters(x); err != nil {
@@ -1314,7 +1313,7 @@ func OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1322,7 +1321,7 @@ func OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool {
+func OpsworksMemcachedLayer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksMemcachedLayer_IsTerraformElementParameters(x); err != nil {
@@ -1333,7 +1332,7 @@ func OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1341,7 +1340,7 @@ func OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksMemcachedLayer_IsTerraformResource(x interface{}) *bool {
+func OpsworksMemcachedLayer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksMemcachedLayer_IsTerraformResourceParameters(x); err != nil {
@@ -1352,7 +1351,7 @@ func OpsworksMemcachedLayer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1377,31 +1376,31 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksMemcachedLayer) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksMemcachedLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1417,7 +1416,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1433,7 +1432,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1449,7 +1448,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1465,7 +1464,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1481,7 +1480,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1497,7 +1496,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1513,7 +1512,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1529,15 +1528,15 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1556,7 +1555,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1569,7 +1568,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1583,18 +1582,18 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksMemcachedLayer) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1605,7 +1604,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1616,7 +1615,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1627,18 +1626,18 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) PutCloudwatchConfiguration(value *Ops
 	_jsii_.InvokeVoid(
 		o,
 		"putCloudwatchConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) PutEbsVolume(value interface{}) {
+func (o *jsiiProxy_OpsworksMemcachedLayer) PutEbsVolume(value any) {
 	if err := o.validatePutEbsVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEbsVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1649,7 +1648,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) PutLoadBasedAutoScaling(value *Opswor
 	_jsii_.InvokeVoid(
 		o,
 		"putLoadBasedAutoScaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1861,8 +1860,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ResetUseEbsOptimizedInstances() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1874,8 +1873,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1887,8 +1886,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1900,8 +1899,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1926,8 +1925,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksMemcachedLayer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1938,4 +1937,3 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ToTerraform() interface{} {
 
 	return returns
 }
-

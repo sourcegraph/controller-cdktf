@@ -12,9 +12,9 @@ type LaunchConfigurationEphemeralBlockDeviceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type LaunchConfigurationEphemeralBlockDeviceOutputReference interface {
 	DeviceNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	NoDevice() interface{}
-	SetNoDevice(val interface{})
-	NoDeviceInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	NoDevice() any
+	SetNoDevice(val any)
+	NoDeviceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type LaunchConfigurationEphemeralBlockDeviceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type LaunchConfigurationEphemeralBlockDeviceOutputReference interface {
 	ResetVirtualName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) NoDevice() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) NoDevice() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noDevice",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) NoDev
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) NoDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) NoDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noDeviceInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Virtu
 	return returns
 }
 
-
 func NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LaunchConfigurationEphemeralBlockDeviceOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewLaunchConfigurationEphemeralBlockDeviceOutputReference_Override(l Launch
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetDev
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetNoDevice(val interface{}) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetNoDevice(val any) {
 	if err := j.validateSetNoDeviceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetNoD
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference)SetVirtualName(val *string) {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) SetVirtualName(val *string) {
 	if err := j.validateSetVirtualNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Compu
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetBo
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetBo
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetLi
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetNu
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetSt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) GetSt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Inter
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Reset
 	)
 }
 
-func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) ToStr
 
 	return returns
 }
-

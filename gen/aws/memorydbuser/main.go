@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
-		reflect.TypeOf((*MemorydbUser)(nil)).Elem(),
+		reflect.TypeFor[MemorydbUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessString", GoGetter: "AccessString"},
 			_jsii_.MemberProperty{JsiiProperty: "accessStringInput", GoGetter: "AccessStringInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,11 +79,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbUser.MemorydbUserAuthenticationMode",
-		reflect.TypeOf((*MemorydbUserAuthenticationMode)(nil)).Elem(),
+		reflect.TypeFor[MemorydbUserAuthenticationMode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference",
-		reflect.TypeOf((*MemorydbUserAuthenticationModeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbUserAuthenticationModeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbUserAuthenticationModeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbUser.MemorydbUserConfig",
-		reflect.TypeOf((*MemorydbUserConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorydbUserConfig](),
 	)
 }

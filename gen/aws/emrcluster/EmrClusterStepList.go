@@ -17,8 +17,8 @@ type EmrClusterStepList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type EmrClusterStepList interface {
 	Get(index *float64) EmrClusterStepOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_EmrClusterStepList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterStepList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterStepList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_EmrClusterStepList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewEmrClusterStepList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterStepList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewEmrClusterStepList(terraformResource cdktf.IInterpolatingParent, terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterStepList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewEmrClusterStepList_Override(e EmrClusterStepList, terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterStepList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EmrClusterStepList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_EmrClusterStepList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmrClusterStepList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_EmrClusterStepList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrClusterStepList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_EmrClusterStepList)SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_EmrClusterStepList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EmrClusterStepList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_EmrClusterStepList) AllWithMapKey(mapKeyAttributeName *string
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_EmrClusterStepList) Get(index *float64) EmrClusterStepOutputR
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterStepList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmrClusterStepList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_EmrClusterStepList) ToString() *string {
 
 	return returns
 }
-

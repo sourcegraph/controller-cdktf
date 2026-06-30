@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
-		reflect.TypeOf((*FmsPolicy)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FmsPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyConfig",
-		reflect.TypeOf((*FmsPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMap",
-		reflect.TypeOf((*FmsPolicyExcludeMap)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicyExcludeMap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
-		reflect.TypeOf((*FmsPolicyExcludeMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicyExcludeMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FmsPolicyExcludeMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMap",
-		reflect.TypeOf((*FmsPolicyIncludeMap)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicyIncludeMap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMapOutputReference",
-		reflect.TypeOf((*FmsPolicyIncludeMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicyIncludeMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FmsPolicyIncludeMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyData",
-		reflect.TypeOf((*FmsPolicySecurityServicePolicyData)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicySecurityServicePolicyData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
-		reflect.TypeOf((*FmsPolicySecurityServicePolicyDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FmsPolicySecurityServicePolicyDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

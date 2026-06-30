@@ -19,7 +19,7 @@ func (d *jsiiProxy_DetectiveInvitationAccepter) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DetectiveInvitationAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDetectiveInvitationAccepter_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDetectiveInvitationAccepter_IsConstructParameters(x interface{}) error {
+func validateDetectiveInvitationAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDetectiveInvitationAccepter_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDetectiveInvitationAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateDetectiveInvitationAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDetectiveInvitationAccepter_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateDetectiveInvitationAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateDetectiveInvitationAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDetectiveInvitationAccepter_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewDetectiveInvitationAccepterParameters(scope constructs.Construct
 
 	return nil
 }
-

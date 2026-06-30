@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateSetContainerPo
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSetLoadBalancerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEcsTaskSetLoadBalancerOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

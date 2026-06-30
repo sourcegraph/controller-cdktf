@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
-		reflect.TypeOf((*RolesanywhereTrustAnchor)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RolesanywhereTrustAnchor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorConfig",
-		reflect.TypeOf((*RolesanywhereTrustAnchorConfig)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource",
-		reflect.TypeOf((*RolesanywhereTrustAnchorSource)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchorSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
-		reflect.TypeOf((*RolesanywhereTrustAnchorSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchorSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData",
-		reflect.TypeOf((*RolesanywhereTrustAnchorSourceSourceData)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchorSourceSourceData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
-		reflect.TypeOf((*RolesanywhereTrustAnchorSourceSourceDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RolesanywhereTrustAnchorSourceSourceDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acmPcaArn", GoGetter: "AcmPcaArn"},
 			_jsii_.MemberProperty{JsiiProperty: "acmPcaArnInput", GoGetter: "AcmPcaArnInput"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x509CertificateData", GoGetter: "X509CertificateData"},
 			_jsii_.MemberProperty{JsiiProperty: "x509CertificateDataInput", GoGetter: "X509CertificateDataInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

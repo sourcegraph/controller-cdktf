@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersSnowflakeOutputReferenceParameters
 
 	return nil
 }
-

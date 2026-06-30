@@ -19,7 +19,7 @@ func (m *jsiiProxy_MskServerlessCluster) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MskServerlessCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MskServerlessCluster) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MskServerlessCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (m *jsiiProxy_MskServerlessCluster) validatePutTimeoutsParameters(value *Ms
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessCluster) validatePutVpcConfigParameters(value interface{}) error {
+func (m *jsiiProxy_MskServerlessCluster) validatePutVpcConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateMskServerlessCluster_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateMskServerlessCluster_IsConstructParameters(x interface{}) error {
+func validateMskServerlessCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateMskServerlessCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMskServerlessCluster_IsTerraformElementParameters(x interface{}) error {
+func validateMskServerlessCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateMskServerlessCluster_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateMskServerlessCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateMskServerlessCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_MskServerlessCluster) validateSetClusterNameParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_MskServerlessCluster) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_MskServerlessCluster) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MskServerlessCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -491,4 +491,3 @@ func validateNewMskServerlessClusterParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

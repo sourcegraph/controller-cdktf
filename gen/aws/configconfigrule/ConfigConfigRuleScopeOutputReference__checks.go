@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConfigConfigRuleScopeOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigRuleScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigRuleScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewConfigConfigRuleScopeOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

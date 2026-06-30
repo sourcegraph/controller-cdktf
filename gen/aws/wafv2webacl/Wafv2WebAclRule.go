@@ -1,6 +1,5 @@
 package wafv2webacl
 
-
 type Wafv2WebAclRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -21,10 +20,9 @@ type Wafv2WebAclRule struct {
 	// rule_label block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
-	RuleLabel interface{} `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
+	RuleLabel any `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
 	// statement block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
-	Statement interface{} `field:"optional" json:"statement" yaml:"statement"`
+	Statement any `field:"optional" json:"statement" yaml:"statement"`
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateAddMoveTargetPa
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveFromIdParam
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateDatasyncLocationFsxOpenzfsFileSystem_IsConstructParameters(x interface{}) error {
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_IsConstructParameters(x interf
 	return nil
 }
 
-func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetLifecyclePar
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDatasyncLocationFsxOpenzfsFileSystemParameters(scope constructs.
 
 	return nil
 }
-

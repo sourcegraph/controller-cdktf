@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksApplicationSslConfigurationList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationSslConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationSslConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksApplicationSslConfigurationListParameters(terraformResou
 
 	return nil
 }
-

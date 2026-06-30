@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetDeleteOnTe
 	return nil
 }
 
-func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewInstanceRootBlockDeviceOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

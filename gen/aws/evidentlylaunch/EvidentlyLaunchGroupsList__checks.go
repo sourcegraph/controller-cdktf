@@ -34,7 +34,7 @@ func (e *jsiiProxy_EvidentlyLaunchGroupsList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchGroupsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchGroupsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEvidentlyLaunchGroupsListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

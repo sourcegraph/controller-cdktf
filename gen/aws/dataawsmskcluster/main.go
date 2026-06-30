@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster",
-		reflect.TypeOf((*DataAwsMskCluster)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zookeeperConnectString", GoGetter: "ZookeeperConnectString"},
 			_jsii_.MemberProperty{JsiiProperty: "zookeeperConnectStringTls", GoGetter: "ZookeeperConnectStringTls"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsMskCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig",
-		reflect.TypeOf((*DataAwsMskClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsMskClusterConfig](),
 	)
 }

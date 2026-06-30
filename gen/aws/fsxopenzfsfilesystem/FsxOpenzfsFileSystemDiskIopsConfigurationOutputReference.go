@@ -12,9 +12,9 @@ type FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference interface {
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Ter
 	return returns
 }
 
-
 func NewFsxOpenzfsFileSystemDiskIopsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewFsxOpenzfsFileSystemDiskIopsConfigurationOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewFsxOpenzfsFileSystemDiskIopsConfigurationOutputReference_Override(f FsxO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetInternalValue(val *FsxOpenzfsFileSystemDiskIopsConfiguration) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetInternalValue(val *FsxOpenzfsFileSystemDiskIopsConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Com
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Int
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Res
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) ToS
 
 	return returns
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetBucketPrefixParamete
 	return nil
 }
 
-func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
-func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElbAccessLogsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewElbAccessLogsOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

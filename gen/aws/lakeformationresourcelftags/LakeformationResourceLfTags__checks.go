@@ -19,7 +19,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LakeformationResourceLfTags) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LakeformationResourceLfTags) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LakeformationResourceLfTags) validatePutDatabaseParameters(va
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTags) validatePutLfTagParameters(value interface{}) error {
+func (l *jsiiProxy_LakeformationResourceLfTags) validatePutLfTagParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateLakeformationResourceLfTags_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateLakeformationResourceLfTags_IsConstructParameters(x interface{}) error {
+func validateLakeformationResourceLfTags_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateLakeformationResourceLfTags_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateLakeformationResourceLfTags_IsTerraformElementParameters(x interface{}) error {
+func validateLakeformationResourceLfTags_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateLakeformationResourceLfTags_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateLakeformationResourceLfTags_IsTerraformResourceParameters(x interface{}) error {
+func validateLakeformationResourceLfTags_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags) validateSetCatalogIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTags) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTags) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTags) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTags) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewLakeformationResourceLfTagsParameters(scope constructs.Construct
 
 	return nil
 }
-

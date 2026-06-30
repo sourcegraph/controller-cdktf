@@ -106,7 +106,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetBa
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBackupPlanAdvancedBackupSettingOutputReferenceParameters(terrafo
 
 	return nil
 }
-

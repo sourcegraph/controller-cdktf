@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
-		reflect.TypeOf((*CodepipelineCustomActionType)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfig",
-		reflect.TypeOf((*CodepipelineCustomActionTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationProperty",
-		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationProperty)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeConfigurationProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
-		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationPropertyList)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeConfigurationPropertyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
-		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeConfigurationPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails",
-		reflect.TypeOf((*CodepipelineCustomActionTypeInputArtifactDetails)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeInputArtifactDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
-		reflect.TypeOf((*CodepipelineCustomActionTypeInputArtifactDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeInputArtifactDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionTypeInputArtifactDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails",
-		reflect.TypeOf((*CodepipelineCustomActionTypeOutputArtifactDetails)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeOutputArtifactDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference",
-		reflect.TypeOf((*CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -243,7 +243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -251,11 +251,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings",
-		reflect.TypeOf((*CodepipelineCustomActionTypeSettings)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
-		reflect.TypeOf((*CodepipelineCustomActionTypeSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineCustomActionTypeSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thirdPartyConfigurationUrlInput", GoGetter: "ThirdPartyConfigurationUrlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

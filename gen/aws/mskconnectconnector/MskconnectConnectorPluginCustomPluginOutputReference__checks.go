@@ -106,7 +106,7 @@ func (j *jsiiProxy_MskconnectConnectorPluginCustomPluginOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorPluginCustomPluginOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorPluginCustomPluginOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMskconnectConnectorPluginCustomPluginOutputReferenceParameters(t
 
 	return nil
 }
-

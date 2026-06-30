@@ -33,11 +33,11 @@ type DataAwsRedshiftCluster interface {
 	ClusterType() *string
 	ClusterVersion() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseName() *string
 	DefaultIamRoleArn() *string
 	// Experimental.
@@ -83,7 +83,7 @@ type DataAwsRedshiftCluster interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PubliclyAccessible() cdktf.IResolvable
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3KeyPrefix() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -91,15 +91,15 @@ type DataAwsRedshiftCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
 	VpcSecurityGroupIds() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,18 +126,18 @@ type DataAwsRedshiftCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsRedshiftCluster
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) ClusterVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -625,8 +625,8 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) PubliclyAccessible() cdktf.IResolvabl
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -675,8 +675,8 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsRedshiftCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -715,7 +715,6 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) VpcSecurityGroupIds() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) DataAwsRedshiftCluster {
 	_init_.Initialize()
@@ -727,7 +726,7 @@ func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -740,12 +739,12 @@ func NewDataAwsRedshiftCluster_Override(d DataAwsRedshiftCluster, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetId(val *string) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -813,7 +812,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsRedshiftCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func DataAwsRedshiftCluster_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func DataAwsRedshiftCluster_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsRedshiftCluster_IsConstruct(x interface{}) *bool {
+func DataAwsRedshiftCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftCluster_IsConstructParameters(x); err != nil {
@@ -871,7 +870,7 @@ func DataAwsRedshiftCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func DataAwsRedshiftCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRedshiftCluster_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsRedshiftCluster_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftCluster_IsTerraformDataSourceParameters(x); err != nil {
@@ -890,7 +889,7 @@ func DataAwsRedshiftCluster_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func DataAwsRedshiftCluster_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsRedshiftCluster_IsTerraformElement(x interface{}) *bool {
+func DataAwsRedshiftCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsRedshiftCluster_IsTerraformElementParameters(x); err != nil {
@@ -909,7 +908,7 @@ func DataAwsRedshiftCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -927,27 +926,27 @@ func DataAwsRedshiftCluster_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsRedshiftCluster) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsRedshiftCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,7 +1058,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,7 +1074,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1133,8 +1132,8 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1146,8 +1145,8 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1159,8 +1158,8 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1172,8 +1171,8 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1198,8 +1197,8 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsRedshiftCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsRedshiftCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1210,4 +1209,3 @@ func (d *jsiiProxy_DataAwsRedshiftCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

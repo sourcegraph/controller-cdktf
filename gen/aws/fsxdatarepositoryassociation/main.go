@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
-		reflect.TypeOf((*FsxDataRepositoryAssociation)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxDataRepositoryAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationConfig",
-		reflect.TypeOf((*FsxDataRepositoryAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoExportPolicy)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3AutoExportPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoImportPolicy)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3AutoImportPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,7 +181,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
-		reflect.TypeOf((*FsxDataRepositoryAssociationS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoExportPolicy", GoGetter: "AutoExportPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "autoExportPolicyInput", GoGetter: "AutoExportPolicyInput"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxDataRepositoryAssociationS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts",
-		reflect.TypeOf((*FsxDataRepositoryAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*FsxDataRepositoryAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxDataRepositoryAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxDataRepositoryAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

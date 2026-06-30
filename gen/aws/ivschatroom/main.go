@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
-		reflect.TypeOf((*IvschatRoom)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoom](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatRoom{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoomConfig",
-		reflect.TypeOf((*IvschatRoomConfig)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoomConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler",
-		reflect.TypeOf((*IvschatRoomMessageReviewHandler)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoomMessageReviewHandler](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
-		reflect.TypeOf((*IvschatRoomMessageReviewHandlerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoomMessageReviewHandlerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeouts",
-		reflect.TypeOf((*IvschatRoomTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoomTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
-		reflect.TypeOf((*IvschatRoomTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatRoomTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatRoomTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

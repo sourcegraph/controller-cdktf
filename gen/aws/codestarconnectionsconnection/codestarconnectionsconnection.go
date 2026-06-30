@@ -16,16 +16,16 @@ type CodestarconnectionsConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionStatus() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,11 +61,11 @@ type CodestarconnectionsConnection interface {
 	SetProviderType(val *string)
 	ProviderTypeInput() *string
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -75,16 +75,16 @@ type CodestarconnectionsConnection interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type CodestarconnectionsConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type CodestarconnectionsConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type CodestarconnectionsConnection interface {
 	ResetProviderType()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodestarconnectionsConnection
@@ -167,8 +167,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) ConnectionStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) ProviderTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_CodestarconnectionsConnection) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodestarconnectionsConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_CodestarconnectionsConnection) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codestarconnections_connection aws_codestarconnections_connection} Resource.
 func NewCodestarconnectionsConnection(scope constructs.Construct, id *string, config *CodestarconnectionsConnectionConfig) CodestarconnectionsConnection {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewCodestarconnectionsConnection(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewCodestarconnectionsConnection_Override(c CodestarconnectionsConnection, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetHostArn(val *string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetHostArn(val *string) {
 	if err := j.validateSetHostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetHostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetId(val *string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetName(val *string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetProviderType(val *string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetProviderType(val *string) {
 	if err := j.validateSetProviderTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetProviderType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection)SetTags(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CodestarconnectionsConnection) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func CodestarconnectionsConnection_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func CodestarconnectionsConnection_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
+func CodestarconnectionsConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodestarconnectionsConnection_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func CodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func CodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool {
+func CodestarconnectionsConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodestarconnectionsConnection_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func CodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func CodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CodestarconnectionsConnection_IsTerraformResource(x interface{}) *bool {
+func CodestarconnectionsConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodestarconnectionsConnection_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func CodestarconnectionsConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (c *jsiiProxy_CodestarconnectionsConnection) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodestarconnectionsConnection) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodestarconnectionsConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (c *jsiiProxy_CodestarconnectionsConnection) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (c *jsiiProxy_CodestarconnectionsConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodestarconnectionsConnection) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_CodestarconnectionsConnection) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1012,8 +1011,8 @@ func (c *jsiiProxy_CodestarconnectionsConnection) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1025,8 +1024,8 @@ func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1038,8 +1037,8 @@ func (c *jsiiProxy_CodestarconnectionsConnection) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1051,8 +1050,8 @@ func (c *jsiiProxy_CodestarconnectionsConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1077,8 +1076,8 @@ func (c *jsiiProxy_CodestarconnectionsConnection) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodestarconnectionsConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodestarconnectionsConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1089,4 +1088,3 @@ func (c *jsiiProxy_CodestarconnectionsConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

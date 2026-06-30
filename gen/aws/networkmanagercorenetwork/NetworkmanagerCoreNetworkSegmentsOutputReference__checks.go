@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkSegmentsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkSegmentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkSegmentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkmanagerCoreNetworkSegmentsOutputReferenceParameters(terra
 
 	return nil
 }
-

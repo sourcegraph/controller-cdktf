@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
-		reflect.TypeOf((*AmplifyDomainAssociation)(nil)).Elem(),
+		reflect.TypeFor[AmplifyDomainAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForVerification", GoGetter: "WaitForVerification"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForVerificationInput", GoGetter: "WaitForVerificationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyDomainAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationConfig",
-		reflect.TypeOf((*AmplifyDomainAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[AmplifyDomainAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomain",
-		reflect.TypeOf((*AmplifyDomainAssociationSubDomain)(nil)).Elem(),
+		reflect.TypeFor[AmplifyDomainAssociationSubDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
-		reflect.TypeOf((*AmplifyDomainAssociationSubDomainList)(nil)).Elem(),
+		reflect.TypeFor[AmplifyDomainAssociationSubDomainList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyDomainAssociationSubDomainList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
-		reflect.TypeOf((*AmplifyDomainAssociationSubDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmplifyDomainAssociationSubDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
 			_jsii_.MemberProperty{JsiiProperty: "branchNameInput", GoGetter: "BranchNameInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

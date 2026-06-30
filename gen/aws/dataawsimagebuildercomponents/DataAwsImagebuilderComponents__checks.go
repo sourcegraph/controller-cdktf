@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsImagebuilderComponents) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsImagebuilderComponents) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsImagebuilderComponents) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderComponents) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsImagebuilderComponents) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsImagebuilderComponents_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataAwsImagebuilderComponents_IsConstructParameters(x interface{}) error {
+func validateDataAwsImagebuilderComponents_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsImagebuilderComponents_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataAwsImagebuilderComponents_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsImagebuilderComponents_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsImagebuilderComponents_IsTerraformDataSourceParameters(x int
 	return nil
 }
 
-func validateDataAwsImagebuilderComponents_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsImagebuilderComponents_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsImagebuilderComponents_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -278,4 +278,3 @@ func validateNewDataAwsImagebuilderComponentsParameters(scope constructs.Constru
 
 	return nil
 }
-

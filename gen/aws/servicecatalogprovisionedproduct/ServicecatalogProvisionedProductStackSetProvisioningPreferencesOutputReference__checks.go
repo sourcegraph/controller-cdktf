@@ -106,7 +106,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferenc
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewServicecatalogProvisionedProductStackSetProvisioningPreferencesO
 
 	return nil
 }
-

@@ -13,9 +13,9 @@ import (
 type Subnet interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AssignIpv6AddressOnCreation() interface{}
-	SetAssignIpv6AddressOnCreation(val interface{})
-	AssignIpv6AddressOnCreationInput() interface{}
+	AssignIpv6AddressOnCreation() any
+	SetAssignIpv6AddressOnCreation(val any)
+	AssignIpv6AddressOnCreationInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneId() *string
@@ -28,15 +28,15 @@ type Subnet interface {
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
 	CustomerOwnedIpv4PoolInput() *string
@@ -44,15 +44,15 @@ type Subnet interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableDns64() interface{}
-	SetEnableDns64(val interface{})
-	EnableDns64Input() interface{}
-	EnableResourceNameDnsAaaaRecordOnLaunch() interface{}
-	SetEnableResourceNameDnsAaaaRecordOnLaunch(val interface{})
-	EnableResourceNameDnsAaaaRecordOnLaunchInput() interface{}
-	EnableResourceNameDnsARecordOnLaunch() interface{}
-	SetEnableResourceNameDnsARecordOnLaunch(val interface{})
-	EnableResourceNameDnsARecordOnLaunchInput() interface{}
+	EnableDns64() any
+	SetEnableDns64(val any)
+	EnableDns64Input() any
+	EnableResourceNameDnsAaaaRecordOnLaunch() any
+	SetEnableResourceNameDnsAaaaRecordOnLaunch(val any)
+	EnableResourceNameDnsAaaaRecordOnLaunchInput() any
+	EnableResourceNameDnsARecordOnLaunch() any
+	SetEnableResourceNameDnsARecordOnLaunch(val any)
+	EnableResourceNameDnsARecordOnLaunchInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,19 +68,19 @@ type Subnet interface {
 	SetIpv6CidrBlock(val *string)
 	Ipv6CidrBlockAssociationId() *string
 	Ipv6CidrBlockInput() *string
-	Ipv6Native() interface{}
-	SetIpv6Native(val interface{})
-	Ipv6NativeInput() interface{}
+	Ipv6Native() any
+	SetIpv6Native(val any)
+	Ipv6NativeInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MapCustomerOwnedIpOnLaunch() interface{}
-	SetMapCustomerOwnedIpOnLaunch(val interface{})
-	MapCustomerOwnedIpOnLaunchInput() interface{}
-	MapPublicIpOnLaunch() interface{}
-	SetMapPublicIpOnLaunch(val interface{})
-	MapPublicIpOnLaunchInput() interface{}
+	MapCustomerOwnedIpOnLaunch() any
+	SetMapCustomerOwnedIpOnLaunch(val any)
+	MapCustomerOwnedIpOnLaunchInput() any
+	MapPublicIpOnLaunch() any
+	SetMapPublicIpOnLaunch(val any)
+	MapPublicIpOnLaunchInput() any
 	// The tree node.
 	Node() constructs.Node
 	OutpostArn() *string
@@ -95,11 +95,11 @@ type Subnet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -109,11 +109,11 @@ type Subnet interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SubnetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -121,9 +121,9 @@ type Subnet interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -141,7 +141,7 @@ type Subnet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -153,7 +153,7 @@ type Subnet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -182,17 +182,17 @@ type Subnet interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Subnet
@@ -210,8 +210,8 @@ func (j *jsiiProxy_Subnet) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) AssignIpv6AddressOnCreation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) AssignIpv6AddressOnCreation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assignIpv6AddressOnCreation",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_Subnet) AssignIpv6AddressOnCreation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) AssignIpv6AddressOnCreationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) AssignIpv6AddressOnCreationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assignIpv6AddressOnCreationInput",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_Subnet) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_Subnet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Subnet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_Subnet) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_Subnet) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableDns64() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableDns64() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDns64",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_Subnet) EnableDns64() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableDns64Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableDns64Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDns64Input",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_Subnet) EnableDns64Input() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecordOnLaunch",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunch() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecordOnLaunchInput",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_Subnet) EnableResourceNameDnsAaaaRecordOnLaunchInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableResourceNameDnsARecordOnLaunch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableResourceNameDnsARecordOnLaunch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecordOnLaunch",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_Subnet) EnableResourceNameDnsARecordOnLaunch() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnableResourceNameDnsARecordOnLaunchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) EnableResourceNameDnsARecordOnLaunchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecordOnLaunchInput",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_Subnet) Ipv6CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) Ipv6Native() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) Ipv6Native() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6Native",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_Subnet) Ipv6Native() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) Ipv6NativeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) Ipv6NativeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6NativeInput",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_Subnet) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mapCustomerOwnedIpOnLaunch",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunch() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mapCustomerOwnedIpOnLaunchInput",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_Subnet) MapCustomerOwnedIpOnLaunchInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) MapPublicIpOnLaunch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) MapPublicIpOnLaunch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mapPublicIpOnLaunch",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_Subnet) MapPublicIpOnLaunch() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) MapPublicIpOnLaunchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) MapPublicIpOnLaunchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mapPublicIpOnLaunchInput",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_Subnet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Subnet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -650,8 +650,8 @@ func (j *jsiiProxy_Subnet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_Subnet) TerraformGeneratorMetadata() *cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Subnet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -740,8 +740,8 @@ func (j *jsiiProxy_Subnet) Timeouts() SubnetTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Subnet) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -770,7 +770,6 @@ func (j *jsiiProxy_Subnet) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet aws_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
@@ -782,7 +781,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.subnet.Subnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -795,12 +794,12 @@ func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.subnet.Subnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetAssignIpv6AddressOnCreation(val interface{}) {
+func (j *jsiiProxy_Subnet) SetAssignIpv6AddressOnCreation(val any) {
 	if err := j.validateSetAssignIpv6AddressOnCreationParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_Subnet)SetAssignIpv6AddressOnCreation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_Subnet) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_Subnet)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetAvailabilityZoneId(val *string) {
+func (j *jsiiProxy_Subnet) SetAvailabilityZoneId(val *string) {
 	if err := j.validateSetAvailabilityZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_Subnet)SetAvailabilityZoneId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetCidrBlock(val *string) {
+func (j *jsiiProxy_Subnet) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_Subnet)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetConnection(val interface{}) {
+func (j *jsiiProxy_Subnet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_Subnet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetCount(val interface{}) {
+func (j *jsiiProxy_Subnet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_Subnet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetCustomerOwnedIpv4Pool(val *string) {
+func (j *jsiiProxy_Subnet) SetCustomerOwnedIpv4Pool(val *string) {
 	if err := j.validateSetCustomerOwnedIpv4PoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_Subnet)SetCustomerOwnedIpv4Pool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Subnet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -885,7 +884,7 @@ func (j *jsiiProxy_Subnet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetEnableDns64(val interface{}) {
+func (j *jsiiProxy_Subnet) SetEnableDns64(val any) {
 	if err := j.validateSetEnableDns64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_Subnet)SetEnableDns64(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetEnableResourceNameDnsAaaaRecordOnLaunch(val interface{}) {
+func (j *jsiiProxy_Subnet) SetEnableResourceNameDnsAaaaRecordOnLaunch(val any) {
 	if err := j.validateSetEnableResourceNameDnsAaaaRecordOnLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_Subnet)SetEnableResourceNameDnsAaaaRecordOnLaunch(val interfa
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetEnableResourceNameDnsARecordOnLaunch(val interface{}) {
+func (j *jsiiProxy_Subnet) SetEnableResourceNameDnsARecordOnLaunch(val any) {
 	if err := j.validateSetEnableResourceNameDnsARecordOnLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_Subnet)SetEnableResourceNameDnsARecordOnLaunch(val interface{
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Subnet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -926,7 +925,7 @@ func (j *jsiiProxy_Subnet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetId(val *string) {
+func (j *jsiiProxy_Subnet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_Subnet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_Subnet) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_Subnet)SetIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetIpv6Native(val interface{}) {
+func (j *jsiiProxy_Subnet) SetIpv6Native(val any) {
 	if err := j.validateSetIpv6NativeParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_Subnet)SetIpv6Native(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Subnet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_Subnet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetMapCustomerOwnedIpOnLaunch(val interface{}) {
+func (j *jsiiProxy_Subnet) SetMapCustomerOwnedIpOnLaunch(val any) {
 	if err := j.validateSetMapCustomerOwnedIpOnLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_Subnet)SetMapCustomerOwnedIpOnLaunch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetMapPublicIpOnLaunch(val interface{}) {
+func (j *jsiiProxy_Subnet) SetMapPublicIpOnLaunch(val any) {
 	if err := j.validateSetMapPublicIpOnLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_Subnet)SetMapPublicIpOnLaunch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetOutpostArn(val *string) {
+func (j *jsiiProxy_Subnet) SetOutpostArn(val *string) {
 	if err := j.validateSetOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_Subnet)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetPrivateDnsHostnameTypeOnLaunch(val *string) {
+func (j *jsiiProxy_Subnet) SetPrivateDnsHostnameTypeOnLaunch(val *string) {
 	if err := j.validateSetPrivateDnsHostnameTypeOnLaunchParameters(val); err != nil {
 		panic(err)
 	}
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_Subnet)SetPrivateDnsHostnameTypeOnLaunch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Subnet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_Subnet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Subnet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_Subnet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Subnet) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_Subnet)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Subnet) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_Subnet)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetVpcId(val *string) {
+func (j *jsiiProxy_Subnet) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1078,7 +1077,7 @@ func Subnet_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.subnet.Subnet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func Subnet_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Subnet_IsConstruct(x interface{}) *bool {
+func Subnet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSubnet_IsConstructParameters(x); err != nil {
@@ -1113,7 +1112,7 @@ func Subnet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.subnet.Subnet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func Subnet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Subnet_IsTerraformElement(x interface{}) *bool {
+func Subnet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSubnet_IsTerraformElementParameters(x); err != nil {
@@ -1132,7 +1131,7 @@ func Subnet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.subnet.Subnet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func Subnet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Subnet_IsTerraformResource(x interface{}) *bool {
+func Subnet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSubnet_IsTerraformResourceParameters(x); err != nil {
@@ -1151,7 +1150,7 @@ func Subnet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.subnet.Subnet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1176,31 +1175,31 @@ func (s *jsiiProxy_Subnet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Subnet) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Subnet) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Subnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Subnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,7 +1215,7 @@ func (s *jsiiProxy_Subnet) GetBooleanAttribute(terraformAttribute *string) cdktf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (s *jsiiProxy_Subnet) GetBooleanMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1248,7 +1247,7 @@ func (s *jsiiProxy_Subnet) GetListAttribute(terraformAttribute *string) *[]*stri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1264,7 +1263,7 @@ func (s *jsiiProxy_Subnet) GetNumberAttribute(terraformAttribute *string) *float
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1280,7 +1279,7 @@ func (s *jsiiProxy_Subnet) GetNumberListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1296,7 +1295,7 @@ func (s *jsiiProxy_Subnet) GetNumberMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1312,7 +1311,7 @@ func (s *jsiiProxy_Subnet) GetStringAttribute(terraformAttribute *string) *strin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1328,15 +1327,15 @@ func (s *jsiiProxy_Subnet) GetStringMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Subnet) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Subnet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1355,7 +1354,7 @@ func (s *jsiiProxy_Subnet) ImportFrom(id *string, provider cdktf.TerraformProvid
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1368,7 +1367,7 @@ func (s *jsiiProxy_Subnet) InterpolationForAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1382,18 +1381,18 @@ func (s *jsiiProxy_Subnet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Subnet) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Subnet) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (s *jsiiProxy_Subnet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (s *jsiiProxy_Subnet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1426,7 +1425,7 @@ func (s *jsiiProxy_Subnet) PutTimeouts(value *SubnetTimeouts) {
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1582,8 +1581,8 @@ func (s *jsiiProxy_Subnet) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_Subnet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Subnet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1595,8 +1594,8 @@ func (s *jsiiProxy_Subnet) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Subnet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Subnet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1608,8 +1607,8 @@ func (s *jsiiProxy_Subnet) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Subnet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Subnet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1621,8 +1620,8 @@ func (s *jsiiProxy_Subnet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Subnet) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Subnet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1647,8 +1646,8 @@ func (s *jsiiProxy_Subnet) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Subnet) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Subnet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1659,4 +1658,3 @@ func (s *jsiiProxy_Subnet) ToTerraform() interface{} {
 
 	return returns
 }
-

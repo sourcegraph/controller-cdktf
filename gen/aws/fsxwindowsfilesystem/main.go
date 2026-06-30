@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
-		reflect.TypeOf((*FsxWindowsFileSystem)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryId", GoGetter: "ActiveDirectoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryIdInput", GoGetter: "ActiveDirectoryIdInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTime", GoGetter: "WeeklyMaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTimeInput", GoGetter: "WeeklyMaintenanceStartTimeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxWindowsFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration",
-		reflect.TypeOf((*FsxWindowsFileSystemAuditLogConfiguration)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemAuditLogConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
-		reflect.TypeOf((*FsxWindowsFileSystemAuditLogConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemAuditLogConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogDestination", GoGetter: "AuditLogDestination"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogDestinationInput", GoGetter: "AuditLogDestinationInput"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,15 +180,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemConfig",
-		reflect.TypeOf((*FsxWindowsFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory",
-		reflect.TypeOf((*FsxWindowsFileSystemSelfManagedActiveDirectory)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemSelfManagedActiveDirectory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
-		reflect.TypeOf((*FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -234,11 +234,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts",
-		reflect.TypeOf((*FsxWindowsFileSystemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeoutsOutputReference",
-		reflect.TypeOf((*FsxWindowsFileSystemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxWindowsFileSystemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

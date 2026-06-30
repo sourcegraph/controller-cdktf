@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewWafregionalRuleGroupActivatedRuleOutputReferenceParameters(terra
 
 	return nil
 }
-

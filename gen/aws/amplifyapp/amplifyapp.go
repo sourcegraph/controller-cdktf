@@ -30,17 +30,17 @@ type AmplifyApp interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomRule() AmplifyAppCustomRuleList
-	CustomRuleInput() interface{}
+	CustomRuleInput() any
 	DefaultDomain() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -49,18 +49,18 @@ type AmplifyApp interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EnableAutoBranchCreation() interface{}
-	SetEnableAutoBranchCreation(val interface{})
-	EnableAutoBranchCreationInput() interface{}
-	EnableBasicAuth() interface{}
-	SetEnableBasicAuth(val interface{})
-	EnableBasicAuthInput() interface{}
-	EnableBranchAutoBuild() interface{}
-	SetEnableBranchAutoBuild(val interface{})
-	EnableBranchAutoBuildInput() interface{}
-	EnableBranchAutoDeletion() interface{}
-	SetEnableBranchAutoDeletion(val interface{})
-	EnableBranchAutoDeletionInput() interface{}
+	EnableAutoBranchCreation() any
+	SetEnableAutoBranchCreation(val any)
+	EnableAutoBranchCreationInput() any
+	EnableBasicAuth() any
+	SetEnableBasicAuth(val any)
+	EnableBasicAuthInput() any
+	EnableBranchAutoBuild() any
+	SetEnableBranchAutoBuild(val any)
+	EnableBranchAutoBuildInput() any
+	EnableBranchAutoDeletion() any
+	SetEnableBranchAutoDeletion(val any)
+	EnableBranchAutoDeletionInput() any
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
@@ -99,11 +99,11 @@ type AmplifyApp interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
@@ -116,16 +116,16 @@ type AmplifyApp interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type AmplifyApp interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type AmplifyApp interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -163,7 +163,7 @@ type AmplifyApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoBranchCreationConfig(value *AmplifyAppAutoBranchCreationConfig)
-	PutCustomRule(value interface{})
+	PutCustomRule(value any)
 	ResetAccessToken()
 	ResetAutoBranchCreationConfig()
 	ResetAutoBranchCreationPatterns()
@@ -186,17 +186,17 @@ type AmplifyApp interface {
 	ResetRepository()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AmplifyApp
@@ -324,8 +324,8 @@ func (j *jsiiProxy_AmplifyApp) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_AmplifyApp) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmplifyApp) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_AmplifyApp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_AmplifyApp) CustomRule() AmplifyAppCustomRuleList {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) CustomRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) CustomRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customRuleInput",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AmplifyApp) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutoBranchCreation",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutoBranchCreationInput",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_AmplifyApp) EnableAutoBranchCreationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBasicAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBasicAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBasicAuth",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_AmplifyApp) EnableBasicAuth() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBasicAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBasicAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBasicAuthInput",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_AmplifyApp) EnableBasicAuthInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuild() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuild() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBranchAutoBuild",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuild() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuildInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuildInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBranchAutoBuildInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_AmplifyApp) EnableBranchAutoBuildInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBranchAutoDeletion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBranchAutoDeletion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBranchAutoDeletion",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_AmplifyApp) EnableBranchAutoDeletion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) EnableBranchAutoDeletionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) EnableBranchAutoDeletionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableBranchAutoDeletionInput",
@@ -684,8 +684,8 @@ func (j *jsiiProxy_AmplifyApp) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AmplifyApp) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -694,8 +694,8 @@ func (j *jsiiProxy_AmplifyApp) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyApp) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -774,8 +774,8 @@ func (j *jsiiProxy_AmplifyApp) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyApp) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmplifyApp) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -794,7 +794,6 @@ func (j *jsiiProxy_AmplifyApp) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppConfig) AmplifyApp {
 	_init_.Initialize()
@@ -806,7 +805,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -819,12 +818,12 @@ func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetAccessToken(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetAccessToken(val *string) {
 	if err := j.validateSetAccessTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_AmplifyApp)SetAccessToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetAutoBranchCreationPatterns(val *[]*string) {
+func (j *jsiiProxy_AmplifyApp) SetAutoBranchCreationPatterns(val *[]*string) {
 	if err := j.validateSetAutoBranchCreationPatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_AmplifyApp)SetAutoBranchCreationPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetBasicAuthCredentials(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetBasicAuthCredentials(val *string) {
 	if err := j.validateSetBasicAuthCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_AmplifyApp)SetBasicAuthCredentials(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetBuildSpec(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetBuildSpec(val *string) {
 	if err := j.validateSetBuildSpecParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_AmplifyApp)SetBuildSpec(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetConnection(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_AmplifyApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetCount(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_AmplifyApp)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AmplifyApp) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -898,7 +897,7 @@ func (j *jsiiProxy_AmplifyApp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetDescription(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_AmplifyApp)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetEnableAutoBranchCreation(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetEnableAutoBranchCreation(val any) {
 	if err := j.validateSetEnableAutoBranchCreationParameters(val); err != nil {
 		panic(err)
 	}
@@ -920,7 +919,7 @@ func (j *jsiiProxy_AmplifyApp)SetEnableAutoBranchCreation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetEnableBasicAuth(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetEnableBasicAuth(val any) {
 	if err := j.validateSetEnableBasicAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -931,7 +930,7 @@ func (j *jsiiProxy_AmplifyApp)SetEnableBasicAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetEnableBranchAutoBuild(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetEnableBranchAutoBuild(val any) {
 	if err := j.validateSetEnableBranchAutoBuildParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func (j *jsiiProxy_AmplifyApp)SetEnableBranchAutoBuild(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetEnableBranchAutoDeletion(val interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetEnableBranchAutoDeletion(val any) {
 	if err := j.validateSetEnableBranchAutoDeletionParameters(val); err != nil {
 		panic(err)
 	}
@@ -953,7 +952,7 @@ func (j *jsiiProxy_AmplifyApp)SetEnableBranchAutoDeletion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_AmplifyApp) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_AmplifyApp)SetEnvironmentVariables(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AmplifyApp) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -972,7 +971,7 @@ func (j *jsiiProxy_AmplifyApp)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetIamServiceRoleArn(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetIamServiceRoleArn(val *string) {
 	if err := j.validateSetIamServiceRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -983,7 +982,7 @@ func (j *jsiiProxy_AmplifyApp)SetIamServiceRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetId(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func (j *jsiiProxy_AmplifyApp)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AmplifyApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1005,7 +1004,7 @@ func (j *jsiiProxy_AmplifyApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetName(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1016,7 +1015,7 @@ func (j *jsiiProxy_AmplifyApp)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetOauthToken(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetOauthToken(val *string) {
 	if err := j.validateSetOauthTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1027,7 +1026,7 @@ func (j *jsiiProxy_AmplifyApp)SetOauthToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetPlatform(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetPlatform(val *string) {
 	if err := j.validateSetPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_AmplifyApp)SetPlatform(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AmplifyApp) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_AmplifyApp)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AmplifyApp) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func (j *jsiiProxy_AmplifyApp)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetRepository(val *string) {
+func (j *jsiiProxy_AmplifyApp) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1068,7 +1067,7 @@ func (j *jsiiProxy_AmplifyApp)SetRepository(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AmplifyApp) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1078,7 @@ func (j *jsiiProxy_AmplifyApp)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyApp)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AmplifyApp) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func AmplifyApp_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1126,7 +1125,7 @@ func AmplifyApp_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AmplifyApp_IsConstruct(x interface{}) *bool {
+func AmplifyApp_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyApp_IsConstructParameters(x); err != nil {
@@ -1137,7 +1136,7 @@ func AmplifyApp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func AmplifyApp_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AmplifyApp_IsTerraformElement(x interface{}) *bool {
+func AmplifyApp_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyApp_IsTerraformElementParameters(x); err != nil {
@@ -1156,7 +1155,7 @@ func AmplifyApp_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func AmplifyApp_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AmplifyApp_IsTerraformResource(x interface{}) *bool {
+func AmplifyApp_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyApp_IsTerraformResourceParameters(x); err != nil {
@@ -1175,7 +1174,7 @@ func AmplifyApp_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1200,31 +1199,31 @@ func (a *jsiiProxy_AmplifyApp) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AmplifyApp) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AmplifyApp) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AmplifyApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AmplifyApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1240,7 +1239,7 @@ func (a *jsiiProxy_AmplifyApp) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1256,7 +1255,7 @@ func (a *jsiiProxy_AmplifyApp) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1272,7 +1271,7 @@ func (a *jsiiProxy_AmplifyApp) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1288,7 +1287,7 @@ func (a *jsiiProxy_AmplifyApp) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1304,7 +1303,7 @@ func (a *jsiiProxy_AmplifyApp) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1320,7 +1319,7 @@ func (a *jsiiProxy_AmplifyApp) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1336,7 +1335,7 @@ func (a *jsiiProxy_AmplifyApp) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1352,15 +1351,15 @@ func (a *jsiiProxy_AmplifyApp) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyApp) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyApp) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1379,7 +1378,7 @@ func (a *jsiiProxy_AmplifyApp) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1392,7 +1391,7 @@ func (a *jsiiProxy_AmplifyApp) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1406,18 +1405,18 @@ func (a *jsiiProxy_AmplifyApp) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AmplifyApp) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AmplifyApp) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1428,7 +1427,7 @@ func (a *jsiiProxy_AmplifyApp) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1439,7 +1438,7 @@ func (a *jsiiProxy_AmplifyApp) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1450,18 +1449,18 @@ func (a *jsiiProxy_AmplifyApp) PutAutoBranchCreationConfig(value *AmplifyAppAuto
 	_jsii_.InvokeVoid(
 		a,
 		"putAutoBranchCreationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AmplifyApp) PutCustomRule(value interface{}) {
+func (a *jsiiProxy_AmplifyApp) PutCustomRule(value any) {
 	if err := a.validatePutCustomRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putCustomRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1625,8 +1624,8 @@ func (a *jsiiProxy_AmplifyApp) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_AmplifyApp) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmplifyApp) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1638,8 +1637,8 @@ func (a *jsiiProxy_AmplifyApp) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyApp) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmplifyApp) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1651,8 +1650,8 @@ func (a *jsiiProxy_AmplifyApp) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyApp) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyApp) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1664,8 +1663,8 @@ func (a *jsiiProxy_AmplifyApp) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyApp) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyApp) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1690,8 +1689,8 @@ func (a *jsiiProxy_AmplifyApp) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyApp) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyApp) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1702,4 +1701,3 @@ func (a *jsiiProxy_AmplifyApp) ToTerraform() interface{} {
 
 	return returns
 }
-

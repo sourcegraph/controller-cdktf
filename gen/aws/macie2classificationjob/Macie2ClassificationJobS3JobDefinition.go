@@ -1,6 +1,5 @@
 package macie2classificationjob
 
-
 type Macie2ClassificationJobS3JobDefinition struct {
 	// bucket_criteria block.
 	//
@@ -9,10 +8,9 @@ type Macie2ClassificationJobS3JobDefinition struct {
 	// bucket_definitions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#bucket_definitions Macie2ClassificationJob#bucket_definitions}
-	BucketDefinitions interface{} `field:"optional" json:"bucketDefinitions" yaml:"bucketDefinitions"`
+	BucketDefinitions any `field:"optional" json:"bucketDefinitions" yaml:"bucketDefinitions"`
 	// scoping block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#scoping Macie2ClassificationJob#scoping}
 	Scoping *Macie2ClassificationJobS3JobDefinitionScoping `field:"optional" json:"scoping" yaml:"scoping"`
 }
-

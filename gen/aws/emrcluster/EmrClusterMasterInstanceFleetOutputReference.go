@@ -12,9 +12,9 @@ type EmrClusterMasterInstanceFleetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,7 +29,7 @@ type EmrClusterMasterInstanceFleetOutputReference interface {
 	Fqn() *string
 	Id() *string
 	InstanceTypeConfigs() EmrClusterMasterInstanceFleetInstanceTypeConfigsList
-	InstanceTypeConfigsInput() interface{}
+	InstanceTypeConfigsInput() any
 	InternalValue() *EmrClusterMasterInstanceFleet
 	SetInternalValue(val *EmrClusterMasterInstanceFleet)
 	LaunchSpecifications() EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference
@@ -56,7 +56,7 @@ type EmrClusterMasterInstanceFleetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type EmrClusterMasterInstanceFleetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInstanceTypeConfigs(value interface{})
+	PutInstanceTypeConfigs(value any)
 	PutLaunchSpecifications(value *EmrClusterMasterInstanceFleetLaunchSpecifications)
 	ResetInstanceTypeConfigs()
 	ResetLaunchSpecifications()
@@ -86,7 +86,7 @@ type EmrClusterMasterInstanceFleetOutputReference interface {
 	ResetTargetSpotCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_EmrClusterMasterInstanceFleetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) InstanceTypeCon
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) InstanceTypeConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) InstanceTypeConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"instanceTypeConfigsInput",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewEmrClusterMasterInstanceFleetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmrClusterMasterInstanceFleetOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewEmrClusterMasterInstanceFleetOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewEmrClusterMasterInstanceFleetOutputReference_Override(e EmrClusterMaster
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetInternalValue(val *EmrClusterMasterInstanceFleet) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetInternalValue(val *EmrClusterMasterInstanceFleet) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetName(val *string) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTargetOnDemandCapacity(val *float64) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetTargetOnDemandCapacity(val *float64) {
 	if err := j.validateSetTargetOnDemandCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTargetOnDeman
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTargetSpotCapacity(val *float64) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetTargetSpotCapacity(val *float64) {
 	if err := j.validateSetTargetSpotCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTargetSpotCap
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,16 +427,16 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,21 +593,21 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) PutInstanceTypeConfigs(value interface{}) {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) PutInstanceTypeConfigs(value any) {
 	if err := e.validatePutInstanceTypeConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putInstanceTypeConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -619,7 +618,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) PutLaunchSpecif
 	_jsii_.InvokeVoid(
 		e,
 		"putLaunchSpecifications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -663,16 +662,16 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) ResetTargetSpot
 	)
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) ToString() *str
 
 	return returns
 }
-

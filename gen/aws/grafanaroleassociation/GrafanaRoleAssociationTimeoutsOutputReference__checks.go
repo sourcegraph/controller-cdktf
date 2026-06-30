@@ -98,7 +98,7 @@ func (g *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGrafanaRoleAssociationTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

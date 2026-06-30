@@ -36,7 +36,7 @@ type MemorydbClusterClusterEndpointList interface {
 	Get(index *float64) MemorydbClusterClusterEndpointOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_MemorydbClusterClusterEndpointList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMemorydbClusterClusterEndpointList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbClusterClusterEndpointList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewMemorydbClusterClusterEndpointList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewMemorydbClusterClusterEndpointList_Override(m MemorydbClusterClusterEndp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterClusterEndpointList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorydbClusterClusterEndpointList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_MemorydbClusterClusterEndpointList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterClusterEndpointList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorydbClusterClusterEndpointList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_MemorydbClusterClusterEndpointList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_MemorydbClusterClusterEndpointList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MemorydbClusterClusterEndpointList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (m *jsiiProxy_MemorydbClusterClusterEndpointList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (m *jsiiProxy_MemorydbClusterClusterEndpointList) Get(index *float64) Memor
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbClusterClusterEndpointList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorydbClusterClusterEndpointList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (m *jsiiProxy_MemorydbClusterClusterEndpointList) ToString() *string {
 
 	return returns
 }
-

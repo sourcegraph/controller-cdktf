@@ -98,7 +98,7 @@ func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSignerSigningProfileSignatureValidityPeriodOutputReferenceParame
 
 	return nil
 }
-

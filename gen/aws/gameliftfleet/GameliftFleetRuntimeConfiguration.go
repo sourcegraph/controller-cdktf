@@ -1,6 +1,5 @@
 package gameliftfleet
 
-
 type GameliftFleetRuntimeConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}.
 	GameSessionActivationTimeoutSeconds *float64 `field:"optional" json:"gameSessionActivationTimeoutSeconds" yaml:"gameSessionActivationTimeoutSeconds"`
@@ -9,6 +8,5 @@ type GameliftFleetRuntimeConfiguration struct {
 	// server_process block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
-	ServerProcess interface{} `field:"optional" json:"serverProcess" yaml:"serverProcess"`
+	ServerProcess any `field:"optional" json:"serverProcess" yaml:"serverProcess"`
 }
-

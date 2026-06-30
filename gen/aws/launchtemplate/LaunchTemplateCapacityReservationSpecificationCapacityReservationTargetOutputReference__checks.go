@@ -114,7 +114,7 @@ func (j *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReserva
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateCapacityReservationSpecificationCapacityReservatio
 
 	return nil
 }
-

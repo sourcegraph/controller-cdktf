@@ -16,19 +16,19 @@ type LexSlotType interface {
 	CdktfStack() cdktf.TerraformStack
 	Checksum() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
-	CreateVersion() interface{}
-	SetCreateVersion(val interface{})
-	CreateVersionInput() interface{}
+	CreateVersion() any
+	SetCreateVersion(val any)
+	CreateVersionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,7 +37,7 @@ type LexSlotType interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EnumerationValue() LexSlotTypeEnumerationValueList
-	EnumerationValueInput() interface{}
+	EnumerationValueInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -64,19 +64,19 @@ type LexSlotType interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LexSlotTypeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ValueSelectionStrategy() *string
 	SetValueSelectionStrategy(val *string)
 	ValueSelectionStrategyInput() *string
@@ -85,9 +85,9 @@ type LexSlotType interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type LexSlotType interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,14 +117,14 @@ type LexSlotType interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEnumerationValue(value interface{})
+	PutEnumerationValue(value any)
 	PutTimeouts(value *LexSlotTypeTimeouts)
 	ResetCreateVersion()
 	ResetDescription()
@@ -134,17 +134,17 @@ type LexSlotType interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetValueSelectionStrategy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LexSlotType
@@ -172,8 +172,8 @@ func (j *jsiiProxy_LexSlotType) Checksum() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_LexSlotType) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexSlotType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_LexSlotType) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_LexSlotType) CreatedDate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) CreateVersion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) CreateVersion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createVersion",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_LexSlotType) CreateVersion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) CreateVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) CreateVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createVersionInput",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_LexSlotType) EnumerationValue() LexSlotTypeEnumerationValueLi
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) EnumerationValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) EnumerationValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enumerationValueInput",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_LexSlotType) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LexSlotType) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_LexSlotType) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_LexSlotType) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LexSlotType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_LexSlotType) Timeouts() LexSlotTypeTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LexSlotType) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexSlotType) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -492,7 +492,6 @@ func (j *jsiiProxy_LexSlotType) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lex_slot_type aws_lex_slot_type} Resource.
 func NewLexSlotType(scope constructs.Construct, id *string, config *LexSlotTypeConfig) LexSlotType {
 	_init_.Initialize()
@@ -504,7 +503,7 @@ func NewLexSlotType(scope constructs.Construct, id *string, config *LexSlotTypeC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewLexSlotType_Override(l LexSlotType, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetConnection(val interface{}) {
+func (j *jsiiProxy_LexSlotType) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_LexSlotType)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetCount(val interface{}) {
+func (j *jsiiProxy_LexSlotType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_LexSlotType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetCreateVersion(val interface{}) {
+func (j *jsiiProxy_LexSlotType) SetCreateVersion(val any) {
 	if err := j.validateSetCreateVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_LexSlotType)SetCreateVersion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LexSlotType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_LexSlotType)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetDescription(val *string) {
+func (j *jsiiProxy_LexSlotType) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_LexSlotType)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LexSlotType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_LexSlotType)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetId(val *string) {
+func (j *jsiiProxy_LexSlotType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_LexSlotType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LexSlotType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_LexSlotType)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetName(val *string) {
+func (j *jsiiProxy_LexSlotType) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_LexSlotType)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LexSlotType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_LexSlotType)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LexSlotType) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_LexSlotType)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexSlotType)SetValueSelectionStrategy(val *string) {
+func (j *jsiiProxy_LexSlotType) SetValueSelectionStrategy(val *string) {
 	if err := j.validateSetValueSelectionStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func LexSlotType_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func LexSlotType_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LexSlotType_IsConstruct(x interface{}) *bool {
+func LexSlotType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexSlotType_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func LexSlotType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func LexSlotType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LexSlotType_IsTerraformElement(x interface{}) *bool {
+func LexSlotType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexSlotType_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func LexSlotType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func LexSlotType_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LexSlotType_IsTerraformResource(x interface{}) *bool {
+func LexSlotType_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLexSlotType_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func LexSlotType_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (l *jsiiProxy_LexSlotType) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LexSlotType) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LexSlotType) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LexSlotType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexSlotType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LexSlotType) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LexSlotType) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (l *jsiiProxy_LexSlotType) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LexSlotType) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (l *jsiiProxy_LexSlotType) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (l *jsiiProxy_LexSlotType) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (l *jsiiProxy_LexSlotType) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (l *jsiiProxy_LexSlotType) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexSlotType) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexSlotType) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -934,7 +933,7 @@ func (l *jsiiProxy_LexSlotType) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (l *jsiiProxy_LexSlotType) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (l *jsiiProxy_LexSlotType) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LexSlotType) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LexSlotType) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (l *jsiiProxy_LexSlotType) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,18 +993,18 @@ func (l *jsiiProxy_LexSlotType) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LexSlotType) PutEnumerationValue(value interface{}) {
+func (l *jsiiProxy_LexSlotType) PutEnumerationValue(value any) {
 	if err := l.validatePutEnumerationValueParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putEnumerationValue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (l *jsiiProxy_LexSlotType) PutTimeouts(value *LexSlotTypeTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,8 +1067,8 @@ func (l *jsiiProxy_LexSlotType) ResetValueSelectionStrategy() {
 	)
 }
 
-func (l *jsiiProxy_LexSlotType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexSlotType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1081,8 +1080,8 @@ func (l *jsiiProxy_LexSlotType) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexSlotType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LexSlotType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1094,8 +1093,8 @@ func (l *jsiiProxy_LexSlotType) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (l *jsiiProxy_LexSlotType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexSlotType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1107,8 +1106,8 @@ func (l *jsiiProxy_LexSlotType) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LexSlotType) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexSlotType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1133,8 +1132,8 @@ func (l *jsiiProxy_LexSlotType) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LexSlotType) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LexSlotType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1145,4 +1144,3 @@ func (l *jsiiProxy_LexSlotType) ToTerraform() interface{} {
 
 	return returns
 }
-

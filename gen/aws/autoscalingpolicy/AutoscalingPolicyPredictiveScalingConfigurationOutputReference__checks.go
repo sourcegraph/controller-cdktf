@@ -109,7 +109,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewAutoscalingPolicyPredictiveScalingConfigurationOutputReferencePa
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityGroup) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityGroup) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SecurityGroup) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroup) validatePutEgressParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityGroup) validatePutEgressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (s *jsiiProxy_SecurityGroup) validatePutEgressParameters(value interface{})
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroup) validatePutIngressParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityGroup) validatePutIngressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateSecurityGroup_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateSecurityGroup_IsConstructParameters(x interface{}) error {
+func validateSecurityGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateSecurityGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SecurityGroup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -447,7 +447,7 @@ func (j *jsiiProxy_SecurityGroup) validateSetNamePrefixParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,7 +493,7 @@ func (j *jsiiProxy_SecurityGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroup) validateSetRevokeRulesOnDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroup) validateSetRevokeRulesOnDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -552,4 +552,3 @@ func validateNewSecurityGroupParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

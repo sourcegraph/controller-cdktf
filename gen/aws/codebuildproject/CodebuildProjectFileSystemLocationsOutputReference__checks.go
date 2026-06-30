@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewCodebuildProjectFileSystemLocationsOutputReferenceParameters(ter
 
 	return nil
 }
-

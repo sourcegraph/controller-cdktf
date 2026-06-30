@@ -6,9 +6,9 @@ import (
 
 type Macie2ClassificationJobConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Macie2ClassificationJobConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#job_type Macie2ClassificationJob#job_type}.
 	JobType *string `field:"required" json:"jobType" yaml:"jobType"`
 	// s3_job_definition block.
@@ -35,7 +35,7 @@ type Macie2ClassificationJobConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#initial_run Macie2ClassificationJob#initial_run}.
-	InitialRun interface{} `field:"optional" json:"initialRun" yaml:"initialRun"`
+	InitialRun any `field:"optional" json:"initialRun" yaml:"initialRun"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#job_status Macie2ClassificationJob#job_status}.
 	JobStatus *string `field:"optional" json:"jobStatus" yaml:"jobStatus"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#name Macie2ClassificationJob#name}.
@@ -53,4 +53,3 @@ type Macie2ClassificationJobConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_job#tags_all Macie2ClassificationJob#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

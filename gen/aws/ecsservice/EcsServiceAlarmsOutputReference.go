@@ -15,9 +15,9 @@ type EcsServiceAlarmsOutputReference interface {
 	AlarmNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type EcsServiceAlarmsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EcsServiceAlarms
 	SetInternalValue(val *EcsServiceAlarms)
-	Rollback() interface{}
-	SetRollback(val interface{})
-	RollbackInput() interface{}
+	Rollback() any
+	SetRollback(val any)
+	RollbackInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type EcsServiceAlarmsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type EcsServiceAlarmsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) AlarmNamesInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Enable() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) InternalValue() *EcsServiceA
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Rollback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Rollback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rollback",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) Rollback() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference) RollbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) RollbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rollbackInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference) TerraformResource() cdktf.II
 	return returns
 }
 
-
 func NewEcsServiceAlarmsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcsServiceAlarmsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewEcsServiceAlarmsOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewEcsServiceAlarmsOutputReference_Override(e EcsServiceAlarmsOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetAlarmNames(val *[]*string) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetAlarmNames(val *[]*string) {
 	if err := j.validateSetAlarmNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetAlarmNames(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetEnable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetInternalValue(val *EcsServiceAlarms) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetInternalValue(val *EcsServiceAlarms) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetInternalValue(val *EcsServ
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetRollback(val interface{}) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetRollback(val any) {
 	if err := j.validateSetRollbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetRollback(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_EcsServiceAlarmsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsServiceAlarmsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsServiceAlarmsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsServiceAlarmsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (e *jsiiProxy_EcsServiceAlarmsOutputReference) ToString() *string {
 
 	return returns
 }
-

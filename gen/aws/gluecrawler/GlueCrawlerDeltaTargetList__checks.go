@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDeltaTargetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerDeltaTargetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCrawlerDeltaTargetListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

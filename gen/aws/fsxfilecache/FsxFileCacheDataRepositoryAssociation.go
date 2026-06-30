@@ -1,6 +1,5 @@
 package fsxfilecache
 
-
 type FsxFileCacheDataRepositoryAssociation struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}.
 	DataRepositoryPath *string `field:"required" json:"dataRepositoryPath" yaml:"dataRepositoryPath"`
@@ -11,8 +10,7 @@ type FsxFileCacheDataRepositoryAssociation struct {
 	// nfs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
-	Nfs interface{} `field:"optional" json:"nfs" yaml:"nfs"`
+	Nfs any `field:"optional" json:"nfs" yaml:"nfs"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAcmpcaCertificateAuthorityTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

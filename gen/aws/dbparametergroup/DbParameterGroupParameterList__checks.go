@@ -34,7 +34,7 @@ func (d *jsiiProxy_DbParameterGroupParameterList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDbParameterGroupParameterListParameters(terraformResource cdktf.
 
 	return nil
 }
-

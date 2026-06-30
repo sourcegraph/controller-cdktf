@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
-		reflect.TypeOf((*ElasticsearchDomain)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicies", GoGetter: "AccessPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPoliciesInput", GoGetter: "AccessPoliciesInput"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcOptions", GoGetter: "VpcOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcOptionsInput", GoGetter: "VpcOptionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptions",
-		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAdvancedSecurityOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions",
-		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAdvancedSecurityOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,19 +223,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptions",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,7 +271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -332,7 +332,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainAutoTuneOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,15 +373,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfig",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptions",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfigColdStorageOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfigColdStorageOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -408,7 +408,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -416,7 +416,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptions", GoGetter: "ColdStorageOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptionsInput", GoGetter: "ColdStorageOptionsInput"},
@@ -475,7 +475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessEnabled", GoGetter: "ZoneAwarenessEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneAwarenessEnabledInput", GoGetter: "ZoneAwarenessEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -483,11 +483,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfig",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfigZoneAwarenessConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfigZoneAwarenessConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCount", GoGetter: "AvailabilityZoneCount"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCountInput", GoGetter: "AvailabilityZoneCountInput"},
@@ -514,7 +514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -522,11 +522,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptions",
-		reflect.TypeOf((*ElasticsearchDomainCognitoOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainCognitoOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainCognitoOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainCognitoOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -567,15 +567,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainConfig",
-		reflect.TypeOf((*ElasticsearchDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptions",
-		reflect.TypeOf((*ElasticsearchDomainDomainEndpointOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainDomainEndpointOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainDomainEndpointOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainDomainEndpointOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -614,7 +614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsSecurityPolicyInput", GoGetter: "TlsSecurityPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainDomainEndpointOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -622,11 +622,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptions",
-		reflect.TypeOf((*ElasticsearchDomainEbsOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainEbsOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainEbsOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainEbsOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,11 +672,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRest",
-		reflect.TypeOf((*ElasticsearchDomainEncryptAtRest)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainEncryptAtRest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRestOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainEncryptAtRestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainEncryptAtRestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -705,7 +705,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainEncryptAtRestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -713,11 +713,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptions",
-		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainLogPublishingOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
-		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptionsList)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainLogPublishingOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -731,7 +731,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainLogPublishingOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -739,7 +739,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainLogPublishingOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArn", GoGetter: "CloudwatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArnInput", GoGetter: "CloudwatchLogGroupArnInput"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -778,11 +778,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryption",
-		reflect.TypeOf((*ElasticsearchDomainNodeToNodeEncryption)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainNodeToNodeEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainNodeToNodeEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainNodeToNodeEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -808,7 +808,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainNodeToNodeEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -816,11 +816,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptions",
-		reflect.TypeOf((*ElasticsearchDomainSnapshotOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainSnapshotOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainSnapshotOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainSnapshotOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHour", GoGetter: "AutomatedSnapshotStartHour"},
 			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHourInput", GoGetter: "AutomatedSnapshotStartHourInput"},
@@ -846,7 +846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -854,11 +854,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeouts",
-		reflect.TypeOf((*ElasticsearchDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -891,7 +891,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -899,11 +899,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptions",
-		reflect.TypeOf((*ElasticsearchDomainVpcOptions)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainVpcOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
-		reflect.TypeOf((*ElasticsearchDomainVpcOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticsearchDomainVpcOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -935,7 +935,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

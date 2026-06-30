@@ -15,15 +15,15 @@ type XrayEncryptionConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,15 +53,15 @@ type XrayEncryptionConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -71,9 +71,9 @@ type XrayEncryptionConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type XrayEncryptionConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type XrayEncryptionConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type XrayEncryptionConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for XrayEncryptionConfig
@@ -143,8 +143,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_XrayEncryptionConfig) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_XrayEncryptionConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_XrayEncryptionConfig) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/xray_encryption_config aws_xray_encryption_config} Resource.
 func NewXrayEncryptionConfig(scope constructs.Construct, id *string, config *XrayEncryptionConfigConfig) XrayEncryptionConfig {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewXrayEncryptionConfig(scope constructs.Construct, id *string, config *Xra
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewXrayEncryptionConfig_Override(x XrayEncryptionConfig, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		x,
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetId(val *string) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetKeyId(val *string) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetKeyId(val *string) {
 	if err := j.validateSetKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig)SetType(val *string) {
+func (j *jsiiProxy_XrayEncryptionConfig) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func XrayEncryptionConfig_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func XrayEncryptionConfig_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func XrayEncryptionConfig_IsConstruct(x interface{}) *bool {
+func XrayEncryptionConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateXrayEncryptionConfig_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func XrayEncryptionConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func XrayEncryptionConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool {
+func XrayEncryptionConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateXrayEncryptionConfig_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func XrayEncryptionConfig_IsTerraformResource(x interface{}) *bool {
+func XrayEncryptionConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateXrayEncryptionConfig_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func XrayEncryptionConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (x *jsiiProxy_XrayEncryptionConfig) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		x,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) AddOverride(path *string, value interface{}) {
+func (x *jsiiProxy_XrayEncryptionConfig) AddOverride(path *string, value any) {
 	if err := x.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		x,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (x *jsiiProxy_XrayEncryptionConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := x.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		x,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		x,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		x,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		x,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		x,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		x,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		x,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		x,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (x *jsiiProxy_XrayEncryptionConfig) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		x,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		x,
@@ -773,7 +772,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		x,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		x,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (x *jsiiProxy_XrayEncryptionConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		x,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) MoveTo(moveTarget *string, index interface{}) {
+func (x *jsiiProxy_XrayEncryptionConfig) MoveTo(moveTarget *string, index any) {
 	if err := x.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		x,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		x,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (x *jsiiProxy_XrayEncryptionConfig) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		x,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -861,8 +860,8 @@ func (x *jsiiProxy_XrayEncryptionConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		x,
@@ -874,8 +873,8 @@ func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		x,
@@ -887,8 +886,8 @@ func (x *jsiiProxy_XrayEncryptionConfig) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		x,
@@ -900,8 +899,8 @@ func (x *jsiiProxy_XrayEncryptionConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		x,
@@ -926,8 +925,8 @@ func (x *jsiiProxy_XrayEncryptionConfig) ToString() *string {
 	return returns
 }
 
-func (x *jsiiProxy_XrayEncryptionConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (x *jsiiProxy_XrayEncryptionConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		x,
@@ -938,4 +937,3 @@ func (x *jsiiProxy_XrayEncryptionConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

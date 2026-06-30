@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -302,4 +302,3 @@ func validateNewElastictranscoderPresetVideoWatermarksOutputReferenceParameters(
 
 	return nil
 }
-

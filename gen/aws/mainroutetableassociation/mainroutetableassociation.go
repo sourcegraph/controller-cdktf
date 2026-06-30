@@ -15,15 +15,15 @@ type MainRouteTableAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,18 +51,18 @@ type MainRouteTableAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RouteTableId() *string
 	SetRouteTableId(val *string)
 	RouteTableIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcId() *string
@@ -72,9 +72,9 @@ type MainRouteTableAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type MainRouteTableAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type MainRouteTableAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type MainRouteTableAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MainRouteTableAssociation
@@ -143,8 +143,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_MainRouteTableAssociation) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MainRouteTableAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_MainRouteTableAssociation) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource.
 func NewMainRouteTableAssociation(scope constructs.Construct, id *string, config *MainRouteTableAssociationConfig) MainRouteTableAssociation {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewMainRouteTableAssociation(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewMainRouteTableAssociation_Override(m MainRouteTableAssociation, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetId(val *string) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetRouteTableId(val *string) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetRouteTableId(val *string) {
 	if err := j.validateSetRouteTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_MainRouteTableAssociation)SetRouteTableId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MainRouteTableAssociation)SetVpcId(val *string) {
+func (j *jsiiProxy_MainRouteTableAssociation) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func MainRouteTableAssociation_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func MainRouteTableAssociation_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MainRouteTableAssociation_IsConstruct(x interface{}) *bool {
+func MainRouteTableAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMainRouteTableAssociation_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func MainRouteTableAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func MainRouteTableAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MainRouteTableAssociation_IsTerraformElement(x interface{}) *bool {
+func MainRouteTableAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMainRouteTableAssociation_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func MainRouteTableAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func MainRouteTableAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MainRouteTableAssociation_IsTerraformResource(x interface{}) *bool {
+func MainRouteTableAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMainRouteTableAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func MainRouteTableAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (m *jsiiProxy_MainRouteTableAssociation) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MainRouteTableAssociation) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MainRouteTableAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (m *jsiiProxy_MainRouteTableAssociation) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -783,7 +782,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (m *jsiiProxy_MainRouteTableAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MainRouteTableAssociation) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,7 +842,7 @@ func (m *jsiiProxy_MainRouteTableAssociation) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -863,8 +862,8 @@ func (m *jsiiProxy_MainRouteTableAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -876,8 +875,8 @@ func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -889,8 +888,8 @@ func (m *jsiiProxy_MainRouteTableAssociation) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -902,8 +901,8 @@ func (m *jsiiProxy_MainRouteTableAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -928,8 +927,8 @@ func (m *jsiiProxy_MainRouteTableAssociation) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MainRouteTableAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MainRouteTableAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -940,4 +939,3 @@ func (m *jsiiProxy_MainRouteTableAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

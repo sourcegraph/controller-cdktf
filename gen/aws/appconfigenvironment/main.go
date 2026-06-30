@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment",
-		reflect.TypeOf((*AppconfigEnvironment)(nil)).Elem(),
+		reflect.TypeFor[AppconfigEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentConfig",
-		reflect.TypeOf((*AppconfigEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[AppconfigEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitor",
-		reflect.TypeOf((*AppconfigEnvironmentMonitor)(nil)).Elem(),
+		reflect.TypeFor[AppconfigEnvironmentMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorList",
-		reflect.TypeOf((*AppconfigEnvironmentMonitorList)(nil)).Elem(),
+		reflect.TypeFor[AppconfigEnvironmentMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigEnvironmentMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorOutputReference",
-		reflect.TypeOf((*AppconfigEnvironmentMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppconfigEnvironmentMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmArn", GoGetter: "AlarmArn"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmArnInput", GoGetter: "AlarmArnInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigEnvironmentMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

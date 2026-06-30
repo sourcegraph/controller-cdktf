@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateAddMoveTargetP
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMoveFromIdPara
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateOverrideLogica
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validatePutSettingParameters(value interface{}) error {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validatePutSettingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateElasticBeanstalkConfigurationTemplate_GenerateConfigForImportParame
 	return nil
 }
 
-func validateElasticBeanstalkConfigurationTemplate_IsConstructParameters(x interface{}) error {
+func validateElasticBeanstalkConfigurationTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateElasticBeanstalkConfigurationTemplate_IsConstructParameters(x inter
 	return nil
 }
 
-func validateElasticBeanstalkConfigurationTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateElasticBeanstalkConfigurationTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateElasticBeanstalkConfigurationTemplate_IsTerraformElementParameters(
 	return nil
 }
 
-func validateElasticBeanstalkConfigurationTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateElasticBeanstalkConfigurationTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetApplication
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -413,7 +413,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewElasticBeanstalkConfigurationTemplateParameters(scope constructs
 
 	return nil
 }
-

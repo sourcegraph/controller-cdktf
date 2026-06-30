@@ -98,7 +98,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetAutoPauseParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetAutoPauseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetAut
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewRdsClusterScalingConfigurationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

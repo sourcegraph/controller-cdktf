@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshVirtualNodeSpecServiceDiscoveryOutputReferenceParameters(
 
 	return nil
 }
-

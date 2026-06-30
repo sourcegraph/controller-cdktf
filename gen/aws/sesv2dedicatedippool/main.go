@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
-		reflect.TypeOf((*Sesv2DedicatedIpPool)(nil)).Elem(),
+		reflect.TypeFor[Sesv2DedicatedIpPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2DedicatedIpPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolConfig",
-		reflect.TypeOf((*Sesv2DedicatedIpPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[Sesv2DedicatedIpPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeouts",
-		reflect.TypeOf((*Sesv2DedicatedIpPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Sesv2DedicatedIpPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
-		reflect.TypeOf((*Sesv2DedicatedIpPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Sesv2DedicatedIpPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

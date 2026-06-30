@@ -12,9 +12,9 @@ type XrayGroupInsightsConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type XrayGroupInsightsConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InsightsEnabled() interface{}
-	SetInsightsEnabled(val interface{})
-	InsightsEnabledInput() interface{}
+	InsightsEnabled() any
+	SetInsightsEnabled(val any)
+	InsightsEnabledInput() any
 	InternalValue() *XrayGroupInsightsConfiguration
 	SetInternalValue(val *XrayGroupInsightsConfiguration)
-	NotificationsEnabled() interface{}
-	SetNotificationsEnabled(val interface{})
-	NotificationsEnabledInput() interface{}
+	NotificationsEnabled() any
+	SetNotificationsEnabled(val any)
+	NotificationsEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type XrayGroupInsightsConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type XrayGroupInsightsConfigurationOutputReference interface {
 	ResetNotificationsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_XrayGroupInsightsConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insightsEnabled",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InsightsEnable
 	return returns
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insightsEnabledInput",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) NotificationsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) NotificationsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationsEnabled",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) NotificationsE
 	return returns
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) NotificationsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) NotificationsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationsEnabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewXrayGroupInsightsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) XrayGroupInsightsConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewXrayGroupInsightsConfigurationOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewXrayGroupInsightsConfigurationOutputReference_Override(x XrayGroupInsigh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		x,
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetInsightsEnabled(val any) {
 	if err := j.validateSetInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetInsightsEnab
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetInternalValue(val *XrayGroupInsightsConfiguration) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetInternalValue(val *XrayGroupInsightsConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetNotificationsEnabled(val interface{}) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetNotificationsEnabled(val any) {
 	if err := j.validateSetNotificationsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetNotification
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := x.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		x,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		x,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		x,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		x,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		x,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		x,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		x,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		x,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		x,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		x,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ResetNotificat
 	)
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := x.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		x,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ToString() *st
 
 	return returns
 }
-

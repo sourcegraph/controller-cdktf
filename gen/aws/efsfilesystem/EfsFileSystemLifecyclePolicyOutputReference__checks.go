@@ -98,7 +98,7 @@ func (e *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEfsFileSystemLifecyclePolicyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

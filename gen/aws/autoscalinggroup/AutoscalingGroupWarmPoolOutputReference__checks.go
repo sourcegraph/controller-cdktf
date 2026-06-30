@@ -109,7 +109,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewAutoscalingGroupWarmPoolOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

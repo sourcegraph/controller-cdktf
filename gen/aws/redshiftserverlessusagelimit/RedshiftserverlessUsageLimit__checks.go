@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateAddMoveTargetParameters
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftserverlessUsageLimit_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateRedshiftserverlessUsageLimit_IsConstructParameters(x interface{}) error {
+func validateRedshiftserverlessUsageLimit_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftserverlessUsageLimit_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateRedshiftserverlessUsageLimit_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftserverlessUsageLimit_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftserverlessUsageLimit_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateRedshiftserverlessUsageLimit_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftserverlessUsageLimit_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetBreachActionParamete
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetPeriodParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewRedshiftserverlessUsageLimitParameters(scope constructs.Construc
 
 	return nil
 }
-

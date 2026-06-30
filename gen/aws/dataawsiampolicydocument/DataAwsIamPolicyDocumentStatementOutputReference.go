@@ -15,16 +15,16 @@ type DataAwsIamPolicyDocumentStatementOutputReference interface {
 	ActionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Condition() DataAwsIamPolicyDocumentStatementConditionList
-	ConditionInput() interface{}
+	ConditionInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -35,18 +35,18 @@ type DataAwsIamPolicyDocumentStatementOutputReference interface {
 	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotActions() *[]*string
 	SetNotActions(val *[]*string)
 	NotActionsInput() *[]*string
 	NotPrincipals() DataAwsIamPolicyDocumentStatementNotPrincipalsList
-	NotPrincipalsInput() interface{}
+	NotPrincipalsInput() any
 	NotResources() *[]*string
 	SetNotResources(val *[]*string)
 	NotResourcesInput() *[]*string
 	Principals() DataAwsIamPolicyDocumentStatementPrincipalsList
-	PrincipalsInput() interface{}
+	PrincipalsInput() any
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
@@ -64,7 +64,7 @@ type DataAwsIamPolicyDocumentStatementOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,9 +85,9 @@ type DataAwsIamPolicyDocumentStatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCondition(value interface{})
-	PutNotPrincipals(value interface{})
-	PutPrincipals(value interface{})
+	PutCondition(value any)
+	PutNotPrincipals(value any)
+	PutPrincipals(value any)
 	ResetActions()
 	ResetCondition()
 	ResetEffect()
@@ -99,7 +99,7 @@ type DataAwsIamPolicyDocumentStatementOutputReference interface {
 	ResetSid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ActionsInpu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Condition()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) NotPrincipa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) NotPrincipalsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) NotPrincipalsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notPrincipalsInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Principals(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PrincipalsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PrincipalsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"principalsInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewDataAwsIamPolicyDocumentStatementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsIamPolicyDocumentStatementOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDataAwsIamPolicyDocumentStatementOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDataAwsIamPolicyDocumentStatementOutputReference_Override(d DataAwsIamPo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetActions(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetActions(val *[]*string) {
 	if err := j.validateSetActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetActions(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetEffect(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetEffect(val *string) {
 	if err := j.validateSetEffectParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetEffect(va
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetNotActions(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetNotActions(val *[]*string) {
 	if err := j.validateSetNotActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetNotAction
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetNotResources(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetNotResources(val *[]*string) {
 	if err := j.validateSetNotResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetNotResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetResources
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetSid(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetSid(val *string) {
 	if err := j.validateSetSidParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetSid(val *
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,16 +523,16 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,43 +689,43 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutCondition(value interface{}) {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutCondition(value any) {
 	if err := d.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutNotPrincipals(value interface{}) {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutNotPrincipals(value any) {
 	if err := d.validatePutNotPrincipalsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putNotPrincipals",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutPrincipals(value interface{}) {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) PutPrincipals(value any) {
 	if err := d.validatePutPrincipalsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putPrincipals",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ResetSid() 
 	)
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) ToString() 
 
 	return returns
 }
-

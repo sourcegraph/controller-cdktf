@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBroker",
-		reflect.TypeOf((*MqBroker)(nil)).Elem(),
+		reflect.TypeFor[MqBroker](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBroker{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -131,15 +131,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerConfig",
-		reflect.TypeOf((*MqBrokerConfig)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerConfiguration",
-		reflect.TypeOf((*MqBrokerConfiguration)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
-		reflect.TypeOf((*MqBrokerConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptions",
-		reflect.TypeOf((*MqBrokerEncryptionOptions)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerEncryptionOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
-		reflect.TypeOf((*MqBrokerEncryptionOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerEncryptionOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useAwsOwnedKey", GoGetter: "UseAwsOwnedKey"},
 			_jsii_.MemberProperty{JsiiProperty: "useAwsOwnedKeyInput", GoGetter: "UseAwsOwnedKeyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerEncryptionOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,11 +219,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerInstances",
-		reflect.TypeOf((*MqBrokerInstances)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesList",
-		reflect.TypeOf((*MqBrokerInstancesList)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerInstancesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerInstancesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesOutputReference",
-		reflect.TypeOf((*MqBrokerInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadata",
-		reflect.TypeOf((*MqBrokerLdapServerMetadata)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerLdapServerMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
-		reflect.TypeOf((*MqBrokerLdapServerMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerLdapServerMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -340,7 +340,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userSearchSubtree", GoGetter: "UserSearchSubtree"},
 			_jsii_.MemberProperty{JsiiProperty: "userSearchSubtreeInput", GoGetter: "UserSearchSubtreeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerLdapServerMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -348,11 +348,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLogs",
-		reflect.TypeOf((*MqBrokerLogs)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference",
-		reflect.TypeOf((*MqBrokerLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audit", GoGetter: "Audit"},
 			_jsii_.MemberProperty{JsiiProperty: "auditInput", GoGetter: "AuditInput"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -390,11 +390,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime",
-		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTime)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerMaintenanceWindowStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerMaintenanceWindowStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,11 +432,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerTimeouts",
-		reflect.TypeOf((*MqBrokerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
-		reflect.TypeOf((*MqBrokerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -469,7 +469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -477,11 +477,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mqBroker.MqBrokerUser",
-		reflect.TypeOf((*MqBrokerUser)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerUserList",
-		reflect.TypeOf((*MqBrokerUserList)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerUserList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerUserList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -503,7 +503,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference",
-		reflect.TypeOf((*MqBrokerUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MqBrokerUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -537,7 +537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MqBrokerUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

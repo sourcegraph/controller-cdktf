@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLocationMapConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -281,4 +281,3 @@ func validateNewMedialiveChannelEncoderSettingsVideoDescriptionsOutputReferenceP
 
 	return nil
 }
-

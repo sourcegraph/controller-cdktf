@@ -15,9 +15,9 @@ type LambdaFunctionSnapStartOutputReference interface {
 	ApplyOnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type LambdaFunctionSnapStartOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type LambdaFunctionSnapStartOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) ApplyOnInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaFunctionSnapStartOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewLambdaFunctionSnapStartOutputReference_Override(l LambdaFunctionSnapStar
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetApplyOn(val *string) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetApplyOn(val *string) {
 	if err := j.validateSetApplyOnParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetApplyOn(val *string
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetInternalValue(val *LambdaFunctionSnapStart) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetInternalValue(val *LambdaFunctionSnapStart) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) ToString() *string {
 
 	return returns
 }
-

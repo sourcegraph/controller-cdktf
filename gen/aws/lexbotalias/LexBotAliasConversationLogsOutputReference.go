@@ -12,9 +12,9 @@ type LexBotAliasConversationLogsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type LexBotAliasConversationLogsOutputReference interface {
 	InternalValue() *LexBotAliasConversationLogs
 	SetInternalValue(val *LexBotAliasConversationLogs)
 	LogSettings() LexBotAliasConversationLogsLogSettingsList
-	LogSettingsInput() interface{}
+	LogSettingsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type LexBotAliasConversationLogsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type LexBotAliasConversationLogsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLogSettings(value interface{})
+	PutLogSettings(value any)
 	ResetLogSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_LexBotAliasConversationLogsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) LogSettings() Lex
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) LogSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) LogSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logSettingsInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewLexBotAliasConversationLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexBotAliasConversationLogsOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewLexBotAliasConversationLogsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewLexBotAliasConversationLogsOutputReference_Override(l LexBotAliasConvers
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetIamRoleArn(val 
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetInternalValue(val *LexBotAliasConversationLogs) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetInternalValue(val *LexBotAliasConversationLogs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexBotAliasConversationLogsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) PutLogSettings(value interface{}) {
+func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) PutLogSettings(value any) {
 	if err := l.validatePutLogSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putLogSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) ResetLogSettings(
 	)
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) ToString() *strin
 
 	return returns
 }
-

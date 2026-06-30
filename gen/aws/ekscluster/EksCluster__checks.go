@@ -19,7 +19,7 @@ func (e *jsiiProxy_EksCluster) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_EksCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EksCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EksCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EksCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateEksCluster_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEksCluster_IsConstructParameters(x interface{}) error {
+func validateEksCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateEksCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksCluster_IsTerraformElementParameters(x interface{}) error {
+func validateEksCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateEksCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateEksCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateEksCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_EksCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EksCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_EksCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_EksCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EksCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -421,7 +421,7 @@ func (j *jsiiProxy_EksCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EksCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EksCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,4 +517,3 @@ func validateNewEksClusterParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

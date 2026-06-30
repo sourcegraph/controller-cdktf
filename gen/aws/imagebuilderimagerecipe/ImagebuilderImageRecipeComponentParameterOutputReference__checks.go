@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewImagebuilderImageRecipeComponentParameterOutputReferenceParamete
 
 	return nil
 }
-

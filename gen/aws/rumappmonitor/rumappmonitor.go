@@ -19,20 +19,20 @@ type RumAppMonitor interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomEvents() RumAppMonitorCustomEventsOutputReference
 	CustomEventsInput() *RumAppMonitorCustomEvents
-	CwLogEnabled() interface{}
-	SetCwLogEnabled(val interface{})
-	CwLogEnabledInput() interface{}
+	CwLogEnabled() any
+	SetCwLogEnabled(val any)
+	CwLogEnabledInput() any
 	CwLogGroup() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -66,11 +66,11 @@ type RumAppMonitor interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -80,16 +80,16 @@ type RumAppMonitor interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type RumAppMonitor interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type RumAppMonitor interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type RumAppMonitor interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RumAppMonitor
@@ -205,8 +205,8 @@ func (j *jsiiProxy_RumAppMonitor) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumAppMonitor) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_RumAppMonitor) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RumAppMonitor) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_RumAppMonitor) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumAppMonitor) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_RumAppMonitor) CustomEventsInput() *RumAppMonitorCustomEvents
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) CwLogEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumAppMonitor) CwLogEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cwLogEnabled",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_RumAppMonitor) CwLogEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) CwLogEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumAppMonitor) CwLogEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cwLogEnabledInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_RumAppMonitor) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RumAppMonitor) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_RumAppMonitor) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RumAppMonitor) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_RumAppMonitor) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitor) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RumAppMonitor) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_RumAppMonitor) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
 func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMonitorConfig) RumAppMonitor {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMoni
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewRumAppMonitor_Override(r RumAppMonitor, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetConnection(val interface{}) {
+func (j *jsiiProxy_RumAppMonitor) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_RumAppMonitor)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetCount(val interface{}) {
+func (j *jsiiProxy_RumAppMonitor) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_RumAppMonitor)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetCwLogEnabled(val interface{}) {
+func (j *jsiiProxy_RumAppMonitor) SetCwLogEnabled(val any) {
 	if err := j.validateSetCwLogEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_RumAppMonitor)SetCwLogEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RumAppMonitor) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_RumAppMonitor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetDomain(val *string) {
+func (j *jsiiProxy_RumAppMonitor) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_RumAppMonitor)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RumAppMonitor) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_RumAppMonitor)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetId(val *string) {
+func (j *jsiiProxy_RumAppMonitor) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_RumAppMonitor)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RumAppMonitor) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_RumAppMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetName(val *string) {
+func (j *jsiiProxy_RumAppMonitor) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_RumAppMonitor)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RumAppMonitor) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_RumAppMonitor)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RumAppMonitor) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_RumAppMonitor)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RumAppMonitor) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_RumAppMonitor)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitor)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RumAppMonitor) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func RumAppMonitor_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func RumAppMonitor_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RumAppMonitor_IsConstruct(x interface{}) *bool {
+func RumAppMonitor_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumAppMonitor_IsConstructParameters(x); err != nil {
@@ -716,7 +715,7 @@ func RumAppMonitor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func RumAppMonitor_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RumAppMonitor_IsTerraformElement(x interface{}) *bool {
+func RumAppMonitor_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumAppMonitor_IsTerraformElementParameters(x); err != nil {
@@ -735,7 +734,7 @@ func RumAppMonitor_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func RumAppMonitor_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RumAppMonitor_IsTerraformResource(x interface{}) *bool {
+func RumAppMonitor_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRumAppMonitor_IsTerraformResourceParameters(x); err != nil {
@@ -754,7 +753,7 @@ func RumAppMonitor_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,31 +778,31 @@ func (r *jsiiProxy_RumAppMonitor) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RumAppMonitor) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RumAppMonitor) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RumAppMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RumAppMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (r *jsiiProxy_RumAppMonitor) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (r *jsiiProxy_RumAppMonitor) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (r *jsiiProxy_RumAppMonitor) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (r *jsiiProxy_RumAppMonitor) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (r *jsiiProxy_RumAppMonitor) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (r *jsiiProxy_RumAppMonitor) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (r *jsiiProxy_RumAppMonitor) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,15 +930,15 @@ func (r *jsiiProxy_RumAppMonitor) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitor) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumAppMonitor) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -958,7 +957,7 @@ func (r *jsiiProxy_RumAppMonitor) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -971,7 +970,7 @@ func (r *jsiiProxy_RumAppMonitor) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,18 +984,18 @@ func (r *jsiiProxy_RumAppMonitor) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RumAppMonitor) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RumAppMonitor) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (r *jsiiProxy_RumAppMonitor) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (r *jsiiProxy_RumAppMonitor) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (r *jsiiProxy_RumAppMonitor) PutAppMonitorConfiguration(value *RumAppMonito
 	_jsii_.InvokeVoid(
 		r,
 		"putAppMonitorConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (r *jsiiProxy_RumAppMonitor) PutCustomEvents(value *RumAppMonitorCustomEven
 	_jsii_.InvokeVoid(
 		r,
 		"putCustomEvents",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,8 +1099,8 @@ func (r *jsiiProxy_RumAppMonitor) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RumAppMonitor) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RumAppMonitor) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1113,8 +1112,8 @@ func (r *jsiiProxy_RumAppMonitor) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitor) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RumAppMonitor) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1126,8 +1125,8 @@ func (r *jsiiProxy_RumAppMonitor) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitor) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumAppMonitor) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1139,8 +1138,8 @@ func (r *jsiiProxy_RumAppMonitor) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitor) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumAppMonitor) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1165,8 +1164,8 @@ func (r *jsiiProxy_RumAppMonitor) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitor) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RumAppMonitor) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1177,4 +1176,3 @@ func (r *jsiiProxy_RumAppMonitor) ToTerraform() interface{} {
 
 	return returns
 }
-

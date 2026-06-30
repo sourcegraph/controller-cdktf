@@ -13,9 +13,9 @@ type FsxFileCacheDataRepositoryAssociationOutputReference interface {
 	AssociationId() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,10 +41,10 @@ type FsxFileCacheDataRepositoryAssociationOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	ImportedFileChunkSize() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Nfs() FsxFileCacheDataRepositoryAssociationNfsList
-	NfsInput() interface{}
+	NfsInput() any
 	ResourceArn() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -60,7 +60,7 @@ type FsxFileCacheDataRepositoryAssociationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,13 +81,13 @@ type FsxFileCacheDataRepositoryAssociationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNfs(value interface{})
+	PutNfs(value any)
 	ResetDataRepositorySubdirectories()
 	ResetNfs()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Associa
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Importe
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Nfs() F
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) NfsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) NfsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsInput",
@@ -330,7 +330,6 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Terrafo
 	return returns
 }
 
-
 func NewFsxFileCacheDataRepositoryAssociationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FsxFileCacheDataRepositoryAssociationOutputReference {
 	_init_.Initialize()
 
@@ -341,7 +340,7 @@ func NewFsxFileCacheDataRepositoryAssociationOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -353,12 +352,12 @@ func NewFsxFileCacheDataRepositoryAssociationOutputReference_Override(f FsxFileC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetDataRepositoryPath(val *string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetDataRepositoryPath(val *string) {
 	if err := j.validateSetDataRepositoryPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetDataR
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetDataRepositorySubdirectories(val *[]*string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetDataRepositorySubdirectories(val *[]*string) {
 	if err := j.validateSetDataRepositorySubdirectoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetDataR
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetFileCachePath(val *string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetFileCachePath(val *string) {
 	if err := j.validateSetFileCachePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetFileC
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetTags(
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,16 +469,16 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Compute
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetList
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,21 +635,21 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Interpo
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) PutNfs(value interface{}) {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) PutNfs(value any) {
 	if err := f.validatePutNfsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putNfs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -678,16 +677,16 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) ResetTa
 	)
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -706,4 +705,3 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) ToStrin
 
 	return returns
 }
-

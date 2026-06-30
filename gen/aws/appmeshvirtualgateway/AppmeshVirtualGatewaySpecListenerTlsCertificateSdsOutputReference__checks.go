@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReferenc
 
 	return nil
 }
-

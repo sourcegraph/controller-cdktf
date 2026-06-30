@@ -15,9 +15,9 @@ type LbListenerDefaultActionForwardTargetGroupOutputReference interface {
 	ArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type LbListenerDefaultActionForwardTargetGroupOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type LbListenerDefaultActionForwardTargetGroupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type LbListenerDefaultActionForwardTargetGroupOutputReference interface {
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Arn
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Wei
 	return returns
 }
 
-
 func NewLbListenerDefaultActionForwardTargetGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbListenerDefaultActionForwardTargetGroupOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewLbListenerDefaultActionForwardTargetGroupOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewLbListenerDefaultActionForwardTargetGroupOutputReference_Override(l LbLi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetArn(val *string) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference)SetWeight(val *float64) {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) SetWeight(val *float64) {
 	if err := j.validateSetWeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Com
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Get
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Int
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Res
 	)
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) ToS
 
 	return returns
 }
-

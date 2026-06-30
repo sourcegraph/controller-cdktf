@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
-		reflect.TypeOf((*CloudwatchMetricAlarm)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarm](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionsEnabled", GoGetter: "ActionsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsEnabledInput", GoGetter: "ActionsEnabledInput"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
 			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchMetricAlarm{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -132,15 +132,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig",
-		reflect.TypeOf((*CloudwatchMetricAlarmConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQuery)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmMetricQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryList)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmMetricQueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryMetric)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmMetricQueryMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetricOutputReference",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmMetricQueryMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
 			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,7 +213,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
-		reflect.TypeOf((*CloudwatchMetricAlarmMetricQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchMetricAlarmMetricQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

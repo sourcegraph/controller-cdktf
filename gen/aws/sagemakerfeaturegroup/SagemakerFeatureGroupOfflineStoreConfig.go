@@ -1,6 +1,5 @@
 package sagemakerfeaturegroup
 
-
 type SagemakerFeatureGroupOfflineStoreConfig struct {
 	// s3_storage_config block.
 	//
@@ -11,6 +10,5 @@ type SagemakerFeatureGroupOfflineStoreConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_feature_group#data_catalog_config SagemakerFeatureGroup#data_catalog_config}
 	DataCatalogConfig *SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig `field:"optional" json:"dataCatalogConfig" yaml:"dataCatalogConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_feature_group#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}.
-	DisableGlueTableCreation interface{} `field:"optional" json:"disableGlueTableCreation" yaml:"disableGlueTableCreation"`
+	DisableGlueTableCreation any `field:"optional" json:"disableGlueTableCreation" yaml:"disableGlueTableCreation"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetPathParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetScanAllParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetScanAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGlueCrawlerMongodbTargetOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

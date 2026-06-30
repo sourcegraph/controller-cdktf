@@ -98,7 +98,7 @@ func (r *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateSetFilte
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Resourceexplorer2ViewFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewResourceexplorer2ViewFiltersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

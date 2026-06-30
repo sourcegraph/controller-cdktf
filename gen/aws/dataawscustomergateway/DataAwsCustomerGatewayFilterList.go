@@ -17,8 +17,8 @@ type DataAwsCustomerGatewayFilterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsCustomerGatewayFilterList interface {
 	Get(index *float64) DataAwsCustomerGatewayFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsCustomerGatewayFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCustomerGatewayFilterList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsCustomerGatewayFilterList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsCustomerGatewayFilterList_Override(d DataAwsCustomerGatewayFilter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataAwsCustomerGatewayFilterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsCustomerGatewayFilterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsCustomerGatewayFilterList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsCustomerGatewayFilterList) Get(index *float64) DataAws
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCustomerGatewayFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsCustomerGatewayFilterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsCustomerGatewayFilterList) ToString() *string {
 
 	return returns
 }
-

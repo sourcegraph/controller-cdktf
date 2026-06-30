@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
-		reflect.TypeOf((*SesEventDestination)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestination](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesEventDestination{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestination",
-		reflect.TypeOf((*SesEventDestinationCloudwatchDestination)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationCloudwatchDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
-		reflect.TypeOf((*SesEventDestinationCloudwatchDestinationList)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationCloudwatchDestinationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesEventDestinationCloudwatchDestinationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
-		reflect.TypeOf((*SesEventDestinationCloudwatchDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationCloudwatchDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueSource", GoGetter: "ValueSource"},
 			_jsii_.MemberProperty{JsiiProperty: "valueSourceInput", GoGetter: "ValueSourceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesEventDestinationCloudwatchDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,15 +150,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationConfig",
-		reflect.TypeOf((*SesEventDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestination",
-		reflect.TypeOf((*SesEventDestinationKinesisDestination)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationKinesisDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
-		reflect.TypeOf((*SesEventDestinationKinesisDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationKinesisDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesEventDestinationKinesisDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationSnsDestination",
-		reflect.TypeOf((*SesEventDestinationSnsDestination)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationSnsDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationSnsDestinationOutputReference",
-		reflect.TypeOf((*SesEventDestinationSnsDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesEventDestinationSnsDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesEventDestinationSnsDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -18,15 +18,15 @@ type S3BucketObjectLockConfigurationA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,17 +59,17 @@ type S3BucketObjectLockConfigurationA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rule() S3BucketObjectLockConfigurationRuleAOutputReference
 	RuleInput() *S3BucketObjectLockConfigurationRuleA
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Token() *string
@@ -79,9 +79,9 @@ type S3BucketObjectLockConfigurationA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type S3BucketObjectLockConfigurationA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type S3BucketObjectLockConfigurationA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type S3BucketObjectLockConfigurationA interface {
 	ResetOverrideLogicalId()
 	ResetRule()
 	ResetToken()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketObjectLockConfigurationA
@@ -175,8 +175,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -425,7 +425,6 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) TokenInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource.
 func NewS3BucketObjectLockConfigurationA(scope constructs.Construct, id *string, config *S3BucketObjectLockConfigurationAConfig) S3BucketObjectLockConfigurationA {
 	_init_.Initialize()
@@ -437,7 +436,7 @@ func NewS3BucketObjectLockConfigurationA(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -450,12 +449,12 @@ func NewS3BucketObjectLockConfigurationA_Override(s S3BucketObjectLockConfigurat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetExpectedBucketOwner(val *string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetExpectedBucketOwner(val *string) {
 	if err := j.validateSetExpectedBucketOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetExpectedBucketOwner(val *
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetId(val *string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetObjectLockEnabled(val *string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetObjectLockEnabled(val *string) {
 	if err := j.validateSetObjectLockEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetObjectLockEnabled(val *st
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetToken(val *string) {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) SetToken(val *string) {
 	if err := j.validateSetTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func S3BucketObjectLockConfigurationA_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func S3BucketObjectLockConfigurationA_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketObjectLockConfigurationA_IsConstruct(x interface{}) *bool {
+func S3BucketObjectLockConfigurationA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObjectLockConfigurationA_IsConstructParameters(x); err != nil {
@@ -625,7 +624,7 @@ func S3BucketObjectLockConfigurationA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func S3BucketObjectLockConfigurationA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketObjectLockConfigurationA_IsTerraformElement(x interface{}) *bool {
+func S3BucketObjectLockConfigurationA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObjectLockConfigurationA_IsTerraformElementParameters(x); err != nil {
@@ -644,7 +643,7 @@ func S3BucketObjectLockConfigurationA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func S3BucketObjectLockConfigurationA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketObjectLockConfigurationA_IsTerraformResource(x interface{}) *bool {
+func S3BucketObjectLockConfigurationA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObjectLockConfigurationA_IsTerraformResourceParameters(x); err != nil {
@@ -663,7 +662,7 @@ func S3BucketObjectLockConfigurationA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,31 +687,31 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,15 +839,15 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -867,7 +866,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -880,7 +879,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,18 +893,18 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -916,7 +915,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -927,7 +926,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,7 +937,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) PutRule(value *S3BucketObje
 	_jsii_.InvokeVoid(
 		s,
 		"putRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -990,8 +989,8 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ResetToken() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1003,8 +1002,8 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1016,8 +1015,8 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1029,8 +1028,8 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToHclTerraform() interface{
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1055,8 +1054,8 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1067,4 +1066,3 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
-		reflect.TypeOf((*EvidentlyProject)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeExperimentCount", GoGetter: "ActiveExperimentCount"},
 			_jsii_.MemberProperty{JsiiProperty: "activeLaunchCount", GoGetter: "ActiveLaunchCount"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectConfig",
-		reflect.TypeOf((*EvidentlyProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDelivery",
-		reflect.TypeOf((*EvidentlyProjectDataDelivery)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDelivery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogs",
-		reflect.TypeOf((*EvidentlyProjectDataDeliveryCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDeliveryCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
-		reflect.TypeOf((*EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
-		reflect.TypeOf((*EvidentlyProjectDataDeliveryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDeliveryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsInput", GoGetter: "CloudwatchLogsInput"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3Destination",
-		reflect.TypeOf((*EvidentlyProjectDataDeliveryS3Destination)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDeliveryS3Destination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3DestinationOutputReference",
-		reflect.TypeOf((*EvidentlyProjectDataDeliveryS3DestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectDataDeliveryS3DestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryS3DestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeouts",
-		reflect.TypeOf((*EvidentlyProjectTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
-		reflect.TypeOf((*EvidentlyProjectTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyProjectTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyProjectTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

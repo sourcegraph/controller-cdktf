@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
-		reflect.TypeOf((*MemorydbCluster)(nil)).Elem(),
+		reflect.TypeFor[MemorydbCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclName", GoGetter: "AclName"},
 			_jsii_.MemberProperty{JsiiProperty: "aclNameInput", GoGetter: "AclNameInput"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpoint",
-		reflect.TypeOf((*MemorydbClusterClusterEndpoint)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterClusterEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
-		reflect.TypeOf((*MemorydbClusterClusterEndpointList)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterClusterEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterClusterEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointOutputReference",
-		reflect.TypeOf((*MemorydbClusterClusterEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterClusterEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterClusterEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,15 +204,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig",
-		reflect.TypeOf((*MemorydbClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShards",
-		reflect.TypeOf((*MemorydbClusterShards)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShards](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList",
-		reflect.TypeOf((*MemorydbClusterShardsList)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -233,15 +233,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodes",
-		reflect.TypeOf((*MemorydbClusterShardsNodes)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpoint",
-		reflect.TypeOf((*MemorydbClusterShardsNodesEndpoint)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodesEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList",
-		reflect.TypeOf((*MemorydbClusterShardsNodesEndpointList)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodesEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsNodesEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -262,7 +262,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference",
-		reflect.TypeOf((*MemorydbClusterShardsNodesEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodesEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -296,7 +296,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList",
-		reflect.TypeOf((*MemorydbClusterShardsNodesList)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsNodesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesOutputReference",
-		reflect.TypeOf((*MemorydbClusterShardsNodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsNodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsNodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsOutputReference",
-		reflect.TypeOf((*MemorydbClusterShardsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterShardsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterShardsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,11 +389,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts",
-		reflect.TypeOf((*MemorydbClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
-		reflect.TypeOf((*MemorydbClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorydbClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

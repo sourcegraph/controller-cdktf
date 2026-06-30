@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentitystoreUserNameOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserNameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreUserNameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIdentitystoreUserNameOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

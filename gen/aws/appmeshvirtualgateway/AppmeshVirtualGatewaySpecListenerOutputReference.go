@@ -12,9 +12,9 @@ type AppmeshVirtualGatewaySpecListenerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type AppmeshVirtualGatewaySpecListenerOutputReference interface {
 	Fqn() *string
 	HealthCheck() AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference
 	HealthCheckInput() *AppmeshVirtualGatewaySpecListenerHealthCheck
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PortMapping() AppmeshVirtualGatewaySpecListenerPortMappingOutputReference
 	PortMappingInput() *AppmeshVirtualGatewaySpecListenerPortMapping
 	// Experimental.
@@ -48,7 +48,7 @@ type AppmeshVirtualGatewaySpecListenerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type AppmeshVirtualGatewaySpecListenerOutputReference interface {
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) HealthCheck
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) TlsInput() 
 	return returns
 }
 
-
 func NewAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppmeshVirtualGatewaySpecListenerOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewAppmeshVirtualGatewaySpecListenerOutputReference_Override(a AppmeshVirtu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,16 +336,16 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) ComputeFqn(
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetListAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetStringAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) GetStringMa
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) Interpolati
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) PutConnecti
 	_jsii_.InvokeVoid(
 		a,
 		"putConnectionPool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -528,7 +527,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) PutHealthCh
 	_jsii_.InvokeVoid(
 		a,
 		"putHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -539,7 +538,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) PutPortMapp
 	_jsii_.InvokeVoid(
 		a,
 		"putPortMapping",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) PutTls(valu
 	_jsii_.InvokeVoid(
 		a,
 		"putTls",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) ResetTls() 
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) ToString() 
 
 	return returns
 }
-

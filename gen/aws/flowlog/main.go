@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.flowLog.FlowLog",
-		reflect.TypeOf((*FlowLog)(nil)).Elem(),
+		reflect.TypeFor[FlowLog](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FlowLog{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -111,15 +111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.flowLog.FlowLogConfig",
-		reflect.TypeOf((*FlowLogConfig)(nil)).Elem(),
+		reflect.TypeFor[FlowLogConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptions",
-		reflect.TypeOf((*FlowLogDestinationOptions)(nil)).Elem(),
+		reflect.TypeFor[FlowLogDestinationOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
-		reflect.TypeOf((*FlowLogDestinationOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FlowLogDestinationOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FlowLogDestinationOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

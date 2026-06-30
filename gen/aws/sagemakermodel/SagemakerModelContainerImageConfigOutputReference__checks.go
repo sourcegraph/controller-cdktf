@@ -109,7 +109,7 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerImageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerModelContainerImageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewSagemakerModelContainerImageConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

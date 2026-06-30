@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewChimeVoiceConnectorGroupConnectorOutputReferenceParameters(terra
 
 	return nil
 }
-

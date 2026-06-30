@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewTranscribeLanguageModelInputDataConfigOutputReferenceParameters(
 
 	return nil
 }
-

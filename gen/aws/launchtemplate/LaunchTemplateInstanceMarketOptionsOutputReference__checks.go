@@ -109,7 +109,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewLaunchTemplateInstanceMarketOptionsOutputReferenceParameters(ter
 
 	return nil
 }
-

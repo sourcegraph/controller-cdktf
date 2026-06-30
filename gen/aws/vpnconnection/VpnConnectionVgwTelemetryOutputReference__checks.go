@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpnConnectionVgwTelemetryOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionVgwTelemetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionVgwTelemetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVpnConnectionVgwTelemetryOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (e *jsiiProxy_EvidentlyFeature) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeature) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EvidentlyFeature) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EvidentlyFeature) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EvidentlyFeature) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_EvidentlyFeature) validatePutTimeoutsParameters(value *Eviden
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeature) validatePutVariationsParameters(value interface{}) error {
+func (e *jsiiProxy_EvidentlyFeature) validatePutVariationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateEvidentlyFeature_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateEvidentlyFeature_IsConstructParameters(x interface{}) error {
+func validateEvidentlyFeature_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateEvidentlyFeature_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEvidentlyFeature_IsTerraformElementParameters(x interface{}) error {
+func validateEvidentlyFeature_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateEvidentlyFeature_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateEvidentlyFeature_IsTerraformResourceParameters(x interface{}) error {
+func validateEvidentlyFeature_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateEvidentlyFeature_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeature) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyFeature) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_EvidentlyFeature) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeature) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyFeature) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -440,7 +440,7 @@ func (j *jsiiProxy_EvidentlyFeature) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeature) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EvidentlyFeature) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewEvidentlyFeatureParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

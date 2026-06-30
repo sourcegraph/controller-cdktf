@@ -19,7 +19,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSnapshotCreateVolumePermission_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateSnapshotCreateVolumePermission_IsConstructParameters(x interface{}) error {
+func validateSnapshotCreateVolumePermission_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSnapshotCreateVolumePermission_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateSnapshotCreateVolumePermission_IsTerraformElementParameters(x interface{}) error {
+func validateSnapshotCreateVolumePermission_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSnapshotCreateVolumePermission_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateSnapshotCreateVolumePermission_IsTerraformResourceParameters(x interface{}) error {
+func validateSnapshotCreateVolumePermission_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetAccountIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewSnapshotCreateVolumePermissionParameters(scope constructs.Constr
 
 	return nil
 }
-

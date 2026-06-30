@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchConfigurationMetadataOptionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchConfigurationMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchConfigurationMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchConfigurationMetadataOptionsOutputReferenceParamete
 
 	return nil
 }
-

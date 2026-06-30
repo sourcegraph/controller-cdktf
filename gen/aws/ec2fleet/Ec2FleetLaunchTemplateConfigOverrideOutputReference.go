@@ -15,9 +15,9 @@ type Ec2FleetLaunchTemplateConfigOverrideOutputReference interface {
 	AvailabilityZoneInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type Ec2FleetLaunchTemplateConfigOverrideOutputReference interface {
 	InstanceType() *string
 	SetInstanceType(val *string)
 	InstanceTypeInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxPrice() *string
 	SetMaxPrice(val *string)
 	MaxPriceInput() *string
@@ -60,7 +60,7 @@ type Ec2FleetLaunchTemplateConfigOverrideOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Ec2FleetLaunchTemplateConfigOverrideOutputReference interface {
 	ResetWeightedCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Availabi
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Instance
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Weighted
 	return returns
 }
 
-
 func NewEc2FleetLaunchTemplateConfigOverrideOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Ec2FleetLaunchTemplateConfigOverrideOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewEc2FleetLaunchTemplateConfigOverrideOutputReference_Override(e Ec2FleetL
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetAvaila
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetInstan
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetMaxPrice(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetMaxPrice(val *string) {
 	if err := j.validateSetMaxPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetMaxPri
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetPriori
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetSubnet
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference)SetWeightedCapacity(val *float64) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) SetWeightedCapacity(val *float64) {
 	if err := j.validateSetWeightedCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) ComputeF
 	return returns
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetBoole
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetBoole
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetListA
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetNumbe
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetNumbe
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetNumbe
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetStrin
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) GetStrin
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Interpol
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) PutInsta
 	_jsii_.InvokeVoid(
 		e,
 		"putInstanceRequirements",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) ResetWei
 	)
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference) ToString
 
 	return returns
 }
-

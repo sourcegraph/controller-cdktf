@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewOpensearchDomainSamlOptionsTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

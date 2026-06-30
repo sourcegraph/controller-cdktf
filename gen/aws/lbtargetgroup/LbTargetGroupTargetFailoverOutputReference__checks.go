@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLbTargetGroupTargetFailoverOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

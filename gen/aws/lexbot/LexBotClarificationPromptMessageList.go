@@ -17,8 +17,8 @@ type LexBotClarificationPromptMessageList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LexBotClarificationPromptMessageList interface {
 	Get(index *float64) LexBotClarificationPromptMessageOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewLexBotClarificationPromptMessageList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotClarificationPromptMessageList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLexBotClarificationPromptMessageList(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLexBotClarificationPromptMessageList_Override(l LexBotClarificationPromp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) AllWithMapKey(mapKeyAtt
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) Get(index *float64) Lex
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexBotClarificationPromptMessageList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexBotClarificationPromptMessageList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) ToString() *string {
 
 	return returns
 }
-

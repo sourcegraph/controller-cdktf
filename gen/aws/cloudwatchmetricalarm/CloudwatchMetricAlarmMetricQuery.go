@@ -1,6 +1,5 @@
 package cloudwatchmetricalarm
 
-
 type CloudwatchMetricAlarmMetricQuery struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}.
 	//
@@ -18,6 +17,5 @@ type CloudwatchMetricAlarmMetricQuery struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_alarm#metric CloudwatchMetricAlarm#metric}
 	Metric *CloudwatchMetricAlarmMetricQueryMetric `field:"optional" json:"metric" yaml:"metric"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}.
-	ReturnData interface{} `field:"optional" json:"returnData" yaml:"returnData"`
+	ReturnData any `field:"optional" json:"returnData" yaml:"returnData"`
 }
-

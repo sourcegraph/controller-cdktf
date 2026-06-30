@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
-		reflect.TypeOf((*ApplicationinsightsApplication)(nil)).Elem(),
+		reflect.TypeFor[ApplicationinsightsApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApplicationinsightsApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,6 +91,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplicationConfig",
-		reflect.TypeOf((*ApplicationinsightsApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[ApplicationinsightsApplicationConfig](),
 	)
 }

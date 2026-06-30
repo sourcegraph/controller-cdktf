@@ -15,9 +15,9 @@ type EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference interface 
 	ClassificationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Properties() *map[string]*string
 	SetProperties(val *map[string]*string)
 	PropertiesInput() *map[string]*string
@@ -46,7 +46,7 @@ type EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference interface 
 	ResetProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	return returns
 }
 
-
 func NewEmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetClassification(val *string) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetClassification(val *string) {
 	if err := j.validateSetClassificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	)
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 
 	return returns
 }
-

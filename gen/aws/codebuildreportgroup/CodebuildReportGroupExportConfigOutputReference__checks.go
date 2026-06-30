@@ -109,7 +109,7 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewCodebuildReportGroupExportConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRamResourceShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRamResourceShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsRamResourceShare) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRamResourceShare) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRamResourceShare) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsRamResourceShare_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateDataAwsRamResourceShare_IsConstructParameters(x interface{}) error {
+func validateDataAwsRamResourceShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsRamResourceShare_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsRamResourceShare_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRamResourceShare_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsRamResourceShare_IsTerraformDataSourceParameters(x interface
 	return nil
 }
 
-func validateDataAwsRamResourceShare_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRamResourceShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsRamResourceShare_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRamResourceShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -305,4 +305,3 @@ func validateNewDataAwsRamResourceShareParameters(scope constructs.Construct, id
 
 	return nil
 }
-

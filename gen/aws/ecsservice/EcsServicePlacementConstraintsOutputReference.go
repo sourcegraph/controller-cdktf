@@ -12,9 +12,9 @@ type EcsServicePlacementConstraintsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type EcsServicePlacementConstraintsOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type EcsServicePlacementConstraintsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type EcsServicePlacementConstraintsOutputReference interface {
 	ResetExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_EcsServicePlacementConstraintsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) TypeInput() *s
 	return returns
 }
 
-
 func NewEcsServicePlacementConstraintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcsServicePlacementConstraintsOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEcsServicePlacementConstraintsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEcsServicePlacementConstraintsOutputReference_Override(e EcsServicePlace
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetExpression(v
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_EcsServicePlacementConstraintsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) ResetExpressio
 	)
 }
 
-func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_EcsServicePlacementConstraintsOutputReference) ToString() *st
 
 	return returns
 }
-

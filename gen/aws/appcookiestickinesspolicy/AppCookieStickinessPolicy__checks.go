@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_AppCookieStickinessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppCookieStickinessPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateAppCookieStickinessPolicy_IsConstructParameters(x interface{}) error {
+func validateAppCookieStickinessPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppCookieStickinessPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateAppCookieStickinessPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateAppCookieStickinessPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppCookieStickinessPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateAppCookieStickinessPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateAppCookieStickinessPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateAppCookieStickinessPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetCookieNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewAppCookieStickinessPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

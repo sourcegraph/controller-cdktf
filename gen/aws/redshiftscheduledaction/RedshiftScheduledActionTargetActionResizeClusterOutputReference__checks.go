@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateSetClassicParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateSetClassicParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -134,7 +134,7 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewRedshiftScheduledActionTargetActionResizeClusterOutputReferenceP
 
 	return nil
 }
-

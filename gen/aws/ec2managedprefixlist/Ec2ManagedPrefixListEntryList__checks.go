@@ -34,7 +34,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEc2ManagedPrefixListEntryListParameters(terraformResource cdktf.
 
 	return nil
 }
-

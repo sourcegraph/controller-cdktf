@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation",
-		reflect.TypeOf((*DataAwsLocationTrackerAssociation)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLocationTrackerAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trackerName", GoGetter: "TrackerName"},
 			_jsii_.MemberProperty{JsiiProperty: "trackerNameInput", GoGetter: "TrackerNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsLocationTrackerAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig",
-		reflect.TypeOf((*DataAwsLocationTrackerAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsLocationTrackerAssociationConfig](),
 	)
 }

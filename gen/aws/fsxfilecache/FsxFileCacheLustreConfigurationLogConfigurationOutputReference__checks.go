@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFsxFileCacheLustreConfigurationLogConfigurationOutputReferencePa
 
 	return nil
 }
-

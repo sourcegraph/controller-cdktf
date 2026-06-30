@@ -109,7 +109,7 @@ func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterOutpostConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterOutpostConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewEksClusterOutpostConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

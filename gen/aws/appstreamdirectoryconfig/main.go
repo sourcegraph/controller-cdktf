@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig",
-		reflect.TypeOf((*AppstreamDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamDirectoryConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamDirectoryConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig",
-		reflect.TypeOf((*AppstreamDirectoryConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamDirectoryConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials",
-		reflect.TypeOf((*AppstreamDirectoryConfigServiceAccountCredentials)(nil)).Elem(),
+		reflect.TypeFor[AppstreamDirectoryConfigServiceAccountCredentials](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
-		reflect.TypeOf((*AppstreamDirectoryConfigServiceAccountCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppstreamDirectoryConfigServiceAccountCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "accountNameInput", GoGetter: "AccountNameInput"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

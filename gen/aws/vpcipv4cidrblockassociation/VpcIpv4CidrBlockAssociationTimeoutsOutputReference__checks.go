@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVpcIpv4CidrBlockAssociationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

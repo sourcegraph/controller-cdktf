@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersPostgresqlOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersPostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersPostgresqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersPostgresqlOutputReferenceParameter
 
 	return nil
 }
-

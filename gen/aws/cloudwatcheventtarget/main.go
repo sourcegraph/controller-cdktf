@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
-		reflect.TypeOf((*CloudwatchEventTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTarget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTarget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -123,11 +123,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTarget",
-		reflect.TypeOf((*CloudwatchEventTargetBatchTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetBatchTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetBatchTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetBatchTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arraySize", GoGetter: "ArraySize"},
 			_jsii_.MemberProperty{JsiiProperty: "arraySizeInput", GoGetter: "ArraySizeInput"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetBatchTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,15 +169,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetConfig",
-		reflect.TypeOf((*CloudwatchEventTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfig",
-		reflect.TypeOf((*CloudwatchEventTargetDeadLetterConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetDeadLetterConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetDeadLetterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetDeadLetterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,15 +212,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTarget",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTarget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategy",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategy)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetCapacityProviderStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyList",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategyList)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetCapacityProviderStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -242,7 +242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
 			_jsii_.MemberProperty{JsiiProperty: "baseInput", GoGetter: "BaseInput"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfiguration",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetNetworkConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetNetworkConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIp", GoGetter: "AssignPublicIp"},
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIpInput", GoGetter: "AssignPublicIpInput"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -326,7 +326,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategy", GoGetter: "CapacityProviderStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategyInput", GoGetter: "CapacityProviderStrategyInput"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -396,11 +396,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraint",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraint)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetPlacementConstraint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraintList)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetPlacementConstraintList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -422,7 +422,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,11 +459,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTarget",
-		reflect.TypeOf((*CloudwatchEventTargetHttpTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetHttpTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetHttpTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetHttpTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -496,7 +496,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetHttpTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -504,11 +504,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformer",
-		reflect.TypeOf((*CloudwatchEventTargetInputTransformer)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetInputTransformer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformerOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetInputTransformerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetInputTransformerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -537,7 +537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetInputTransformerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -545,11 +545,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTarget",
-		reflect.TypeOf((*CloudwatchEventTargetKinesisTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetKinesisTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetKinesisTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetKinesisTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -576,7 +576,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetKinesisTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -584,11 +584,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTarget",
-		reflect.TypeOf((*CloudwatchEventTargetRedshiftTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRedshiftTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRedshiftTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRedshiftTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -629,7 +629,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "withEvent", GoGetter: "WithEvent"},
 			_jsii_.MemberProperty{JsiiProperty: "withEventInput", GoGetter: "WithEventInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -637,11 +637,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicy",
-		reflect.TypeOf((*CloudwatchEventTargetRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicyOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -671,7 +671,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -679,11 +679,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargets",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargets)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRunCommandTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargetsList)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRunCommandTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -697,7 +697,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetRunCommandTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -705,7 +705,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetRunCommandTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetRunCommandTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -733,7 +733,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -741,11 +741,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTarget",
-		reflect.TypeOf((*CloudwatchEventTargetSqsTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetSqsTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTargetOutputReference",
-		reflect.TypeOf((*CloudwatchEventTargetSqsTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchEventTargetSqsTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -772,7 +772,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchEventTargetSqsTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

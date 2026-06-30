@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
-		reflect.TypeOf((*AppstreamUserStackAssociation)(nil)).Elem(),
+		reflect.TypeFor[AppstreamUserStackAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppstreamUserStackAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig",
-		reflect.TypeOf((*AppstreamUserStackAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppstreamUserStackAssociationConfig](),
 	)
 }

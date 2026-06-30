@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKendraFaqS3PathOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraFaqS3PathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraFaqS3PathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKendraFaqS3PathOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

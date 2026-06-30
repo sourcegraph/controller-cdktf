@@ -1,6 +1,5 @@
 package spotfleetrequest
 
-
 type SpotFleetRequestLaunchTemplateConfig struct {
 	// launch_template_specification block.
 	//
@@ -9,6 +8,5 @@ type SpotFleetRequestLaunchTemplateConfig struct {
 	// overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#overrides SpotFleetRequest#overrides}
-	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
+	Overrides any `field:"optional" json:"overrides" yaml:"overrides"`
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyL
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyList
 
 	return nil
 }
-

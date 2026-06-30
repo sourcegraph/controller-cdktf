@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapFileSystemEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapFileSystemEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFsxOntapFileSystemEndpointsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

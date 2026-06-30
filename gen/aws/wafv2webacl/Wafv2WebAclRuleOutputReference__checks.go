@@ -112,7 +112,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutOverrideActionPara
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutRuleLabelParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutRuleLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetPriorityParameters
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetStatementParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetStatementParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewWafv2WebAclRuleOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

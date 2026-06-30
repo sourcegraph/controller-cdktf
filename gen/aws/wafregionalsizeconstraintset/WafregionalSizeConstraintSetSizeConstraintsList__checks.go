@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafregionalSizeConstraintSetSizeConstraintsListParameters(terraf
 
 	return nil
 }
-

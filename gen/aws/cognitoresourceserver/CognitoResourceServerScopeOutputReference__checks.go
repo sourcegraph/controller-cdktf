@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoResourceServerScopeOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CognitoResourceServerScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoResourceServerScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CognitoResourceServerScopeOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_CognitoResourceServerScopeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoResourceServerScopeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCognitoResourceServerScopeOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

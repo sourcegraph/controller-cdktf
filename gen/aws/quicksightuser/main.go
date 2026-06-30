@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
-		reflect.TypeOf((*QuicksightUser)(nil)).Elem(),
+		reflect.TypeFor[QuicksightUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userRole", GoGetter: "UserRole"},
 			_jsii_.MemberProperty{JsiiProperty: "userRoleInput", GoGetter: "UserRoleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,6 +86,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightUser.QuicksightUserConfig",
-		reflect.TypeOf((*QuicksightUserConfig)(nil)).Elem(),
+		reflect.TypeFor[QuicksightUserConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSesConfigurationSetDeliveryOptionsOutputReferenceParameters(terr
 
 	return nil
 }
-

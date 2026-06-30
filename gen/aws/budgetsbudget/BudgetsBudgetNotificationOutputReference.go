@@ -15,9 +15,9 @@ type BudgetsBudgetNotificationOutputReference interface {
 	ComparisonOperatorInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type BudgetsBudgetNotificationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotificationType() *string
 	SetNotificationType(val *string)
 	NotificationTypeInput() *string
@@ -58,7 +58,7 @@ type BudgetsBudgetNotificationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type BudgetsBudgetNotificationOutputReference interface {
 	ResetSubscriberSnsTopicArns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) ComparisonOperatorI
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) ThresholdTypeInput(
 	return returns
 }
 
-
 func NewBudgetsBudgetNotificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BudgetsBudgetNotificationOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewBudgetsBudgetNotificationOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewBudgetsBudgetNotificationOutputReference_Override(b BudgetsBudgetNotific
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComparisonOperator(val *string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetComparisonOperator(val *string) {
 	if err := j.validateSetComparisonOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComparisonOperato
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetNotificationType(val *string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetNotificationType(val *string) {
 	if err := j.validateSetNotificationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetNotificationType(
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetSubscriberEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetSubscriberEmailAddresses(val *[]*string) {
 	if err := j.validateSetSubscriberEmailAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetSubscriberEmailAd
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetSubscriberSnsTopicArns(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetSubscriberSnsTopicArns(val *[]*string) {
 	if err := j.validateSetSubscriberSnsTopicArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetSubscriberSnsTopi
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetThreshold(val *float64) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetThreshold(val *float64) {
 	if err := j.validateSetThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetThreshold(val *fl
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference)SetThresholdType(val *string) {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) SetThresholdType(val *string) {
 	if err := j.validateSetThresholdTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,16 +447,16 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -637,16 +636,16 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) ResetSubscriberSnsT
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) ToString() *string 
 
 	return returns
 }
-

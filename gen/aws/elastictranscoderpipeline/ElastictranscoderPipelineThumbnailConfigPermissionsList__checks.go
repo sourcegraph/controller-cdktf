@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElastictranscoderPipelineThumbnailConfigPermissionsListParameter
 
 	return nil
 }
-

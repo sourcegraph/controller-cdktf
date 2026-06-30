@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsOutpostsAsset.DataAwsOutpostsAsset",
-		reflect.TypeOf((*DataAwsOutpostsAsset)(nil)).Elem(),
+		reflect.TypeFor[DataAwsOutpostsAsset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsOutpostsAsset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsOutpostsAsset.DataAwsOutpostsAssetConfig",
-		reflect.TypeOf((*DataAwsOutpostsAssetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsOutpostsAssetConfig](),
 	)
 }

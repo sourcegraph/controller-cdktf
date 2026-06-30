@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppstreamImageBuilderDomainJoinInfoOutputReferenceParameters(ter
 
 	return nil
 }
-

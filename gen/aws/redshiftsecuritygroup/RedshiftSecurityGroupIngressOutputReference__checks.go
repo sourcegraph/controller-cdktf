@@ -106,7 +106,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetCidrP
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewRedshiftSecurityGroupIngressOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (b *jsiiProxy_BudgetsBudgetPlannedLimitList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBudgetsBudgetPlannedLimitListParameters(terraformResource cdktf.
 
 	return nil
 }
-

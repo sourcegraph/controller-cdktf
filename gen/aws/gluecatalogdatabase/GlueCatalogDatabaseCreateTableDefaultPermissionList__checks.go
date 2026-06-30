@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCatalogDatabaseCreateTableDefaultPermissionListParameters(te
 
 	return nil
 }
-

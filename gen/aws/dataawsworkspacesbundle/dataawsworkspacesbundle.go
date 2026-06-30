@@ -19,11 +19,11 @@ type DataAwsWorkspacesBundle interface {
 	CdktfStack() cdktf.TerraformStack
 	ComputeType() DataAwsWorkspacesBundleComputeTypeList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,19 +57,19 @@ type DataAwsWorkspacesBundle interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootStorage() DataAwsWorkspacesBundleRootStorageList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserStorage() DataAwsWorkspacesBundleUserStorageList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataAwsWorkspacesBundle interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsWorkspacesBundle
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) ComputeType() DataAwsWorkspacesBundl
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWorkspacesBundle) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWorkspacesBundle) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWorkspacesBundle) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWorkspacesBundle) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -377,7 +377,6 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) UserStorage() DataAwsWorkspacesBundl
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
 func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *DataAwsWorkspacesBundleConfig) DataAwsWorkspacesBundle {
 	_init_.Initialize()
@@ -389,7 +388,7 @@ func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewDataAwsWorkspacesBundle_Override(d DataAwsWorkspacesBundle, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetBundleId(val *string) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetBundleId(val *string) {
 	if err := j.validateSetBundleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetBundleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetId(val *string) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetName(val *string) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetOwner(val *string) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetOwner(val *string) {
 	if err := j.validateSetOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundle)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsWorkspacesBundle) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func DataAwsWorkspacesBundle_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func DataAwsWorkspacesBundle_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsWorkspacesBundle_IsConstruct(x interface{}) *bool {
+func DataAwsWorkspacesBundle_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWorkspacesBundle_IsConstructParameters(x); err != nil {
@@ -544,7 +543,7 @@ func DataAwsWorkspacesBundle_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func DataAwsWorkspacesBundle_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsWorkspacesBundle_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsWorkspacesBundle_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWorkspacesBundle_IsTerraformDataSourceParameters(x); err != nil {
@@ -563,7 +562,7 @@ func DataAwsWorkspacesBundle_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func DataAwsWorkspacesBundle_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsWorkspacesBundle_IsTerraformElement(x interface{}) *bool {
+func DataAwsWorkspacesBundle_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWorkspacesBundle_IsTerraformElementParameters(x); err != nil {
@@ -582,7 +581,7 @@ func DataAwsWorkspacesBundle_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -600,27 +599,27 @@ func DataAwsWorkspacesBundle_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsWorkspacesBundle) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsWorkspacesBundle) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -822,8 +821,8 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) ResetOwner() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -848,8 +847,8 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWorkspacesBundle) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -861,8 +860,8 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWorkspacesBundle) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -887,8 +886,8 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundle) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWorkspacesBundle) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -899,4 +898,3 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) ToTerraform() interface{} {
 
 	return returns
 }
-

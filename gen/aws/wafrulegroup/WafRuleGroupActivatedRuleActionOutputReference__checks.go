@@ -98,7 +98,7 @@ func (w *jsiiProxy_WafRuleGroupActivatedRuleActionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WafRuleGroupActivatedRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafRuleGroupActivatedRuleActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWafRuleGroupActivatedRuleActionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

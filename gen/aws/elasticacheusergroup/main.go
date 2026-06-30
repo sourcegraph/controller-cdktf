@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheUserGroup.ElasticacheUserGroup",
-		reflect.TypeOf((*ElasticacheUserGroup)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheUserGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userIds", GoGetter: "UserIds"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdsInput", GoGetter: "UserIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheUserGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,6 +80,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig",
-		reflect.TypeOf((*ElasticacheUserGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheUserGroupConfig](),
 	)
 }

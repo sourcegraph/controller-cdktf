@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_GenerateConfigForImport
 	return nil
 }
 
-func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsConstructParameters(x interface{}) error {
+func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsConstructParameters(x
 	return nil
 }
 
-func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformDataSourcePa
 	return nil
 }
 
-func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElementParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataAwsCloudfrontLogDeliveryCanonicalUserIdParameters(scope cons
 
 	return nil
 }
-

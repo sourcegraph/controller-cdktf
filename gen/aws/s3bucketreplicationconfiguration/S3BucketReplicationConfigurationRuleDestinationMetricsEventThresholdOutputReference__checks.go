@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsEventTh
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewS3BucketReplicationConfigurationRuleDestinationMetricsEventThres
 
 	return nil
 }
-

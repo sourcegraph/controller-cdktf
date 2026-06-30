@@ -12,9 +12,9 @@ type SagemakerHumanTaskUiUiTemplateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type SagemakerHumanTaskUiUiTemplateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type SagemakerHumanTaskUiUiTemplateOutputReference interface {
 	ResetContent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) Url() *string 
 	return returns
 }
 
-
 func NewSagemakerHumanTaskUiUiTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerHumanTaskUiUiTemplateOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewSagemakerHumanTaskUiUiTemplateOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewSagemakerHumanTaskUiUiTemplateOutputReference_Override(s SagemakerHumanT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetContent(val *string) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetContent(val 
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetInternalValue(val *SagemakerHumanTaskUiUiTemplate) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetInternalValue(val *SagemakerHumanTaskUiUiTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) InterpolationF
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,16 +479,16 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) ResetContent()
 	)
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -508,4 +507,3 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) ToString() *st
 
 	return returns
 }
-

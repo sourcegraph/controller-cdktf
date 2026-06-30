@@ -15,11 +15,11 @@ type DataAwsDocdbEngineVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,12 +57,12 @@ type DataAwsDocdbEngineVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SupportsLogExportsToCloudwatch() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidUpgradeTargets() *[]*string
@@ -71,9 +71,9 @@ type DataAwsDocdbEngineVersion interface {
 	VersionDescription() *string
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,18 +103,18 @@ type DataAwsDocdbEngineVersion interface {
 	ResetParameterGroupFamily()
 	ResetPreferredVersions()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsDocdbEngineVersion
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/docdb_engine_version aws_docdb_engine_version} Data Source.
 func NewDataAwsDocdbEngineVersion(scope constructs.Construct, id *string, config *DataAwsDocdbEngineVersionConfig) DataAwsDocdbEngineVersion {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewDataAwsDocdbEngineVersion(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewDataAwsDocdbEngineVersion_Override(d DataAwsDocdbEngineVersion, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetEngine(val *string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetId(val *string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetParameterGroupFamily(val *string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetParameterGroupFamily(val *string) {
 	if err := j.validateSetParameterGroupFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetParameterGroupFamily(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetPreferredVersions(val *[]*string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetPreferredVersions(val *[]*string) {
 	if err := j.validateSetPreferredVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetPreferredVersions(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func DataAwsDocdbEngineVersion_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func DataAwsDocdbEngineVersion_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool {
+func DataAwsDocdbEngineVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDocdbEngineVersion_IsConstructParameters(x); err != nil {
@@ -590,7 +589,7 @@ func DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsDocdbEngineVersion_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDocdbEngineVersion_IsTerraformDataSourceParameters(x); err != nil {
@@ -609,7 +608,7 @@ func DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsDocdbEngineVersion_IsTerraformElement(x interface{}) *bool {
+func DataAwsDocdbEngineVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsDocdbEngineVersion_IsTerraformElementParameters(x); err != nil {
@@ -628,7 +627,7 @@ func DataAwsDocdbEngineVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,27 +645,27 @@ func DataAwsDocdbEngineVersion_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -876,8 +875,8 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -889,8 +888,8 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -902,8 +901,8 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -915,8 +914,8 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -941,8 +940,8 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -953,4 +952,3 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

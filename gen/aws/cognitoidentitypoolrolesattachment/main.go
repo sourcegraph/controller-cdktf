@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachment)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolRolesAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentConfig",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMapping",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMapping)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMapping](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingList",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMappingList)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMappingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,11 +102,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claim", GoGetter: "Claim"},
 			_jsii_.MemberProperty{JsiiProperty: "claimInput", GoGetter: "ClaimInput"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference",
-		reflect.TypeOf((*CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ambiguousRoleResolution", GoGetter: "AmbiguousRoleResolution"},
 			_jsii_.MemberProperty{JsiiProperty: "ambiguousRoleResolutionInput", GoGetter: "AmbiguousRoleResolutionInput"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

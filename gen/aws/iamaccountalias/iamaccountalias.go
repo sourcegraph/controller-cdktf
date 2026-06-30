@@ -18,15 +18,15 @@ type IamAccountAlias interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type IamAccountAlias interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type IamAccountAlias interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type IamAccountAlias interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type IamAccountAlias interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamAccountAlias
@@ -159,8 +159,8 @@ func (j *jsiiProxy_IamAccountAlias) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountAlias) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_IamAccountAlias) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccountAlias) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_IamAccountAlias) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountAlias) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_IamAccountAlias) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamAccountAlias) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_IamAccountAlias) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountAlias) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_IamAccountAlias) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccountAlias) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_IamAccountAlias) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
 func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccountAliasConfig) IamAccountAlias {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewIamAccountAlias_Override(i IamAccountAlias, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetAccountAlias(val *string) {
+func (j *jsiiProxy_IamAccountAlias) SetAccountAlias(val *string) {
 	if err := j.validateSetAccountAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_IamAccountAlias)SetAccountAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamAccountAlias) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_IamAccountAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetCount(val interface{}) {
+func (j *jsiiProxy_IamAccountAlias) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_IamAccountAlias)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamAccountAlias) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_IamAccountAlias)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamAccountAlias) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -408,7 +407,7 @@ func (j *jsiiProxy_IamAccountAlias)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetId(val *string) {
+func (j *jsiiProxy_IamAccountAlias) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_IamAccountAlias)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamAccountAlias) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_IamAccountAlias)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamAccountAlias) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_IamAccountAlias)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamAccountAlias) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func IamAccountAlias_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func IamAccountAlias_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamAccountAlias_IsConstruct(x interface{}) *bool {
+func IamAccountAlias_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountAlias_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func IamAccountAlias_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func IamAccountAlias_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccountAlias_IsTerraformElement(x interface{}) *bool {
+func IamAccountAlias_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountAlias_IsTerraformElementParameters(x); err != nil {
@@ -515,7 +514,7 @@ func IamAccountAlias_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func IamAccountAlias_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccountAlias_IsTerraformResource(x interface{}) *bool {
+func IamAccountAlias_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountAlias_IsTerraformResourceParameters(x); err != nil {
@@ -534,7 +533,7 @@ func IamAccountAlias_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,31 +558,31 @@ func (i *jsiiProxy_IamAccountAlias) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamAccountAlias) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamAccountAlias) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamAccountAlias) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamAccountAlias) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (i *jsiiProxy_IamAccountAlias) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (i *jsiiProxy_IamAccountAlias) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (i *jsiiProxy_IamAccountAlias) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (i *jsiiProxy_IamAccountAlias) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (i *jsiiProxy_IamAccountAlias) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (i *jsiiProxy_IamAccountAlias) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (i *jsiiProxy_IamAccountAlias) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,15 +710,15 @@ func (i *jsiiProxy_IamAccountAlias) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountAlias) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountAlias) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -738,7 +737,7 @@ func (i *jsiiProxy_IamAccountAlias) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -751,7 +750,7 @@ func (i *jsiiProxy_IamAccountAlias) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,18 +764,18 @@ func (i *jsiiProxy_IamAccountAlias) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamAccountAlias) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamAccountAlias) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -787,7 +786,7 @@ func (i *jsiiProxy_IamAccountAlias) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -798,7 +797,7 @@ func (i *jsiiProxy_IamAccountAlias) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -818,8 +817,8 @@ func (i *jsiiProxy_IamAccountAlias) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IamAccountAlias) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccountAlias) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -831,8 +830,8 @@ func (i *jsiiProxy_IamAccountAlias) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountAlias) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccountAlias) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -844,8 +843,8 @@ func (i *jsiiProxy_IamAccountAlias) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountAlias) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountAlias) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -857,8 +856,8 @@ func (i *jsiiProxy_IamAccountAlias) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountAlias) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountAlias) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -883,8 +882,8 @@ func (i *jsiiProxy_IamAccountAlias) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountAlias) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountAlias) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -895,4 +894,3 @@ func (i *jsiiProxy_IamAccountAlias) ToTerraform() interface{} {
 
 	return returns
 }
-

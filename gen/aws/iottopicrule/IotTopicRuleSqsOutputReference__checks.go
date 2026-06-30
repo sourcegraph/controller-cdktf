@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleSqsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetTerraformResourceP
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetUseBase64Parameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleSqsOutputReference) validateSetUseBase64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewIotTopicRuleSqsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

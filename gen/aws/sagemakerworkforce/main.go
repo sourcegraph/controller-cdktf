@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce",
-		reflect.TypeOf((*SagemakerWorkforce)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforce](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforceVpcConfig", GoGetter: "WorkforceVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workforceVpcConfigInput", GoGetter: "WorkforceVpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkforce{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,11 +84,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig",
-		reflect.TypeOf((*SagemakerWorkforceCognitoConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceCognitoConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
-		reflect.TypeOf((*SagemakerWorkforceCognitoConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceCognitoConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPool", GoGetter: "UserPool"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolInput", GoGetter: "UserPoolInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,15 +124,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig",
-		reflect.TypeOf((*SagemakerWorkforceConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig",
-		reflect.TypeOf((*SagemakerWorkforceOidcConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceOidcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
-		reflect.TypeOf((*SagemakerWorkforceOidcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceOidcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationEndpoint", GoGetter: "AuthorizationEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationEndpointInput", GoGetter: "AuthorizationEndpointInput"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpoint", GoGetter: "UserInfoEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpointInput", GoGetter: "UserInfoEndpointInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkforceOidcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,11 +180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig",
-		reflect.TypeOf((*SagemakerWorkforceSourceIpConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceSourceIpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfigOutputReference",
-		reflect.TypeOf((*SagemakerWorkforceSourceIpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceSourceIpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrs", GoGetter: "Cidrs"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrsInput", GoGetter: "CidrsInput"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkforceSourceIpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig",
-		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceWorkforceVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
-		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerWorkforceWorkforceVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

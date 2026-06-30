@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateSetInsightT
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailInsightSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudtrailInsightSelectorOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVpcPeeringConnectionAccepterTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

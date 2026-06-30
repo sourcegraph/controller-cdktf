@@ -22,15 +22,15 @@ type Route53RecoveryreadinessCell interface {
 	SetCells(val *[]*string)
 	CellsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type Route53RecoveryreadinessCell interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,18 +72,18 @@ type Route53RecoveryreadinessCell interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Route53RecoveryreadinessCellTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type Route53RecoveryreadinessCell interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type Route53RecoveryreadinessCell interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type Route53RecoveryreadinessCell interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53RecoveryreadinessCell
@@ -207,8 +207,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) CellsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) Timeouts() Route53Recoveryreadi
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecoveryreadinessCell) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell} Resource.
 func NewRoute53RecoveryreadinessCell(scope constructs.Construct, id *string, config *Route53RecoveryreadinessCellConfig) Route53RecoveryreadinessCell {
@@ -459,7 +458,7 @@ func NewRoute53RecoveryreadinessCell(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewRoute53RecoveryreadinessCell_Override(r Route53RecoveryreadinessCell, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCellName(val *string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetCellName(val *string) {
 	if err := j.validateSetCellNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCellName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCells(val *[]*string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetCells(val *[]*string) {
 	if err := j.validateSetCellsParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCells(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetId(val *string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessCell)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Route53RecoveryreadinessCell) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func Route53RecoveryreadinessCell_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func Route53RecoveryreadinessCell_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53RecoveryreadinessCell_IsConstruct(x interface{}) *bool {
+func Route53RecoveryreadinessCell_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoveryreadinessCell_IsConstructParameters(x); err != nil {
@@ -647,7 +646,7 @@ func Route53RecoveryreadinessCell_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func Route53RecoveryreadinessCell_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53RecoveryreadinessCell_IsTerraformElement(x interface{}) *bool {
+func Route53RecoveryreadinessCell_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoveryreadinessCell_IsTerraformElementParameters(x); err != nil {
@@ -666,7 +665,7 @@ func Route53RecoveryreadinessCell_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func Route53RecoveryreadinessCell_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53RecoveryreadinessCell_IsTerraformResource(x interface{}) *bool {
+func Route53RecoveryreadinessCell_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53RecoveryreadinessCell_IsTerraformResourceParameters(x); err != nil {
@@ -685,7 +684,7 @@ func Route53RecoveryreadinessCell_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,31 +709,31 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53RecoveryreadinessCell) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53RecoveryreadinessCell) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,15 +861,15 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -889,7 +888,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -902,7 +901,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,18 +915,18 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53RecoveryreadinessCell) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -938,7 +937,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -949,7 +948,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -960,7 +959,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) PutTimeouts(value *Route53Recov
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1012,8 +1011,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1025,8 +1024,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1038,8 +1037,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1051,8 +1050,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1077,8 +1076,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessCell) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53RecoveryreadinessCell) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1089,4 +1088,3 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) ToTerraform() interface{} {
 
 	return returns
 }
-

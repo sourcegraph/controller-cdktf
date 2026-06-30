@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) val
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodedeployDeploymentGroupOnPremisesInstanceTagFilterListParamete
 
 	return nil
 }
-

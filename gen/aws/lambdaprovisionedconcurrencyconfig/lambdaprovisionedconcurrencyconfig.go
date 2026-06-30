@@ -15,15 +15,15 @@ type LambdaProvisionedConcurrencyConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,29 +56,29 @@ type LambdaProvisionedConcurrencyConfig interface {
 	SetProvisionedConcurrentExecutions(val *float64)
 	ProvisionedConcurrentExecutionsInput() *float64
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Qualifier() *string
 	SetQualifier(val *string)
 	QualifierInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LambdaProvisionedConcurrencyConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type LambdaProvisionedConcurrencyConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type LambdaProvisionedConcurrencyConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type LambdaProvisionedConcurrencyConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LambdaProvisionedConcurrencyConfig
@@ -149,8 +149,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) ProvisionedConcurrentExec
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) QualifierInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Timeouts() LambdaProvisio
 	return returns
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TimeoutsInput() interface
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
 func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) LambdaProvisionedConcurrencyConfig {
@@ -411,7 +410,7 @@ func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewLambdaProvisionedConcurrencyConfig_Override(l LambdaProvisionedConcurren
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetFunctionName(val *string) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetFunctionName(val *string) {
 	if err := j.validateSetFunctionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetFunctionName(val *strin
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetId(val *string) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvisionedConcurrentExecutions(val *float64) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetProvisionedConcurrentExecutions(val *float64) {
 	if err := j.validateSetProvisionedConcurrentExecutionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvisionedConcurrentEx
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetQualifier(val *string) {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SetQualifier(val *string) {
 	if err := j.validateSetQualifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func LambdaProvisionedConcurrencyConfig_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func LambdaProvisionedConcurrencyConfig_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LambdaProvisionedConcurrencyConfig_IsConstruct(x interface{}) *bool {
+func LambdaProvisionedConcurrencyConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaProvisionedConcurrencyConfig_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func LambdaProvisionedConcurrencyConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func LambdaProvisionedConcurrencyConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaProvisionedConcurrencyConfig_IsTerraformElement(x interface{}) *bool {
+func LambdaProvisionedConcurrencyConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaProvisionedConcurrencyConfig_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func LambdaProvisionedConcurrencyConfig_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func LambdaProvisionedConcurrencyConfig_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func LambdaProvisionedConcurrencyConfig_IsTerraformResource(x interface{}) *bool {
+func LambdaProvisionedConcurrencyConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaProvisionedConcurrencyConfig_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func LambdaProvisionedConcurrencyConfig_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -830,7 +829,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) InterpolationForAttribute
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -901,7 +900,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) PutTimeouts(value *Lambda
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -929,8 +928,8 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -942,8 +941,8 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeAttributes() *m
 	return returns
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -955,8 +954,8 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) SynthesizeHclAttributes()
 	return returns
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -968,8 +967,8 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToHclTerraform() interfac
 	return returns
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -994,8 +993,8 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1006,4 +1005,3 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ToTerraform() interface{}
 
 	return returns
 }
-

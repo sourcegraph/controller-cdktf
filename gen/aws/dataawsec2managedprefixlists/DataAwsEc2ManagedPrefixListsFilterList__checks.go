@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixListsFilterList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixListsFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixListsFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEc2ManagedPrefixListsFilterListParameters(terraformResour
 
 	return nil
 }
-

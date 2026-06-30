@@ -19,7 +19,7 @@ func (s *jsiiProxy_SesEventDestination) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (s *jsiiProxy_SesEventDestination) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SesEventDestination) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SesEventDestination) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (s *jsiiProxy_SesEventDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SesEventDestination) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SesEventDestination) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (s *jsiiProxy_SesEventDestination) validatePutCloudwatchDestinationParameters(value interface{}) error {
+func (s *jsiiProxy_SesEventDestination) validatePutCloudwatchDestinationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateSesEventDestination_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateSesEventDestination_IsConstructParameters(x interface{}) error {
+func validateSesEventDestination_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateSesEventDestination_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSesEventDestination_IsTerraformElementParameters(x interface{}) error {
+func validateSesEventDestination_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateSesEventDestination_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateSesEventDestination_IsTerraformResourceParameters(x interface{}) error {
+func validateSesEventDestination_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_SesEventDestination) validateSetConfigurationSetNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestination) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SesEventDestination) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_SesEventDestination) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestination) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SesEventDestination) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -395,7 +395,7 @@ func (j *jsiiProxy_SesEventDestination) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestination) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SesEventDestination) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -447,7 +447,7 @@ func (j *jsiiProxy_SesEventDestination) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SesEventDestination) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -511,4 +511,3 @@ func validateNewSesEventDestinationParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

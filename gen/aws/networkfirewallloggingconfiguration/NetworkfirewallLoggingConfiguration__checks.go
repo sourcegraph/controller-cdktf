@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateAddMoveTargetPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveFromIdParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkfirewallLoggingConfiguration_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateNetworkfirewallLoggingConfiguration_IsConstructParameters(x interface{}) error {
+func validateNetworkfirewallLoggingConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkfirewallLoggingConfiguration_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateNetworkfirewallLoggingConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkfirewallLoggingConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkfirewallLoggingConfiguration_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateNetworkfirewallLoggingConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkfirewallLoggingConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkfirewallLoggingConfiguration_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewNetworkfirewallLoggingConfigurationParameters(scope constructs.C
 
 	return nil
 }
-

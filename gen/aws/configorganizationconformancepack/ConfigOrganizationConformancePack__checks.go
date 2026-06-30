@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) validateAddMoveTargetParam
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveFromIdParamete
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) validateOverrideLogicalIdP
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePack) validatePutInputParameterParameters(value interface{}) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validatePutInputParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateConfigOrganizationConformancePack_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateConfigOrganizationConformancePack_IsConstructParameters(x interface{}) error {
+func validateConfigOrganizationConformancePack_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateConfigOrganizationConformancePack_IsConstructParameters(x interface
 	return nil
 }
 
-func validateConfigOrganizationConformancePack_IsTerraformElementParameters(x interface{}) error {
+func validateConfigOrganizationConformancePack_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateConfigOrganizationConformancePack_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateConfigOrganizationConformancePack_IsTerraformResourceParameters(x interface{}) error {
+func validateConfigOrganizationConformancePack_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateConfigOrganizationConformancePack_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewConfigOrganizationConformancePackParameters(scope constructs.Con
 
 	return nil
 }
-

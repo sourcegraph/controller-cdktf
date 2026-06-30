@@ -12,9 +12,9 @@ type ElasticsearchDomainAutoTuneOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type ElasticsearchDomainAutoTuneOptionsOutputReference interface {
 	InternalValue() *ElasticsearchDomainAutoTuneOptions
 	SetInternalValue(val *ElasticsearchDomainAutoTuneOptions)
 	MaintenanceSchedule() ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList
-	MaintenanceScheduleInput() interface{}
+	MaintenanceScheduleInput() any
 	RollbackOnDisable() *string
 	SetRollbackOnDisable(val *string)
 	RollbackOnDisableInput() *string
@@ -48,7 +48,7 @@ type ElasticsearchDomainAutoTuneOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type ElasticsearchDomainAutoTuneOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMaintenanceSchedule(value interface{})
+	PutMaintenanceSchedule(value any)
 	ResetMaintenanceSchedule()
 	ResetRollbackOnDisable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) Maintenanc
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) MaintenanceScheduleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) MaintenanceScheduleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"maintenanceScheduleInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewElasticsearchDomainAutoTuneOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainAutoTuneOptionsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewElasticsearchDomainAutoTuneOptionsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewElasticsearchDomainAutoTuneOptionsOutputReference_Override(e Elasticsear
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetDesiredState(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetDesiredS
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetInternalValue(val *ElasticsearchDomainAutoTuneOptions) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetInternalValue(val *ElasticsearchDomainAutoTuneOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetRollbackOnDisable(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetRollbackOnDisable(val *string) {
 	if err := j.validateSetRollbackOnDisableParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetRollback
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) ComputeFqn
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetStringA
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) GetStringM
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) Interpolat
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) PutMaintenanceSchedule(value interface{}) {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) PutMaintenanceSchedule(value any) {
 	if err := e.validatePutMaintenanceScheduleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMaintenanceSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) ResetRollb
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) ToString()
 
 	return returns
 }
-

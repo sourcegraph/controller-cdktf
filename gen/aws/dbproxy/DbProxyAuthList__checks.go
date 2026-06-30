@@ -34,7 +34,7 @@ func (d *jsiiProxy_DbProxyAuthList) validateResolveParameters(_context cdktf.IRe
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyAuthList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbProxyAuthList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDbProxyAuthListParameters(terraformResource cdktf.IInterpolating
 
 	return nil
 }
-

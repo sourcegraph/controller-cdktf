@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudwatchMetricAlarmMetricQueryMetricOutputReferenceParameters(
 
 	return nil
 }
-

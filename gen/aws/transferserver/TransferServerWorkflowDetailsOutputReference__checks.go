@@ -109,7 +109,7 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewTransferServerWorkflowDetailsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -30,33 +30,33 @@ type OpsworksInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	SetCreatedAt(val *string)
 	CreatedAtInput() *string
-	DeleteEbs() interface{}
-	SetDeleteEbs(val interface{})
-	DeleteEbsInput() interface{}
-	DeleteEip() interface{}
-	SetDeleteEip(val interface{})
-	DeleteEipInput() interface{}
+	DeleteEbs() any
+	SetDeleteEbs(val any)
+	DeleteEbsInput() any
+	DeleteEip() any
+	SetDeleteEip(val any)
+	DeleteEipInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EbsBlockDevice() OpsworksInstanceEbsBlockDeviceList
-	EbsBlockDeviceInput() interface{}
-	EbsOptimized() interface{}
-	SetEbsOptimized(val interface{})
-	EbsOptimizedInput() interface{}
+	EbsBlockDeviceInput() any
+	EbsOptimized() any
+	SetEbsOptimized(val any)
+	EbsOptimizedInput() any
 	Ec2InstanceId() *string
 	EcsClusterArn() *string
 	SetEcsClusterArn(val *string)
@@ -65,7 +65,7 @@ type OpsworksInstance interface {
 	SetElasticIp(val *string)
 	ElasticIpInput() *string
 	EphemeralBlockDevice() OpsworksInstanceEphemeralBlockDeviceList
-	EphemeralBlockDeviceInput() interface{}
+	EphemeralBlockDeviceInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,9 +83,9 @@ type OpsworksInstance interface {
 	InfrastructureClass() *string
 	SetInfrastructureClass(val *string)
 	InfrastructureClassInput() *string
-	InstallUpdatesOnBoot() interface{}
-	SetInstallUpdatesOnBoot(val interface{})
-	InstallUpdatesOnBootInput() interface{}
+	InstallUpdatesOnBoot() any
+	SetInstallUpdatesOnBoot(val any)
+	InstallUpdatesOnBootInput() any
 	InstanceProfileArn() *string
 	SetInstanceProfileArn(val *string)
 	InstanceProfileArnInput() *string
@@ -113,20 +113,20 @@ type OpsworksInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicDns() *string
 	PublicIp() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegisteredBy() *string
 	ReportedAgentVersion() *string
 	ReportedOsFamily() *string
 	ReportedOsName() *string
 	ReportedOsVersion() *string
 	RootBlockDevice() OpsworksInstanceRootBlockDeviceList
-	RootBlockDeviceInput() interface{}
+	RootBlockDeviceInput() any
 	RootDeviceType() *string
 	SetRootDeviceType(val *string)
 	RootDeviceTypeInput() *string
@@ -157,11 +157,11 @@ type OpsworksInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OpsworksInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VirtualizationType() *string
 	SetVirtualizationType(val *string)
 	VirtualizationTypeInput() *string
@@ -169,9 +169,9 @@ type OpsworksInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -189,7 +189,7 @@ type OpsworksInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -201,16 +201,16 @@ type OpsworksInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEbsBlockDevice(value interface{})
-	PutEphemeralBlockDevice(value interface{})
-	PutRootBlockDevice(value interface{})
+	PutEbsBlockDevice(value any)
+	PutEphemeralBlockDevice(value any)
+	PutRootBlockDevice(value any)
 	PutTimeouts(value *OpsworksInstanceTimeouts)
 	ResetAgentVersion()
 	ResetAmiId()
@@ -245,17 +245,17 @@ type OpsworksInstance interface {
 	ResetTenancy()
 	ResetTimeouts()
 	ResetVirtualizationType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksInstance
@@ -373,8 +373,8 @@ func (j *jsiiProxy_OpsworksInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_OpsworksInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_OpsworksInstance) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_OpsworksInstance) CreatedAtInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) DeleteEbs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) DeleteEbs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteEbs",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_OpsworksInstance) DeleteEbs() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) DeleteEbsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) DeleteEbsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteEbsInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_OpsworksInstance) DeleteEbsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) DeleteEip() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) DeleteEip() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteEip",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_OpsworksInstance) DeleteEip() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) DeleteEipInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) DeleteEipInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteEipInput",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_OpsworksInstance) EbsBlockDevice() OpsworksInstanceEbsBlockDe
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) EbsBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) EbsBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsBlockDeviceInput",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_OpsworksInstance) EbsBlockDeviceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) EbsOptimized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) EbsOptimized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimized",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_OpsworksInstance) EbsOptimized() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) EbsOptimizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) EbsOptimizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_OpsworksInstance) EphemeralBlockDevice() OpsworksInstanceEphe
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) EphemeralBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) EphemeralBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ephemeralBlockDeviceInput",
@@ -673,8 +673,8 @@ func (j *jsiiProxy_OpsworksInstance) InfrastructureClassInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBoot",
@@ -683,8 +683,8 @@ func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBoot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) InstallUpdatesOnBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBootInput",
@@ -843,8 +843,8 @@ func (j *jsiiProxy_OpsworksInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -873,8 +873,8 @@ func (j *jsiiProxy_OpsworksInstance) PublicIp() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -943,8 +943,8 @@ func (j *jsiiProxy_OpsworksInstance) RootBlockDevice() OpsworksInstanceRootBlock
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) RootBlockDeviceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) RootBlockDeviceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rootBlockDeviceInput",
@@ -1153,8 +1153,8 @@ func (j *jsiiProxy_OpsworksInstance) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1183,8 +1183,8 @@ func (j *jsiiProxy_OpsworksInstance) Timeouts() OpsworksInstanceTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1213,7 +1213,6 @@ func (j *jsiiProxy_OpsworksInstance) VirtualizationTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
 func NewOpsworksInstance(scope constructs.Construct, id *string, config *OpsworksInstanceConfig) OpsworksInstance {
 	_init_.Initialize()
@@ -1225,7 +1224,7 @@ func NewOpsworksInstance(scope constructs.Construct, id *string, config *Opswork
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1238,12 +1237,12 @@ func NewOpsworksInstance_Override(o OpsworksInstance, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetAgentVersion(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetAgentVersion(val *string) {
 	if err := j.validateSetAgentVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_OpsworksInstance)SetAgentVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetAmiId(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetAmiId(val *string) {
 	if err := j.validateSetAmiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_OpsworksInstance)SetAmiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetArchitecture(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_OpsworksInstance)SetArchitecture(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetAutoScalingType(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetAutoScalingType(val *string) {
 	if err := j.validateSetAutoScalingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_OpsworksInstance)SetAutoScalingType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_OpsworksInstance)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_OpsworksInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1320,7 +1319,7 @@ func (j *jsiiProxy_OpsworksInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetCreatedAt(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetCreatedAt(val *string) {
 	if err := j.validateSetCreatedAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -1331,7 +1330,7 @@ func (j *jsiiProxy_OpsworksInstance)SetCreatedAt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetDeleteEbs(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetDeleteEbs(val any) {
 	if err := j.validateSetDeleteEbsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1342,7 +1341,7 @@ func (j *jsiiProxy_OpsworksInstance)SetDeleteEbs(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetDeleteEip(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetDeleteEip(val any) {
 	if err := j.validateSetDeleteEipParameters(val); err != nil {
 		panic(err)
 	}
@@ -1353,7 +1352,7 @@ func (j *jsiiProxy_OpsworksInstance)SetDeleteEip(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1361,7 +1360,7 @@ func (j *jsiiProxy_OpsworksInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetEbsOptimized(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetEbsOptimized(val any) {
 	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1372,7 +1371,7 @@ func (j *jsiiProxy_OpsworksInstance)SetEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetEcsClusterArn(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetEcsClusterArn(val *string) {
 	if err := j.validateSetEcsClusterArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1382,7 @@ func (j *jsiiProxy_OpsworksInstance)SetEcsClusterArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetElasticIp(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetElasticIp(val *string) {
 	if err := j.validateSetElasticIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1394,7 +1393,7 @@ func (j *jsiiProxy_OpsworksInstance)SetElasticIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1402,7 +1401,7 @@ func (j *jsiiProxy_OpsworksInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetHostname(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1413,7 +1412,7 @@ func (j *jsiiProxy_OpsworksInstance)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetId(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1424,7 +1423,7 @@ func (j *jsiiProxy_OpsworksInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetInfrastructureClass(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetInfrastructureClass(val *string) {
 	if err := j.validateSetInfrastructureClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1435,7 +1434,7 @@ func (j *jsiiProxy_OpsworksInstance)SetInfrastructureClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetInstallUpdatesOnBoot(val interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetInstallUpdatesOnBoot(val any) {
 	if err := j.validateSetInstallUpdatesOnBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -1446,7 +1445,7 @@ func (j *jsiiProxy_OpsworksInstance)SetInstallUpdatesOnBoot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetInstanceProfileArn(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetInstanceProfileArn(val *string) {
 	if err := j.validateSetInstanceProfileArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1457,7 +1456,7 @@ func (j *jsiiProxy_OpsworksInstance)SetInstanceProfileArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetInstanceType(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1468,7 +1467,7 @@ func (j *jsiiProxy_OpsworksInstance)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetLayerIds(val *[]*string) {
+func (j *jsiiProxy_OpsworksInstance) SetLayerIds(val *[]*string) {
 	if err := j.validateSetLayerIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1479,7 +1478,7 @@ func (j *jsiiProxy_OpsworksInstance)SetLayerIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1490,7 +1489,7 @@ func (j *jsiiProxy_OpsworksInstance)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetOs(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1501,7 +1500,7 @@ func (j *jsiiProxy_OpsworksInstance)SetOs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1509,7 +1508,7 @@ func (j *jsiiProxy_OpsworksInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1520,7 +1519,7 @@ func (j *jsiiProxy_OpsworksInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetRootDeviceType(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetRootDeviceType(val *string) {
 	if err := j.validateSetRootDeviceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1531,7 +1530,7 @@ func (j *jsiiProxy_OpsworksInstance)SetRootDeviceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OpsworksInstance) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1542,7 +1541,7 @@ func (j *jsiiProxy_OpsworksInstance)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetSshKeyName(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetSshKeyName(val *string) {
 	if err := j.validateSetSshKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1553,7 +1552,7 @@ func (j *jsiiProxy_OpsworksInstance)SetSshKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1564,7 +1563,7 @@ func (j *jsiiProxy_OpsworksInstance)SetStackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetState(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1575,7 +1574,7 @@ func (j *jsiiProxy_OpsworksInstance)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetStatus(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1586,7 +1585,7 @@ func (j *jsiiProxy_OpsworksInstance)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetSubnetId(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1597,7 +1596,7 @@ func (j *jsiiProxy_OpsworksInstance)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetTenancy(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetTenancy(val *string) {
 	if err := j.validateSetTenancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1608,7 +1607,7 @@ func (j *jsiiProxy_OpsworksInstance)SetTenancy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetVirtualizationType(val *string) {
+func (j *jsiiProxy_OpsworksInstance) SetVirtualizationType(val *string) {
 	if err := j.validateSetVirtualizationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1631,7 +1630,7 @@ func OpsworksInstance_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1655,7 +1654,7 @@ func OpsworksInstance_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksInstance_IsConstruct(x interface{}) *bool {
+func OpsworksInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksInstance_IsConstructParameters(x); err != nil {
@@ -1666,7 +1665,7 @@ func OpsworksInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1674,7 +1673,7 @@ func OpsworksInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksInstance_IsTerraformElement(x interface{}) *bool {
+func OpsworksInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksInstance_IsTerraformElementParameters(x); err != nil {
@@ -1685,7 +1684,7 @@ func OpsworksInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1693,7 +1692,7 @@ func OpsworksInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksInstance_IsTerraformResource(x interface{}) *bool {
+func OpsworksInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1704,7 +1703,7 @@ func OpsworksInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1729,31 +1728,31 @@ func (o *jsiiProxy_OpsworksInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksInstance) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1769,7 +1768,7 @@ func (o *jsiiProxy_OpsworksInstance) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1785,7 +1784,7 @@ func (o *jsiiProxy_OpsworksInstance) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1801,7 +1800,7 @@ func (o *jsiiProxy_OpsworksInstance) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1817,7 +1816,7 @@ func (o *jsiiProxy_OpsworksInstance) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1833,7 +1832,7 @@ func (o *jsiiProxy_OpsworksInstance) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1849,7 +1848,7 @@ func (o *jsiiProxy_OpsworksInstance) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1865,7 +1864,7 @@ func (o *jsiiProxy_OpsworksInstance) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1881,15 +1880,15 @@ func (o *jsiiProxy_OpsworksInstance) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1908,7 +1907,7 @@ func (o *jsiiProxy_OpsworksInstance) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1921,7 +1920,7 @@ func (o *jsiiProxy_OpsworksInstance) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1935,18 +1934,18 @@ func (o *jsiiProxy_OpsworksInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksInstance) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1957,7 +1956,7 @@ func (o *jsiiProxy_OpsworksInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1968,40 +1967,40 @@ func (o *jsiiProxy_OpsworksInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) PutEbsBlockDevice(value interface{}) {
+func (o *jsiiProxy_OpsworksInstance) PutEbsBlockDevice(value any) {
 	if err := o.validatePutEbsBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEbsBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) PutEphemeralBlockDevice(value interface{}) {
+func (o *jsiiProxy_OpsworksInstance) PutEphemeralBlockDevice(value any) {
 	if err := o.validatePutEphemeralBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEphemeralBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) PutRootBlockDevice(value interface{}) {
+func (o *jsiiProxy_OpsworksInstance) PutRootBlockDevice(value any) {
 	if err := o.validatePutRootBlockDeviceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putRootBlockDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2012,7 +2011,7 @@ func (o *jsiiProxy_OpsworksInstance) PutTimeouts(value *OpsworksInstanceTimeouts
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2264,8 +2263,8 @@ func (o *jsiiProxy_OpsworksInstance) ResetVirtualizationType() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -2277,8 +2276,8 @@ func (o *jsiiProxy_OpsworksInstance) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -2290,8 +2289,8 @@ func (o *jsiiProxy_OpsworksInstance) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -2303,8 +2302,8 @@ func (o *jsiiProxy_OpsworksInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -2329,8 +2328,8 @@ func (o *jsiiProxy_OpsworksInstance) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -2341,4 +2340,3 @@ func (o *jsiiProxy_OpsworksInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

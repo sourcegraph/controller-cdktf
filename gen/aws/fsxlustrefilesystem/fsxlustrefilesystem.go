@@ -25,18 +25,18 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToBackups() interface{}
-	SetCopyTagsToBackups(val interface{})
-	CopyTagsToBackupsInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToBackups() any
+	SetCopyTagsToBackups(val any)
+	CopyTagsToBackupsInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
@@ -99,11 +99,11 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -125,11 +125,11 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FsxLustreFileSystemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	WeeklyMaintenanceStartTime() *string
 	SetWeeklyMaintenanceStartTime(val *string)
@@ -138,9 +138,9 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -158,7 +158,7 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -170,7 +170,7 @@ type FsxLustreFileSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -205,17 +205,17 @@ type FsxLustreFileSystem interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxLustreFileSystem
@@ -303,8 +303,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackups",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackups() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackupsInput",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) CopyTagsToBackupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -713,8 +713,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -853,8 +853,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -883,8 +883,8 @@ func (j *jsiiProxy_FsxLustreFileSystem) Timeouts() FsxLustreFileSystemTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxLustreFileSystem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -923,7 +923,6 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
@@ -935,7 +934,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -948,12 +947,12 @@ func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetAutoImportPolicy(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetAutoImportPolicy(val *string) {
 	if err := j.validateSetAutoImportPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetAutoImportPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetAutomaticBackupRetentionDays(val *float64) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetAutomaticBackupRetentionDays(val *float64) {
 	if err := j.validateSetAutomaticBackupRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetAutomaticBackupRetentionDays(val *floa
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetBackupId(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetBackupId(val *string) {
 	if err := j.validateSetBackupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetCopyTagsToBackups(val interface{}) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetCopyTagsToBackups(val any) {
 	if err := j.validateSetCopyTagsToBackupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetCopyTagsToBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetDailyAutomaticBackupStartTime(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetDailyAutomaticBackupStartTime(val *string) {
 	if err := j.validateSetDailyAutomaticBackupStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDailyAutomaticBackupStartTime(val *str
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetDataCompressionType(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetDataCompressionType(val *string) {
 	if err := j.validateSetDataCompressionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDataCompressionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1049,7 +1048,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetDeploymentType(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetDeploymentType(val *string) {
 	if err := j.validateSetDeploymentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1060,7 +1059,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDeploymentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetDriveCacheType(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetDriveCacheType(val *string) {
 	if err := j.validateSetDriveCacheTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1071,7 +1070,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDriveCacheType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetExportPath(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetExportPath(val *string) {
 	if err := j.validateSetExportPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetExportPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetFileSystemTypeVersion(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetFileSystemTypeVersion(val *string) {
 	if err := j.validateSetFileSystemTypeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetFileSystemTypeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1101,7 +1100,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetId(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1112,7 +1111,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetImportedFileChunkSize(val *float64) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetImportedFileChunkSize(val *float64) {
 	if err := j.validateSetImportedFileChunkSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1123,7 +1122,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetImportedFileChunkSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetImportPath(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetImportPath(val *string) {
 	if err := j.validateSetImportPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1134,7 +1133,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetImportPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1145,7 +1144,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetPerUnitStorageThroughput(val *float64) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetPerUnitStorageThroughput(val *float64) {
 	if err := j.validateSetPerUnitStorageThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetPerUnitStorageThroughput(val *float64)
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1175,7 +1174,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1186,7 +1185,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1197,7 +1196,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetStorageCapacity(val *float64) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetStorageCapacity(val *float64) {
 	if err := j.validateSetStorageCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1208,7 +1207,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetStorageCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetStorageType(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1219,7 +1218,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1230,7 +1229,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1241,7 +1240,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1252,7 +1251,7 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem)SetWeeklyMaintenanceStartTime(val *string) {
+func (j *jsiiProxy_FsxLustreFileSystem) SetWeeklyMaintenanceStartTime(val *string) {
 	if err := j.validateSetWeeklyMaintenanceStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1275,7 +1274,7 @@ func FsxLustreFileSystem_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1299,7 +1298,7 @@ func FsxLustreFileSystem_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxLustreFileSystem_IsConstruct(x interface{}) *bool {
+func FsxLustreFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxLustreFileSystem_IsConstructParameters(x); err != nil {
@@ -1310,7 +1309,7 @@ func FsxLustreFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1318,7 +1317,7 @@ func FsxLustreFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool {
+func FsxLustreFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxLustreFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -1329,7 +1328,7 @@ func FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1337,7 +1336,7 @@ func FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxLustreFileSystem_IsTerraformResource(x interface{}) *bool {
+func FsxLustreFileSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxLustreFileSystem_IsTerraformResourceParameters(x); err != nil {
@@ -1348,7 +1347,7 @@ func FsxLustreFileSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1373,31 +1372,31 @@ func (f *jsiiProxy_FsxLustreFileSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxLustreFileSystem) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxLustreFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1413,7 +1412,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1429,7 +1428,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1445,7 +1444,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1461,7 +1460,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1477,7 +1476,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1493,7 +1492,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1509,7 +1508,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1525,15 +1524,15 @@ func (f *jsiiProxy_FsxLustreFileSystem) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1552,7 +1551,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1565,7 +1564,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1579,18 +1578,18 @@ func (f *jsiiProxy_FsxLustreFileSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxLustreFileSystem) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1601,7 +1600,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1612,7 +1611,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1623,7 +1622,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) PutLogConfiguration(value *FsxLustreFile
 	_jsii_.InvokeVoid(
 		f,
 		"putLogConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1634,7 +1633,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) PutTimeouts(value *FsxLustreFileSystemTi
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1830,8 +1829,8 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetWeeklyMaintenanceStartTime() {
 	)
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1843,8 +1842,8 @@ func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1856,8 +1855,8 @@ func (f *jsiiProxy_FsxLustreFileSystem) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1869,8 +1868,8 @@ func (f *jsiiProxy_FsxLustreFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1895,8 +1894,8 @@ func (f *jsiiProxy_FsxLustreFileSystem) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxLustreFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1907,4 +1906,3 @@ func (f *jsiiProxy_FsxLustreFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

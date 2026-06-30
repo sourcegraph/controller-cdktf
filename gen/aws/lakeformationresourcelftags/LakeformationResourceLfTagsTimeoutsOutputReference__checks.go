@@ -98,7 +98,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLakeformationResourceLfTagsTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

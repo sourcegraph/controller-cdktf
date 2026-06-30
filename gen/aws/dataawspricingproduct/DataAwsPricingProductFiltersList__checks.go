@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsPricingProductFiltersList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPricingProductFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsPricingProductFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsPricingProductFiltersListParameters(terraformResource cdk
 
 	return nil
 }
-

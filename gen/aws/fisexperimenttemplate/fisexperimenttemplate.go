@@ -13,19 +13,19 @@ import (
 type FisExperimentTemplate interface {
 	cdktf.TerraformResource
 	Action() FisExperimentTemplateActionList
-	ActionInput() interface{}
+	ActionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,16 +55,16 @@ type FisExperimentTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
 	StopCondition() FisExperimentTemplateStopConditionList
-	StopConditionInput() interface{}
+	StopConditionInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,22 +72,22 @@ type FisExperimentTemplate interface {
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	Target() FisExperimentTemplateTargetList
-	TargetInput() interface{}
+	TargetInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FisExperimentTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type FisExperimentTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,16 +117,16 @@ type FisExperimentTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAction(value interface{})
-	PutStopCondition(value interface{})
-	PutTarget(value interface{})
+	PutAction(value any)
+	PutStopCondition(value any)
+	PutTarget(value any)
 	PutTimeouts(value *FisExperimentTemplateTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -136,17 +136,17 @@ type FisExperimentTemplate interface {
 	ResetTagsAll()
 	ResetTarget()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FisExperimentTemplate
@@ -164,8 +164,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Action() FisExperimentTemplateActionLi
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FisExperimentTemplate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FisExperimentTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_FisExperimentTemplate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FisExperimentTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_FisExperimentTemplate) StopCondition() FisExperimentTemplateS
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) StopConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) StopConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stopConditionInput",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Target() FisExperimentTemplateTargetLi
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) TargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) TargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetInput",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_FisExperimentTemplate) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FisExperimentTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_FisExperimentTemplate) Timeouts() FisExperimentTemplateTimeou
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) FisExperimentTemplate {
@@ -506,7 +505,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -519,12 +518,12 @@ func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_FisExperimentTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_FisExperimentTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetDescription(val *string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FisExperimentTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetId(val *string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FisExperimentTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FisExperimentTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FisExperimentTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetRoleArn(val *string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_FisExperimentTemplate)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplate)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FisExperimentTemplate) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func FisExperimentTemplate_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func FisExperimentTemplate_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FisExperimentTemplate_IsConstruct(x interface{}) *bool {
+func FisExperimentTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFisExperimentTemplate_IsConstructParameters(x); err != nil {
@@ -694,7 +693,7 @@ func FisExperimentTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func FisExperimentTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FisExperimentTemplate_IsTerraformElement(x interface{}) *bool {
+func FisExperimentTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFisExperimentTemplate_IsTerraformElementParameters(x); err != nil {
@@ -713,7 +712,7 @@ func FisExperimentTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func FisExperimentTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FisExperimentTemplate_IsTerraformResource(x interface{}) *bool {
+func FisExperimentTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFisExperimentTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -732,7 +731,7 @@ func FisExperimentTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,31 +756,31 @@ func (f *jsiiProxy_FisExperimentTemplate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplate) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FisExperimentTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (f *jsiiProxy_FisExperimentTemplate) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,15 +908,15 @@ func (f *jsiiProxy_FisExperimentTemplate) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FisExperimentTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -936,7 +935,7 @@ func (f *jsiiProxy_FisExperimentTemplate) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -949,7 +948,7 @@ func (f *jsiiProxy_FisExperimentTemplate) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,18 +962,18 @@ func (f *jsiiProxy_FisExperimentTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FisExperimentTemplate) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -985,7 +984,7 @@ func (f *jsiiProxy_FisExperimentTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -996,40 +995,40 @@ func (f *jsiiProxy_FisExperimentTemplate) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) PutAction(value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplate) PutAction(value any) {
 	if err := f.validatePutActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) PutStopCondition(value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplate) PutStopCondition(value any) {
 	if err := f.validatePutStopConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putStopCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) PutTarget(value interface{}) {
+func (f *jsiiProxy_FisExperimentTemplate) PutTarget(value any) {
 	if err := f.validatePutTargetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (f *jsiiProxy_FisExperimentTemplate) PutTimeouts(value *FisExperimentTempla
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1092,8 +1091,8 @@ func (f *jsiiProxy_FisExperimentTemplate) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FisExperimentTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1105,8 +1104,8 @@ func (f *jsiiProxy_FisExperimentTemplate) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FisExperimentTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1118,8 +1117,8 @@ func (f *jsiiProxy_FisExperimentTemplate) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FisExperimentTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1131,8 +1130,8 @@ func (f *jsiiProxy_FisExperimentTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FisExperimentTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1157,8 +1156,8 @@ func (f *jsiiProxy_FisExperimentTemplate) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FisExperimentTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1169,4 +1168,3 @@ func (f *jsiiProxy_FisExperimentTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

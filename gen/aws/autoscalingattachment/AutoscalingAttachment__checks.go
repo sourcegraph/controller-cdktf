@@ -19,7 +19,7 @@ func (a *jsiiProxy_AutoscalingAttachment) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AutoscalingAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AutoscalingAttachment) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AutoscalingAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAutoscalingAttachment_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateAutoscalingAttachment_IsConstructParameters(x interface{}) error {
+func validateAutoscalingAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAutoscalingAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAutoscalingAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateAutoscalingAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAutoscalingAttachment_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateAutoscalingAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateAutoscalingAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_AutoscalingAttachment) validateSetAutoscalingGroupNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_AutoscalingAttachment) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AutoscalingAttachment) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AutoscalingAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewAutoscalingAttachmentParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

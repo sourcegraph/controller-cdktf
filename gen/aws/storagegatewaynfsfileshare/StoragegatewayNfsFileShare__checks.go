@@ -19,7 +19,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShare) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateStoragegatewayNfsFileShare_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateStoragegatewayNfsFileShare_IsConstructParameters(x interface{}) error {
+func validateStoragegatewayNfsFileShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateStoragegatewayNfsFileShare_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x interface{}) error {
+func validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateStoragegatewayNfsFileShare_IsTerraformResourceParameters(x interface{}) error {
+func validateStoragegatewayNfsFileShare_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetClientListParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -334,7 +334,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -415,7 +415,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetGatewayArnParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetGuessMimeTypeEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetGuessMimeTypeEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -443,7 +443,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetKmsEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetKmsEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -503,7 +503,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetObjectAclParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -549,7 +549,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -569,7 +569,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetReadOnlyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetRequesterPaysParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetRequesterPaysParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -647,4 +647,3 @@ func validateNewStoragegatewayNfsFileShareParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsRoute53ResolverEndpointFilterOutputReferenceParameters(te
 
 	return nil
 }
-

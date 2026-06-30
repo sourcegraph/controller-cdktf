@@ -18,11 +18,11 @@ type DataAwsCloudformationType interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultVersionId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,13 +57,13 @@ type DataAwsCloudformationType interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProvisioningType() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schema() *string
 	SourceUrl() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -78,9 +78,9 @@ type DataAwsCloudformationType interface {
 	VersionIdInput() *string
 	Visibility() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,18 +110,18 @@ type DataAwsCloudformationType interface {
 	ResetType()
 	ResetTypeName()
 	ResetVersionId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCloudformationType
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsCloudformationType) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudformationType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsCloudformationType) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudformationType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_DataAwsCloudformationType) ProvisioningType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudformationType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_DataAwsCloudformationType) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudformationType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -489,7 +489,6 @@ func (j *jsiiProxy_DataAwsCloudformationType) Visibility() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cloudformation_type aws_cloudformation_type} Data Source.
 func NewDataAwsCloudformationType(scope constructs.Construct, id *string, config *DataAwsCloudformationTypeConfig) DataAwsCloudformationType {
 	_init_.Initialize()
@@ -501,7 +500,7 @@ func NewDataAwsCloudformationType(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -514,12 +513,12 @@ func NewDataAwsCloudformationType_Override(d DataAwsCloudformationType, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetType(val *string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetTypeName(val *string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetTypeName(val *string) {
 	if err := j.validateSetTypeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DataAwsCloudformationType)SetTypeName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudformationType)SetVersionId(val *string) {
+func (j *jsiiProxy_DataAwsCloudformationType) SetVersionId(val *string) {
 	if err := j.validateSetVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func DataAwsCloudformationType_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func DataAwsCloudformationType_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCloudformationType_IsConstruct(x interface{}) *bool {
+func DataAwsCloudformationType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudformationType_IsConstructParameters(x); err != nil {
@@ -667,7 +666,7 @@ func DataAwsCloudformationType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func DataAwsCloudformationType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudformationType_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCloudformationType_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudformationType_IsTerraformDataSourceParameters(x); err != nil {
@@ -686,7 +685,7 @@ func DataAwsCloudformationType_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func DataAwsCloudformationType_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudformationType_IsTerraformElement(x interface{}) *bool {
+func DataAwsCloudformationType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudformationType_IsTerraformElementParameters(x); err != nil {
@@ -705,7 +704,7 @@ func DataAwsCloudformationType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,27 +722,27 @@ func DataAwsCloudformationType_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCloudformationType) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCloudformationType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (d *jsiiProxy_DataAwsCloudformationType) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -953,8 +952,8 @@ func (d *jsiiProxy_DataAwsCloudformationType) ResetVersionId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -966,8 +965,8 @@ func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -979,8 +978,8 @@ func (d *jsiiProxy_DataAwsCloudformationType) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudformationType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -992,8 +991,8 @@ func (d *jsiiProxy_DataAwsCloudformationType) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudformationType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1018,8 +1017,8 @@ func (d *jsiiProxy_DataAwsCloudformationType) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudformationType) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudformationType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1030,4 +1029,3 @@ func (d *jsiiProxy_DataAwsCloudformationType) ToTerraform() interface{} {
 
 	return returns
 }
-

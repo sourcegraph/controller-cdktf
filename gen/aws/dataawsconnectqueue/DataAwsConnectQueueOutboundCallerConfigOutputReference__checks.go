@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectQueueOutboundCallerConfigOutputReferenceParameters
 
 	return nil
 }
-

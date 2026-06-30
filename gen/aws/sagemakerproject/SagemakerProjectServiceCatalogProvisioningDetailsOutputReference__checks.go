@@ -90,7 +90,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validatePutProvisioningParameterParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validatePutProvisioningParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference
 
 	return nil
 }
-

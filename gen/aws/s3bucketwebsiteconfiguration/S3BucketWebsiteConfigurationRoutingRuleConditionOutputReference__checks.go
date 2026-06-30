@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReferenceP
 
 	return nil
 }
-

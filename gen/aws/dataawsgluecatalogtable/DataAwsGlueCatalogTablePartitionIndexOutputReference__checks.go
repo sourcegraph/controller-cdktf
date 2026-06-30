@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsGlueCatalogTablePartitionIndexOutputReferenceParameters(t
 
 	return nil
 }
-

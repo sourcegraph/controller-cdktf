@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsConnectBotAssociationLexBotOutputReferenceParameters(terr
 
 	return nil
 }
-

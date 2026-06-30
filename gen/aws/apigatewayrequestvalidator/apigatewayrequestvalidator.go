@@ -15,15 +15,15 @@ type ApiGatewayRequestValidator interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,33 +53,33 @@ type ApiGatewayRequestValidator interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	ValidateRequestBody() interface{}
-	SetValidateRequestBody(val interface{})
-	ValidateRequestBodyInput() interface{}
-	ValidateRequestParameters() interface{}
-	SetValidateRequestParameters(val interface{})
-	ValidateRequestParametersInput() interface{}
+	ValidateRequestBody() any
+	SetValidateRequestBody(val any)
+	ValidateRequestBodyInput() any
+	ValidateRequestParameters() any
+	SetValidateRequestParameters(val any)
+	ValidateRequestParametersInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type ApiGatewayRequestValidator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type ApiGatewayRequestValidator interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type ApiGatewayRequestValidator interface {
 	ResetOverrideLogicalId()
 	ResetValidateRequestBody()
 	ResetValidateRequestParameters()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiGatewayRequestValidator
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBody() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBody() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateRequestBody",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBody() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBodyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBodyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateRequestBodyInput",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestBodyInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParameters() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParameters() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateRequestParameters",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParameters() inter
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateRequestParametersInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_ApiGatewayRequestValidator) ValidateRequestParametersInput() 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator} Resource.
 func NewApiGatewayRequestValidator(scope constructs.Construct, id *string, config *ApiGatewayRequestValidatorConfig) ApiGatewayRequestValidator {
@@ -412,7 +411,7 @@ func NewApiGatewayRequestValidator(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewApiGatewayRequestValidator_Override(a ApiGatewayRequestValidator, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetId(val *string) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetName(val *string) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetRestApiId(val *string) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetRestApiId(val *string) {
 	if err := j.validateSetRestApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetRestApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetValidateRequestBody(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetValidateRequestBody(val any) {
 	if err := j.validateSetValidateRequestBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ApiGatewayRequestValidator)SetValidateRequestBody(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayRequestValidator)SetValidateRequestParameters(val interface{}) {
+func (j *jsiiProxy_ApiGatewayRequestValidator) SetValidateRequestParameters(val any) {
 	if err := j.validateSetValidateRequestParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func ApiGatewayRequestValidator_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func ApiGatewayRequestValidator_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool {
+func ApiGatewayRequestValidator_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRequestValidator_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool {
+func ApiGatewayRequestValidator_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRequestValidator_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayRequestValidator_IsTerraformResource(x interface{}) *bool {
+func ApiGatewayRequestValidator_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayRequestValidator_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func ApiGatewayRequestValidator_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiGatewayRequestValidator) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayRequestValidator) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -842,7 +841,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiGatewayRequestValidator) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,8 +937,8 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) ResetValidateRequestParameters() 
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -951,8 +950,8 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -964,8 +963,8 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -977,8 +976,8 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1003,8 +1002,8 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayRequestValidator) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayRequestValidator) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1015,4 +1014,3 @@ func (a *jsiiProxy_ApiGatewayRequestValidator) ToTerraform() interface{} {
 
 	return returns
 }
-

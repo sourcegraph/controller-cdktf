@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
-		reflect.TypeOf((*BackupSelection)(nil)).Elem(),
+		reflect.TypeFor[BackupSelection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,11 +84,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionCondition",
-		reflect.TypeOf((*BackupSelectionCondition)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
-		reflect.TypeOf((*BackupSelectionConditionList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference",
-		reflect.TypeOf((*BackupSelectionConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals",
-		reflect.TypeOf((*BackupSelectionConditionStringEquals)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringEquals](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsList",
-		reflect.TypeOf((*BackupSelectionConditionStringEqualsList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringEqualsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringEqualsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference",
-		reflect.TypeOf((*BackupSelectionConditionStringEqualsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringEqualsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringEqualsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike",
-		reflect.TypeOf((*BackupSelectionConditionStringLike)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringLike](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeList",
-		reflect.TypeOf((*BackupSelectionConditionStringLikeList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringLikeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringLikeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference",
-		reflect.TypeOf((*BackupSelectionConditionStringLikeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringLikeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringLikeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals",
-		reflect.TypeOf((*BackupSelectionConditionStringNotEquals)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotEquals](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
-		reflect.TypeOf((*BackupSelectionConditionStringNotEqualsList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotEqualsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringNotEqualsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference",
-		reflect.TypeOf((*BackupSelectionConditionStringNotEqualsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotEqualsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -344,11 +344,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike",
-		reflect.TypeOf((*BackupSelectionConditionStringNotLike)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotLike](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeList",
-		reflect.TypeOf((*BackupSelectionConditionStringNotLikeList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotLikeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -362,7 +362,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringNotLikeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -370,7 +370,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
-		reflect.TypeOf((*BackupSelectionConditionStringNotLikeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConditionStringNotLikeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -406,15 +406,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConfig",
-		reflect.TypeOf((*BackupSelectionConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag",
-		reflect.TypeOf((*BackupSelectionSelectionTag)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionSelectionTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagList",
-		reflect.TypeOf((*BackupSelectionSelectionTagList)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionSelectionTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionSelectionTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -436,7 +436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference",
-		reflect.TypeOf((*BackupSelectionSelectionTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupSelectionSelectionTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -466,7 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupSelectionSelectionTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

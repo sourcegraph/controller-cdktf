@@ -13,24 +13,24 @@ import (
 type ConfigRemediationConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
-	Automatic() interface{}
-	SetAutomatic(val interface{})
-	AutomaticInput() interface{}
+	Automatic() any
+	SetAutomatic(val any)
+	AutomaticInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfigRuleName() *string
 	SetConfigRuleName(val *string)
 	ConfigRuleNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,17 +58,17 @@ type ConfigRemediationConfiguration interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameter() ConfigRemediationConfigurationParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -87,16 +87,16 @@ type ConfigRemediationConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type ConfigRemediationConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type ConfigRemediationConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,7 +134,7 @@ type ConfigRemediationConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutExecutionControls(value *ConfigRemediationConfigurationExecutionControls)
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetAutomatic()
 	ResetExecutionControls()
 	ResetId()
@@ -146,17 +146,17 @@ type ConfigRemediationConfiguration interface {
 	ResetResourceType()
 	ResetRetryAttemptSeconds()
 	ResetTargetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ConfigRemediationConfiguration
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) Automatic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) Automatic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automatic",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Automatic() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) AutomaticInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) AutomaticInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticInput",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) ConfigRuleNameInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Parameter() ConfigRemediation
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConfigRemediationConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_remediation_configuration aws_config_remediation_configuration} Resource.
 func NewConfigRemediationConfiguration(scope constructs.Construct, id *string, config *ConfigRemediationConfigurationConfig) ConfigRemediationConfiguration {
 	_init_.Initialize()
@@ -566,7 +565,7 @@ func NewConfigRemediationConfiguration(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -579,12 +578,12 @@ func NewConfigRemediationConfiguration_Override(c ConfigRemediationConfiguration
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetAutomatic(val interface{}) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetAutomatic(val any) {
 	if err := j.validateSetAutomaticParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetAutomatic(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetConfigRuleName(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetConfigRuleName(val *string) {
 	if err := j.validateSetConfigRuleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetConfigRuleName(val *string)
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetId(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetMaximumAutomaticAttempts(val *float64) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetMaximumAutomaticAttempts(val *float64) {
 	if err := j.validateSetMaximumAutomaticAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetMaximumAutomaticAttempts(va
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetResourceType(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetResourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetRetryAttemptSeconds(val *float64) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetRetryAttemptSeconds(val *float64) {
 	if err := j.validateSetRetryAttemptSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetRetryAttemptSeconds(val *fl
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetTargetId(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetTargetId(val *string) {
 	if err := j.validateSetTargetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetTargetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetTargetType(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetTargetType(val *string) {
 	if err := j.validateSetTargetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration)SetTargetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration)SetTargetVersion(val *string) {
+func (j *jsiiProxy_ConfigRemediationConfiguration) SetTargetVersion(val *string) {
 	if err := j.validateSetTargetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func ConfigRemediationConfiguration_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func ConfigRemediationConfiguration_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ConfigRemediationConfiguration_IsConstruct(x interface{}) *bool {
+func ConfigRemediationConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigRemediationConfiguration_IsConstructParameters(x); err != nil {
@@ -798,7 +797,7 @@ func ConfigRemediationConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func ConfigRemediationConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ConfigRemediationConfiguration_IsTerraformElement(x interface{}) *bool {
+func ConfigRemediationConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigRemediationConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -817,7 +816,7 @@ func ConfigRemediationConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func ConfigRemediationConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ConfigRemediationConfiguration_IsTerraformResource(x interface{}) *bool {
+func ConfigRemediationConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConfigRemediationConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -836,7 +835,7 @@ func ConfigRemediationConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,31 +860,31 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ConfigRemediationConfiguration) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConfigRemediationConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,15 +1012,15 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1040,7 +1039,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,18 +1066,18 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ConfigRemediationConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1111,18 +1110,18 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) PutExecutionControls(value *C
 	_jsii_.InvokeVoid(
 		c,
 		"putExecutionControls",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) PutParameter(value interface{}) {
+func (c *jsiiProxy_ConfigRemediationConfiguration) PutParameter(value any) {
 	if err := c.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1198,8 +1197,8 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) ResetTargetVersion() {
 	)
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1211,8 +1210,8 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1224,8 +1223,8 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1237,8 +1236,8 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1263,8 +1262,8 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConfigRemediationConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConfigRemediationConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1275,4 +1274,3 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

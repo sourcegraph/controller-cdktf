@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
-		reflect.TypeOf((*StoragegatewayFileSystemAssociation)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayFileSystemAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayFileSystemAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes",
-		reflect.TypeOf((*StoragegatewayFileSystemAssociationCacheAttributes)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayFileSystemAssociationCacheAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
-		reflect.TypeOf((*StoragegatewayFileSystemAssociationCacheAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayFileSystemAssociationCacheAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSecondsInput", GoGetter: "CacheStaleTimeoutInSecondsInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,6 +125,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationConfig",
-		reflect.TypeOf((*StoragegatewayFileSystemAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[StoragegatewayFileSystemAssociationConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetUseStageCacheParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetUseStageCacheParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewApiGatewayStageCanarySettingsOutputReferenceParameters(terraform
 
 	return nil
 }
-

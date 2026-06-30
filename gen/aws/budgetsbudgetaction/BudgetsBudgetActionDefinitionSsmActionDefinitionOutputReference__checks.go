@@ -106,7 +106,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBudgetsBudgetActionDefinitionSsmActionDefinitionOutputReferenceP
 
 	return nil
 }
-

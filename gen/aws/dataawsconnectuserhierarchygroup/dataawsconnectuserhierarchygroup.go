@@ -16,11 +16,11 @@ type DataAwsConnectUserHierarchyGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,20 +58,20 @@ type DataAwsConnectUserHierarchyGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataAwsConnectUserHierarchyGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsConnectUserHierarchyGroup
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,7 +389,6 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Data Source.
 func NewDataAwsConnectUserHierarchyGroup(scope constructs.Construct, id *string, config *DataAwsConnectUserHierarchyGroupConfig) DataAwsConnectUserHierarchyGroup {
 	_init_.Initialize()
@@ -401,7 +400,7 @@ func NewDataAwsConnectUserHierarchyGroup(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -414,12 +413,12 @@ func NewDataAwsConnectUserHierarchyGroup_Override(d DataAwsConnectUserHierarchyG
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetHierarchyGroupId(val *string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetHierarchyGroupId(val *string) {
 	if err := j.validateSetHierarchyGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetHierarchyGroupId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetId(val *string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetName(val *string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func DataAwsConnectUserHierarchyGroup_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func DataAwsConnectUserHierarchyGroup_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsConnectUserHierarchyGroup_IsConstruct(x interface{}) *bool {
+func DataAwsConnectUserHierarchyGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectUserHierarchyGroup_IsConstructParameters(x); err != nil {
@@ -567,7 +566,7 @@ func DataAwsConnectUserHierarchyGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func DataAwsConnectUserHierarchyGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsConnectUserHierarchyGroup_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsConnectUserHierarchyGroup_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectUserHierarchyGroup_IsTerraformDataSourceParameters(x); err != nil {
@@ -586,7 +585,7 @@ func DataAwsConnectUserHierarchyGroup_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func DataAwsConnectUserHierarchyGroup_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataAwsConnectUserHierarchyGroup_IsTerraformElement(x interface{}) *bool {
+func DataAwsConnectUserHierarchyGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectUserHierarchyGroup_IsTerraformElementParameters(x); err != nil {
@@ -605,7 +604,7 @@ func DataAwsConnectUserHierarchyGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -623,27 +622,27 @@ func DataAwsConnectUserHierarchyGroup_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -871,8 +870,8 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -884,8 +883,8 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -910,8 +909,8 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -922,4 +921,3 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

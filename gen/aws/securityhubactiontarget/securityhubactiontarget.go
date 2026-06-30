@@ -16,15 +16,15 @@ type SecurityhubActionTarget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type SecurityhubActionTarget interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type SecurityhubActionTarget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type SecurityhubActionTarget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type SecurityhubActionTarget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecurityhubActionTarget
@@ -156,8 +156,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_SecurityhubActionTarget) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubActionTarget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_SecurityhubActionTarget) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/securityhub_action_target aws_securityhub_action_target} Resource.
 func NewSecurityhubActionTarget(scope constructs.Construct, id *string, config *SecurityhubActionTargetConfig) SecurityhubActionTarget {
 	_init_.Initialize()
@@ -398,7 +397,7 @@ func NewSecurityhubActionTarget(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -411,12 +410,12 @@ func NewSecurityhubActionTarget_Override(s SecurityhubActionTarget, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetCount(val interface{}) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetDescription(val *string) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetId(val *string) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetIdentifier(val *string) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetName(val *string) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_SecurityhubActionTarget)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_SecurityhubActionTarget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityhubActionTarget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func SecurityhubActionTarget_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func SecurityhubActionTarget_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecurityhubActionTarget_IsConstruct(x interface{}) *bool {
+func SecurityhubActionTarget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubActionTarget_IsConstructParameters(x); err != nil {
@@ -575,7 +574,7 @@ func SecurityhubActionTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func SecurityhubActionTarget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubActionTarget_IsTerraformElement(x interface{}) *bool {
+func SecurityhubActionTarget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubActionTarget_IsTerraformElementParameters(x); err != nil {
@@ -594,7 +593,7 @@ func SecurityhubActionTarget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func SecurityhubActionTarget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubActionTarget_IsTerraformResource(x interface{}) *bool {
+func SecurityhubActionTarget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubActionTarget_IsTerraformResourceParameters(x); err != nil {
@@ -613,7 +612,7 @@ func SecurityhubActionTarget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,31 +637,31 @@ func (s *jsiiProxy_SecurityhubActionTarget) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecurityhubActionTarget) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityhubActionTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,15 +789,15 @@ func (s *jsiiProxy_SecurityhubActionTarget) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -817,7 +816,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -830,7 +829,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,18 +843,18 @@ func (s *jsiiProxy_SecurityhubActionTarget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecurityhubActionTarget) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -877,7 +876,7 @@ func (s *jsiiProxy_SecurityhubActionTarget) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -897,8 +896,8 @@ func (s *jsiiProxy_SecurityhubActionTarget) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -910,8 +909,8 @@ func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -923,8 +922,8 @@ func (s *jsiiProxy_SecurityhubActionTarget) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -936,8 +935,8 @@ func (s *jsiiProxy_SecurityhubActionTarget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SecurityhubActionTarget) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubActionTarget) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubActionTarget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -974,4 +973,3 @@ func (s *jsiiProxy_SecurityhubActionTarget) ToTerraform() interface{} {
 
 	return returns
 }
-

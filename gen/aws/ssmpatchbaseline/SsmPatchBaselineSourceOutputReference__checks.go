@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateSetConfigurati
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineSourceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSsmPatchBaselineSourceOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

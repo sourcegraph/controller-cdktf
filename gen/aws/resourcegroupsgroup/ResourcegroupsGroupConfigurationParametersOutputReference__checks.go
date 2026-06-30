@@ -98,7 +98,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewResourcegroupsGroupConfigurationParametersOutputReferenceParamet
 
 	return nil
 }
-

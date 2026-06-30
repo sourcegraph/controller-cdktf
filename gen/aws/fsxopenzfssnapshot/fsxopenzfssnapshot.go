@@ -16,15 +16,15 @@ type FsxOpenzfsSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,11 +55,11 @@ type FsxOpenzfsSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -69,11 +69,11 @@ type FsxOpenzfsSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FsxOpenzfsSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VolumeId() *string
 	SetVolumeId(val *string)
 	VolumeIdInput() *string
@@ -81,9 +81,9 @@ type FsxOpenzfsSnapshot interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type FsxOpenzfsSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type FsxOpenzfsSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type FsxOpenzfsSnapshot interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxOpenzfsSnapshot
@@ -166,8 +166,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) Timeouts() FsxOpenzfsSnapshotTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) VolumeIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Resource.
 func NewFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *FsxOpenzfsSnapshotConfig) FsxOpenzfsSnapshot {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *FsxOp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewFsxOpenzfsSnapshot_Override(f FsxOpenzfsSnapshot, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetId(val *string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetName(val *string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsSnapshot)SetVolumeId(val *string) {
+func (j *jsiiProxy_FsxOpenzfsSnapshot) SetVolumeId(val *string) {
 	if err := j.validateSetVolumeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func FsxOpenzfsSnapshot_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func FsxOpenzfsSnapshot_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool {
+func FsxOpenzfsSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsSnapshot_IsConstructParameters(x); err != nil {
@@ -646,7 +645,7 @@ func FsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func FsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool {
+func FsxOpenzfsSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -665,7 +664,7 @@ func FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOpenzfsSnapshot_IsTerraformResource(x interface{}) *bool {
+func FsxOpenzfsSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -684,7 +683,7 @@ func FsxOpenzfsSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,31 +708,31 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxOpenzfsSnapshot) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxOpenzfsSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,15 +860,15 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -888,7 +887,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -901,7 +900,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,18 +914,18 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxOpenzfsSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -937,7 +936,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -948,7 +947,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -959,7 +958,7 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) PutTimeouts(value *FsxOpenzfsSnapshotTime
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1003,8 +1002,8 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1016,8 +1015,8 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1029,8 +1028,8 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1042,8 +1041,8 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1068,8 +1067,8 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1080,4 +1079,3 @@ func (f *jsiiProxy_FsxOpenzfsSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type CloudfrontMonitoringSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,24 +55,24 @@ type CloudfrontMonitoringSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type CloudfrontMonitoringSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,7 +102,7 @@ type CloudfrontMonitoringSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type CloudfrontMonitoringSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudfrontMonitoringSubscription
@@ -142,8 +142,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_monitoring_subscription aws_cloudfront_monitoring_subscription} Resource.
 func NewCloudfrontMonitoringSubscription(scope constructs.Construct, id *string, config *CloudfrontMonitoringSubscriptionConfig) CloudfrontMonitoringSubscription {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewCloudfrontMonitoringSubscription(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewCloudfrontMonitoringSubscription_Override(c CloudfrontMonitoringSubscrip
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetDistributionId(val *string) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetDistributionId(val *string) {
 	if err := j.validateSetDistributionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetDistributionId(val *strin
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetId(val *string) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func CloudfrontMonitoringSubscription_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func CloudfrontMonitoringSubscription_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudfrontMonitoringSubscription_IsConstruct(x interface{}) *bool {
+func CloudfrontMonitoringSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontMonitoringSubscription_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func CloudfrontMonitoringSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func CloudfrontMonitoringSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontMonitoringSubscription_IsTerraformElement(x interface{}) *bool {
+func CloudfrontMonitoringSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontMonitoringSubscription_IsTerraformElementParameters(x); err != nil {
@@ -538,7 +537,7 @@ func CloudfrontMonitoringSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func CloudfrontMonitoringSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfrontMonitoringSubscription_IsTerraformResource(x interface{}) *bool {
+func CloudfrontMonitoringSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfrontMonitoringSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -557,7 +556,7 @@ func CloudfrontMonitoringSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,31 +581,31 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,15 +733,15 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -761,7 +760,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -774,7 +773,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,18 +787,18 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -821,7 +820,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -832,7 +831,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) PutMonitoringSubscription(v
 	_jsii_.InvokeVoid(
 		c,
 		"putMonitoringSubscription",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -852,8 +851,8 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -865,8 +864,8 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -878,8 +877,8 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -891,8 +890,8 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToHclTerraform() interface{
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -917,8 +916,8 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -929,4 +928,3 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,7 +28,7 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Header() AppmeshRouteSpecHttp2RouteMatchHeaderList
-	HeaderInput() interface{}
+	HeaderInput() any
 	InternalValue() *AppmeshRouteSpecHttp2RouteMatch
 	SetInternalValue(val *AppmeshRouteSpecHttp2RouteMatch)
 	Method() *string
@@ -54,7 +54,7 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,14 +75,14 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHeader(value interface{})
+	PutHeader(value any)
 	ResetHeader()
 	ResetMethod()
 	ResetPort()
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Header() Appm
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) HeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) HeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewAppmeshRouteSpecHttp2RouteMatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecHttp2RouteMatchOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewAppmeshRouteSpecHttp2RouteMatchOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewAppmeshRouteSpecHttp2RouteMatchOutputReference_Override(a AppmeshRouteSp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetInternalValue(val *AppmeshRouteSpecHttp2RouteMatch) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetInternalValue(val *AppmeshRouteSpecHttp2RouteMatch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetMethod(val *string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetMethod(val *string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetMethod(val 
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetPort(val *f
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetPrefix(val 
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetScheme(val *string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetScheme(val *string) {
 	if err := j.validateSetSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetScheme(val 
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,16 +404,16 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetNumberList
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,21 +570,21 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Interpolation
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PutHeader(value interface{}) {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PutHeader(value any) {
 	if err := a.validatePutHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetScheme()
 	)
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ToString() *s
 
 	return returns
 }
-

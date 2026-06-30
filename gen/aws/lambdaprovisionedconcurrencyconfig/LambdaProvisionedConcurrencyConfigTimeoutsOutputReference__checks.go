@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLambdaProvisionedConcurrencyConfigTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

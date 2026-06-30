@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewRedshiftClusterSnapshotCopyOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

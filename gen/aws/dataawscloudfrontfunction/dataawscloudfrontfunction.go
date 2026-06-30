@@ -18,11 +18,11 @@ type DataAwsCloudfrontFunction interface {
 	Code() *string
 	Comment() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,7 +54,7 @@ type DataAwsCloudfrontFunction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Runtime() *string
 	Stage() *string
 	SetStage(val *string)
@@ -63,13 +63,13 @@ type DataAwsCloudfrontFunction interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataAwsCloudfrontFunction interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCloudfrontFunction
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) Comment() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudfrontFunction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudfrontFunction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudfrontFunction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudfrontFunction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cloudfront_function aws_cloudfront_function} Data Source.
 func NewDataAwsCloudfrontFunction(scope constructs.Construct, id *string, config *DataAwsCloudfrontFunctionConfig) DataAwsCloudfrontFunction {
 	_init_.Initialize()
@@ -396,7 +395,7 @@ func NewDataAwsCloudfrontFunction(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewDataAwsCloudfrontFunction_Override(d DataAwsCloudfrontFunction, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetName(val *string) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontFunction)SetStage(val *string) {
+func (j *jsiiProxy_DataAwsCloudfrontFunction) SetStage(val *string) {
 	if err := j.validateSetStageParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func DataAwsCloudfrontFunction_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataAwsCloudfrontFunction_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCloudfrontFunction_IsConstruct(x interface{}) *bool {
+func DataAwsCloudfrontFunction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontFunction_IsConstructParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataAwsCloudfrontFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataAwsCloudfrontFunction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudfrontFunction_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCloudfrontFunction_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontFunction_IsTerraformDataSourceParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataAwsCloudfrontFunction_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func DataAwsCloudfrontFunction_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudfrontFunction_IsTerraformElement(x interface{}) *bool {
+func DataAwsCloudfrontFunction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudfrontFunction_IsTerraformElementParameters(x); err != nil {
@@ -578,7 +577,7 @@ func DataAwsCloudfrontFunction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,27 +595,27 @@ func DataAwsCloudfrontFunction_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCloudfrontFunction) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCloudfrontFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontFunction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -833,8 +832,8 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontFunction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -859,8 +858,8 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontFunction) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudfrontFunction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -871,4 +870,3 @@ func (d *jsiiProxy_DataAwsCloudfrontFunction) ToTerraform() interface{} {
 
 	return returns
 }
-

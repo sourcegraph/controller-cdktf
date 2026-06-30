@@ -98,7 +98,7 @@ func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAcmpcaCertificateValidityOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

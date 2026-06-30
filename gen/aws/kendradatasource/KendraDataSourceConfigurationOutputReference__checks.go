@@ -120,7 +120,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewKendraDataSourceConfigurationOutputReferenceParameters(terraform
 
 	return nil
 }
-

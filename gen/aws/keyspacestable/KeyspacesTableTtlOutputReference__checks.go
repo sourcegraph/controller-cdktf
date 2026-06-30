@@ -98,7 +98,7 @@ func (k *jsiiProxy_KeyspacesTableTtlOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKeyspacesTableTtlOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

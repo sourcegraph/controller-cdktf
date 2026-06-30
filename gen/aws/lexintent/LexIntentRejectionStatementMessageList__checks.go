@@ -34,7 +34,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementMessageList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentRejectionStatementMessageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentRejectionStatementMessageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLexIntentRejectionStatementMessageListParameters(terraformResour
 
 	return nil
 }
-

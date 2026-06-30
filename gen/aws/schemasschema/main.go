@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
-		reflect.TypeOf((*SchemasSchema)(nil)).Elem(),
+		reflect.TypeFor[SchemasSchema](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionCreatedDate", GoGetter: "VersionCreatedDate"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SchemasSchema{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,6 +85,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig",
-		reflect.TypeOf((*SchemasSchemaConfig)(nil)).Elem(),
+		reflect.TypeFor[SchemasSchemaConfig](),
 	)
 }

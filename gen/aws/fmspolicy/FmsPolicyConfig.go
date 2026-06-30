@@ -6,9 +6,9 @@ import (
 
 type FmsPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,9 +18,9 @@ type FmsPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#exclude_resource_tags FmsPolicy#exclude_resource_tags}.
-	ExcludeResourceTags interface{} `field:"required" json:"excludeResourceTags" yaml:"excludeResourceTags"`
+	ExcludeResourceTags any `field:"required" json:"excludeResourceTags" yaml:"excludeResourceTags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#name FmsPolicy#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// security_service_policy_data block.
@@ -28,9 +28,9 @@ type FmsPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#security_service_policy_data FmsPolicy#security_service_policy_data}
 	SecurityServicePolicyData *FmsPolicySecurityServicePolicyData `field:"required" json:"securityServicePolicyData" yaml:"securityServicePolicyData"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}.
-	DeleteAllPolicyResources interface{} `field:"optional" json:"deleteAllPolicyResources" yaml:"deleteAllPolicyResources"`
+	DeleteAllPolicyResources any `field:"optional" json:"deleteAllPolicyResources" yaml:"deleteAllPolicyResources"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#delete_unused_fm_managed_resources FmsPolicy#delete_unused_fm_managed_resources}.
-	DeleteUnusedFmManagedResources interface{} `field:"optional" json:"deleteUnusedFmManagedResources" yaml:"deleteUnusedFmManagedResources"`
+	DeleteUnusedFmManagedResources any `field:"optional" json:"deleteUnusedFmManagedResources" yaml:"deleteUnusedFmManagedResources"`
 	// exclude_map block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#exclude_map FmsPolicy#exclude_map}
@@ -45,7 +45,7 @@ type FmsPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#include_map FmsPolicy#include_map}
 	IncludeMap *FmsPolicyIncludeMap `field:"optional" json:"includeMap" yaml:"includeMap"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#remediation_enabled FmsPolicy#remediation_enabled}.
-	RemediationEnabled interface{} `field:"optional" json:"remediationEnabled" yaml:"remediationEnabled"`
+	RemediationEnabled any `field:"optional" json:"remediationEnabled" yaml:"remediationEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#resource_tags FmsPolicy#resource_tags}.
 	ResourceTags *map[string]*string `field:"optional" json:"resourceTags" yaml:"resourceTags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#resource_type FmsPolicy#resource_type}.
@@ -57,4 +57,3 @@ type FmsPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fms_policy#tags_all FmsPolicy#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

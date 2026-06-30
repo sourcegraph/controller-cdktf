@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
-		reflect.TypeOf((*ElastictranscoderPipeline)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipeline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipeline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineConfig)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfig)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineContentConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineContentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineContentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissions)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineContentConfigPermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsList",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsList)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineContentConfigPermissionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineContentConfigPermissionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineContentConfigPermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineContentConfigPermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications",
-		reflect.TypeOf((*ElastictranscoderPipelineNotifications)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineNotifications](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineNotificationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineNotificationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "completed", GoGetter: "Completed"},
 			_jsii_.MemberProperty{JsiiProperty: "completedInput", GoGetter: "CompletedInput"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warning", GoGetter: "Warning"},
 			_jsii_.MemberProperty{JsiiProperty: "warningInput", GoGetter: "WarningInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,11 +259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfig)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineThumbnailConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineThumbnailConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -301,11 +301,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissions)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineThumbnailConfigPermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsList)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineThumbnailConfigPermissionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -327,7 +327,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

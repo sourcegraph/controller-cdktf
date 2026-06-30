@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityGroupRule) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroupRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityGroupRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityGroupRule) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroupRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityGroupRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSecurityGroupRule_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateSecurityGroupRule_IsConstructParameters(x interface{}) error {
+func validateSecurityGroupRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSecurityGroupRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityGroupRule_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityGroupRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSecurityGroupRule_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateSecurityGroupRule_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityGroupRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetCidrBlocksParameters(val *[]*st
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetProtocolParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityGroupRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -463,7 +463,7 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetSecurityGroupIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupRule) validateSetSelfAttributeParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityGroupRule) validateSetSelfAttributeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -525,4 +525,3 @@ func validateNewSecurityGroupRuleParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

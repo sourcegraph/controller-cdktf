@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_account_password_policy aws_iam_account_password_policy}.
 type IamAccountPasswordPolicy interface {
 	cdktf.TerraformResource
-	AllowUsersToChangePassword() interface{}
-	SetAllowUsersToChangePassword(val interface{})
-	AllowUsersToChangePasswordInput() interface{}
+	AllowUsersToChangePassword() any
+	SetAllowUsersToChangePassword(val any)
+	AllowUsersToChangePasswordInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,9 +40,9 @@ type IamAccountPasswordPolicy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HardExpiry() interface{}
-	SetHardExpiry(val interface{})
-	HardExpiryInput() interface{}
+	HardExpiry() any
+	SetHardExpiry(val any)
+	HardExpiryInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -66,36 +66,36 @@ type IamAccountPasswordPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RequireLowercaseCharacters() interface{}
-	SetRequireLowercaseCharacters(val interface{})
-	RequireLowercaseCharactersInput() interface{}
-	RequireNumbers() interface{}
-	SetRequireNumbers(val interface{})
-	RequireNumbersInput() interface{}
-	RequireSymbols() interface{}
-	SetRequireSymbols(val interface{})
-	RequireSymbolsInput() interface{}
-	RequireUppercaseCharacters() interface{}
-	SetRequireUppercaseCharacters(val interface{})
-	RequireUppercaseCharactersInput() interface{}
+	RawOverrides() any
+	RequireLowercaseCharacters() any
+	SetRequireLowercaseCharacters(val any)
+	RequireLowercaseCharactersInput() any
+	RequireNumbers() any
+	SetRequireNumbers(val any)
+	RequireNumbersInput() any
+	RequireSymbols() any
+	SetRequireSymbols(val any)
+	RequireSymbolsInput() any
+	RequireUppercaseCharacters() any
+	SetRequireUppercaseCharacters(val any)
+	RequireUppercaseCharactersInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type IamAccountPasswordPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type IamAccountPasswordPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type IamAccountPasswordPolicy interface {
 	ResetRequireNumbers()
 	ResetRequireSymbols()
 	ResetRequireUppercaseCharacters()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamAccountPasswordPolicy
@@ -163,8 +163,8 @@ type jsiiProxy_IamAccountPasswordPolicy struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) AllowUsersToChangePassword() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) AllowUsersToChangePassword() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUsersToChangePassword",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) AllowUsersToChangePassword() interf
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) AllowUsersToChangePasswordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) AllowUsersToChangePasswordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUsersToChangePasswordInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) HardExpiry() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) HardExpiry() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hardExpiry",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) HardExpiry() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) HardExpiryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) HardExpiryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hardExpiryInput",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharacters() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharacters() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLowercaseCharacters",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharacters() interf
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharactersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharactersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLowercaseCharactersInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireLowercaseCharactersInput() i
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbers() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbers() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireNumbers",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbers() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireNumbersInput",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireNumbersInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbols() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbols() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireSymbols",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbols() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireSymbolsInput",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireSymbolsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireUppercaseCharacters() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireUppercaseCharacters() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireUppercaseCharacters",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) RequireUppercaseCharacters() interf
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) RequireUppercaseCharactersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) RequireUppercaseCharactersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireUppercaseCharactersInput",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccountPasswordPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -533,7 +533,6 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_account_password_policy aws_iam_account_password_policy} Resource.
 func NewIamAccountPasswordPolicy(scope constructs.Construct, id *string, config *IamAccountPasswordPolicyConfig) IamAccountPasswordPolicy {
 	_init_.Initialize()
@@ -545,7 +544,7 @@ func NewIamAccountPasswordPolicy(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -558,12 +557,12 @@ func NewIamAccountPasswordPolicy_Override(i IamAccountPasswordPolicy, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetAllowUsersToChangePassword(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetAllowUsersToChangePassword(val any) {
 	if err := j.validateSetAllowUsersToChangePasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetAllowUsersToChangePassword(val in
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetHardExpiry(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetHardExpiry(val any) {
 	if err := j.validateSetHardExpiryParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetHardExpiry(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetId(val *string) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetMaxPasswordAge(val *float64) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetMaxPasswordAge(val *float64) {
 	if err := j.validateSetMaxPasswordAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetMaxPasswordAge(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetMinimumPasswordLength(val *float64) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetMinimumPasswordLength(val *float64) {
 	if err := j.validateSetMinimumPasswordLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetMinimumPasswordLength(val *float6
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetPasswordReusePrevention(val *float64) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetPasswordReusePrevention(val *float64) {
 	if err := j.validateSetPasswordReusePreventionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetPasswordReusePrevention(val *floa
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireLowercaseCharacters(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetRequireLowercaseCharacters(val any) {
 	if err := j.validateSetRequireLowercaseCharactersParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireLowercaseCharacters(val in
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireNumbers(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetRequireNumbers(val any) {
 	if err := j.validateSetRequireNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireNumbers(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireSymbols(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetRequireSymbols(val any) {
 	if err := j.validateSetRequireSymbolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireSymbols(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetRequireUppercaseCharacters(val interface{}) {
+func (j *jsiiProxy_IamAccountPasswordPolicy) SetRequireUppercaseCharacters(val any) {
 	if err := j.validateSetRequireUppercaseCharactersParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func IamAccountPasswordPolicy_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func IamAccountPasswordPolicy_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamAccountPasswordPolicy_IsConstruct(x interface{}) *bool {
+func IamAccountPasswordPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountPasswordPolicy_IsConstructParameters(x); err != nil {
@@ -788,7 +787,7 @@ func IamAccountPasswordPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func IamAccountPasswordPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccountPasswordPolicy_IsTerraformElement(x interface{}) *bool {
+func IamAccountPasswordPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountPasswordPolicy_IsTerraformElementParameters(x); err != nil {
@@ -807,7 +806,7 @@ func IamAccountPasswordPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func IamAccountPasswordPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccountPasswordPolicy_IsTerraformResource(x interface{}) *bool {
+func IamAccountPasswordPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccountPasswordPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -826,7 +825,7 @@ func IamAccountPasswordPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -851,31 +850,31 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamAccountPasswordPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamAccountPasswordPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,15 +1002,15 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1030,7 +1029,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,18 +1056,18 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamAccountPasswordPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1079,7 +1078,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1182,8 +1181,8 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) ResetRequireUppercaseCharacters() {
 	)
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1195,8 +1194,8 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1208,8 +1207,8 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1221,8 +1220,8 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1247,8 +1246,8 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccountPasswordPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1259,4 +1258,3 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

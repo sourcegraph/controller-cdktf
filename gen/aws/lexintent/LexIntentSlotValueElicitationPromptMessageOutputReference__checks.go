@@ -98,7 +98,7 @@ func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLexIntentSlotValueElicitationPromptMessageOutputReferenceParamet
 
 	return nil
 }
-

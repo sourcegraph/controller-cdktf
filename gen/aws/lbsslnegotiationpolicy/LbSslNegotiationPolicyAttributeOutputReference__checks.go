@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLbSslNegotiationPolicyAttributeOutputReferenceParameters(terrafo
 
 	return nil
 }
-

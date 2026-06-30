@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2LocalGatewayFilterOutputReferenceParameters(terraformR
 
 	return nil
 }
-

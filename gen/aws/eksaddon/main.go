@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
-		reflect.TypeOf((*EksAddon)(nil)).Elem(),
+		reflect.TypeFor[EksAddon](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "addonName", GoGetter: "AddonName"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksAddon{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksAddon.EksAddonConfig",
-		reflect.TypeOf((*EksAddonConfig)(nil)).Elem(),
+		reflect.TypeFor[EksAddonConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eksAddon.EksAddonTimeouts",
-		reflect.TypeOf((*EksAddonTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EksAddonTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eksAddon.EksAddonTimeoutsOutputReference",
-		reflect.TypeOf((*EksAddonTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EksAddonTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EksAddonTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

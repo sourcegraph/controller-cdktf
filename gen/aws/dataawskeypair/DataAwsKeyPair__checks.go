@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsKeyPair) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsKeyPair) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsKeyPair) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKeyPair) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsKeyPair) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsKeyPair_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateDataAwsKeyPair_IsConstructParameters(x interface{}) error {
+func validateDataAwsKeyPair_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsKeyPair_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsKeyPair_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsKeyPair_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsKeyPair_IsTerraformDataSourceParameters(x interface{}) error
 	return nil
 }
 
-func validateDataAwsKeyPair_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsKeyPair_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsKeyPair_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKeyPair) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKeyPair) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,7 +258,7 @@ func (j *jsiiProxy_DataAwsKeyPair) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKeyPair) validateSetIncludePublicKeyParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKeyPair) validateSetIncludePublicKeyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,4 +325,3 @@ func validateNewDataAwsKeyPairParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

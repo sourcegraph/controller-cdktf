@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLambdaFunctionVpcConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

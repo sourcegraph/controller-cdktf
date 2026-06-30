@@ -98,7 +98,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApigatewayv2IntegrationTlsConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

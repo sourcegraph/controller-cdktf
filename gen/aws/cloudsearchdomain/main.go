@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
-		reflect.TypeOf((*CloudsearchDomain)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainConfig",
-		reflect.TypeOf((*CloudsearchDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions",
-		reflect.TypeOf((*CloudsearchDomainEndpointOptions)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainEndpointOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
-		reflect.TypeOf((*CloudsearchDomainEndpointOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainEndpointOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsSecurityPolicyInput", GoGetter: "TlsSecurityPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField",
-		reflect.TypeOf((*CloudsearchDomainIndexField)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainIndexField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
-		reflect.TypeOf((*CloudsearchDomainIndexFieldList)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainIndexFieldList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomainIndexFieldList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -161,7 +161,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
-		reflect.TypeOf((*CloudsearchDomainIndexFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainIndexFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "analysisScheme", GoGetter: "AnalysisScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "analysisSchemeInput", GoGetter: "AnalysisSchemeInput"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomainIndexFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters",
-		reflect.TypeOf((*CloudsearchDomainScalingParameters)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainScalingParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
-		reflect.TypeOf((*CloudsearchDomainScalingParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainScalingParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomainScalingParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts",
-		reflect.TypeOf((*CloudsearchDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
-		reflect.TypeOf((*CloudsearchDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudsearchDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudsearchDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

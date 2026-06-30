@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
-		reflect.TypeOf((*LbTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbTargetGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupConfig",
-		reflect.TypeOf((*LbTargetGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupHealthCheck",
-		reflect.TypeOf((*LbTargetGroupHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupHealthCheckOutputReference",
-		reflect.TypeOf((*LbTargetGroupHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbTargetGroupHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupStickiness",
-		reflect.TypeOf((*LbTargetGroupStickiness)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupStickiness](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupStickinessOutputReference",
-		reflect.TypeOf((*LbTargetGroupStickinessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupStickinessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbTargetGroupStickinessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupTargetFailover",
-		reflect.TypeOf((*LbTargetGroupTargetFailover)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupTargetFailover](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverList",
-		reflect.TypeOf((*LbTargetGroupTargetFailoverList)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupTargetFailoverList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbTargetGroupTargetFailoverList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverOutputReference",
-		reflect.TypeOf((*LbTargetGroupTargetFailoverOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LbTargetGroupTargetFailoverOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LbTargetGroupTargetFailoverOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

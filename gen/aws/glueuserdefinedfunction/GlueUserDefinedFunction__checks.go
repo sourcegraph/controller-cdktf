@@ -19,7 +19,7 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GlueUserDefinedFunction) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GlueUserDefinedFunction) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GlueUserDefinedFunction) validatePutResourceUrisParameters(value interface{}) error {
+func (g *jsiiProxy_GlueUserDefinedFunction) validatePutResourceUrisParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateGlueUserDefinedFunction_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGlueUserDefinedFunction_IsConstructParameters(x interface{}) error {
+func validateGlueUserDefinedFunction_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateGlueUserDefinedFunction_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGlueUserDefinedFunction_IsTerraformElementParameters(x interface{}) error {
+func validateGlueUserDefinedFunction_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateGlueUserDefinedFunction_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGlueUserDefinedFunction_IsTerraformResourceParameters(x interface{}) error {
+func validateGlueUserDefinedFunction_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetClassNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GlueUserDefinedFunction) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GlueUserDefinedFunction) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetOwnerTypeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GlueUserDefinedFunction) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,4 +493,3 @@ func validateNewGlueUserDefinedFunctionParameters(scope constructs.Construct, id
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package configconfigrule
 
-
 type ConfigConfigRuleSource struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
 	Owner *string `field:"required" json:"owner" yaml:"owner"`
@@ -11,8 +10,7 @@ type ConfigConfigRuleSource struct {
 	// source_detail block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
-	SourceDetail interface{} `field:"optional" json:"sourceDetail" yaml:"sourceDetail"`
+	SourceDetail any `field:"optional" json:"sourceDetail" yaml:"sourceDetail"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
 	SourceIdentifier *string `field:"optional" json:"sourceIdentifier" yaml:"sourceIdentifier"`
 }
-

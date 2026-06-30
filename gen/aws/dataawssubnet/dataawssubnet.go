@@ -27,15 +27,15 @@ type DataAwsSubnet interface {
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIpv4Pool() *string
-	DefaultForAz() interface{}
-	SetDefaultForAz(val interface{})
-	DefaultForAzInput() interface{}
+	DefaultForAz() any
+	SetDefaultForAz(val any)
+	DefaultForAzInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,7 +44,7 @@ type DataAwsSubnet interface {
 	EnableResourceNameDnsAaaaRecordOnLaunch() cdktf.IResolvable
 	EnableResourceNameDnsARecordOnLaunch() cdktf.IResolvable
 	Filter() DataAwsSubnetFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -77,7 +77,7 @@ type DataAwsSubnet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -87,18 +87,18 @@ type DataAwsSubnet interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsSubnetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type DataAwsSubnet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsSubnetTimeouts)
 	ResetAvailabilityZone()
 	ResetAvailabilityZoneId()
@@ -136,18 +136,18 @@ type DataAwsSubnet interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVpcId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSubnet
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataAwsSubnet) CidrBlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSubnet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DataAwsSubnet) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_DataAwsSubnet) CustomerOwnedIpv4Pool() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) DefaultForAz() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) DefaultForAz() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultForAz",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_DataAwsSubnet) DefaultForAz() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) DefaultForAzInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) DefaultForAzInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultForAzInput",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataAwsSubnet) Filter() DataAwsSubnetFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DataAwsSubnet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_DataAwsSubnet) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSubnet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -625,8 +625,8 @@ func (j *jsiiProxy_DataAwsSubnet) Timeouts() DataAwsSubnetTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnet) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSubnet) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -655,7 +655,6 @@ func (j *jsiiProxy_DataAwsSubnet) VpcIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/subnet aws_subnet} Data Source.
 func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSubnetConfig) DataAwsSubnet {
 	_init_.Initialize()
@@ -667,7 +666,7 @@ func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSub
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -680,12 +679,12 @@ func NewDataAwsSubnet_Override(d DataAwsSubnet, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetAvailabilityZoneId(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetAvailabilityZoneId(val *string) {
 	if err := j.validateSetAvailabilityZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetAvailabilityZoneId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetCidrBlock(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetCidrBlock(val *string) {
 	if err := j.validateSetCidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSubnet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetDefaultForAz(val interface{}) {
+func (j *jsiiProxy_DataAwsSubnet) SetDefaultForAz(val any) {
 	if err := j.validateSetDefaultForAzParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetDefaultForAz(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSubnet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -748,7 +747,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSubnet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -756,7 +755,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetIpv6CidrBlock(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetIpv6CidrBlock(val *string) {
 	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetIpv6CidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSubnet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSubnet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetState(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsSubnet) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DataAwsSubnet)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnet)SetVpcId(val *string) {
+func (j *jsiiProxy_DataAwsSubnet) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func DataAwsSubnet_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func DataAwsSubnet_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSubnet_IsConstruct(x interface{}) *bool {
+func DataAwsSubnet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSubnet_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func DataAwsSubnet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func DataAwsSubnet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSubnet_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSubnet_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSubnet_IsTerraformDataSourceParameters(x); err != nil {
@@ -896,7 +895,7 @@ func DataAwsSubnet_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func DataAwsSubnet_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSubnet_IsTerraformElement(x interface{}) *bool {
+func DataAwsSubnet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSubnet_IsTerraformElementParameters(x); err != nil {
@@ -915,7 +914,7 @@ func DataAwsSubnet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,27 +932,27 @@ func DataAwsSubnet_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSubnet) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSubnet) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (d *jsiiProxy_DataAwsSubnet) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (d *jsiiProxy_DataAwsSubnet) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,18 +1110,18 @@ func (d *jsiiProxy_DataAwsSubnet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSubnet) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsSubnet) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (d *jsiiProxy_DataAwsSubnet) PutTimeouts(value *DataAwsSubnetTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1233,8 +1232,8 @@ func (d *jsiiProxy_DataAwsSubnet) ResetVpcId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSubnet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSubnet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1246,8 +1245,8 @@ func (d *jsiiProxy_DataAwsSubnet) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSubnet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSubnet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1259,8 +1258,8 @@ func (d *jsiiProxy_DataAwsSubnet) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSubnet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSubnet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1272,8 +1271,8 @@ func (d *jsiiProxy_DataAwsSubnet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSubnet) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSubnet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1298,8 +1297,8 @@ func (d *jsiiProxy_DataAwsSubnet) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSubnet) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSubnet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1310,4 +1309,3 @@ func (d *jsiiProxy_DataAwsSubnet) ToTerraform() interface{} {
 
 	return returns
 }
-

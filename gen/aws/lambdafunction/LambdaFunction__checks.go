@@ -19,7 +19,7 @@ func (l *jsiiProxy_LambdaFunction) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunction) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LambdaFunction) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LambdaFunction) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LambdaFunction) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateLambdaFunction_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateLambdaFunction_IsConstructParameters(x interface{}) error {
+func validateLambdaFunction_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func validateLambdaFunction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLambdaFunction_IsTerraformElementParameters(x interface{}) error {
+func validateLambdaFunction_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateLambdaFunction_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLambdaFunction_IsTerraformResourceParameters(x interface{}) error {
+func validateLambdaFunction_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func (j *jsiiProxy_LambdaFunction) validateSetCodeSigningConfigArnParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunction) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunction) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -392,7 +392,7 @@ func (j *jsiiProxy_LambdaFunction) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunction) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunction) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -537,7 +537,7 @@ func (j *jsiiProxy_LambdaFunction) validateSetPackageTypeParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunction) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LambdaFunction) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -583,7 +583,7 @@ func (j *jsiiProxy_LambdaFunction) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -611,7 +611,7 @@ func (j *jsiiProxy_LambdaFunction) validateSetReplacementSecurityGroupIdsParamet
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunction) validateSetReplaceSecurityGroupsOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaFunction) validateSetReplaceSecurityGroupsOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -729,4 +729,3 @@ func validateNewLambdaFunctionParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

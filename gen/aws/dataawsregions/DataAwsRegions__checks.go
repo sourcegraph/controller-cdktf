@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRegions) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRegions) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsRegions) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRegions) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRegions) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsRegions_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateDataAwsRegions_IsConstructParameters(x interface{}) error {
+func validateDataAwsRegions_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsRegions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsRegions_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRegions_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsRegions_IsTerraformDataSourceParameters(x interface{}) error
 	return nil
 }
 
-func validateDataAwsRegions_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRegions_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsRegions_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRegions) validateSetAllRegionsParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRegions) validateSetAllRegionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataAwsRegions) validateSetAllRegionsParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRegions) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRegions) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -290,4 +290,3 @@ func validateNewDataAwsRegionsParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

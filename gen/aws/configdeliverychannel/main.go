@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
-		reflect.TypeOf((*ConfigDeliveryChannel)(nil)).Elem(),
+		reflect.TypeFor[ConfigDeliveryChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigDeliveryChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelConfig",
-		reflect.TypeOf((*ConfigDeliveryChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigDeliveryChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties",
-		reflect.TypeOf((*ConfigDeliveryChannelSnapshotDeliveryProperties)(nil)).Elem(),
+		reflect.TypeFor[ConfigDeliveryChannelSnapshotDeliveryProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
-		reflect.TypeOf((*ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateOverride
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_GenerateConfigForImport
 	return nil
 }
 
-func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsConstructParameters(x interface{}) error {
+func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsConstructParameters(x
 	return nil
 }
 
-func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformDataSourcePa
 	return nil
 }
 
-func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformElementParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -297,4 +297,3 @@ func validateNewDataAwsEc2LocalGatewayVirtualInterfaceGroupParameters(scope cons
 
 	return nil
 }
-

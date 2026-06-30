@@ -19,7 +19,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateAddMoveTargetP
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateMoveFromIdPara
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSesv2ConfigurationSetEventDestination_GenerateConfigForImportParame
 	return nil
 }
 
-func validateSesv2ConfigurationSetEventDestination_IsConstructParameters(x interface{}) error {
+func validateSesv2ConfigurationSetEventDestination_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSesv2ConfigurationSetEventDestination_IsConstructParameters(x inter
 	return nil
 }
 
-func validateSesv2ConfigurationSetEventDestination_IsTerraformElementParameters(x interface{}) error {
+func validateSesv2ConfigurationSetEventDestination_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSesv2ConfigurationSetEventDestination_IsTerraformElementParameters(
 	return nil
 }
 
-func validateSesv2ConfigurationSetEventDestination_IsTerraformResourceParameters(x interface{}) error {
+func validateSesv2ConfigurationSetEventDestination_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetConfigurati
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetLifecyclePa
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewSesv2ConfigurationSetEventDestinationParameters(scope constructs
 
 	return nil
 }
-

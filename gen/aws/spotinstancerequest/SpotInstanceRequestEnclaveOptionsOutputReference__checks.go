@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewSpotInstanceRequestEnclaveOptionsOutputReferenceParameters(terra
 
 	return nil
 }
-

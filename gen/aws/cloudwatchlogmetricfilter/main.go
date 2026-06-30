@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
-		reflect.TypeOf((*CloudwatchLogMetricFilter)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogMetricFilter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchLogMetricFilter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterConfig",
-		reflect.TypeOf((*CloudwatchLogMetricFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogMetricFilterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformation",
-		reflect.TypeOf((*CloudwatchLogMetricFilterMetricTransformation)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogMetricFilterMetricTransformation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
-		reflect.TypeOf((*CloudwatchLogMetricFilterMetricTransformationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogMetricFilterMetricTransformationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

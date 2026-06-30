@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodebuildProjectSecondarySourcesAuthOutputReferenceParameters(te
 
 	return nil
 }
-

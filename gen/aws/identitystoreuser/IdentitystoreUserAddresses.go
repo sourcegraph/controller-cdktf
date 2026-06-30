@@ -1,6 +1,5 @@
 package identitystoreuser
 
-
 type IdentitystoreUserAddresses struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#country IdentitystoreUser#country}.
 	Country *string `field:"optional" json:"country" yaml:"country"`
@@ -11,7 +10,7 @@ type IdentitystoreUserAddresses struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#postal_code IdentitystoreUser#postal_code}.
 	PostalCode *string `field:"optional" json:"postalCode" yaml:"postalCode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
-	Primary interface{} `field:"optional" json:"primary" yaml:"primary"`
+	Primary any `field:"optional" json:"primary" yaml:"primary"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#region IdentitystoreUser#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#street_address IdentitystoreUser#street_address}.
@@ -19,4 +18,3 @@ type IdentitystoreUserAddresses struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

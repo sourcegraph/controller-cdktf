@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
-		reflect.TypeOf((*DetectiveMember)(nil)).Elem(),
+		reflect.TypeFor[DetectiveMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedTime", GoGetter: "UpdatedTime"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeUsageInBytes", GoGetter: "VolumeUsageInBytes"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DetectiveMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig",
-		reflect.TypeOf((*DetectiveMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[DetectiveMemberConfig](),
 	)
 }

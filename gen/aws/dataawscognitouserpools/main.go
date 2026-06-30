@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
-		reflect.TypeOf((*DataAwsCognitoUserPools)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCognitoUserPools](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arns", GoGetter: "Arns"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCognitoUserPools{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig",
-		reflect.TypeOf((*DataAwsCognitoUserPoolsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCognitoUserPoolsConfig](),
 	)
 }

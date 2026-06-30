@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersNetworkSourcePortListParameters(terrafo
 
 	return nil
 }
-

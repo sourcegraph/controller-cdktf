@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolume) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsVolume) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validatePutTimeoutsParameters(value *FsxOpe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolume) validatePutUserAndGroupQuotasParameters(value interface{}) error {
+func (f *jsiiProxy_FsxOpenzfsVolume) validatePutUserAndGroupQuotasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateFsxOpenzfsVolume_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateFsxOpenzfsVolume_IsConstructParameters(x interface{}) error {
+func validateFsxOpenzfsVolume_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateFsxOpenzfsVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxOpenzfsVolume_IsTerraformElementParameters(x interface{}) error {
+func validateFsxOpenzfsVolume_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateFsxOpenzfsVolume_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateFsxOpenzfsVolume_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxOpenzfsVolume_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateFsxOpenzfsVolume_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCopyTagsToSnapshotsParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCopyTagsToSnapshotsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCopyTagsToSnapshotsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -458,7 +458,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetParentVolumeIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,7 +504,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -590,4 +590,3 @@ func validateNewFsxOpenzfsVolumeParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAppconfigConfigurationProfileValidatorOutputReferencePara
 
 	return nil
 }
-

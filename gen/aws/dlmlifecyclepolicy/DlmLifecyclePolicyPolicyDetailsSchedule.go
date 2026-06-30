@@ -1,6 +1,5 @@
 package dlmlifecyclepolicy
 
-
 type DlmLifecyclePolicyPolicyDetailsSchedule struct {
 	// create_rule block.
 	//
@@ -13,11 +12,11 @@ type DlmLifecyclePolicyPolicyDetailsSchedule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
 	RetainRule *DlmLifecyclePolicyPolicyDetailsScheduleRetainRule `field:"required" json:"retainRule" yaml:"retainRule"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
-	CopyTags interface{} `field:"optional" json:"copyTags" yaml:"copyTags"`
+	CopyTags any `field:"optional" json:"copyTags" yaml:"copyTags"`
 	// cross_region_copy_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
-	CrossRegionCopyRule interface{} `field:"optional" json:"crossRegionCopyRule" yaml:"crossRegionCopyRule"`
+	CrossRegionCopyRule any `field:"optional" json:"crossRegionCopyRule" yaml:"crossRegionCopyRule"`
 	// deprecate_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
@@ -35,4 +34,3 @@ type DlmLifecyclePolicyPolicyDetailsSchedule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dlm_lifecycle_policy#variable_tags DlmLifecyclePolicy#variable_tags}.
 	VariableTags *map[string]*string `field:"optional" json:"variableTags" yaml:"variableTags"`
 }
-

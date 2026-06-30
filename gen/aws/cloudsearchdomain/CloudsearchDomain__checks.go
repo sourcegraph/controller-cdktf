@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudsearchDomain) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudsearchDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudsearchDomain) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudsearchDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_CloudsearchDomain) validatePutEndpointOptionsParameters(value
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomain) validatePutIndexFieldParameters(value interface{}) error {
+func (c *jsiiProxy_CloudsearchDomain) validatePutIndexFieldParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateCloudsearchDomain_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateCloudsearchDomain_IsConstructParameters(x interface{}) error {
+func validateCloudsearchDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateCloudsearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudsearchDomain_IsTerraformElementParameters(x interface{}) error {
+func validateCloudsearchDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateCloudsearchDomain_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateCloudsearchDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudsearchDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateCloudsearchDomain_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_CloudsearchDomain) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CloudsearchDomain) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomain) validateSetMultiAzParameters(val interface{}) error {
+func (j *jsiiProxy_CloudsearchDomain) validateSetMultiAzParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_CloudsearchDomain) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudsearchDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -506,4 +506,3 @@ func validateNewCloudsearchDomainParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

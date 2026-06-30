@@ -25,18 +25,18 @@ type DataAwsVpcIpamPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Filter() DataAwsVpcIpamPoolFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,7 +67,7 @@ type DataAwsVpcIpamPool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PubliclyAdvertisable() cdktf.IResolvable
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceIpamPoolId() *string
 	State() *string
 	Tags() *map[string]*string
@@ -76,15 +76,15 @@ type DataAwsVpcIpamPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsVpcIpamPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type DataAwsVpcIpamPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsVpcIpamPoolTimeouts)
 	ResetAllocationResourceTags()
 	ResetFilter()
@@ -117,18 +117,18 @@ type DataAwsVpcIpamPool interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsVpcIpamPool
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) Filter() DataAwsVpcIpamPoolFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) PubliclyAdvertisable() cdktf.IResolvable 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) Timeouts() DataAwsVpcIpamPoolTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsVpcIpamPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -545,7 +545,6 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool} Data Source.
 func NewDataAwsVpcIpamPool(scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolConfig) DataAwsVpcIpamPool {
@@ -558,7 +557,7 @@ func NewDataAwsVpcIpamPool(scope constructs.Construct, id *string, config *DataA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -571,12 +570,12 @@ func NewDataAwsVpcIpamPool_Override(d DataAwsVpcIpamPool, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetAllocationResourceTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetAllocationResourceTags(val *map[string]*string) {
 	if err := j.validateSetAllocationResourceTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetAllocationResourceTags(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetId(val *string) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetIpamPoolId(val *string) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetIpamPoolId(val *string) {
 	if err := j.validateSetIpamPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetIpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsVpcIpamPool) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func DataAwsVpcIpamPool_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func DataAwsVpcIpamPool_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsVpcIpamPool_IsConstruct(x interface{}) *bool {
+func DataAwsVpcIpamPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsVpcIpamPool_IsConstructParameters(x); err != nil {
@@ -713,7 +712,7 @@ func DataAwsVpcIpamPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func DataAwsVpcIpamPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsVpcIpamPool_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsVpcIpamPool_IsTerraformDataSourceParameters(x); err != nil {
@@ -732,7 +731,7 @@ func DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsVpcIpamPool_IsTerraformElement(x interface{}) *bool {
+func DataAwsVpcIpamPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsVpcIpamPool_IsTerraformElementParameters(x); err != nil {
@@ -751,7 +750,7 @@ func DataAwsVpcIpamPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,27 +768,27 @@ func DataAwsVpcIpamPool_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsVpcIpamPool) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsVpcIpamPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,18 +946,18 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsVpcIpamPool) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -969,7 +968,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) PutTimeouts(value *DataAwsVpcIpamPoolTime
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1029,8 +1028,8 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1042,8 +1041,8 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1055,8 +1054,8 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsVpcIpamPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1068,8 +1067,8 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsVpcIpamPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1094,8 +1093,8 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsVpcIpamPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1106,4 +1105,3 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) ToTerraform() interface{} {
 
 	return returns
 }
-

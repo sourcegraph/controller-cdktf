@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
-		reflect.TypeOf((*SecretsmanagerSecretRotation)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretRotation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig",
-		reflect.TypeOf((*SecretsmanagerSecretRotationConfig)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules",
-		reflect.TypeOf((*SecretsmanagerSecretRotationRotationRules)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotationRotationRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
-		reflect.TypeOf((*SecretsmanagerSecretRotationRotationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecretsmanagerSecretRotationRotationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDays", GoGetter: "AutomaticallyAfterDays"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDaysInput", GoGetter: "AutomaticallyAfterDaysInput"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretsmanagerSecretRotationRotationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

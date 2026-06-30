@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment",
-		reflect.TypeOf((*VpnGatewayAttachment)(nil)).Elem(),
+		reflect.TypeFor[VpnGatewayAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayIdInput", GoGetter: "VpnGatewayIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpnGatewayAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig",
-		reflect.TypeOf((*VpnGatewayAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[VpnGatewayAttachmentConfig](),
 	)
 }

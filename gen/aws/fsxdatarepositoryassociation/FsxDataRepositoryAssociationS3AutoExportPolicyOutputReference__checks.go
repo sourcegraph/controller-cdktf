@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFsxDataRepositoryAssociationS3AutoExportPolicyOutputReferencePar
 
 	return nil
 }
-

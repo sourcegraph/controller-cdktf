@@ -15,15 +15,15 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetId() *string
 	SetTargetId(val *string)
 	TargetIdInput() *string
@@ -76,16 +76,16 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type SsoadminAccountAssignment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTargetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsoadminAccountAssignment
@@ -155,8 +155,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsoadminAccountAssignment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -445,7 +445,6 @@ func (j *jsiiProxy_SsoadminAccountAssignment) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) SsoadminAccountAssignment {
 	_init_.Initialize()
@@ -457,7 +456,7 @@ func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -470,12 +469,12 @@ func NewSsoadminAccountAssignment_Override(s SsoadminAccountAssignment, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetCount(val interface{}) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetId(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetInstanceArn(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetInstanceArn(val *string) {
 	if err := j.validateSetInstanceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetInstanceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetPermissionSetArn(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetPermissionSetArn(val *string) {
 	if err := j.validateSetPermissionSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetPermissionSetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetPrincipalId(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetPrincipalId(val *string) {
 	if err := j.validateSetPrincipalIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetPrincipalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetPrincipalType(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetPrincipalType(val *string) {
 	if err := j.validateSetPrincipalTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetPrincipalType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetTargetId(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetTargetId(val *string) {
 	if err := j.validateSetTargetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetTargetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetTargetType(val *string) {
+func (j *jsiiProxy_SsoadminAccountAssignment) SetTargetType(val *string) {
 	if err := j.validateSetTargetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func SsoadminAccountAssignment_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func SsoadminAccountAssignment_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsoadminAccountAssignment_IsConstruct(x interface{}) *bool {
+func SsoadminAccountAssignment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsoadminAccountAssignment_IsConstructParameters(x); err != nil {
@@ -667,7 +666,7 @@ func SsoadminAccountAssignment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func SsoadminAccountAssignment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsoadminAccountAssignment_IsTerraformElement(x interface{}) *bool {
+func SsoadminAccountAssignment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsoadminAccountAssignment_IsTerraformElementParameters(x); err != nil {
@@ -686,7 +685,7 @@ func SsoadminAccountAssignment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func SsoadminAccountAssignment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsoadminAccountAssignment_IsTerraformResource(x interface{}) *bool {
+func SsoadminAccountAssignment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsoadminAccountAssignment_IsTerraformResourceParameters(x); err != nil {
@@ -705,7 +704,7 @@ func SsoadminAccountAssignment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,31 +729,31 @@ func (s *jsiiProxy_SsoadminAccountAssignment) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsoadminAccountAssignment) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsoadminAccountAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,15 +881,15 @@ func (s *jsiiProxy_SsoadminAccountAssignment) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -909,7 +908,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -922,7 +921,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,18 +935,18 @@ func (s *jsiiProxy_SsoadminAccountAssignment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsoadminAccountAssignment) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -958,7 +957,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -969,7 +968,7 @@ func (s *jsiiProxy_SsoadminAccountAssignment) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -997,8 +996,8 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ResetTargetType() {
 	)
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1010,8 +1009,8 @@ func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1023,8 +1022,8 @@ func (s *jsiiProxy_SsoadminAccountAssignment) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1036,8 +1035,8 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1062,8 +1061,8 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsoadminAccountAssignment) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsoadminAccountAssignment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1074,4 +1073,3 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validateAddMoveTargetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveFromIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterObjectParameters(value interface{}) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterObjectParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterObjectPar
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterValueParameters(value interface{}) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterValuePara
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutPipelineObjectParameters(value interface{}) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutPipelineObjectParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateDatapipelinePipelineDefinition_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateDatapipelinePipelineDefinition_IsConstructParameters(x interface{}) error {
+func validateDatapipelinePipelineDefinition_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateDatapipelinePipelineDefinition_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateDatapipelinePipelineDefinition_IsTerraformElementParameters(x interface{}) error {
+func validateDatapipelinePipelineDefinition_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateDatapipelinePipelineDefinition_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateDatapipelinePipelineDefinition_IsTerraformResourceParameters(x interface{}) error {
+func validateDatapipelinePipelineDefinition_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func validateDatapipelinePipelineDefinition_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetPipelineIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -515,4 +515,3 @@ func validateNewDatapipelinePipelineDefinitionParameters(scope constructs.Constr
 
 	return nil
 }
-

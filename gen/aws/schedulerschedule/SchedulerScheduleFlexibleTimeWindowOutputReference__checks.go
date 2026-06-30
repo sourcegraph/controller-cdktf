@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSchedulerScheduleFlexibleTimeWindowOutputReferenceParameters(ter
 
 	return nil
 }
-

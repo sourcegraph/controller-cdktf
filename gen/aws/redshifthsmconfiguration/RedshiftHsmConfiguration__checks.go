@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftHsmConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftHsmConfiguration_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateRedshiftHsmConfiguration_IsConstructParameters(x interface{}) error {
+func validateRedshiftHsmConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftHsmConfiguration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateRedshiftHsmConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftHsmConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftHsmConfiguration_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateRedshiftHsmConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftHsmConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRedshiftHsmConfiguration_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -398,7 +398,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewRedshiftHsmConfigurationParameters(scope constructs.Construct, i
 
 	return nil
 }
-

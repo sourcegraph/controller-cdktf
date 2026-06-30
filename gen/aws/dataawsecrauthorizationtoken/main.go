@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
-		reflect.TypeOf((*DataAwsEcrAuthorizationToken)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEcrAuthorizationToken](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationToken", GoGetter: "AuthorizationToken"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEcrAuthorizationToken{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationTokenConfig",
-		reflect.TypeOf((*DataAwsEcrAuthorizationTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEcrAuthorizationTokenConfig](),
 	)
 }

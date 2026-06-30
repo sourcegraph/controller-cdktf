@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRamResourceShareFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsRamResourceShareFilterOutputReferenceParameters(terraform
 
 	return nil
 }
-

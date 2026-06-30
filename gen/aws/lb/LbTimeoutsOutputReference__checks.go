@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbTimeoutsOutputReference) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_LbTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LbTimeoutsOutputReference) validateSetDeleteParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_LbTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLbTimeoutsOutputReferenceParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

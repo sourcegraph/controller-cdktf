@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudwatchEventTargetDeadLetterConfigOutputReferenceParameters(t
 
 	return nil
 }
-

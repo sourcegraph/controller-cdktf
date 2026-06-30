@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsApigatewayv2Api) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsApigatewayv2Api) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsApigatewayv2Api_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDataAwsApigatewayv2Api_IsConstructParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Api_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsApigatewayv2Api_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsApigatewayv2Api_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Api_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsApigatewayv2Api_IsTerraformDataSourceParameters(x interface{
 	return nil
 }
 
-func validateDataAwsApigatewayv2Api_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Api_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetApiIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsApigatewayv2ApiParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

@@ -15,22 +15,22 @@ type ChimeVoiceConnectorOrigination interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,17 +53,17 @@ type ChimeVoiceConnectorOrigination interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Route() ChimeVoiceConnectorOriginationRouteList
-	RouteInput() interface{}
+	RouteInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VoiceConnectorId() *string
@@ -73,9 +73,9 @@ type ChimeVoiceConnectorOrigination interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type ChimeVoiceConnectorOrigination interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,30 +105,30 @@ type ChimeVoiceConnectorOrigination interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRoute(value interface{})
+	PutRoute(value any)
 	ResetDisabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ChimeVoiceConnectorOrigination
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Route() ChimeVoiceConnectorOr
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) RouteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) RouteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"routeInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) VoiceConnectorIdInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource.
 func NewChimeVoiceConnectorOrigination(scope constructs.Construct, id *string, config *ChimeVoiceConnectorOriginationConfig) ChimeVoiceConnectorOrigination {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewChimeVoiceConnectorOrigination(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewChimeVoiceConnectorOrigination_Override(c ChimeVoiceConnectorOrigination
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetConnection(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetCount(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetDisabled(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetVoiceConnectorId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) SetVoiceConnectorId(val *string) {
 	if err := j.validateSetVoiceConnectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func ChimeVoiceConnectorOrigination_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func ChimeVoiceConnectorOrigination_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ChimeVoiceConnectorOrigination_IsConstruct(x interface{}) *bool {
+func ChimeVoiceConnectorOrigination_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorOrigination_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func ChimeVoiceConnectorOrigination_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func ChimeVoiceConnectorOrigination_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorOrigination_IsTerraformElement(x interface{}) *bool {
+func ChimeVoiceConnectorOrigination_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorOrigination_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func ChimeVoiceConnectorOrigination_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func ChimeVoiceConnectorOrigination_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorOrigination_IsTerraformResource(x interface{}) *bool {
+func ChimeVoiceConnectorOrigination_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorOrigination_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func ChimeVoiceConnectorOrigination_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -796,7 +795,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) PutRoute(value interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) PutRoute(value any) {
 	if err := c.validatePutRouteParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRoute",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -908,8 +907,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -921,8 +920,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -934,8 +933,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,4 +971,3 @@ func (c *jsiiProxy_ChimeVoiceConnectorOrigination) ToTerraform() interface{} {
 
 	return returns
 }
-

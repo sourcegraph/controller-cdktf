@@ -13,21 +13,21 @@ import (
 type KmsKey interface {
 	cdktf.TerraformResource
 	Arn() *string
-	BypassPolicyLockoutSafetyCheck() interface{}
-	SetBypassPolicyLockoutSafetyCheck(val interface{})
-	BypassPolicyLockoutSafetyCheckInput() interface{}
+	BypassPolicyLockoutSafetyCheck() any
+	SetBypassPolicyLockoutSafetyCheck(val any)
+	BypassPolicyLockoutSafetyCheckInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerMasterKeySpec() *string
 	SetCustomerMasterKeySpec(val *string)
 	CustomerMasterKeySpecInput() *string
@@ -44,9 +44,9 @@ type KmsKey interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EnableKeyRotation() interface{}
-	SetEnableKeyRotation(val interface{})
-	EnableKeyRotationInput() interface{}
+	EnableKeyRotation() any
+	SetEnableKeyRotation(val any)
+	EnableKeyRotationInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,9 +58,9 @@ type KmsKey interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsEnabled() interface{}
-	SetIsEnabled(val interface{})
-	IsEnabledInput() interface{}
+	IsEnabled() any
+	SetIsEnabled(val any)
+	IsEnabledInput() any
 	KeyId() *string
 	KeyUsage() *string
 	SetKeyUsage(val *string)
@@ -69,9 +69,9 @@ type KmsKey interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MultiRegion() interface{}
-	SetMultiRegion(val interface{})
-	MultiRegionInput() interface{}
+	MultiRegion() any
+	SetMultiRegion(val any)
+	MultiRegionInput() any
 	// The tree node.
 	Node() constructs.Node
 	Policy() *string
@@ -82,11 +82,11 @@ type KmsKey interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -96,16 +96,16 @@ type KmsKey interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type KmsKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type KmsKey interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type KmsKey interface {
 	ResetPolicy()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsKey
@@ -186,8 +186,8 @@ func (j *jsiiProxy_KmsKey) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) BypassPolicyLockoutSafetyCheck() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) BypassPolicyLockoutSafetyCheck() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassPolicyLockoutSafetyCheck",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_KmsKey) BypassPolicyLockoutSafetyCheck() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) BypassPolicyLockoutSafetyCheckInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) BypassPolicyLockoutSafetyCheckInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassPolicyLockoutSafetyCheckInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_KmsKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_KmsKey) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_KmsKey) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_KmsKey) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) EnableKeyRotation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) EnableKeyRotation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKeyRotation",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_KmsKey) EnableKeyRotation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) EnableKeyRotationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) EnableKeyRotationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKeyRotationInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_KmsKey) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) IsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) IsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnabled",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_KmsKey) IsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) IsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) IsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnabledInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_KmsKey) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) MultiRegion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) MultiRegion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiRegion",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_KmsKey) MultiRegion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) MultiRegionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) MultiRegionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiRegionInput",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_KmsKey) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsKey) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_KmsKey) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_KmsKey) TerraformGeneratorMetadata() *cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_KmsKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -616,7 +616,6 @@ func (j *jsiiProxy_KmsKey) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) KmsKey {
 	_init_.Initialize()
@@ -628,7 +627,7 @@ func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) Kms
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -641,12 +640,12 @@ func NewKmsKey_Override(k KmsKey, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetBypassPolicyLockoutSafetyCheck(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetBypassPolicyLockoutSafetyCheck(val any) {
 	if err := j.validateSetBypassPolicyLockoutSafetyCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_KmsKey)SetBypassPolicyLockoutSafetyCheck(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_KmsKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_KmsKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetCustomerMasterKeySpec(val *string) {
+func (j *jsiiProxy_KmsKey) SetCustomerMasterKeySpec(val *string) {
 	if err := j.validateSetCustomerMasterKeySpecParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_KmsKey)SetCustomerMasterKeySpec(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetCustomKeyStoreId(val *string) {
+func (j *jsiiProxy_KmsKey) SetCustomKeyStoreId(val *string) {
 	if err := j.validateSetCustomKeyStoreIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_KmsKey)SetCustomKeyStoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetDeletionWindowInDays(val *float64) {
+func (j *jsiiProxy_KmsKey) SetDeletionWindowInDays(val *float64) {
 	if err := j.validateSetDeletionWindowInDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_KmsKey)SetDeletionWindowInDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -720,7 +719,7 @@ func (j *jsiiProxy_KmsKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetDescription(val *string) {
+func (j *jsiiProxy_KmsKey) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_KmsKey)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetEnableKeyRotation(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetEnableKeyRotation(val any) {
 	if err := j.validateSetEnableKeyRotationParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_KmsKey)SetEnableKeyRotation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -750,7 +749,7 @@ func (j *jsiiProxy_KmsKey)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetId(val *string) {
+func (j *jsiiProxy_KmsKey) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_KmsKey)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetIsEnabled(val any) {
 	if err := j.validateSetIsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_KmsKey)SetIsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetKeyUsage(val *string) {
+func (j *jsiiProxy_KmsKey) SetKeyUsage(val *string) {
 	if err := j.validateSetKeyUsageParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_KmsKey)SetKeyUsage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_KmsKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetMultiRegion(val interface{}) {
+func (j *jsiiProxy_KmsKey) SetMultiRegion(val any) {
 	if err := j.validateSetMultiRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_KmsKey)SetMultiRegion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetPolicy(val *string) {
+func (j *jsiiProxy_KmsKey) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_KmsKey)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -824,7 +823,7 @@ func (j *jsiiProxy_KmsKey)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsKey) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_KmsKey)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KmsKey) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_KmsKey)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKey)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KmsKey) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func KmsKey_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func KmsKey_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsKey_IsConstruct(x interface{}) *bool {
+func KmsKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKey_IsConstructParameters(x); err != nil {
@@ -904,7 +903,7 @@ func KmsKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func KmsKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsKey_IsTerraformElement(x interface{}) *bool {
+func KmsKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKey_IsTerraformElementParameters(x); err != nil {
@@ -923,7 +922,7 @@ func KmsKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func KmsKey_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsKey_IsTerraformResource(x interface{}) *bool {
+func KmsKey_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKey_IsTerraformResourceParameters(x); err != nil {
@@ -942,7 +941,7 @@ func KmsKey_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -967,31 +966,31 @@ func (k *jsiiProxy_KmsKey) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsKey) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsKey) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (k *jsiiProxy_KmsKey) GetBooleanAttribute(terraformAttribute *string) cdktf
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (k *jsiiProxy_KmsKey) GetBooleanMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (k *jsiiProxy_KmsKey) GetListAttribute(terraformAttribute *string) *[]*stri
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (k *jsiiProxy_KmsKey) GetNumberAttribute(terraformAttribute *string) *float
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (k *jsiiProxy_KmsKey) GetNumberListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (k *jsiiProxy_KmsKey) GetNumberMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func (k *jsiiProxy_KmsKey) GetStringAttribute(terraformAttribute *string) *strin
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,15 +1118,15 @@ func (k *jsiiProxy_KmsKey) GetStringMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsKey) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKey) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1146,7 +1145,7 @@ func (k *jsiiProxy_KmsKey) ImportFrom(id *string, provider cdktf.TerraformProvid
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (k *jsiiProxy_KmsKey) InterpolationForAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1173,18 +1172,18 @@ func (k *jsiiProxy_KmsKey) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsKey) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsKey) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1195,7 +1194,7 @@ func (k *jsiiProxy_KmsKey) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (k *jsiiProxy_KmsKey) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1322,8 +1321,8 @@ func (k *jsiiProxy_KmsKey) ResetTagsAll() {
 	)
 }
 
-func (k *jsiiProxy_KmsKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1335,8 +1334,8 @@ func (k *jsiiProxy_KmsKey) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1348,8 +1347,8 @@ func (k *jsiiProxy_KmsKey) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1361,8 +1360,8 @@ func (k *jsiiProxy_KmsKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKey) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1387,8 +1386,8 @@ func (k *jsiiProxy_KmsKey) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKey) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1399,4 +1398,3 @@ func (k *jsiiProxy_KmsKey) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
-		reflect.TypeOf((*AthenaWorkgroup)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,19 +86,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfig",
-		reflect.TypeOf((*AthenaWorkgroupConfig)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfiguration",
-		reflect.TypeOf((*AthenaWorkgroupConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationEngineVersion)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationEngineVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersionOutputReference",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationEngineVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationEngineVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bytesScannedCutoffPerQuery", GoGetter: "BytesScannedCutoffPerQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "bytesScannedCutoffPerQueryInput", GoGetter: "BytesScannedCutoffPerQueryInput"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroupConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,15 +189,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationAclConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfigurationAclConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,7 +273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
-		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AthenaWorkgroupConfigurationResultConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclConfiguration", GoGetter: "AclConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "aclConfigurationInput", GoGetter: "AclConfigurationInput"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

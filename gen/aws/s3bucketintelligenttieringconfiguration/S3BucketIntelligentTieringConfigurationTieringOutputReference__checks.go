@@ -106,7 +106,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewS3BucketIntelligentTieringConfigurationTieringOutputReferencePar
 
 	return nil
 }
-

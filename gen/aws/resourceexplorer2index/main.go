@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
-		reflect.TypeOf((*Resourceexplorer2Index)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2Index](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2Index{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig",
-		reflect.TypeOf((*Resourceexplorer2IndexConfig)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2IndexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts",
-		reflect.TypeOf((*Resourceexplorer2IndexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2IndexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference",
-		reflect.TypeOf((*Resourceexplorer2IndexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Resourceexplorer2IndexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Resourceexplorer2IndexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcrPullThroughCacheRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcrPullThroughCacheRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEcrPullThroughCacheRule_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateEcrPullThroughCacheRule_IsConstructParameters(x interface{}) error {
+func validateEcrPullThroughCacheRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEcrPullThroughCacheRule_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateEcrPullThroughCacheRule_IsTerraformElementParameters(x interface{}) error {
+func validateEcrPullThroughCacheRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEcrPullThroughCacheRule_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateEcrPullThroughCacheRule_IsTerraformResourceParameters(x interface{}) error {
+func validateEcrPullThroughCacheRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEcrPullThroughCacheRule_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewEcrPullThroughCacheRuleParameters(scope constructs.Construct, id
 
 	return nil
 }
-

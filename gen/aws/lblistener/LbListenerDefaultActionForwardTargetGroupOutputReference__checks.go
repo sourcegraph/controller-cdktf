@@ -106,7 +106,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLbListenerDefaultActionForwardTargetGroupOutputReferenceParamete
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetAct
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewQuicksightDataSourcePermissionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

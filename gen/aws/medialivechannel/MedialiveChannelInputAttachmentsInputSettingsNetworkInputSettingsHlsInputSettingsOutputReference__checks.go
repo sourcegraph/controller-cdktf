@@ -114,7 +114,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsNetworkInputSett
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMedialiveChannelInputAttachmentsInputSettingsNetworkInputSetting
 
 	return nil
 }
-

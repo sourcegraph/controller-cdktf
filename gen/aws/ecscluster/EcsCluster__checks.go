@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcsCluster) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_EcsCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcsCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcsCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcsCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_EcsCluster) validatePutConfigurationParameters(value *EcsClus
 	return nil
 }
 
-func (e *jsiiProxy_EcsCluster) validatePutDefaultCapacityProviderStrategyParameters(value interface{}) error {
+func (e *jsiiProxy_EcsCluster) validatePutDefaultCapacityProviderStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (e *jsiiProxy_EcsCluster) validatePutServiceConnectDefaultsParameters(value
 	return nil
 }
 
-func (e *jsiiProxy_EcsCluster) validatePutSettingParameters(value interface{}) error {
+func (e *jsiiProxy_EcsCluster) validatePutSettingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateEcsCluster_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEcsCluster_IsConstructParameters(x interface{}) error {
+func validateEcsCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateEcsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsCluster_IsTerraformElementParameters(x interface{}) error {
+func validateEcsCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateEcsCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateEcsCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func (j *jsiiProxy_EcsCluster) validateSetCapacityProvidersParameters(val *[]*st
 	return nil
 }
 
-func (j *jsiiProxy_EcsCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcsCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_EcsCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcsCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_EcsCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EcsCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcsCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -530,4 +530,3 @@ func validateNewEcsClusterParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

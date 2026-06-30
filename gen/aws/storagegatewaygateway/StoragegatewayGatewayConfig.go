@@ -6,9 +6,9 @@ import (
 
 type StoragegatewayGatewayConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StoragegatewayGatewayConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#gateway_name StoragegatewayGateway#gateway_name}.
 	GatewayName *string `field:"required" json:"gatewayName" yaml:"gatewayName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#gateway_timezone StoragegatewayGateway#gateway_timezone}.
@@ -53,7 +53,7 @@ type StoragegatewayGatewayConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#smb_active_directory_settings StoragegatewayGateway#smb_active_directory_settings}
 	SmbActiveDirectorySettings *StoragegatewayGatewaySmbActiveDirectorySettings `field:"optional" json:"smbActiveDirectorySettings" yaml:"smbActiveDirectorySettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#smb_file_share_visibility StoragegatewayGateway#smb_file_share_visibility}.
-	SmbFileShareVisibility interface{} `field:"optional" json:"smbFileShareVisibility" yaml:"smbFileShareVisibility"`
+	SmbFileShareVisibility any `field:"optional" json:"smbFileShareVisibility" yaml:"smbFileShareVisibility"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#smb_guest_password StoragegatewayGateway#smb_guest_password}.
 	SmbGuestPassword *string `field:"optional" json:"smbGuestPassword" yaml:"smbGuestPassword"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#smb_security_strategy StoragegatewayGateway#smb_security_strategy}.
@@ -69,4 +69,3 @@ type StoragegatewayGatewayConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway#timeouts StoragegatewayGateway#timeouts}
 	Timeouts *StoragegatewayGatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

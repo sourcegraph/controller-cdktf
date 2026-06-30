@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewOpsworksApplicationAppSourceOutputReferenceParameters(terraformR
 
 	return nil
 }
-

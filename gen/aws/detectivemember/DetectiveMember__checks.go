@@ -19,7 +19,7 @@ func (d *jsiiProxy_DetectiveMember) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (d *jsiiProxy_DetectiveMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DetectiveMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DetectiveMember) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (d *jsiiProxy_DetectiveMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DetectiveMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDetectiveMember_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateDetectiveMember_IsConstructParameters(x interface{}) error {
+func validateDetectiveMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDetectiveMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDetectiveMember_IsTerraformElementParameters(x interface{}) error {
+func validateDetectiveMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDetectiveMember_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDetectiveMember_IsTerraformResourceParameters(x interface{}) error {
+func validateDetectiveMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DetectiveMember) validateSetAccountIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DetectiveMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DetectiveMember) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DetectiveMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DetectiveMember) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveMember) validateSetDisableEmailNotificationParameters(val interface{}) error {
+func (j *jsiiProxy_DetectiveMember) validateSetDisableEmailNotificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DetectiveMember) validateSetMessageParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DetectiveMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DetectiveMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewDetectiveMemberParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

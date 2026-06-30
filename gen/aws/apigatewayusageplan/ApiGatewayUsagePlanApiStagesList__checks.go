@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApiGatewayUsagePlanApiStagesListParameters(terraformResource cdk
 
 	return nil
 }
-

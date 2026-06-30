@@ -12,9 +12,9 @@ type AlbTargetGroupTargetFailoverOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type AlbTargetGroupTargetFailoverOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OnDeregistration() *string
 	SetOnDeregistration(val *string)
 	OnDeregistrationInput() *string
@@ -46,7 +46,7 @@ type AlbTargetGroupTargetFailoverOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type AlbTargetGroupTargetFailoverOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_AlbTargetGroupTargetFailoverOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewAlbTargetGroupTargetFailoverOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlbTargetGroupTargetFailoverOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewAlbTargetGroupTargetFailoverOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewAlbTargetGroupTargetFailoverOutputReference_Override(a AlbTargetGroupTar
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetOnDeregistration(val *string) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetOnDeregistration(val *string) {
 	if err := j.validateSetOnDeregistrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetOnDeregistrati
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetOnUnhealthy(val *string) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetOnUnhealthy(val *string) {
 	if err := j.validateSetOnUnhealthyParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetOnUnhealthy(va
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) ToString() *stri
 
 	return returns
 }
-

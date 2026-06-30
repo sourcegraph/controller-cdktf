@@ -15,15 +15,15 @@ type CognitoIdentityPoolRolesAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,29 +53,29 @@ type CognitoIdentityPoolRolesAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleMapping() CognitoIdentityPoolRolesAttachmentRoleMappingList
-	RoleMappingInput() interface{}
+	RoleMappingInput() any
 	Roles() *map[string]*string
 	SetRoles(val *map[string]*string)
 	RolesInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type CognitoIdentityPoolRolesAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,30 +105,30 @@ type CognitoIdentityPoolRolesAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRoleMapping(value interface{})
+	PutRoleMapping(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleMapping()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CognitoIdentityPoolRolesAttachment
@@ -146,8 +146,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) RoleMapping() CognitoIden
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) RoleMappingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) RoleMappingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"roleMappingInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment} Resource.
 func NewCognitoIdentityPoolRolesAttachment(scope constructs.Construct, id *string, config *CognitoIdentityPoolRolesAttachmentConfig) CognitoIdentityPoolRolesAttachment {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewCognitoIdentityPoolRolesAttachment(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewCognitoIdentityPoolRolesAttachment_Override(c CognitoIdentityPoolRolesAt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetId(val *string) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetIdentityPoolId(val *string) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetIdentityPoolId(val *string) {
 	if err := j.validateSetIdentityPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetIdentityPoolId(val *str
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment)SetRoles(val *map[string]*string) {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) SetRoles(val *map[string]*string) {
 	if err := j.validateSetRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func CognitoIdentityPoolRolesAttachment_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func CognitoIdentityPoolRolesAttachment_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CognitoIdentityPoolRolesAttachment_IsConstruct(x interface{}) *bool {
+func CognitoIdentityPoolRolesAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPoolRolesAttachment_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func CognitoIdentityPoolRolesAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func CognitoIdentityPoolRolesAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoIdentityPoolRolesAttachment_IsTerraformElement(x interface{}) *bool {
+func CognitoIdentityPoolRolesAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPoolRolesAttachment_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func CognitoIdentityPoolRolesAttachment_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func CognitoIdentityPoolRolesAttachment_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func CognitoIdentityPoolRolesAttachment_IsTerraformResource(x interface{}) *bool {
+func CognitoIdentityPoolRolesAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPoolRolesAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func CognitoIdentityPoolRolesAttachment_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -796,7 +795,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) InterpolationForAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) PutRoleMapping(value interface{}) {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) PutRoleMapping(value any) {
 	if err := c.validatePutRoleMappingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRoleMapping",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ResetRoleMapping() {
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -908,8 +907,8 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeAttributes() *m
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -921,8 +920,8 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) SynthesizeHclAttributes()
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -934,8 +933,8 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToHclTerraform() interfac
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,4 +971,3 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) ToTerraform() interface{}
 
 	return returns
 }
-

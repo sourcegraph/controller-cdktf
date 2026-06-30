@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppstreamImageBuilderVpcConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

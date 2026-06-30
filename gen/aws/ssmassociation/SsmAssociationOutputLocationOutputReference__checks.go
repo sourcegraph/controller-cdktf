@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmAssociationOutputLocationOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_SsmAssociationOutputLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmAssociationOutputLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSsmAssociationOutputLocationOutputReferenceParameters(terraformR
 
 	return nil
 }
-

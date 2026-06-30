@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerDomain) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerDomain) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateSagemakerDomain_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateSagemakerDomain_IsConstructParameters(x interface{}) error {
+func validateSagemakerDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateSagemakerDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSagemakerDomain_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateSagemakerDomain_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSagemakerDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func (j *jsiiProxy_SagemakerDomain) validateSetAuthModeParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_SagemakerDomain) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -434,7 +434,7 @@ func (j *jsiiProxy_SagemakerDomain) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -530,4 +530,3 @@ func validateNewSagemakerDomainParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

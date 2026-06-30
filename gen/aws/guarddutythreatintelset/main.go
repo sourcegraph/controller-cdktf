@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
-		reflect.TypeOf((*GuarddutyThreatintelset)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyThreatintelset](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activate", GoGetter: "Activate"},
 			_jsii_.MemberProperty{JsiiProperty: "activateInput", GoGetter: "ActivateInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyThreatintelset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelsetConfig",
-		reflect.TypeOf((*GuarddutyThreatintelsetConfig)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyThreatintelsetConfig](),
 	)
 }

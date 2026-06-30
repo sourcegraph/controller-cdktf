@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerLinkBandwidthOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerLinkBandwidthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerLinkBandwidthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsNetworkmanagerLinkBandwidthOutputReferenceParameters(terr
 
 	return nil
 }
-

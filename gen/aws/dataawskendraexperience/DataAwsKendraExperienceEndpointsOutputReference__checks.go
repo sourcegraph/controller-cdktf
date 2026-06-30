@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKendraExperienceEndpointsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraExperienceEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraExperienceEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKendraExperienceEndpointsOutputReferenceParameters(terraf
 
 	return nil
 }
-

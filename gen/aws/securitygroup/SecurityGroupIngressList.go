@@ -17,8 +17,8 @@ type SecurityGroupIngressList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SecurityGroupIngressList interface {
 	Get(index *float64) SecurityGroupIngressOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SecurityGroupIngressList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityGroupIngressList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityGroupIngressList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SecurityGroupIngressList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewSecurityGroupIngressList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityGroupIngressList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSecurityGroupIngressList(terraformResource cdktf.IInterpolatingParent, t
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityGroup.SecurityGroupIngressList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSecurityGroupIngressList_Override(s SecurityGroupIngressList, terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityGroup.SecurityGroupIngressList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityGroupIngressList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityGroupIngressList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SecurityGroupIngressList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityGroupIngressList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityGroupIngressList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SecurityGroupIngressList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityGroupIngressList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityGroupIngressList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SecurityGroupIngressList)SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_SecurityGroupIngressList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SecurityGroupIngressList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SecurityGroupIngressList) AllWithMapKey(mapKeyAttributeName *
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SecurityGroupIngressList) Get(index *float64) SecurityGroupIn
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityGroupIngressList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityGroupIngressList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SecurityGroupIngressList) ToString() *string {
 
 	return returns
 }
-

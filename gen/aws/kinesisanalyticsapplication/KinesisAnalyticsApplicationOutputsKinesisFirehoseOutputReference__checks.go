@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference
 
 	return nil
 }
-

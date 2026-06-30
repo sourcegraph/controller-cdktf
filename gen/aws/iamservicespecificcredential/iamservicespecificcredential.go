@@ -15,15 +15,15 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,11 +50,11 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
@@ -67,7 +67,7 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserName() *string
@@ -77,9 +77,9 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type IamServiceSpecificCredential interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamServiceSpecificCredential
@@ -149,8 +149,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamServiceSpecificCredential) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_IamServiceSpecificCredential) UserNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
 func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, config *IamServiceSpecificCredentialConfig) IamServiceSpecificCredential {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewIamServiceSpecificCredential_Override(i IamServiceSpecificCredential, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetCount(val interface{}) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetId(val *string) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetServiceName(val *string) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetServiceName(val *string) {
 	if err := j.validateSetServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetServiceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetStatus(val *string) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetUserName(val *string) {
+func (j *jsiiProxy_IamServiceSpecificCredential) SetUserName(val *string) {
 	if err := j.validateSetUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func IamServiceSpecificCredential_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func IamServiceSpecificCredential_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamServiceSpecificCredential_IsConstruct(x interface{}) *bool {
+func IamServiceSpecificCredential_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamServiceSpecificCredential_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func IamServiceSpecificCredential_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func IamServiceSpecificCredential_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamServiceSpecificCredential_IsTerraformElement(x interface{}) *bool {
+func IamServiceSpecificCredential_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamServiceSpecificCredential_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func IamServiceSpecificCredential_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func IamServiceSpecificCredential_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamServiceSpecificCredential_IsTerraformResource(x interface{}) *bool {
+func IamServiceSpecificCredential_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamServiceSpecificCredential_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func IamServiceSpecificCredential_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (i *jsiiProxy_IamServiceSpecificCredential) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamServiceSpecificCredential) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamServiceSpecificCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (i *jsiiProxy_IamServiceSpecificCredential) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -840,7 +839,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (i *jsiiProxy_IamServiceSpecificCredential) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamServiceSpecificCredential) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (i *jsiiProxy_IamServiceSpecificCredential) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -928,8 +927,8 @@ func (i *jsiiProxy_IamServiceSpecificCredential) ResetStatus() {
 	)
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -941,8 +940,8 @@ func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -954,8 +953,8 @@ func (i *jsiiProxy_IamServiceSpecificCredential) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -967,8 +966,8 @@ func (i *jsiiProxy_IamServiceSpecificCredential) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -993,8 +992,8 @@ func (i *jsiiProxy_IamServiceSpecificCredential) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamServiceSpecificCredential) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamServiceSpecificCredential) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1005,4 +1004,3 @@ func (i *jsiiProxy_IamServiceSpecificCredential) ToTerraform() interface{} {
 
 	return returns
 }
-

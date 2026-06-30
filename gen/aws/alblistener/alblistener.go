@@ -22,17 +22,17 @@ type AlbListener interface {
 	SetCertificateArn(val *string)
 	CertificateArnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultAction() AlbListenerDefaultActionList
-	DefaultActionInput() interface{}
+	DefaultActionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,11 +68,11 @@ type AlbListener interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SslPolicy() *string
 	SetSslPolicy(val *string)
 	SslPolicyInput() *string
@@ -85,18 +85,18 @@ type AlbListener interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AlbListenerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type AlbListener interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,14 +126,14 @@ type AlbListener interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDefaultAction(value interface{})
+	PutDefaultAction(value any)
 	PutTimeouts(value *AlbListenerTimeouts)
 	ResetAlpnPolicy()
 	ResetCertificateArn()
@@ -147,17 +147,17 @@ type AlbListener interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlbListener
@@ -225,8 +225,8 @@ func (j *jsiiProxy_AlbListener) CertificateArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListener) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_AlbListener) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlbListener) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_AlbListener) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListener) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_AlbListener) DefaultAction() AlbListenerDefaultActionList {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) DefaultActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListener) DefaultActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultActionInput",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_AlbListener) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlbListener) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_AlbListener) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListener) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_AlbListener) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlbListener) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_AlbListener) Timeouts() AlbListenerTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListener) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerConfig) AlbListener {
@@ -567,7 +566,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListener.AlbListener",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListener.AlbListener",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetAlpnPolicy(val *string) {
+func (j *jsiiProxy_AlbListener) SetAlpnPolicy(val *string) {
 	if err := j.validateSetAlpnPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_AlbListener)SetAlpnPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetCertificateArn(val *string) {
+func (j *jsiiProxy_AlbListener) SetCertificateArn(val *string) {
 	if err := j.validateSetCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_AlbListener)SetCertificateArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlbListener) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_AlbListener)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetCount(val interface{}) {
+func (j *jsiiProxy_AlbListener) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_AlbListener)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlbListener) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_AlbListener)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlbListener) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_AlbListener)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetId(val *string) {
+func (j *jsiiProxy_AlbListener) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_AlbListener)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlbListener) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_AlbListener)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetLoadBalancerArn(val *string) {
+func (j *jsiiProxy_AlbListener) SetLoadBalancerArn(val *string) {
 	if err := j.validateSetLoadBalancerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_AlbListener)SetLoadBalancerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetPort(val *float64) {
+func (j *jsiiProxy_AlbListener) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_AlbListener)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetProtocol(val *string) {
+func (j *jsiiProxy_AlbListener) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_AlbListener)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlbListener) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_AlbListener)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlbListener) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_AlbListener)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetSslPolicy(val *string) {
+func (j *jsiiProxy_AlbListener) SetSslPolicy(val *string) {
 	if err := j.validateSetSslPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_AlbListener)SetSslPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AlbListener) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_AlbListener)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AlbListener) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func AlbListener_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListener.AlbListener",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func AlbListener_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlbListener_IsConstruct(x interface{}) *bool {
+func AlbListener_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListener_IsConstructParameters(x); err != nil {
@@ -799,7 +798,7 @@ func AlbListener_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListener.AlbListener",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func AlbListener_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlbListener_IsTerraformElement(x interface{}) *bool {
+func AlbListener_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListener_IsTerraformElementParameters(x); err != nil {
@@ -818,7 +817,7 @@ func AlbListener_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListener.AlbListener",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func AlbListener_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlbListener_IsTerraformResource(x interface{}) *bool {
+func AlbListener_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlbListener_IsTerraformResourceParameters(x); err != nil {
@@ -837,7 +836,7 @@ func AlbListener_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.albListener.AlbListener",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -862,31 +861,31 @@ func (a *jsiiProxy_AlbListener) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlbListener) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlbListener) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlbListener) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbListener) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (a *jsiiProxy_AlbListener) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (a *jsiiProxy_AlbListener) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (a *jsiiProxy_AlbListener) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (a *jsiiProxy_AlbListener) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (a *jsiiProxy_AlbListener) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (a *jsiiProxy_AlbListener) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (a *jsiiProxy_AlbListener) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,15 +1013,15 @@ func (a *jsiiProxy_AlbListener) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlbListener) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListener) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1041,7 +1040,7 @@ func (a *jsiiProxy_AlbListener) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (a *jsiiProxy_AlbListener) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,18 +1067,18 @@ func (a *jsiiProxy_AlbListener) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlbListener) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlbListener) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (a *jsiiProxy_AlbListener) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1101,18 +1100,18 @@ func (a *jsiiProxy_AlbListener) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AlbListener) PutDefaultAction(value interface{}) {
+func (a *jsiiProxy_AlbListener) PutDefaultAction(value any) {
 	if err := a.validatePutDefaultActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putDefaultAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (a *jsiiProxy_AlbListener) PutTimeouts(value *AlbListenerTimeouts) {
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (a *jsiiProxy_AlbListener) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AlbListener) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlbListener) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1220,8 +1219,8 @@ func (a *jsiiProxy_AlbListener) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListener) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlbListener) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1233,8 +1232,8 @@ func (a *jsiiProxy_AlbListener) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_AlbListener) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListener) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1246,8 +1245,8 @@ func (a *jsiiProxy_AlbListener) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListener) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListener) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1272,8 +1271,8 @@ func (a *jsiiProxy_AlbListener) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListener) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlbListener) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1284,4 +1283,3 @@ func (a *jsiiProxy_AlbListener) ToTerraform() interface{} {
 
 	return returns
 }
-

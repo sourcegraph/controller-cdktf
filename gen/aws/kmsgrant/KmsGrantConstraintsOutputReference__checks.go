@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_KmsGrantConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsGrantConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KmsGrantConstraintsOutputReference) validateSetEncryptionCont
 	return nil
 }
 
-func (j *jsiiProxy_KmsGrantConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsGrantConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKmsGrantConstraintsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

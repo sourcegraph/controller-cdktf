@@ -1,6 +1,5 @@
 package launchtemplate
 
-
 type LaunchTemplateInstanceRequirements struct {
 	// memory_mib block.
 	//
@@ -53,7 +52,7 @@ type LaunchTemplateInstanceRequirements struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}.
 	OnDemandMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"onDemandMaxPricePercentageOverLowestPrice" yaml:"onDemandMaxPricePercentageOverLowestPrice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}.
-	RequireHibernateSupport interface{} `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
+	RequireHibernateSupport any `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}.
 	SpotMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"spotMaxPricePercentageOverLowestPrice" yaml:"spotMaxPricePercentageOverLowestPrice"`
 	// total_local_storage_gb block.
@@ -61,4 +60,3 @@ type LaunchTemplateInstanceRequirements struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_template#total_local_storage_gb LaunchTemplate#total_local_storage_gb}
 	TotalLocalStorageGb *LaunchTemplateInstanceRequirementsTotalLocalStorageGb `field:"optional" json:"totalLocalStorageGb" yaml:"totalLocalStorageGb"`
 }
-

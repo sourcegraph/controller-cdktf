@@ -90,7 +90,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateIn
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validatePutEc2TagFilterParameters(value interface{}) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validatePutEc2TagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewCodedeployDeploymentGroupEc2TagSetOutputReferenceParameters(terr
 
 	return nil
 }
-

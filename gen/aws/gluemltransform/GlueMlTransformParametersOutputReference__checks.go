@@ -109,7 +109,7 @@ func (g *jsiiProxy_GlueMlTransformParametersOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GlueMlTransformParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueMlTransformParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGlueMlTransformParametersOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

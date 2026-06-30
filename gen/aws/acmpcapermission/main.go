@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
-		reflect.TypeOf((*AcmpcaPermission)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaPermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaPermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermissionConfig",
-		reflect.TypeOf((*AcmpcaPermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaPermissionConfig](),
 	)
 }

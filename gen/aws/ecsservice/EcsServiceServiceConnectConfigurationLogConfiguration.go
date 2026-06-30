@@ -1,6 +1,5 @@
 package ecsservice
 
-
 type EcsServiceServiceConnectConfigurationLogConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#log_driver EcsService#log_driver}.
 	LogDriver *string `field:"optional" json:"logDriver" yaml:"logDriver"`
@@ -9,6 +8,5 @@ type EcsServiceServiceConnectConfigurationLogConfiguration struct {
 	// secret_option block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
-	SecretOption interface{} `field:"optional" json:"secretOption" yaml:"secretOption"`
+	SecretOption any `field:"optional" json:"secretOption" yaml:"secretOption"`
 }
-

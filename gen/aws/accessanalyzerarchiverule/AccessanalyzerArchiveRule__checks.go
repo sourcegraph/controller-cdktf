@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRule) validatePutFilterParameters(value interface{}) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateAccessanalyzerArchiveRule_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateAccessanalyzerArchiveRule_IsConstructParameters(x interface{}) error {
+func validateAccessanalyzerArchiveRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateAccessanalyzerArchiveRule_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateAccessanalyzerArchiveRule_IsTerraformElementParameters(x interface{}) error {
+func validateAccessanalyzerArchiveRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateAccessanalyzerArchiveRule_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateAccessanalyzerArchiveRule_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessanalyzerArchiveRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetAnalyzerNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewAccessanalyzerArchiveRuleParameters(scope constructs.Construct, 
 
 	return nil
 }
-

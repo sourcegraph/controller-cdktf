@@ -18,11 +18,11 @@ type DataAwsCurReportDefinition interface {
 	CdktfStack() cdktf.TerraformStack
 	Compression() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,7 +50,7 @@ type DataAwsCurReportDefinition interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RefreshClosedReports() cdktf.IResolvable
 	ReportName() *string
 	SetReportName(val *string)
@@ -62,14 +62,14 @@ type DataAwsCurReportDefinition interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimeUnit() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataAwsCurReportDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCurReportDefinition
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) Compression() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCurReportDefinition) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCurReportDefinition) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCurReportDefinition) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCurReportDefinition) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -394,7 +394,6 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) TimeUnit() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source.
 func NewDataAwsCurReportDefinition(scope constructs.Construct, id *string, config *DataAwsCurReportDefinitionConfig) DataAwsCurReportDefinition {
 	_init_.Initialize()
@@ -406,7 +405,7 @@ func NewDataAwsCurReportDefinition(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -419,12 +418,12 @@ func NewDataAwsCurReportDefinition_Override(d DataAwsCurReportDefinition, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsCurReportDefinition)SetReportName(val *string) {
+func (j *jsiiProxy_DataAwsCurReportDefinition) SetReportName(val *string) {
 	if err := j.validateSetReportNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func DataAwsCurReportDefinition_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func DataAwsCurReportDefinition_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool {
+func DataAwsCurReportDefinition_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCurReportDefinition_IsConstructParameters(x); err != nil {
@@ -539,7 +538,7 @@ func DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCurReportDefinition_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCurReportDefinition_IsTerraformDataSourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCurReportDefinition_IsTerraformElement(x interface{}) *bool {
+func DataAwsCurReportDefinition_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCurReportDefinition_IsTerraformElementParameters(x); err != nil {
@@ -577,7 +576,7 @@ func DataAwsCurReportDefinition_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,27 +594,27 @@ func DataAwsCurReportDefinition_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCurReportDefinition) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCurReportDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCurReportDefinition) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCurReportDefinition) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCurReportDefinition) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCurReportDefinition) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -870,4 +869,3 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) ToTerraform() interface{} {
 
 	return returns
 }
-

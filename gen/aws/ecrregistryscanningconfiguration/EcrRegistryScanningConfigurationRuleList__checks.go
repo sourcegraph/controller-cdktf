@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcrRegistryScanningConfigurationRuleListParameters(terraformReso
 
 	return nil
 }
-

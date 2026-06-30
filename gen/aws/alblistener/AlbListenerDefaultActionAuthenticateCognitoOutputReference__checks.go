@@ -106,7 +106,7 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewAlbListenerDefaultActionAuthenticateCognitoOutputReferenceParame
 
 	return nil
 }
-

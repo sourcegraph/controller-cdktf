@@ -98,7 +98,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorSkewedInfoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorSkewedInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorSkewedInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGluePartitionStorageDescriptorSkewedInfoOutputReferenceParameter
 
 	return nil
 }
-

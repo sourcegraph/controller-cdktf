@@ -18,15 +18,15 @@ type LambdaLayerVersionPermission interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,11 +63,11 @@ type LambdaLayerVersionPermission interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RevisionId() *string
 	StatementId() *string
 	SetStatementId(val *string)
@@ -75,7 +75,7 @@ type LambdaLayerVersionPermission interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionNumber() *float64
@@ -85,9 +85,9 @@ type LambdaLayerVersionPermission interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type LambdaLayerVersionPermission interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type LambdaLayerVersionPermission interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type LambdaLayerVersionPermission interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LambdaLayerVersionPermission
@@ -177,8 +177,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaLayerVersionPermission) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -467,7 +467,6 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) VersionNumberInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission} Resource.
 func NewLambdaLayerVersionPermission(scope constructs.Construct, id *string, config *LambdaLayerVersionPermissionConfig) LambdaLayerVersionPermission {
 	_init_.Initialize()
@@ -479,7 +478,7 @@ func NewLambdaLayerVersionPermission(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -492,12 +491,12 @@ func NewLambdaLayerVersionPermission_Override(l LambdaLayerVersionPermission, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetAction(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetConnection(val interface{}) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetCount(val interface{}) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -546,7 +545,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetId(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetLayerName(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetLayerName(val *string) {
 	if err := j.validateSetLayerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetLayerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetOrganizationId(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetOrganizationId(val *string) {
 	if err := j.validateSetOrganizationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetOrganizationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetPrincipal(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetPrincipal(val *string) {
 	if err := j.validateSetPrincipalParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetPrincipal(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetStatementId(val *string) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetStatementId(val *string) {
 	if err := j.validateSetStatementIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_LambdaLayerVersionPermission)SetStatementId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersionPermission)SetVersionNumber(val *float64) {
+func (j *jsiiProxy_LambdaLayerVersionPermission) SetVersionNumber(val *float64) {
 	if err := j.validateSetVersionNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func LambdaLayerVersionPermission_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func LambdaLayerVersionPermission_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LambdaLayerVersionPermission_IsConstruct(x interface{}) *bool {
+func LambdaLayerVersionPermission_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersionPermission_IsConstructParameters(x); err != nil {
@@ -689,7 +688,7 @@ func LambdaLayerVersionPermission_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func LambdaLayerVersionPermission_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaLayerVersionPermission_IsTerraformElement(x interface{}) *bool {
+func LambdaLayerVersionPermission_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersionPermission_IsTerraformElementParameters(x); err != nil {
@@ -708,7 +707,7 @@ func LambdaLayerVersionPermission_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func LambdaLayerVersionPermission_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaLayerVersionPermission_IsTerraformResource(x interface{}) *bool {
+func LambdaLayerVersionPermission_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersionPermission_IsTerraformResourceParameters(x); err != nil {
@@ -727,7 +726,7 @@ func LambdaLayerVersionPermission_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -752,31 +751,31 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LambdaLayerVersionPermission) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaLayerVersionPermission) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,15 +903,15 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -931,7 +930,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -944,7 +943,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,18 +957,18 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LambdaLayerVersionPermission) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -980,7 +979,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -991,7 +990,7 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1019,8 +1018,8 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1032,8 +1031,8 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1045,8 +1044,8 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1058,8 +1057,8 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1084,8 +1083,8 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersionPermission) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersionPermission) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1096,4 +1095,3 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) ToTerraform() interface{} {
 
 	return returns
 }
-

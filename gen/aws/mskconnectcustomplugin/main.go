@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
-		reflect.TypeOf((*MskconnectCustomPlugin)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPlugin](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectCustomPlugin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig",
-		reflect.TypeOf((*MskconnectCustomPluginConfig)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation",
-		reflect.TypeOf((*MskconnectCustomPluginLocation)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationOutputReference",
-		reflect.TypeOf((*MskconnectCustomPluginLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectCustomPluginLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3",
-		reflect.TypeOf((*MskconnectCustomPluginLocationS3)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginLocationS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
-		reflect.TypeOf((*MskconnectCustomPluginLocationS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginLocationS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketArn", GoGetter: "BucketArn"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketArnInput", GoGetter: "BucketArnInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectCustomPluginLocationS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts",
-		reflect.TypeOf((*MskconnectCustomPluginTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
-		reflect.TypeOf((*MskconnectCustomPluginTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectCustomPluginTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

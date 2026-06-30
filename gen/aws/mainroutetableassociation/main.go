@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
-		reflect.TypeOf((*MainRouteTableAssociation)(nil)).Elem(),
+		reflect.TypeFor[MainRouteTableAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MainRouteTableAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig",
-		reflect.TypeOf((*MainRouteTableAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[MainRouteTableAssociationConfig](),
 	)
 }

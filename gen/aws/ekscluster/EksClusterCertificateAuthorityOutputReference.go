@@ -12,9 +12,9 @@ type EksClusterCertificateAuthorityOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type EksClusterCertificateAuthorityOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type EksClusterCertificateAuthorityOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_EksClusterCertificateAuthorityOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewEksClusterCertificateAuthorityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EksClusterCertificateAuthorityOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewEksClusterCertificateAuthorityOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewEksClusterCertificateAuthorityOutputReference_Override(e EksClusterCerti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetInternalValue(val *EksClusterCertificateAuthority) {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) SetInternalValue(val *EksClusterCertificateAuthority) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksClusterCertificateAuthorityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) InterpolationF
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityOutputReference) ToString() *st
 
 	return returns
 }
-

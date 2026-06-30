@@ -12,9 +12,9 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxHeight() *string
 	SetMaxHeight(val *string)
 	MaxHeightInput() *string
@@ -70,7 +70,7 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	ResetVerticalOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ type jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) IdInpu
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Vertic
 	return returns
 }
 
-
 func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastictranscoderPresetVideoWatermarksOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference_Override(e Elastic
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetHorizontalAlign(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetHorizontalAlign(val *string) {
 	if err := j.validateSetHorizontalAlignParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetHori
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetHorizontalOffset(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetHorizontalOffset(val *string) {
 	if err := j.validateSetHorizontalOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetHori
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetId(v
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetMaxHeight(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetMaxHeight(val *string) {
 	if err := j.validateSetMaxHeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetMaxH
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetMaxWidth(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetMaxWidth(val *string) {
 	if err := j.validateSetMaxWidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetMaxW
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetOpacity(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetOpacity(val *string) {
 	if err := j.validateSetOpacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetOpac
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetSizingPolicy(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetSizingPolicy(val *string) {
 	if err := j.validateSetSizingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetSizi
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTarget(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTarg
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetVerticalAlign(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetVerticalAlign(val *string) {
 	if err := j.validateSetVerticalAlignParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetVert
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetVerticalOffset(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) SetVerticalOffset(val *string) {
 	if err := j.validateSetVerticalOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,16 +591,16 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Comput
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetLis
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Interp
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -845,16 +844,16 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ResetV
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ToStri
 
 	return returns
 }
-

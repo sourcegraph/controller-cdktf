@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
-		reflect.TypeOf((*SecurityGroupRule)(nil)).Elem(),
+		reflect.TypeFor[SecurityGroupRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityGroupRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleConfig",
-		reflect.TypeOf((*SecurityGroupRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[SecurityGroupRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts",
-		reflect.TypeOf((*SecurityGroupRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SecurityGroupRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
-		reflect.TypeOf((*SecurityGroupRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecurityGroupRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecurityGroupRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

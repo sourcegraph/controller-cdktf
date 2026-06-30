@@ -17,8 +17,8 @@ type QuicksightDataSourcePermissionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type QuicksightDataSourcePermissionList interface {
 	Get(index *float64) QuicksightDataSourcePermissionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewQuicksightDataSourcePermissionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSourcePermissionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewQuicksightDataSourcePermissionList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewQuicksightDataSourcePermissionList_Override(q QuicksightDataSourcePermis
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		q,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionList) Get(index *float64) Quick
 	_jsii_.Invoke(
 		q,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QuicksightDataSourcePermissionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionList) ToString() *string {
 
 	return returns
 }
-

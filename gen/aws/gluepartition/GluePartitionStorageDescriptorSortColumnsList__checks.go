@@ -34,7 +34,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorSortColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorSortColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGluePartitionStorageDescriptorSortColumnsListParameters(terrafor
 
 	return nil
 }
-

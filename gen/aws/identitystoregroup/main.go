@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
-		reflect.TypeOf((*IdentitystoreGroup)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupConfig",
-		reflect.TypeOf((*IdentitystoreGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIds",
-		reflect.TypeOf((*IdentitystoreGroupExternalIds)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreGroupExternalIds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsList",
-		reflect.TypeOf((*IdentitystoreGroupExternalIdsList)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreGroupExternalIdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreGroupExternalIdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsOutputReference",
-		reflect.TypeOf((*IdentitystoreGroupExternalIdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentitystoreGroupExternalIdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentitystoreGroupExternalIdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

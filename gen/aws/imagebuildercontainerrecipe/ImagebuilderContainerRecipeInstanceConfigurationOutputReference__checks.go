@@ -90,7 +90,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) validatePutBlockDeviceMappingParameters(value interface{}) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) validatePutBlockDeviceMappingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewImagebuilderContainerRecipeInstanceConfigurationOutputReferenceP
 
 	return nil
 }
-

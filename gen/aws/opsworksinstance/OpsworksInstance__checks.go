@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksInstance) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksInstance) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (o *jsiiProxy_OpsworksInstance) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstance) validatePutEbsBlockDeviceParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksInstance) validatePutEbsBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (o *jsiiProxy_OpsworksInstance) validatePutEbsBlockDeviceParameters(value i
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstance) validatePutEphemeralBlockDeviceParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksInstance) validatePutEphemeralBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (o *jsiiProxy_OpsworksInstance) validatePutEphemeralBlockDeviceParameters(v
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstance) validatePutRootBlockDeviceParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksInstance) validatePutRootBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateOpsworksInstance_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateOpsworksInstance_IsConstructParameters(x interface{}) error {
+func validateOpsworksInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func validateOpsworksInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksInstance_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func validateOpsworksInstance_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateOpsworksInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetAvailabilityZoneParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -421,7 +421,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -486,7 +486,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetCreatedAtParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEbsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEbsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -506,7 +506,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEbsParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEipParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEipParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -526,7 +526,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetDeleteEipParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetEbsOptimizedParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetEbsOptimizedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -586,7 +586,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetInfrastructureClassParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -646,7 +646,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetOsParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -782,4 +782,3 @@ func validateNewOpsworksInstanceParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

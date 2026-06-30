@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQuicksightDataSourceParametersAwsIotAnalyticsOutputReferencePara
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
-		reflect.TypeOf((*GlueDevEndpoint)(nil)).Elem(),
+		reflect.TypeFor[GlueDevEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yarnEndpointAddress", GoGetter: "YarnEndpointAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "zeppelinRemoteSparkInterpreterPort", GoGetter: "ZeppelinRemoteSparkInterpreterPort"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueDevEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -119,6 +119,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpointConfig",
-		reflect.TypeOf((*GlueDevEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueDevEndpointConfig](),
 	)
 }

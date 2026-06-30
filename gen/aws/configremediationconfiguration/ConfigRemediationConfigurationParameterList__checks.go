@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationParameterList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfigurationParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfigurationParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewConfigRemediationConfigurationParameterListParameters(terraformR
 
 	return nil
 }
-

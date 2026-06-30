@@ -34,7 +34,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRoute53ResolverRuleTargetIpListParameters(terraformResource cdkt
 
 	return nil
 }
-

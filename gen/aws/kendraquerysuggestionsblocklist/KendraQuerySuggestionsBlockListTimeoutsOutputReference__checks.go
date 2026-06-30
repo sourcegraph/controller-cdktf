@@ -98,7 +98,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKendraQuerySuggestionsBlockListTimeoutsOutputReferenceParameters
 
 	return nil
 }
-

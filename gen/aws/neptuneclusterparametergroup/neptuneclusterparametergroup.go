@@ -16,15 +16,15 @@ type NeptuneClusterParameterGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,17 +59,17 @@ type NeptuneClusterParameterGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameter() NeptuneClusterParameterGroupParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -79,16 +79,16 @@ type NeptuneClusterParameterGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type NeptuneClusterParameterGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,14 +118,14 @@ type NeptuneClusterParameterGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetDescription()
 	ResetId()
 	ResetName()
@@ -136,17 +136,17 @@ type NeptuneClusterParameterGroup interface {
 	ResetParameter()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NeptuneClusterParameterGroup
@@ -174,8 +174,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) Parameter() NeptuneClusterParam
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -484,7 +484,6 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup {
 	_init_.Initialize()
@@ -496,7 +495,7 @@ func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -509,12 +508,12 @@ func NewNeptuneClusterParameterGroup_Override(n NeptuneClusterParameterGroup, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetDescription(val *string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetFamily(val *string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetFamily(val *string) {
 	if err := j.validateSetFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetId(val *string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetName(val *string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetNamePrefix(val *string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -626,7 +625,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneClusterParameterGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func NeptuneClusterParameterGroup_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func NeptuneClusterParameterGroup_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool {
+func NeptuneClusterParameterGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneClusterParameterGroup_IsConstructParameters(x); err != nil {
@@ -706,7 +705,7 @@ func NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
+func NeptuneClusterParameterGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneClusterParameterGroup_IsTerraformElementParameters(x); err != nil {
@@ -725,7 +724,7 @@ func NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
+func NeptuneClusterParameterGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneClusterParameterGroup_IsTerraformResourceParameters(x); err != nil {
@@ -744,7 +743,7 @@ func NeptuneClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,31 +768,31 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NeptuneClusterParameterGroup) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NeptuneClusterParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,15 +920,15 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -948,7 +947,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -961,7 +960,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,18 +974,18 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NeptuneClusterParameterGroup) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -997,7 +996,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1008,18 +1007,18 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) PutParameter(value interface{}) {
+func (n *jsiiProxy_NeptuneClusterParameterGroup) PutParameter(value any) {
 	if err := n.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,8 +1086,8 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ResetTagsAll() {
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1100,8 +1099,8 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1113,8 +1112,8 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1126,8 +1125,8 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1152,8 +1151,8 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterParameterGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneClusterParameterGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1164,4 +1163,3 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type EksCluster interface {
 	CertificateAuthority() EksClusterCertificateAuthorityList
 	ClusterId() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -69,11 +69,11 @@ type EksCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -87,11 +87,11 @@ type EksCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EksClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -101,9 +101,9 @@ type EksCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type EksCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type EksCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,17 +157,17 @@ type EksCluster interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EksCluster
@@ -215,8 +215,8 @@ func (j *jsiiProxy_EksCluster) ClusterId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_EksCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_EksCluster) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_EksCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EksCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_EksCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_EksCluster) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_EksCluster) Timeouts() EksClusterTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_EksCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -655,7 +655,6 @@ func (j *jsiiProxy_EksCluster) VpcConfigInput() *EksClusterVpcConfig {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
@@ -667,7 +666,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -680,12 +679,12 @@ func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_EksCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_EksCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_EksCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_EksCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EksCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -715,7 +714,7 @@ func (j *jsiiProxy_EksCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetEnabledClusterLogTypes(val *[]*string) {
+func (j *jsiiProxy_EksCluster) SetEnabledClusterLogTypes(val *[]*string) {
 	if err := j.validateSetEnabledClusterLogTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_EksCluster)SetEnabledClusterLogTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EksCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -734,7 +733,7 @@ func (j *jsiiProxy_EksCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetId(val *string) {
+func (j *jsiiProxy_EksCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_EksCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EksCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_EksCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetName(val *string) {
+func (j *jsiiProxy_EksCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_EksCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EksCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_EksCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EksCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_EksCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetRoleArn(val *string) {
+func (j *jsiiProxy_EksCluster) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_EksCluster)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EksCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_EksCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EksCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_EksCluster)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksCluster)SetVersion(val *string) {
+func (j *jsiiProxy_EksCluster) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func EksCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func EksCluster_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EksCluster_IsConstruct(x interface{}) *bool {
+func EksCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksCluster_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func EksCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func EksCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EksCluster_IsTerraformElement(x interface{}) *bool {
+func EksCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksCluster_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func EksCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func EksCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EksCluster_IsTerraformResource(x interface{}) *bool {
+func EksCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksCluster_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func EksCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksCluster.EksCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (e *jsiiProxy_EksCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EksCluster) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EksCluster) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EksCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (e *jsiiProxy_EksCluster) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (e *jsiiProxy_EksCluster) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (e *jsiiProxy_EksCluster) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (e *jsiiProxy_EksCluster) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (e *jsiiProxy_EksCluster) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (e *jsiiProxy_EksCluster) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (e *jsiiProxy_EksCluster) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (e *jsiiProxy_EksCluster) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EksCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1119,7 +1118,7 @@ func (e *jsiiProxy_EksCluster) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (e *jsiiProxy_EksCluster) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (e *jsiiProxy_EksCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EksCluster) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EksCluster) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (e *jsiiProxy_EksCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (e *jsiiProxy_EksCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (e *jsiiProxy_EksCluster) PutEncryptionConfig(value *EksClusterEncryptionCo
 	_jsii_.InvokeVoid(
 		e,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (e *jsiiProxy_EksCluster) PutKubernetesNetworkConfig(value *EksClusterKuber
 	_jsii_.InvokeVoid(
 		e,
 		"putKubernetesNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1212,7 +1211,7 @@ func (e *jsiiProxy_EksCluster) PutOutpostConfig(value *EksClusterOutpostConfig) 
 	_jsii_.InvokeVoid(
 		e,
 		"putOutpostConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1223,7 +1222,7 @@ func (e *jsiiProxy_EksCluster) PutTimeouts(value *EksClusterTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1234,7 +1233,7 @@ func (e *jsiiProxy_EksCluster) PutVpcConfig(value *EksClusterVpcConfig) {
 	_jsii_.InvokeVoid(
 		e,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1318,8 +1317,8 @@ func (e *jsiiProxy_EksCluster) ResetVersion() {
 	)
 }
 
-func (e *jsiiProxy_EksCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1331,8 +1330,8 @@ func (e *jsiiProxy_EksCluster) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1344,8 +1343,8 @@ func (e *jsiiProxy_EksCluster) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_EksCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1357,8 +1356,8 @@ func (e *jsiiProxy_EksCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1383,8 +1382,8 @@ func (e *jsiiProxy_EksCluster) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EksCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1395,4 +1394,3 @@ func (e *jsiiProxy_EksCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

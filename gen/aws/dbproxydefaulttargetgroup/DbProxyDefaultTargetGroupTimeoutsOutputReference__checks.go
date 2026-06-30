@@ -98,7 +98,7 @@ func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDbProxyDefaultTargetGroupTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

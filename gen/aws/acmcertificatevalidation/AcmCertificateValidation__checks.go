@@ -19,7 +19,7 @@ func (a *jsiiProxy_AcmCertificateValidation) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AcmCertificateValidation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AcmCertificateValidation) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AcmCertificateValidation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAcmCertificateValidation_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateAcmCertificateValidation_IsConstructParameters(x interface{}) error {
+func validateAcmCertificateValidation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAcmCertificateValidation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateAcmCertificateValidation_IsTerraformElementParameters(x interface{}) error {
+func validateAcmCertificateValidation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAcmCertificateValidation_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateAcmCertificateValidation_IsTerraformResourceParameters(x interface{}) error {
+func validateAcmCertificateValidation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_AcmCertificateValidation) validateSetCertificateArnParameters
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateValidation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AcmCertificateValidation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_AcmCertificateValidation) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateValidation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AcmCertificateValidation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_AcmCertificateValidation) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateValidation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AcmCertificateValidation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewAcmCertificateValidationParameters(scope constructs.Construct, i
 
 	return nil
 }
-

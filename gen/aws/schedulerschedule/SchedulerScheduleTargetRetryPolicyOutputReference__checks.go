@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSchedulerScheduleTargetRetryPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

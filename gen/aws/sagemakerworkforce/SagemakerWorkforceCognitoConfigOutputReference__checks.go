@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetCl
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerWorkforceCognitoConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

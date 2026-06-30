@@ -1,6 +1,5 @@
 package auditmanagercontrol
 
-
 type AuditmanagerControlControlMappingSources struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_control#source_name AuditmanagerControl#source_name}.
 	SourceName *string `field:"required" json:"sourceName" yaml:"sourceName"`
@@ -15,8 +14,7 @@ type AuditmanagerControlControlMappingSources struct {
 	// source_keyword block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_control#source_keyword AuditmanagerControl#source_keyword}
-	SourceKeyword interface{} `field:"optional" json:"sourceKeyword" yaml:"sourceKeyword"`
+	SourceKeyword any `field:"optional" json:"sourceKeyword" yaml:"sourceKeyword"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/auditmanager_control#troubleshooting_text AuditmanagerControl#troubleshooting_text}.
 	TroubleshootingText *string `field:"optional" json:"troubleshootingText" yaml:"troubleshootingText"`
 }
-

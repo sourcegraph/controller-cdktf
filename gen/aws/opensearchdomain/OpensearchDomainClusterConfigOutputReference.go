@@ -14,9 +14,9 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	ColdStorageOptionsInput() *OpensearchDomainClusterConfigColdStorageOptions
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	DedicatedMasterCount() *float64
 	SetDedicatedMasterCount(val *float64)
 	DedicatedMasterCountInput() *float64
-	DedicatedMasterEnabled() interface{}
-	SetDedicatedMasterEnabled(val interface{})
-	DedicatedMasterEnabledInput() interface{}
+	DedicatedMasterEnabled() any
+	SetDedicatedMasterEnabled(val any)
+	DedicatedMasterEnabledInput() any
 	DedicatedMasterType() *string
 	SetDedicatedMasterType(val *string)
 	DedicatedMasterTypeInput() *string
@@ -57,21 +57,21 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	WarmCount() *float64
 	SetWarmCount(val *float64)
 	WarmCountInput() *float64
-	WarmEnabled() interface{}
-	SetWarmEnabled(val interface{})
-	WarmEnabledInput() interface{}
+	WarmEnabled() any
+	SetWarmEnabled(val any)
+	WarmEnabledInput() any
 	WarmType() *string
 	SetWarmType(val *string)
 	WarmTypeInput() *string
 	ZoneAwarenessConfig() OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference
 	ZoneAwarenessConfigInput() *OpensearchDomainClusterConfigZoneAwarenessConfig
-	ZoneAwarenessEnabled() interface{}
-	SetZoneAwarenessEnabled(val interface{})
-	ZoneAwarenessEnabledInput() interface{}
+	ZoneAwarenessEnabled() any
+	SetZoneAwarenessEnabled(val any)
+	ZoneAwarenessEnabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	ResetZoneAwarenessEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ColdStorageOpti
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMaster
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dedicatedMasterEnabled",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMaster
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dedicatedMasterEnabledInput",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmCountInput(
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"warmEnabled",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmEnabled() i
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) WarmEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"warmEnabledInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessCo
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"zoneAwarenessEnabled",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEn
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"zoneAwarenessEnabledInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ZoneAwarenessEn
 	)
 	return returns
 }
-
 
 func NewOpensearchDomainClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainClusterConfigOutputReference {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewOpensearchDomainClusterConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewOpensearchDomainClusterConfigOutputReference_Override(o OpensearchDomain
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMasterCount(val *float64) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetDedicatedMasterCount(val *float64) {
 	if err := j.validateSetDedicatedMasterCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMast
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMasterEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetDedicatedMasterEnabled(val any) {
 	if err := j.validateSetDedicatedMasterEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMast
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMasterType(val *string) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetDedicatedMasterType(val *string) {
 	if err := j.validateSetDedicatedMasterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetDedicatedMast
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInstanceCount(val *float64) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetInstanceCount(val *float64) {
 	if err := j.validateSetInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInstanceCount
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInstanceType(
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInternalValue(val *OpensearchDomainClusterConfig) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetInternalValue(val *OpensearchDomainClusterConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmCount(val *float64) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetWarmCount(val *float64) {
 	if err := j.validateSetWarmCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmCount(val
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetWarmEnabled(val any) {
 	if err := j.validateSetWarmEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmEnabled(v
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmType(val *string) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetWarmType(val *string) {
 	if err := j.validateSetWarmTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetWarmType(val 
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetZoneAwarenessEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) SetZoneAwarenessEnabled(val any) {
 	if err := j.validateSetZoneAwarenessEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,16 +604,16 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) PutColdStorageO
 	_jsii_.InvokeVoid(
 		o,
 		"putColdStorageOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -796,7 +795,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) PutZoneAwarenes
 	_jsii_.InvokeVoid(
 		o,
 		"putZoneAwarenessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -888,16 +887,16 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetZoneAwaren
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ToString() *str
 
 	return returns
 }
-

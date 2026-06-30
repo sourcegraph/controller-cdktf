@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewAppsyncFunctionSyncConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

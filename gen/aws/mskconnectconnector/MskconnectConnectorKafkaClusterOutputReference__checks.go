@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMskconnectConnectorKafkaClusterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

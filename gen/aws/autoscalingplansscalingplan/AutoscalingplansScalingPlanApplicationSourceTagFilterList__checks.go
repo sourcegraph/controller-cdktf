@@ -34,7 +34,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) va
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAutoscalingplansScalingPlanApplicationSourceTagFilterListParamet
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlobalacceleratorListenerPortRangeListParameters(terraformResour
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type QldbStream interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type QldbStream interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -82,16 +82,16 @@ type QldbStream interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type QldbStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type QldbStream interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type QldbStream interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for QldbStream
@@ -174,8 +174,8 @@ func (j *jsiiProxy_QldbStream) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QldbStream) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_QldbStream) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QldbStream) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_QldbStream) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QldbStream) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_QldbStream) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_QldbStream) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_QldbStream) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QldbStream) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_QldbStream) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_QldbStream) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QldbStream) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_QldbStream) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamConfig) QldbStream {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewQldbStream_Override(q QldbStream, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetConnection(val interface{}) {
+func (j *jsiiProxy_QldbStream) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_QldbStream)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetCount(val interface{}) {
+func (j *jsiiProxy_QldbStream) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_QldbStream)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_QldbStream) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_QldbStream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetExclusiveEndTime(val *string) {
+func (j *jsiiProxy_QldbStream) SetExclusiveEndTime(val *string) {
 	if err := j.validateSetExclusiveEndTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_QldbStream)SetExclusiveEndTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_QldbStream) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_QldbStream)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetId(val *string) {
+func (j *jsiiProxy_QldbStream) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_QldbStream)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetInclusiveStartTime(val *string) {
+func (j *jsiiProxy_QldbStream) SetInclusiveStartTime(val *string) {
 	if err := j.validateSetInclusiveStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_QldbStream)SetInclusiveStartTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetLedgerName(val *string) {
+func (j *jsiiProxy_QldbStream) SetLedgerName(val *string) {
 	if err := j.validateSetLedgerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_QldbStream)SetLedgerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_QldbStream) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_QldbStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_QldbStream) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_QldbStream)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_QldbStream) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_QldbStream)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetRoleArn(val *string) {
+func (j *jsiiProxy_QldbStream) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_QldbStream)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetStreamName(val *string) {
+func (j *jsiiProxy_QldbStream) SetStreamName(val *string) {
 	if err := j.validateSetStreamNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_QldbStream)SetStreamName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_QldbStream) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_QldbStream)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_QldbStream)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_QldbStream) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func QldbStream_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func QldbStream_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func QldbStream_IsConstruct(x interface{}) *bool {
+func QldbStream_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQldbStream_IsConstructParameters(x); err != nil {
@@ -737,7 +736,7 @@ func QldbStream_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func QldbStream_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func QldbStream_IsTerraformElement(x interface{}) *bool {
+func QldbStream_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQldbStream_IsTerraformElementParameters(x); err != nil {
@@ -756,7 +755,7 @@ func QldbStream_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func QldbStream_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func QldbStream_IsTerraformResource(x interface{}) *bool {
+func QldbStream_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQldbStream_IsTerraformResourceParameters(x); err != nil {
@@ -775,7 +774,7 @@ func QldbStream_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,31 +799,31 @@ func (q *jsiiProxy_QldbStream) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (q *jsiiProxy_QldbStream) AddOverride(path *string, value interface{}) {
+func (q *jsiiProxy_QldbStream) AddOverride(path *string, value any) {
 	if err := q.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (q *jsiiProxy_QldbStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QldbStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (q *jsiiProxy_QldbStream) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (q *jsiiProxy_QldbStream) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (q *jsiiProxy_QldbStream) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (q *jsiiProxy_QldbStream) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (q *jsiiProxy_QldbStream) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (q *jsiiProxy_QldbStream) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (q *jsiiProxy_QldbStream) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,15 +951,15 @@ func (q *jsiiProxy_QldbStream) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QldbStream) HasResourceMove() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QldbStream) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -979,7 +978,7 @@ func (q *jsiiProxy_QldbStream) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		q,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -992,7 +991,7 @@ func (q *jsiiProxy_QldbStream) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,18 +1005,18 @@ func (q *jsiiProxy_QldbStream) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (q *jsiiProxy_QldbStream) MoveTo(moveTarget *string, index interface{}) {
+func (q *jsiiProxy_QldbStream) MoveTo(moveTarget *string, index any) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (q *jsiiProxy_QldbStream) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (q *jsiiProxy_QldbStream) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (q *jsiiProxy_QldbStream) PutKinesisConfiguration(value *QldbStreamKinesisC
 	_jsii_.InvokeVoid(
 		q,
 		"putKinesisConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1094,8 +1093,8 @@ func (q *jsiiProxy_QldbStream) ResetTagsAll() {
 	)
 }
 
-func (q *jsiiProxy_QldbStream) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QldbStream) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -1107,8 +1106,8 @@ func (q *jsiiProxy_QldbStream) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_QldbStream) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QldbStream) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -1120,8 +1119,8 @@ func (q *jsiiProxy_QldbStream) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (q *jsiiProxy_QldbStream) ToHclTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QldbStream) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1133,8 +1132,8 @@ func (q *jsiiProxy_QldbStream) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_QldbStream) ToMetadata() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QldbStream) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1159,8 +1158,8 @@ func (q *jsiiProxy_QldbStream) ToString() *string {
 	return returns
 }
 
-func (q *jsiiProxy_QldbStream) ToTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QldbStream) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1171,4 +1170,3 @@ func (q *jsiiProxy_QldbStream) ToTerraform() interface{} {
 
 	return returns
 }
-

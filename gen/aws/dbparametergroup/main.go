@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
-		reflect.TypeOf((*DbParameterGroup)(nil)).Elem(),
+		reflect.TypeFor[DbParameterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbParameterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig",
-		reflect.TypeOf((*DbParameterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DbParameterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter",
-		reflect.TypeOf((*DbParameterGroupParameter)(nil)).Elem(),
+		reflect.TypeFor[DbParameterGroupParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterList",
-		reflect.TypeOf((*DbParameterGroupParameterList)(nil)).Elem(),
+		reflect.TypeFor[DbParameterGroupParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbParameterGroupParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
-		reflect.TypeOf((*DbParameterGroupParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbParameterGroupParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "applyMethodInput", GoGetter: "ApplyMethodInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbParameterGroupParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

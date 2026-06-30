@@ -106,7 +106,7 @@ func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetAllocationIdParam
 	return nil
 }
 
-func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbSubnetMappingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewAlbSubnetMappingOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

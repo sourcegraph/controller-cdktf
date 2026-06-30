@@ -106,7 +106,7 @@ func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetClie
 	return nil
 }
 
-func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewEksIdentityProviderConfigOidcOutputReferenceParameters(terraform
 
 	return nil
 }
-

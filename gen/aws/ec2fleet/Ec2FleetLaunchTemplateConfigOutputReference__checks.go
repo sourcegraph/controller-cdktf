@@ -101,7 +101,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validatePutLaunc
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validatePutOverrideParameters(value interface{}) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validatePutOverrideParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewEc2FleetLaunchTemplateConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

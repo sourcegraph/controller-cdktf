@@ -19,7 +19,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MacieS3BucketAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMacieS3BucketAssociation_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateMacieS3BucketAssociation_IsConstructParameters(x interface{}) error {
+func validateMacieS3BucketAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMacieS3BucketAssociation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateMacieS3BucketAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateMacieS3BucketAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMacieS3BucketAssociation_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateMacieS3BucketAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateMacieS3BucketAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation) validateSetBucketNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MacieS3BucketAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MacieS3BucketAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation) validateSetPrefixParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MacieS3BucketAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewMacieS3BucketAssociationParameters(scope constructs.Construct, i
 
 	return nil
 }
-

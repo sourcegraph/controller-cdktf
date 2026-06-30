@@ -98,7 +98,7 @@ func (l *jsiiProxy_LambdaCodeSigningConfigAllowedPublishersOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigAllowedPublishersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaCodeSigningConfigAllowedPublishersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLambdaCodeSigningConfigAllowedPublishersOutputReferenceParameter
 
 	return nil
 }
-

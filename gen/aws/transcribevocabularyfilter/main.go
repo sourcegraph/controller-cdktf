@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
-		reflect.TypeOf((*TranscribeVocabularyFilter)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabularyFilter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "words", GoGetter: "Words"},
 			_jsii_.MemberProperty{JsiiProperty: "wordsInput", GoGetter: "WordsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeVocabularyFilter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig",
-		reflect.TypeOf((*TranscribeVocabularyFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscribeVocabularyFilterConfig](),
 	)
 }

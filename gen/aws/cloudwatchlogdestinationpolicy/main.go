@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
-		reflect.TypeOf((*CloudwatchLogDestinationPolicy)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogDestinationPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicy", GoGetter: "AccessPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicyInput", GoGetter: "AccessPolicyInput"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudwatchLogDestinationPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicyConfig",
-		reflect.TypeOf((*CloudwatchLogDestinationPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudwatchLogDestinationPolicyConfig](),
 	)
 }

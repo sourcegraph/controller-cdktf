@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBackupSelectionSelectionTagOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

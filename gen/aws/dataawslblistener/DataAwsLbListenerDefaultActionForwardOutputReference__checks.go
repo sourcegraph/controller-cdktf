@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionForwardOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLbListenerDefaultActionForwardOutputReferenceParameters(t
 
 	return nil
 }
-

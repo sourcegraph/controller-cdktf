@@ -16,15 +16,15 @@ type DocdbClusterSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbClusterIdentifier() *string
 	SetDbClusterIdentifier(val *string)
 	DbClusterIdentifierInput() *string
@@ -62,11 +62,11 @@ type DocdbClusterSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotType() *string
 	SourceDbClusterSnapshotArn() *string
 	Status() *string
@@ -74,19 +74,19 @@ type DocdbClusterSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DocdbClusterSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type DocdbClusterSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type DocdbClusterSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type DocdbClusterSnapshot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DocdbClusterSnapshot
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_DocdbClusterSnapshot) Timeouts() DocdbClusterSnapshotTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocdbClusterSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -497,7 +497,6 @@ func (j *jsiiProxy_DocdbClusterSnapshot) VpcId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot} Resource.
 func NewDocdbClusterSnapshot(scope constructs.Construct, id *string, config *DocdbClusterSnapshotConfig) DocdbClusterSnapshot {
 	_init_.Initialize()
@@ -509,7 +508,7 @@ func NewDocdbClusterSnapshot(scope constructs.Construct, id *string, config *Doc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -522,12 +521,12 @@ func NewDocdbClusterSnapshot_Override(d DocdbClusterSnapshot, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetDbClusterIdentifier(val *string) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetDbClusterIdentifier(val *string) {
 	if err := j.validateSetDbClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetDbClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetDbClusterSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetDbClusterSnapshotIdentifier(val *string) {
 	if err := j.validateSetDbClusterSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetDbClusterSnapshotIdentifier(val *stri
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetId(val *string) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_DocdbClusterSnapshot)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DocdbClusterSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DocdbClusterSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func DocdbClusterSnapshot_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func DocdbClusterSnapshot_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DocdbClusterSnapshot_IsConstruct(x interface{}) *bool {
+func DocdbClusterSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterSnapshot_IsConstructParameters(x); err != nil {
@@ -675,7 +674,7 @@ func DocdbClusterSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func DocdbClusterSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
+func DocdbClusterSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -694,7 +693,7 @@ func DocdbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func DocdbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DocdbClusterSnapshot_IsTerraformResource(x interface{}) *bool {
+func DocdbClusterSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocdbClusterSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -713,7 +712,7 @@ func DocdbClusterSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,31 +737,31 @@ func (d *jsiiProxy_DocdbClusterSnapshot) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DocdbClusterSnapshot) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DocdbClusterSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,15 +889,15 @@ func (d *jsiiProxy_DocdbClusterSnapshot) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -917,7 +916,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -930,7 +929,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,18 +943,18 @@ func (d *jsiiProxy_DocdbClusterSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DocdbClusterSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -977,7 +976,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -988,7 +987,7 @@ func (d *jsiiProxy_DocdbClusterSnapshot) PutTimeouts(value *DocdbClusterSnapshot
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1016,8 +1015,8 @@ func (d *jsiiProxy_DocdbClusterSnapshot) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1029,8 +1028,8 @@ func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1042,8 +1041,8 @@ func (d *jsiiProxy_DocdbClusterSnapshot) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1055,8 +1054,8 @@ func (d *jsiiProxy_DocdbClusterSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1081,8 +1080,8 @@ func (d *jsiiProxy_DocdbClusterSnapshot) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocdbClusterSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1093,4 +1092,3 @@ func (d *jsiiProxy_DocdbClusterSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

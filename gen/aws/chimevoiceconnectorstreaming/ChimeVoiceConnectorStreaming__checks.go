@@ -19,7 +19,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateChimeVoiceConnectorStreaming_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateChimeVoiceConnectorStreaming_IsConstructParameters(x interface{}) error {
+func validateChimeVoiceConnectorStreaming_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateChimeVoiceConnectorStreaming_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateChimeVoiceConnectorStreaming_IsTerraformElementParameters(x interface{}) error {
+func validateChimeVoiceConnectorStreaming_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateChimeVoiceConnectorStreaming_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateChimeVoiceConnectorStreaming_IsTerraformResourceParameters(x interface{}) error {
+func validateChimeVoiceConnectorStreaming_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateChimeVoiceConnectorStreaming_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetDataRetentionParamet
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewChimeVoiceConnectorStreamingParameters(scope constructs.Construc
 
 	return nil
 }
-

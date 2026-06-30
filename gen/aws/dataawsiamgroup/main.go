@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
-		reflect.TypeOf((*DataAwsIamGroup)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,15 +62,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig",
-		reflect.TypeOf((*DataAwsIamGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsers",
-		reflect.TypeOf((*DataAwsIamGroupUsers)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamGroupUsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
-		reflect.TypeOf((*DataAwsIamGroupUsersList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamGroupUsersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamGroupUsersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -91,7 +91,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
-		reflect.TypeOf((*DataAwsIamGroupUsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamGroupUsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamGroupUsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

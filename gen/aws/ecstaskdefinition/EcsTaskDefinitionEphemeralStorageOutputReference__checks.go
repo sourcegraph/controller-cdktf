@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskDefinitionEphemeralStorageOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionEphemeralStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionEphemeralStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEcsTaskDefinitionEphemeralStorageOutputReferenceParameters(terra
 
 	return nil
 }
-

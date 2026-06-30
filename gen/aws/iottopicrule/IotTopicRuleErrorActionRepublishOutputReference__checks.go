@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionRepublishOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionRepublishOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionRepublishOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIotTopicRuleErrorActionRepublishOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -18,17 +18,17 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CoreNetworkArn() *string
 	CoreNetworkId() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArn() *string
 	SegmentName() *string
 	State() *string
@@ -77,11 +77,11 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitGatewayRouteTableArn() *string
 	SetTransitGatewayRouteTableArn(val *string)
 	TransitGatewayRouteTableArnInput() *string
@@ -89,9 +89,9 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkmanagerTransitGatewayRouteTableAttachment
@@ -194,8 +194,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) CdktfStack(
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Connection(
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) CoreNetwork
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Provisioner
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TerraformGe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Timeouts() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -534,7 +534,6 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TransitGate
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment} Resource.
 func NewNetworkmanagerTransitGatewayRouteTableAttachment(scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRouteTableAttachmentConfig) NetworkmanagerTransitGatewayRouteTableAttachment {
 	_init_.Initialize()
@@ -546,7 +545,7 @@ func NewNetworkmanagerTransitGatewayRouteTableAttachment(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -559,12 +558,12 @@ func NewNetworkmanagerTransitGatewayRouteTableAttachment_Override(n Networkmanag
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetConnectio
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetId(val *string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetPeeringId(val *string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetPeeringId(val *string) {
 	if err := j.validateSetPeeringIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetPeeringId
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -643,7 +642,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetProvision
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetTags(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetTagsAll(v
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment)SetTransitGatewayRouteTableArn(val *string) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SetTransitGatewayRouteTableArn(val *string) {
 	if err := j.validateSetTransitGatewayRouteTableArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x interface{}) *bool {
+func NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerTransitGatewayRouteTableAttachment_IsConstructParameters(x); err != nil {
@@ -734,7 +733,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x interface{})
 }
 
 // Experimental.
-func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x interface{}) *bool {
+func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElementParameters(x); err != nil {
@@ -753,7 +752,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x inter
 }
 
 // Experimental.
-func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResource(x interface{}) *bool {
+func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -772,7 +771,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -797,31 +796,31 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) AddMoveTarg
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetBooleanA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetBooleanM
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetListAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetNumberAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetNumberLi
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetNumberMa
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetStringAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,15 +948,15 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) GetStringMa
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -976,7 +975,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ImportFrom(
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -989,7 +988,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) Interpolati
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,18 +1002,18 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) MoveFromId(
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1025,7 +1024,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) MoveToId(id
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1036,7 +1035,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) OverrideLog
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1047,7 +1046,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) PutTimeouts
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,8 +1090,8 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ResetTimeou
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1104,8 +1103,8 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeA
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1117,8 +1116,8 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) SynthesizeH
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1130,8 +1129,8 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToHclTerraf
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1156,8 +1155,8 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToString() 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1168,4 +1167,3 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) ToTerraform
 
 	return returns
 }
-

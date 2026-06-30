@@ -15,11 +15,11 @@ type DataAwsWafregionalSubscribedRuleGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,17 +52,17 @@ type DataAwsWafregionalSubscribedRuleGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataAwsWafregionalSubscribedRuleGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsWafregionalSubscribedRuleGroup
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -309,7 +309,6 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group} Data Source.
 func NewDataAwsWafregionalSubscribedRuleGroup(scope constructs.Construct, id *string, config *DataAwsWafregionalSubscribedRuleGroupConfig) DataAwsWafregionalSubscribedRuleGroup {
 	_init_.Initialize()
@@ -321,7 +320,7 @@ func NewDataAwsWafregionalSubscribedRuleGroup(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -334,12 +333,12 @@ func NewDataAwsWafregionalSubscribedRuleGroup_Override(d DataAwsWafregionalSubsc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -366,7 +365,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetId(val *string) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetMetricName(val *string) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetMetricName(val *string) {
 	if err := j.validateSetMetricNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetMetricName(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetName(val *string) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -430,7 +429,7 @@ func DataAwsWafregionalSubscribedRuleGroup_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func DataAwsWafregionalSubscribedRuleGroup_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x interface{}) *bool {
+func DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafregionalSubscribedRuleGroup_IsConstructParameters(x); err != nil {
@@ -465,7 +464,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSourceParameters(x); err != nil {
@@ -484,7 +483,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataAwsWafregionalSubscribedRuleGroup_IsTerraformElement(x interface{}) *bool {
+func DataAwsWafregionalSubscribedRuleGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsWafregionalSubscribedRuleGroup_IsTerraformElementParameters(x); err != nil {
@@ -503,7 +502,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -521,27 +520,27 @@ func DataAwsWafregionalSubscribedRuleGroup_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -735,8 +734,8 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ResetOverrideLogicalId
 	)
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -748,8 +747,8 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -761,8 +760,8 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -774,8 +773,8 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -800,8 +799,8 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -812,4 +811,3 @@ func (d *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) ToTerraform() interfac
 
 	return returns
 }
-

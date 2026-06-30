@@ -21,15 +21,15 @@ type MskServerlessCluster interface {
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type MskServerlessCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -70,20 +70,20 @@ type MskServerlessCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MskServerlessClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcConfig() MskServerlessClusterVpcConfigList
-	VpcConfigInput() interface{}
+	VpcConfigInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type MskServerlessCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type MskServerlessCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,7 +122,7 @@ type MskServerlessCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClientAuthentication(value *MskServerlessClusterClientAuthentication)
 	PutTimeouts(value *MskServerlessClusterTimeouts)
-	PutVpcConfig(value interface{})
+	PutVpcConfig(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -130,17 +130,17 @@ type MskServerlessCluster interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MskServerlessCluster
@@ -208,8 +208,8 @@ func (j *jsiiProxy_MskServerlessCluster) ClusterNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_MskServerlessCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MskServerlessCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_MskServerlessCluster) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_MskServerlessCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MskServerlessCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_MskServerlessCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_MskServerlessCluster) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MskServerlessCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_MskServerlessCluster) Timeouts() MskServerlessClusterTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_MskServerlessCluster) VpcConfig() MskServerlessClusterVpcConf
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessCluster) VpcConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessCluster) VpcConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpcConfigInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_MskServerlessCluster) VpcConfigInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
 func NewMskServerlessCluster(scope constructs.Construct, id *string, config *MskServerlessClusterConfig) MskServerlessCluster {
@@ -470,7 +469,7 @@ func NewMskServerlessCluster(scope constructs.Construct, id *string, config *Msk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewMskServerlessCluster_Override(m MskServerlessCluster, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetClusterName(val *string) {
+func (j *jsiiProxy_MskServerlessCluster) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_MskServerlessCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_MskServerlessCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MskServerlessCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MskServerlessCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetId(val *string) {
+func (j *jsiiProxy_MskServerlessCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MskServerlessCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MskServerlessCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MskServerlessCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MskServerlessCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_MskServerlessCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MskServerlessCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MskServerlessCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func MskServerlessCluster_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func MskServerlessCluster_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MskServerlessCluster_IsConstruct(x interface{}) *bool {
+func MskServerlessCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskServerlessCluster_IsConstructParameters(x); err != nil {
@@ -647,7 +646,7 @@ func MskServerlessCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func MskServerlessCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MskServerlessCluster_IsTerraformElement(x interface{}) *bool {
+func MskServerlessCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskServerlessCluster_IsTerraformElementParameters(x); err != nil {
@@ -666,7 +665,7 @@ func MskServerlessCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func MskServerlessCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MskServerlessCluster_IsTerraformResource(x interface{}) *bool {
+func MskServerlessCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMskServerlessCluster_IsTerraformResourceParameters(x); err != nil {
@@ -685,7 +684,7 @@ func MskServerlessCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,31 +709,31 @@ func (m *jsiiProxy_MskServerlessCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MskServerlessCluster) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MskServerlessCluster) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MskServerlessCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskServerlessCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (m *jsiiProxy_MskServerlessCluster) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,15 +861,15 @@ func (m *jsiiProxy_MskServerlessCluster) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskServerlessCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -889,7 +888,7 @@ func (m *jsiiProxy_MskServerlessCluster) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -902,7 +901,7 @@ func (m *jsiiProxy_MskServerlessCluster) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,18 +915,18 @@ func (m *jsiiProxy_MskServerlessCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MskServerlessCluster) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MskServerlessCluster) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -938,7 +937,7 @@ func (m *jsiiProxy_MskServerlessCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -949,7 +948,7 @@ func (m *jsiiProxy_MskServerlessCluster) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -960,7 +959,7 @@ func (m *jsiiProxy_MskServerlessCluster) PutClientAuthentication(value *MskServe
 	_jsii_.InvokeVoid(
 		m,
 		"putClientAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -971,18 +970,18 @@ func (m *jsiiProxy_MskServerlessCluster) PutTimeouts(value *MskServerlessCluster
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MskServerlessCluster) PutVpcConfig(value interface{}) {
+func (m *jsiiProxy_MskServerlessCluster) PutVpcConfig(value any) {
 	if err := m.validatePutVpcConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (m *jsiiProxy_MskServerlessCluster) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MskServerlessCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MskServerlessCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1039,8 +1038,8 @@ func (m *jsiiProxy_MskServerlessCluster) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MskServerlessCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1052,8 +1051,8 @@ func (m *jsiiProxy_MskServerlessCluster) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskServerlessCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1065,8 +1064,8 @@ func (m *jsiiProxy_MskServerlessCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskServerlessCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1091,8 +1090,8 @@ func (m *jsiiProxy_MskServerlessCluster) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MskServerlessCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1103,4 +1102,3 @@ func (m *jsiiProxy_MskServerlessCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

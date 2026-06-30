@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainSnapshotOptionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsOpensearchDomainSnapshotOptionsOutputReferenceParameters(
 
 	return nil
 }
-

@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile}.
 type OpsworksUserProfile interface {
 	cdktf.TerraformResource
-	AllowSelfManagement() interface{}
-	SetAllowSelfManagement(val interface{})
-	AllowSelfManagementInput() interface{}
+	AllowSelfManagement() any
+	SetAllowSelfManagement(val any)
+	AllowSelfManagementInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,11 +53,11 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SshPublicKey() *string
 	SetSshPublicKey(val *string)
 	SshPublicKeyInput() *string
@@ -67,7 +67,7 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserArn() *string
@@ -77,9 +77,9 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type OpsworksUserProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSshPublicKey()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksUserProfile
@@ -140,8 +140,8 @@ type jsiiProxy_OpsworksUserProfile struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) AllowSelfManagement() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksUserProfile) AllowSelfManagement() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSelfManagement",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_OpsworksUserProfile) AllowSelfManagement() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) AllowSelfManagementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksUserProfile) AllowSelfManagementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSelfManagementInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_OpsworksUserProfile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksUserProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_OpsworksUserProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksUserProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_OpsworksUserProfile) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksUserProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_OpsworksUserProfile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksUserProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_OpsworksUserProfile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksUserProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_OpsworksUserProfile) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksUserProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_OpsworksUserProfile) UserArnInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
 func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *OpsworksUserProfileConfig) OpsworksUserProfile {
 	_init_.Initialize()
@@ -412,7 +411,7 @@ func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *Opsw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewOpsworksUserProfile_Override(o OpsworksUserProfile, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetAllowSelfManagement(val interface{}) {
+func (j *jsiiProxy_OpsworksUserProfile) SetAllowSelfManagement(val any) {
 	if err := j.validateSetAllowSelfManagementParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetAllowSelfManagement(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksUserProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksUserProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksUserProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksUserProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetId(val *string) {
+func (j *jsiiProxy_OpsworksUserProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksUserProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksUserProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksUserProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetSshPublicKey(val *string) {
+func (j *jsiiProxy_OpsworksUserProfile) SetSshPublicKey(val *string) {
 	if err := j.validateSetSshPublicKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetSshPublicKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetSshUsername(val *string) {
+func (j *jsiiProxy_OpsworksUserProfile) SetSshUsername(val *string) {
 	if err := j.validateSetSshUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_OpsworksUserProfile)SetSshUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetUserArn(val *string) {
+func (j *jsiiProxy_OpsworksUserProfile) SetUserArn(val *string) {
 	if err := j.validateSetUserArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func OpsworksUserProfile_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func OpsworksUserProfile_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksUserProfile_IsConstruct(x interface{}) *bool {
+func OpsworksUserProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksUserProfile_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func OpsworksUserProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func OpsworksUserProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksUserProfile_IsTerraformElement(x interface{}) *bool {
+func OpsworksUserProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksUserProfile_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func OpsworksUserProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func OpsworksUserProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksUserProfile_IsTerraformResource(x interface{}) *bool {
+func OpsworksUserProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksUserProfile_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func OpsworksUserProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (o *jsiiProxy_OpsworksUserProfile) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksUserProfile) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksUserProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (o *jsiiProxy_OpsworksUserProfile) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (o *jsiiProxy_OpsworksUserProfile) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksUserProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -842,7 +841,7 @@ func (o *jsiiProxy_OpsworksUserProfile) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (o *jsiiProxy_OpsworksUserProfile) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (o *jsiiProxy_OpsworksUserProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksUserProfile) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (o *jsiiProxy_OpsworksUserProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (o *jsiiProxy_OpsworksUserProfile) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,8 +937,8 @@ func (o *jsiiProxy_OpsworksUserProfile) ResetSshPublicKey() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksUserProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -951,8 +950,8 @@ func (o *jsiiProxy_OpsworksUserProfile) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksUserProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -964,8 +963,8 @@ func (o *jsiiProxy_OpsworksUserProfile) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksUserProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -977,8 +976,8 @@ func (o *jsiiProxy_OpsworksUserProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksUserProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1003,8 +1002,8 @@ func (o *jsiiProxy_OpsworksUserProfile) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksUserProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksUserProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1015,4 +1014,3 @@ func (o *jsiiProxy_OpsworksUserProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -14,9 +14,9 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	AmiDistributionConfigurationInput() *ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,13 +30,13 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	// Experimental.
 	CreationStack() *[]*string
 	FastLaunchConfiguration() ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList
-	FastLaunchConfigurationInput() interface{}
+	FastLaunchConfigurationInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LaunchTemplateConfiguration() ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList
-	LaunchTemplateConfigurationInput() interface{}
+	LaunchTemplateConfigurationInput() any
 	LicenseConfigurationArns() *[]*string
 	SetLicenseConfigurationArns(val *[]*string)
 	LicenseConfigurationArnsInput() *[]*string
@@ -54,7 +54,7 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,8 +77,8 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAmiDistributionConfiguration(value *ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration)
 	PutContainerDistributionConfiguration(value *ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration)
-	PutFastLaunchConfiguration(value interface{})
-	PutLaunchTemplateConfiguration(value interface{})
+	PutFastLaunchConfiguration(value any)
+	PutLaunchTemplateConfiguration(value any)
 	ResetAmiDistributionConfiguration()
 	ResetContainerDistributionConfiguration()
 	ResetFastLaunchConfiguration()
@@ -86,7 +86,7 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	ResetLicenseConfigurationArns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) FastLaunchConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) FastLaunchConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fastLaunchConfigurationInput",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) LaunchTemplateConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) LaunchTemplateConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"launchTemplateConfigurationInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-
 func NewImagebuilderDistributionConfigurationDistributionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ImagebuilderDistributionConfigurationDistributionOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewImagebuilderDistributionConfigurationDistributionOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewImagebuilderDistributionConfigurationDistributionOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetLicenseConfigurationArns(val *[]*string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetLicenseConfigurationArns(val *[]*string) {
 	if err := j.validateSetLicenseConfigurationArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,16 +406,16 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.InvokeVoid(
 		i,
 		"putAmiDistributionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,29 +597,29 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.InvokeVoid(
 		i,
 		"putContainerDistributionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutFastLaunchConfiguration(value interface{}) {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutFastLaunchConfiguration(value any) {
 	if err := i.validatePutFastLaunchConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putFastLaunchConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutLaunchTemplateConfiguration(value interface{}) {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutLaunchTemplateConfiguration(value any) {
 	if err := i.validatePutLaunchTemplateConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putLaunchTemplateConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 
 	return returns
 }
-

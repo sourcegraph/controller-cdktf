@@ -120,7 +120,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewKendraIndexDocumentMetadataConfigurationUpdatesOutputReferencePa
 
 	return nil
 }
-

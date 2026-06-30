@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionQueryStringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLbListenerRuleConditionQueryStringOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateInterpolatio
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringEqualsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringEqualsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringEqu
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringLikeParameters(value interface{}) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringLikeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringLik
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNotEqualsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNotEqualsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNot
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNotLikeParameters(value interface{}) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNotLikeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -346,4 +346,3 @@ func validateNewBackupSelectionConditionOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetClass
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGlueClassifierGrokClassifierOutputReferenceParameters(terraformR
 
 	return nil
 }
-

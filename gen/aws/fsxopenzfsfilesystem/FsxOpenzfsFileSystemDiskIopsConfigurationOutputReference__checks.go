@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFsxOpenzfsFileSystemDiskIopsConfigurationOutputReferenceParamete
 
 	return nil
 }
-

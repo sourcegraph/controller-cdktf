@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailDomainEntry) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDomainEntry) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailDomainEntry) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailDomainEntry) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDomainEntry) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailDomainEntry) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLightsailDomainEntry_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateLightsailDomainEntry_IsConstructParameters(x interface{}) error {
+func validateLightsailDomainEntry_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLightsailDomainEntry_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLightsailDomainEntry_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailDomainEntry_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLightsailDomainEntry_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateLightsailDomainEntry_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailDomainEntry_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateLightsailDomainEntry_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDomainEntry) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailDomainEntry) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_LightsailDomainEntry) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDomainEntry) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailDomainEntry) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_LightsailDomainEntry) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDomainEntry) validateSetIsAliasParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailDomainEntry) validateSetIsAliasParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func (j *jsiiProxy_LightsailDomainEntry) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDomainEntry) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailDomainEntry) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewLightsailDomainEntryParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

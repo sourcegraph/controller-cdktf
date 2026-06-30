@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppsyncResolverPipelineConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncResolverPipelineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncResolverPipelineConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppsyncResolverPipelineConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

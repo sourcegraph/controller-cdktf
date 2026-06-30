@@ -16,15 +16,15 @@ type SecurityhubInsight interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,24 +59,24 @@ type SecurityhubInsight interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type SecurityhubInsight interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type SecurityhubInsight interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type SecurityhubInsight interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecurityhubInsight
@@ -156,8 +156,8 @@ func (j *jsiiProxy_SecurityhubInsight) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsight) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SecurityhubInsight) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubInsight) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SecurityhubInsight) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsight) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_SecurityhubInsight) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecurityhubInsight) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_SecurityhubInsight) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsight) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_SecurityhubInsight) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsight) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubInsight) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_SecurityhubInsight) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/securityhub_insight aws_securityhub_insight} Resource.
 func NewSecurityhubInsight(scope constructs.Construct, id *string, config *SecurityhubInsightConfig) SecurityhubInsight {
 	_init_.Initialize()
@@ -398,7 +397,7 @@ func NewSecurityhubInsight(scope constructs.Construct, id *string, config *Secur
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -411,12 +410,12 @@ func NewSecurityhubInsight_Override(s SecurityhubInsight, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsight) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetCount(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsight) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityhubInsight) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityhubInsight) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -454,7 +453,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetGroupByAttribute(val *string) {
+func (j *jsiiProxy_SecurityhubInsight) SetGroupByAttribute(val *string) {
 	if err := j.validateSetGroupByAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetGroupByAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetId(val *string) {
+func (j *jsiiProxy_SecurityhubInsight) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityhubInsight) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetName(val *string) {
+func (j *jsiiProxy_SecurityhubInsight) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityhubInsight) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_SecurityhubInsight)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsight)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityhubInsight) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func SecurityhubInsight_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func SecurityhubInsight_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecurityhubInsight_IsConstruct(x interface{}) *bool {
+func SecurityhubInsight_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubInsight_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func SecurityhubInsight_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func SecurityhubInsight_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubInsight_IsTerraformElement(x interface{}) *bool {
+func SecurityhubInsight_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubInsight_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func SecurityhubInsight_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func SecurityhubInsight_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubInsight_IsTerraformResource(x interface{}) *bool {
+func SecurityhubInsight_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubInsight_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func SecurityhubInsight_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (s *jsiiProxy_SecurityhubInsight) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsight) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecurityhubInsight) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsight) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityhubInsight) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (s *jsiiProxy_SecurityhubInsight) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (s *jsiiProxy_SecurityhubInsight) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsight) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubInsight) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -806,7 +805,7 @@ func (s *jsiiProxy_SecurityhubInsight) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (s *jsiiProxy_SecurityhubInsight) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (s *jsiiProxy_SecurityhubInsight) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsight) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecurityhubInsight) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_SecurityhubInsight) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SecurityhubInsight) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -877,7 +876,7 @@ func (s *jsiiProxy_SecurityhubInsight) PutFilters(value *SecurityhubInsightFilte
 	_jsii_.InvokeVoid(
 		s,
 		"putFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -897,8 +896,8 @@ func (s *jsiiProxy_SecurityhubInsight) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsight) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubInsight) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -910,8 +909,8 @@ func (s *jsiiProxy_SecurityhubInsight) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsight) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubInsight) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -923,8 +922,8 @@ func (s *jsiiProxy_SecurityhubInsight) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsight) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubInsight) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -936,8 +935,8 @@ func (s *jsiiProxy_SecurityhubInsight) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsight) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubInsight) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SecurityhubInsight) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsight) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubInsight) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -974,4 +973,3 @@ func (s *jsiiProxy_SecurityhubInsight) ToTerraform() interface{} {
 
 	return returns
 }
-

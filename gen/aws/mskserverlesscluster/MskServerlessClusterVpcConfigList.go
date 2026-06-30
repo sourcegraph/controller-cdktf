@@ -17,8 +17,8 @@ type MskServerlessClusterVpcConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MskServerlessClusterVpcConfigList interface {
 	Get(index *float64) MskServerlessClusterVpcConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMskServerlessClusterVpcConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskServerlessClusterVpcConfigList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMskServerlessClusterVpcConfigList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMskServerlessClusterVpcConfigList_Override(m MskServerlessClusterVpcConf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) Get(index *float64) MskSer
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) ToString() *string {
 
 	return returns
 }
-

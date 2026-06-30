@@ -10,14 +10,14 @@ import (
 
 type CognitoUserPoolAdminCreateUserConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllowAdminCreateUserOnly() interface{}
-	SetAllowAdminCreateUserOnly(val interface{})
-	AllowAdminCreateUserOnlyInput() interface{}
+	AllowAdminCreateUserOnly() any
+	SetAllowAdminCreateUserOnly(val any)
+	AllowAdminCreateUserOnlyInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type CognitoUserPoolAdminCreateUserConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type CognitoUserPoolAdminCreateUserConfigOutputReference interface {
 	ResetInviteMessageTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdminCreateUserOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdminCreateUserOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAdminCreateUserOnly",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdm
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdminCreateUserOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdminCreateUserOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAdminCreateUserOnlyInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) AllowAdm
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewCognitoUserPoolAdminCreateUserConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolAdminCreateUserConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewCognitoUserPoolAdminCreateUserConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewCognitoUserPoolAdminCreateUserConfigOutputReference_Override(c CognitoUs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetAllowAdminCreateUserOnly(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetAllowAdminCreateUserOnly(val any) {
 	if err := j.validateSetAllowAdminCreateUserOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetAllowA
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetInternalValue(val *CognitoUserPoolAdminCreateUserConfig) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetInternalValue(val *CognitoUserPoolAdminCreateUserConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) ComputeF
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) PutInvit
 	_jsii_.InvokeVoid(
 		c,
 		"putInviteMessageTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) ResetInv
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference) ToString
 
 	return returns
 }
-

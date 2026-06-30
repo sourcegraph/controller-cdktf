@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetIamParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetIamParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetScramParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationSaslOutputReference) validateSetScramParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewMskClusterClientAuthenticationSaslOutputReferenceParameters(terr
 
 	return nil
 }
-

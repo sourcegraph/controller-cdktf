@@ -15,9 +15,9 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	AcmPcaArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	ResetX509CertificateData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) AcmP
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) X509
 	return returns
 }
 
-
 func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceSourceDataOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference_Override(r Roles
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetAcmPcaArn(val *string) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetAcmPcaArn(val *string) {
 	if err := j.validateSetAcmPcaArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetAc
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetInternalValue(val *RolesanywhereTrustAnchorSourceSourceData) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetInternalValue(val *RolesanywhereTrustAnchorSourceSourceData) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetX509CertificateData(val *string) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) SetX509CertificateData(val *string) {
 	if err := j.validateSetX509CertificateDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Comp
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetB
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetB
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetL
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetN
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetN
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetN
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetS
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetS
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Inte
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Rese
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) ToSt
 
 	return returns
 }
-

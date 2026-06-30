@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetEnableDebugLogDeliveryParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetEnableDebugLogDeliveryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewConfigConfigRuleSourceCustomPolicyDetailsOutputReferenceParamete
 
 	return nil
 }
-

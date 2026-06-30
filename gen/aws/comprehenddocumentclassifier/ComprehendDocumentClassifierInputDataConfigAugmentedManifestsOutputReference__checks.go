@@ -114,7 +114,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifests
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifests
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewComprehendDocumentClassifierInputDataConfigAugmentedManifestsOut
 
 	return nil
 }
-

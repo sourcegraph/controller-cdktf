@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetEc2TagFilterList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetEc2TagFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetEc2TagFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodedeployDeploymentGroupEc2TagSetEc2TagFilterListParameters(ter
 
 	return nil
 }
-

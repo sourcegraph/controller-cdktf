@@ -15,15 +15,15 @@ type WafregionalWebAclAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,18 +50,18 @@ type WafregionalWebAclAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WebAclId() *string
@@ -71,9 +71,9 @@ type WafregionalWebAclAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type WafregionalWebAclAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type WafregionalWebAclAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type WafregionalWebAclAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafregionalWebAclAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalWebAclAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) WebAclIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource.
 func NewWafregionalWebAclAssociation(scope constructs.Construct, id *string, config *WafregionalWebAclAssociationConfig) WafregionalWebAclAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewWafregionalWebAclAssociation(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewWafregionalWebAclAssociation_Override(w WafregionalWebAclAssociation, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetId(val *string) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetResourceArn(val *string) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetResourceArn(val *string) {
 	if err := j.validateSetResourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation)SetResourceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation)SetWebAclId(val *string) {
+func (j *jsiiProxy_WafregionalWebAclAssociation) SetWebAclId(val *string) {
 	if err := j.validateSetWebAclIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func WafregionalWebAclAssociation_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func WafregionalWebAclAssociation_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafregionalWebAclAssociation_IsConstruct(x interface{}) *bool {
+func WafregionalWebAclAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalWebAclAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func WafregionalWebAclAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func WafregionalWebAclAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalWebAclAssociation_IsTerraformElement(x interface{}) *bool {
+func WafregionalWebAclAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalWebAclAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func WafregionalWebAclAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func WafregionalWebAclAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalWebAclAssociation_IsTerraformResource(x interface{}) *bool {
+func WafregionalWebAclAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalWebAclAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func WafregionalWebAclAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafregionalWebAclAssociation) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalWebAclAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -772,7 +771,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafregionalWebAclAssociation) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -865,8 +864,8 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -878,8 +877,8 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -891,8 +890,8 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -917,8 +916,8 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalWebAclAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -929,4 +928,3 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

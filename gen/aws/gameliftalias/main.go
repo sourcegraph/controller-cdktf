@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
-		reflect.TypeOf((*GameliftAlias)(nil)).Elem(),
+		reflect.TypeFor[GameliftAlias](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftAlias{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftAlias.GameliftAliasConfig",
-		reflect.TypeOf((*GameliftAliasConfig)(nil)).Elem(),
+		reflect.TypeFor[GameliftAliasConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy",
-		reflect.TypeOf((*GameliftAliasRoutingStrategy)(nil)).Elem(),
+		reflect.TypeFor[GameliftAliasRoutingStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
-		reflect.TypeOf((*GameliftAliasRoutingStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GameliftAliasRoutingStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GameliftAliasRoutingStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

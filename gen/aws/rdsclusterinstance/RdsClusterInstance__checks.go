@@ -19,7 +19,7 @@ func (r *jsiiProxy_RdsClusterInstance) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RdsClusterInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RdsClusterInstance) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RdsClusterInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateRdsClusterInstance_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateRdsClusterInstance_IsConstructParameters(x interface{}) error {
+func validateRdsClusterInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateRdsClusterInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRdsClusterInstance_IsTerraformElementParameters(x interface{}) error {
+func validateRdsClusterInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateRdsClusterInstance_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateRdsClusterInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateRdsClusterInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateRdsClusterInstance_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetApplyImmediatelyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetClusterIdentifierParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetCopyTagsToSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetCopyTagsToSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -372,7 +372,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetCopyTagsToSnapshotParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -517,7 +517,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetMonitoringRoleArnParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetPerformanceInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetPerformanceInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -577,7 +577,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetPromotionTierParameters(val *f
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -623,7 +623,7 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterInstance) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterInstance) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -677,4 +677,3 @@ func validateNewRdsClusterInstanceParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

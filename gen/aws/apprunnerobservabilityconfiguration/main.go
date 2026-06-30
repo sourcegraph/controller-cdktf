@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
-		reflect.TypeOf((*ApprunnerObservabilityConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerObservabilityConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "traceConfiguration", GoGetter: "TraceConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "traceConfigurationInput", GoGetter: "TraceConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerObservabilityConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationConfig",
-		reflect.TypeOf((*ApprunnerObservabilityConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerObservabilityConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfiguration",
-		reflect.TypeOf((*ApprunnerObservabilityConfigurationTraceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerObservabilityConfigurationTraceConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfigurationOutputReference",
-		reflect.TypeOf((*ApprunnerObservabilityConfigurationTraceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerObservabilityConfigurationTraceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vendor", GoGetter: "Vendor"},
 			_jsii_.MemberProperty{JsiiProperty: "vendorInput", GoGetter: "VendorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerObservabilityConfigurationTraceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

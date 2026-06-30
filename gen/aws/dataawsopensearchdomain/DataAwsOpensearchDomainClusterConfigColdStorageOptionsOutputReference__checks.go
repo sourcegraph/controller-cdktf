@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputRefe
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
-		reflect.TypeOf((*OpensearchOutboundConnection)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpensearchOutboundConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConfig",
-		reflect.TypeOf((*OpensearchOutboundConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo",
-		reflect.TypeOf((*OpensearchOutboundConnectionLocalDomainInfo)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionLocalDomainInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
-		reflect.TypeOf((*OpensearchOutboundConnectionLocalDomainInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionLocalDomainInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,11 +123,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo",
-		reflect.TypeOf((*OpensearchOutboundConnectionRemoteDomainInfo)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionRemoteDomainInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfoOutputReference",
-		reflect.TypeOf((*OpensearchOutboundConnectionRemoteDomainInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionRemoteDomainInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpensearchOutboundConnectionRemoteDomainInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts",
-		reflect.TypeOf((*OpensearchOutboundConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*OpensearchOutboundConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpensearchOutboundConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpensearchOutboundConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

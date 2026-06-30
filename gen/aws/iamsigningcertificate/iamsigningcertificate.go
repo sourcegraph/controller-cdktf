@@ -19,15 +19,15 @@ type IamSigningCertificate interface {
 	CertificateBodyInput() *string
 	CertificateId() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,18 +54,18 @@ type IamSigningCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserName() *string
@@ -75,9 +75,9 @@ type IamSigningCertificate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type IamSigningCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type IamSigningCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type IamSigningCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamSigningCertificate
@@ -177,8 +177,8 @@ func (j *jsiiProxy_IamSigningCertificate) CertificateId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamSigningCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_IamSigningCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamSigningCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_IamSigningCertificate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamSigningCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_IamSigningCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamSigningCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_IamSigningCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamSigningCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_IamSigningCertificate) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_IamSigningCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamSigningCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_IamSigningCertificate) UserNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate} Resource.
 func NewIamSigningCertificate(scope constructs.Construct, id *string, config *IamSigningCertificateConfig) IamSigningCertificate {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewIamSigningCertificate(scope constructs.Construct, id *string, config *Ia
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewIamSigningCertificate_Override(i IamSigningCertificate, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetCertificateBody(val *string) {
+func (j *jsiiProxy_IamSigningCertificate) SetCertificateBody(val *string) {
 	if err := j.validateSetCertificateBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetCertificateBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamSigningCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_IamSigningCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamSigningCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamSigningCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetId(val *string) {
+func (j *jsiiProxy_IamSigningCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamSigningCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamSigningCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamSigningCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetStatus(val *string) {
+func (j *jsiiProxy_IamSigningCertificate) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_IamSigningCertificate)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamSigningCertificate)SetUserName(val *string) {
+func (j *jsiiProxy_IamSigningCertificate) SetUserName(val *string) {
 	if err := j.validateSetUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func IamSigningCertificate_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func IamSigningCertificate_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamSigningCertificate_IsConstruct(x interface{}) *bool {
+func IamSigningCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamSigningCertificate_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func IamSigningCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func IamSigningCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamSigningCertificate_IsTerraformElement(x interface{}) *bool {
+func IamSigningCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamSigningCertificate_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func IamSigningCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func IamSigningCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamSigningCertificate_IsTerraformResource(x interface{}) *bool {
+func IamSigningCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamSigningCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func IamSigningCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (i *jsiiProxy_IamSigningCertificate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamSigningCertificate) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamSigningCertificate) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamSigningCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamSigningCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (i *jsiiProxy_IamSigningCertificate) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (i *jsiiProxy_IamSigningCertificate) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamSigningCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamSigningCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -818,7 +817,7 @@ func (i *jsiiProxy_IamSigningCertificate) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (i *jsiiProxy_IamSigningCertificate) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (i *jsiiProxy_IamSigningCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamSigningCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamSigningCertificate) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_IamSigningCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IamSigningCertificate) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (i *jsiiProxy_IamSigningCertificate) ResetStatus() {
 	)
 }
 
-func (i *jsiiProxy_IamSigningCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamSigningCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -919,8 +918,8 @@ func (i *jsiiProxy_IamSigningCertificate) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (i *jsiiProxy_IamSigningCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamSigningCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -932,8 +931,8 @@ func (i *jsiiProxy_IamSigningCertificate) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (i *jsiiProxy_IamSigningCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamSigningCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -945,8 +944,8 @@ func (i *jsiiProxy_IamSigningCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamSigningCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamSigningCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -971,8 +970,8 @@ func (i *jsiiProxy_IamSigningCertificate) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamSigningCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamSigningCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -983,4 +982,3 @@ func (i *jsiiProxy_IamSigningCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

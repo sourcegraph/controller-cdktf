@@ -34,7 +34,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyList) va
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSchedulerScheduleTargetEcsParametersPlacementStrategyListParamet
 
 	return nil
 }
-

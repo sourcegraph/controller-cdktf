@@ -106,7 +106,7 @@ func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetClientProperties
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetDestinationArnPa
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewIotTopicRuleKafkaOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

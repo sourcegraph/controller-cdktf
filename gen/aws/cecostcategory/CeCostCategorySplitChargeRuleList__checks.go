@@ -34,7 +34,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCeCostCategorySplitChargeRuleListParameters(terraformResource cd
 
 	return nil
 }
-

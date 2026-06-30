@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecretsmanagerSecretVersion) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecretsmanagerSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecretsmanagerSecretVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSecretsmanagerSecretVersion_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateSecretsmanagerSecretVersion_IsConstructParameters(x interface{}) error {
+func validateSecretsmanagerSecretVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSecretsmanagerSecretVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateSecretsmanagerSecretVersion_IsTerraformElementParameters(x interface{}) error {
+func validateSecretsmanagerSecretVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSecretsmanagerSecretVersion_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateSecretsmanagerSecretVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateSecretsmanagerSecretVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSecretsmanagerSecretVersion_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewSecretsmanagerSecretVersionParameters(scope constructs.Construct
 
 	return nil
 }
-

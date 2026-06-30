@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutp
 
 	return nil
 }
-

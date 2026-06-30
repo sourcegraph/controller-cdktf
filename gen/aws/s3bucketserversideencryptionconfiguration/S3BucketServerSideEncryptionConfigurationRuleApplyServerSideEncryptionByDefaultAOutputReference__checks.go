@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideE
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncr
 
 	return nil
 }
-

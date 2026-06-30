@@ -16,15 +16,15 @@ type AppmeshVirtualNode interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,11 +62,11 @@ type AppmeshVirtualNode interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceOwner() *string
 	Spec() AppmeshVirtualNodeSpecOutputReference
 	SpecInput() *AppmeshVirtualNodeSpec
@@ -79,16 +79,16 @@ type AppmeshVirtualNode interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type AppmeshVirtualNode interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type AppmeshVirtualNode interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type AppmeshVirtualNode interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppmeshVirtualNode
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_AppmeshVirtualNode) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppmeshVirtualNode) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_AppmeshVirtualNode) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node aws_appmesh_virtual_node} Resource.
 func NewAppmeshVirtualNode(scope constructs.Construct, id *string, config *AppmeshVirtualNodeConfig) AppmeshVirtualNode {
 	_init_.Initialize()
@@ -503,7 +502,7 @@ func NewAppmeshVirtualNode(scope constructs.Construct, id *string, config *Appme
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewAppmeshVirtualNode_Override(a AppmeshVirtualNode, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetCount(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetId(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetMeshName(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetMeshName(val *string) {
 	if err := j.validateSetMeshNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetMeshName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetMeshOwner(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetMeshOwner(val *string) {
 	if err := j.validateSetMeshOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetMeshOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetName(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_AppmeshVirtualNode)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNode)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AppmeshVirtualNode) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func AppmeshVirtualNode_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func AppmeshVirtualNode_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppmeshVirtualNode_IsConstruct(x interface{}) *bool {
+func AppmeshVirtualNode_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshVirtualNode_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func AppmeshVirtualNode_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func AppmeshVirtualNode_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool {
+func AppmeshVirtualNode_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshVirtualNode_IsTerraformElementParameters(x); err != nil {
@@ -721,7 +720,7 @@ func AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool {
+func AppmeshVirtualNode_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshVirtualNode_IsTerraformResourceParameters(x); err != nil {
@@ -740,7 +739,7 @@ func AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,31 +764,31 @@ func (a *jsiiProxy_AppmeshVirtualNode) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppmeshVirtualNode) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshVirtualNode) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,15 +916,15 @@ func (a *jsiiProxy_AppmeshVirtualNode) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -944,7 +943,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -957,7 +956,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,18 +970,18 @@ func (a *jsiiProxy_AppmeshVirtualNode) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppmeshVirtualNode) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -993,7 +992,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (a *jsiiProxy_AppmeshVirtualNode) PutSpec(value *AppmeshVirtualNodeSpec) {
 	_jsii_.InvokeVoid(
 		a,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1059,8 +1058,8 @@ func (a *jsiiProxy_AppmeshVirtualNode) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1072,8 +1071,8 @@ func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1085,8 +1084,8 @@ func (a *jsiiProxy_AppmeshVirtualNode) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1098,8 +1097,8 @@ func (a *jsiiProxy_AppmeshVirtualNode) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1124,8 +1123,8 @@ func (a *jsiiProxy_AppmeshVirtualNode) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNode) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshVirtualNode) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1136,4 +1135,3 @@ func (a *jsiiProxy_AppmeshVirtualNode) ToTerraform() interface{} {
 
 	return returns
 }
-

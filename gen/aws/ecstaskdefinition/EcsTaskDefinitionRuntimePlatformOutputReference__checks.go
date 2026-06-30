@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskDefinitionRuntimePlatformOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionRuntimePlatformOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionRuntimePlatformOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEcsTaskDefinitionRuntimePlatformOutputReferenceParameters(terraf
 
 	return nil
 }
-

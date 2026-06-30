@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
-		reflect.TypeOf((*DataAwsCeTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTags](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTags{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,23 +74,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsConfig",
-		reflect.TypeOf((*DataAwsCeTagsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilter",
-		reflect.TypeOf((*DataAwsCeTagsFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAnd",
-		reflect.TypeOf((*DataAwsCeTagsFilterAnd)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAnd](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndCostCategory)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategoryOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterAndCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimension",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndDimension)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimensionOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterAndDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,7 +176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndList",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -198,7 +198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,11 +242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTags",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTagsOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterAndTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterAndTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterAndTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -287,11 +287,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategory",
-		reflect.TypeOf((*DataAwsCeTagsFilterCostCategory)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -332,11 +332,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimension",
-		reflect.TypeOf((*DataAwsCeTagsFilterDimension)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,15 +377,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNot",
-		reflect.TypeOf((*DataAwsCeTagsFilterNot)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNot](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotCostCategory)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -418,7 +418,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -426,11 +426,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimension",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotDimension)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimensionOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -463,7 +463,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterNotDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -471,7 +471,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterNotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,11 +515,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTags",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTagsOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterNotTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterNotTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -552,7 +552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterNotTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -560,15 +560,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOr",
-		reflect.TypeOf((*DataAwsCeTagsFilterOr)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOr](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrCostCategory)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategoryOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -601,7 +601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOrCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -609,11 +609,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimension",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrDimension)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimensionOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -646,7 +646,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -654,7 +654,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -668,7 +668,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOrList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -676,7 +676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -712,7 +712,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOrOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -720,11 +720,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTags",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTagsOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterOrTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOrTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -757,7 +757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOrTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -765,7 +765,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -813,7 +813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -821,11 +821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTags",
-		reflect.TypeOf((*DataAwsCeTagsFilterTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTagsOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsFilterTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsFilterTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -858,7 +858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsFilterTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -866,11 +866,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortBy",
-		reflect.TypeOf((*DataAwsCeTagsSortBy)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsSortBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
-		reflect.TypeOf((*DataAwsCeTagsSortByList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsSortByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -884,7 +884,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsSortByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -892,7 +892,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsSortByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsSortByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -922,7 +922,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsSortByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -930,11 +930,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriod",
-		reflect.TypeOf((*DataAwsCeTagsTimePeriod)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsTimePeriod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
-		reflect.TypeOf((*DataAwsCeTagsTimePeriodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCeTagsTimePeriodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -962,7 +962,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCeTagsTimePeriodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

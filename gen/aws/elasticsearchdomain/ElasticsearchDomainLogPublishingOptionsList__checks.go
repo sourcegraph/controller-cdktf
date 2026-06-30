@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElasticsearchDomainLogPublishingOptionsListParameters(terraformR
 
 	return nil
 }
-

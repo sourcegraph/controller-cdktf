@@ -12,9 +12,9 @@ type DataAwsCeTagsFilterDimensionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type DataAwsCeTagsFilterDimensionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataAwsCeTagsFilterDimensionOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ValuesInput() *[
 	return returns
 }
 
-
 func NewDataAwsCeTagsFilterDimensionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterDimensionOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataAwsCeTagsFilterDimensionOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataAwsCeTagsFilterDimensionOutputReference_Override(d DataAwsCeTagsFilt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetInternalValue(val *DataAwsCeTagsFilterDimension) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetInternalValue(val *DataAwsCeTagsFilterDimension) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetKey(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetMatchOptions(val *[]*string) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetMatchOptions(val *[]*string) {
 	if err := j.validateSetMatchOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetMatchOptions(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ResetValues() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference) ToString() *stri
 
 	return returns
 }
-

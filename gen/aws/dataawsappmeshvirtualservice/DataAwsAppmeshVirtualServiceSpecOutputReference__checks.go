@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppmeshVirtualServiceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAppmeshVirtualServiceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAppmeshVirtualServiceSpecOutputReferenceParameters(terraf
 
 	return nil
 }
-

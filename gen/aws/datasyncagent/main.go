@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
-		reflect.TypeOf((*DatasyncAgent)(nil)).Elem(),
+		reflect.TypeFor[DatasyncAgent](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationKey", GoGetter: "ActivationKey"},
 			_jsii_.MemberProperty{JsiiProperty: "activationKeyInput", GoGetter: "ActivationKeyInput"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIdInput", GoGetter: "VpcEndpointIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncAgent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentConfig",
-		reflect.TypeOf((*DatasyncAgentConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncAgentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeouts",
-		reflect.TypeOf((*DatasyncAgentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DatasyncAgentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
-		reflect.TypeOf((*DatasyncAgentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncAgentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncAgentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

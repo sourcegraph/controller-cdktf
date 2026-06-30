@@ -19,7 +19,7 @@ func (m *jsiiProxy_MemorydbSnapshot) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MemorydbSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MemorydbSnapshot) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MemorydbSnapshot) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMemorydbSnapshot_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateMemorydbSnapshot_IsConstructParameters(x interface{}) error {
+func validateMemorydbSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMemorydbSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMemorydbSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateMemorydbSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMemorydbSnapshot_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateMemorydbSnapshot_IsTerraformResourceParameters(x interface{}) error {
+func validateMemorydbSnapshot_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_MemorydbSnapshot) validateSetClusterNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshot) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_MemorydbSnapshot) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_MemorydbSnapshot) validateSetNamePrefixParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MemorydbSnapshot) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewMemorydbSnapshotParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

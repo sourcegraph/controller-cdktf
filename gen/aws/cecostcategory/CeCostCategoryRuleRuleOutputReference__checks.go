@@ -90,7 +90,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validateInterpolationF
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validatePutAndParameters(value interface{}) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validatePutAndParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validatePutNotParamete
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validatePutOrParameters(value interface{}) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validatePutOrParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -304,4 +304,3 @@ func validateNewCeCostCategoryRuleRuleOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

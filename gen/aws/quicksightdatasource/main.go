@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
-		reflect.TypeOf((*QuicksightDataSource)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectionProperties", GoGetter: "VpcConnectionProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectionPropertiesInput", GoGetter: "VpcConnectionPropertiesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,19 +99,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceConfig",
-		reflect.TypeOf((*QuicksightDataSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials",
-		reflect.TypeOf((*QuicksightDataSourceCredentials)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceCredentials](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair",
-		reflect.TypeOf((*QuicksightDataSourceCredentialsCredentialPair)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceCredentialsCredentialPair](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceCredentialsCredentialPairOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceCredentialsCredentialPairOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,7 +147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParameters",
-		reflect.TypeOf((*QuicksightDataSourceParameters)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch",
-		reflect.TypeOf((*QuicksightDataSourceParametersAmazonElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAmazonElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersAmazonElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAmazonElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthena",
-		reflect.TypeOf((*QuicksightDataSourceParametersAthena)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAthena](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersAthenaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAthenaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workGroup", GoGetter: "WorkGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "workGroupInput", GoGetter: "WorkGroupInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora",
-		reflect.TypeOf((*QuicksightDataSourceParametersAurora)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAurora](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersAuroraOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAuroraOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersAuroraOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,11 +309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql",
-		reflect.TypeOf((*QuicksightDataSourceParametersAuroraPostgresql)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAuroraPostgresql](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresqlOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersAuroraPostgresqlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAuroraPostgresqlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -351,11 +351,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics",
-		reflect.TypeOf((*QuicksightDataSourceParametersAwsIotAnalytics)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAwsIotAnalytics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersAwsIotAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersAwsIotAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,11 +389,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira",
-		reflect.TypeOf((*QuicksightDataSourceParametersJira)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersJira](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJiraOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersJiraOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersJiraOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersJiraOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,11 +427,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb",
-		reflect.TypeOf((*QuicksightDataSourceParametersMariaDb)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersMariaDb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersMariaDbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersMariaDbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -461,7 +461,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -469,11 +469,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql",
-		reflect.TypeOf((*QuicksightDataSourceParametersMysql)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersMysql](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersMysqlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersMysqlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -503,7 +503,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersMysqlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -511,11 +511,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle",
-		reflect.TypeOf((*QuicksightDataSourceParametersOracle)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersOracle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersOracleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersOracleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersOracleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -553,7 +553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonElasticsearch", GoGetter: "AmazonElasticsearch"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonElasticsearchInput", GoGetter: "AmazonElasticsearchInput"},
@@ -657,7 +657,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "twitter", GoGetter: "Twitter"},
 			_jsii_.MemberProperty{JsiiProperty: "twitterInput", GoGetter: "TwitterInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -665,11 +665,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql",
-		reflect.TypeOf((*QuicksightDataSourceParametersPostgresql)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersPostgresql](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersPostgresqlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersPostgresqlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -699,7 +699,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersPostgresqlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -707,11 +707,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto",
-		reflect.TypeOf((*QuicksightDataSourceParametersPresto)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersPresto](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPrestoOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersPrestoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersPrestoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogInput", GoGetter: "CatalogInput"},
@@ -741,7 +741,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersPrestoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -749,11 +749,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds",
-		reflect.TypeOf((*QuicksightDataSourceParametersRds)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersRds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRdsOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersRdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersRdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -781,7 +781,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersRdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -789,11 +789,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift",
-		reflect.TypeOf((*QuicksightDataSourceParametersRedshift)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -828,7 +828,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -836,15 +836,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3",
-		reflect.TypeOf((*QuicksightDataSourceParametersS3)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersS3](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation",
-		reflect.TypeOf((*QuicksightDataSourceParametersS3ManifestFileLocation)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersS3ManifestFileLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersS3ManifestFileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersS3ManifestFileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -872,7 +872,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -880,7 +880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -907,7 +907,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -915,11 +915,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow",
-		reflect.TypeOf((*QuicksightDataSourceParametersServiceNow)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersServiceNow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersServiceNowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersServiceNowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -945,7 +945,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersServiceNowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -953,11 +953,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake",
-		reflect.TypeOf((*QuicksightDataSourceParametersSnowflake)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSnowflake](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersSnowflakeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSnowflakeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -987,7 +987,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warehouse", GoGetter: "Warehouse"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseInput", GoGetter: "WarehouseInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -995,11 +995,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark",
-		reflect.TypeOf((*QuicksightDataSourceParametersSpark)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSpark](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersSparkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSparkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1027,7 +1027,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersSparkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1035,11 +1035,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer",
-		reflect.TypeOf((*QuicksightDataSourceParametersSqlServer)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSqlServer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServerOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersSqlServerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersSqlServerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1069,7 +1069,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1077,11 +1077,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata",
-		reflect.TypeOf((*QuicksightDataSourceParametersTeradata)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersTeradata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersTeradataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersTeradataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1111,7 +1111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersTeradataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1119,11 +1119,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter",
-		reflect.TypeOf((*QuicksightDataSourceParametersTwitter)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersTwitter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceParametersTwitterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceParametersTwitterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1151,7 +1151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1159,11 +1159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission",
-		reflect.TypeOf((*QuicksightDataSourcePermission)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourcePermission](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList",
-		reflect.TypeOf((*QuicksightDataSourcePermissionList)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourcePermissionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1177,7 +1177,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourcePermissionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1185,7 +1185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
-		reflect.TypeOf((*QuicksightDataSourcePermissionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourcePermissionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -1213,7 +1213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourcePermissionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1221,11 +1221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties",
-		reflect.TypeOf((*QuicksightDataSourceSslProperties)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceSslProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceSslPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceSslPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1251,7 +1251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1259,11 +1259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties",
-		reflect.TypeOf((*QuicksightDataSourceVpcConnectionProperties)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceVpcConnectionProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference",
-		reflect.TypeOf((*QuicksightDataSourceVpcConnectionPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[QuicksightDataSourceVpcConnectionPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1289,7 +1289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectionArn", GoGetter: "VpcConnectionArn"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectionArnInput", GoGetter: "VpcConnectionArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

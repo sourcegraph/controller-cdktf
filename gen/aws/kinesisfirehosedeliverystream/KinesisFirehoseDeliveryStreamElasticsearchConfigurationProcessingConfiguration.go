@@ -1,12 +1,10 @@
 package kinesisfirehosedeliverystream
 
-
 type KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// processors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
-	Processors interface{} `field:"optional" json:"processors" yaml:"processors"`
+	Processors any `field:"optional" json:"processors" yaml:"processors"`
 }
-

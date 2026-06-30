@@ -21,18 +21,18 @@ type SyntheticsCanary interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeleteLambda() interface{}
-	SetDeleteLambda(val interface{})
-	DeleteLambdaInput() interface{}
+	SetCount(val any)
+	DeleteLambda() any
+	SetDeleteLambda(val any)
+	DeleteLambdaInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,11 +72,11 @@ type SyntheticsCanary interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RunConfig() SyntheticsCanaryRunConfigOutputReference
 	RunConfigInput() *SyntheticsCanaryRunConfig
 	RuntimeVersion() *string
@@ -94,9 +94,9 @@ type SyntheticsCanary interface {
 	Schedule() SyntheticsCanaryScheduleOutputReference
 	ScheduleInput() *SyntheticsCanarySchedule
 	SourceLocationArn() *string
-	StartCanary() interface{}
-	SetStartCanary(val interface{})
-	StartCanaryInput() interface{}
+	StartCanary() any
+	SetStartCanary(val any)
+	StartCanaryInput() any
 	Status() *string
 	SuccessRetentionPeriod() *float64
 	SetSuccessRetentionPeriod(val *float64)
@@ -110,7 +110,7 @@ type SyntheticsCanary interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeline() SyntheticsCanaryTimelineList
@@ -123,9 +123,9 @@ type SyntheticsCanary interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type SyntheticsCanary interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type SyntheticsCanary interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -183,17 +183,17 @@ type SyntheticsCanary interface {
 	ResetTagsAll()
 	ResetVpcConfig()
 	ResetZipFile()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SyntheticsCanary
@@ -261,8 +261,8 @@ func (j *jsiiProxy_SyntheticsCanary) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_SyntheticsCanary) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SyntheticsCanary) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_SyntheticsCanary) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_SyntheticsCanary) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) DeleteLambda() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) DeleteLambda() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteLambda",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_SyntheticsCanary) DeleteLambda() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) DeleteLambdaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) DeleteLambdaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteLambdaInput",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_SyntheticsCanary) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SyntheticsCanary) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_SyntheticsCanary) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_SyntheticsCanary) SourceLocationArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) StartCanary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) StartCanary() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startCanary",
@@ -651,8 +651,8 @@ func (j *jsiiProxy_SyntheticsCanary) StartCanary() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) StartCanaryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanary) StartCanaryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startCanaryInput",
@@ -741,8 +741,8 @@ func (j *jsiiProxy_SyntheticsCanary) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanary) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SyntheticsCanary) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -811,7 +811,6 @@ func (j *jsiiProxy_SyntheticsCanary) ZipFileInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/synthetics_canary aws_synthetics_canary} Resource.
 func NewSyntheticsCanary(scope constructs.Construct, id *string, config *SyntheticsCanaryConfig) SyntheticsCanary {
 	_init_.Initialize()
@@ -823,7 +822,7 @@ func NewSyntheticsCanary(scope constructs.Construct, id *string, config *Synthet
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -836,12 +835,12 @@ func NewSyntheticsCanary_Override(s SyntheticsCanary, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetArtifactS3Location(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetArtifactS3Location(val *string) {
 	if err := j.validateSetArtifactS3LocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetArtifactS3Location(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanary) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetCount(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanary) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetDeleteLambda(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanary) SetDeleteLambda(val any) {
 	if err := j.validateSetDeleteLambdaParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetDeleteLambda(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsCanary) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -893,7 +892,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetExecutionRoleArn(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetExecutionRoleArn(val *string) {
 	if err := j.validateSetExecutionRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetExecutionRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetFailureRetentionPeriod(val *float64) {
+func (j *jsiiProxy_SyntheticsCanary) SetFailureRetentionPeriod(val *float64) {
 	if err := j.validateSetFailureRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetFailureRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsCanary) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -923,7 +922,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetHandler(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetHandler(val *string) {
 	if err := j.validateSetHandlerParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetHandler(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetId(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsCanary) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetName(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsCanary) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -975,7 +974,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsCanary) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetRuntimeVersion(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetRuntimeVersion(val *string) {
 	if err := j.validateSetRuntimeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetRuntimeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetS3Bucket(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetS3Bucket(val *string) {
 	if err := j.validateSetS3BucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetS3Bucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetS3Key(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetS3Key(val *string) {
 	if err := j.validateSetS3KeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetS3Key(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetS3Version(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetS3Version(val *string) {
 	if err := j.validateSetS3VersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetS3Version(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetStartCanary(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanary) SetStartCanary(val any) {
 	if err := j.validateSetStartCanaryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetStartCanary(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetSuccessRetentionPeriod(val *float64) {
+func (j *jsiiProxy_SyntheticsCanary) SetSuccessRetentionPeriod(val *float64) {
 	if err := j.validateSetSuccessRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetSuccessRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SyntheticsCanary) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SyntheticsCanary) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_SyntheticsCanary)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanary)SetZipFile(val *string) {
+func (j *jsiiProxy_SyntheticsCanary) SetZipFile(val *string) {
 	if err := j.validateSetZipFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func SyntheticsCanary_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func SyntheticsCanary_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SyntheticsCanary_IsConstruct(x interface{}) *bool {
+func SyntheticsCanary_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSyntheticsCanary_IsConstructParameters(x); err != nil {
@@ -1132,7 +1131,7 @@ func SyntheticsCanary_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func SyntheticsCanary_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SyntheticsCanary_IsTerraformElement(x interface{}) *bool {
+func SyntheticsCanary_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSyntheticsCanary_IsTerraformElementParameters(x); err != nil {
@@ -1151,7 +1150,7 @@ func SyntheticsCanary_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func SyntheticsCanary_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SyntheticsCanary_IsTerraformResource(x interface{}) *bool {
+func SyntheticsCanary_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSyntheticsCanary_IsTerraformResourceParameters(x); err != nil {
@@ -1170,7 +1169,7 @@ func SyntheticsCanary_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1195,31 +1194,31 @@ func (s *jsiiProxy_SyntheticsCanary) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanary) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SyntheticsCanary) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanary) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsCanary) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1235,7 +1234,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1251,7 +1250,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1267,7 +1266,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1283,7 +1282,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1299,7 +1298,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1315,7 +1314,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1331,7 +1330,7 @@ func (s *jsiiProxy_SyntheticsCanary) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1347,15 +1346,15 @@ func (s *jsiiProxy_SyntheticsCanary) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanary) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SyntheticsCanary) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1374,7 +1373,7 @@ func (s *jsiiProxy_SyntheticsCanary) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1387,7 +1386,7 @@ func (s *jsiiProxy_SyntheticsCanary) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1401,18 +1400,18 @@ func (s *jsiiProxy_SyntheticsCanary) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanary) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SyntheticsCanary) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1423,7 +1422,7 @@ func (s *jsiiProxy_SyntheticsCanary) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1434,7 +1433,7 @@ func (s *jsiiProxy_SyntheticsCanary) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1445,7 +1444,7 @@ func (s *jsiiProxy_SyntheticsCanary) PutArtifactConfig(value *SyntheticsCanaryAr
 	_jsii_.InvokeVoid(
 		s,
 		"putArtifactConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1456,7 +1455,7 @@ func (s *jsiiProxy_SyntheticsCanary) PutRunConfig(value *SyntheticsCanaryRunConf
 	_jsii_.InvokeVoid(
 		s,
 		"putRunConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1467,7 +1466,7 @@ func (s *jsiiProxy_SyntheticsCanary) PutSchedule(value *SyntheticsCanarySchedule
 	_jsii_.InvokeVoid(
 		s,
 		"putSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1478,7 +1477,7 @@ func (s *jsiiProxy_SyntheticsCanary) PutVpcConfig(value *SyntheticsCanaryVpcConf
 	_jsii_.InvokeVoid(
 		s,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1602,8 +1601,8 @@ func (s *jsiiProxy_SyntheticsCanary) ResetZipFile() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanary) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SyntheticsCanary) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1615,8 +1614,8 @@ func (s *jsiiProxy_SyntheticsCanary) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanary) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SyntheticsCanary) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1628,8 +1627,8 @@ func (s *jsiiProxy_SyntheticsCanary) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanary) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SyntheticsCanary) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1641,8 +1640,8 @@ func (s *jsiiProxy_SyntheticsCanary) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanary) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SyntheticsCanary) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1667,8 +1666,8 @@ func (s *jsiiProxy_SyntheticsCanary) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanary) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SyntheticsCanary) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1679,4 +1678,3 @@ func (s *jsiiProxy_SyntheticsCanary) ToTerraform() interface{} {
 
 	return returns
 }
-

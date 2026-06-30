@@ -12,9 +12,9 @@ type AccessanalyzerArchiveRuleFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type AccessanalyzerArchiveRuleFilterOutputReference interface {
 	ExistsInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Neq() *[]*string
 	SetNeq(val *[]*string)
 	NeqInput() *[]*string
@@ -55,7 +55,7 @@ type AccessanalyzerArchiveRuleFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type AccessanalyzerArchiveRuleFilterOutputReference interface {
 	ResetNeq()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewAccessanalyzerArchiveRuleFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessanalyzerArchiveRuleFilterOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewAccessanalyzerArchiveRuleFilterOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewAccessanalyzerArchiveRuleFilterOutputReference_Override(a Accessanalyzer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetContains(val *[]*string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetContains(val *[]*string) {
 	if err := j.validateSetContainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetContains(va
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetCriteria(val *string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetCriteria(val *string) {
 	if err := j.validateSetCriteriaParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetCriteria(va
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetEq(val *[]*string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetEq(val *[]*string) {
 	if err := j.validateSetEqParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetEq(val *[]*
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetExists(val *string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetExists(val *string) {
 	if err := j.validateSetExistsParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetExists(val 
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetNeq(val *[]*string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetNeq(val *[]*string) {
 	if err := j.validateSetNeqParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetNeq(val *[]
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetNumberList
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) Interpolation
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) ResetNeq() {
 	)
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) ToString() *s
 
 	return returns
 }
-

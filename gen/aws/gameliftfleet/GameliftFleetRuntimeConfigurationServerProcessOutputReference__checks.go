@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGameliftFleetRuntimeConfigurationServerProcessOutputReferencePar
 
 	return nil
 }
-

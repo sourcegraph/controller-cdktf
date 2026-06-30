@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
-		reflect.TypeOf((*ApprunnerVpcConnector)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerVpcConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectorNameInput", GoGetter: "VpcConnectorNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectorRevision", GoGetter: "VpcConnectorRevision"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApprunnerVpcConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig",
-		reflect.TypeOf((*ApprunnerVpcConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[ApprunnerVpcConnectorConfig](),
 	)
 }

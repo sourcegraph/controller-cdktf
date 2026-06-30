@@ -21,15 +21,15 @@ type CloudhsmV2Hsm interface {
 	SetClusterId(val *string)
 	ClusterIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,29 +62,29 @@ type CloudhsmV2Hsm interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudhsmV2HsmTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type CloudhsmV2Hsm interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type CloudhsmV2Hsm interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type CloudhsmV2Hsm interface {
 	ResetOverrideLogicalId()
 	ResetSubnetId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudhsmV2Hsm
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) ClusterIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) Timeouts() CloudhsmV2HsmTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudhsmV2Hsm) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_CloudhsmV2Hsm) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm} Resource.
 func NewCloudhsmV2Hsm(scope constructs.Construct, id *string, config *CloudhsmV2HsmConfig) CloudhsmV2Hsm {
@@ -470,7 +469,7 @@ func NewCloudhsmV2Hsm(scope constructs.Construct, id *string, config *CloudhsmV2
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewCloudhsmV2Hsm_Override(c CloudhsmV2Hsm, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetClusterId(val *string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -548,7 +547,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetId(val *string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetIpAddress(val *string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetSubnetId(val *string) {
+func (j *jsiiProxy_CloudhsmV2Hsm) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func CloudhsmV2Hsm_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func CloudhsmV2Hsm_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudhsmV2Hsm_IsConstruct(x interface{}) *bool {
+func CloudhsmV2Hsm_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudhsmV2Hsm_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func CloudhsmV2Hsm_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func CloudhsmV2Hsm_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool {
+func CloudhsmV2Hsm_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudhsmV2Hsm_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudhsmV2Hsm_IsTerraformResource(x interface{}) *bool {
+func CloudhsmV2Hsm_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudhsmV2Hsm_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func CloudhsmV2Hsm_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (c *jsiiProxy_CloudhsmV2Hsm) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudhsmV2Hsm) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudhsmV2Hsm) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (c *jsiiProxy_CloudhsmV2Hsm) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (c *jsiiProxy_CloudhsmV2Hsm) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudhsmV2Hsm) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) PutTimeouts(value *CloudhsmV2HsmTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1023,8 +1022,8 @@ func (c *jsiiProxy_CloudhsmV2Hsm) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1036,8 +1035,8 @@ func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1049,8 +1048,8 @@ func (c *jsiiProxy_CloudhsmV2Hsm) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1062,8 +1061,8 @@ func (c *jsiiProxy_CloudhsmV2Hsm) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1088,8 +1087,8 @@ func (c *jsiiProxy_CloudhsmV2Hsm) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudhsmV2Hsm) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1100,4 +1099,3 @@ func (c *jsiiProxy_CloudhsmV2Hsm) ToTerraform() interface{} {
 
 	return returns
 }
-

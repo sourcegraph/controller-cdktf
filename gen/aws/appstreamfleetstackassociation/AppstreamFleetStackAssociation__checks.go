@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) validateAddMoveTargetParamete
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppstreamFleetStackAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveFromIdParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppstreamFleetStackAssociation_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateAppstreamFleetStackAssociation_IsConstructParameters(x interface{}) error {
+func validateAppstreamFleetStackAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppstreamFleetStackAssociation_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateAppstreamFleetStackAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateAppstreamFleetStackAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppstreamFleetStackAssociation_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateAppstreamFleetStackAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateAppstreamFleetStackAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateAppstreamFleetStackAssociation_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewAppstreamFleetStackAssociationParameters(scope constructs.Constr
 
 	return nil
 }
-

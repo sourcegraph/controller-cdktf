@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
-		reflect.TypeOf((*MskconnectConnector)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerConfiguration", GoGetter: "WorkerConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigurationInput", GoGetter: "WorkerConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacity",
-		reflect.TypeOf((*MskconnectConnectorCapacity)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscaling",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscaling)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingOutputReference",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorCapacityAutoscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicy",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscalingScaleInPolicy)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscalingScaleInPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicy",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscalingScaleOutPolicy)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscalingScaleOutPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference",
-		reflect.TypeOf((*MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,7 +237,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference",
-		reflect.TypeOf((*MskconnectConnectorCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingInput", GoGetter: "AutoscalingInput"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacity",
-		reflect.TypeOf((*MskconnectConnectorCapacityProvisionedCapacity)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityProvisionedCapacity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference",
-		reflect.TypeOf((*MskconnectConnectorCapacityProvisionedCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorCapacityProvisionedCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerCount", GoGetter: "WorkerCount"},
 			_jsii_.MemberProperty{JsiiProperty: "workerCountInput", GoGetter: "WorkerCountInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -318,19 +318,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorConfig",
-		reflect.TypeOf((*MskconnectConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaCluster",
-		reflect.TypeOf((*MskconnectConnectorKafkaCluster)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaCluster](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaCluster",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterApacheKafkaCluster)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterApacheKafkaCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServers", GoGetter: "BootstrapServers"},
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServersInput", GoGetter: "BootstrapServersInput"},
@@ -359,7 +359,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcInput", GoGetter: "VpcInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -367,11 +367,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpc",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterApacheKafkaClusterVpc)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterApacheKafkaClusterVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -399,7 +399,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -407,11 +407,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthentication",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterClientAuthentication)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterClientAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterClientAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterClientAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationType", GoGetter: "AuthenticationType"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTypeInput", GoGetter: "AuthenticationTypeInput"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorKafkaClusterClientAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -446,11 +446,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransit",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterEncryptionInTransit)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterEncryptionInTransit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,7 +485,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterOutputReference",
-		reflect.TypeOf((*MskconnectConnectorKafkaClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorKafkaClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apacheKafkaCluster", GoGetter: "ApacheKafkaCluster"},
 			_jsii_.MemberProperty{JsiiProperty: "apacheKafkaClusterInput", GoGetter: "ApacheKafkaClusterInput"},
@@ -512,7 +512,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorKafkaClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -520,11 +520,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDelivery",
-		reflect.TypeOf((*MskconnectConnectorLogDelivery)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDelivery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -551,7 +551,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerLogDelivery", GoGetter: "WorkerLogDelivery"},
 			_jsii_.MemberProperty{JsiiProperty: "workerLogDeliveryInput", GoGetter: "WorkerLogDeliveryInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorLogDeliveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -559,15 +559,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDelivery",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDelivery)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDelivery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -596,7 +596,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -604,11 +604,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -637,7 +637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -645,7 +645,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsInput", GoGetter: "CloudwatchLogsInput"},
@@ -681,7 +681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -689,11 +689,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryS3)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference",
-		reflect.TypeOf((*MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -725,7 +725,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -733,15 +733,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPlugin",
-		reflect.TypeOf((*MskconnectConnectorPlugin)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorPlugin](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPlugin",
-		reflect.TypeOf((*MskconnectConnectorPluginCustomPlugin)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorPluginCustomPlugin](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference",
-		reflect.TypeOf((*MskconnectConnectorPluginCustomPluginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorPluginCustomPluginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -769,7 +769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorPluginCustomPluginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -777,7 +777,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginList",
-		reflect.TypeOf((*MskconnectConnectorPluginList)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorPluginList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -791,7 +791,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorPluginList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -799,7 +799,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginOutputReference",
-		reflect.TypeOf((*MskconnectConnectorPluginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorPluginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -826,7 +826,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorPluginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -834,11 +834,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeouts",
-		reflect.TypeOf((*MskconnectConnectorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference",
-		reflect.TypeOf((*MskconnectConnectorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -871,7 +871,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -879,11 +879,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfiguration",
-		reflect.TypeOf((*MskconnectConnectorWorkerConfiguration)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorWorkerConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
-		reflect.TypeOf((*MskconnectConnectorWorkerConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MskconnectConnectorWorkerConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -911,7 +911,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

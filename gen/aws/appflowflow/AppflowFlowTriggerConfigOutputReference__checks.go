@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewAppflowFlowTriggerConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

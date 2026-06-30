@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetRetainStacksOnAccountRemovalParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference) validateSetRetainStacksOnAccountRemovalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewCloudformationStackSetAutoDeploymentOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReferencePa
 
 	return nil
 }
-

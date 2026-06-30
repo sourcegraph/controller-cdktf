@@ -13,14 +13,14 @@ type CloudfrontDistributionViewerCertificateOutputReference interface {
 	AcmCertificateArn() *string
 	SetAcmCertificateArn(val *string)
 	AcmCertificateArnInput() *string
-	CloudfrontDefaultCertificate() interface{}
-	SetCloudfrontDefaultCertificate(val interface{})
-	CloudfrontDefaultCertificateInput() interface{}
+	CloudfrontDefaultCertificate() any
+	SetCloudfrontDefaultCertificate(val any)
+	CloudfrontDefaultCertificateInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type CloudfrontDistributionViewerCertificateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type CloudfrontDistributionViewerCertificateOutputReference interface {
 	ResetSslSupportMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) AcmCe
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) CloudfrontDefaultCertificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) CloudfrontDefaultCertificate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudfrontDefaultCertificate",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Cloud
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) CloudfrontDefaultCertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) CloudfrontDefaultCertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudfrontDefaultCertificateInput",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Cloud
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Terra
 	return returns
 }
 
-
 func NewCloudfrontDistributionViewerCertificateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionViewerCertificateOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewCloudfrontDistributionViewerCertificateOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewCloudfrontDistributionViewerCertificateOutputReference_Override(c Cloudf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetAcmCertificateArn(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetAcmCertificateArn(val *string) {
 	if err := j.validateSetAcmCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetAcm
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetCloudfrontDefaultCertificate(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetCloudfrontDefaultCertificate(val any) {
 	if err := j.validateSetCloudfrontDefaultCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetClo
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetIamCertificateId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetIamCertificateId(val *string) {
 	if err := j.validateSetIamCertificateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetIam
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetInternalValue(val *CloudfrontDistributionViewerCertificate) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetInternalValue(val *CloudfrontDistributionViewerCertificate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetMinimumProtocolVersion(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetMinimumProtocolVersion(val *string) {
 	if err := j.validateSetMinimumProtocolVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetMin
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetSslSupportMethod(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetSslSupportMethod(val *string) {
 	if err := j.validateSetSslSupportMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetSsl
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference) ToStr
 
 	return returns
 }
-

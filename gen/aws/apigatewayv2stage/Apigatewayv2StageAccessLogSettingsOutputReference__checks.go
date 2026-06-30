@@ -98,7 +98,7 @@ func (a *jsiiProxy_Apigatewayv2StageAccessLogSettingsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageAccessLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2StageAccessLogSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApigatewayv2StageAccessLogSettingsOutputReferenceParameters(terr
 
 	return nil
 }
-

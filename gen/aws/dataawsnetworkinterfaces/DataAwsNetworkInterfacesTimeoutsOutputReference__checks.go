@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkInterfacesTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsNetworkInterfacesTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

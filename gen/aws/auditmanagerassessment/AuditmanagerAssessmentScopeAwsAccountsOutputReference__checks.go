@@ -98,7 +98,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAuditmanagerAssessmentScopeAwsAccountsOutputReferenceParameters(
 
 	return nil
 }
-

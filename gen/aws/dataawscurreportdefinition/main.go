@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
-		reflect.TypeOf((*DataAwsCurReportDefinition)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCurReportDefinition](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalArtifacts", GoGetter: "AdditionalArtifacts"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalSchemaElements", GoGetter: "AdditionalSchemaElements"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsCurReportDefinition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig",
-		reflect.TypeOf((*DataAwsCurReportDefinitionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsCurReportDefinitionConfig](),
 	)
 }

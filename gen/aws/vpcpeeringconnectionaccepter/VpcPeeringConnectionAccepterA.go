@@ -15,21 +15,21 @@ type VpcPeeringConnectionAccepterA interface {
 	Accepter() VpcPeeringConnectionAccepterAccepterOutputReference
 	AccepterInput() *VpcPeeringConnectionAccepterAccepter
 	AcceptStatus() *string
-	AutoAccept() interface{}
-	SetAutoAccept(val interface{})
-	AutoAcceptInput() interface{}
+	AutoAccept() any
+	SetAutoAccept(val any)
+	AutoAcceptInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type VpcPeeringConnectionAccepterA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Requester() VpcPeeringConnectionAccepterRequesterOutputReference
 	RequesterInput() *VpcPeeringConnectionAccepterRequester
 	Tags() *map[string]*string
@@ -75,11 +75,11 @@ type VpcPeeringConnectionAccepterA interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VpcPeeringConnectionAccepterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	VpcPeeringConnectionId() *string
 	SetVpcPeeringConnectionId(val *string)
@@ -88,9 +88,9 @@ type VpcPeeringConnectionAccepterA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type VpcPeeringConnectionAccepterA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type VpcPeeringConnectionAccepterA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type VpcPeeringConnectionAccepterA interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcPeeringConnectionAccepterA
@@ -188,8 +188,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AcceptStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AutoAccept() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AutoAccept() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAccept",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AutoAccept() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AutoAcceptInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) AutoAcceptInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAcceptInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Timeouts() VpcPeeringConnectio
 	return returns
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -528,7 +528,6 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) VpcPeeringConnectionIdInput() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
 func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterAConfig) VpcPeeringConnectionAccepterA {
 	_init_.Initialize()
@@ -540,7 +539,7 @@ func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewVpcPeeringConnectionAccepterA_Override(v VpcPeeringConnectionAccepterA, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetAutoAccept(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetAutoAccept(val any) {
 	if err := j.validateSetAutoAcceptParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetAutoAccept(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetId(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetTags(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetTagsAll(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetVpcPeeringConnectionId(val *string) {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) SetVpcPeeringConnectionId(val *string) {
 	if err := j.validateSetVpcPeeringConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func VpcPeeringConnectionAccepterA_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func VpcPeeringConnectionAccepterA_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool {
+func VpcPeeringConnectionAccepterA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcPeeringConnectionAccepterA_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool {
+func VpcPeeringConnectionAccepterA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcPeeringConnectionAccepterA_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcPeeringConnectionAccepterA_IsTerraformResource(x interface{}) *bool {
+func VpcPeeringConnectionAccepterA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcPeeringConnectionAccepterA_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func VpcPeeringConnectionAccepterA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -970,7 +969,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) PutAccepter(value *VpcPeeringC
 	_jsii_.InvokeVoid(
 		v,
 		"putAccepter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) PutRequester(value *VpcPeering
 	_jsii_.InvokeVoid(
 		v,
 		"putRequester",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) PutTimeouts(value *VpcPeeringC
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1131,8 +1130,8 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1144,8 +1143,8 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1157,8 +1156,8 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1170,8 +1169,8 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1196,8 +1195,8 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1208,4 +1207,3 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ToTerraform() interface{} {
 
 	return returns
 }
-

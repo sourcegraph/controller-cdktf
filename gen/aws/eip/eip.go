@@ -24,15 +24,15 @@ type Eip interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIp() *string
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
@@ -75,16 +75,16 @@ type Eip interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicDns() *string
 	PublicIp() *string
 	PublicIpv4Pool() *string
 	SetPublicIpv4Pool(val *string)
 	PublicIpv4PoolInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -94,21 +94,21 @@ type Eip interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EipTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	Vpc() interface{}
-	SetVpc(val interface{})
-	VpcInput() interface{}
+	TimeoutsInput() any
+	Vpc() any
+	SetVpc(val any)
+	VpcInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type Eip interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type Eip interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,17 +161,17 @@ type Eip interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpc()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Eip
@@ -259,8 +259,8 @@ func (j *jsiiProxy_Eip) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_Eip) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Eip) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_Eip) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_Eip) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Eip) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_Eip) PublicIpv4PoolInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_Eip) TerraformGeneratorMetadata() *cdktf.TerraformProviderGen
 	return returns
 }
 
-func (j *jsiiProxy_Eip) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Eip) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -639,8 +639,8 @@ func (j *jsiiProxy_Eip) Timeouts() EipTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -649,8 +649,8 @@ func (j *jsiiProxy_Eip) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Vpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) Vpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpc",
@@ -659,8 +659,8 @@ func (j *jsiiProxy_Eip) Vpc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) VpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Eip) VpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpcInput",
@@ -668,7 +668,6 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
@@ -681,7 +680,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eip.Eip",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -694,12 +693,12 @@ func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eip.Eip",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Eip)SetAddress(val *string) {
+func (j *jsiiProxy_Eip) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_Eip)SetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetAssociateWithPrivateIp(val *string) {
+func (j *jsiiProxy_Eip) SetAssociateWithPrivateIp(val *string) {
 	if err := j.validateSetAssociateWithPrivateIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_Eip)SetAssociateWithPrivateIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetConnection(val interface{}) {
+func (j *jsiiProxy_Eip) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_Eip)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetCount(val interface{}) {
+func (j *jsiiProxy_Eip) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_Eip)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetCustomerOwnedIpv4Pool(val *string) {
+func (j *jsiiProxy_Eip) SetCustomerOwnedIpv4Pool(val *string) {
 	if err := j.validateSetCustomerOwnedIpv4PoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_Eip)SetCustomerOwnedIpv4Pool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Eip) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -762,7 +761,7 @@ func (j *jsiiProxy_Eip)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Eip) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -770,7 +769,7 @@ func (j *jsiiProxy_Eip)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetId(val *string) {
+func (j *jsiiProxy_Eip) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_Eip)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetInstance(val *string) {
+func (j *jsiiProxy_Eip) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_Eip)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Eip) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_Eip)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetNetworkBorderGroup(val *string) {
+func (j *jsiiProxy_Eip) SetNetworkBorderGroup(val *string) {
 	if err := j.validateSetNetworkBorderGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_Eip)SetNetworkBorderGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetNetworkInterface(val *string) {
+func (j *jsiiProxy_Eip) SetNetworkInterface(val *string) {
 	if err := j.validateSetNetworkInterfaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_Eip)SetNetworkInterface(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Eip) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -833,7 +832,7 @@ func (j *jsiiProxy_Eip)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Eip) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_Eip)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetPublicIpv4Pool(val *string) {
+func (j *jsiiProxy_Eip) SetPublicIpv4Pool(val *string) {
 	if err := j.validateSetPublicIpv4PoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_Eip)SetPublicIpv4Pool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Eip) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_Eip)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Eip) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_Eip)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetVpc(val interface{}) {
+func (j *jsiiProxy_Eip) SetVpc(val any) {
 	if err := j.validateSetVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func Eip_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eip.Eip",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func Eip_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Eip_IsConstruct(x interface{}) *bool {
+func Eip_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEip_IsConstructParameters(x); err != nil {
@@ -935,7 +934,7 @@ func Eip_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eip.Eip",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func Eip_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Eip_IsTerraformElement(x interface{}) *bool {
+func Eip_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEip_IsTerraformElementParameters(x); err != nil {
@@ -954,7 +953,7 @@ func Eip_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eip.Eip",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func Eip_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Eip_IsTerraformResource(x interface{}) *bool {
+func Eip_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEip_IsTerraformResourceParameters(x); err != nil {
@@ -973,7 +972,7 @@ func Eip_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eip.Eip",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -998,31 +997,31 @@ func (e *jsiiProxy_Eip) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_Eip) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_Eip) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_Eip) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Eip) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (e *jsiiProxy_Eip) GetBooleanAttribute(terraformAttribute *string) cdktf.IR
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (e *jsiiProxy_Eip) GetBooleanMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (e *jsiiProxy_Eip) GetListAttribute(terraformAttribute *string) *[]*string 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (e *jsiiProxy_Eip) GetNumberAttribute(terraformAttribute *string) *float64 
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (e *jsiiProxy_Eip) GetNumberListAttribute(terraformAttribute *string) *[]*f
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (e *jsiiProxy_Eip) GetNumberMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (e *jsiiProxy_Eip) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,15 +1149,15 @@ func (e *jsiiProxy_Eip) GetStringMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_Eip) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Eip) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1177,7 +1176,7 @@ func (e *jsiiProxy_Eip) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (e *jsiiProxy_Eip) InterpolationForAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1204,18 +1203,18 @@ func (e *jsiiProxy_Eip) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_Eip) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_Eip) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1226,7 +1225,7 @@ func (e *jsiiProxy_Eip) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (e *jsiiProxy_Eip) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (e *jsiiProxy_Eip) PutTimeouts(value *EipTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1356,8 +1355,8 @@ func (e *jsiiProxy_Eip) ResetVpc() {
 	)
 }
 
-func (e *jsiiProxy_Eip) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Eip) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1369,8 +1368,8 @@ func (e *jsiiProxy_Eip) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Eip) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_Eip) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1382,8 +1381,8 @@ func (e *jsiiProxy_Eip) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Eip) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Eip) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1395,8 +1394,8 @@ func (e *jsiiProxy_Eip) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_Eip) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Eip) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1421,8 +1420,8 @@ func (e *jsiiProxy_Eip) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Eip) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_Eip) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1433,4 +1432,3 @@ func (e *jsiiProxy_Eip) ToTerraform() interface{} {
 
 	return returns
 }
-

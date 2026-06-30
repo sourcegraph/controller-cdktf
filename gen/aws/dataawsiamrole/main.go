@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole",
-		reflect.TypeOf((*DataAwsIamRole)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamRole](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamRole{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRoleConfig",
-		reflect.TypeOf((*DataAwsIamRoleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamRoleConfig](),
 	)
 }

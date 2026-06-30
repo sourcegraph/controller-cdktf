@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlacierVaultNotificationOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultNotificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlacierVaultNotificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGlacierVaultNotificationOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

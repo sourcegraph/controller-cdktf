@@ -19,7 +19,7 @@ func (l *jsiiProxy_LexBotAlias) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAlias) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LexBotAlias) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LexBotAlias) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LexBotAlias) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateLexBotAlias_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateLexBotAlias_IsConstructParameters(x interface{}) error {
+func validateLexBotAlias_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateLexBotAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLexBotAlias_IsTerraformElementParameters(x interface{}) error {
+func validateLexBotAlias_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateLexBotAlias_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLexBotAlias_IsTerraformResourceParameters(x interface{}) error {
+func validateLexBotAlias_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_LexBotAlias) validateSetBotVersionParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAlias) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAlias) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_LexBotAlias) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAlias) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAlias) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_LexBotAlias) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAlias) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LexBotAlias) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewLexBotAliasParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

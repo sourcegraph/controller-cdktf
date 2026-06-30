@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSesv2ConfigurationSetTrackingOptionsOutputReferenceParameters(te
 
 	return nil
 }
-

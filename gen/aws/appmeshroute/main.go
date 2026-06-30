@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
-		reflect.TypeOf((*AppmeshRoute)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouterName", GoGetter: "VirtualRouterName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualRouterNameInput", GoGetter: "VirtualRouterNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,23 +86,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteConfig",
-		reflect.TypeOf((*AppmeshRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpec",
-		reflect.TypeOf((*AppmeshRouteSpec)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRoute",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRoute)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRoute](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteAction",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteAction)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedTarget", GoGetter: "WeightedTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedTargetInput", GoGetter: "WeightedTargetInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTarget",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteActionWeightedTarget)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteActionWeightedTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTargetList",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteActionWeightedTargetList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteActionWeightedTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteActionWeightedTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,15 +202,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatch",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadata",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadata)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatch",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,7 +324,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -365,7 +365,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,7 +413,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -460,11 +460,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicy",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -510,11 +510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -542,7 +542,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -550,15 +550,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdle",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeoutIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeoutIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -586,7 +586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -594,7 +594,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -626,7 +626,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -634,11 +634,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequest",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeoutPerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeoutPerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -674,15 +674,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2Route",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2Route)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2Route](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteAction",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteAction)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -709,7 +709,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedTarget", GoGetter: "WeightedTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedTargetInput", GoGetter: "WeightedTargetInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -717,11 +717,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTarget",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteActionWeightedTarget)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteActionWeightedTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetList",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteActionWeightedTargetList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteActionWeightedTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -735,7 +735,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -743,7 +743,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -774,7 +774,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -782,15 +782,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatch",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeader",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeader)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderList",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -812,11 +812,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatch",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -856,7 +856,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -864,11 +864,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -896,7 +896,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -904,7 +904,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -937,7 +937,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -945,7 +945,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -984,7 +984,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -992,7 +992,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -1030,7 +1030,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1038,11 +1038,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicy",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1077,7 +1077,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1085,11 +1085,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1117,7 +1117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1125,15 +1125,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdle",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeoutIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeoutIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1161,7 +1161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1169,7 +1169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1201,7 +1201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1209,11 +1209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequest",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeoutPerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeoutPerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1241,7 +1241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1249,15 +1249,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRoute",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRoute)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRoute](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteAction",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteAction)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1284,7 +1284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedTarget", GoGetter: "WeightedTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedTargetInput", GoGetter: "WeightedTargetInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1292,11 +1292,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTarget",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteActionWeightedTarget)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteActionWeightedTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTargetList",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteActionWeightedTargetList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteActionWeightedTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1310,7 +1310,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteActionWeightedTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1318,7 +1318,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1349,7 +1349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1357,15 +1357,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatch",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeader",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeader)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1379,7 +1379,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1387,11 +1387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatch",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1431,7 +1431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1439,11 +1439,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRange",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderMatchRange)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderMatchRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1471,7 +1471,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1479,7 +1479,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1512,7 +1512,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1520,7 +1520,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1559,7 +1559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1567,7 +1567,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -1605,7 +1605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1613,11 +1613,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicy",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1652,7 +1652,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1660,11 +1660,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1692,7 +1692,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1700,15 +1700,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdle",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeoutIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeoutIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1736,7 +1736,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1744,7 +1744,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1776,7 +1776,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1784,11 +1784,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequest",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeoutPerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeoutPerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1816,7 +1816,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1824,7 +1824,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1867,7 +1867,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1875,15 +1875,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRoute",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRoute)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRoute](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteAction",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteAction)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1910,7 +1910,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedTarget", GoGetter: "WeightedTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedTargetInput", GoGetter: "WeightedTargetInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1918,11 +1918,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTarget",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteActionWeightedTarget)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteActionWeightedTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteActionWeightedTargetList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteActionWeightedTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1936,7 +1936,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1944,7 +1944,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1975,7 +1975,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1983,11 +1983,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatch",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteMatchOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2014,7 +2014,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2022,7 +2022,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -2057,7 +2057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2065,15 +2065,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeout",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteTimeout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdle",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteTimeoutIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteTimeoutIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2101,7 +2101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2109,7 +2109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshRouteSpecTcpRouteTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshRouteSpecTcpRouteTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2137,7 +2137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

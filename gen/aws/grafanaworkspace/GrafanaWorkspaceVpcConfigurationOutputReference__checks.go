@@ -98,7 +98,7 @@ func (g *jsiiProxy_GrafanaWorkspaceVpcConfigurationOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGrafanaWorkspaceVpcConfigurationOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
 type ElasticacheCluster interface {
 	cdktf.TerraformResource
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
 	AutoMinorVersionUpgrade() *string
 	SetAutoMinorVersionUpgrade(val *string)
@@ -34,15 +34,15 @@ type ElasticacheCluster interface {
 	ClusterIdInput() *string
 	ConfigurationEndpoint() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -76,7 +76,7 @@ type ElasticacheCluster interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogDeliveryConfiguration() ElasticacheClusterLogDeliveryConfigurationList
-	LogDeliveryConfigurationInput() interface{}
+	LogDeliveryConfigurationInput() any
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
@@ -114,11 +114,11 @@ type ElasticacheCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicationGroupId() *string
 	SetReplicationGroupId(val *string)
 	ReplicationGroupIdInput() *string
@@ -152,16 +152,16 @@ type ElasticacheCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -179,7 +179,7 @@ type ElasticacheCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -191,14 +191,14 @@ type ElasticacheCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLogDeliveryConfiguration(value interface{})
+	PutLogDeliveryConfiguration(value any)
 	ResetApplyImmediately()
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
@@ -232,17 +232,17 @@ type ElasticacheCluster interface {
 	ResetSubnetGroupName()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ElasticacheCluster
@@ -250,8 +250,8 @@ type jsiiProxy_ElasticacheCluster struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ElasticacheCluster) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_ElasticacheCluster) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_ElasticacheCluster) ConfigurationEndpoint() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_ElasticacheCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_ElasticacheCluster) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_ElasticacheCluster) LogDeliveryConfiguration() ElasticacheClu
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) LogDeliveryConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) LogDeliveryConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logDeliveryConfigurationInput",
@@ -830,8 +830,8 @@ func (j *jsiiProxy_ElasticacheCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ElasticacheCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -840,8 +840,8 @@ func (j *jsiiProxy_ElasticacheCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1060,8 +1060,8 @@ func (j *jsiiProxy_ElasticacheCluster) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ElasticacheCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1080,7 +1080,6 @@ func (j *jsiiProxy_ElasticacheCluster) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) ElasticacheCluster {
 	_init_.Initialize()
@@ -1092,7 +1091,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1105,12 +1104,12 @@ func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_ElasticacheCluster) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetAutoMinorVersionUpgrade(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetAutoMinorVersionUpgrade(val *string) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetAutoMinorVersionUpgrade(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1143,7 +1142,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetAzMode(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetAzMode(val *string) {
 	if err := j.validateSetAzModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1154,7 +1153,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetAzMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetClusterId(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1165,7 +1164,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_ElasticacheCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1176,7 +1175,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_ElasticacheCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1187,7 +1186,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1195,7 +1194,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetEngine(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -1206,7 +1205,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetEngineVersion(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1217,7 +1216,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetFinalSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetFinalSnapshotIdentifier(val *string) {
 	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1228,7 +1227,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetFinalSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElasticacheCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1236,7 +1235,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetId(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1247,7 +1246,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetIpDiscovery(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetIpDiscovery(val *string) {
 	if err := j.validateSetIpDiscoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1257,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetIpDiscovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElasticacheCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetMaintenanceWindow(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetMaintenanceWindow(val *string) {
 	if err := j.validateSetMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetMaintenanceWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetNetworkType(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetNetworkType(val *string) {
 	if err := j.validateSetNetworkTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetNetworkType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetNodeType(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetNotificationTopicArn(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetNotificationTopicArn(val *string) {
 	if err := j.validateSetNotificationTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetNotificationTopicArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetNumCacheNodes(val *float64) {
+func (j *jsiiProxy_ElasticacheCluster) SetNumCacheNodes(val *float64) {
 	if err := j.validateSetNumCacheNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetNumCacheNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetOutpostMode(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetOutpostMode(val *string) {
 	if err := j.validateSetOutpostModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1335,7 +1334,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetOutpostMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetParameterGroupName(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetParameterGroupName(val *string) {
 	if err := j.validateSetParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1346,7 +1345,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetParameterGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetPort(val *float64) {
+func (j *jsiiProxy_ElasticacheCluster) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1357,7 +1356,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetPreferredAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetPreferredAvailabilityZones(val *[]*string) {
 	if err := j.validateSetPreferredAvailabilityZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1368,7 +1367,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetPreferredAvailabilityZones(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetPreferredOutpostArn(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetPreferredOutpostArn(val *string) {
 	if err := j.validateSetPreferredOutpostArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1379,7 +1378,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetPreferredOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElasticacheCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1387,7 +1386,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElasticacheCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1398,7 +1397,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetReplicationGroupId(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetReplicationGroupId(val *string) {
 	if err := j.validateSetReplicationGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1409,7 +1408,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetReplicationGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1420,7 +1419,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupNames(val *[]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSecurityGroupNames(val *[]*string) {
 	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1431,7 +1430,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSnapshotArns(val *[]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSnapshotArns(val *[]*string) {
 	if err := j.validateSetSnapshotArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1442,7 +1441,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSnapshotArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSnapshotName(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSnapshotName(val *string) {
 	if err := j.validateSetSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1453,7 +1452,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSnapshotName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSnapshotRetentionLimit(val *float64) {
+func (j *jsiiProxy_ElasticacheCluster) SetSnapshotRetentionLimit(val *float64) {
 	if err := j.validateSetSnapshotRetentionLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1464,7 +1463,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSnapshotRetentionLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSnapshotWindow(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSnapshotWindow(val *string) {
 	if err := j.validateSetSnapshotWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1475,7 +1474,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSnapshotWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetSubnetGroupName(val *string) {
+func (j *jsiiProxy_ElasticacheCluster) SetSubnetGroupName(val *string) {
 	if err := j.validateSetSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1486,7 +1485,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1497,7 +1496,7 @@ func (j *jsiiProxy_ElasticacheCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ElasticacheCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1520,7 +1519,7 @@ func ElasticacheCluster_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1544,7 +1543,7 @@ func ElasticacheCluster_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ElasticacheCluster_IsConstruct(x interface{}) *bool {
+func ElasticacheCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheCluster_IsConstructParameters(x); err != nil {
@@ -1555,7 +1554,7 @@ func ElasticacheCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1563,7 +1562,7 @@ func ElasticacheCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheCluster_IsTerraformElement(x interface{}) *bool {
+func ElasticacheCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheCluster_IsTerraformElementParameters(x); err != nil {
@@ -1574,7 +1573,7 @@ func ElasticacheCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1582,7 +1581,7 @@ func ElasticacheCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ElasticacheCluster_IsTerraformResource(x interface{}) *bool {
+func ElasticacheCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateElasticacheCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1593,7 +1592,7 @@ func ElasticacheCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1618,31 +1617,31 @@ func (e *jsiiProxy_ElasticacheCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheCluster) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_ElasticacheCluster) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticacheCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1658,7 +1657,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1674,7 +1673,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1690,7 +1689,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1706,7 +1705,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1722,7 +1721,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1738,7 +1737,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1754,7 +1753,7 @@ func (e *jsiiProxy_ElasticacheCluster) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1770,15 +1769,15 @@ func (e *jsiiProxy_ElasticacheCluster) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1797,7 +1796,7 @@ func (e *jsiiProxy_ElasticacheCluster) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1810,7 +1809,7 @@ func (e *jsiiProxy_ElasticacheCluster) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1824,18 +1823,18 @@ func (e *jsiiProxy_ElasticacheCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheCluster) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_ElasticacheCluster) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1846,7 +1845,7 @@ func (e *jsiiProxy_ElasticacheCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1857,18 +1856,18 @@ func (e *jsiiProxy_ElasticacheCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_ElasticacheCluster) PutLogDeliveryConfiguration(value interface{}) {
+func (e *jsiiProxy_ElasticacheCluster) PutLogDeliveryConfiguration(value any) {
 	if err := e.validatePutLogDeliveryConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLogDeliveryConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2120,8 +2119,8 @@ func (e *jsiiProxy_ElasticacheCluster) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2133,8 +2132,8 @@ func (e *jsiiProxy_ElasticacheCluster) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_ElasticacheCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -2146,8 +2145,8 @@ func (e *jsiiProxy_ElasticacheCluster) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2159,8 +2158,8 @@ func (e *jsiiProxy_ElasticacheCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2185,8 +2184,8 @@ func (e *jsiiProxy_ElasticacheCluster) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_ElasticacheCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -2197,4 +2196,3 @@ func (e *jsiiProxy_ElasticacheCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

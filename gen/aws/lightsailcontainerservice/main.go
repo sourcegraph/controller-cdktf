@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
-		reflect.TypeOf((*LightsailContainerService)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,19 +100,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServiceConfig",
-		reflect.TypeOf((*LightsailContainerServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccess",
-		reflect.TypeOf((*LightsailContainerServicePrivateRegistryAccess)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePrivateRegistryAccess](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole",
-		reflect.TypeOf((*LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference",
-		reflect.TypeOf((*LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,7 +148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference",
-		reflect.TypeOf((*LightsailContainerServicePrivateRegistryAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePrivateRegistryAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServicePrivateRegistryAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,15 +184,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNames",
-		reflect.TypeOf((*LightsailContainerServicePublicDomainNames)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePublicDomainNames](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificate",
-		reflect.TypeOf((*LightsailContainerServicePublicDomainNamesCertificate)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePublicDomainNamesCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList",
-		reflect.TypeOf((*LightsailContainerServicePublicDomainNamesCertificateList)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePublicDomainNamesCertificateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -214,7 +214,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference",
-		reflect.TypeOf((*LightsailContainerServicePublicDomainNamesCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePublicDomainNamesCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateName", GoGetter: "CertificateName"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateNameInput", GoGetter: "CertificateNameInput"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,7 +250,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
-		reflect.TypeOf((*LightsailContainerServicePublicDomainNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServicePublicDomainNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -277,7 +277,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -285,11 +285,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServiceTimeouts",
-		reflect.TypeOf((*LightsailContainerServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference",
-		reflect.TypeOf((*LightsailContainerServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailContainerServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailContainerServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

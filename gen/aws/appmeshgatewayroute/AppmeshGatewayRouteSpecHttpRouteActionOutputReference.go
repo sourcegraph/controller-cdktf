@@ -12,9 +12,9 @@ type AppmeshGatewayRouteSpecHttpRouteActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type AppmeshGatewayRouteSpecHttpRouteActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type AppmeshGatewayRouteSpecHttpRouteActionOutputReference interface {
 	ResetRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Terraf
 	return returns
 }
 
-
 func NewAppmeshGatewayRouteSpecHttpRouteActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteActionOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewAppmeshGatewayRouteSpecHttpRouteActionOutputReference_Override(a Appmesh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetInternalValue(val *AppmeshGatewayRouteSpecHttpRouteAction) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) SetInternalValue(val *AppmeshGatewayRouteSpecHttpRouteAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,16 +288,16 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Comput
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -314,7 +313,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -330,7 +329,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetLis
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Interp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) PutRew
 	_jsii_.InvokeVoid(
 		a,
 		"putRewrite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -480,7 +479,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) PutTar
 	_jsii_.InvokeVoid(
 		a,
 		"putTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) ResetR
 	)
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) ToStri
 
 	return returns
 }
-

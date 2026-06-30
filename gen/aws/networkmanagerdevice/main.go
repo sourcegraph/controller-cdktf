@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
-		reflect.TypeOf((*NetworkmanagerDevice)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDevice](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vendor", GoGetter: "Vendor"},
 			_jsii_.MemberProperty{JsiiProperty: "vendorInput", GoGetter: "VendorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerDevice{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,11 +103,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation",
-		reflect.TypeOf((*NetworkmanagerDeviceAwsLocation)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceAwsLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference",
-		reflect.TypeOf((*NetworkmanagerDeviceAwsLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceAwsLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,15 +145,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig",
-		reflect.TypeOf((*NetworkmanagerDeviceConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation",
-		reflect.TypeOf((*NetworkmanagerDeviceLocation)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
-		reflect.TypeOf((*NetworkmanagerDeviceLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerDeviceLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts",
-		reflect.TypeOf((*NetworkmanagerDeviceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerDeviceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerDeviceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerDeviceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

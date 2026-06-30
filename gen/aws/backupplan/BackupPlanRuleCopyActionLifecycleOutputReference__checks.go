@@ -106,7 +106,7 @@ func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBackupPlanRuleCopyActionLifecycleOutputReferenceParameters(terra
 
 	return nil
 }
-

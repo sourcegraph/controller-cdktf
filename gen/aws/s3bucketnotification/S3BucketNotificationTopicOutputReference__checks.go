@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewS3BucketNotificationTopicOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

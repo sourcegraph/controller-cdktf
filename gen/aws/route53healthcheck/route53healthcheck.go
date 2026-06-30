@@ -28,25 +28,25 @@ type Route53HealthCheck interface {
 	SetCloudwatchAlarmRegion(val *string)
 	CloudwatchAlarmRegionInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
-	EnableSni() interface{}
-	SetEnableSni(val interface{})
-	EnableSniInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
+	EnableSni() any
+	SetEnableSni(val any)
+	EnableSniInput() any
 	FailureThreshold() *float64
 	SetFailureThreshold(val *float64)
 	FailureThresholdInput() *float64
@@ -67,9 +67,9 @@ type Route53HealthCheck interface {
 	InsufficientDataHealthStatus() *string
 	SetInsufficientDataHealthStatus(val *string)
 	InsufficientDataHealthStatusInput() *string
-	InvertHealthcheck() interface{}
-	SetInvertHealthcheck(val interface{})
-	InvertHealthcheckInput() interface{}
+	InvertHealthcheck() any
+	SetInvertHealthcheck(val any)
+	InvertHealthcheckInput() any
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -77,9 +77,9 @@ type Route53HealthCheck interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MeasureLatency() interface{}
-	SetMeasureLatency(val interface{})
-	MeasureLatencyInput() interface{}
+	MeasureLatency() any
+	SetMeasureLatency(val any)
+	MeasureLatencyInput() any
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -90,11 +90,11 @@ type Route53HealthCheck interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReferenceName() *string
 	SetReferenceName(val *string)
 	ReferenceNameInput() *string
@@ -122,7 +122,7 @@ type Route53HealthCheck interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -132,9 +132,9 @@ type Route53HealthCheck interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -152,7 +152,7 @@ type Route53HealthCheck interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -164,7 +164,7 @@ type Route53HealthCheck interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -196,17 +196,17 @@ type Route53HealthCheck interface {
 	ResetSearchString()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53HealthCheck
@@ -314,8 +314,8 @@ func (j *jsiiProxy_Route53HealthCheck) CloudwatchAlarmRegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_Route53HealthCheck) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53HealthCheck) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_Route53HealthCheck) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_Route53HealthCheck) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_Route53HealthCheck) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_Route53HealthCheck) DisabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) EnableSni() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) EnableSni() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSni",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_Route53HealthCheck) EnableSni() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) EnableSniInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) EnableSniInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSniInput",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_Route53HealthCheck) InsufficientDataHealthStatusInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) InvertHealthcheck() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) InvertHealthcheck() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertHealthcheck",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_Route53HealthCheck) InvertHealthcheck() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) InvertHealthcheckInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) InvertHealthcheckInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertHealthcheckInput",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_Route53HealthCheck) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) MeasureLatency() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) MeasureLatency() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"measureLatency",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_Route53HealthCheck) MeasureLatency() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) MeasureLatencyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) MeasureLatencyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"measureLatencyInput",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_Route53HealthCheck) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53HealthCheck) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_Route53HealthCheck) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53HealthCheck) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_Route53HealthCheck) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_Route53HealthCheck) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53HealthCheck) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -844,7 +844,6 @@ func (j *jsiiProxy_Route53HealthCheck) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
 func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route53HealthCheckConfig) Route53HealthCheck {
 	_init_.Initialize()
@@ -856,7 +855,7 @@ func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -869,12 +868,12 @@ func NewRoute53HealthCheck_Override(r Route53HealthCheck, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetChildHealthchecks(val *[]*string) {
+func (j *jsiiProxy_Route53HealthCheck) SetChildHealthchecks(val *[]*string) {
 	if err := j.validateSetChildHealthchecksParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetChildHealthchecks(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetChildHealthThreshold(val *float64) {
+func (j *jsiiProxy_Route53HealthCheck) SetChildHealthThreshold(val *float64) {
 	if err := j.validateSetChildHealthThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetChildHealthThreshold(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetCloudwatchAlarmName(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetCloudwatchAlarmName(val *string) {
 	if err := j.validateSetCloudwatchAlarmNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetCloudwatchAlarmName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetCloudwatchAlarmRegion(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetCloudwatchAlarmRegion(val *string) {
 	if err := j.validateSetCloudwatchAlarmRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetCloudwatchAlarmRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53HealthCheck) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -948,7 +947,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetDisabled(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetEnableSni(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetEnableSni(val any) {
 	if err := j.validateSetEnableSniParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetEnableSni(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetFailureThreshold(val *float64) {
+func (j *jsiiProxy_Route53HealthCheck) SetFailureThreshold(val *float64) {
 	if err := j.validateSetFailureThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetFailureThreshold(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53HealthCheck) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -989,7 +988,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetFqdn(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetFqdn(val *string) {
 	if err := j.validateSetFqdnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetFqdn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetId(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetInsufficientDataHealthStatus(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetInsufficientDataHealthStatus(val *string) {
 	if err := j.validateSetInsufficientDataHealthStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetInsufficientDataHealthStatus(val *strin
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetInvertHealthcheck(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetInvertHealthcheck(val any) {
 	if err := j.validateSetInvertHealthcheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetInvertHealthcheck(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetIpAddress(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53HealthCheck) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetMeasureLatency(val interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetMeasureLatency(val any) {
 	if err := j.validateSetMeasureLatencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetMeasureLatency(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetPort(val *float64) {
+func (j *jsiiProxy_Route53HealthCheck) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53HealthCheck) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53HealthCheck) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetReferenceName(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetReferenceName(val *string) {
 	if err := j.validateSetReferenceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetReferenceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetRegions(val *[]*string) {
+func (j *jsiiProxy_Route53HealthCheck) SetRegions(val *[]*string) {
 	if err := j.validateSetRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetRegions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetRequestInterval(val *float64) {
+func (j *jsiiProxy_Route53HealthCheck) SetRequestInterval(val *float64) {
 	if err := j.validateSetRequestIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetRequestInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetResourcePath(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetResourcePath(val *string) {
 	if err := j.validateSetResourcePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetResourcePath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetRoutingControlArn(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetRoutingControlArn(val *string) {
 	if err := j.validateSetRoutingControlArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetRoutingControlArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetSearchString(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetSearchString(val *string) {
 	if err := j.validateSetSearchStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetSearchString(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Route53HealthCheck) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1172,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Route53HealthCheck) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1184,7 +1183,7 @@ func (j *jsiiProxy_Route53HealthCheck)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53HealthCheck)SetType(val *string) {
+func (j *jsiiProxy_Route53HealthCheck) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1207,7 +1206,7 @@ func Route53HealthCheck_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1231,7 +1230,7 @@ func Route53HealthCheck_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53HealthCheck_IsConstruct(x interface{}) *bool {
+func Route53HealthCheck_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53HealthCheck_IsConstructParameters(x); err != nil {
@@ -1242,7 +1241,7 @@ func Route53HealthCheck_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1250,7 +1249,7 @@ func Route53HealthCheck_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53HealthCheck_IsTerraformElement(x interface{}) *bool {
+func Route53HealthCheck_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53HealthCheck_IsTerraformElementParameters(x); err != nil {
@@ -1261,7 +1260,7 @@ func Route53HealthCheck_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1269,7 +1268,7 @@ func Route53HealthCheck_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53HealthCheck_IsTerraformResource(x interface{}) *bool {
+func Route53HealthCheck_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53HealthCheck_IsTerraformResourceParameters(x); err != nil {
@@ -1280,7 +1279,7 @@ func Route53HealthCheck_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1305,31 +1304,31 @@ func (r *jsiiProxy_Route53HealthCheck) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53HealthCheck) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53HealthCheck) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53HealthCheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53HealthCheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1345,7 +1344,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1361,7 +1360,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1377,7 +1376,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1393,7 +1392,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1409,7 +1408,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1425,7 +1424,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1441,7 +1440,7 @@ func (r *jsiiProxy_Route53HealthCheck) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1457,15 +1456,15 @@ func (r *jsiiProxy_Route53HealthCheck) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53HealthCheck) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53HealthCheck) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1484,7 +1483,7 @@ func (r *jsiiProxy_Route53HealthCheck) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1497,7 +1496,7 @@ func (r *jsiiProxy_Route53HealthCheck) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1511,18 +1510,18 @@ func (r *jsiiProxy_Route53HealthCheck) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53HealthCheck) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53HealthCheck) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1533,7 +1532,7 @@ func (r *jsiiProxy_Route53HealthCheck) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1544,7 +1543,7 @@ func (r *jsiiProxy_Route53HealthCheck) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1732,8 +1731,8 @@ func (r *jsiiProxy_Route53HealthCheck) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_Route53HealthCheck) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53HealthCheck) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1745,8 +1744,8 @@ func (r *jsiiProxy_Route53HealthCheck) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (r *jsiiProxy_Route53HealthCheck) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53HealthCheck) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1758,8 +1757,8 @@ func (r *jsiiProxy_Route53HealthCheck) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_Route53HealthCheck) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53HealthCheck) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1771,8 +1770,8 @@ func (r *jsiiProxy_Route53HealthCheck) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Route53HealthCheck) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53HealthCheck) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1797,8 +1796,8 @@ func (r *jsiiProxy_Route53HealthCheck) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53HealthCheck) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53HealthCheck) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1809,4 +1808,3 @@ func (r *jsiiProxy_Route53HealthCheck) ToTerraform() interface{} {
 
 	return returns
 }
-

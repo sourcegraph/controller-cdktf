@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
-		reflect.TypeOf((*NeptuneSubnetGroup)(nil)).Elem(),
+		reflect.TypeFor[NeptuneSubnetGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NeptuneSubnetGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroupConfig",
-		reflect.TypeOf((*NeptuneSubnetGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[NeptuneSubnetGroupConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRedshiftClusterIamRolesTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

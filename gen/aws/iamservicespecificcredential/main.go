@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
-		reflect.TypeOf((*IamServiceSpecificCredential)(nil)).Elem(),
+		reflect.TypeFor[IamServiceSpecificCredential](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamServiceSpecificCredential{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig",
-		reflect.TypeOf((*IamServiceSpecificCredentialConfig)(nil)).Elem(),
+		reflect.TypeFor[IamServiceSpecificCredentialConfig](),
 	)
 }

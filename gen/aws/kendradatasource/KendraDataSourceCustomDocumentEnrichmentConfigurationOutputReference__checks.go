@@ -90,7 +90,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputRe
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference) validatePutInlineConfigurationsParameters(value interface{}) error {
+func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference) validatePutInlineConfigurationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewKendraDataSourceCustomDocumentEnrichmentConfigurationOutputRefer
 
 	return nil
 }
-

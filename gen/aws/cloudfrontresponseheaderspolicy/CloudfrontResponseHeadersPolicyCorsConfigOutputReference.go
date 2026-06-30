@@ -10,9 +10,9 @@ import (
 
 type CloudfrontResponseHeadersPolicyCorsConfigOutputReference interface {
 	cdktf.ComplexObject
-	AccessControlAllowCredentials() interface{}
-	SetAccessControlAllowCredentials(val interface{})
-	AccessControlAllowCredentialsInput() interface{}
+	AccessControlAllowCredentials() any
+	SetAccessControlAllowCredentials(val any)
+	AccessControlAllowCredentialsInput() any
 	AccessControlAllowHeaders() CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference
 	AccessControlAllowHeadersInput() *CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders
 	AccessControlAllowMethods() CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference
@@ -26,9 +26,9 @@ type CloudfrontResponseHeadersPolicyCorsConfigOutputReference interface {
 	AccessControlMaxAgeSecInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,9 +43,9 @@ type CloudfrontResponseHeadersPolicyCorsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudfrontResponseHeadersPolicyCorsConfig
 	SetInternalValue(val *CloudfrontResponseHeadersPolicyCorsConfig)
-	OriginOverride() interface{}
-	SetOriginOverride(val interface{})
-	OriginOverrideInput() interface{}
+	OriginOverride() any
+	SetOriginOverride(val any)
+	OriginOverrideInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type CloudfrontResponseHeadersPolicyCorsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type CloudfrontResponseHeadersPolicyCorsConfigOutputReference interface {
 	ResetAccessControlMaxAgeSec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) AccessControlAllowCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) AccessControlAllowCredentials() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessControlAllowCredentials",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Acc
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) AccessControlAllowCredentialsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) AccessControlAllowCredentialsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessControlAllowCredentialsInput",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Acc
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) OriginOverride() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) OriginOverride() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originOverride",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Ori
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) OriginOverrideInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) OriginOverrideInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"originOverrideInput",
@@ -309,7 +309,6 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Ter
 	return returns
 }
 
-
 func NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigOutputReference {
 	_init_.Initialize()
 
@@ -320,7 +319,7 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -332,12 +331,12 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference_Override(c Clou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetAccessControlAllowCredentials(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetAccessControlAllowCredentials(val any) {
 	if err := j.validateSetAccessControlAllowCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetAccessControlMaxAgeSec(val *float64) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetAccessControlMaxAgeSec(val *float64) {
 	if err := j.validateSetAccessControlMaxAgeSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetInternalValue(val *CloudfrontResponseHeadersPolicyCorsConfig) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetInternalValue(val *CloudfrontResponseHeadersPolicyCorsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetOriginOverride(val interface{}) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetOriginOverride(val any) {
 	if err := j.validateSetOriginOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetO
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,16 +437,16 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putAccessControlAllowHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -629,7 +628,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putAccessControlAllowMethods",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -640,7 +639,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putAccessControlAllowOrigins",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -651,7 +650,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putAccessControlExposeHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -671,16 +670,16 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -699,4 +698,3 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference) ToS
 
 	return returns
 }
-

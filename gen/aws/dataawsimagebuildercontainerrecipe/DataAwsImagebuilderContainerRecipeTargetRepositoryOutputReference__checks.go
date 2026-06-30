@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeTargetRepositoryOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsImagebuilderContainerRecipeTargetRepositoryOutputReferenc
 
 	return nil
 }
-

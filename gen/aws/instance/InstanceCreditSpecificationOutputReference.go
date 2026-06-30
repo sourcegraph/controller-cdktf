@@ -12,9 +12,9 @@ type InstanceCreditSpecificationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type InstanceCreditSpecificationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type InstanceCreditSpecificationOutputReference interface {
 	ResetCpuCredits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_InstanceCreditSpecificationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewInstanceCreditSpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstanceCreditSpecificationOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewInstanceCreditSpecificationOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewInstanceCreditSpecificationOutputReference_Override(i InstanceCreditSpec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetCpuCredits(val *string) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetCpuCredits(val *string) {
 	if err := j.validateSetCpuCreditsParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetCpuCredits(val 
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetInternalValue(val *InstanceCreditSpecification) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetInternalValue(val *InstanceCreditSpecification) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) ResetCpuCredits()
 	)
 }
 
-func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) ToString() *strin
 
 	return returns
 }
-

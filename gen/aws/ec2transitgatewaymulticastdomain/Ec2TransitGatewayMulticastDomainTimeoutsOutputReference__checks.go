@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEc2TransitGatewayMulticastDomainTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

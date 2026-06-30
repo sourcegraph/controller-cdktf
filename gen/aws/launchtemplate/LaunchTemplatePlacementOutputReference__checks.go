@@ -114,7 +114,7 @@ func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetAvailabili
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewLaunchTemplatePlacementOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanRuleOutputReference) validatePutCopyActionParameters(value interface{}) error {
+func (b *jsiiProxy_BackupPlanRuleOutputReference) validatePutCopyActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetCompletionWindowPar
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetEnableContinuousBackupParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetEnableContinuousBackupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetEnableContinuousBac
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -332,4 +332,3 @@ func validateNewBackupPlanRuleOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

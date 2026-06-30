@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateSetEx
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case *AccessanalyzerArchiveRuleFilter:
 		val := val.(*AccessanalyzerArchiveRuleFilter)
@@ -262,4 +262,3 @@ func validateNewAccessanalyzerArchiveRuleFilterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

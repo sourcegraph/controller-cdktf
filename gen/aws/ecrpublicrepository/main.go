@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
-		reflect.TypeOf((*EcrpublicRepository)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrpublicRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData",
-		reflect.TypeOf((*EcrpublicRepositoryCatalogData)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepositoryCatalogData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
-		reflect.TypeOf((*EcrpublicRepositoryCatalogDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepositoryCatalogDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aboutText", GoGetter: "AboutText"},
 			_jsii_.MemberProperty{JsiiProperty: "aboutTextInput", GoGetter: "AboutTextInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usageText", GoGetter: "UsageText"},
 			_jsii_.MemberProperty{JsiiProperty: "usageTextInput", GoGetter: "UsageTextInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig",
-		reflect.TypeOf((*EcrpublicRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts",
-		reflect.TypeOf((*EcrpublicRepositoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepositoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeoutsOutputReference",
-		reflect.TypeOf((*EcrpublicRepositoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EcrpublicRepositoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EcrpublicRepositoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

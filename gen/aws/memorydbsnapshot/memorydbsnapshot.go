@@ -20,15 +20,15 @@ type MemorydbSnapshot interface {
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,11 +64,11 @@ type MemorydbSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Source() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -79,18 +79,18 @@ type MemorydbSnapshot interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MemorydbSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type MemorydbSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type MemorydbSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type MemorydbSnapshot interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MemorydbSnapshot
@@ -206,8 +206,8 @@ func (j *jsiiProxy_MemorydbSnapshot) ClusterNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MemorydbSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_MemorydbSnapshot) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_MemorydbSnapshot) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MemorydbSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_MemorydbSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_MemorydbSnapshot) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_MemorydbSnapshot) Timeouts() MemorydbSnapshotTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_MemorydbSnapshot) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot} Resource.
 func NewMemorydbSnapshot(scope constructs.Construct, id *string, config *MemorydbSnapshotConfig) MemorydbSnapshot {
@@ -518,7 +517,7 @@ func NewMemorydbSnapshot(scope constructs.Construct, id *string, config *Memoryd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewMemorydbSnapshot_Override(m MemorydbSnapshot, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetClusterName(val *string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_MemorydbSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_MemorydbSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MemorydbSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetId(val *string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MemorydbSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetName(val *string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetNamePrefix(val *string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MemorydbSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MemorydbSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_MemorydbSnapshot)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbSnapshot)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbSnapshot) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func MemorydbSnapshot_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func MemorydbSnapshot_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MemorydbSnapshot_IsConstruct(x interface{}) *bool {
+func MemorydbSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSnapshot_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func MemorydbSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func MemorydbSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbSnapshot_IsTerraformElement(x interface{}) *bool {
+func MemorydbSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func MemorydbSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func MemorydbSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbSnapshot_IsTerraformResource(x interface{}) *bool {
+func MemorydbSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func MemorydbSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (m *jsiiProxy_MemorydbSnapshot) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MemorydbSnapshot) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorydbSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (m *jsiiProxy_MemorydbSnapshot) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (m *jsiiProxy_MemorydbSnapshot) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -970,7 +969,7 @@ func (m *jsiiProxy_MemorydbSnapshot) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (m *jsiiProxy_MemorydbSnapshot) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (m *jsiiProxy_MemorydbSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MemorydbSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (m *jsiiProxy_MemorydbSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (m *jsiiProxy_MemorydbSnapshot) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (m *jsiiProxy_MemorydbSnapshot) PutTimeouts(value *MemorydbSnapshotTimeouts
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,8 +1108,8 @@ func (m *jsiiProxy_MemorydbSnapshot) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1122,8 +1121,8 @@ func (m *jsiiProxy_MemorydbSnapshot) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1135,8 +1134,8 @@ func (m *jsiiProxy_MemorydbSnapshot) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1148,8 +1147,8 @@ func (m *jsiiProxy_MemorydbSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1174,8 +1173,8 @@ func (m *jsiiProxy_MemorydbSnapshot) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1186,4 +1185,3 @@ func (m *jsiiProxy_MemorydbSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

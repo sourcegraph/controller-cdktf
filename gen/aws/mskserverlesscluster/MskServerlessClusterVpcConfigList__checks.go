@@ -34,7 +34,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMskServerlessClusterVpcConfigListParameters(terraformResource cd
 
 	return nil
 }
-

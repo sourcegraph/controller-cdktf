@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksInstanceEbsBlockDeviceListParameters(terraformResource c
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
-		reflect.TypeOf((*SnapshotCreateVolumePermission)(nil)).Elem(),
+		reflect.TypeFor[SnapshotCreateVolumePermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SnapshotCreateVolumePermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig",
-		reflect.TypeOf((*SnapshotCreateVolumePermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[SnapshotCreateVolumePermissionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts",
-		reflect.TypeOf((*SnapshotCreateVolumePermissionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SnapshotCreateVolumePermissionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference",
-		reflect.TypeOf((*SnapshotCreateVolumePermissionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SnapshotCreateVolumePermissionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

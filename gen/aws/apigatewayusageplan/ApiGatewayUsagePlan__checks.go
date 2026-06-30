@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlan) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlan) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApiGatewayUsagePlan) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlan) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApiGatewayUsagePlan) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlan) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlan) validatePutApiStagesParameters(value interface{}) error {
+func (a *jsiiProxy_ApiGatewayUsagePlan) validatePutApiStagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateApiGatewayUsagePlan_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateApiGatewayUsagePlan_IsConstructParameters(x interface{}) error {
+func validateApiGatewayUsagePlan_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateApiGatewayUsagePlan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApiGatewayUsagePlan_IsTerraformElementParameters(x interface{}) error {
+func validateApiGatewayUsagePlan_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateApiGatewayUsagePlan_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateApiGatewayUsagePlan_IsTerraformResourceParameters(x interface{}) error {
+func validateApiGatewayUsagePlan_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateApiGatewayUsagePlan_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetProductCodeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlan) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -507,4 +507,3 @@ func validateNewApiGatewayUsagePlanParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

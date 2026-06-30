@@ -15,11 +15,11 @@ type DataAwsElasticBeanstalkSolutionStack interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type DataAwsElasticBeanstalkSolutionStack interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MostRecent() interface{}
-	SetMostRecent(val interface{})
-	MostRecentInput() interface{}
+	MostRecent() any
+	SetMostRecent(val any)
+	MostRecentInput() any
 	Name() *string
 	NameRegex() *string
 	SetNameRegex(val *string)
@@ -53,17 +53,17 @@ type DataAwsElasticBeanstalkSolutionStack interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataAwsElasticBeanstalkSolutionStack interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsElasticBeanstalkSolutionStack
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) Lifecycle() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) MostRecent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) MostRecent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecent",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) MostRecent() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) MostRecentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) MostRecentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecentInput",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -319,7 +319,6 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/elastic_beanstalk_solution_stack aws_elastic_beanstalk_solution_stack} Data Source.
 func NewDataAwsElasticBeanstalkSolutionStack(scope constructs.Construct, id *string, config *DataAwsElasticBeanstalkSolutionStackConfig) DataAwsElasticBeanstalkSolutionStack {
 	_init_.Initialize()
@@ -331,7 +330,7 @@ func NewDataAwsElasticBeanstalkSolutionStack(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -344,12 +343,12 @@ func NewDataAwsElasticBeanstalkSolutionStack_Override(d DataAwsElasticBeanstalkS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -368,7 +367,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -376,7 +375,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetId(val *string) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetMostRecent(val interface{}) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetMostRecent(val any) {
 	if err := j.validateSetMostRecentParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetMostRecent(val interf
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetNameRegex(val *string) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetNameRegex(val *string) {
 	if err := j.validateSetNameRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetNameRegex(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -440,7 +439,7 @@ func DataAwsElasticBeanstalkSolutionStack_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func DataAwsElasticBeanstalkSolutionStack_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsElasticBeanstalkSolutionStack_IsConstruct(x interface{}) *bool {
+func DataAwsElasticBeanstalkSolutionStack_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticBeanstalkSolutionStack_IsConstructParameters(x); err != nil {
@@ -475,7 +474,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticBeanstalkSolutionStack_IsTerraformDataSourceParameters(x); err != nil {
@@ -494,7 +493,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x interface{}) *
 }
 
 // Experimental.
-func DataAwsElasticBeanstalkSolutionStack_IsTerraformElement(x interface{}) *bool {
+func DataAwsElasticBeanstalkSolutionStack_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticBeanstalkSolutionStack_IsTerraformElementParameters(x); err != nil {
@@ -513,7 +512,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -531,27 +530,27 @@ func DataAwsElasticBeanstalkSolutionStack_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -737,8 +736,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ResetOverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -763,8 +762,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) SynthesizeHclAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -776,8 +775,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToHclTerraform() interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -814,4 +813,3 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) ToTerraform() interface
 
 	return returns
 }
-

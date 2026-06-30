@@ -98,7 +98,7 @@ func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMacieS3BucketAssociationClassificationTypeOutputReferenceParamet
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElastictranscoderPresetVideoWatermarksListParameters(terraformRe
 
 	return nil
 }
-

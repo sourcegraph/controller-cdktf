@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
-		reflect.TypeOf((*SfnStateMachine)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachine](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SfnStateMachine{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineConfig",
-		reflect.TypeOf((*SfnStateMachineConfig)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfiguration",
-		reflect.TypeOf((*SfnStateMachineLoggingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachineLoggingConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfigurationOutputReference",
-		reflect.TypeOf((*SfnStateMachineLoggingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachineLoggingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfiguration",
-		reflect.TypeOf((*SfnStateMachineTracingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachineTracingConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
-		reflect.TypeOf((*SfnStateMachineTracingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SfnStateMachineTracingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SfnStateMachineTracingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

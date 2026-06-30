@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
-		reflect.TypeOf((*DatasyncLocationEfs)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationEfs](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointArn", GoGetter: "AccessPointArn"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPointArnInput", GoGetter: "AccessPointArnInput"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationEfs{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig",
-		reflect.TypeOf((*DatasyncLocationEfsConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationEfsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config",
-		reflect.TypeOf((*DatasyncLocationEfsEc2Config)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationEfsEc2Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
-		reflect.TypeOf((*DatasyncLocationEfsEc2ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationEfsEc2ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationEfsEc2ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

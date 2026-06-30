@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReferencePara
 
 	return nil
 }
-

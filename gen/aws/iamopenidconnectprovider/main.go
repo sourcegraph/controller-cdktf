@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
-		reflect.TypeOf((*IamOpenidConnectProvider)(nil)).Elem(),
+		reflect.TypeFor[IamOpenidConnectProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOpenidConnectProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig",
-		reflect.TypeOf((*IamOpenidConnectProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[IamOpenidConnectProviderConfig](),
 	)
 }

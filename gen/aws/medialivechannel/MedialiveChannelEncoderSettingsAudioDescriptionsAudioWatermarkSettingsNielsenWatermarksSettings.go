@@ -1,6 +1,5 @@
 package medialivechannel
 
-
 type MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings struct {
 	// nielsen_cbet_settings block.
 	//
@@ -11,6 +10,5 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNiels
 	// nielsen_naes_ii_nw_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
-	NielsenNaesIiNwSettings interface{} `field:"optional" json:"nielsenNaesIiNwSettings" yaml:"nielsenNaesIiNwSettings"`
+	NielsenNaesIiNwSettings any `field:"optional" json:"nielsenNaesIiNwSettings" yaml:"nielsenNaesIiNwSettings"`
 }
-

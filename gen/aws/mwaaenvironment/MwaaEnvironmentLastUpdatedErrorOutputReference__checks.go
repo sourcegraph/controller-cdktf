@@ -98,7 +98,7 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMwaaEnvironmentLastUpdatedErrorOutputReferenceParameters(terrafo
 
 	return nil
 }
-

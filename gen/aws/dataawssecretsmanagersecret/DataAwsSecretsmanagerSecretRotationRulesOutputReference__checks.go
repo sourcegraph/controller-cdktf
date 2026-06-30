@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsSecretsmanagerSecretRotationRulesOutputReferenceParameter
 
 	return nil
 }
-

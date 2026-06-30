@@ -106,7 +106,7 @@ func (j *jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewElasticsearchDomainSnapshotOptionsOutputReferenceParameters(terr
 
 	return nil
 }
-

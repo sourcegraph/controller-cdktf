@@ -10,14 +10,14 @@ import (
 
 type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	cdktf.ComplexObject
-	ApplianceModeSupport() interface{}
-	SetApplianceModeSupport(val interface{})
-	ApplianceModeSupportInput() interface{}
+	ApplianceModeSupport() any
+	SetApplianceModeSupport(val any)
+	ApplianceModeSupportInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *NetworkmanagerVpcAttachmentOptions
 	SetInternalValue(val *NetworkmanagerVpcAttachmentOptions)
-	Ipv6Support() interface{}
-	SetIpv6Support(val interface{})
-	Ipv6SupportInput() interface{}
+	Ipv6Support() any
+	SetIpv6Support(val any)
+	Ipv6SupportInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	ResetIpv6Support()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applianceModeSupport",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceM
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applianceModeSupportInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceM
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6Support() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6Support() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6Support",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6Suppor
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6SupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6SupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6SupportInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewNetworkmanagerVpcAttachmentOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkmanagerVpcAttachmentOptionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewNetworkmanagerVpcAttachmentOptionsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewNetworkmanagerVpcAttachmentOptionsOutputReference_Override(n Networkmana
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetApplianceModeSupport(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetApplianceModeSupport(val any) {
 	if err := j.validateSetApplianceModeSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetApplianc
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetInternalValue(val *NetworkmanagerVpcAttachmentOptions) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetInternalValue(val *NetworkmanagerVpcAttachmentOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetIpv6Support(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetIpv6Support(val any) {
 	if err := j.validateSetIpv6SupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetIpv6Supp
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComputeFqn
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetStringA
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetStringM
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Interpolat
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetIpv6S
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ToString()
 
 	return returns
 }
-

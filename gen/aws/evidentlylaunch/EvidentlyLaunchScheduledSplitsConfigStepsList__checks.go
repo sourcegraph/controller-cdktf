@@ -34,7 +34,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEvidentlyLaunchScheduledSplitsConfigStepsListParameters(terrafor
 
 	return nil
 }
-

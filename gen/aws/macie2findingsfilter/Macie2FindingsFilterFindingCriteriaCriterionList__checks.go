@@ -34,7 +34,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMacie2FindingsFilterFindingCriteriaCriterionListParameters(terra
 
 	return nil
 }
-

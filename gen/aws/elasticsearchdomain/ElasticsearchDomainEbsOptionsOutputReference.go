@@ -12,9 +12,9 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EbsEnabled() interface{}
-	SetEbsEnabled(val interface{})
-	EbsEnabledInput() interface{}
+	EbsEnabled() any
+	SetEbsEnabled(val any)
+	EbsEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ElasticsearchDomainEbsOptions
@@ -55,7 +55,7 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) EbsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) EbsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsEnabled",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) EbsEnabled() in
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) EbsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) EbsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsEnabledInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) VolumeTypeInput
 	return returns
 }
 
-
 func NewElasticsearchDomainEbsOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainEbsOptionsOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewElasticsearchDomainEbsOptionsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewElasticsearchDomainEbsOptionsOutputReference_Override(e ElasticsearchDom
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetEbsEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetEbsEnabled(val any) {
 	if err := j.validateSetEbsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetEbsEnabled(va
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetInternalValue(val *ElasticsearchDomainEbsOptions) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetInternalValue(val *ElasticsearchDomainEbsOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetIops(val *flo
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetThroughput(va
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetVolumeSize(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetVolumeSize(val *float64) {
 	if err := j.validateSetVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetVolumeSize(va
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ResetVolumeType
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ToString() *str
 
 	return returns
 }
-

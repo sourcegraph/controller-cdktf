@@ -34,7 +34,7 @@ func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewInspectorAssessmentTemplateEventSubscriptionListParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerModelVpcConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerModelVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSagemakerModelVpcConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

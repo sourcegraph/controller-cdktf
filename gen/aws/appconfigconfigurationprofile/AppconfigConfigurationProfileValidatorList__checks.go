@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppconfigConfigurationProfileValidatorListParameters(terraformRe
 
 	return nil
 }
-

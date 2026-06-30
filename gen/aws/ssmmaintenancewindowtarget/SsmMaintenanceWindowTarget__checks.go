@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTarget) validatePutTargetsParameters(value interface{}) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) validatePutTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateSsmMaintenanceWindowTarget_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateSsmMaintenanceWindowTarget_IsConstructParameters(x interface{}) error {
+func validateSsmMaintenanceWindowTarget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateSsmMaintenanceWindowTarget_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateSsmMaintenanceWindowTarget_IsTerraformElementParameters(x interface{}) error {
+func validateSsmMaintenanceWindowTarget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateSsmMaintenanceWindowTarget_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateSsmMaintenanceWindowTarget_IsTerraformResourceParameters(x interface{}) error {
+func validateSsmMaintenanceWindowTarget_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateSsmMaintenanceWindowTarget_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetOwnerInformationParame
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewSsmMaintenanceWindowTargetParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
-		reflect.TypeOf((*S3BucketAcl)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAcl](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlPolicy", GoGetter: "AccessControlPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "accessControlPolicyInput", GoGetter: "AccessControlPolicyInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAcl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,19 +76,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicy",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicy)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrant)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyGrant](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantGrantee)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyGrantGrantee](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGranteeOutputReference",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantGranteeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyGrantGranteeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAclAccessControlPolicyGrantGranteeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantList)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyGrantList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAclAccessControlPolicyGrantList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -154,7 +154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyGrantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,7 +192,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAclAccessControlPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyOwner)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyOwner](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
-		reflect.TypeOf((*S3BucketAclAccessControlPolicyOwnerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclAccessControlPolicyOwnerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_S3BucketAclAccessControlPolicyOwnerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,6 +272,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig",
-		reflect.TypeOf((*S3BucketAclConfig)(nil)).Elem(),
+		reflect.TypeFor[S3BucketAclConfig](),
 	)
 }

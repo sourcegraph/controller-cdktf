@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
-		reflect.TypeOf((*SesActiveReceiptRuleSet)(nil)).Elem(),
+		reflect.TypeFor[SesActiveReceiptRuleSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesActiveReceiptRuleSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig",
-		reflect.TypeOf((*SesActiveReceiptRuleSetConfig)(nil)).Elem(),
+		reflect.TypeFor[SesActiveReceiptRuleSetConfig](),
 	)
 }

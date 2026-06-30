@@ -142,7 +142,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -274,4 +274,3 @@ func validateNewKinesisAnalyticsApplicationOutputsOutputReferenceParameters(terr
 
 	return nil
 }
-

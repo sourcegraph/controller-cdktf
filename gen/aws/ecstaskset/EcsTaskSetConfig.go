@@ -6,9 +6,9 @@ import (
 
 type EcsTaskSetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EcsTaskSetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}.
 	Cluster *string `field:"required" json:"cluster" yaml:"cluster"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#service EcsTaskSet#service}.
@@ -28,11 +28,11 @@ type EcsTaskSetConfig struct {
 	// capacity_provider_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
-	CapacityProviderStrategy interface{} `field:"optional" json:"capacityProviderStrategy" yaml:"capacityProviderStrategy"`
+	CapacityProviderStrategy any `field:"optional" json:"capacityProviderStrategy" yaml:"capacityProviderStrategy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}.
 	ExternalId *string `field:"optional" json:"externalId" yaml:"externalId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}.
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#id EcsTaskSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,7 +43,7 @@ type EcsTaskSetConfig struct {
 	// load_balancer block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
-	LoadBalancer interface{} `field:"optional" json:"loadBalancer" yaml:"loadBalancer"`
+	LoadBalancer any `field:"optional" json:"loadBalancer" yaml:"loadBalancer"`
 	// network_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
@@ -63,8 +63,7 @@ type EcsTaskSetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}.
-	WaitUntilStable interface{} `field:"optional" json:"waitUntilStable" yaml:"waitUntilStable"`
+	WaitUntilStable any `field:"optional" json:"waitUntilStable" yaml:"waitUntilStable"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}.
 	WaitUntilStableTimeout *string `field:"optional" json:"waitUntilStableTimeout" yaml:"waitUntilStableTimeout"`
 }
-

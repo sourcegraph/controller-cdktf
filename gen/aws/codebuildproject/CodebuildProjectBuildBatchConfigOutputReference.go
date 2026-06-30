@@ -10,14 +10,14 @@ import (
 
 type CodebuildProjectBuildBatchConfigOutputReference interface {
 	cdktf.ComplexObject
-	CombineArtifacts() interface{}
-	SetCombineArtifacts(val interface{})
-	CombineArtifactsInput() interface{}
+	CombineArtifacts() any
+	SetCombineArtifacts(val any)
+	CombineArtifactsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type CodebuildProjectBuildBatchConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type CodebuildProjectBuildBatchConfigOutputReference interface {
 	ResetTimeoutInMins()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtifacts() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtifacts() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"combineArtifacts",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtif
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtifactsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtifactsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"combineArtifactsInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) CombineArtif
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) TimeoutInMin
 	return returns
 }
 
-
 func NewCodebuildProjectBuildBatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodebuildProjectBuildBatchConfigOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewCodebuildProjectBuildBatchConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewCodebuildProjectBuildBatchConfigOutputReference_Override(c CodebuildProj
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetCombineArtifacts(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetCombineArtifacts(val any) {
 	if err := j.validateSetCombineArtifactsParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetCombineArt
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetInternalValue(val *CodebuildProjectBuildBatchConfig) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetInternalValue(val *CodebuildProjectBuildBatchConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetServiceRole(val *string) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetServiceRole(val *string) {
 	if err := j.validateSetServiceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetServiceRol
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference)SetTimeoutInMins(val *float64) {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) SetTimeoutInMins(val *float64) {
 	if err := j.validateSetTimeoutInMinsParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) PutRestricti
 	_jsii_.InvokeVoid(
 		c,
 		"putRestrictions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) ResetTimeout
 	)
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) ToString() *
 
 	return returns
 }
-

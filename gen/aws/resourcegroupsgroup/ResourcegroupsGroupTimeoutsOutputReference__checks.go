@@ -98,7 +98,7 @@ func (r *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateSetCreate
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewResourcegroupsGroupTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

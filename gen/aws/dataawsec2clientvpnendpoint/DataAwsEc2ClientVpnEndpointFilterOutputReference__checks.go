@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2ClientVpnEndpointFilterOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
-		reflect.TypeOf((*DxPublicVirtualInterface)(nil)).Elem(),
+		reflect.TypeFor[DxPublicVirtualInterface](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlan", GoGetter: "Vlan"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanInput", GoGetter: "VlanInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxPublicVirtualInterface{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig",
-		reflect.TypeOf((*DxPublicVirtualInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[DxPublicVirtualInterfaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts",
-		reflect.TypeOf((*DxPublicVirtualInterfaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DxPublicVirtualInterfaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeoutsOutputReference",
-		reflect.TypeOf((*DxPublicVirtualInterfaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DxPublicVirtualInterfaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

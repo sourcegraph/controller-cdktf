@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectHoursOfOperationConfigAOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type FlowLogDestinationOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type FlowLogDestinationOptionsOutputReference interface {
 	FileFormatInput() *string
 	// Experimental.
 	Fqn() *string
-	HiveCompatiblePartitions() interface{}
-	SetHiveCompatiblePartitions(val interface{})
-	HiveCompatiblePartitionsInput() interface{}
+	HiveCompatiblePartitions() any
+	SetHiveCompatiblePartitions(val any)
+	HiveCompatiblePartitionsInput() any
 	InternalValue() *FlowLogDestinationOptions
 	SetInternalValue(val *FlowLogDestinationOptions)
-	PerHourPartition() interface{}
-	SetPerHourPartition(val interface{})
-	PerHourPartitionInput() interface{}
+	PerHourPartition() any
+	SetPerHourPartition(val any)
+	PerHourPartitionInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type FlowLogDestinationOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type FlowLogDestinationOptionsOutputReference interface {
 	ResetPerHourPartition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_FlowLogDestinationOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) HiveCompatiblePartitions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) HiveCompatiblePartitions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hiveCompatiblePartitions",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) HiveCompatibleParti
 	return returns
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) HiveCompatiblePartitionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) HiveCompatiblePartitionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hiveCompatiblePartitionsInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) InternalValue() *Fl
 	return returns
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) PerHourPartition() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) PerHourPartition() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"perHourPartition",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) PerHourPartition() 
 	return returns
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) PerHourPartitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) PerHourPartitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"perHourPartitionInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewFlowLogDestinationOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FlowLogDestinationOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewFlowLogDestinationOptionsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewFlowLogDestinationOptionsOutputReference_Override(f FlowLogDestinationOp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetFileFormat(val *string) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetFileFormat(val *string) {
 	if err := j.validateSetFileFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetFileFormat(val *s
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetHiveCompatiblePartitions(val interface{}) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetHiveCompatiblePartitions(val any) {
 	if err := j.validateSetHiveCompatiblePartitionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetHiveCompatiblePar
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetInternalValue(val *FlowLogDestinationOptions) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetInternalValue(val *FlowLogDestinationOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetPerHourPartition(val interface{}) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetPerHourPartition(val any) {
 	if err := j.validateSetPerHourPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetPerHourPartition(
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FlowLogDestinationOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) ResetPerHourPartiti
 	)
 }
 
-func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) ToString() *string 
 
 	return returns
 }
-

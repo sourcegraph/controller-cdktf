@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigu
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurat
 
 	return nil
 }
-

@@ -22,21 +22,21 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToBackups() interface{}
-	SetCopyTagsToBackups(val interface{})
-	CopyTagsToBackupsInput() interface{}
-	CopyTagsToVolumes() interface{}
-	SetCopyTagsToVolumes(val interface{})
-	CopyTagsToVolumesInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToBackups() any
+	SetCopyTagsToBackups(val any)
+	CopyTagsToBackupsInput() any
+	CopyTagsToVolumes() any
+	SetCopyTagsToVolumes(val any)
+	CopyTagsToVolumesInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
@@ -77,11 +77,11 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RootVolumeConfiguration() FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference
 	RootVolumeConfigurationInput() *FsxOpenzfsFileSystemRootVolumeConfiguration
 	RootVolumeId() *string
@@ -106,14 +106,14 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputCapacity() *float64
 	SetThroughputCapacity(val *float64)
 	ThroughputCapacityInput() *float64
 	Timeouts() FsxOpenzfsFileSystemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	WeeklyMaintenanceStartTime() *string
 	SetWeeklyMaintenanceStartTime(val *string)
@@ -122,9 +122,9 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -142,7 +142,7 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -154,7 +154,7 @@ type FsxOpenzfsFileSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -183,17 +183,17 @@ type FsxOpenzfsFileSystem interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxOpenzfsFileSystem
@@ -261,8 +261,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackups",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackups() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackupsInput",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToBackupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToVolumes",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumes() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToVolumesInput",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) CopyTagsToVolumesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -711,8 +711,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -761,8 +761,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) Timeouts() FsxOpenzfsFileSystemTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -801,7 +801,6 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
@@ -813,7 +812,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -826,12 +825,12 @@ func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetAutomaticBackupRetentionDays(val *float64) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetAutomaticBackupRetentionDays(val *float64) {
 	if err := j.validateSetAutomaticBackupRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetAutomaticBackupRetentionDays(val *flo
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetBackupId(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetBackupId(val *string) {
 	if err := j.validateSetBackupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCopyTagsToBackups(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetCopyTagsToBackups(val any) {
 	if err := j.validateSetCopyTagsToBackupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCopyTagsToBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCopyTagsToVolumes(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetCopyTagsToVolumes(val any) {
 	if err := j.validateSetCopyTagsToVolumesParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCopyTagsToVolumes(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDailyAutomaticBackupStartTime(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetDailyAutomaticBackupStartTime(val *string) {
 	if err := j.validateSetDailyAutomaticBackupStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDailyAutomaticBackupStartTime(val *st
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -916,7 +915,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDeploymentType(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetDeploymentType(val *string) {
 	if err := j.validateSetDeploymentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -927,7 +926,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDeploymentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -935,7 +934,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetId(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -946,7 +945,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,7 +956,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -968,7 +967,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -976,7 +975,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetStorageCapacity(val *float64) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetStorageCapacity(val *float64) {
 	if err := j.validateSetStorageCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetStorageCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetStorageType(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1053,7 +1052,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetThroughputCapacity(val *float64) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetThroughputCapacity(val *float64) {
 	if err := j.validateSetThroughputCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1064,7 +1063,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetThroughputCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystem)SetWeeklyMaintenanceStartTime(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SetWeeklyMaintenanceStartTime(val *string) {
 	if err := j.validateSetWeeklyMaintenanceStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func FsxOpenzfsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func FsxOpenzfsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool {
+func FsxOpenzfsFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsFileSystem_IsConstructParameters(x); err != nil {
@@ -1122,7 +1121,7 @@ func FsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1130,7 +1129,7 @@ func FsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool {
+func FsxOpenzfsFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -1141,7 +1140,7 @@ func FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bool {
+func FsxOpenzfsFileSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxOpenzfsFileSystem_IsTerraformResourceParameters(x); err != nil {
@@ -1160,7 +1159,7 @@ func FsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1185,31 +1184,31 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxOpenzfsFileSystem) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxOpenzfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1225,7 +1224,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1241,7 +1240,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1257,7 +1256,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1273,7 +1272,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1289,7 +1288,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1305,7 +1304,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1321,7 +1320,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1337,15 +1336,15 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1364,7 +1363,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1377,7 +1376,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1391,18 +1390,18 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxOpenzfsFileSystem) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1413,7 +1412,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1424,7 +1423,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1435,7 +1434,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) PutDiskIopsConfiguration(value *FsxOpen
 	_jsii_.InvokeVoid(
 		f,
 		"putDiskIopsConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1446,7 +1445,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) PutRootVolumeConfiguration(value *FsxOp
 	_jsii_.InvokeVoid(
 		f,
 		"putRootVolumeConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1457,7 +1456,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) PutTimeouts(value *FsxOpenzfsFileSystem
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1597,8 +1596,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetWeeklyMaintenanceStartTime() {
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1610,8 +1609,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1623,8 +1622,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1636,8 +1635,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1662,8 +1661,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1674,4 +1673,3 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

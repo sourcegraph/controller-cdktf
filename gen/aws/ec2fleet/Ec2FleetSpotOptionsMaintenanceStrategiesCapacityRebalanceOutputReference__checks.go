@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutp
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEc2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputR
 
 	return nil
 }
-

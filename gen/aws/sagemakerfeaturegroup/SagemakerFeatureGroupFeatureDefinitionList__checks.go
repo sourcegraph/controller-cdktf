@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerFeatureGroupFeatureDefinitionListParameters(terraformRe
 
 	return nil
 }
-

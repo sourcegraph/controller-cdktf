@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsNeptuneOrderableDbInstance_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataAwsNeptuneOrderableDbInstance_IsConstructParameters(x interface{}) error {
+func validateDataAwsNeptuneOrderableDbInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsNeptuneOrderableDbInstance_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataAwsNeptuneOrderableDbInstance_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsNeptuneOrderableDbInstance_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsNeptuneOrderableDbInstance_IsTerraformDataSourceParameters(x
 	return nil
 }
 
-func validateDataAwsNeptuneOrderableDbInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsNeptuneOrderableDbInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsNeptuneOrderableDbInstance_IsTerraformElementParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetPreferredInstan
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetVpcParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetVpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,4 +299,3 @@ func validateNewDataAwsNeptuneOrderableDbInstanceParameters(scope constructs.Con
 
 	return nil
 }
-

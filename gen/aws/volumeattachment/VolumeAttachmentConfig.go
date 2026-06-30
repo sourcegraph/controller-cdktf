@@ -6,9 +6,9 @@ import (
 
 type VolumeAttachmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VolumeAttachmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#device_name VolumeAttachment#device_name}.
 	DeviceName *string `field:"required" json:"deviceName" yaml:"deviceName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#instance_id VolumeAttachment#instance_id}.
@@ -26,19 +26,18 @@ type VolumeAttachmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#volume_id VolumeAttachment#volume_id}.
 	VolumeId *string `field:"required" json:"volumeId" yaml:"volumeId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#force_detach VolumeAttachment#force_detach}.
-	ForceDetach interface{} `field:"optional" json:"forceDetach" yaml:"forceDetach"`
+	ForceDetach any `field:"optional" json:"forceDetach" yaml:"forceDetach"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#id VolumeAttachment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#skip_destroy VolumeAttachment#skip_destroy}.
-	SkipDestroy interface{} `field:"optional" json:"skipDestroy" yaml:"skipDestroy"`
+	SkipDestroy any `field:"optional" json:"skipDestroy" yaml:"skipDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#stop_instance_before_detaching VolumeAttachment#stop_instance_before_detaching}.
-	StopInstanceBeforeDetaching interface{} `field:"optional" json:"stopInstanceBeforeDetaching" yaml:"stopInstanceBeforeDetaching"`
+	StopInstanceBeforeDetaching any `field:"optional" json:"stopInstanceBeforeDetaching" yaml:"stopInstanceBeforeDetaching"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment#timeouts VolumeAttachment#timeouts}
 	Timeouts *VolumeAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

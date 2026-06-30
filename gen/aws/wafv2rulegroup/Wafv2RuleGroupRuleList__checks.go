@@ -34,7 +34,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafv2RuleGroupRuleListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

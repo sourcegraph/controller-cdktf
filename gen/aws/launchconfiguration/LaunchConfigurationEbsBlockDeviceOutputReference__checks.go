@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetNoDeviceParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) validateSetNoDeviceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -330,4 +330,3 @@ func validateNewLaunchConfigurationEbsBlockDeviceOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type CodedeployDeploymentGroupTriggerConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type CodedeployDeploymentGroupTriggerConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CodedeployDeploymentGroupTriggerConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type CodedeployDeploymentGroupTriggerConfigurationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return returns
 }
 
-
 func NewCodedeployDeploymentGroupTriggerConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodedeployDeploymentGroupTriggerConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewCodedeployDeploymentGroupTriggerConfigurationOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewCodedeployDeploymentGroupTriggerConfigurationOutputReference_Override(c 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetTriggerEvents(val *[]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetTriggerEvents(val *[]*string) {
 	if err := j.validateSetTriggerEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetTriggerName(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetTriggerName(val *string) {
 	if err := j.validateSetTriggerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)SetTriggerTargetArn(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) SetTriggerTargetArn(val *string) {
 	if err := j.validateSetTriggerTargetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 
 	return returns
 }
-

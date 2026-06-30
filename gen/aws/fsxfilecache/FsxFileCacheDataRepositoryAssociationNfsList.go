@@ -17,8 +17,8 @@ type FsxFileCacheDataRepositoryAssociationNfsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type FsxFileCacheDataRepositoryAssociationNfsList interface {
 	Get(index *float64) FsxFileCacheDataRepositoryAssociationNfsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewFsxFileCacheDataRepositoryAssociationNfsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheDataRepositoryAssociationNfsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewFsxFileCacheDataRepositoryAssociationNfsList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewFsxFileCacheDataRepositoryAssociationNfsList_Override(f FsxFileCacheData
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationNfsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) AllWithMapKey(m
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) Get(index *floa
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationNfsList) ToString() *str
 
 	return returns
 }
-

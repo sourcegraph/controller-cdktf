@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateAddMoveTargetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveFromIdParam
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateCloudfrontFieldLevelEncryptionConfig_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateCloudfrontFieldLevelEncryptionConfig_IsConstructParameters(x interface{}) error {
+func validateCloudfrontFieldLevelEncryptionConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateCloudfrontFieldLevelEncryptionConfig_IsConstructParameters(x interf
 	return nil
 }
 
-func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformElementParameters(x interface{}) error {
+func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetCommentParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetLifecyclePar
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -444,4 +444,3 @@ func validateNewCloudfrontFieldLevelEncryptionConfigParameters(scope constructs.
 
 	return nil
 }
-

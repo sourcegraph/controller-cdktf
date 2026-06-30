@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkmanagerSiteLocationOutputReference) validateSetAddress
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerSiteLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkmanagerSiteLocationOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

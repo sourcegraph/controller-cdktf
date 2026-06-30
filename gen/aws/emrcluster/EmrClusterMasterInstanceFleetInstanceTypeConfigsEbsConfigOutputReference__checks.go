@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewEmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputR
 
 	return nil
 }
-

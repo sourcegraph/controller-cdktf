@@ -114,7 +114,7 @@ func (j *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppstreamDirectoryConfigServiceAccountCredentialsOutputReference
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsListParameter
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package wafv2webacl
 
-
 type Wafv2WebAclDefaultActionBlockCustomResponse struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}.
 	ResponseCode *float64 `field:"required" json:"responseCode" yaml:"responseCode"`
@@ -9,6 +8,5 @@ type Wafv2WebAclDefaultActionBlockCustomResponse struct {
 	// response_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
-	ResponseHeader interface{} `field:"optional" json:"responseHeader" yaml:"responseHeader"`
+	ResponseHeader any `field:"optional" json:"responseHeader" yaml:"responseHeader"`
 }
-

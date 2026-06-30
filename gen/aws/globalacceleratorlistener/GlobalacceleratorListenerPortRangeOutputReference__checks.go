@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGlobalacceleratorListenerPortRangeOutputReferenceParameters(terr
 
 	return nil
 }
-

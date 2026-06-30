@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshVirtualNodeSpecListenerTimeoutHttpOutputReferenceParamete
 
 	return nil
 }
-

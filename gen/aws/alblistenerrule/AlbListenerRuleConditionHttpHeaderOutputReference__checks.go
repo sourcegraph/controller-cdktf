@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionHttpHeaderOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleConditionHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAlbListenerRuleConditionHttpHeaderOutputReferenceParameters(terr
 
 	return nil
 }
-

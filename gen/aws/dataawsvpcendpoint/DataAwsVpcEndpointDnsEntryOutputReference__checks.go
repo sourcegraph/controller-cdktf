@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsVpcEndpointDnsEntryOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

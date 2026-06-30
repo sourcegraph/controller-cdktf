@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
-		reflect.TypeOf((*SesReceiptRule)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addHeaderAction", GoGetter: "AddHeaderAction"},
 			_jsii_.MemberProperty{JsiiProperty: "addHeaderActionInput", GoGetter: "AddHeaderActionInput"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workmailAction", GoGetter: "WorkmailAction"},
 			_jsii_.MemberProperty{JsiiProperty: "workmailActionInput", GoGetter: "WorkmailActionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -112,11 +112,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleAddHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleAddHeaderActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleAddHeaderActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleAddHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleAddHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleAddHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction",
-		reflect.TypeOf((*SesReceiptRuleBounceAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleBounceAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionList",
-		reflect.TypeOf((*SesReceiptRuleBounceActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleBounceActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleBounceActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleBounceActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleBounceActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleBounceActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,15 +248,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig",
-		reflect.TypeOf((*SesReceiptRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction",
-		reflect.TypeOf((*SesReceiptRuleLambdaAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleLambdaAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
-		reflect.TypeOf((*SesReceiptRuleLambdaActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleLambdaActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleLambdaActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -278,7 +278,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleLambdaActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleLambdaActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleLambdaActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,11 +320,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action",
-		reflect.TypeOf((*SesReceiptRuleS3Action)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleS3Action](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionList",
-		reflect.TypeOf((*SesReceiptRuleS3ActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleS3ActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleS3ActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -346,7 +346,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleS3ActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleS3ActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleS3ActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction",
-		reflect.TypeOf((*SesReceiptRuleSnsAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleSnsAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionList",
-		reflect.TypeOf((*SesReceiptRuleSnsActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleSnsActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -409,7 +409,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleSnsActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -417,7 +417,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleSnsActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleSnsActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleSnsActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,11 +456,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction",
-		reflect.TypeOf((*SesReceiptRuleStopAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleStopAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionList",
-		reflect.TypeOf((*SesReceiptRuleStopActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleStopActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleStopActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -482,7 +482,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleStopActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleStopActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleStopActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -521,11 +521,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction",
-		reflect.TypeOf((*SesReceiptRuleWorkmailAction)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleWorkmailAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
-		reflect.TypeOf((*SesReceiptRuleWorkmailActionList)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleWorkmailActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -539,7 +539,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleWorkmailActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -547,7 +547,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
-		reflect.TypeOf((*SesReceiptRuleWorkmailActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SesReceiptRuleWorkmailActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicArnInput", GoGetter: "TopicArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesReceiptRuleWorkmailActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

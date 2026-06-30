@@ -19,7 +19,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LbTargetGroupAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLbTargetGroupAttachment_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateLbTargetGroupAttachment_IsConstructParameters(x interface{}) error {
+func validateLbTargetGroupAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLbTargetGroupAttachment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateLbTargetGroupAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateLbTargetGroupAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLbTargetGroupAttachment_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateLbTargetGroupAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateLbTargetGroupAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment) validateSetAvailabilityZoneParameter
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroupAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment) validateSetPortParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LbTargetGroupAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewLbTargetGroupAttachmentParameters(scope constructs.Construct, id
 
 	return nil
 }
-

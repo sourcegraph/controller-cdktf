@@ -19,7 +19,7 @@ func (e *jsiiProxy_EksNodeGroup) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EksNodeGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EksNodeGroup) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EksNodeGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (e *jsiiProxy_EksNodeGroup) validatePutScalingConfigParameters(value *EksNo
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroup) validatePutTaintParameters(value interface{}) error {
+func (e *jsiiProxy_EksNodeGroup) validatePutTaintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateEksNodeGroup_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateEksNodeGroup_IsConstructParameters(x interface{}) error {
+func validateEksNodeGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func validateEksNodeGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksNodeGroup_IsTerraformElementParameters(x interface{}) error {
+func validateEksNodeGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func validateEksNodeGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksNodeGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateEksNodeGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_EksNodeGroup) validateSetClusterNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -387,7 +387,7 @@ func (j *jsiiProxy_EksNodeGroup) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -452,7 +452,7 @@ func (j *jsiiProxy_EksNodeGroup) validateSetDiskSizeParameters(val *float64) err
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroup) validateSetForceUpdateVersionParameters(val interface{}) error {
+func (j *jsiiProxy_EksNodeGroup) validateSetForceUpdateVersionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_EksNodeGroup) validateSetNodeRoleArnParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EksNodeGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -632,4 +632,3 @@ func validateNewEksNodeGroupParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

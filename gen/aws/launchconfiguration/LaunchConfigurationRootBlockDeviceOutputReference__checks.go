@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewLaunchConfigurationRootBlockDeviceOutputReferenceParameters(terr
 
 	return nil
 }
-
