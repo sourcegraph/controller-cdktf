@@ -29,7 +29,7 @@ type Budget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CreateBudget() *bool
 	SetCreateBudget(val *bool)
 	CreditTypesTreatment() *string
@@ -62,9 +62,9 @@ type Budget interface {
 	Projects() *[]*string
 	SetProjects(val *[]*string)
 	// Experimental.
-	Providers() *[]interface{}
+	Providers() *[]any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Services() *[]*string
 	SetServices(val *[]*string)
 	// Experimental.
@@ -74,9 +74,9 @@ type Budget interface {
 	// Experimental.
 	Version() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	AddProvider(provider interface{})
+	AddProvider(provider any)
 	// Experimental.
 	GetString(output *string) *string
 	// Experimental.
@@ -87,16 +87,16 @@ type Budget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Budget
@@ -174,8 +174,8 @@ func (j *jsiiProxy_Budget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Budget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Budget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_Budget) Projects() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Budget) Providers() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Budget) Providers() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"providers",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_Budget) Providers() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Budget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Budget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_Budget) Version() *string {
 	return returns
 }
 
-
 func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Budget {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Bud
 
 	_jsii_.Create(
 		"@cdktf/provider-budget.Budget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewBudget_Override(b Budget, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-budget.Budget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_Budget)SetAlertPubsubTopic(val *string) {
+func (j *jsiiProxy_Budget) SetAlertPubsubTopic(val *string) {
 	_jsii_.Set(
 		j,
 		"alertPubsubTopic",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_Budget)SetAlertPubsubTopic(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetAlertSpendBasis(val *string) {
+func (j *jsiiProxy_Budget) SetAlertSpendBasis(val *string) {
 	_jsii_.Set(
 		j,
 		"alertSpendBasis",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Budget)SetAlertSpendBasis(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetAlertSpentPercents(val *[]*float64) {
+func (j *jsiiProxy_Budget) SetAlertSpentPercents(val *[]*float64) {
 	_jsii_.Set(
 		j,
 		"alertSpentPercents",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_Budget)SetAlertSpentPercents(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetAmount(val *float64) {
+func (j *jsiiProxy_Budget) SetAmount(val *float64) {
 	if err := j.validateSetAmountParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_Budget)SetAmount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetBillingAccount(val *string) {
+func (j *jsiiProxy_Budget) SetBillingAccount(val *string) {
 	if err := j.validateSetBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_Budget)SetBillingAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetCalendarPeriod(val *string) {
+func (j *jsiiProxy_Budget) SetCalendarPeriod(val *string) {
 	_jsii_.Set(
 		j,
 		"calendarPeriod",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_Budget)SetCalendarPeriod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetCreateBudget(val *bool) {
+func (j *jsiiProxy_Budget) SetCreateBudget(val *bool) {
 	_jsii_.Set(
 		j,
 		"createBudget",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_Budget)SetCreateBudget(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetCreditTypesTreatment(val *string) {
+func (j *jsiiProxy_Budget) SetCreditTypesTreatment(val *string) {
 	_jsii_.Set(
 		j,
 		"creditTypesTreatment",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_Budget)SetCreditTypesTreatment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetCustomPeriodEndDate(val *string) {
+func (j *jsiiProxy_Budget) SetCustomPeriodEndDate(val *string) {
 	_jsii_.Set(
 		j,
 		"customPeriodEndDate",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_Budget)SetCustomPeriodEndDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetCustomPeriodStartDate(val *string) {
+func (j *jsiiProxy_Budget) SetCustomPeriodStartDate(val *string) {
 	_jsii_.Set(
 		j,
 		"customPeriodStartDate",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_Budget)SetCustomPeriodStartDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Budget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_Budget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetDisplayName(val *string) {
+func (j *jsiiProxy_Budget) SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_Budget)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Budget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -522,7 +521,7 @@ func (j *jsiiProxy_Budget)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_Budget) SetLabels(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"labels",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_Budget)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetMonitoringNotificationChannels(val *[]*string) {
+func (j *jsiiProxy_Budget) SetMonitoringNotificationChannels(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"monitoringNotificationChannels",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_Budget)SetMonitoringNotificationChannels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetProjects(val *[]*string) {
+func (j *jsiiProxy_Budget) SetProjects(val *[]*string) {
 	if err := j.validateSetProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_Budget)SetProjects(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Budget)SetServices(val *[]*string) {
+func (j *jsiiProxy_Budget) SetServices(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"services",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_Budget)SetServices(val *[]*string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Budget_IsConstruct(x interface{}) *bool {
+func Budget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudget_IsConstructParameters(x); err != nil {
@@ -585,7 +584,7 @@ func Budget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-budget.Budget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func Budget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Budget_IsTerraformElement(x interface{}) *bool {
+func Budget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudget_IsTerraformElementParameters(x); err != nil {
@@ -604,32 +603,32 @@ func Budget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-budget.Budget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_Budget) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_Budget) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_Budget) AddProvider(provider interface{}) {
+func (b *jsiiProxy_Budget) AddProvider(provider any) {
 	if err := b.validateAddProviderParameters(provider); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addProvider",
-		[]interface{}{provider},
+		[]any{provider},
 	)
 }
 
@@ -642,7 +641,7 @@ func (b *jsiiProxy_Budget) GetString(output *string) *string {
 	_jsii_.Invoke(
 		b,
 		"getString",
-		[]interface{}{output},
+		[]any{output},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (b *jsiiProxy_Budget) InterpolationForOutput(moduleOutput *string) cdktf.IR
 	_jsii_.Invoke(
 		b,
 		"interpolationForOutput",
-		[]interface{}{moduleOutput},
+		[]any{moduleOutput},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (b *jsiiProxy_Budget) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -684,8 +683,8 @@ func (b *jsiiProxy_Budget) ResetOverrideLogicalId() {
 	)
 }
 
-func (b *jsiiProxy_Budget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_Budget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -697,8 +696,8 @@ func (b *jsiiProxy_Budget) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_Budget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_Budget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -710,8 +709,8 @@ func (b *jsiiProxy_Budget) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_Budget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_Budget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -723,8 +722,8 @@ func (b *jsiiProxy_Budget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_Budget) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_Budget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -749,8 +748,8 @@ func (b *jsiiProxy_Budget) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_Budget) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_Budget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -761,4 +760,3 @@ func (b *jsiiProxy_Budget) ToTerraform() interface{} {
 
 	return returns
 }
-
