@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-time.rotating.Rotating",
-		reflect.TypeOf((*Rotating)(nil)).Elem(),
+		reflect.TypeFor[Rotating](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unix", GoGetter: "Unix"},
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Rotating{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,6 +93,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-time.rotating.RotatingConfig",
-		reflect.TypeOf((*RotatingConfig)(nil)).Elem(),
+		reflect.TypeFor[RotatingConfig](),
 	)
 }

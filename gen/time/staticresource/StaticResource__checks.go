@@ -19,7 +19,7 @@ func (s *jsiiProxy_StaticResource) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (s *jsiiProxy_StaticResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StaticResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StaticResource) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (s *jsiiProxy_StaticResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StaticResource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateStaticResource_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateStaticResource_IsConstructParameters(x interface{}) error {
+func validateStaticResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateStaticResource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStaticResource_IsTerraformElementParameters(x interface{}) error {
+func validateStaticResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateStaticResource_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateStaticResource_IsTerraformResourceParameters(x interface{}) error {
+func validateStaticResource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateStaticResource_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_StaticResource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StaticResource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_StaticResource) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_StaticResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StaticResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_StaticResource) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_StaticResource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StaticResource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -419,4 +419,3 @@ func validateNewStaticResourceParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-
