@@ -1,6 +1,6 @@
 module github.com/sourcegraph/controller-cdktf
 
-go 1.25.0
+go 1.26.4
 
 require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20250903010805-ef644dd16c04
 

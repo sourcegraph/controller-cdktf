@@ -1,6 +1,6 @@
 module github.com/sourcegraph/controller-cdktf/gen/random
 
-go 1.18
+go 1.26.4
 
 require (
 	github.com/aws/constructs-go/constructs/v10 v10.1.167
