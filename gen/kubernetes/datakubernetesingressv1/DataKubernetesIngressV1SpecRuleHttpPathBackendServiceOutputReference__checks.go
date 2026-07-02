@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServiceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesIngressV1SpecRuleHttpPathBackendServiceOutputRefer
 
 	return nil
 }
-

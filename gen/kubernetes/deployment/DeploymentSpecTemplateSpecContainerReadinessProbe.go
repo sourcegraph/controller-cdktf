@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecContainerReadinessProbe struct {
 	// exec block.
 	//
@@ -29,10 +28,9 @@ type DeploymentSpecTemplateSpecContainerReadinessProbe struct {
 	// tcp_socket block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
-	TcpSocket interface{} `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
+	TcpSocket any `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
 	// Number of seconds after which the probe times out. More info: http://kubernetes.io/docs/user-guide/pod-states#container-probes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
 }
-

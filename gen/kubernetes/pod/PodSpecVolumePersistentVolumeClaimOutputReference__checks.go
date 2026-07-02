@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumePersistentVolumeClaimOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewPodSpecVolumePersistentVolumeClaimOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecImagePullSecretsListParameters(terraformRes
 
 	return nil
 }
-

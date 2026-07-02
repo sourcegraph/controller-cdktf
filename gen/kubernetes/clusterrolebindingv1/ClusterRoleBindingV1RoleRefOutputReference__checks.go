@@ -106,7 +106,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetApiGro
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewClusterRoleBindingV1RoleRefOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type ReplicationController interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,28 +52,28 @@ type ReplicationController interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() ReplicationControllerSpecOutputReference
 	SpecInput() *ReplicationControllerSpec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ReplicationControllerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ReplicationController interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ReplicationController interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type ReplicationController interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ReplicationController
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ReplicationController) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationController) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ReplicationController) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ReplicationController) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ReplicationController) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationController) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ReplicationController) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ReplicationController) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_ReplicationController) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationController) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ReplicationController) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ReplicationController) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_ReplicationController) Timeouts() ReplicationControllerTimeou
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationController) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationController) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_ReplicationController) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller kubernetes_replication_controller} Resource.
 func NewReplicationController(scope constructs.Construct, id *string, config *ReplicationControllerConfig) ReplicationController {
@@ -388,7 +387,7 @@ func NewReplicationController(scope constructs.Construct, id *string, config *Re
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewReplicationController_Override(r ReplicationController, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetConnection(val interface{}) {
+func (j *jsiiProxy_ReplicationController) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ReplicationController)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetCount(val interface{}) {
+func (j *jsiiProxy_ReplicationController) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ReplicationController)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ReplicationController) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ReplicationController)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ReplicationController) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_ReplicationController)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetId(val *string) {
+func (j *jsiiProxy_ReplicationController) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_ReplicationController)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ReplicationController) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_ReplicationController)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ReplicationController) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_ReplicationController)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ReplicationController)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ReplicationController) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func ReplicationController_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func ReplicationController_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ReplicationController_IsConstruct(x interface{}) *bool {
+func ReplicationController_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReplicationController_IsConstructParameters(x); err != nil {
@@ -532,7 +531,7 @@ func ReplicationController_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func ReplicationController_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ReplicationController_IsTerraformElement(x interface{}) *bool {
+func ReplicationController_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReplicationController_IsTerraformElementParameters(x); err != nil {
@@ -551,7 +550,7 @@ func ReplicationController_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func ReplicationController_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ReplicationController_IsTerraformResource(x interface{}) *bool {
+func ReplicationController_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReplicationController_IsTerraformResourceParameters(x); err != nil {
@@ -570,7 +569,7 @@ func ReplicationController_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,31 +594,31 @@ func (r *jsiiProxy_ReplicationController) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_ReplicationController) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_ReplicationController) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_ReplicationController) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationController) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (r *jsiiProxy_ReplicationController) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (r *jsiiProxy_ReplicationController) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (r *jsiiProxy_ReplicationController) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (r *jsiiProxy_ReplicationController) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (r *jsiiProxy_ReplicationController) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (r *jsiiProxy_ReplicationController) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (r *jsiiProxy_ReplicationController) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,15 +746,15 @@ func (r *jsiiProxy_ReplicationController) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationController) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReplicationController) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -774,7 +773,7 @@ func (r *jsiiProxy_ReplicationController) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -787,7 +786,7 @@ func (r *jsiiProxy_ReplicationController) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,18 +800,18 @@ func (r *jsiiProxy_ReplicationController) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_ReplicationController) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_ReplicationController) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -823,7 +822,7 @@ func (r *jsiiProxy_ReplicationController) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -834,7 +833,7 @@ func (r *jsiiProxy_ReplicationController) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -845,7 +844,7 @@ func (r *jsiiProxy_ReplicationController) PutMetadata(value *ReplicationControll
 	_jsii_.InvokeVoid(
 		r,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -856,7 +855,7 @@ func (r *jsiiProxy_ReplicationController) PutSpec(value *ReplicationControllerSp
 	_jsii_.InvokeVoid(
 		r,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -867,7 +866,7 @@ func (r *jsiiProxy_ReplicationController) PutTimeouts(value *ReplicationControll
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (r *jsiiProxy_ReplicationController) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_ReplicationController) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ReplicationController) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -908,8 +907,8 @@ func (r *jsiiProxy_ReplicationController) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationController) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ReplicationController) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -921,8 +920,8 @@ func (r *jsiiProxy_ReplicationController) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationController) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReplicationController) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -934,8 +933,8 @@ func (r *jsiiProxy_ReplicationController) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationController) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReplicationController) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -960,8 +959,8 @@ func (r *jsiiProxy_ReplicationController) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationController) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReplicationController) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -972,4 +971,3 @@ func (r *jsiiProxy_ReplicationController) ToTerraform() interface{} {
 
 	return returns
 }
-

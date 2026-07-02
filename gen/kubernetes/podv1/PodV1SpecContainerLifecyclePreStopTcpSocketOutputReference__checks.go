@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopTcpSocketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPodV1SpecContainerLifecyclePreStopTcpSocketOutputReferenceParame
 
 	return nil
 }
-

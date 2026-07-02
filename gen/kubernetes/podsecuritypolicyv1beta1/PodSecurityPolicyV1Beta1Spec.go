@@ -1,6 +1,5 @@
 package podsecuritypolicyv1beta1
 
-
 type PodSecurityPolicyV1Beta1Spec struct {
 	// fs_group block.
 	//
@@ -23,11 +22,11 @@ type PodSecurityPolicyV1Beta1Spec struct {
 	// allowed_flex_volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#allowed_flex_volumes PodSecurityPolicyV1Beta1#allowed_flex_volumes}
-	AllowedFlexVolumes interface{} `field:"optional" json:"allowedFlexVolumes" yaml:"allowedFlexVolumes"`
+	AllowedFlexVolumes any `field:"optional" json:"allowedFlexVolumes" yaml:"allowedFlexVolumes"`
 	// allowed_host_paths block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#allowed_host_paths PodSecurityPolicyV1Beta1#allowed_host_paths}
-	AllowedHostPaths interface{} `field:"optional" json:"allowedHostPaths" yaml:"allowedHostPaths"`
+	AllowedHostPaths any `field:"optional" json:"allowedHostPaths" yaml:"allowedHostPaths"`
 	// AllowedProcMountTypes is an allowlist of allowed ProcMountTypes.
 	//
 	// Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled.
@@ -45,7 +44,7 @@ type PodSecurityPolicyV1Beta1Spec struct {
 	// allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#allow_privilege_escalation PodSecurityPolicyV1Beta1#allow_privilege_escalation}
-	AllowPrivilegeEscalation interface{} `field:"optional" json:"allowPrivilegeEscalation" yaml:"allowPrivilegeEscalation"`
+	AllowPrivilegeEscalation any `field:"optional" json:"allowPrivilegeEscalation" yaml:"allowPrivilegeEscalation"`
 	// defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.
 	//
 	// You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.
@@ -55,7 +54,7 @@ type PodSecurityPolicyV1Beta1Spec struct {
 	// defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#default_allow_privilege_escalation PodSecurityPolicyV1Beta1#default_allow_privilege_escalation}
-	DefaultAllowPrivilegeEscalation interface{} `field:"optional" json:"defaultAllowPrivilegeEscalation" yaml:"defaultAllowPrivilegeEscalation"`
+	DefaultAllowPrivilegeEscalation any `field:"optional" json:"defaultAllowPrivilegeEscalation" yaml:"defaultAllowPrivilegeEscalation"`
 	// forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none.
 	//
 	// Each entry is either a plain sysctl name or ends in "*" in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.
@@ -67,29 +66,29 @@ type PodSecurityPolicyV1Beta1Spec struct {
 	// hostIPC determines if the policy allows the use of HostIPC in the pod spec.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#host_ipc PodSecurityPolicyV1Beta1#host_ipc}
-	HostIpc interface{} `field:"optional" json:"hostIpc" yaml:"hostIpc"`
+	HostIpc any `field:"optional" json:"hostIpc" yaml:"hostIpc"`
 	// hostNetwork determines if the policy allows the use of HostNetwork in the pod spec.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#host_network PodSecurityPolicyV1Beta1#host_network}
-	HostNetwork interface{} `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
+	HostNetwork any `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
 	// hostPID determines if the policy allows the use of HostPID in the pod spec.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#host_pid PodSecurityPolicyV1Beta1#host_pid}
-	HostPid interface{} `field:"optional" json:"hostPid" yaml:"hostPid"`
+	HostPid any `field:"optional" json:"hostPid" yaml:"hostPid"`
 	// host_ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#host_ports PodSecurityPolicyV1Beta1#host_ports}
-	HostPorts interface{} `field:"optional" json:"hostPorts" yaml:"hostPorts"`
+	HostPorts any `field:"optional" json:"hostPorts" yaml:"hostPorts"`
 	// privileged determines if a pod can request to be run as privileged.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#privileged PodSecurityPolicyV1Beta1#privileged}
-	Privileged interface{} `field:"optional" json:"privileged" yaml:"privileged"`
+	Privileged any `field:"optional" json:"privileged" yaml:"privileged"`
 	// readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.
 	//
 	// If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#read_only_root_filesystem PodSecurityPolicyV1Beta1#read_only_root_filesystem}
-	ReadOnlyRootFilesystem interface{} `field:"optional" json:"readOnlyRootFilesystem" yaml:"readOnlyRootFilesystem"`
+	ReadOnlyRootFilesystem any `field:"optional" json:"readOnlyRootFilesystem" yaml:"readOnlyRootFilesystem"`
 	// requiredDropCapabilities are the capabilities that will be dropped from the container.
 	//
 	// These are required to be dropped and cannot be added.
@@ -111,4 +110,3 @@ type PodSecurityPolicyV1Beta1Spec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy_v1beta1#volumes PodSecurityPolicyV1Beta1#volumes}
 	Volumes *[]*string `field:"optional" json:"volumes" yaml:"volumes"`
 }
-

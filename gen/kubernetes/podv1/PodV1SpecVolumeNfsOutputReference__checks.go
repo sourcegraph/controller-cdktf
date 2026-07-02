@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateSetPathParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeNfsOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewPodV1SpecVolumeNfsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

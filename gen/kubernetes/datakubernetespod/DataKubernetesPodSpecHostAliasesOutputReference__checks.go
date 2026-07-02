@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecHostAliasesOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecHostAliasesOutputReferenceParameters(terraf
 
 	return nil
 }
-

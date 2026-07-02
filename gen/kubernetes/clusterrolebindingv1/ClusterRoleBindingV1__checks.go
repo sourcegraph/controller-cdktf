@@ -19,7 +19,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ClusterRoleBindingV1) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ClusterRoleBindingV1) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) validatePutRoleRefParameters(value *Clu
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) validatePutSubjectParameters(value interface{}) error {
+func (c *jsiiProxy_ClusterRoleBindingV1) validatePutSubjectParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateClusterRoleBindingV1_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateClusterRoleBindingV1_IsConstructParameters(x interface{}) error {
+func validateClusterRoleBindingV1_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateClusterRoleBindingV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateClusterRoleBindingV1_IsTerraformElementParameters(x interface{}) error {
+func validateClusterRoleBindingV1_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateClusterRoleBindingV1_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateClusterRoleBindingV1_IsTerraformResourceParameters(x interface{}) error {
+func validateClusterRoleBindingV1_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateClusterRoleBindingV1_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingV1) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingV1) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ClusterRoleBindingV1) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -467,4 +467,3 @@ func validateNewClusterRoleBindingV1Parameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

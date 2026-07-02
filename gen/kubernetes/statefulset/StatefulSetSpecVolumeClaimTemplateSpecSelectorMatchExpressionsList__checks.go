@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpression
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsLi
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutput
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,7 +206,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutput
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,4 +253,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputRef
 
 	return nil
 }
-

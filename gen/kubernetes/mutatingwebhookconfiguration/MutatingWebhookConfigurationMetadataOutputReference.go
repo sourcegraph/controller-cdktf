@@ -15,9 +15,9 @@ type MutatingWebhookConfigurationMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type MutatingWebhookConfigurationMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type MutatingWebhookConfigurationMetadataOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) Annotati
 	return returns
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -275,7 +275,6 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) Uid() *s
 	return returns
 }
 
-
 func NewMutatingWebhookConfigurationMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MutatingWebhookConfigurationMetadataOutputReference {
 	_init_.Initialize()
 
@@ -286,7 +285,7 @@ func NewMutatingWebhookConfigurationMetadataOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -298,12 +297,12 @@ func NewMutatingWebhookConfigurationMetadataOutputReference_Override(m MutatingW
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetAnnota
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetGenera
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetInternalValue(val *MutatingWebhookConfigurationMetadata) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetInternalValue(val *MutatingWebhookConfigurationMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetLabels
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetName(v
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) ComputeF
 	return returns
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetListA
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) Interpol
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -620,16 +619,16 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) ResetNam
 	)
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -648,4 +647,3 @@ func (m *jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference) ToString
 
 	return returns
 }
-

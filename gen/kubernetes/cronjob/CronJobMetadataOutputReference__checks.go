@@ -106,7 +106,7 @@ func (j *jsiiProxy_CronJobMetadataOutputReference) validateSetAnnotationsParamet
 	return nil
 }
 
-func (j *jsiiProxy_CronJobMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCronJobMetadataOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package deploymentv1
 
-
 type DeploymentV1SpecTemplateSpecContainerEnvFromConfigMapRef struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
@@ -9,6 +8,5 @@ type DeploymentV1SpecTemplateSpecContainerEnvFromConfigMapRef struct {
 	// Specify whether the ConfigMap must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#optional DeploymentV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

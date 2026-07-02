@@ -12,9 +12,9 @@ type JobSpecTemplateSpecAffinityPodAffinityOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type JobSpecTemplateSpecAffinityPodAffinityOutputReference interface {
 	InternalValue() *JobSpecTemplateSpecAffinityPodAffinity
 	SetInternalValue(val *JobSpecTemplateSpecAffinityPodAffinity)
 	PreferredDuringSchedulingIgnoredDuringExecution() JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
-	PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{}
+	PreferredDuringSchedulingIgnoredDuringExecutionInput() any
 	RequiredDuringSchedulingIgnoredDuringExecution() JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
-	RequiredDuringSchedulingIgnoredDuringExecutionInput() interface{}
+	RequiredDuringSchedulingIgnoredDuringExecutionInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type JobSpecTemplateSpecAffinityPodAffinityOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type JobSpecTemplateSpecAffinityPodAffinityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{})
-	PutRequiredDuringSchedulingIgnoredDuringExecution(value interface{})
+	PutPreferredDuringSchedulingIgnoredDuringExecution(value any)
+	PutRequiredDuringSchedulingIgnoredDuringExecution(value any)
 	ResetPreferredDuringSchedulingIgnoredDuringExecution()
 	ResetRequiredDuringSchedulingIgnoredDuringExecution()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Prefer
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preferredDuringSchedulingIgnoredDuringExecutionInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Requir
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) RequiredDuringSchedulingIgnoredDuringExecutionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) RequiredDuringSchedulingIgnoredDuringExecutionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredDuringSchedulingIgnoredDuringExecutionInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Terraf
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecAffinityPodAffinityOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewJobSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewJobSpecTemplateSpecAffinityPodAffinityOutputReference_Override(j JobSpec
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetInternalValue(val *JobSpecTemplateSpecAffinityPodAffinity) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) SetInternalValue(val *JobSpecTemplateSpecAffinityPodAffinity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Comput
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetBoo
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetBoo
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetLis
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetNum
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetNum
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetNum
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetStr
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) GetStr
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Interp
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value any) {
 	if err := j.validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putPreferredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PutRequiredDuringSchedulingIgnoredDuringExecution(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) PutRequiredDuringSchedulingIgnoredDuringExecution(value any) {
 	if err := j.validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putRequiredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) ResetR
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityOutputReference) ToStri
 
 	return returns
 }
-

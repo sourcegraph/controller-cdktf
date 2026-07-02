@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutp
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutp
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewNetworkPolicyV1SpecIngressFromPodSelectorMatchExpressionsOutputR
 
 	return nil
 }
-

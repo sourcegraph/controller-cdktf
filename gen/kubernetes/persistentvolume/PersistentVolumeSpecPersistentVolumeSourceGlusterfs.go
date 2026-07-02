@@ -1,6 +1,5 @@
 package persistentvolume
 
-
 type PersistentVolumeSpecPersistentVolumeSourceGlusterfs struct {
 	// The endpoint name that details Glusterfs topology. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod.
 	//
@@ -13,6 +12,5 @@ type PersistentVolumeSpecPersistentVolumeSourceGlusterfs struct {
 	// Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume#read_only PersistentVolume#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

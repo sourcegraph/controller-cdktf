@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSecurityPolicySpecSupplementalGroupsRangeListParameters(terra
 
 	return nil
 }
-

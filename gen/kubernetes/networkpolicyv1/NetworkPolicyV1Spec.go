@@ -1,6 +1,5 @@
 package networkpolicyv1
 
-
 type NetworkPolicyV1Spec struct {
 	// pod_selector block.
 	//
@@ -15,10 +14,9 @@ type NetworkPolicyV1Spec struct {
 	// egress block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/network_policy_v1#egress NetworkPolicyV1#egress}
-	Egress interface{} `field:"optional" json:"egress" yaml:"egress"`
+	Egress any `field:"optional" json:"egress" yaml:"egress"`
 	// ingress block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/network_policy_v1#ingress NetworkPolicyV1#ingress}
-	Ingress interface{} `field:"optional" json:"ingress" yaml:"ingress"`
+	Ingress any `field:"optional" json:"ingress" yaml:"ingress"`
 }
-

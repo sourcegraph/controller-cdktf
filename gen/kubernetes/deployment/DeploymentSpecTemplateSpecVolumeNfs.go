@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecVolumeNfs struct {
 	// Path that is exported by the NFS server. More info: http://kubernetes.io/docs/user-guide/volumes#nfs.
 	//
@@ -13,6 +12,5 @@ type DeploymentSpecTemplateSpecVolumeNfs struct {
 	// Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: http://kubernetes.io/docs/user-guide/volumes#nfs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#read_only Deployment#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

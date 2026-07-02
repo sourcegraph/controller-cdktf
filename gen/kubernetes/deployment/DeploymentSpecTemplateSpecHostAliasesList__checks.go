@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecHostAliasesListParameters(terraformRes
 
 	return nil
 }
-

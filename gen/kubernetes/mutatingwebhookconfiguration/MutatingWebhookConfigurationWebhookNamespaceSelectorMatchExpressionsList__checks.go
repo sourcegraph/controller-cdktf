@@ -34,7 +34,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpr
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpress
 
 	return nil
 }
-

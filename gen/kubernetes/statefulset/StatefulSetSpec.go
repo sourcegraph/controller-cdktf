@@ -1,6 +1,5 @@
 package statefulset
 
-
 type StatefulSetSpec struct {
 	// selector block.
 	//
@@ -33,10 +32,9 @@ type StatefulSetSpec struct {
 	// update_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#update_strategy StatefulSet#update_strategy}
-	UpdateStrategy interface{} `field:"optional" json:"updateStrategy" yaml:"updateStrategy"`
+	UpdateStrategy any `field:"optional" json:"updateStrategy" yaml:"updateStrategy"`
 	// volume_claim_template block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
-	VolumeClaimTemplate interface{} `field:"optional" json:"volumeClaimTemplate" yaml:"volumeClaimTemplate"`
+	VolumeClaimTemplate any `field:"optional" json:"volumeClaimTemplate" yaml:"volumeClaimTemplate"`
 }
-

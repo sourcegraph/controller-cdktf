@@ -1,6 +1,5 @@
 package replicationcontroller
 
-
 type ReplicationControllerSpecTemplateSpecContainer struct {
 	// Name of the container specified as a DNS_LABEL.
 	//
@@ -23,11 +22,11 @@ type ReplicationControllerSpecTemplateSpecContainer struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#env ReplicationController#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// env_from block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
-	EnvFrom interface{} `field:"optional" json:"envFrom" yaml:"envFrom"`
+	EnvFrom any `field:"optional" json:"envFrom" yaml:"envFrom"`
 	// Docker image name. More info: http://kubernetes.io/docs/user-guide/images.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#image ReplicationController#image}
@@ -49,7 +48,7 @@ type ReplicationControllerSpecTemplateSpecContainer struct {
 	// port block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#port ReplicationController#port}
-	Port interface{} `field:"optional" json:"port" yaml:"port"`
+	Port any `field:"optional" json:"port" yaml:"port"`
 	// readiness_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
@@ -71,13 +70,13 @@ type ReplicationControllerSpecTemplateSpecContainer struct {
 	// If this is not set, reads from stdin in the container will always result in EOF.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
-	Stdin interface{} `field:"optional" json:"stdin" yaml:"stdin"`
+	Stdin any `field:"optional" json:"stdin" yaml:"stdin"`
 	// Whether the container runtime should close the stdin channel after it has been opened by a single attach.
 	//
 	// When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
-	StdinOnce interface{} `field:"optional" json:"stdinOnce" yaml:"stdinOnce"`
+	StdinOnce any `field:"optional" json:"stdinOnce" yaml:"stdinOnce"`
 	// Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem.
 	//
 	// Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
@@ -93,11 +92,11 @@ type ReplicationControllerSpecTemplateSpecContainer struct {
 	// Whether this container should allocate a TTY for itself.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#tty ReplicationController#tty}
-	Tty interface{} `field:"optional" json:"tty" yaml:"tty"`
+	Tty any `field:"optional" json:"tty" yaml:"tty"`
 	// volume_mount block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
-	VolumeMount interface{} `field:"optional" json:"volumeMount" yaml:"volumeMount"`
+	VolumeMount any `field:"optional" json:"volumeMount" yaml:"volumeMount"`
 	// Container's working directory.
 	//
 	// If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
@@ -105,4 +104,3 @@ type ReplicationControllerSpecTemplateSpecContainer struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

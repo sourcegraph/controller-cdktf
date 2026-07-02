@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validatePutItemsParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeSecretOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewPodV1SpecVolumeSecretOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

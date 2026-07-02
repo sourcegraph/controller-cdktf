@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobSpecSelectorOutputReference) validateInterpolationForAttri
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobSpecSelectorOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewJobSpecSelectorOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

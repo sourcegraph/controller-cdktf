@@ -112,7 +112,7 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutTemplateParamete
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutUpdateStrategyParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutUpdateStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutUpdateStrategyPa
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutVolumeClaimTemplateParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutVolumeClaimTemplateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -314,4 +314,3 @@ func validateNewStatefulSetV1SpecOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

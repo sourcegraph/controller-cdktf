@@ -112,7 +112,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewStatefulSetSpecTemplateSpecContainerStartupProbeOutputReferenceP
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type PodV1SpecVolumeProjectedSourcesConfigMapOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,16 +27,16 @@ type PodV1SpecVolumeProjectedSourcesConfigMapOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Items() PodV1SpecVolumeProjectedSourcesConfigMapItemsList
-	ItemsInput() interface{}
+	ItemsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type PodV1SpecVolumeProjectedSourcesConfigMapOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type PodV1SpecVolumeProjectedSourcesConfigMapOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutItems(value interface{})
+	PutItems(value any)
 	ResetItems()
 	ResetName()
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Item
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) ItemsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) ItemsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"itemsInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Name
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Opti
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Terr
 	return returns
 }
 
-
 func NewPodV1SpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodV1SpecVolumeProjectedSourcesConfigMapOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewPodV1SpecVolumeProjectedSourcesConfigMapOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewPodV1SpecVolumeProjectedSourcesConfigMapOutputReference_Override(p PodV1
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetNa
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetOp
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Comp
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetB
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetB
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetL
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetN
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetN
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetN
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetS
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) GetS
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Inte
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) PutItems(value interface{}) {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) PutItems(value any) {
 	if err := p.validatePutItemsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putItems",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Rese
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapOutputReference) ToSt
 
 	return returns
 }
-

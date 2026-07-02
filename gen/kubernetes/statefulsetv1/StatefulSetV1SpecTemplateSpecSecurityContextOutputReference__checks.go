@@ -112,7 +112,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validatePutSysctlParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validatePutSysctlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,4 +303,3 @@ func validateNewStatefulSetV1SpecTemplateSpecSecurityContextOutputReferenceParam
 
 	return nil
 }
-

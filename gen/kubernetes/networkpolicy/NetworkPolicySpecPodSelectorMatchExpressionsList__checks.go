@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkPolicySpecPodSelectorMatchExpressionsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecPodSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecPodSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkPolicySpecPodSelectorMatchExpressionsListParameters(terra
 
 	return nil
 }
-

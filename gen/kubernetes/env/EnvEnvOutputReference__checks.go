@@ -109,7 +109,7 @@ func (e *jsiiProxy_EnvEnvOutputReference) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_EnvEnvOutputReference) validateSetComplexObjectIsFromSetParam
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewEnvEnvOutputReferenceParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

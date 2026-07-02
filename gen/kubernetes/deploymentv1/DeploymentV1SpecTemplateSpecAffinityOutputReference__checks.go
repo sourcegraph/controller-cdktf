@@ -131,7 +131,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewDeploymentV1SpecTemplateSpecAffinityOutputReferenceParameters(te
 
 	return nil
 }
-

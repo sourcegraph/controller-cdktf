@@ -90,7 +90,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateI
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewDeploymentSpecTemplateSpecContainerOutputReferenceParameters(ter
 
 	return nil
 }
-

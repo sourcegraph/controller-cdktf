@@ -17,9 +17,9 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	ClientConfigInput() *ValidatingWebhookConfigurationV1WebhookClientConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	FailurePolicyInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MatchPolicy() *string
 	SetMatchPolicy(val *string)
 	MatchPolicyInput() *string
@@ -48,7 +48,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	ObjectSelector() ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference
 	ObjectSelectorInput() *ValidatingWebhookConfigurationV1WebhookObjectSelector
 	Rule() ValidatingWebhookConfigurationV1WebhookRuleList
-	RuleInput() interface{}
+	RuleInput() any
 	SideEffects() *string
 	SetSideEffects(val *string)
 	SideEffectsInput() *string
@@ -66,7 +66,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	PutClientConfig(value *ValidatingWebhookConfigurationV1WebhookClientConfig)
 	PutNamespaceSelector(value *ValidatingWebhookConfigurationV1WebhookNamespaceSelector)
 	PutObjectSelector(value *ValidatingWebhookConfigurationV1WebhookObjectSelector)
-	PutRule(value interface{})
+	PutRule(value any)
 	ResetAdmissionReviewVersions()
 	ResetFailurePolicy()
 	ResetMatchPolicy()
@@ -101,7 +101,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Clien
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Rule(
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) RuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) RuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleInput",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Timeo
 	return returns
 }
 
-
 func NewValidatingWebhookConfigurationV1WebhookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ValidatingWebhookConfigurationV1WebhookOutputReference {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewValidatingWebhookConfigurationV1WebhookOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewValidatingWebhookConfigurationV1WebhookOutputReference_Override(v Valida
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetAdmissionReviewVersions(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetAdmissionReviewVersions(val *[]*string) {
 	if err := j.validateSetAdmissionReviewVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetAdm
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetFailurePolicy(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetFailurePolicy(val *string) {
 	if err := j.validateSetFailurePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetFai
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetMatchPolicy(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetMatchPolicy(val *string) {
 	if err := j.validateSetMatchPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetMat
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetNam
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetSideEffects(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetSideEffects(val *string) {
 	if err := j.validateSetSideEffectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetSid
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,16 +545,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Compu
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetLi
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Inter
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) PutCl
 	_jsii_.InvokeVoid(
 		v,
 		"putClientConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -737,7 +736,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) PutNa
 	_jsii_.InvokeVoid(
 		v,
 		"putNamespaceSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -748,18 +747,18 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) PutOb
 	_jsii_.InvokeVoid(
 		v,
 		"putObjectSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) PutRule(value interface{}) {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) PutRule(value any) {
 	if err := v.validatePutRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"putRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -827,16 +826,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Reset
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -855,4 +854,3 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) ToStr
 
 	return returns
 }
-

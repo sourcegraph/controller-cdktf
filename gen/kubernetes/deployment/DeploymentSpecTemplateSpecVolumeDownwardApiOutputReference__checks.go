@@ -90,7 +90,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) validatePutItemsParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeDownwardApiOutputReferenceParame
 
 	return nil
 }
-

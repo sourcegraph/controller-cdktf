@@ -6,9 +6,9 @@ import (
 
 type PersistentVolumeClaimV1Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PersistentVolumeClaimV1Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_claim_v1#metadata PersistentVolumeClaimV1#metadata}
@@ -39,6 +39,5 @@ type PersistentVolumeClaimV1Config struct {
 	// Whether to wait for the claim to reach `Bound` state (to find volume in which to claim the space).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_claim_v1#wait_until_bound PersistentVolumeClaimV1#wait_until_bound}
-	WaitUntilBound interface{} `field:"optional" json:"waitUntilBound" yaml:"waitUntilBound"`
+	WaitUntilBound any `field:"optional" json:"waitUntilBound" yaml:"waitUntilBound"`
 }
-

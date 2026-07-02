@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validateInterpol
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecPodSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewNetworkPolicySpecPodSelectorOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateSetEffe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTolerationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewJobSpecTemplateSpecTolerationOutputReferenceParameters(terraform
 
 	return nil
 }
-

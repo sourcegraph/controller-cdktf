@@ -12,9 +12,9 @@ type ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference inter
 	Fqn() *string
 	InternalValue() *ReplicationControllerV1SpecTemplateSpecVolumeAzureFile
 	SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecVolumeAzureFile)
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	SecretName() *string
 	SetSecretName(val *string)
 	SecretNameInput() *string
@@ -52,7 +52,7 @@ type ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference inter
 	ResetSecretNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	return returns
 }
 
-
 func NewReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecVolumeAzureFile) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecVolumeAzureFile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetSecretName(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetSecretName(val *string) {
 	if err := j.validateSetSecretNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetSecretNamespace(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetSecretNamespace(val *string) {
 	if err := j.validateSetSecretNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetShareName(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetShareName(val *string) {
 	if err := j.validateSetShareNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputR
 
 	return returns
 }
-

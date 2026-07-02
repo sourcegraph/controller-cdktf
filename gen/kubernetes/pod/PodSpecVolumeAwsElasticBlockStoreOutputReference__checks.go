@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeAwsElasticBlockStoreOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewPodSpecVolumeAwsElasticBlockStoreOutputReferenceParameters(terra
 
 	return nil
 }
-

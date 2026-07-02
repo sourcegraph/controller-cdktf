@@ -90,7 +90,7 @@ func (l *jsiiProxy_LimitRangeSpecOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeSpecOutputReference) validatePutLimitParameters(value interface{}) error {
+func (l *jsiiProxy_LimitRangeSpecOutputReference) validatePutLimitParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LimitRangeSpecOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LimitRangeSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewLimitRangeSpecOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

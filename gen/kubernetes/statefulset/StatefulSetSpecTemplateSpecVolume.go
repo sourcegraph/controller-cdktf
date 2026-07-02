@@ -1,6 +1,5 @@
 package statefulset
 
-
 type StatefulSetSpecTemplateSpecVolume struct {
 	// aws_elastic_block_store block.
 	//
@@ -93,7 +92,7 @@ type StatefulSetSpecTemplateSpecVolume struct {
 	// projected block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#projected StatefulSet#projected}
-	Projected interface{} `field:"optional" json:"projected" yaml:"projected"`
+	Projected any `field:"optional" json:"projected" yaml:"projected"`
 	// quobyte block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#quobyte StatefulSet#quobyte}
@@ -111,4 +110,3 @@ type StatefulSetSpecTemplateSpecVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#vsphere_volume StatefulSet#vsphere_volume}
 	VsphereVolume *StatefulSetSpecTemplateSpecVolumeVsphereVolume `field:"optional" json:"vsphereVolume" yaml:"vsphereVolume"`
 }
-

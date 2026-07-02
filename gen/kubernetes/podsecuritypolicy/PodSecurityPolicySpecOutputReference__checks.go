@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutAllowedFlexVolumesParameters(value interface{}) error {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutAllowedFlexVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutAllowedFlexV
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutAllowedHostPathsParameters(value interface{}) error {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutAllowedHostPathsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutFsGroupParam
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutHostPortsParameters(value interface{}) error {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutHostPortsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetAllowedUnsaf
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetAllowPrivile
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -363,7 +363,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetDefaultAddCa
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetDefaultAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetDefaultAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -391,7 +391,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetForbiddenSys
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostIpcParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostIpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostIpcParam
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostNetworkP
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostPidParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetHostPidParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -459,7 +459,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -479,7 +479,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetPrivilegedPa
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -542,4 +542,3 @@ func validateNewPodSecurityPolicySpecOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

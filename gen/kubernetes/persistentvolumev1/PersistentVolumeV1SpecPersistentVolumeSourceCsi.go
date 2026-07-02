@@ -1,6 +1,5 @@
 package persistentvolumev1
 
-
 type PersistentVolumeV1SpecPersistentVolumeSourceCsi struct {
 	// the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 	//
@@ -35,10 +34,9 @@ type PersistentVolumeV1SpecPersistentVolumeSourceCsi struct {
 	// Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: http://kubernetes.io/docs/user-guide/volumes#csi.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_v1#read_only PersistentVolumeV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Attributes of the volume to publish.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_v1#volume_attributes PersistentVolumeV1#volume_attributes}
 	VolumeAttributes *map[string]*string `field:"optional" json:"volumeAttributes" yaml:"volumeAttributes"`
 }
-

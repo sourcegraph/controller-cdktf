@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFcOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeFcOutputReferenceParameters(terr
 
 	return nil
 }
-

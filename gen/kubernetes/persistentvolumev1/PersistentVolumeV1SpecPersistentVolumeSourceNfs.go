@@ -1,6 +1,5 @@
 package persistentvolumev1
 
-
 type PersistentVolumeV1SpecPersistentVolumeSourceNfs struct {
 	// Path that is exported by the NFS server. More info: http://kubernetes.io/docs/user-guide/volumes#nfs.
 	//
@@ -13,6 +12,5 @@ type PersistentVolumeV1SpecPersistentVolumeSourceNfs struct {
 	// Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: http://kubernetes.io/docs/user-guide/volumes#nfs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_v1#read_only PersistentVolumeV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

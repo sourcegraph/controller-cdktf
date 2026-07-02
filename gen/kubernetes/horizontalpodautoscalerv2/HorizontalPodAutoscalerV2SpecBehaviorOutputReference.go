@@ -12,9 +12,9 @@ type HorizontalPodAutoscalerV2SpecBehaviorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type HorizontalPodAutoscalerV2SpecBehaviorOutputReference interface {
 	InternalValue() *HorizontalPodAutoscalerV2SpecBehavior
 	SetInternalValue(val *HorizontalPodAutoscalerV2SpecBehavior)
 	ScaleDown() HorizontalPodAutoscalerV2SpecBehaviorScaleDownList
-	ScaleDownInput() interface{}
+	ScaleDownInput() any
 	ScaleUp() HorizontalPodAutoscalerV2SpecBehaviorScaleUpList
-	ScaleUpInput() interface{}
+	ScaleUpInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type HorizontalPodAutoscalerV2SpecBehaviorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type HorizontalPodAutoscalerV2SpecBehaviorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutScaleDown(value interface{})
-	PutScaleUp(value interface{})
+	PutScaleDown(value any)
+	PutScaleUp(value any)
 	ResetScaleDown()
 	ResetScaleUp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleDo
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleDownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleDownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scaleDownInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleUp
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleUpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ScaleUpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scaleUpInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) Terrafo
 	return returns
 }
 
-
 func NewHorizontalPodAutoscalerV2SpecBehaviorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HorizontalPodAutoscalerV2SpecBehaviorOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorOutputReference_Override(h Horizont
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetInternalValue(val *HorizontalPodAutoscalerV2SpecBehavior) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) SetInternalValue(val *HorizontalPodAutoscalerV2SpecBehavior) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) Compute
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetBool
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetBool
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetList
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetNumb
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetNumb
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetNumb
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetStri
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) GetStri
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) Interpo
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) PutScaleDown(value interface{}) {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) PutScaleDown(value any) {
 	if err := h.validatePutScaleDownParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putScaleDown",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) PutScaleUp(value interface{}) {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) PutScaleUp(value any) {
 	if err := h.validatePutScaleUpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putScaleUp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ResetSc
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference) ToStrin
 
 	return returns
 }
-

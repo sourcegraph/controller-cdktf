@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkPolicySpecOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecOutputReference) validatePutEgressParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicySpecOutputReference) validatePutEgressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (n *jsiiProxy_NetworkPolicySpecOutputReference) validatePutEgressParameters
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecOutputReference) validatePutIngressParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicySpecOutputReference) validatePutIngressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (n *jsiiProxy_NetworkPolicySpecOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,4 +279,3 @@ func validateNewNetworkPolicySpecOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

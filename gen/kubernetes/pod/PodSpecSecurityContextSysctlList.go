@@ -17,8 +17,8 @@ type PodSpecSecurityContextSysctlList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecSecurityContextSysctlList interface {
 	Get(index *float64) PodSpecSecurityContextSysctlOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewPodSpecSecurityContextSysctlList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecSecurityContextSysctlList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecSecurityContextSysctlList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextSysctlList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecSecurityContextSysctlList_Override(p PodSpecSecurityContextSysctl
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextSysctlList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlList) Get(index *float64) PodSpec
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlList) ToString() *string {
 
 	return returns
 }
-

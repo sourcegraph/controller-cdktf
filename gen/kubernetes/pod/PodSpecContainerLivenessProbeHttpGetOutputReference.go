@@ -12,9 +12,9 @@ type PodSpecContainerLivenessProbeHttpGetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type PodSpecContainerLivenessProbeHttpGetOutputReference interface {
 	SetHost(val *string)
 	HostInput() *string
 	HttpHeader() PodSpecContainerLivenessProbeHttpGetHttpHeaderList
-	HttpHeaderInput() interface{}
+	HttpHeaderInput() any
 	InternalValue() *PodSpecContainerLivenessProbeHttpGet
 	SetInternalValue(val *PodSpecContainerLivenessProbeHttpGet)
 	Path() *string
@@ -54,7 +54,7 @@ type PodSpecContainerLivenessProbeHttpGetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type PodSpecContainerLivenessProbeHttpGetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHttpHeader(value interface{})
+	PutHttpHeader(value any)
 	ResetHost()
 	ResetHttpHeader()
 	ResetPath()
@@ -83,7 +83,7 @@ type PodSpecContainerLivenessProbeHttpGetOutputReference interface {
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) HttpHead
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) HttpHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) HttpHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpHeaderInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) Terrafor
 	return returns
 }
 
-
 func NewPodSpecContainerLivenessProbeHttpGetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecContainerLivenessProbeHttpGetOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewPodSpecContainerLivenessProbeHttpGetOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewPodSpecContainerLivenessProbeHttpGetOutputReference_Override(p PodSpecCo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetHost(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetInternalValue(val *PodSpecContainerLivenessProbeHttpGet) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetInternalValue(val *PodSpecContainerLivenessProbeHttpGet) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetPath(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetPort(val *string) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetPort(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetScheme(val *string) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetScheme(val *string) {
 	if err := j.validateSetSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetScheme
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) ComputeF
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetListA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,21 +571,21 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) PutHttpHeader(value interface{}) {
+func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) PutHttpHeader(value any) {
 	if err := p.validatePutHttpHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putHttpHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) ResetSch
 	)
 }
 
-func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference) ToString
 
 	return returns
 }
-

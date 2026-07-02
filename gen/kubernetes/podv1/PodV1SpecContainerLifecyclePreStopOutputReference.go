@@ -12,9 +12,9 @@ type PodV1SpecContainerLifecyclePreStopOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,10 +31,10 @@ type PodV1SpecContainerLifecyclePreStopOutputReference interface {
 	Fqn() *string
 	HttpGet() PodV1SpecContainerLifecyclePreStopHttpGetOutputReference
 	HttpGetInput() *PodV1SpecContainerLifecyclePreStopHttpGet
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	TcpSocket() PodV1SpecContainerLifecyclePreStopTcpSocketList
-	TcpSocketInput() interface{}
+	TcpSocketInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type PodV1SpecContainerLifecyclePreStopOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type PodV1SpecContainerLifecyclePreStopOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *PodV1SpecContainerLifecyclePreStopExec)
 	PutHttpGet(value *PodV1SpecContainerLifecyclePreStopHttpGet)
-	PutTcpSocket(value interface{})
+	PutTcpSocket(value any)
 	ResetExec()
 	ResetHttpGet()
 	ResetTcpSocket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) HttpGetInp
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) TcpSocket(
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) TcpSocketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) TcpSocketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tcpSocketInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) TerraformR
 	return returns
 }
 
-
 func NewPodV1SpecContainerLifecyclePreStopOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodV1SpecContainerLifecyclePreStopOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewPodV1SpecContainerLifecyclePreStopOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePreStopOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewPodV1SpecContainerLifecyclePreStopOutputReference_Override(p PodV1SpecCo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePreStopOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,16 +313,16 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) ComputeFqn
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetBoolean
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetBoolean
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetListAtt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetNumberA
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetNumberL
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetNumberM
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetStringA
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) GetStringM
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) Interpolat
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) PutExec(va
 	_jsii_.InvokeVoid(
 		p,
 		"putExec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -505,18 +504,18 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) PutHttpGet
 	_jsii_.InvokeVoid(
 		p,
 		"putHttpGet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) PutTcpSocket(value interface{}) {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) PutTcpSocket(value any) {
 	if err := p.validatePutTcpSocketParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTcpSocket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) ResetTcpSo
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) ToString()
 
 	return returns
 }
-

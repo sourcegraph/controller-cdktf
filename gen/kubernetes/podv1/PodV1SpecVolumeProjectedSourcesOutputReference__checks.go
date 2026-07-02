@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateInter
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validatePutConfigMapParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validatePutConfigMapParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validatePutDo
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validatePutSecretParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validatePutSecretParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -306,4 +306,3 @@ func validateNewPodV1SpecVolumeProjectedSourcesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

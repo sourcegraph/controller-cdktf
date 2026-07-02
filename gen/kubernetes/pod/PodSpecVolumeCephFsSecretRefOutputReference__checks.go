@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeCephFsSecretRefOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodSpecVolumeCephFsSecretRefOutputReferenceParameters(terraformR
 
 	return nil
 }
-

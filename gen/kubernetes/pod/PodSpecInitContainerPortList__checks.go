@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecInitContainerPortList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecInitContainerPortListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

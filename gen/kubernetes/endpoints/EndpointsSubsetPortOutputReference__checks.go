@@ -98,7 +98,7 @@ func (e *jsiiProxy_EndpointsSubsetPortOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsSubsetPortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsSubsetPortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EndpointsSubsetPortOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsSubsetPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsSubsetPortOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEndpointsSubsetPortOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

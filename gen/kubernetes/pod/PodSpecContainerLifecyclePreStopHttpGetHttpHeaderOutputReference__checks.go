@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 
 	return nil
 }
-

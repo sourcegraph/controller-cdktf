@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentMetadataOutputReference) validateSetAnnotationsPara
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeploymentMetadataOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

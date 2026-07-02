@@ -34,7 +34,7 @@ func (d *jsiiProxy_DefaultServiceAccountV1ImagePullSecretList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultServiceAccountV1ImagePullSecretList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDefaultServiceAccountV1ImagePullSecretListParameters(terraformRe
 
 	return nil
 }
-

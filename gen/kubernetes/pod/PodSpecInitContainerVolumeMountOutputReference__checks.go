@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetNa
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerVolumeMountOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewPodSpecInitContainerVolumeMountOutputReferenceParameters(terrafo
 
 	return nil
 }
-

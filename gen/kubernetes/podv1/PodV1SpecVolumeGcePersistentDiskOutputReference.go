@@ -12,9 +12,9 @@ type PodV1SpecVolumeGcePersistentDiskOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type PodV1SpecVolumeGcePersistentDiskOutputReference interface {
 	PdName() *string
 	SetPdName(val *string)
 	PdNameInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type PodV1SpecVolumeGcePersistentDiskOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type PodV1SpecVolumeGcePersistentDiskOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) PdNameInput(
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ReadOnly() i
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewPodV1SpecVolumeGcePersistentDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecVolumeGcePersistentDiskOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewPodV1SpecVolumeGcePersistentDiskOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewPodV1SpecVolumeGcePersistentDiskOutputReference_Override(p PodV1SpecVolu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetFsType(val
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetInternalValue(val *PodV1SpecVolumeGcePersistentDisk) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetInternalValue(val *PodV1SpecVolumeGcePersistentDisk) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetPartition(val *float64) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetPartition(val *float64) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetPartition(
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetPdName(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetPdName(val *string) {
 	if err := j.validateSetPdNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetPdName(val
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetReadOnly(v
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ComputeFqn()
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetListAttri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) GetStringMap
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) Interpolatio
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ResetReadOnl
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) ToString() *
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateMetadataOutputReference) validateSetAn
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDaemonSetV1SpecTemplateMetadataOutputReferenceParameters(terrafo
 
 	return nil
 }
-

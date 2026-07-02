@@ -17,8 +17,8 @@ type JobSpecTemplateSpecTopologySpreadConstraintList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type JobSpecTemplateSpecTopologySpreadConstraintList interface {
 	Get(index *float64) JobSpecTemplateSpecTopologySpreadConstraintOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) WrapsSet() *
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecTopologySpreadConstraintList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobSpecTemplateSpecTopologySpreadConstraintList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintList_Override(j JobSpecTempla
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) AllWithMapKe
 	_jsii_.Invoke(
 		j,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) Get(index *f
 	_jsii_.Invoke(
 		j,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintList) ToString() *
 
 	return returns
 }
-

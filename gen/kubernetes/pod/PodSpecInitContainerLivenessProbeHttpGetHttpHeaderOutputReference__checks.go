@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReferenc
 
 	return nil
 }
-

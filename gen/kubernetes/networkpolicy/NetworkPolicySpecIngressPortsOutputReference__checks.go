@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkPolicySpecIngressPortsOutputReferenceParameters(terraform
 
 	return nil
 }
-

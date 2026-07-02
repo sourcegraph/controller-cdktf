@@ -22,9 +22,9 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	CinderInput() *JobV1SpecTemplateSpecVolumeCinder
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,8 +59,8 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	GlusterfsInput() *JobV1SpecTemplateSpecVolumeGlusterfs
 	HostPath() JobV1SpecTemplateSpecVolumeHostPathOutputReference
 	HostPathInput() *JobV1SpecTemplateSpecVolumeHostPath
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iscsi() JobV1SpecTemplateSpecVolumeIscsiOutputReference
 	IscsiInput() *JobV1SpecTemplateSpecVolumeIscsi
 	Local() JobV1SpecTemplateSpecVolumeLocalOutputReference
@@ -75,7 +75,7 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	PhotonPersistentDisk() JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 	PhotonPersistentDiskInput() *JobV1SpecTemplateSpecVolumePhotonPersistentDisk
 	Projected() JobV1SpecTemplateSpecVolumeProjectedList
-	ProjectedInput() interface{}
+	ProjectedInput() any
 	Quobyte() JobV1SpecTemplateSpecVolumeQuobyteOutputReference
 	QuobyteInput() *JobV1SpecTemplateSpecVolumeQuobyte
 	Rbd() JobV1SpecTemplateSpecVolumeRbdOutputReference
@@ -95,7 +95,7 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -137,7 +137,7 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	PutNfs(value *JobV1SpecTemplateSpecVolumeNfs)
 	PutPersistentVolumeClaim(value *JobV1SpecTemplateSpecVolumePersistentVolumeClaim)
 	PutPhotonPersistentDisk(value *JobV1SpecTemplateSpecVolumePhotonPersistentDisk)
-	PutProjected(value interface{})
+	PutProjected(value any)
 	PutQuobyte(value *JobV1SpecTemplateSpecVolumeQuobyte)
 	PutRbd(value *JobV1SpecTemplateSpecVolumeRbd)
 	PutSecret(value *JobV1SpecTemplateSpecVolumeSecret)
@@ -171,7 +171,7 @@ type JobV1SpecTemplateSpecVolumeOutputReference interface {
 	ResetVsphereVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -284,8 +284,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) CinderInput() *Jo
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) HostPathInput() *
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -684,8 +684,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) Projected() JobV1
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ProjectedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ProjectedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"projectedInput",
@@ -794,7 +794,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) VsphereVolumeInpu
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobV1SpecTemplateSpecVolumeOutputReference {
 	_init_.Initialize()
 
@@ -805,7 +804,7 @@ func NewJobV1SpecTemplateSpecVolumeOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -817,12 +816,12 @@ func NewJobV1SpecTemplateSpecVolumeOutputReference_Override(j JobV1SpecTemplateS
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetName(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,16 +900,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutAwsElasticBloc
 	_jsii_.InvokeVoid(
 		j,
 		"putAwsElasticBlockStore",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1092,7 +1091,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutAzureDisk(valu
 	_jsii_.InvokeVoid(
 		j,
 		"putAzureDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutAzureFile(valu
 	_jsii_.InvokeVoid(
 		j,
 		"putAzureFile",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutCephFs(value *
 	_jsii_.InvokeVoid(
 		j,
 		"putCephFs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutCinder(value *
 	_jsii_.InvokeVoid(
 		j,
 		"putCinder",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutConfigMap(valu
 	_jsii_.InvokeVoid(
 		j,
 		"putConfigMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutCsi(value *Job
 	_jsii_.InvokeVoid(
 		j,
 		"putCsi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutDownwardApi(va
 	_jsii_.InvokeVoid(
 		j,
 		"putDownwardApi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutEmptyDir(value
 	_jsii_.InvokeVoid(
 		j,
 		"putEmptyDir",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutFc(value *JobV
 	_jsii_.InvokeVoid(
 		j,
 		"putFc",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutFlexVolume(val
 	_jsii_.InvokeVoid(
 		j,
 		"putFlexVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutFlocker(value 
 	_jsii_.InvokeVoid(
 		j,
 		"putFlocker",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutGcePersistentD
 	_jsii_.InvokeVoid(
 		j,
 		"putGcePersistentDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutGitRepo(value 
 	_jsii_.InvokeVoid(
 		j,
 		"putGitRepo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutGlusterfs(valu
 	_jsii_.InvokeVoid(
 		j,
 		"putGlusterfs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutHostPath(value
 	_jsii_.InvokeVoid(
 		j,
 		"putHostPath",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutIscsi(value *J
 	_jsii_.InvokeVoid(
 		j,
 		"putIscsi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutLocal(value *J
 	_jsii_.InvokeVoid(
 		j,
 		"putLocal",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutNfs(value *Job
 	_jsii_.InvokeVoid(
 		j,
 		"putNfs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutPersistentVolu
 	_jsii_.InvokeVoid(
 		j,
 		"putPersistentVolumeClaim",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,18 +1300,18 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutPhotonPersiste
 	_jsii_.InvokeVoid(
 		j,
 		"putPhotonPersistentDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutProjected(value interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutProjected(value any) {
 	if err := j.validatePutProjectedParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putProjected",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,7 +1322,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutQuobyte(value 
 	_jsii_.InvokeVoid(
 		j,
 		"putQuobyte",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1334,7 +1333,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutRbd(value *Job
 	_jsii_.InvokeVoid(
 		j,
 		"putRbd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1345,7 +1344,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutSecret(value *
 	_jsii_.InvokeVoid(
 		j,
 		"putSecret",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1356,7 +1355,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) PutVsphereVolume(
 	_jsii_.InvokeVoid(
 		j,
 		"putVsphereVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1576,16 +1575,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ResetVsphereVolum
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1604,4 +1603,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) ToString() *strin
 
 	return returns
 }
-

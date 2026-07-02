@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateInter
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validatePutLabelSelectorParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validatePutLabelSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewPodSpecTopologySpreadConstraintOutputReferenceParameters(terrafo
 
 	return nil
 }
-

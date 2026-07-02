@@ -36,7 +36,7 @@ type IngressV1StatusLoadBalancerIngressList interface {
 	Get(index *float64) IngressV1StatusLoadBalancerIngressOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewIngressV1StatusLoadBalancerIngressList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IngressV1StatusLoadBalancerIngressList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewIngressV1StatusLoadBalancerIngressList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressV1.IngressV1StatusLoadBalancerIngressList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewIngressV1StatusLoadBalancerIngressList_Override(i IngressV1StatusLoadBal
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressV1.IngressV1StatusLoadBalancerIngressList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IngressV1StatusLoadBalancerIngressList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Get(index *float64) I
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) ToString() *string {
 
 	return returns
 }
-

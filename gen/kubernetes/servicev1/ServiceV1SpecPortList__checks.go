@@ -34,7 +34,7 @@ func (s *jsiiProxy_ServiceV1SpecPortList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewServiceV1SpecPortListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

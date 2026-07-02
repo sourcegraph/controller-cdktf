@@ -1,6 +1,5 @@
 package replicationcontrollerv1
 
-
 type ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStart struct {
 	// exec block.
 	//
@@ -13,6 +12,5 @@ type ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStart stru
 	// tcp_socket block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#tcp_socket ReplicationControllerV1#tcp_socket}
-	TcpSocket interface{} `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
+	TcpSocket any `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
 }
-

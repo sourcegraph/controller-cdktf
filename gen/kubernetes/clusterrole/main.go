@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRole",
-		reflect.TypeOf((*ClusterRole)(nil)).Elem(),
+		reflect.TypeFor[ClusterRole](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRole{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRule",
-		reflect.TypeOf((*ClusterRoleAggregationRule)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectors)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectorsList)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,11 +105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,7 +172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference",
-		reflect.TypeOf((*ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference",
-		reflect.TypeOf((*ClusterRoleAggregationRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleAggregationRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterRoleSelectors", GoGetter: "ClusterRoleSelectors"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterRoleSelectorsInput", GoGetter: "ClusterRoleSelectorsInput"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleAggregationRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,15 +247,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleConfig",
-		reflect.TypeOf((*ClusterRoleConfig)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleMetadata",
-		reflect.TypeOf((*ClusterRoleMetadata)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference",
-		reflect.TypeOf((*ClusterRoleMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRule",
-		reflect.TypeOf((*ClusterRoleRule)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleList",
-		reflect.TypeOf((*ClusterRoleRuleList)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -317,7 +317,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -325,7 +325,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference",
-		reflect.TypeOf((*ClusterRoleRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroups", GoGetter: "ApiGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupsInput", GoGetter: "ApiGroupsInput"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verbs", GoGetter: "Verbs"},
 			_jsii_.MemberProperty{JsiiProperty: "verbsInput", GoGetter: "VerbsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

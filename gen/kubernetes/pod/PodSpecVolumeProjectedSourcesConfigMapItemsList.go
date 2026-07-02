@@ -17,8 +17,8 @@ type PodSpecVolumeProjectedSourcesConfigMapItemsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecVolumeProjectedSourcesConfigMapItemsList interface {
 	Get(index *float64) PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) WrapsSet() *
 	return returns
 }
 
-
 func NewPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesConfigMapItemsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecVolumeProjectedSourcesConfigMapItemsList_Override(p PodSpecVolume
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) AllWithMapKe
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) Get(index *f
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapItemsList) ToString() *
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type ResourceQuota interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,28 +52,28 @@ type ResourceQuota interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() ResourceQuotaSpecOutputReference
 	SpecInput() *ResourceQuotaSpec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ResourceQuotaTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ResourceQuota interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ResourceQuota interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type ResourceQuota interface {
 	ResetOverrideLogicalId()
 	ResetSpec()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ResourceQuota
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ResourceQuota) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceQuota) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ResourceQuota) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ResourceQuota) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ResourceQuota) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceQuota) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_ResourceQuota) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ResourceQuota) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_ResourceQuota) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceQuota) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ResourceQuota) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ResourceQuota) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ResourceQuota) Timeouts() ResourceQuotaTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceQuota) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_ResourceQuota) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/resource_quota kubernetes_resource_quota} Resource.
 func NewResourceQuota(scope constructs.Construct, id *string, config *ResourceQuotaConfig) ResourceQuota {
@@ -389,7 +388,7 @@ func NewResourceQuota(scope constructs.Construct, id *string, config *ResourceQu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewResourceQuota_Override(r ResourceQuota, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetConnection(val interface{}) {
+func (j *jsiiProxy_ResourceQuota) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ResourceQuota)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetCount(val interface{}) {
+func (j *jsiiProxy_ResourceQuota) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ResourceQuota)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ResourceQuota) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_ResourceQuota)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ResourceQuota) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_ResourceQuota)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetId(val *string) {
+func (j *jsiiProxy_ResourceQuota) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_ResourceQuota)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ResourceQuota) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_ResourceQuota)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ResourceQuota) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func (j *jsiiProxy_ResourceQuota)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ResourceQuota) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func ResourceQuota_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func ResourceQuota_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ResourceQuota_IsConstruct(x interface{}) *bool {
+func ResourceQuota_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceQuota_IsConstructParameters(x); err != nil {
@@ -533,7 +532,7 @@ func ResourceQuota_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func ResourceQuota_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ResourceQuota_IsTerraformElement(x interface{}) *bool {
+func ResourceQuota_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceQuota_IsTerraformElementParameters(x); err != nil {
@@ -552,7 +551,7 @@ func ResourceQuota_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func ResourceQuota_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ResourceQuota_IsTerraformResource(x interface{}) *bool {
+func ResourceQuota_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceQuota_IsTerraformResourceParameters(x); err != nil {
@@ -571,7 +570,7 @@ func ResourceQuota_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,31 +595,31 @@ func (r *jsiiProxy_ResourceQuota) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_ResourceQuota) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_ResourceQuota) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_ResourceQuota) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ResourceQuota) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (r *jsiiProxy_ResourceQuota) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (r *jsiiProxy_ResourceQuota) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (r *jsiiProxy_ResourceQuota) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (r *jsiiProxy_ResourceQuota) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (r *jsiiProxy_ResourceQuota) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (r *jsiiProxy_ResourceQuota) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (r *jsiiProxy_ResourceQuota) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,15 +747,15 @@ func (r *jsiiProxy_ResourceQuota) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuota) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceQuota) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -775,7 +774,7 @@ func (r *jsiiProxy_ResourceQuota) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -788,7 +787,7 @@ func (r *jsiiProxy_ResourceQuota) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,18 +801,18 @@ func (r *jsiiProxy_ResourceQuota) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_ResourceQuota) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_ResourceQuota) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -824,7 +823,7 @@ func (r *jsiiProxy_ResourceQuota) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -835,7 +834,7 @@ func (r *jsiiProxy_ResourceQuota) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -846,7 +845,7 @@ func (r *jsiiProxy_ResourceQuota) PutMetadata(value *ResourceQuotaMetadata) {
 	_jsii_.InvokeVoid(
 		r,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -857,7 +856,7 @@ func (r *jsiiProxy_ResourceQuota) PutSpec(value *ResourceQuotaSpec) {
 	_jsii_.InvokeVoid(
 		r,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (r *jsiiProxy_ResourceQuota) PutTimeouts(value *ResourceQuotaTimeouts) {
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -904,8 +903,8 @@ func (r *jsiiProxy_ResourceQuota) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_ResourceQuota) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ResourceQuota) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -917,8 +916,8 @@ func (r *jsiiProxy_ResourceQuota) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuota) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ResourceQuota) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -930,8 +929,8 @@ func (r *jsiiProxy_ResourceQuota) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuota) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceQuota) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -943,8 +942,8 @@ func (r *jsiiProxy_ResourceQuota) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuota) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceQuota) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -969,8 +968,8 @@ func (r *jsiiProxy_ResourceQuota) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuota) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceQuota) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -981,4 +980,3 @@ func (r *jsiiProxy_ResourceQuota) ToTerraform() interface{} {
 
 	return returns
 }
-

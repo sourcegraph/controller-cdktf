@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGlusterfsOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewJobV1SpecTemplateSpecVolumeGlusterfsOutputReferenceParameters(te
 
 	return nil
 }
-

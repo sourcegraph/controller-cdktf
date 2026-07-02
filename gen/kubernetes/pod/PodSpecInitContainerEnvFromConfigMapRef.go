@@ -1,6 +1,5 @@
 package pod
 
-
 type PodSpecInitContainerEnvFromConfigMapRef struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
@@ -9,6 +8,5 @@ type PodSpecInitContainerEnvFromConfigMapRef struct {
 	// Specify whether the ConfigMap must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod#optional Pod#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

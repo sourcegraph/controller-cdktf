@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateMetadataOutputReference) validateSetAnn
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeploymentSpecTemplateMetadataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

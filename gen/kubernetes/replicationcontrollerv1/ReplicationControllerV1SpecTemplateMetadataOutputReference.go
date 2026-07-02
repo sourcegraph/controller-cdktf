@@ -15,9 +15,9 @@ type ReplicationControllerV1SpecTemplateMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type ReplicationControllerV1SpecTemplateMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type ReplicationControllerV1SpecTemplateMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) U
 	return returns
 }
 
-
 func NewReplicationControllerV1SpecTemplateMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateMetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewReplicationControllerV1SpecTemplateMetadataOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewReplicationControllerV1SpecTemplateMetadataOutputReference_Override(r Re
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetInternalValue(val *ReplicationControllerV1SpecTemplateMetadata) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetInternalValue(val *ReplicationControllerV1SpecTemplateMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) C
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) G
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) I
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) R
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) T
 
 	return returns
 }
-

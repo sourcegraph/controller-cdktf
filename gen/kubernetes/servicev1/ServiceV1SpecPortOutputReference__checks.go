@@ -106,7 +106,7 @@ func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetAppProtocolParam
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecPortOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewServiceV1SpecPortOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

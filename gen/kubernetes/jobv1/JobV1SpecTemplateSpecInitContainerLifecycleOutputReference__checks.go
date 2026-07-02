@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validatePutPostStartParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validatePutPostStartParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validatePutPreStopParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validatePutPreStopParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerLifecycleOutputReferenceParame
 
 	return nil
 }
-

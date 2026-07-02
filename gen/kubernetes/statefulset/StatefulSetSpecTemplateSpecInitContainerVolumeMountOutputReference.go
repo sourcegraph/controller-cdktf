@@ -12,9 +12,9 @@ type StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MountPath() *string
 	SetMountPath(val *string)
 	MountPathInput() *string
@@ -38,9 +38,9 @@ type StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference interfac
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	SubPath() *string
 	SetSubPath(val *string)
 	SubPathInput() *string
@@ -55,7 +55,7 @@ type StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference interfac
 	ResetSubPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	return returns
 }
 
-
 func NewStatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewStatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetMountPath(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetMountPath(val *string) {
 	if err := j.validateSetMountPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetMountPropagation(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetMountPropagation(val *string) {
 	if err := j.validateSetMountPropagationParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetName(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetSubPath(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetSubPath(val *string) {
 	if err := j.validateSetSubPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 	)
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputRefe
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) validateInterpolationForAttribu
 	return nil
 }
 
-func (s *jsiiProxy_ServiceV1SpecOutputReference) validatePutPortParameters(value interface{}) error {
+func (s *jsiiProxy_ServiceV1SpecOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetAllocateLoadBalancerNodePortsParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetAllocateLoadBalancerNodePortsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetClusterIpsParameters
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -329,7 +329,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetLoadBalancerSourceRa
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetPublishNotReadyAddressesParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) validateSetPublishNotReadyAddressesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -400,4 +400,3 @@ func validateNewServiceV1SpecOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

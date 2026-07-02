@@ -1,6 +1,5 @@
 package deploymentv1
 
-
 type DeploymentV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// The key to select.
 	//
@@ -13,6 +12,5 @@ type DeploymentV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// Specify whether the ConfigMap or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#optional DeploymentV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

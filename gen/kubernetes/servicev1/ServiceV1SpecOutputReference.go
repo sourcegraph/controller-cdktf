@@ -10,9 +10,9 @@ import (
 
 type ServiceV1SpecOutputReference interface {
 	cdktf.ComplexObject
-	AllocateLoadBalancerNodePorts() interface{}
-	SetAllocateLoadBalancerNodePorts(val interface{})
-	AllocateLoadBalancerNodePortsInput() interface{}
+	AllocateLoadBalancerNodePorts() any
+	SetAllocateLoadBalancerNodePorts(val any)
+	AllocateLoadBalancerNodePortsInput() any
 	ClusterIp() *string
 	SetClusterIp(val *string)
 	ClusterIpInput() *string
@@ -21,9 +21,9 @@ type ServiceV1SpecOutputReference interface {
 	ClusterIpsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -69,10 +69,10 @@ type ServiceV1SpecOutputReference interface {
 	SetLoadBalancerSourceRanges(val *[]*string)
 	LoadBalancerSourceRangesInput() *[]*string
 	Port() ServiceV1SpecPortList
-	PortInput() interface{}
-	PublishNotReadyAddresses() interface{}
-	SetPublishNotReadyAddresses(val interface{})
-	PublishNotReadyAddressesInput() interface{}
+	PortInput() any
+	PublishNotReadyAddresses() any
+	SetPublishNotReadyAddresses(val any)
+	PublishNotReadyAddressesInput() any
 	Selector() *map[string]*string
 	SetSelector(val *map[string]*string)
 	SelectorInput() *map[string]*string
@@ -95,7 +95,7 @@ type ServiceV1SpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type ServiceV1SpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPort(value interface{})
+	PutPort(value any)
 	PutSessionAffinityConfig(value *ServiceV1SpecSessionAffinityConfig)
 	ResetAllocateLoadBalancerNodePorts()
 	ResetClusterIp()
@@ -139,7 +139,7 @@ type ServiceV1SpecOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,8 +152,8 @@ type jsiiProxy_ServiceV1SpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) AllocateLoadBalancerNodePorts() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) AllocateLoadBalancerNodePorts() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allocateLoadBalancerNodePorts",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) AllocateLoadBalancerNodePorts()
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) AllocateLoadBalancerNodePortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) AllocateLoadBalancerNodePortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allocateLoadBalancerNodePortsInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) ClusterIpsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) Port() ServiceV1SpecPortList {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) PortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) PortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) PortInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) PublishNotReadyAddresses() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) PublishNotReadyAddresses() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishNotReadyAddresses",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) PublishNotReadyAddresses() inte
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference) PublishNotReadyAddressesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecOutputReference) PublishNotReadyAddressesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishNotReadyAddressesInput",
@@ -602,7 +602,6 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewServiceV1SpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceV1SpecOutputReference {
 	_init_.Initialize()
 
@@ -613,7 +612,7 @@ func NewServiceV1SpecOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -625,12 +624,12 @@ func NewServiceV1SpecOutputReference_Override(s ServiceV1SpecOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetAllocateLoadBalancerNodePorts(val interface{}) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetAllocateLoadBalancerNodePorts(val any) {
 	if err := j.validateSetAllocateLoadBalancerNodePortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetAllocateLoadBalancerNodePorts
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetClusterIp(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetClusterIp(val *string) {
 	if err := j.validateSetClusterIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetClusterIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetClusterIps(val *[]*string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetClusterIps(val *[]*string) {
 	if err := j.validateSetClusterIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetClusterIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalIps(val *[]*string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetExternalIps(val *[]*string) {
 	if err := j.validateSetExternalIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalName(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetExternalName(val *string) {
 	if err := j.validateSetExternalNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalTrafficPolicy(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetExternalTrafficPolicy(val *string) {
 	if err := j.validateSetExternalTrafficPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetExternalTrafficPolicy(val *st
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetHealthCheckNodePort(val *float64) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetHealthCheckNodePort(val *float64) {
 	if err := j.validateSetHealthCheckNodePortParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetHealthCheckNodePort(val *floa
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetInternalTrafficPolicy(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetInternalTrafficPolicy(val *string) {
 	if err := j.validateSetInternalTrafficPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetInternalTrafficPolicy(val *st
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetInternalValue(val *ServiceV1Spec) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetInternalValue(val *ServiceV1Spec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetInternalValue(val *ServiceV1S
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetIpFamilies(val *[]*string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetIpFamilies(val *[]*string) {
 	if err := j.validateSetIpFamiliesParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetIpFamilies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetIpFamilyPolicy(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetIpFamilyPolicy(val *string) {
 	if err := j.validateSetIpFamilyPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetIpFamilyPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerClass(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetLoadBalancerClass(val *string) {
 	if err := j.validateSetLoadBalancerClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerClass(val *string
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerIp(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetLoadBalancerIp(val *string) {
 	if err := j.validateSetLoadBalancerIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerSourceRanges(val *[]*string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetLoadBalancerSourceRanges(val *[]*string) {
 	if err := j.validateSetLoadBalancerSourceRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetLoadBalancerSourceRanges(val 
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetPublishNotReadyAddresses(val interface{}) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetPublishNotReadyAddresses(val any) {
 	if err := j.validateSetPublishNotReadyAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetPublishNotReadyAddresses(val 
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetSelector(val *map[string]*string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetSelector(val *map[string]*string) {
 	if err := j.validateSetSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetSelector(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetSessionAffinity(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetSessionAffinity(val *string) {
 	if err := j.validateSetSessionAffinityParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetSessionAffinity(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_ServiceV1SpecOutputReference)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ServiceV1SpecOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,16 +884,16 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceV1SpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,21 +1050,21 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecOutputReference) PutPort(value interface{}) {
+func (s *jsiiProxy_ServiceV1SpecOutputReference) PutPort(value any) {
 	if err := s.validatePutPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) PutSessionAffinityConfig(value 
 	_jsii_.InvokeVoid(
 		s,
 		"putSessionAffinityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,16 +1231,16 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_ServiceV1SpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceV1SpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1260,4 +1259,3 @@ func (s *jsiiProxy_ServiceV1SpecOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -36,7 +36,7 @@ type IngressStatusList interface {
 	Get(index *float64) IngressStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_IngressStatusList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewIngressStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IngressStatusList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewIngressStatusList(terraformResource cdktf.IInterpolatingParent, terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewIngressStatusList_Override(i IngressStatusList, terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IngressStatusList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IngressStatusList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_IngressStatusList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IngressStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_IngressStatusList)SetTerraformResource(val cdktf.IInterpolati
 	)
 }
 
-func (j *jsiiProxy_IngressStatusList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IngressStatusList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (i *jsiiProxy_IngressStatusList) AllWithMapKey(mapKeyAttributeName *string)
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (i *jsiiProxy_IngressStatusList) Get(index *float64) IngressStatusOutputRef
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IngressStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IngressStatusList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (i *jsiiProxy_IngressStatusList) ToString() *string {
 
 	return returns
 }
-

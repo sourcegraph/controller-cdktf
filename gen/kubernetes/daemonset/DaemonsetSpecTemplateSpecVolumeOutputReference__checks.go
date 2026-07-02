@@ -321,7 +321,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutPh
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutProjectedParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutProjectedParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -469,7 +469,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -536,4 +536,3 @@ func validateNewDaemonsetSpecTemplateSpecVolumeOutputReferenceParameters(terrafo
 
 	return nil
 }
-

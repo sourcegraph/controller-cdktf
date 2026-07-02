@@ -98,7 +98,7 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEnvEnvValueFromResourceFieldRefOutputReferenceParameters(terrafo
 
 	return nil
 }
-

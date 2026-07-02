@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerPortList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecContainerPortListParameters(terraformR
 
 	return nil
 }
-

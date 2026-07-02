@@ -1,6 +1,5 @@
 package horizontalpodautoscaler
 
-
 type HorizontalPodAutoscalerSpecMetricObjectMetric struct {
 	// name is the name of the given metric.
 	//
@@ -9,6 +8,5 @@ type HorizontalPodAutoscalerSpecMetricObjectMetric struct {
 	// selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler#selector HorizontalPodAutoscaler#selector}
-	Selector interface{} `field:"optional" json:"selector" yaml:"selector"`
+	Selector any `field:"optional" json:"selector" yaml:"selector"`
 }
-

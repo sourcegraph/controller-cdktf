@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validatePutItemsParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewJobV1SpecTemplateSpecVolumeConfigMapOutputReferenceParameters(te
 
 	return nil
 }
-

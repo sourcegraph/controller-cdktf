@@ -15,15 +15,15 @@ type PersistentVolumeClaim interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,31 +52,31 @@ type PersistentVolumeClaim interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() PersistentVolumeClaimSpecOutputReference
 	SpecInput() *PersistentVolumeClaimSpec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() PersistentVolumeClaimTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	WaitUntilBound() interface{}
-	SetWaitUntilBound(val interface{})
-	WaitUntilBoundInput() interface{}
+	TimeoutsInput() any
+	WaitUntilBound() any
+	SetWaitUntilBound(val any)
+	WaitUntilBoundInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type PersistentVolumeClaim interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type PersistentVolumeClaim interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type PersistentVolumeClaim interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetWaitUntilBound()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PersistentVolumeClaim
@@ -150,8 +150,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) Timeouts() PersistentVolumeClaimTimeou
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBound() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBound() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitUntilBound",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBound() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBoundInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBoundInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitUntilBoundInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_PersistentVolumeClaim) WaitUntilBoundInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume_claim kubernetes_persistent_volume_claim} Resource.
 func NewPersistentVolumeClaim(scope constructs.Construct, id *string, config *PersistentVolumeClaimConfig) PersistentVolumeClaim {
@@ -412,7 +411,7 @@ func NewPersistentVolumeClaim(scope constructs.Construct, id *string, config *Pe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewPersistentVolumeClaim_Override(p PersistentVolumeClaim, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetConnection(val interface{}) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetCount(val interface{}) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetId(val *string) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_PersistentVolumeClaim)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeClaim)SetWaitUntilBound(val interface{}) {
+func (j *jsiiProxy_PersistentVolumeClaim) SetWaitUntilBound(val any) {
 	if err := j.validateSetWaitUntilBoundParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func PersistentVolumeClaim_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func PersistentVolumeClaim_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PersistentVolumeClaim_IsConstruct(x interface{}) *bool {
+func PersistentVolumeClaim_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePersistentVolumeClaim_IsConstructParameters(x); err != nil {
@@ -567,7 +566,7 @@ func PersistentVolumeClaim_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func PersistentVolumeClaim_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PersistentVolumeClaim_IsTerraformElement(x interface{}) *bool {
+func PersistentVolumeClaim_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePersistentVolumeClaim_IsTerraformElementParameters(x); err != nil {
@@ -586,7 +585,7 @@ func PersistentVolumeClaim_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func PersistentVolumeClaim_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PersistentVolumeClaim_IsTerraformResource(x interface{}) *bool {
+func PersistentVolumeClaim_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePersistentVolumeClaim_IsTerraformResourceParameters(x); err != nil {
@@ -605,7 +604,7 @@ func PersistentVolumeClaim_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -630,31 +629,31 @@ func (p *jsiiProxy_PersistentVolumeClaim) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PersistentVolumeClaim) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PersistentVolumeClaim) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,15 +781,15 @@ func (p *jsiiProxy_PersistentVolumeClaim) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -809,7 +808,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -822,7 +821,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,18 +835,18 @@ func (p *jsiiProxy_PersistentVolumeClaim) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PersistentVolumeClaim) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -858,7 +857,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -869,7 +868,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -880,7 +879,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) PutMetadata(value *PersistentVolumeCla
 	_jsii_.InvokeVoid(
 		p,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -891,7 +890,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) PutSpec(value *PersistentVolumeClaimSp
 	_jsii_.InvokeVoid(
 		p,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -902,7 +901,7 @@ func (p *jsiiProxy_PersistentVolumeClaim) PutTimeouts(value *PersistentVolumeCla
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (p *jsiiProxy_PersistentVolumeClaim) ResetWaitUntilBound() {
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -951,8 +950,8 @@ func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -964,8 +963,8 @@ func (p *jsiiProxy_PersistentVolumeClaim) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -977,8 +976,8 @@ func (p *jsiiProxy_PersistentVolumeClaim) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1003,8 +1002,8 @@ func (p *jsiiProxy_PersistentVolumeClaim) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeClaim) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PersistentVolumeClaim) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1015,4 +1014,3 @@ func (p *jsiiProxy_PersistentVolumeClaim) ToTerraform() interface{} {
 
 	return returns
 }
-

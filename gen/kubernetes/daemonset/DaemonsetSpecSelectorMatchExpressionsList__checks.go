@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecSelectorMatchExpressionsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecSelectorMatchExpressionsListParameters(terraformRes
 
 	return nil
 }
-

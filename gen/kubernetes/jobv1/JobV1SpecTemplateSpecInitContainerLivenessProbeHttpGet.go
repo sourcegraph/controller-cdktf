@@ -1,6 +1,5 @@
 package jobv1
 
-
 type JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
@@ -9,7 +8,7 @@ type JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// http_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#http_header JobV1#http_header}
-	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
+	HttpHeader any `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#path JobV1#path}
@@ -25,4 +24,3 @@ type JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#scheme JobV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

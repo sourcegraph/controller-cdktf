@@ -34,7 +34,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewValidatingWebhookConfigurationWebhookListParameters(terraformRes
 
 	return nil
 }
-

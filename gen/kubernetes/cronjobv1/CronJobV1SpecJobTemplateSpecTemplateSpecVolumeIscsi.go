@@ -1,6 +1,5 @@
 package cronjobv1
 
-
 type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi struct {
 	// Target iSCSI Qualified Name.
 	//
@@ -29,6 +28,5 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

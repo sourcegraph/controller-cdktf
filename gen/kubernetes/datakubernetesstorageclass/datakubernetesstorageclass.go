@@ -14,17 +14,17 @@ type DataKubernetesStorageClass interface {
 	cdktf.TerraformDataSource
 	AllowedTopologies() DataKubernetesStorageClassAllowedTopologiesOutputReference
 	AllowedTopologiesInput() *DataKubernetesStorageClassAllowedTopologies
-	AllowVolumeExpansion() interface{}
-	SetAllowVolumeExpansion(val interface{})
-	AllowVolumeExpansionInput() interface{}
+	AllowVolumeExpansion() any
+	SetAllowVolumeExpansion(val any)
+	AllowVolumeExpansionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,7 +59,7 @@ type DataKubernetesStorageClass interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReclaimPolicy() *string
 	SetReclaimPolicy(val *string)
 	ReclaimPolicyInput() *string
@@ -67,16 +67,16 @@ type DataKubernetesStorageClass interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VolumeBindingMode() *string
 	SetVolumeBindingMode(val *string)
 	VolumeBindingModeInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,18 +110,18 @@ type DataKubernetesStorageClass interface {
 	ResetParameters()
 	ResetReclaimPolicy()
 	ResetVolumeBindingMode()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataKubernetesStorageClass
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) AllowedTopologiesInput() *DataKub
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) AllowVolumeExpansion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) AllowVolumeExpansion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVolumeExpansion",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) AllowVolumeExpansion() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) AllowVolumeExpansionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) AllowVolumeExpansionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVolumeExpansionInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesStorageClass) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,7 +439,6 @@ func (j *jsiiProxy_DataKubernetesStorageClass) VolumeBindingModeInput() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
 func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, config *DataKubernetesStorageClassConfig) DataKubernetesStorageClass {
 	_init_.Initialize()
@@ -451,7 +450,7 @@ func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -464,12 +463,12 @@ func NewDataKubernetesStorageClass_Override(d DataKubernetesStorageClass, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetAllowVolumeExpansion(val interface{}) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetAllowVolumeExpansion(val any) {
 	if err := j.validateSetAllowVolumeExpansionParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetAllowVolumeExpansion(val interf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetCount(val interface{}) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetId(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetMountOptions(val *[]*string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetMountOptions(val *[]*string) {
 	if err := j.validateSetMountOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetMountOptions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetParameters(val *map[string]*string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetParameters(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetReclaimPolicy(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetReclaimPolicy(val *string) {
 	if err := j.validateSetReclaimPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetReclaimPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetVolumeBindingMode(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClass) SetVolumeBindingMode(val *string) {
 	if err := j.validateSetVolumeBindingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func DataKubernetesStorageClass_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func DataKubernetesStorageClass_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataKubernetesStorageClass_IsConstruct(x interface{}) *bool {
+func DataKubernetesStorageClass_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesStorageClass_IsConstructParameters(x); err != nil {
@@ -628,7 +627,7 @@ func DataKubernetesStorageClass_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func DataKubernetesStorageClass_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesStorageClass_IsTerraformDataSource(x interface{}) *bool {
+func DataKubernetesStorageClass_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesStorageClass_IsTerraformDataSourceParameters(x); err != nil {
@@ -647,7 +646,7 @@ func DataKubernetesStorageClass_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func DataKubernetesStorageClass_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesStorageClass_IsTerraformElement(x interface{}) *bool {
+func DataKubernetesStorageClass_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesStorageClass_IsTerraformElementParameters(x); err != nil {
@@ -666,7 +665,7 @@ func DataKubernetesStorageClass_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,27 +683,27 @@ func DataKubernetesStorageClass_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataKubernetesStorageClass) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataKubernetesStorageClass) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -873,7 +872,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) PutAllowedTopologies(value *DataK
 	_jsii_.InvokeVoid(
 		d,
 		"putAllowedTopologies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -884,7 +883,7 @@ func (d *jsiiProxy_DataKubernetesStorageClass) PutMetadata(value *DataKubernetes
 	_jsii_.InvokeVoid(
 		d,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -952,8 +951,8 @@ func (d *jsiiProxy_DataKubernetesStorageClass) ResetVolumeBindingMode() {
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -965,8 +964,8 @@ func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -978,8 +977,8 @@ func (d *jsiiProxy_DataKubernetesStorageClass) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesStorageClass) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -991,8 +990,8 @@ func (d *jsiiProxy_DataKubernetesStorageClass) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesStorageClass) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,8 +1016,8 @@ func (d *jsiiProxy_DataKubernetesStorageClass) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClass) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesStorageClass) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1029,4 +1028,3 @@ func (d *jsiiProxy_DataKubernetesStorageClass) ToTerraform() interface{} {
 
 	return returns
 }
-

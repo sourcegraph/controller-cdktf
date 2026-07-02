@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsO
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsO
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewNetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutp
 
 	return nil
 }
-

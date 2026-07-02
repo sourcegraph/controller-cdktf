@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecSecurityContextSeccompProfileOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodSpecSecurityContextSeccompProfileOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkPolicyV1SpecIngressFromListParameters(terraformResource c
 
 	return nil
 }
-

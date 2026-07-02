@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validateInterpolationF
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutEnvParamete
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutLivenessPro
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutStartupProb
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetCommandPara
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetImagePullPo
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetStdinParame
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewPodV1SpecInitContainerOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

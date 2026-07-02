@@ -36,7 +36,7 @@ type DataKubernetesPodSpecInitContainerLivenessProbeList interface {
 	Get(index *float64) DataKubernetesPodSpecInitContainerLivenessProbeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) WrapsSet
 	return returns
 }
 
-
 func NewDataKubernetesPodSpecInitContainerLivenessProbeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPodSpecInitContainerLivenessProbeList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataKubernetesPodSpecInitContainerLivenessProbeList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataKubernetesPodSpecInitContainerLivenessProbeList_Override(d DataKuber
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) AllWithM
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) Get(inde
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) ToString
 
 	return returns
 }
-

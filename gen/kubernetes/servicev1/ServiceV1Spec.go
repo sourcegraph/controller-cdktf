@@ -1,13 +1,12 @@
 package servicev1
 
-
 type ServiceV1Spec struct {
 	// Defines if `NodePorts` will be automatically allocated for services with type `LoadBalancer`.
 	//
 	// It may be set to `false` if the cluster load-balancer does not rely on `NodePorts`.  If the caller requests specific `NodePorts` (by specifying a value), those requests will be respected, regardless of this field. This field may only be set for services with type `LoadBalancer`. Default is `true`. More info: https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-nodeport-allocation
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#allocate_load_balancer_node_ports ServiceV1#allocate_load_balancer_node_ports}
-	AllocateLoadBalancerNodePorts interface{} `field:"optional" json:"allocateLoadBalancerNodePorts" yaml:"allocateLoadBalancerNodePorts"`
+	AllocateLoadBalancerNodePorts any `field:"optional" json:"allocateLoadBalancerNodePorts" yaml:"allocateLoadBalancerNodePorts"`
 	// The IP address of the service.
 	//
 	// It is usually assigned randomly by the master. If an address is specified manually and is not in use by others, it will be allocated to the service; otherwise, creation of the service will fail. `None` can be specified for headless services when proxying is not required. Ignored if type is `ExternalName`. More info: http://kubernetes.io/docs/user-guide/services#virtual-ips-and-service-proxies
@@ -81,13 +80,13 @@ type ServiceV1Spec struct {
 	// port block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#port ServiceV1#port}
-	Port interface{} `field:"optional" json:"port" yaml:"port"`
+	Port any `field:"optional" json:"port" yaml:"port"`
 	// When set to true, indicates that DNS implementations must publish the `notReadyAddresses` of subsets for the Endpoints associated with the Service.
 	//
 	// The default value is `false`. The primary use case for setting this field is to use a StatefulSet's Headless Service to propagate `SRV` records for its Pods without respect to their readiness for purpose of peer discovery.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#publish_not_ready_addresses ServiceV1#publish_not_ready_addresses}
-	PublishNotReadyAddresses interface{} `field:"optional" json:"publishNotReadyAddresses" yaml:"publishNotReadyAddresses"`
+	PublishNotReadyAddresses any `field:"optional" json:"publishNotReadyAddresses" yaml:"publishNotReadyAddresses"`
 	// Route service traffic to pods with label keys and values matching this selector.
 	//
 	// Only applies to types `ClusterIP`, `NodePort`, and `LoadBalancer`. More info: http://kubernetes.io/docs/user-guide/services#overview
@@ -109,4 +108,3 @@ type ServiceV1Spec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#type ServiceV1#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

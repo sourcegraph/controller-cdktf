@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDataKubernetesPersistentVolumeClaimSpecSelectorOutputReferencePa
 
 	return nil
 }
-

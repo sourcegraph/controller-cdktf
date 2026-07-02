@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSecurityPolicyV1Beta1SpecAllowedHostPathsListParameters(terra
 
 	return nil
 }
-

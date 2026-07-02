@@ -6,9 +6,9 @@ import (
 
 type CertificateSigningRequestConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CertificateSigningRequestConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/certificate_signing_request#metadata CertificateSigningRequest#metadata}
@@ -30,7 +30,7 @@ type CertificateSigningRequestConfig struct {
 	// Automatically approve the CertificateSigningRequest.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/certificate_signing_request#auto_approve CertificateSigningRequest#auto_approve}
-	AutoApprove interface{} `field:"optional" json:"autoApprove" yaml:"autoApprove"`
+	AutoApprove any `field:"optional" json:"autoApprove" yaml:"autoApprove"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/certificate_signing_request#id CertificateSigningRequest#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -41,4 +41,3 @@ type CertificateSigningRequestConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/certificate_signing_request#timeouts CertificateSigningRequest#timeouts}
 	Timeouts *CertificateSigningRequestTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

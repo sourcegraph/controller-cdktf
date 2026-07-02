@@ -120,7 +120,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDeploymentSpecTemplateOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

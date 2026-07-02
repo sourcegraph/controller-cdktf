@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecContainerStartupProbeExecOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPodSpecContainerStartupProbeExecOutputReferenceParameters(terraf
 
 	return nil
 }
-

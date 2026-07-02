@@ -15,21 +15,21 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	ActiveDeadlineSecondsInput() *float64
 	Affinity() DaemonsetSpecTemplateSpecAffinityOutputReference
 	AffinityInput() *DaemonsetSpecTemplateSpecAffinity
-	AutomountServiceAccountToken() interface{}
-	SetAutomountServiceAccountToken(val interface{})
-	AutomountServiceAccountTokenInput() interface{}
+	AutomountServiceAccountToken() any
+	SetAutomountServiceAccountToken(val any)
+	AutomountServiceAccountTokenInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Container() DaemonsetSpecTemplateSpecContainerList
-	ContainerInput() interface{}
+	ContainerInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -40,29 +40,29 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	DnsPolicy() *string
 	SetDnsPolicy(val *string)
 	DnsPolicyInput() *string
-	EnableServiceLinks() interface{}
-	SetEnableServiceLinks(val interface{})
-	EnableServiceLinksInput() interface{}
+	EnableServiceLinks() any
+	SetEnableServiceLinks(val any)
+	EnableServiceLinksInput() any
 	// Experimental.
 	Fqn() *string
 	HostAliases() DaemonsetSpecTemplateSpecHostAliasesList
-	HostAliasesInput() interface{}
-	HostIpc() interface{}
-	SetHostIpc(val interface{})
-	HostIpcInput() interface{}
+	HostAliasesInput() any
+	HostIpc() any
+	SetHostIpc(val any)
+	HostIpcInput() any
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	HostNetwork() interface{}
-	SetHostNetwork(val interface{})
-	HostNetworkInput() interface{}
-	HostPid() interface{}
-	SetHostPid(val interface{})
-	HostPidInput() interface{}
+	HostNetwork() any
+	SetHostNetwork(val any)
+	HostNetworkInput() any
+	HostPid() any
+	SetHostPid(val any)
+	HostPidInput() any
 	ImagePullSecrets() DaemonsetSpecTemplateSpecImagePullSecretsList
-	ImagePullSecretsInput() interface{}
+	ImagePullSecretsInput() any
 	InitContainer() DaemonsetSpecTemplateSpecInitContainerList
-	InitContainerInput() interface{}
+	InitContainerInput() any
 	InternalValue() *DaemonsetSpecTemplateSpec
 	SetInternalValue(val *DaemonsetSpecTemplateSpec)
 	NodeName() *string
@@ -75,7 +75,7 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
 	ReadinessGate() DaemonsetSpecTemplateSpecReadinessGateList
-	ReadinessGateInput() interface{}
+	ReadinessGateInput() any
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
@@ -84,9 +84,9 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	ServiceAccountName() *string
 	SetServiceAccountName(val *string)
 	ServiceAccountNameInput() *string
-	ShareProcessNamespace() interface{}
-	SetShareProcessNamespace(val interface{})
-	ShareProcessNamespaceInput() interface{}
+	ShareProcessNamespace() any
+	SetShareProcessNamespace(val any)
+	ShareProcessNamespaceInput() any
 	Subdomain() *string
 	SetSubdomain(val *string)
 	SubdomainInput() *string
@@ -102,15 +102,15 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Toleration() DaemonsetSpecTemplateSpecTolerationList
-	TolerationInput() interface{}
+	TolerationInput() any
 	TopologySpreadConstraint() DaemonsetSpecTemplateSpecTopologySpreadConstraintList
-	TopologySpreadConstraintInput() interface{}
+	TopologySpreadConstraintInput() any
 	Volume() DaemonsetSpecTemplateSpecVolumeList
-	VolumeInput() interface{}
+	VolumeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,16 +132,16 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAffinity(value *DaemonsetSpecTemplateSpecAffinity)
-	PutContainer(value interface{})
+	PutContainer(value any)
 	PutDnsConfig(value *DaemonsetSpecTemplateSpecDnsConfig)
-	PutHostAliases(value interface{})
-	PutImagePullSecrets(value interface{})
-	PutInitContainer(value interface{})
-	PutReadinessGate(value interface{})
+	PutHostAliases(value any)
+	PutImagePullSecrets(value any)
+	PutInitContainer(value any)
+	PutReadinessGate(value any)
 	PutSecurityContext(value *DaemonsetSpecTemplateSpecSecurityContext)
-	PutToleration(value interface{})
-	PutTopologySpreadConstraint(value interface{})
-	PutVolume(value interface{})
+	PutToleration(value any)
+	PutTopologySpreadConstraint(value any)
+	PutVolume(value any)
 	ResetActiveDeadlineSeconds()
 	ResetAffinity()
 	ResetAutomountServiceAccountToken()
@@ -171,7 +171,7 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -224,8 +224,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AffinityInput() *Da
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAccountToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAccountToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountToken",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAcc
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAccountTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAccountTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountTokenInput",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) AutomountServiceAcc
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Container() Daemons
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containerInput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) DnsPolicyInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) EnableServiceLinks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) EnableServiceLinks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinks",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) EnableServiceLinks(
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) EnableServiceLinksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) EnableServiceLinksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinksInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostAliases() Daemo
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostAliasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostAliasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostAliasesInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostAliasesInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostIpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostIpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpc",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostIpc() interface
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostIpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostIpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpcInput",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostnameInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetwork",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetwork() inter
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetworkInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostNetworkInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostPid() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostPid() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPid",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostPid() interface
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostPidInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) HostPidInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPidInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ImagePullSecrets() 
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ImagePullSecretsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ImagePullSecretsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"imagePullSecretsInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) InitContainer() Dae
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) InitContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) InitContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initContainerInput",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ReadinessGate() Dae
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ReadinessGateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ReadinessGateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readinessGateInput",
@@ -654,8 +654,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ServiceAccountNameI
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ShareProcessNamespace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ShareProcessNamespace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespace",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ShareProcessNamespa
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ShareProcessNamespaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ShareProcessNamespaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespaceInput",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Toleration() Daemon
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) TolerationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) TolerationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tolerationInput",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) TopologySpreadConst
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) TopologySpreadConstraintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) TopologySpreadConstraintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"topologySpreadConstraintInput",
@@ -784,8 +784,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Volume() DaemonsetS
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) VolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) VolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeInput",
@@ -793,7 +793,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) VolumeInput() inter
 	)
 	return returns
 }
-
 
 func NewDaemonsetSpecTemplateSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecOutputReference {
 	_init_.Initialize()
@@ -805,7 +804,7 @@ func NewDaemonsetSpecTemplateSpecOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -817,12 +816,12 @@ func NewDaemonsetSpecTemplateSpecOutputReference_Override(d DaemonsetSpecTemplat
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetActiveDeadlineSeconds(val *float64) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetActiveDeadlineSeconds(val *float64) {
 	if err := j.validateSetActiveDeadlineSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetActiveDeadlineSec
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetAutomountServiceAccountToken(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetAutomountServiceAccountToken(val any) {
 	if err := j.validateSetAutomountServiceAccountTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetAutomountServiceA
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetDnsPolicy(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetDnsPolicy(val *string) {
 	if err := j.validateSetDnsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetDnsPolicy(val *st
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetEnableServiceLinks(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetEnableServiceLinks(val any) {
 	if err := j.validateSetEnableServiceLinksParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetEnableServiceLink
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostIpc(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetHostIpc(val any) {
 	if err := j.validateSetHostIpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostIpc(val inter
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostname(val *str
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostNetwork(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetHostNetwork(val any) {
 	if err := j.validateSetHostNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostNetwork(val i
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostPid(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetHostPid(val any) {
 	if err := j.validateSetHostPidParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetHostPid(val inter
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetInternalValue(val *DaemonsetSpecTemplateSpec) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetInternalValue(val *DaemonsetSpecTemplateSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetNodeName(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetNodeName(val *string) {
 	if err := j.validateSetNodeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetNodeName(val *str
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetNodeSelector(val *map[string]*string) {
 	if err := j.validateSetNodeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -965,7 +964,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetNodeSelector(val 
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetPriorityClassName(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetPriorityClassName(val *string) {
 	if err := j.validateSetPriorityClassNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetPriorityClassName
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetRestartPolicy(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetRestartPolicy(val *string) {
 	if err := j.validateSetRestartPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetRestartPolicy(val
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetServiceAccountNam
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetShareProcessNamespace(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetShareProcessNamespace(val any) {
 	if err := j.validateSetShareProcessNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetShareProcessNames
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetSubdomain(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetSubdomain(val *string) {
 	if err := j.validateSetSubdomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetSubdomain(val *st
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetTerminationGracePeriodSeconds(val *float64) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetTerminationGracePeriodSeconds(val *float64) {
 	if err := j.validateSetTerminationGracePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetTerminationGraceP
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,16 +1065,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,7 +1106,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1123,7 +1122,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,7 +1170,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1246,18 +1245,18 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutAffinity(value *
 	_jsii_.InvokeVoid(
 		d,
 		"putAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutContainer(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutContainer(value any) {
 	if err := d.validatePutContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,51 +1267,51 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutDnsConfig(value 
 	_jsii_.InvokeVoid(
 		d,
 		"putDnsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutHostAliases(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutHostAliases(value any) {
 	if err := d.validatePutHostAliasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putHostAliases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutImagePullSecrets(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutImagePullSecrets(value any) {
 	if err := d.validatePutImagePullSecretsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putImagePullSecrets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutInitContainer(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutInitContainer(value any) {
 	if err := d.validatePutInitContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInitContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutReadinessGate(value any) {
 	if err := d.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putReadinessGate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,40 +1322,40 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutSecurityContext(
 	_jsii_.InvokeVoid(
 		d,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutToleration(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutToleration(value any) {
 	if err := d.validatePutTolerationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putToleration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutTopologySpreadConstraint(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutTopologySpreadConstraint(value any) {
 	if err := d.validatePutTopologySpreadConstraintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTopologySpreadConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutVolume(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutVolume(value any) {
 	if err := d.validatePutVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1576,16 +1575,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ResetVolume() {
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1604,4 +1603,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ToString() *string 
 
 	return returns
 }
-

@@ -153,7 +153,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewHorizontalPodAutoscalerSpecMetricOutputReferenceParameters(terra
 
 	return nil
 }
-

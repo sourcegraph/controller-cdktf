@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecTopologySpreadConstraintLabelSelectorListParameters(terra
 
 	return nil
 }
-

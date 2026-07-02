@@ -128,7 +128,7 @@ func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetAccess
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewPersistentVolumeClaimV1SpecOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

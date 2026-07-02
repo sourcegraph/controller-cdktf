@@ -131,7 +131,7 @@ func (p *jsiiProxy_PodV1SpecAffinityOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewPodV1SpecAffinityOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

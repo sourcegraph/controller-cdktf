@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) validateInterpolationForAt
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) validatePutOptionParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) validatePutOptionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewPodV1SpecDnsConfigOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

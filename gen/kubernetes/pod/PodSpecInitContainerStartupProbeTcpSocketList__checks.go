@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecInitContainerStartupProbeTcpSocketList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerStartupProbeTcpSocketList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerStartupProbeTcpSocketList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecInitContainerStartupProbeTcpSocketListParameters(terrafor
 
 	return nil
 }
-

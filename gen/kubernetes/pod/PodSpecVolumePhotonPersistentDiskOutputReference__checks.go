@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodSpecVolumePhotonPersistentDiskOutputReferenceParameters(terra
 
 	return nil
 }
-

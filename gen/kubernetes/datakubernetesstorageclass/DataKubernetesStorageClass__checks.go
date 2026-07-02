@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataKubernetesStorageClass) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataKubernetesStorageClass) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -149,7 +149,7 @@ func validateDataKubernetesStorageClass_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataKubernetesStorageClass_IsConstructParameters(x interface{}) error {
+func validateDataKubernetesStorageClass_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -157,7 +157,7 @@ func validateDataKubernetesStorageClass_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataKubernetesStorageClass_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataKubernetesStorageClass_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func validateDataKubernetesStorageClass_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataKubernetesStorageClass_IsTerraformElementParameters(x interface{}) error {
+func validateDataKubernetesStorageClass_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func validateDataKubernetesStorageClass_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) validateSetAllowVolumeExpansionParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesStorageClass) validateSetAllowVolumeExpansionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass) validateSetAllowVolumeExpansionPa
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesStorageClass) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -316,4 +316,3 @@ func validateNewDataKubernetesStorageClassParameters(scope constructs.Construct,
 
 	return nil
 }
-

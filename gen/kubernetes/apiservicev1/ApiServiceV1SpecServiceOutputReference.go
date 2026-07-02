@@ -12,9 +12,9 @@ type ApiServiceV1SpecServiceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ApiServiceV1SpecServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ApiServiceV1SpecServiceOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ApiServiceV1SpecServiceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewApiServiceV1SpecServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiServiceV1SpecServiceOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewApiServiceV1SpecServiceOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1SpecServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewApiServiceV1SpecServiceOutputReference_Override(a ApiServiceV1SpecServic
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1SpecServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetInternalValue(val *ApiServiceV1SpecService) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetInternalValue(val *ApiServiceV1SpecService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetNamespace(val *stri
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetPort(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiServiceV1SpecServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) ResetPort() {
 	)
 }
 
-func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (a *jsiiProxy_ApiServiceV1SpecServiceOutputReference) ToString() *string {
 
 	return returns
 }
-

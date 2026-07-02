@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecReadinessGateListParameters(terraformResource
 
 	return nil
 }
-

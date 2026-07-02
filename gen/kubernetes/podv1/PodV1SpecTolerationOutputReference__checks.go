@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecTolerationOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PodV1SpecTolerationOutputReference) validateSetEffectParamete
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecTolerationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecTolerationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewPodV1SpecTolerationOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

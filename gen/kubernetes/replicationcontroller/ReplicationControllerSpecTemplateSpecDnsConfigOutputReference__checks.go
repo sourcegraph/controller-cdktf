@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference) validatePutOptionParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference) validatePutOptionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewReplicationControllerSpecTemplateSpecDnsConfigOutputReferencePar
 
 	return nil
 }
-

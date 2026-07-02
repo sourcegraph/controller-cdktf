@@ -106,7 +106,7 @@ func (j *jsiiProxy_NamespaceMetadataOutputReference) validateSetAnnotationsParam
 	return nil
 }
 
-func (j *jsiiProxy_NamespaceMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NamespaceMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNamespaceMetadataOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

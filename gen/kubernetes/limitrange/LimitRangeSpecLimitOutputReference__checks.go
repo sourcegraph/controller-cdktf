@@ -98,7 +98,7 @@ func (l *jsiiProxy_LimitRangeSpecLimitOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeSpecLimitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LimitRangeSpecLimitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LimitRangeSpecLimitOutputReference) validateSetDefaultRequest
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeSpecLimitOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LimitRangeSpecLimitOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewLimitRangeSpecLimitOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

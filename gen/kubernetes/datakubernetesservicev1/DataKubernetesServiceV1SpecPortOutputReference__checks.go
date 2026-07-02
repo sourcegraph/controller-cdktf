@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesServiceV1SpecPortOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceV1SpecPortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesServiceV1SpecPortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesServiceV1SpecPortOutputReferenceParameters(terrafo
 
 	return nil
 }
-

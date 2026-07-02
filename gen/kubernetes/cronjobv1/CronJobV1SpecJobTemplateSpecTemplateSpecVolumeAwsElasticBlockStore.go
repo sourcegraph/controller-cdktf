@@ -1,6 +1,5 @@
 package cronjobv1
 
-
 type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore struct {
 	// Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: http://kubernetes.io/docs/user-guide/volumes#awselasticblockstore.
 	//
@@ -21,6 +20,5 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore struct {
 	// Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: http://kubernetes.io/docs/user-guide/volumes#awselasticblockstore.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

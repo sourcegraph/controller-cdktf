@@ -1,11 +1,10 @@
 package datakubernetespersistentvolumeclaim
 
-
 type DataKubernetesPersistentVolumeClaimSpec struct {
 	// selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/persistent_volume_claim#selector DataKubernetesPersistentVolumeClaim#selector}
-	Selector interface{} `field:"optional" json:"selector" yaml:"selector"`
+	Selector any `field:"optional" json:"selector" yaml:"selector"`
 	// Name of the storage class requested by the claim.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/persistent_volume_claim#storage_class_name DataKubernetesPersistentVolumeClaim#storage_class_name}
@@ -15,4 +14,3 @@ type DataKubernetesPersistentVolumeClaimSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/persistent_volume_claim#volume_name DataKubernetesPersistentVolumeClaim#volume_name}
 	VolumeName *string `field:"optional" json:"volumeName" yaml:"volumeName"`
 }
-

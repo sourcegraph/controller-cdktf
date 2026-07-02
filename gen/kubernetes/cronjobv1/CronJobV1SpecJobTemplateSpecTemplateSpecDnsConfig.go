@@ -1,6 +1,5 @@
 package cronjobv1
 
-
 type CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig struct {
 	// A list of DNS name server IP addresses.
 	//
@@ -11,7 +10,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig struct {
 	// option block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#option CronJobV1#option}
-	Option interface{} `field:"optional" json:"option" yaml:"option"`
+	Option any `field:"optional" json:"option" yaml:"option"`
 	// A list of DNS search domains for host-name lookup.
 	//
 	// This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
@@ -19,4 +18,3 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job_v1#searches CronJobV1#searches}
 	Searches *[]*string `field:"optional" json:"searches" yaml:"searches"`
 }
-

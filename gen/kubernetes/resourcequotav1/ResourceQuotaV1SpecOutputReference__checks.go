@@ -109,7 +109,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewResourceQuotaV1SpecOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeGitRepoOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeGitRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewJobSpecTemplateSpecVolumeGitRepoOutputReferenceParameters(terraf
 
 	return nil
 }
-

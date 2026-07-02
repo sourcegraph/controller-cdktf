@@ -12,9 +12,9 @@ type PodSpecInitContainerReadinessProbeTcpSocketOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PodSpecInitContainerReadinessProbeTcpSocketOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Port() *string
 	SetPort(val *string)
 	PortInput() *string
@@ -43,7 +43,7 @@ type PodSpecInitContainerReadinessProbeTcpSocketOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type PodSpecInitContainerReadinessProbeTcpSocketOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) T
 	return returns
 }
 
-
 func NewPodSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodSpecInitContainerReadinessProbeTcpSocketOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewPodSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeTcpSocketOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewPodSpecInitContainerReadinessProbeTcpSocketOutputReference_Override(p Po
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeTcpSocketOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetPort(val *string) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) C
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) G
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) I
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeTcpSocketOutputReference) T
 
 	return returns
 }
-

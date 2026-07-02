@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
-		reflect.TypeOf((*KubernetesProvider)(nil)).Elem(),
+		reflect.TypeFor[KubernetesProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KubernetesProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -96,14 +96,14 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.provider.KubernetesProviderConfig",
-		reflect.TypeOf((*KubernetesProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[KubernetesProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.provider.KubernetesProviderExec",
-		reflect.TypeOf((*KubernetesProviderExec)(nil)).Elem(),
+		reflect.TypeFor[KubernetesProviderExec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments",
-		reflect.TypeOf((*KubernetesProviderExperiments)(nil)).Elem(),
+		reflect.TypeFor[KubernetesProviderExperiments](),
 	)
 }

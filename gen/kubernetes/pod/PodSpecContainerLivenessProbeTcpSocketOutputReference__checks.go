@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPodSpecContainerLivenessProbeTcpSocketOutputReferenceParameters(
 
 	return nil
 }
-

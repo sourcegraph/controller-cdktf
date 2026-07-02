@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodV1SpecContainerEnvValueFromFieldRefOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodV1SpecContainerEnvValueFromFieldRefOutputReferenceParameters(
 
 	return nil
 }
-

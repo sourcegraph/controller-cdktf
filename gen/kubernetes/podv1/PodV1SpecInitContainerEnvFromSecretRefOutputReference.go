@@ -12,9 +12,9 @@ type PodV1SpecInitContainerEnvFromSecretRefOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type PodV1SpecInitContainerEnvFromSecretRefOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type PodV1SpecInitContainerEnvFromSecretRefOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type PodV1SpecInitContainerEnvFromSecretRefOutputReference interface {
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) NameIn
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Option
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Terraf
 	return returns
 }
 
-
 func NewPodV1SpecInitContainerEnvFromSecretRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecInitContainerEnvFromSecretRefOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPodV1SpecInitContainerEnvFromSecretRefOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerEnvFromSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPodV1SpecInitContainerEnvFromSecretRefOutputReference_Override(p PodV1Sp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerEnvFromSecretRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetInternalValue(val *PodV1SpecInitContainerEnvFromSecretRef) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetInternalValue(val *PodV1SpecInitContainerEnvFromSecretRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetName
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetOpti
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Comput
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetBoo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetBoo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetLis
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetStr
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) GetStr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Interp
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) ResetO
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromSecretRefOutputReference) ToStri
 
 	return returns
 }
-

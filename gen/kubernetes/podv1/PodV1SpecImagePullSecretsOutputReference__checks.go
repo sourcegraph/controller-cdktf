@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPodV1SpecImagePullSecretsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

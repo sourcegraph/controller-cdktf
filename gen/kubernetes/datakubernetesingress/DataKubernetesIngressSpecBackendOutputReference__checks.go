@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesIngressSpecBackendOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressSpecBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesIngressSpecBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesIngressSpecBackendOutputReferenceParameters(terraf
 
 	return nil
 }
-

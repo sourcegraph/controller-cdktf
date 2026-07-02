@@ -12,9 +12,9 @@ type PodSecurityPolicySpecSeLinuxOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type PodSecurityPolicySpecSeLinuxOutputReference interface {
 	SetRule(val *string)
 	RuleInput() *string
 	SeLinuxOptions() PodSecurityPolicySpecSeLinuxSeLinuxOptionsList
-	SeLinuxOptionsInput() interface{}
+	SeLinuxOptionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type PodSecurityPolicySpecSeLinuxOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type PodSecurityPolicySpecSeLinuxOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSeLinuxOptions(value interface{})
+	PutSeLinuxOptions(value any)
 	ResetSeLinuxOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SeLinuxOptions()
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SeLinuxOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SeLinuxOptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"seLinuxOptionsInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewPodSecurityPolicySpecSeLinuxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSecurityPolicySpecSeLinuxOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPodSecurityPolicySpecSeLinuxOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPodSecurityPolicySpecSeLinuxOutputReference_Override(p PodSecurityPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetInternalValue(val *PodSecurityPolicySpecSeLinux) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetInternalValue(val *PodSecurityPolicySpecSeLinux) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetRule(val *string) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetRule(val *string) {
 	if err := j.validateSetRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetRule(val *stri
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) PutSeLinuxOptions(value interface{}) {
+func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) PutSeLinuxOptions(value any) {
 	if err := p.validatePutSeLinuxOptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putSeLinuxOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) ResetSeLinuxOpti
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxOutputReference) ToString() *stri
 
 	return returns
 }
-

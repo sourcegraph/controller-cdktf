@@ -19,7 +19,7 @@ func (r *jsiiProxy_RoleBinding) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (r *jsiiProxy_RoleBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RoleBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RoleBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RoleBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (r *jsiiProxy_RoleBinding) validatePutRoleRefParameters(value *RoleBindingR
 	return nil
 }
 
-func (r *jsiiProxy_RoleBinding) validatePutSubjectParameters(value interface{}) error {
+func (r *jsiiProxy_RoleBinding) validatePutSubjectParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateRoleBinding_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateRoleBinding_IsConstructParameters(x interface{}) error {
+func validateRoleBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateRoleBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoleBinding_IsTerraformElementParameters(x interface{}) error {
+func validateRoleBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateRoleBinding_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoleBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateRoleBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateRoleBinding_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_RoleBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RoleBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_RoleBinding) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_RoleBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RoleBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_RoleBinding) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_RoleBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RoleBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -467,4 +467,3 @@ func validateNewRoleBindingParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

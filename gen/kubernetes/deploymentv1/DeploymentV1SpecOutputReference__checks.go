@@ -131,7 +131,7 @@ func (d *jsiiProxy_DeploymentV1SpecOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -212,7 +212,7 @@ func (j *jsiiProxy_DeploymentV1SpecOutputReference) validateSetMinReadySecondsPa
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecOutputReference) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecOutputReference) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,4 +283,3 @@ func validateNewDeploymentV1SpecOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

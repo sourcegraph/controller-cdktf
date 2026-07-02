@@ -106,7 +106,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecScaleTargetRefOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecScaleTargetRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecScaleTargetRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewHorizontalPodAutoscalerSpecScaleTargetRefOutputReferenceParamete
 
 	return nil
 }
-

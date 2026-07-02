@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkPolicyV1SpecEgressToIpBlockOutputReferenceParameters(terr
 
 	return nil
 }
-

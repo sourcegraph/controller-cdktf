@@ -12,9 +12,9 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	SetSuccessThreshold(val *float64)
 	SuccessThresholdInput() *float64
 	TcpSocket() PodV1SpecInitContainerStartupProbeTcpSocketList
-	TcpSocketInput() interface{}
+	TcpSocketInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *PodV1SpecInitContainerStartupProbeExec)
 	PutHttpGet(value *PodV1SpecInitContainerStartupProbeHttpGet)
-	PutTcpSocket(value interface{})
+	PutTcpSocket(value any)
 	ResetExec()
 	ResetFailureThreshold()
 	ResetHttpGet()
@@ -95,7 +95,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TcpSocket(
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TcpSocketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TcpSocketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tcpSocketInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TimeoutSec
 	return returns
 }
 
-
 func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecInitContainerStartupProbeOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewPodV1SpecInitContainerStartupProbeOutputReference_Override(p PodV1SpecIn
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetFailureThreshold(val *float64) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetFailureThreshold(val *float64) {
 	if err := j.validateSetFailureThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetFailureT
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetInitialDelaySeconds(val *float64) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetInitialDelaySeconds(val *float64) {
 	if err := j.validateSetInitialDelaySecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetInitialD
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetInternalValue(val *PodV1SpecInitContainerStartupProbe) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetInternalValue(val *PodV1SpecInitContainerStartupProbe) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetPeriodSeconds(val *float64) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetPeriodSeconds(val *float64) {
 	if err := j.validateSetPeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetPeriodSe
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetSuccessThreshold(val *float64) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetSuccessThreshold(val *float64) {
 	if err := j.validateSetSuccessThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetSuccessT
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,16 +488,16 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ComputeFqn
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetBoolean
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetBoolean
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetListAtt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetNumberA
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetNumberL
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetNumberM
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetStringA
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetStringM
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Interpolat
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) PutExec(va
 	_jsii_.InvokeVoid(
 		p,
 		"putExec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) PutHttpGet
 	_jsii_.InvokeVoid(
 		p,
 		"putHttpGet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) PutTcpSocket(value interface{}) {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) PutTcpSocket(value any) {
 	if err := p.validatePutTcpSocketParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTcpSocket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ResetTimeo
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ToString()
 
 	return returns
 }
-

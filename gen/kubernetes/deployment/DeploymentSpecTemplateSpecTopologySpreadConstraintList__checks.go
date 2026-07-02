@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecTopologySpreadConstraintListParameters
 
 	return nil
 }
-

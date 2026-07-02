@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeConfigMapItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecVolumeConfigMapItemsListParameters(terrafor
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobV1MetadataOutputReference) validateSetAnnotationsParameter
 	return nil
 }
 
-func (j *jsiiProxy_JobV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewJobV1MetadataOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

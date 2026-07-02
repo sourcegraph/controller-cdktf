@@ -15,9 +15,9 @@ type IngressClassV1SpecParametersOutputReference interface {
 	ApiGroupInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type IngressClassV1SpecParametersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -55,7 +55,7 @@ type IngressClassV1SpecParametersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type IngressClassV1SpecParametersOutputReference interface {
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) ApiGroupInput() 
 	return returns
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewIngressClassV1SpecParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IngressClassV1SpecParametersOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewIngressClassV1SpecParametersOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewIngressClassV1SpecParametersOutputReference_Override(i IngressClassV1Spe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetApiGroup(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetApiGroup(val *string) {
 	if err := j.validateSetApiGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetApiGroup(val *
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetKind(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetKind(val *string) {
 	if err := j.validateSetKindParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetKind(val *stri
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetName(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetName(val *stri
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetNamespace(val 
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetScope(val *str
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressClassV1SpecParametersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) ResetScope() {
 	)
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (i *jsiiProxy_IngressClassV1SpecParametersOutputReference) ToString() *stri
 
 	return returns
 }
-

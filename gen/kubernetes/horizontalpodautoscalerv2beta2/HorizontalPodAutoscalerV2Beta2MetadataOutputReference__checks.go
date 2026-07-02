@@ -106,7 +106,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2MetadataOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHorizontalPodAutoscalerV2Beta2MetadataOutputReferenceParameters(
 
 	return nil
 }
-

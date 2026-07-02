@@ -15,15 +15,15 @@ type LimitRange interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,26 +52,26 @@ type LimitRange interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() LimitRangeSpecOutputReference
 	SpecInput() *LimitRangeSpec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type LimitRange interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type LimitRange interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type LimitRange interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSpec()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LimitRange
@@ -143,8 +143,8 @@ func (j *jsiiProxy_LimitRange) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LimitRange) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_LimitRange) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LimitRange) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_LimitRange) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LimitRange) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_LimitRange) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LimitRange) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_LimitRange) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LimitRange) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_LimitRange) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_LimitRange) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LimitRange) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_LimitRange) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/limit_range kubernetes_limit_range} Resource.
 func NewLimitRange(scope constructs.Construct, id *string, config *LimitRangeConfig) LimitRange {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewLimitRange(scope constructs.Construct, id *string, config *LimitRangeCon
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewLimitRange_Override(l LimitRange, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetConnection(val interface{}) {
+func (j *jsiiProxy_LimitRange) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_LimitRange)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetCount(val interface{}) {
+func (j *jsiiProxy_LimitRange) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_LimitRange)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LimitRange) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_LimitRange)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LimitRange) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_LimitRange)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetId(val *string) {
+func (j *jsiiProxy_LimitRange) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_LimitRange)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LimitRange) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_LimitRange)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LimitRange) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_LimitRange)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LimitRange)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LimitRange) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func LimitRange_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func LimitRange_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LimitRange_IsConstruct(x interface{}) *bool {
+func LimitRange_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLimitRange_IsConstructParameters(x); err != nil {
@@ -509,7 +508,7 @@ func LimitRange_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func LimitRange_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LimitRange_IsTerraformElement(x interface{}) *bool {
+func LimitRange_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLimitRange_IsTerraformElementParameters(x); err != nil {
@@ -528,7 +527,7 @@ func LimitRange_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func LimitRange_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LimitRange_IsTerraformResource(x interface{}) *bool {
+func LimitRange_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLimitRange_IsTerraformResourceParameters(x); err != nil {
@@ -547,7 +546,7 @@ func LimitRange_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,31 +571,31 @@ func (l *jsiiProxy_LimitRange) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LimitRange) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LimitRange) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LimitRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LimitRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (l *jsiiProxy_LimitRange) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (l *jsiiProxy_LimitRange) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (l *jsiiProxy_LimitRange) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (l *jsiiProxy_LimitRange) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (l *jsiiProxy_LimitRange) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (l *jsiiProxy_LimitRange) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (l *jsiiProxy_LimitRange) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,15 +723,15 @@ func (l *jsiiProxy_LimitRange) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LimitRange) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LimitRange) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -751,7 +750,7 @@ func (l *jsiiProxy_LimitRange) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -764,7 +763,7 @@ func (l *jsiiProxy_LimitRange) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,18 +777,18 @@ func (l *jsiiProxy_LimitRange) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LimitRange) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LimitRange) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -800,7 +799,7 @@ func (l *jsiiProxy_LimitRange) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LimitRange) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -822,7 +821,7 @@ func (l *jsiiProxy_LimitRange) PutMetadata(value *LimitRangeMetadata) {
 	_jsii_.InvokeVoid(
 		l,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -833,7 +832,7 @@ func (l *jsiiProxy_LimitRange) PutSpec(value *LimitRangeSpec) {
 	_jsii_.InvokeVoid(
 		l,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (l *jsiiProxy_LimitRange) ResetSpec() {
 	)
 }
 
-func (l *jsiiProxy_LimitRange) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LimitRange) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -874,8 +873,8 @@ func (l *jsiiProxy_LimitRange) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LimitRange) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LimitRange) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -887,8 +886,8 @@ func (l *jsiiProxy_LimitRange) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (l *jsiiProxy_LimitRange) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LimitRange) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -900,8 +899,8 @@ func (l *jsiiProxy_LimitRange) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LimitRange) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LimitRange) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -926,8 +925,8 @@ func (l *jsiiProxy_LimitRange) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LimitRange) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LimitRange) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -938,4 +937,3 @@ func (l *jsiiProxy_LimitRange) ToTerraform() interface{} {
 
 	return returns
 }
-

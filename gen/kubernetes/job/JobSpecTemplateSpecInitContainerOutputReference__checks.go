@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateInte
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutEnvParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutE
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutL
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutPortParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutS
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetN
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetStdinParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetStdinParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetS
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetStdinOnceParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetStdinOnceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetTtyParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerOutputReference) validateSetTtyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,4 +536,3 @@ func validateNewJobSpecTemplateSpecInitContainerOutputReferenceParameters(terraf
 
 	return nil
 }
-

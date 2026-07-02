@@ -98,7 +98,7 @@ func (i *jsiiProxy_IngressV1SpecTlsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecTlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecTlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IngressV1SpecTlsOutputReference) validateSetHostsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecTlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecTlsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIngressV1SpecTlsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

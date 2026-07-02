@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// ClaimName is the name of a PersistentVolumeClaim in the same.
 	//
@@ -9,6 +8,5 @@ type DeploymentSpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// Will force the ReadOnly setting in VolumeMounts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#read_only Deployment#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

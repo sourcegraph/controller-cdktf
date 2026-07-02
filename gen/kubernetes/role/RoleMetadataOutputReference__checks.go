@@ -106,7 +106,7 @@ func (j *jsiiProxy_RoleMetadataOutputReference) validateSetAnnotationsParameters
 	return nil
 }
 
-func (j *jsiiProxy_RoleMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RoleMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoleMetadataOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

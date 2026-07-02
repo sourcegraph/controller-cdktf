@@ -12,9 +12,9 @@ type PodSecurityPolicySpecFsGroupRangeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PodSecurityPolicySpecFsGroupRangeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Max() *float64
 	SetMax(val *float64)
 	MaxInput() *float64
@@ -46,7 +46,7 @@ type PodSecurityPolicySpecFsGroupRangeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type PodSecurityPolicySpecFsGroupRangeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewPodSecurityPolicySpecFsGroupRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodSecurityPolicySpecFsGroupRangeOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewPodSecurityPolicySpecFsGroupRangeOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewPodSecurityPolicySpecFsGroupRangeOutputReference_Override(p PodSecurityP
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetMax(val *float64) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetMax(val *float64) {
 	if err := j.validateSetMaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetMax(val *
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetMin(val *float64) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetMin(val *float64) {
 	if err := j.validateSetMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetMin(val *
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) ComputeFqn(
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetListAttr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetStringAt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) GetStringMa
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) Interpolati
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) ToString() 
 
 	return returns
 }
-

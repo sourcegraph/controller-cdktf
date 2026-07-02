@@ -109,7 +109,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,7 +206,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeFlexVolumeOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,4 +253,3 @@ func validateNewJobSpecTemplateSpecVolumeFlexVolumeOutputReferenceParameters(ter
 
 	return nil
 }
-

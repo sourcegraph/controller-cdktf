@@ -120,7 +120,7 @@ func (j *jsiiProxy_JobSpecTemplateOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewJobSpecTemplateOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

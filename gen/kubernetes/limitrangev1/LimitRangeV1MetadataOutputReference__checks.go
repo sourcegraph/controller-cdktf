@@ -106,7 +106,7 @@ func (j *jsiiProxy_LimitRangeV1MetadataOutputReference) validateSetAnnotationsPa
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LimitRangeV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLimitRangeV1MetadataOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

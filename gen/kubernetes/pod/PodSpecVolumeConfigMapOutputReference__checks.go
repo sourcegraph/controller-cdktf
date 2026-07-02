@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateInterpolationF
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validatePutItemsParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateSetNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeConfigMapOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewPodSpecVolumeConfigMapOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

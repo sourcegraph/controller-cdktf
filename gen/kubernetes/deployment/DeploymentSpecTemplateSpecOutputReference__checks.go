@@ -101,7 +101,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutAffinit
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutContainerParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutContainerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutDnsConf
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutHostAliasesParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutHostAliasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutHostAli
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutImagePullSecretsParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutImagePullSecretsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutImagePu
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutInitContainerParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutInitContainerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutInitCon
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutSecurit
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTolerationParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTolerationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTolerat
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTopologySpreadConstraintParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTopologySpreadConstraintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutTopolog
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutVolumeParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetActiveD
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetAutomountServiceAccountTokenParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetAutomountServiceAccountTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetAutomou
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -480,7 +480,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetDnsPoli
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetEnableServiceLinksParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetEnableServiceLinksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetEnableS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostIpcParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostIpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostnam
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -548,7 +548,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostNet
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostPidParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetHostPidParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -616,7 +616,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetService
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetShareProcessNamespaceParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validateSetShareProcessNamespaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -679,4 +679,3 @@ func validateNewDeploymentSpecTemplateSpecOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

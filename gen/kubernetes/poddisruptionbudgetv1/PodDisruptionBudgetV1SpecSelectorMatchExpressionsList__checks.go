@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodDisruptionBudgetV1SpecSelectorMatchExpressionsListParameters(
 
 	return nil
 }
-

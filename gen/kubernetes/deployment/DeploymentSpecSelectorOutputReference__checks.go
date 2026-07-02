@@ -90,7 +90,7 @@ func (d *jsiiProxy_DeploymentSpecSelectorOutputReference) validateInterpolationF
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentSpecSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DeploymentSpecSelectorOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDeploymentSpecSelectorOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

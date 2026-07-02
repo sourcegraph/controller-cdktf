@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validateInterp
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validatePutRangeParameters(value interface{}) error {
+func (p *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validatePutRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewPodSecurityPolicySpecRunAsUserOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpres
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressio
 
 	return nil
 }
-

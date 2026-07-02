@@ -1,6 +1,5 @@
 package podv1
 
-
 type PodV1SpecContainerLifecyclePreStop struct {
 	// exec block.
 	//
@@ -13,6 +12,5 @@ type PodV1SpecContainerLifecyclePreStop struct {
 	// tcp_socket block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
-	TcpSocket interface{} `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
+	TcpSocket any `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
 }
-

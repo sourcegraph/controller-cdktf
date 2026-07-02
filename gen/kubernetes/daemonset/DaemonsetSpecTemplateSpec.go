@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpec struct {
 	// Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers.
 	//
@@ -15,11 +14,11 @@ type DaemonsetSpecTemplateSpec struct {
 	// AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#automount_service_account_token Daemonset#automount_service_account_token}
-	AutomountServiceAccountToken interface{} `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
+	AutomountServiceAccountToken any `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
 	// container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#container Daemonset#container}
-	Container interface{} `field:"optional" json:"container" yaml:"container"`
+	Container any `field:"optional" json:"container" yaml:"container"`
 	// dns_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#dns_config Daemonset#dns_config}
@@ -33,15 +32,15 @@ type DaemonsetSpecTemplateSpec struct {
 	// Enables generating environment variables for service discovery. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#enable_service_links Daemonset#enable_service_links}
-	EnableServiceLinks interface{} `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
+	EnableServiceLinks any `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
 	// host_aliases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#host_aliases Daemonset#host_aliases}
-	HostAliases interface{} `field:"optional" json:"hostAliases" yaml:"hostAliases"`
+	HostAliases any `field:"optional" json:"hostAliases" yaml:"hostAliases"`
 	// Use the host's ipc namespace. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#host_ipc Daemonset#host_ipc}
-	HostIpc interface{} `field:"optional" json:"hostIpc" yaml:"hostIpc"`
+	HostIpc any `field:"optional" json:"hostIpc" yaml:"hostIpc"`
 	// Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#hostname Daemonset#hostname}
@@ -51,19 +50,19 @@ type DaemonsetSpecTemplateSpec struct {
 	// Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#host_network Daemonset#host_network}
-	HostNetwork interface{} `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
+	HostNetwork any `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
 	// Use the host's pid namespace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#host_pid Daemonset#host_pid}
-	HostPid interface{} `field:"optional" json:"hostPid" yaml:"hostPid"`
+	HostPid any `field:"optional" json:"hostPid" yaml:"hostPid"`
 	// image_pull_secrets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#image_pull_secrets Daemonset#image_pull_secrets}
-	ImagePullSecrets interface{} `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
+	ImagePullSecrets any `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
 	// init_container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#init_container Daemonset#init_container}
-	InitContainer interface{} `field:"optional" json:"initContainer" yaml:"initContainer"`
+	InitContainer any `field:"optional" json:"initContainer" yaml:"initContainer"`
 	// NodeName is a request to schedule this pod onto a specific node.
 	//
 	// If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
@@ -85,7 +84,7 @@ type DaemonsetSpecTemplateSpec struct {
 	// readiness_gate block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#readiness_gate Daemonset#readiness_gate}
-	ReadinessGate interface{} `field:"optional" json:"readinessGate" yaml:"readinessGate"`
+	ReadinessGate any `field:"optional" json:"readinessGate" yaml:"readinessGate"`
 	// Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: http://kubernetes.io/docs/user-guide/pod-states#restartpolicy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#restart_policy Daemonset#restart_policy}
@@ -103,7 +102,7 @@ type DaemonsetSpecTemplateSpec struct {
 	// When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#share_process_namespace Daemonset#share_process_namespace}
-	ShareProcessNamespace interface{} `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
+	ShareProcessNamespace any `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
 	// If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#subdomain Daemonset#subdomain}
@@ -117,14 +116,13 @@ type DaemonsetSpecTemplateSpec struct {
 	// toleration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#toleration Daemonset#toleration}
-	Toleration interface{} `field:"optional" json:"toleration" yaml:"toleration"`
+	Toleration any `field:"optional" json:"toleration" yaml:"toleration"`
 	// topology_spread_constraint block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#topology_spread_constraint Daemonset#topology_spread_constraint}
-	TopologySpreadConstraint interface{} `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
+	TopologySpreadConstraint any `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
 	// volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#volume Daemonset#volume}
-	Volume interface{} `field:"optional" json:"volume" yaml:"volume"`
+	Volume any `field:"optional" json:"volume" yaml:"volume"`
 }
-

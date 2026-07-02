@@ -12,9 +12,9 @@ type DaemonsetSpecTemplateSpecDnsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type DaemonsetSpecTemplateSpecDnsConfigOutputReference interface {
 	SetNameservers(val *[]*string)
 	NameserversInput() *[]*string
 	Option() DaemonsetSpecTemplateSpecDnsConfigOptionList
-	OptionInput() interface{}
+	OptionInput() any
 	Searches() *[]*string
 	SetSearches(val *[]*string)
 	SearchesInput() *[]*string
@@ -48,7 +48,7 @@ type DaemonsetSpecTemplateSpecDnsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type DaemonsetSpecTemplateSpecDnsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOption(value interface{})
+	PutOption(value any)
 	ResetNameservers()
 	ResetOption()
 	ResetSearches()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) Option() D
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) OptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) OptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewDaemonsetSpecTemplateSpecDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecDnsConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDaemonsetSpecTemplateSpecDnsConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDaemonsetSpecTemplateSpecDnsConfigOutputReference_Override(d DaemonsetSp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetInternalValue(val *DaemonsetSpecTemplateSpecDnsConfig) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetInternalValue(val *DaemonsetSpecTemplateSpecDnsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetNameservers(val *[]*string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetNameservers(val *[]*string) {
 	if err := j.validateSetNameserversParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetNameserv
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetSearches(val *[]*string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetSearches(val *[]*string) {
 	if err := j.validateSetSearchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetSearches
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) PutOption(value interface{}) {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) PutOption(value any) {
 	if err := d.validatePutOptionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putOption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) ResetSearc
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOutputReference) ToString()
 
 	return returns
 }
-

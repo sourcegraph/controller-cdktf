@@ -1,6 +1,5 @@
 package podv1
 
-
 type PodV1SpecContainerEnvValueFromSecretKeyRef struct {
 	// The key of the secret to select from. Must be a valid secret key.
 	//
@@ -13,6 +12,5 @@ type PodV1SpecContainerEnvValueFromSecretKeyRef struct {
 	// Specify whether the Secret or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_v1#optional PodV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-
