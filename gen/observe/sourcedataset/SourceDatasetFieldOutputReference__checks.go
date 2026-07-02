@@ -98,7 +98,7 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetInternalValuePa
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsConstParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsConstParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsConstParamete
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsEnumParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsEnumParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsEnumParameter
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsHiddenParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsHiddenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsHiddenParamet
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsMetricParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsMetricParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsMetricParamet
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsSearchableParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetIsSearchableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -346,4 +346,3 @@ func validateNewSourceDatasetFieldOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

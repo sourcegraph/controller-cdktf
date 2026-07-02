@@ -12,9 +12,9 @@ type PollerGcpMonitoringOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type PollerGcpMonitoringOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type PollerGcpMonitoringOutputReference interface {
 	ResetTotalLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_PollerGcpMonitoringOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference) TotalLimitInput() *float6
 	return returns
 }
 
-
 func NewPollerGcpMonitoringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerGcpMonitoringOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewPollerGcpMonitoringOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerGcpMonitoringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewPollerGcpMonitoringOutputReference_Override(p PollerGcpMonitoringOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerGcpMonitoringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetExcludeMetricTypePrefixes(val *[]*string) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetExcludeMetricTypePrefixes(val *[]*string) {
 	if err := j.validateSetExcludeMetricTypePrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetExcludeMetricTypePrefix
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetIncludeMetricTypePrefixes(val *[]*string) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetIncludeMetricTypePrefixes(val *[]*string) {
 	if err := j.validateSetIncludeMetricTypePrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetIncludeMetricTypePrefix
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetInternalValue(val *PollerGcpMonitoring) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetInternalValue(val *PollerGcpMonitoring) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetInternalValue(val *Poll
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetJsonKey(val *string) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetJsonKey(val *string) {
 	if err := j.validateSetJsonKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetJsonKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetProjectId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetRateLimit(val *float64) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetRateLimit(val *float64) {
 	if err := j.validateSetRateLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetRateLimit(val *float64)
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference)SetTotalLimit(val *float64) {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) SetTotalLimit(val *float64) {
 	if err := j.validateSetTotalLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) ResetTotalLimit() {
 	)
 }
 
-func (p *jsiiProxy_PollerGcpMonitoringOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PollerGcpMonitoringOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) ToString() *string {
 
 	return returns
 }
-

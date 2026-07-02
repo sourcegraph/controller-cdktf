@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validatePutColumnParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validatePutColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validatePutComparisonParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validatePutComparisonParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewMonitorV2ActionsConditionsCompareTermsOutputReferenceParameters(
 
 	return nil
 }
-

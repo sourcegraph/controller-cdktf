@@ -17,8 +17,8 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsList interface {
 	Get(index *float64) DataObserveMonitorV2RulesThresholdCompareGroupsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) WrapsSet
 	return returns
 }
 
-
 func NewDataObserveMonitorV2RulesThresholdCompareGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataObserveMonitorV2RulesThresholdCompareGroupsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataObserveMonitorV2RulesThresholdCompareGroupsList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataObserveMonitorV2RulesThresholdCompareGroupsList_Override(d DataObser
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) AllWithM
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) Get(inde
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsList) ToString
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,15 +211,15 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetValueBoolParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) validateSetValueBoolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]interface{}:
-		val := val.(*[]interface{})
+	case *[]any:
+		val := val.(*[]any)
 		for idx_97dfc6, v := range *val {
 			switch v.(type) {
 			case *bool:
@@ -234,8 +234,8 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesOutputReference) va
 				}
 			}
 		}
-	case []interface{}:
-		val_ := val.([]interface{})
+	case []any:
+		val_ := val.([]any)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			switch v.(type) {
@@ -319,4 +319,3 @@ func validateNewMonitorV2NoDataRulesThresholdCompareValuesOutputReferenceParamet
 
 	return nil
 }
-

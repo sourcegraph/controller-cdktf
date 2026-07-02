@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatasetOutboundShare) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (d *jsiiProxy_DatasetOutboundShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatasetOutboundShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatasetOutboundShare) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (d *jsiiProxy_DatasetOutboundShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatasetOutboundShare) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDatasetOutboundShare_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDatasetOutboundShare_IsConstructParameters(x interface{}) error {
+func validateDatasetOutboundShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDatasetOutboundShare_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDatasetOutboundShare_IsTerraformElementParameters(x interface{}) error {
+func validateDatasetOutboundShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDatasetOutboundShare_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateDatasetOutboundShare_IsTerraformResourceParameters(x interface{}) error {
+func validateDatasetOutboundShare_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDatasetOutboundShare_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DatasetOutboundShare) validateSetChangeTrackingParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetOutboundShare) validateSetChangeTrackingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DatasetOutboundShare) validateSetChangeTrackingParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DatasetOutboundShare) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetOutboundShare) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DatasetOutboundShare) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DatasetOutboundShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetOutboundShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DatasetOutboundShare) validateSetOutboundShareParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DatasetOutboundShare) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatasetOutboundShare) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,4 +517,3 @@ func validateNewDatasetOutboundShareParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewMonitorV2ActionsActionOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleGroupByGroupList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleGroupByGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorRuleGroupByGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorRuleGroupByGroupListParameters(terraformResour
 
 	return nil
 }
-

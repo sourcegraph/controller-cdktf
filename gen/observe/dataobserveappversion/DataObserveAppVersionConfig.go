@@ -6,9 +6,9 @@ import (
 
 type DataObserveAppVersionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataObserveAppVersionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The app module name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/app_version#module_id DataObserveAppVersion#module_id}
@@ -38,6 +38,5 @@ type DataObserveAppVersionConfig struct {
 	// Whether to include prerelease versions in the version search. Defaults to false (don't include).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/app_version#include_prerelease DataObserveAppVersion#include_prerelease}
-	IncludePrerelease interface{} `field:"optional" json:"includePrerelease" yaml:"includePrerelease"`
+	IncludePrerelease any `field:"optional" json:"includePrerelease" yaml:"includePrerelease"`
 }
-

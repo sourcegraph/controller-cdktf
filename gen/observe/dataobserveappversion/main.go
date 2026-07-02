@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
-		reflect.TypeOf((*DataObserveAppVersion)(nil)).Elem(),
+		reflect.TypeFor[DataObserveAppVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionConstraint", GoGetter: "VersionConstraint"},
 			_jsii_.MemberProperty{JsiiProperty: "versionConstraintInput", GoGetter: "VersionConstraintInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveAppVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersionConfig",
-		reflect.TypeOf((*DataObserveAppVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataObserveAppVersionConfig](),
 	)
 }

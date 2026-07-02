@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferenceP
 
 	return nil
 }
-

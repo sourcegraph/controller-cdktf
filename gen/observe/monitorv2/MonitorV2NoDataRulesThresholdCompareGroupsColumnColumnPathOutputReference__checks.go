@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOut
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutput
 
 	return nil
 }
-

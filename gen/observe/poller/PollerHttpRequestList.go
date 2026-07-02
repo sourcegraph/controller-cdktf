@@ -17,8 +17,8 @@ type PollerHttpRequestList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PollerHttpRequestList interface {
 	Get(index *float64) PollerHttpRequestOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PollerHttpRequestList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpRequestList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PollerHttpRequestList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PollerHttpRequestList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewPollerHttpRequestList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PollerHttpRequestList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPollerHttpRequestList(terraformResource cdktf.IInterpolatingParent, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerHttpRequestList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPollerHttpRequestList_Override(p PollerHttpRequestList, terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.poller.PollerHttpRequestList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PollerHttpRequestList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PollerHttpRequestList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PollerHttpRequestList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpRequestList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PollerHttpRequestList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PollerHttpRequestList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpRequestList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerHttpRequestList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PollerHttpRequestList)SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_PollerHttpRequestList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PollerHttpRequestList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PollerHttpRequestList) AllWithMapKey(mapKeyAttributeName *str
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PollerHttpRequestList) Get(index *float64) PollerHttpRequestO
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpRequestList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PollerHttpRequestList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PollerHttpRequestList) ToString() *string {
 
 	return returns
 }
-

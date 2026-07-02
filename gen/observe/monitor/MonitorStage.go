@@ -1,6 +1,5 @@
 package monitor
 
-
 type MonitorStage struct {
 	// The stage alias is the label by which subsequent stages can refer to the results of this stage.
 	//
@@ -22,10 +21,9 @@ type MonitorStage struct {
 	//
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#output_stage Monitor#output_stage}
-	OutputStage interface{} `field:"optional" json:"outputStage" yaml:"outputStage"`
+	OutputStage any `field:"optional" json:"outputStage" yaml:"outputStage"`
 	// An OPAL snippet defining a transformation on the selected input.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#pipeline Monitor#pipeline}
 	Pipeline *string `field:"optional" json:"pipeline" yaml:"pipeline"`
 }
-

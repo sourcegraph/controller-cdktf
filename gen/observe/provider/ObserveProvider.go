@@ -21,7 +21,7 @@ type ObserveProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Customer() *string
 	SetCustomer(val *string)
 	CustomerInput() *string
@@ -31,9 +31,9 @@ type ObserveProvider interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
-	ExportObjectBindings() interface{}
-	SetExportObjectBindings(val interface{})
-	ExportObjectBindingsInput() interface{}
+	ExportObjectBindings() any
+	SetExportObjectBindings(val any)
+	ExportObjectBindingsInput() any
 	Flags() *string
 	SetFlags(val *string)
 	FlagsInput() *string
@@ -44,27 +44,27 @@ type ObserveProvider interface {
 	HttpClientTimeout() *string
 	SetHttpClientTimeout(val *string)
 	HttpClientTimeoutInput() *string
-	Insecure() interface{}
-	SetInsecure(val interface{})
-	InsecureInput() interface{}
+	Insecure() any
+	SetInsecure(val any)
+	InsecureInput() any
 	ManagingObjectId() *string
 	SetManagingObjectId(val *string)
 	ManagingObjectIdInput() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetryCount() *float64
 	SetRetryCount(val *float64)
 	RetryCountInput() *float64
 	RetryWait() *string
 	SetRetryWait(val *string)
 	RetryWaitInput() *string
-	SkipDatasetDryRuns() interface{}
-	SetSkipDatasetDryRuns(val interface{})
-	SkipDatasetDryRunsInput() interface{}
+	SkipDatasetDryRuns() any
+	SetSkipDatasetDryRuns(val any)
+	SkipDatasetDryRunsInput() any
 	SourceComment() *string
 	SetSourceComment(val *string)
 	SourceCommentInput() *string
@@ -84,7 +84,7 @@ type ObserveProvider interface {
 	SetUserPassword(val *string)
 	UserPasswordInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -107,17 +107,17 @@ type ObserveProvider interface {
 	ResetSourceFormat()
 	ResetUserEmail()
 	ResetUserPassword()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ObserveProvider
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ObserveProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ObserveProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_ObserveProvider) DomainInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) ExportObjectBindings() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) ExportObjectBindings() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportObjectBindings",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ObserveProvider) ExportObjectBindings() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) ExportObjectBindingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) ExportObjectBindingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportObjectBindingsInput",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_ObserveProvider) HttpClientTimeoutInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) Insecure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) Insecure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecure",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_ObserveProvider) Insecure() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) InsecureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) InsecureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureInput",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_ObserveProvider) ManagingObjectIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ObserveProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_ObserveProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_ObserveProvider) RetryWaitInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) SkipDatasetDryRuns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) SkipDatasetDryRuns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDatasetDryRuns",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_ObserveProvider) SkipDatasetDryRuns() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) SkipDatasetDryRunsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObserveProvider) SkipDatasetDryRunsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDatasetDryRunsInput",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_ObserveProvider) UserPasswordInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs observe} Resource.
 func NewObserveProvider(scope constructs.Construct, id *string, config *ObserveProviderConfig) ObserveProvider {
 	_init_.Initialize()
@@ -577,7 +576,7 @@ func NewObserveProvider(scope constructs.Construct, id *string, config *ObserveP
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.provider.ObserveProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewObserveProvider_Override(o ObserveProvider, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.provider.ObserveProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetAlias(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ObserveProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetApiToken(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetApiToken(val *string) {
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ObserveProvider)SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetCustomer(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetCustomer(val *string) {
 	_jsii_.Set(
 		j,
 		"customer",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_ObserveProvider)SetCustomer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetDefaultRematerializationMode(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetDefaultRematerializationMode(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultRematerializationMode",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ObserveProvider)SetDefaultRematerializationMode(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetDomain(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"domain",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_ObserveProvider)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetExportObjectBindings(val interface{}) {
+func (j *jsiiProxy_ObserveProvider) SetExportObjectBindings(val any) {
 	if err := j.validateSetExportObjectBindingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_ObserveProvider)SetExportObjectBindings(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetFlags(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetFlags(val *string) {
 	_jsii_.Set(
 		j,
 		"flags",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_ObserveProvider)SetFlags(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetHttpClientTimeout(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetHttpClientTimeout(val *string) {
 	_jsii_.Set(
 		j,
 		"httpClientTimeout",
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ObserveProvider)SetHttpClientTimeout(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetInsecure(val interface{}) {
+func (j *jsiiProxy_ObserveProvider) SetInsecure(val any) {
 	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ObserveProvider)SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetManagingObjectId(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetManagingObjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"managingObjectId",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_ObserveProvider)SetManagingObjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetRetryCount(val *float64) {
+func (j *jsiiProxy_ObserveProvider) SetRetryCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"retryCount",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ObserveProvider)SetRetryCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetRetryWait(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetRetryWait(val *string) {
 	_jsii_.Set(
 		j,
 		"retryWait",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_ObserveProvider)SetRetryWait(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetSkipDatasetDryRuns(val interface{}) {
+func (j *jsiiProxy_ObserveProvider) SetSkipDatasetDryRuns(val any) {
 	if err := j.validateSetSkipDatasetDryRunsParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_ObserveProvider)SetSkipDatasetDryRuns(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetSourceComment(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetSourceComment(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceComment",
@@ -716,7 +715,7 @@ func (j *jsiiProxy_ObserveProvider)SetSourceComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetSourceFormat(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetSourceFormat(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceFormat",
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ObserveProvider)SetSourceFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetUserEmail(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetUserEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"userEmail",
@@ -732,7 +731,7 @@ func (j *jsiiProxy_ObserveProvider)SetUserEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObserveProvider)SetUserPassword(val *string) {
+func (j *jsiiProxy_ObserveProvider) SetUserPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"userPassword",
@@ -752,7 +751,7 @@ func ObserveProvider_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.provider.ObserveProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func ObserveProvider_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ObserveProvider_IsConstruct(x interface{}) *bool {
+func ObserveProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObserveProvider_IsConstructParameters(x); err != nil {
@@ -787,7 +786,7 @@ func ObserveProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.provider.ObserveProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func ObserveProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ObserveProvider_IsTerraformElement(x interface{}) *bool {
+func ObserveProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObserveProvider_IsTerraformElementParameters(x); err != nil {
@@ -806,7 +805,7 @@ func ObserveProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.provider.ObserveProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func ObserveProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ObserveProvider_IsTerraformProvider(x interface{}) *bool {
+func ObserveProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObserveProvider_IsTerraformProviderParameters(x); err != nil {
@@ -825,7 +824,7 @@ func ObserveProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.provider.ObserveProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -843,14 +842,14 @@ func ObserveProvider_TfResourceType() *string {
 	return returns
 }
 
-func (o *jsiiProxy_ObserveProvider) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_ObserveProvider) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -861,7 +860,7 @@ func (o *jsiiProxy_ObserveProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1001,8 +1000,8 @@ func (o *jsiiProxy_ObserveProvider) ResetUserPassword() {
 	)
 }
 
-func (o *jsiiProxy_ObserveProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_ObserveProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1014,8 +1013,8 @@ func (o *jsiiProxy_ObserveProvider) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (o *jsiiProxy_ObserveProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_ObserveProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1027,8 +1026,8 @@ func (o *jsiiProxy_ObserveProvider) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (o *jsiiProxy_ObserveProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObserveProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1040,8 +1039,8 @@ func (o *jsiiProxy_ObserveProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_ObserveProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObserveProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1066,8 +1065,8 @@ func (o *jsiiProxy_ObserveProvider) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_ObserveProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObserveProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1078,4 +1077,3 @@ func (o *jsiiProxy_ObserveProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

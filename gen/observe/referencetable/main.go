@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.referenceTable.ReferenceTable",
-		reflect.TypeOf((*ReferenceTable)(nil)).Elem(),
+		reflect.TypeFor[ReferenceTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReferenceTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.referenceTable.ReferenceTableConfig",
-		reflect.TypeOf((*ReferenceTableConfig)(nil)).Elem(),
+		reflect.TypeFor[ReferenceTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.referenceTable.ReferenceTableSchema",
-		reflect.TypeOf((*ReferenceTableSchema)(nil)).Elem(),
+		reflect.TypeFor[ReferenceTableSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.referenceTable.ReferenceTableSchemaList",
-		reflect.TypeOf((*ReferenceTableSchemaList)(nil)).Elem(),
+		reflect.TypeFor[ReferenceTableSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReferenceTableSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.referenceTable.ReferenceTableSchemaOutputReference",
-		reflect.TypeOf((*ReferenceTableSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReferenceTableSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReferenceTableSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

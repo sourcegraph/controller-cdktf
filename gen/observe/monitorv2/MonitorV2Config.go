@@ -6,9 +6,9 @@ import (
 
 type MonitorV2Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitorV2Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The inputs map binds dataset OIDs to labels which can be referenced within stage pipelines.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#inputs MonitorV2#inputs}
@@ -34,11 +34,11 @@ type MonitorV2Config struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#rules MonitorV2#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// stage block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#stage MonitorV2#stage}
-	Stage interface{} `field:"required" json:"stage" yaml:"stage"`
+	Stage any `field:"required" json:"stage" yaml:"stage"`
 	// OID of the workspace this object is contained in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#workspace MonitorV2#workspace}
@@ -46,7 +46,7 @@ type MonitorV2Config struct {
 	// actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#actions MonitorV2#actions}
-	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
+	Actions any `field:"optional" json:"actions" yaml:"actions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#custom_variables MonitorV2#custom_variables}.
 	CustomVariables *string `field:"optional" json:"customVariables" yaml:"customVariables"`
 	// expresses the minimum time that should elapse before data is considered "good enough" to evaluate.
@@ -63,11 +63,11 @@ type MonitorV2Config struct {
 	// Enable/Disable the monitor (and any underlying transforms).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#disabled MonitorV2#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// groupings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#groupings MonitorV2#groupings}
-	Groupings interface{} `field:"optional" json:"groupings" yaml:"groupings"`
+	Groupings any `field:"optional" json:"groupings" yaml:"groupings"`
 	// URL of the monitor icon.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#icon_url MonitorV2#icon_url}
@@ -100,4 +100,3 @@ type MonitorV2Config struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#scheduling MonitorV2#scheduling}
 	Scheduling *MonitorV2Scheduling `field:"optional" json:"scheduling" yaml:"scheduling"`
 }
-

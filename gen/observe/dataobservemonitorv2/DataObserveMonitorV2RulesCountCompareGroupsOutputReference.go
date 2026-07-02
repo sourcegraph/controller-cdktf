@@ -11,14 +11,14 @@ import (
 type DataObserveMonitorV2RulesCountCompareGroupsOutputReference interface {
 	cdktf.ComplexObject
 	Column() DataObserveMonitorV2RulesCountCompareGroupsColumnList
-	ColumnInput() interface{}
+	ColumnInput() any
 	CompareValues() DataObserveMonitorV2RulesCountCompareGroupsCompareValuesList
-	CompareValuesInput() interface{}
+	CompareValuesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type DataObserveMonitorV2RulesCountCompareGroupsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type DataObserveMonitorV2RulesCountCompareGroupsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type DataObserveMonitorV2RulesCountCompareGroupsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutColumn(value interface{})
-	PutCompareValues(value interface{})
+	PutColumn(value any)
+	PutCompareValues(value any)
 	ResetColumn()
 	ResetCompareValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) ColumnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) ColumnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"columnInput",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) CompareValuesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) CompareValuesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"compareValuesInput",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) T
 	return returns
 }
 
-
 func NewDataObserveMonitorV2RulesCountCompareGroupsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2RulesCountCompareGroupsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDataObserveMonitorV2RulesCountCompareGroupsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesCountCompareGroupsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDataObserveMonitorV2RulesCountCompareGroupsOutputReference_Override(d Da
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesCountCompareGroupsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) C
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) PutColumn(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) PutColumn(value any) {
 	if err := d.validatePutColumnParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putColumn",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) PutCompareValues(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) PutCompareValues(value any) {
 	if err := d.validatePutCompareValuesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCompareValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsOutputReference) T
 
 	return returns
 }
-

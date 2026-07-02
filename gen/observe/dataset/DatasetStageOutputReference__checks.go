@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatasetStageOutputReference) validateSetAliasParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DatasetStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DatasetStageOutputReference) validateSetInputParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DatasetStageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetStageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DatasetStageOutputReference) validateSetInternalValueParamete
 	return nil
 }
 
-func (j *jsiiProxy_DatasetStageOutputReference) validateSetOutputStageParameters(val interface{}) error {
+func (j *jsiiProxy_DatasetStageOutputReference) validateSetOutputStageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewDatasetStageOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

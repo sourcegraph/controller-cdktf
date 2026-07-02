@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitorV2GroupingsLinkColumnOutputReferenceParameters(terraformR
 
 	return nil
 }
-

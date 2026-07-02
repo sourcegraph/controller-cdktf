@@ -98,7 +98,7 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetLinkLabelParamet
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetReverseParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetReverseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewPreferredPathStepOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

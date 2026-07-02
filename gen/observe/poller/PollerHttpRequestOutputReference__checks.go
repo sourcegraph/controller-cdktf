@@ -114,7 +114,7 @@ func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetBodyParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetHeadersParameter
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpRequestOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -286,4 +286,3 @@ func validateNewPollerHttpRequestOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

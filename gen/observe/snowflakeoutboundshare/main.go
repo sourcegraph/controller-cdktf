@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShare",
-		reflect.TypeOf((*SnowflakeOutboundShare)(nil)).Elem(),
+		reflect.TypeFor[SnowflakeOutboundShare](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SnowflakeOutboundShare{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,11 +76,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShareAccount",
-		reflect.TypeOf((*SnowflakeOutboundShareAccount)(nil)).Elem(),
+		reflect.TypeFor[SnowflakeOutboundShareAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShareAccountList",
-		reflect.TypeOf((*SnowflakeOutboundShareAccountList)(nil)).Elem(),
+		reflect.TypeFor[SnowflakeOutboundShareAccountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SnowflakeOutboundShareAccountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShareAccountOutputReference",
-		reflect.TypeOf((*SnowflakeOutboundShareAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SnowflakeOutboundShareAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SnowflakeOutboundShareAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,6 +138,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.snowflakeOutboundShare.SnowflakeOutboundShareConfig",
-		reflect.TypeOf((*SnowflakeOutboundShareConfig)(nil)).Elem(),
+		reflect.TypeFor[SnowflakeOutboundShareConfig](),
 	)
 }

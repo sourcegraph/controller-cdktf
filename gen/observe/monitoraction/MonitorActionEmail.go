@@ -1,6 +1,5 @@
 package monitoraction
 
-
 type MonitorActionEmail struct {
 	// Template string used to fill body of the email.
 	//
@@ -17,6 +16,5 @@ type MonitorActionEmail struct {
 	// send the email as html allowing rich formatting in the body.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_action#is_html MonitorAction#is_html}
-	IsHtml interface{} `field:"optional" json:"isHtml" yaml:"isHtml"`
+	IsHtml any `field:"optional" json:"isHtml" yaml:"isHtml"`
 }
-

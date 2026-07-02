@@ -106,7 +106,7 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetAssumeRoleArnPar
 	return nil
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPollerAwsSnapshotOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

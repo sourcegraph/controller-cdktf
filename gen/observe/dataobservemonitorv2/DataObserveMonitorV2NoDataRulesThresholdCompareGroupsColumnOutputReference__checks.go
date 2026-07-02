@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOu
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validatePutColumnPathParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validatePutColumnPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOu
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validatePutLinkColumnParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validatePutLinkColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOu
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOu
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnOutpu
 
 	return nil
 }
-

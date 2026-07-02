@@ -1,6 +1,5 @@
 package poller
 
-
 type PollerHttp struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#body Poller#body}.
 	Body *string `field:"optional" json:"body" yaml:"body"`
@@ -15,11 +14,11 @@ type PollerHttp struct {
 	// request block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#request Poller#request}
-	Request interface{} `field:"optional" json:"request" yaml:"request"`
+	Request any `field:"optional" json:"request" yaml:"request"`
 	// rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#rule Poller#rule}
-	Rule interface{} `field:"optional" json:"rule" yaml:"rule"`
+	Rule any `field:"optional" json:"rule" yaml:"rule"`
 	// template block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#template Poller#template}
@@ -27,6 +26,5 @@ type PollerHttp struct {
 	// timestamp block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#timestamp Poller#timestamp}
-	Timestamp interface{} `field:"optional" json:"timestamp" yaml:"timestamp"`
+	Timestamp any `field:"optional" json:"timestamp" yaml:"timestamp"`
 }
-

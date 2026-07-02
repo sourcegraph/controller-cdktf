@@ -19,7 +19,7 @@ func (p *jsiiProxy_PreferredPath) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPath) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PreferredPath) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PreferredPath) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPath) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PreferredPath) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PreferredPath) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPath) validatePutStepParameters(value interface{}) error {
+func (p *jsiiProxy_PreferredPath) validatePutStepParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validatePreferredPath_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validatePreferredPath_IsConstructParameters(x interface{}) error {
+func validatePreferredPath_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validatePreferredPath_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePreferredPath_IsTerraformElementParameters(x interface{}) error {
+func validatePreferredPath_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validatePreferredPath_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePreferredPath_IsTerraformResourceParameters(x interface{}) error {
+func validatePreferredPath_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validatePreferredPath_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPath) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPath) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_PreferredPath) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPath) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPath) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_PreferredPath) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPath) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PreferredPath) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewPreferredPathParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

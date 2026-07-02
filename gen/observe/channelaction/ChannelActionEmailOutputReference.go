@@ -15,9 +15,9 @@ type ChannelActionEmailOutputReference interface {
 	BodyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type ChannelActionEmailOutputReference interface {
 	Fqn() *string
 	InternalValue() *ChannelActionEmail
 	SetInternalValue(val *ChannelActionEmail)
-	IsHtml() interface{}
-	SetIsHtml(val interface{})
-	IsHtmlInput() interface{}
+	IsHtml() any
+	SetIsHtml(val any)
+	IsHtmlInput() any
 	Subject() *string
 	SetSubject(val *string)
 	SubjectInput() *string
@@ -52,7 +52,7 @@ type ChannelActionEmailOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type ChannelActionEmailOutputReference interface {
 	ResetIsHtml()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) BodyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelActionEmailOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) InternalValue() *ChannelAc
 	return returns
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference) IsHtml() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelActionEmailOutputReference) IsHtml() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHtml",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) IsHtml() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference) IsHtmlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChannelActionEmailOutputReference) IsHtmlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHtmlInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) ToInput() *[]*string {
 	return returns
 }
 
-
 func NewChannelActionEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChannelActionEmailOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewChannelActionEmailOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewChannelActionEmailOutputReference_Override(c ChannelActionEmailOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetBody(val *string) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetBody(val *string) {
 	if err := j.validateSetBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetInternalValue(val *ChannelActionEmail) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetInternalValue(val *ChannelActionEmail) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetInternalValue(val *Chann
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetIsHtml(val interface{}) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetIsHtml(val any) {
 	if err := j.validateSetIsHtmlParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetIsHtml(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetSubject(val *string) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetSubject(val *string) {
 	if err := j.validateSetSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetSubject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTo(val *[]*string) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) SetTo(val *[]*string) {
 	if err := j.validateSetToParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) ResetIsHtml() {
 	)
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) ToString() *string {
 
 	return returns
 }
-

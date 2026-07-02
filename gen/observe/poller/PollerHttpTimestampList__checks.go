@@ -34,7 +34,7 @@ func (p *jsiiProxy_PollerHttpTimestampList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTimestampList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpTimestampList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPollerHttpTimestampListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

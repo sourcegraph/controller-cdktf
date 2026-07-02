@@ -1,11 +1,10 @@
 package poller
 
-
 type PollerCloudwatchMetricsQueryResourceFilter struct {
 	// tag_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#tag_filter Poller#tag_filter}
-	TagFilter interface{} `field:"required" json:"tagFilter" yaml:"tagFilter"`
+	TagFilter any `field:"required" json:"tagFilter" yaml:"tagFilter"`
 	// Metric dimension name for resource identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#dimension_name Poller#dimension_name}
@@ -19,4 +18,3 @@ type PollerCloudwatchMetricsQueryResourceFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#resource_type Poller#resource_type}
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
 }
-

@@ -18,9 +18,9 @@ type DataObserveMonitorRuleThresholdOutputReference interface {
 	CompareValuesInput() *[]*float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DataObserveMonitorRuleThresholdOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LookbackTime() *string
 	SetLookbackTime(val *string)
 	LookbackTimeInput() *string
@@ -52,7 +52,7 @@ type DataObserveMonitorRuleThresholdOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DataObserveMonitorRuleThresholdOutputReference interface {
 	ResetThresholdAggFunction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) CompareValues
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ThresholdAggF
 	return returns
 }
 
-
 func NewDataObserveMonitorRuleThresholdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorRuleThresholdOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDataObserveMonitorRuleThresholdOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDataObserveMonitorRuleThresholdOutputReference_Override(d DataObserveMon
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetCompareFunction(val *string) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetCompareFunction(val *string) {
 	if err := j.validateSetCompareFunctionParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetCompareFunc
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetCompareValues(val *[]*float64) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetCompareValues(val *[]*float64) {
 	if err := j.validateSetCompareValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetCompareValu
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetLookbackTime(val *string) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetLookbackTime(val *string) {
 	if err := j.validateSetLookbackTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetLookbackTim
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference)SetThresholdAggFunction(val *string) {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) SetThresholdAggFunction(val *string) {
 	if err := j.validateSetThresholdAggFunctionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ResetThreshol
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdOutputReference) ToString() *s
 
 	return returns
 }
-

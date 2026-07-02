@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveReferenceTable.DataObserveReferenceTable",
-		reflect.TypeOf((*DataObserveReferenceTable)(nil)).Elem(),
+		reflect.TypeFor[DataObserveReferenceTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveReferenceTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,15 +67,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveReferenceTable.DataObserveReferenceTableConfig",
-		reflect.TypeOf((*DataObserveReferenceTableConfig)(nil)).Elem(),
+		reflect.TypeFor[DataObserveReferenceTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveReferenceTable.DataObserveReferenceTableSchema",
-		reflect.TypeOf((*DataObserveReferenceTableSchema)(nil)).Elem(),
+		reflect.TypeFor[DataObserveReferenceTableSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveReferenceTable.DataObserveReferenceTableSchemaList",
-		reflect.TypeOf((*DataObserveReferenceTableSchemaList)(nil)).Elem(),
+		reflect.TypeFor[DataObserveReferenceTableSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveReferenceTableSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -97,7 +97,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveReferenceTable.DataObserveReferenceTableSchemaOutputReference",
-		reflect.TypeOf((*DataObserveReferenceTableSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataObserveReferenceTableSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveReferenceTableSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

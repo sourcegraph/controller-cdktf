@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorStageOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveMonitorStageOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorStageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorStageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveMonitorStageOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

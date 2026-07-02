@@ -6,9 +6,9 @@ import (
 
 type DatasetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DatasetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The inputs map binds dataset OIDs to labels which can be referenced within stage pipelines.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#inputs Dataset#inputs}
@@ -30,7 +30,7 @@ type DatasetConfig struct {
 	// stage block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#stage Dataset#stage}
-	Stage interface{} `field:"required" json:"stage" yaml:"stage"`
+	Stage any `field:"required" json:"stage" yaml:"stage"`
 	// OID of the workspace this object is contained in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#workspace Dataset#workspace}
@@ -38,7 +38,7 @@ type DatasetConfig struct {
 	// Disables periodic materialization of the dataset.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#acceleration_disabled Dataset#acceleration_disabled}
-	AccelerationDisabled interface{} `field:"optional" json:"accelerationDisabled" yaml:"accelerationDisabled"`
+	AccelerationDisabled any `field:"optional" json:"accelerationDisabled" yaml:"accelerationDisabled"`
 	// Source of disabled materialization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#acceleration_disabled_source Dataset#acceleration_disabled_source}
@@ -99,4 +99,3 @@ type DatasetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset#storage_integration Dataset#storage_integration}
 	StorageIntegration *string `field:"optional" json:"storageIntegration" yaml:"storageIntegration"`
 }
-

@@ -12,9 +12,9 @@ type MonitorV2SchedulingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type MonitorV2SchedulingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type MonitorV2SchedulingOutputReference interface {
 	ResetTransform()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_MonitorV2SchedulingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_MonitorV2SchedulingOutputReference) TransformInput() *Monitor
 	return returns
 }
 
-
 func NewMonitorV2SchedulingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2SchedulingOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewMonitorV2SchedulingOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2SchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewMonitorV2SchedulingOutputReference_Override(m MonitorV2SchedulingOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2SchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetInternalValue(val *MonitorV2Scheduling) {
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) SetInternalValue(val *MonitorV2Scheduling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetInternalValue(val *Moni
 	)
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2SchedulingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,16 +313,16 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) PutInterval(value *Monito
 	_jsii_.InvokeVoid(
 		m,
 		"putInterval",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -505,7 +504,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) PutScheduled(value *Monit
 	_jsii_.InvokeVoid(
 		m,
 		"putScheduled",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -516,7 +515,7 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) PutTransform(value *Monit
 	_jsii_.InvokeVoid(
 		m,
 		"putTransform",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) ResetTransform() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2SchedulingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2SchedulingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_MonitorV2SchedulingOutputReference) ToString() *string {
 
 	return returns
 }
-

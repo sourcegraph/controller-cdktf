@@ -19,7 +19,7 @@ func (p *jsiiProxy_Poller) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (p *jsiiProxy_Poller) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_Poller) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_Poller) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_Poller) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_Poller) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validatePoller_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validatePoller_IsConstructParameters(x interface{}) error {
+func validatePoller_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validatePoller_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePoller_IsTerraformElementParameters(x interface{}) error {
+func validatePoller_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validatePoller_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePoller_IsTerraformResourceParameters(x interface{}) error {
+func validatePoller_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validatePoller_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Poller) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -354,7 +354,7 @@ func (j *jsiiProxy_Poller) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Poller) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -419,7 +419,7 @@ func (j *jsiiProxy_Poller) validateSetDatastreamParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_Poller) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func (j *jsiiProxy_Poller) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Poller) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -525,7 +525,7 @@ func (j *jsiiProxy_Poller) validateSetRetriesParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetSkipExternalValidationParameters(val interface{}) error {
+func (j *jsiiProxy_Poller) validateSetSkipExternalValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -579,4 +579,3 @@ func validateNewPollerParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

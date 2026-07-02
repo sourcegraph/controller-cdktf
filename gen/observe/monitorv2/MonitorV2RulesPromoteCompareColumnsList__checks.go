@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2RulesPromoteCompareColumnsListParameters(terraformResou
 
 	return nil
 }
-

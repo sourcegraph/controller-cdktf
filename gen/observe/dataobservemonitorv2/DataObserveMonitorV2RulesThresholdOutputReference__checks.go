@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateIn
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validatePutCompareGroupsParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validatePutCompareGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataObserveMonitorV2RulesThresholdOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOu
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOu
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsComparisonOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveMonitorV2ActionsConditionsCompareTermsComparisonOutpu
 
 	return nil
 }
-

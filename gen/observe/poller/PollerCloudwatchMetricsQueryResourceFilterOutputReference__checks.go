@@ -90,7 +90,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) va
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validatePutTagFilterParameters(value interface{}) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validatePutTagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewPollerCloudwatchMetricsQueryResourceFilterOutputReferenceParamet
 
 	return nil
 }
-

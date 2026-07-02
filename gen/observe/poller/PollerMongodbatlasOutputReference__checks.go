@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PollerMongodbatlasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerMongodbatlasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPollerMongodbatlasOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

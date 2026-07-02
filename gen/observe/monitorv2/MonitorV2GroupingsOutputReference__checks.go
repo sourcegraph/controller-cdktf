@@ -120,7 +120,7 @@ func (m *jsiiProxy_MonitorV2GroupingsOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2GroupingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_MonitorV2GroupingsOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2GroupingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewMonitorV2GroupingsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

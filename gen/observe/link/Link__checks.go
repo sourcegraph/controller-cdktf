@@ -19,7 +19,7 @@ func (l *jsiiProxy_Link) validateAddMoveTargetParameters(moveTarget *string) err
 	return nil
 }
 
-func (l *jsiiProxy_Link) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_Link) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_Link) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Link) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_Link) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLink_GenerateConfigForImportParameters(scope constructs.Construct, 
 	return nil
 }
 
-func validateLink_IsConstructParameters(x interface{}) error {
+func validateLink_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLink_IsTerraformElementParameters(x interface{}) error {
+func validateLink_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLink_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLink_IsTerraformResourceParameters(x interface{}) error {
+func validateLink_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateLink_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Link) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Link) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Link) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Link) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Link) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Link) validateSetLifecycleParameters(val *cdktf.TerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_Link) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Link) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewLinkParameters(scope constructs.Construct, id *string, config *L
 
 	return nil
 }
-

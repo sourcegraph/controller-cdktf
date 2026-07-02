@@ -123,7 +123,7 @@ func (m *jsiiProxy_MonitorRuleOutputReference) validatePutFacetParameters(value 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleOutputReference) validatePutGroupByGroupParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorRuleOutputReference) validatePutGroupByGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (m *jsiiProxy_MonitorRuleOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -303,4 +303,3 @@ func validateNewMonitorRuleOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

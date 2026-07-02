@@ -1,6 +1,5 @@
 package monitorv2
 
-
 type MonitorV2NoDataRulesThresholdCompareValues struct {
 	// the type of comparison (greater, less, equal, etc.).
 	//
@@ -9,7 +8,7 @@ type MonitorV2NoDataRulesThresholdCompareValues struct {
 	// list of size <=1 consisting of a boolean value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#value_bool MonitorV2#value_bool}
-	ValueBool interface{} `field:"optional" json:"valueBool" yaml:"valueBool"`
+	ValueBool any `field:"optional" json:"valueBool" yaml:"valueBool"`
 	// list of size <=1 consisting of a duration value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#value_duration MonitorV2#value_duration}
@@ -31,4 +30,3 @@ type MonitorV2NoDataRulesThresholdCompareValues struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#value_timestamp MonitorV2#value_timestamp}
 	ValueTimestamp *[]*string `field:"optional" json:"valueTimestamp" yaml:"valueTimestamp"`
 }
-

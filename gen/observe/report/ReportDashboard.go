@@ -1,6 +1,5 @@
 package report
 
-
 type ReportDashboard struct {
 	// The ID of the dashboard to be used for the report.
 	//
@@ -19,6 +18,5 @@ type ReportDashboard struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/report#parameters Report#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReportCreatedByOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_ReportCreatedByOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportCreatedByOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewReportCreatedByOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

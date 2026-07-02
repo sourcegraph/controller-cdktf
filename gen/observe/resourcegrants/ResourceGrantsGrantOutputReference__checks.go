@@ -98,7 +98,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewResourceGrantsGrantOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

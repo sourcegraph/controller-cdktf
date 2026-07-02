@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) validateInterpolat
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReportDashboardOutputReference) validatePutParametersParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveReportDashboardOutputReference) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDataObserveReportDashboardOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

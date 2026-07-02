@@ -12,9 +12,9 @@ type MonitorV2GroupingsColumnPathOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type MonitorV2GroupingsColumnPathOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type MonitorV2GroupingsColumnPathOutputReference interface {
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_MonitorV2GroupingsColumnPathOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewMonitorV2GroupingsColumnPathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2GroupingsColumnPathOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewMonitorV2GroupingsColumnPathOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2GroupingsColumnPathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewMonitorV2GroupingsColumnPathOutputReference_Override(m MonitorV2Grouping
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2GroupingsColumnPathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetInternalValue(val *MonitorV2GroupingsColumnPath) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetInternalValue(val *MonitorV2GroupingsColumnPath) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetName(val *string) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetName(val *stri
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetPath(val *stri
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) ResetPath() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (m *jsiiProxy_MonitorV2GroupingsColumnPathOutputReference) ToString() *stri
 
 	return returns
 }
-

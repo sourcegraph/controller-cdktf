@@ -10,14 +10,14 @@ import (
 
 type RbacStatementSubjectOutputReference interface {
 	cdktf.ComplexObject
-	All() interface{}
-	SetAll(val interface{})
-	AllInput() interface{}
+	All() any
+	SetAll(val any)
+	AllInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type RbacStatementSubjectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type RbacStatementSubjectOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_RbacStatementSubjectOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference) All() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) All() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"all",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference) All() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference) AllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) AllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference) AllInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference) UserInput() *string {
 	return returns
 }
 
-
 func NewRbacStatementSubjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RbacStatementSubjectOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewRbacStatementSubjectOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewRbacStatementSubjectOutputReference_Override(r RbacStatementSubjectOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.rbacStatement.RbacStatementSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetAll(val interface{}) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetAll(val any) {
 	if err := j.validateSetAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetAll(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetInternalValue(val *RbacStatementSubject) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetInternalValue(val *RbacStatementSubject) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetInternalValue(val *Rba
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) ResetUser() {
 	)
 }
 
-func (r *jsiiProxy_RbacStatementSubjectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RbacStatementSubjectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) ToString() *string {
 
 	return returns
 }
-

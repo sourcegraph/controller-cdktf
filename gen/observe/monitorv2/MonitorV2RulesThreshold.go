@@ -1,6 +1,5 @@
 package monitorv2
 
-
 type MonitorV2RulesThreshold struct {
 	// The query aggregator (AllOf, AnyOf, AvgOf, Max, Min, SumOf) for the value monitor type.
 	//
@@ -13,10 +12,9 @@ type MonitorV2RulesThreshold struct {
 	// compare_groups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#compare_groups MonitorV2#compare_groups}
-	CompareGroups interface{} `field:"optional" json:"compareGroups" yaml:"compareGroups"`
+	CompareGroups any `field:"optional" json:"compareGroups" yaml:"compareGroups"`
 	// compare_values block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2#compare_values MonitorV2#compare_values}
-	CompareValues interface{} `field:"optional" json:"compareValues" yaml:"compareValues"`
+	CompareValues any `field:"optional" json:"compareValues" yaml:"compareValues"`
 }
-

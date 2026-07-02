@@ -12,9 +12,9 @@ type WorkspaceDefaultGrantsGroupOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type WorkspaceDefaultGrantsGroupOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ObjectTypes() *[]*string
 	SetObjectTypes(val *[]*string)
 	ObjectTypesInput() *[]*string
@@ -49,7 +49,7 @@ type WorkspaceDefaultGrantsGroupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type WorkspaceDefaultGrantsGroupOutputReference interface {
 	ResetObjectTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewWorkspaceDefaultGrantsGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkspaceDefaultGrantsGroupOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewWorkspaceDefaultGrantsGroupOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewWorkspaceDefaultGrantsGroupOutputReference_Override(w WorkspaceDefaultGr
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.workspaceDefaultGrants.WorkspaceDefaultGrantsGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetObjectTypes(val *[]*string) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetObjectTypes(val *[]*string) {
 	if err := j.validateSetObjectTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetObjectTypes(val
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetOid(val *string) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetOid(val *string) {
 	if err := j.validateSetOidParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetOid(val *string
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetPermission(val *string) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetPermission(val *string) {
 	if err := j.validateSetPermissionParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetPermission(val 
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) ResetObjectTypes(
 	)
 }
 
-func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) ToString() *strin
 
 	return returns
 }
-

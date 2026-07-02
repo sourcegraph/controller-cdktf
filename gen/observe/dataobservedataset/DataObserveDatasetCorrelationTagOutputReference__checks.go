@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveDatasetCorrelationTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveDatasetCorrelationTagOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateInter
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validatePutThresholdParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validatePutThresholdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDataObserveMonitorV2NoDataRulesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerHttpRuleDecoderOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpRuleDecoderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpRuleDecoderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPollerHttpRuleDecoderOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

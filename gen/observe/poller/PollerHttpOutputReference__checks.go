@@ -90,7 +90,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validateInterpolationForAttributeP
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) validatePutRequestParameters(value interface{}) error {
+func (p *jsiiProxy_PollerHttpOutputReference) validatePutRequestParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutRequestParameters(value
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) validatePutRuleParameters(value interface{}) error {
+func (p *jsiiProxy_PollerHttpOutputReference) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutTemplateParameters(valu
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) validatePutTimestampParameters(value interface{}) error {
+func (p *jsiiProxy_PollerHttpOutputReference) validatePutTimestampParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_PollerHttpOutputReference) validateSetBodyParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -342,4 +342,3 @@ func validateNewPollerHttpOutputReferenceParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

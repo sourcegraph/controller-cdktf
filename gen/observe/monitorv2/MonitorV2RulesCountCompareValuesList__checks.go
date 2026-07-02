@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2RulesCountCompareValuesListParameters(terraformResource
 
 	return nil
 }
-

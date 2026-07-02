@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validatePutCompareGroupsParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validatePutCompareGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validatePutCom
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataObserveMonitorV2RulesCountOutputReferenceParameters(terrafor
 
 	return nil
 }
-

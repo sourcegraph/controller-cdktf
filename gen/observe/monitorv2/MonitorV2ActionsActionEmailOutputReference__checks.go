@@ -114,7 +114,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetBodyPa
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitorV2ActionsActionEmailOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

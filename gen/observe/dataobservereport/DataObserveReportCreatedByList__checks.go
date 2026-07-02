@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveReportCreatedByList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveReportCreatedByListParameters(terraformResource cdktf
 
 	return nil
 }
-

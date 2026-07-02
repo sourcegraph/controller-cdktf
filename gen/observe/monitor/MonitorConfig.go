@@ -6,9 +6,9 @@ import (
 
 type MonitorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The inputs map binds dataset OIDs to labels which can be referenced within stage pipelines.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#inputs Monitor#inputs}
@@ -34,7 +34,7 @@ type MonitorConfig struct {
 	// stage block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#stage Monitor#stage}
-	Stage interface{} `field:"required" json:"stage" yaml:"stage"`
+	Stage any `field:"required" json:"stage" yaml:"stage"`
 	// OID of the workspace this object is contained in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#workspace Monitor#workspace}
@@ -54,7 +54,7 @@ type MonitorConfig struct {
 	// Set to `true` to disable monitor.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#disabled Monitor#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Target freshness for results.
 	//
 	// Tighten the freshness to increase the
@@ -75,10 +75,9 @@ type MonitorConfig struct {
 	// This resource is template for creating new monitors.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#is_template Monitor#is_template}
-	IsTemplate interface{} `field:"optional" json:"isTemplate" yaml:"isTemplate"`
+	IsTemplate any `field:"optional" json:"isTemplate" yaml:"isTemplate"`
 	// notification_spec block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor#notification_spec Monitor#notification_spec}
 	NotificationSpec *MonitorNotificationSpec `field:"optional" json:"notificationSpec" yaml:"notificationSpec"`
 }
-

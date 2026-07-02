@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateInterpo
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutCompareGroupsParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutCompareGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutComp
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetAggr
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewMonitorV2NoDataRulesThresholdOutputReferenceParameters(terraform
 
 	return nil
 }
-

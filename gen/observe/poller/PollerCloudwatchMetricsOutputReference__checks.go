@@ -90,7 +90,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateInterpolation
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validatePutQueryParameters(value interface{}) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validatePutQueryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetAssumeRole
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewPollerCloudwatchMetricsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

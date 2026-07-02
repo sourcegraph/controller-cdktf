@@ -18,9 +18,9 @@ type MonitorV2ActionsActionEmailOutputReference interface {
 	BodyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type MonitorV2ActionsActionEmailOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type MonitorV2ActionsActionEmailOutputReference interface {
 	ResetUsers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) BodyInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) UsersInput() *[]*
 	return returns
 }
 
-
 func NewMonitorV2ActionsActionEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2ActionsActionEmailOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewMonitorV2ActionsActionEmailOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2ActionsActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewMonitorV2ActionsActionEmailOutputReference_Override(m MonitorV2ActionsAc
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2.MonitorV2ActionsActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetAddresses(val *[]*string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetAddresses(val *[]*string) {
 	if err := j.validateSetAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetAddresses(val *
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetBody(val *string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetBody(val *string) {
 	if err := j.validateSetBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetBody(val *strin
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetFragments(val *string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetFragments(val *string) {
 	if err := j.validateSetFragmentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetFragments(val *
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetInternalValue(val *MonitorV2ActionsActionEmail) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetInternalValue(val *MonitorV2ActionsActionEmail) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetSubject(val *string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetSubject(val *string) {
 	if err := j.validateSetSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetSubject(val *st
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference)SetUsers(val *[]*string) {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) SetUsers(val *[]*string) {
 	if err := j.validateSetUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) ResetUsers() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type DataObserveReportDashboardOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,11 +28,11 @@ type DataObserveReportDashboardOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Label() *string
 	Parameters() DataObserveReportDashboardParametersList
-	ParametersInput() interface{}
+	ParametersInput() any
 	QueryWindowDurationMinutes() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -45,7 +45,7 @@ type DataObserveReportDashboardOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type DataObserveReportDashboardOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParameters(value interface{})
+	PutParameters(value any)
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_DataObserveReportDashboardOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference) Parameters() DataO
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference) ParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) ParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parametersInput",
@@ -203,7 +203,6 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewDataObserveReportDashboardOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveReportDashboardOutputReference {
 	_init_.Initialize()
 
@@ -214,7 +213,7 @@ func NewDataObserveReportDashboardOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -226,12 +225,12 @@ func NewDataObserveReportDashboardOutputReference_Override(d DataObserveReportDa
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveReportDashboardOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,21 +464,21 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportDashboardOutputReference) PutParameters(value interface{}) {
+func (d *jsiiProxy_DataObserveReportDashboardOutputReference) PutParameters(value any) {
 	if err := d.validatePutParametersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -491,16 +490,16 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) ResetParameters() 
 	)
 }
 
-func (d *jsiiProxy_DataObserveReportDashboardOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataObserveReportDashboardOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -519,4 +518,3 @@ func (d *jsiiProxy_DataObserveReportDashboardOutputReference) ToString() *string
 
 	return returns
 }
-

@@ -146,7 +146,7 @@ func (j *jsiiProxy_MonitorRuleChangeOutputReference) validateSetCompareValuesPar
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleChangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorRuleChangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewMonitorRuleChangeOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-
