@@ -106,7 +106,7 @@ func (j *jsiiProxy_RateLimitCorrelateOutputReference) validateSetByParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitCorrelateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitCorrelateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRateLimitCorrelateOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

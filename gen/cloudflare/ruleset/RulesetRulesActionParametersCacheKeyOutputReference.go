@@ -10,17 +10,17 @@ import (
 
 type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	cdktf.ComplexObject
-	CacheByDeviceType() interface{}
-	SetCacheByDeviceType(val interface{})
-	CacheByDeviceTypeInput() interface{}
-	CacheDeceptionArmor() interface{}
-	SetCacheDeceptionArmor(val interface{})
-	CacheDeceptionArmorInput() interface{}
+	CacheByDeviceType() any
+	SetCacheByDeviceType(val any)
+	CacheByDeviceTypeInput() any
+	CacheDeceptionArmor() any
+	SetCacheDeceptionArmor(val any)
+	CacheDeceptionArmorInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,14 +32,14 @@ type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomKey() RulesetRulesActionParametersCacheKeyCustomKeyList
-	CustomKeyInput() interface{}
+	CustomKeyInput() any
 	// Experimental.
 	Fqn() *string
-	IgnoreQueryStringsOrder() interface{}
-	SetIgnoreQueryStringsOrder(val interface{})
-	IgnoreQueryStringsOrderInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IgnoreQueryStringsOrder() any
+	SetIgnoreQueryStringsOrder(val any)
+	IgnoreQueryStringsOrderInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomKey(value interface{})
+	PutCustomKey(value any)
 	ResetCacheByDeviceType()
 	ResetCacheDeceptionArmor()
 	ResetCustomKey()
 	ResetIgnoreQueryStringsOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByDeviceType() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByDeviceType() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheByDeviceType",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByD
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByDeviceTypeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByDeviceTypeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheByDeviceTypeInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheByD
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDeceptionArmor() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDeceptionArmor() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheDeceptionArmor",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDec
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDeceptionArmorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDeceptionArmorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheDeceptionArmorInput",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CacheDec
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKe
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customKeyInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQueryStringsOrder() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQueryStringsOrder() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreQueryStringsOrder",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQueryStringsOrderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQueryStringsOrderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreQueryStringsOrderInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Terrafor
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersCacheKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewRulesetRulesActionParametersCacheKeyOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewRulesetRulesActionParametersCacheKeyOutputReference_Override(r RulesetRu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetCacheByDeviceType(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetCacheByDeviceType(val any) {
 	if err := j.validateSetCacheByDeviceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetCacheB
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetCacheDeceptionArmor(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetCacheDeceptionArmor(val any) {
 	if err := j.validateSetCacheDeceptionArmorParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetCacheD
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetIgnoreQueryStringsOrder(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetIgnoreQueryStringsOrder(val any) {
 	if err := j.validateSetIgnoreQueryStringsOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetIgnore
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) ComputeF
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetBoole
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetBoole
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetListA
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetStrin
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) GetStrin
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Interpol
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) PutCustomKey(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) PutCustomKey(value any) {
 	if err := r.validatePutCustomKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putCustomKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) ResetIgn
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) ToString
 
 	return returns
 }
-

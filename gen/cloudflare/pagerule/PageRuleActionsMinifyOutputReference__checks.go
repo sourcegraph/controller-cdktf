@@ -98,7 +98,7 @@ func (p *jsiiProxy_PageRuleActionsMinifyOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsMinifyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PageRuleActionsMinifyOutputReference) validateSetHtmlParamete
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsMinifyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPageRuleActionsMinifyOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

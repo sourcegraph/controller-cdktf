@@ -106,7 +106,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetBack
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetHead
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewAccessOrganizationLoginDesignOutputReferenceParameters(terraform
 
 	return nil
 }
-

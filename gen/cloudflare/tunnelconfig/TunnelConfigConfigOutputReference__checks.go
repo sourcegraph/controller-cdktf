@@ -90,7 +90,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateInterpolationForAt
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) validatePutIngressRuleParameters(value interface{}) error {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) validatePutIngressRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewTunnelConfigConfigOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,21 +25,21 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableCopyPaste() interface{}
-	SetDisableCopyPaste(val interface{})
-	DisableCopyPasteInput() interface{}
-	DisableDownload() interface{}
-	SetDisableDownload(val interface{})
-	DisableDownloadInput() interface{}
-	DisableKeyboard() interface{}
-	SetDisableKeyboard(val interface{})
-	DisableKeyboardInput() interface{}
-	DisablePrinting() interface{}
-	SetDisablePrinting(val interface{})
-	DisablePrintingInput() interface{}
-	DisableUpload() interface{}
-	SetDisableUpload(val interface{})
-	DisableUploadInput() interface{}
+	DisableCopyPaste() any
+	SetDisableCopyPaste(val any)
+	DisableCopyPasteInput() any
+	DisableDownload() any
+	SetDisableDownload(val any)
+	DisableDownloadInput() any
+	DisableKeyboard() any
+	SetDisableKeyboard(val any)
+	DisableKeyboardInput() any
+	DisablePrinting() any
+	SetDisablePrinting(val any)
+	DisablePrintingInput() any
+	DisableUpload() any
+	SetDisableUpload(val any)
+	DisableUploadInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *TeamsRuleRuleSettingsBisoAdminControls
@@ -55,7 +55,7 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	ResetDisableUpload()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableCopyPaste() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableCopyPaste() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableCopyPaste",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableCopyPasteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableCopyPasteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableCopyPasteInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableDownload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableDownload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDownload",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableDownloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableDownloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDownloadInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableKeyboard() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableKeyboard() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableKeyboard",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableKeyboardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableKeyboardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableKeyboardInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisablePrinting() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisablePrinting() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePrinting",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisablePrintingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisablePrintingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePrintingInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableUpload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableUpload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableUpload",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableUploadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableUploadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableUploadInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Terraf
 	return returns
 }
 
-
 func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsBisoAdminControlsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference_Override(t TeamsRu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableCopyPaste(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableCopyPaste(val any) {
 	if err := j.validateSetDisableCopyPasteParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableDownload(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableDownload(val any) {
 	if err := j.validateSetDisableDownloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableKeyboard(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableKeyboard(val any) {
 	if err := j.validateSetDisableKeyboardParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisablePrinting(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisablePrinting(val any) {
 	if err := j.validateSetDisablePrintingParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableUpload(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableUpload(val any) {
 	if err := j.validateSetDisableUploadParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Comput
 	return returns
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBoo
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBoo
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetLis
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetStr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetStr
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Interp
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetD
 	)
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ToStri
 
 	return returns
 }
-

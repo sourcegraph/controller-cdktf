@@ -98,7 +98,7 @@ func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDlpProfileEntryPatternOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

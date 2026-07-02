@@ -106,7 +106,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPageRuleActionsCacheKeyFieldsHeaderOutputReferenceParameters(ter
 
 	return nil
 }
-

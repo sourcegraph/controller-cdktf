@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetDeviceTypeParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetDeviceTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetGeoParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetGeoParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetLangParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference) validateSetLangParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewRulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference
 
 	return nil
 }
-

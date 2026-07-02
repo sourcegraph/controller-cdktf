@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessGroupRequireGsuiteList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupRequireGsuiteList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupRequireGsuiteList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessGroupRequireGsuiteListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

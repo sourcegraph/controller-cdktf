@@ -18,11 +18,11 @@ type DataCloudflareAccountRoles interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,18 +49,18 @@ type DataCloudflareAccountRoles interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Roles() DataCloudflareAccountRolesRolesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataCloudflareAccountRoles interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareAccountRoles
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountRoles) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountRoles) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountRoles) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareAccountRoles) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func DataCloudflareAccountRoles_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataCloudflareAccountRoles_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool {
+func DataCloudflareAccountRoles_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountRoles_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareAccountRoles_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountRoles_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareAccountRoles_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareAccountRoles_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountRoles_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataCloudflareAccountRoles_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataCloudflareAccountRoles_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareAccountRoles) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareAccountRoles) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountRoles) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountRoles) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountRoles) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) ToTerraform() interface{} {
 
 	return returns
 }
-

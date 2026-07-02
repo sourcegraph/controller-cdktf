@@ -98,7 +98,7 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetIdentifierPa
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAddressMapMembershipsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

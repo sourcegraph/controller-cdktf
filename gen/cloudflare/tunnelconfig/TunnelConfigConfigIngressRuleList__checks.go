@@ -34,7 +34,7 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTunnelConfigConfigIngressRuleListParameters(terraformResource cd
 
 	return nil
 }
-

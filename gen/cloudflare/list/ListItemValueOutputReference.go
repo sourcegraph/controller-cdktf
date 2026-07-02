@@ -12,9 +12,9 @@ type ListItemValueOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type ListItemValueOutputReference interface {
 	SetIp(val *string)
 	IpInput() *string
 	Redirect() ListItemValueRedirectList
-	RedirectInput() interface{}
+	RedirectInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type ListItemValueOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type ListItemValueOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRedirect(value interface{})
+	PutRedirect(value any)
 	ResetIp()
 	ResetRedirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ListItemValueOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ListItemValueOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ListItemValueOutputReference) Redirect() ListItemValueRedirec
 	return returns
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference) RedirectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ListItemValueOutputReference) RedirectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"redirectInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ListItemValueOutputReference) TerraformResource() cdktf.IInte
 	return returns
 }
 
-
 func NewListItemValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemValueOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewListItemValueOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewListItemValueOutputReference_Override(l ListItemValueOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetInternalValue(val *ListItemValue) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetInternalValue(val *ListItemValue) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetInternalValue(val *ListItemVa
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetIp(val *string) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ListItemValueOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (l *jsiiProxy_ListItemValueOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_ListItemValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_ListItemValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (l *jsiiProxy_ListItemValueOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (l *jsiiProxy_ListItemValueOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_ListItemValueOutputReference) PutRedirect(value interface{}) {
+func (l *jsiiProxy_ListItemValueOutputReference) PutRedirect(value any) {
 	if err := l.validatePutRedirectParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (l *jsiiProxy_ListItemValueOutputReference) ResetRedirect() {
 	)
 }
 
-func (l *jsiiProxy_ListItemValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_ListItemValueOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (l *jsiiProxy_ListItemValueOutputReference) ToString() *string {
 
 	return returns
 }
-

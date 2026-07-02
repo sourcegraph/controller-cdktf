@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference
 
 	return nil
 }
-

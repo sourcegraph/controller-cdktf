@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetIdentityP
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessPolicyIncludeAzureOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

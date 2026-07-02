@@ -12,9 +12,9 @@ type DlpProfileEntryOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type DlpProfileEntryOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -51,7 +51,7 @@ type DlpProfileEntryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DlpProfileEntryOutputReference interface {
 	ResetPattern()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_DlpProfileEntryOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlpProfileEntryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlpProfileEntryOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlpProfileEntryOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DlpProfileEntryOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
-
 func NewDlpProfileEntryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DlpProfileEntryOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewDlpProfileEntryOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewDlpProfileEntryOutputReference_Override(d DlpProfileEntryOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetId(val *string) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DlpProfileEntryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DlpProfileEntryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) PutPattern(value *DlpProfileE
 	_jsii_.InvokeVoid(
 		d,
 		"putPattern",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) ResetPattern() {
 	)
 }
 
-func (d *jsiiProxy_DlpProfileEntryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DlpProfileEntryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) ToString() *string {
 
 	return returns
 }
-

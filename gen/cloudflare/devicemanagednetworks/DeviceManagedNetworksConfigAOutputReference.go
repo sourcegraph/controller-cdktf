@@ -12,9 +12,9 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DeviceManagedNetworksConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) TlsSockaddrInput
 	return returns
 }
 
-
 func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeviceManagedNetworksConfigAOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDeviceManagedNetworksConfigAOutputReference_Override(d DeviceManagedNetw
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetInternalValue(val *DeviceManagedNetworksConfigA) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetInternalValue(val *DeviceManagedNetworksConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetSha256(val *string) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetSha256(val *string) {
 	if err := j.validateSetSha256Parameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetSha256(val *st
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTlsSockaddr(val *string) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) SetTlsSockaddr(val *string) {
 	if err := j.validateSetTlsSockaddrParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkerScriptKvNamespaceBindingListParameters(terraformResource c
 
 	return nil
 }
-

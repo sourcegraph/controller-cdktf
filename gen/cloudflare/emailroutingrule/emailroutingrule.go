@@ -13,26 +13,26 @@ import (
 type EmailRoutingRule interface {
 	cdktf.TerraformResource
 	Action() EmailRoutingRuleActionList
-	ActionInput() interface{}
+	ActionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,7 +49,7 @@ type EmailRoutingRule interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Matcher() EmailRoutingRuleMatcherList
-	MatcherInput() interface{}
+	MatcherInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -63,16 +63,16 @@ type EmailRoutingRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -82,9 +82,9 @@ type EmailRoutingRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type EmailRoutingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,32 +114,32 @@ type EmailRoutingRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAction(value interface{})
-	PutMatcher(value interface{})
+	PutAction(value any)
+	PutMatcher(value any)
 	ResetEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmailRoutingRule
@@ -157,8 +157,8 @@ func (j *jsiiProxy_EmailRoutingRule) Action() EmailRoutingRuleActionList {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_EmailRoutingRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_EmailRoutingRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailRoutingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_EmailRoutingRule) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_EmailRoutingRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_EmailRoutingRule) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_EmailRoutingRule) Matcher() EmailRoutingRuleMatcherList {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) MatcherInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) MatcherInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matcherInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_EmailRoutingRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmailRoutingRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_EmailRoutingRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_EmailRoutingRule) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailRoutingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_EmailRoutingRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) EmailRoutingRule {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewEmailRoutingRule_Override(e EmailRoutingRule, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmailRoutingRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_EmailRoutingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmailRoutingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetEnabled(val interface{}) {
+func (j *jsiiProxy_EmailRoutingRule) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmailRoutingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetId(val *string) {
+func (j *jsiiProxy_EmailRoutingRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmailRoutingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetName(val *string) {
+func (j *jsiiProxy_EmailRoutingRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetPriority(val *float64) {
+func (j *jsiiProxy_EmailRoutingRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmailRoutingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmailRoutingRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_EmailRoutingRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingRule)SetZoneId(val *string) {
+func (j *jsiiProxy_EmailRoutingRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func EmailRoutingRule_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func EmailRoutingRule_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmailRoutingRule_IsConstruct(x interface{}) *bool {
+func EmailRoutingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailRoutingRule_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func EmailRoutingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func EmailRoutingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmailRoutingRule_IsTerraformElement(x interface{}) *bool {
+func EmailRoutingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailRoutingRule_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func EmailRoutingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func EmailRoutingRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EmailRoutingRule_IsTerraformResource(x interface{}) *bool {
+func EmailRoutingRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailRoutingRule_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func EmailRoutingRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (e *jsiiProxy_EmailRoutingRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmailRoutingRule) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmailRoutingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (e *jsiiProxy_EmailRoutingRule) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (e *jsiiProxy_EmailRoutingRule) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailRoutingRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -899,7 +898,7 @@ func (e *jsiiProxy_EmailRoutingRule) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (e *jsiiProxy_EmailRoutingRule) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (e *jsiiProxy_EmailRoutingRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmailRoutingRule) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (e *jsiiProxy_EmailRoutingRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,29 +958,29 @@ func (e *jsiiProxy_EmailRoutingRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) PutAction(value interface{}) {
+func (e *jsiiProxy_EmailRoutingRule) PutAction(value any) {
 	if err := e.validatePutActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) PutMatcher(value interface{}) {
+func (e *jsiiProxy_EmailRoutingRule) PutMatcher(value any) {
 	if err := e.validatePutMatcherParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMatcher",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (e *jsiiProxy_EmailRoutingRule) ResetPriority() {
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailRoutingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1030,8 +1029,8 @@ func (e *jsiiProxy_EmailRoutingRule) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailRoutingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1043,8 +1042,8 @@ func (e *jsiiProxy_EmailRoutingRule) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailRoutingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1056,8 +1055,8 @@ func (e *jsiiProxy_EmailRoutingRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailRoutingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1082,8 +1081,8 @@ func (e *jsiiProxy_EmailRoutingRule) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailRoutingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1094,4 +1093,3 @@ func (e *jsiiProxy_EmailRoutingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

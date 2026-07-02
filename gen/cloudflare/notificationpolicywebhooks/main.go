@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
-		reflect.TypeOf((*NotificationPolicyWebhooks)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyWebhooks](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyWebhooks{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig",
-		reflect.TypeOf((*NotificationPolicyWebhooksConfig)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyWebhooksConfig](),
 	)
 }

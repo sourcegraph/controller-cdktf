@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoadBalancer) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoadBalancer) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LoadBalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value inte
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interfa
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value int
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value inter
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutRegionPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutRegionPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutRegionPoolsParameters(value interfac
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) e
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func validateLoadBalancer_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateLoadBalancer_IsConstructParameters(x interface{}) error {
+func validateLoadBalancer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func validateLoadBalancer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoadBalancer_IsTerraformElementParameters(x interface{}) error {
+func validateLoadBalancer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -484,7 +484,7 @@ func validateLoadBalancer_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoadBalancer_IsTerraformResourceParameters(x interface{}) error {
+func validateLoadBalancer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -492,7 +492,7 @@ func validateLoadBalancer_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -525,7 +525,7 @@ func (j *jsiiProxy_LoadBalancer) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -598,7 +598,7 @@ func (j *jsiiProxy_LoadBalancer) validateSetDescriptionParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancer) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -650,7 +650,7 @@ func (j *jsiiProxy_LoadBalancer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoadBalancer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -696,7 +696,7 @@ func (j *jsiiProxy_LoadBalancer) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetProxiedParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancer) validateSetProxiedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -774,4 +774,3 @@ func validateNewLoadBalancerParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

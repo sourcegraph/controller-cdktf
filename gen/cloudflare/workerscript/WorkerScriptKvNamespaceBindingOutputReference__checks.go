@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkerScriptKvNamespaceBindingOutputReferenceParameters(terrafor
 
 	return nil
 }
-

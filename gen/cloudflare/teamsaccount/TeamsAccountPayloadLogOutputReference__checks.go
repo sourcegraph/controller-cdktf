@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTeamsAccountPayloadLogOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

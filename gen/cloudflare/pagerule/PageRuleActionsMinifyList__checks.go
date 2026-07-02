@@ -34,7 +34,7 @@ func (p *jsiiProxy_PageRuleActionsMinifyList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPageRuleActionsMinifyListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

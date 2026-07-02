@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerLocationStrategyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

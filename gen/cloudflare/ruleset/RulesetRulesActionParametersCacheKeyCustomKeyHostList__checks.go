@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostList) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersCacheKeyCustomKeyHostListParameters(
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetBuildComma
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPagesProjectBuildConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

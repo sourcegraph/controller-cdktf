@@ -15,15 +15,15 @@ type DeviceSettingsPolicy interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AllowedToLeave() interface{}
-	SetAllowedToLeave(val interface{})
-	AllowedToLeaveInput() interface{}
-	AllowModeSwitch() interface{}
-	SetAllowModeSwitch(val interface{})
-	AllowModeSwitchInput() interface{}
-	AllowUpdates() interface{}
-	SetAllowUpdates(val interface{})
-	AllowUpdatesInput() interface{}
+	AllowedToLeave() any
+	SetAllowedToLeave(val any)
+	AllowedToLeaveInput() any
+	AllowModeSwitch() any
+	SetAllowModeSwitch(val any)
+	AllowModeSwitchInput() any
+	AllowUpdates() any
+	SetAllowUpdates(val any)
+	AllowUpdatesInput() any
 	AutoConnect() *float64
 	SetAutoConnect(val *float64)
 	AutoConnectInput() *float64
@@ -33,31 +33,31 @@ type DeviceSettingsPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	Default() interface{}
-	SetDefault(val interface{})
-	DefaultInput() interface{}
+	SetCount(val any)
+	Default() any
+	SetDefault(val any)
+	DefaultInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableAutoFallback() interface{}
-	SetDisableAutoFallback(val interface{})
-	DisableAutoFallbackInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	ExcludeOfficeIps() interface{}
-	SetExcludeOfficeIps(val interface{})
-	ExcludeOfficeIpsInput() interface{}
+	DisableAutoFallback() any
+	SetDisableAutoFallback(val any)
+	DisableAutoFallbackInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	ExcludeOfficeIps() any
+	SetExcludeOfficeIps(val any)
+	ExcludeOfficeIpsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,11 +89,11 @@ type DeviceSettingsPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceModeV2Mode() *string
 	SetServiceModeV2Mode(val *string)
 	ServiceModeV2ModeInput() *string
@@ -103,22 +103,22 @@ type DeviceSettingsPolicy interface {
 	SupportUrl() *string
 	SetSupportUrl(val *string)
 	SupportUrlInput() *string
-	SwitchLocked() interface{}
-	SetSwitchLocked(val interface{})
-	SwitchLockedInput() interface{}
+	SwitchLocked() any
+	SetSwitchLocked(val any)
+	SwitchLockedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -136,7 +136,7 @@ type DeviceSettingsPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -148,7 +148,7 @@ type DeviceSettingsPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,17 +174,17 @@ type DeviceSettingsPolicy interface {
 	ResetServiceModeV2Port()
 	ResetSupportUrl()
 	ResetSwitchLocked()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DeviceSettingsPolicy
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeave() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeave() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedToLeave",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeave() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeaveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeaveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedToLeaveInput",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AllowedToLeaveInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowModeSwitch",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitch() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowModeSwitchInput",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AllowModeSwitchInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowUpdates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowUpdates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUpdates",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) AllowUpdates() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) AllowUpdatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) AllowUpdatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUpdatesInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) Default() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) Default() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"default",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Default() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) DefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) DefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoFallback",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallback() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoFallbackInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) DisableAutoFallbackInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) ExcludeOfficeIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) ExcludeOfficeIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeOfficeIps",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) ExcludeOfficeIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) ExcludeOfficeIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) ExcludeOfficeIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeOfficeIpsInput",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) SupportUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) SwitchLocked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) SwitchLocked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchLocked",
@@ -672,8 +672,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) SwitchLocked() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) SwitchLockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) SwitchLockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchLockedInput",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeviceSettingsPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -712,7 +712,6 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) DeviceSettingsPolicy {
 	_init_.Initialize()
@@ -724,7 +723,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -737,12 +736,12 @@ func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetAccountId(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowedToLeave(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetAllowedToLeave(val any) {
 	if err := j.validateSetAllowedToLeaveParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowedToLeave(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowModeSwitch(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetAllowModeSwitch(val any) {
 	if err := j.validateSetAllowModeSwitchParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowModeSwitch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowUpdates(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetAllowUpdates(val any) {
 	if err := j.validateSetAllowUpdatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetAllowUpdates(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetAutoConnect(val *float64) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetAutoConnect(val *float64) {
 	if err := j.validateSetAutoConnectParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetAutoConnect(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetCaptivePortal(val *float64) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetCaptivePortal(val *float64) {
 	if err := j.validateSetCaptivePortalParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetCaptivePortal(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetDefault(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetDefault(val any) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetDefault(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -849,7 +848,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetDisableAutoFallback(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetDisableAutoFallback(val any) {
 	if err := j.validateSetDisableAutoFallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetDisableAutoFallback(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetExcludeOfficeIps(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetExcludeOfficeIps(val any) {
 	if err := j.validateSetExcludeOfficeIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetExcludeOfficeIps(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -890,7 +889,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetId(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetMatch(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetMatch(val *string) {
 	if err := j.validateSetMatchParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetMatch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetName(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetPrecedence(val *float64) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetPrecedence(val *float64) {
 	if err := j.validateSetPrecedenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetPrecedence(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -953,7 +952,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -964,7 +963,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetServiceModeV2Mode(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetServiceModeV2Mode(val *string) {
 	if err := j.validateSetServiceModeV2ModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetServiceModeV2Mode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetServiceModeV2Port(val *float64) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetServiceModeV2Port(val *float64) {
 	if err := j.validateSetServiceModeV2PortParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetServiceModeV2Port(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetSupportUrl(val *string) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetSupportUrl(val *string) {
 	if err := j.validateSetSupportUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetSupportUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy)SetSwitchLocked(val interface{}) {
+func (j *jsiiProxy_DeviceSettingsPolicy) SetSwitchLocked(val any) {
 	if err := j.validateSetSwitchLockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func DeviceSettingsPolicy_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func DeviceSettingsPolicy_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DeviceSettingsPolicy_IsConstruct(x interface{}) *bool {
+func DeviceSettingsPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeviceSettingsPolicy_IsConstructParameters(x); err != nil {
@@ -1055,7 +1054,7 @@ func DeviceSettingsPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func DeviceSettingsPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DeviceSettingsPolicy_IsTerraformElement(x interface{}) *bool {
+func DeviceSettingsPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeviceSettingsPolicy_IsTerraformElementParameters(x); err != nil {
@@ -1074,7 +1073,7 @@ func DeviceSettingsPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func DeviceSettingsPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DeviceSettingsPolicy_IsTerraformResource(x interface{}) *bool {
+func DeviceSettingsPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeviceSettingsPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -1093,7 +1092,7 @@ func DeviceSettingsPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1118,31 +1117,31 @@ func (d *jsiiProxy_DeviceSettingsPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DeviceSettingsPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeviceSettingsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1158,7 +1157,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1174,7 +1173,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1190,7 +1189,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1206,7 +1205,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1222,7 +1221,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1238,7 +1237,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1254,7 +1253,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,15 +1269,15 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1297,7 +1296,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1310,7 +1309,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1324,18 +1323,18 @@ func (d *jsiiProxy_DeviceSettingsPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DeviceSettingsPolicy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1346,7 +1345,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1357,7 +1356,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1497,8 +1496,8 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ResetSwitchLocked() {
 	)
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1510,8 +1509,8 @@ func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1523,8 +1522,8 @@ func (d *jsiiProxy_DeviceSettingsPolicy) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1536,8 +1535,8 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1562,8 +1561,8 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeviceSettingsPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1574,4 +1573,3 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

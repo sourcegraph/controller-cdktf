@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
-		reflect.TypeOf((*DevicePolicyCertificates)(nil)).Elem(),
+		reflect.TypeFor[DevicePolicyCertificates](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePolicyCertificates{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig",
-		reflect.TypeOf((*DevicePolicyCertificatesConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicePolicyCertificatesConfig](),
 	)
 }

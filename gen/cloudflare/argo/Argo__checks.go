@@ -19,7 +19,7 @@ func (a *jsiiProxy_Argo) validateAddMoveTargetParameters(moveTarget *string) err
 	return nil
 }
 
-func (a *jsiiProxy_Argo) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Argo) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Argo) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Argo) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Argo) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateArgo_GenerateConfigForImportParameters(scope constructs.Construct, 
 	return nil
 }
 
-func validateArgo_IsConstructParameters(x interface{}) error {
+func validateArgo_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateArgo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateArgo_IsTerraformElementParameters(x interface{}) error {
+func validateArgo_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateArgo_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateArgo_IsTerraformResourceParameters(x interface{}) error {
+func validateArgo_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateArgo_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Argo) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Argo) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Argo) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Argo) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Argo) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_Argo) validateSetLifecycleParameters(val *cdktf.TerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_Argo) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Argo) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewArgoParameters(scope constructs.Construct, id *string, config *A
 
 	return nil
 }
-

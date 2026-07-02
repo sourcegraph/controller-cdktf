@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
-		reflect.TypeOf((*DevicePostureRule)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig",
-		reflect.TypeOf((*DevicePostureRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput",
-		reflect.TypeOf((*DevicePostureRuleInput)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleInput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputList",
-		reflect.TypeOf((*DevicePostureRuleInputList)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleInputList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureRuleInputList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
-		reflect.TypeOf((*DevicePostureRuleInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkDisks", GoGetter: "CheckDisks"},
 			_jsii_.MemberProperty{JsiiProperty: "checkDisksInput", GoGetter: "CheckDisksInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionOperator", GoGetter: "VersionOperator"},
 			_jsii_.MemberProperty{JsiiProperty: "versionOperatorInput", GoGetter: "VersionOperatorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureRuleInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatch",
-		reflect.TypeOf((*DevicePostureRuleMatch)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchList",
-		reflect.TypeOf((*DevicePostureRuleMatchList)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleMatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureRuleMatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -236,7 +236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchOutputReference",
-		reflect.TypeOf((*DevicePostureRuleMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureRuleMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureRuleMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

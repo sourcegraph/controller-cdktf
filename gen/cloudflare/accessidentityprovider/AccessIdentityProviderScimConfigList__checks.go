@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessIdentityProviderScimConfigListParameters(terraformResource
 
 	return nil
 }
-

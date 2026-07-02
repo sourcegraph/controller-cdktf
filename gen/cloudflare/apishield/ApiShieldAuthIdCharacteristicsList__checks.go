@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApiShieldAuthIdCharacteristicsListParameters(terraformResource c
 
 	return nil
 }
-

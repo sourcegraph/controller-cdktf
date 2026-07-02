@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZoneSettingsOverrideSettingsMinifyOutputReferenceParameters(terr
 
 	return nil
 }
-

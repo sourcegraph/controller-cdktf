@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkerScript) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkerScript) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkerScript) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WorkerScript) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(val
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value i
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value int
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutQueueBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutQueueBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (w *jsiiProxy_WorkerScript) validatePutQueueBindingParameters(value interfa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutR2BucketBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutR2BucketBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func (w *jsiiProxy_WorkerScript) validatePutR2BucketBindingParameters(value inte
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutSecretTextBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutSecretTextBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (w *jsiiProxy_WorkerScript) validatePutSecretTextBindingParameters(value in
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutServiceBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutServiceBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (w *jsiiProxy_WorkerScript) validatePutServiceBindingParameters(value inter
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScript) validatePutWebassemblyBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkerScript) validatePutWebassemblyBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func validateWorkerScript_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateWorkerScript_IsConstructParameters(x interface{}) error {
+func validateWorkerScript_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func validateWorkerScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkerScript_IsTerraformElementParameters(x interface{}) error {
+func validateWorkerScript_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -484,7 +484,7 @@ func validateWorkerScript_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkerScript_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkerScript_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -516,7 +516,7 @@ func (j *jsiiProxy_WorkerScript) validateSetCompatibilityFlagsParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScript) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScript) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -557,7 +557,7 @@ func (j *jsiiProxy_WorkerScript) validateSetContentParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScript) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScript) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -630,7 +630,7 @@ func (j *jsiiProxy_WorkerScript) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScript) validateSetModuleParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScript) validateSetModuleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -658,7 +658,7 @@ func (j *jsiiProxy_WorkerScript) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScript) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkerScript) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -722,4 +722,3 @@ func validateNewWorkerScriptParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

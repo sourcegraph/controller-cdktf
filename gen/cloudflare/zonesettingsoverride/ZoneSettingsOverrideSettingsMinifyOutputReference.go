@@ -12,9 +12,9 @@ type ZoneSettingsOverrideSettingsMinifyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ZoneSettingsOverrideSettingsMinifyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZoneSettingsOverrideSettingsMinifyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) TerraformR
 	return returns
 }
 
-
 func NewZoneSettingsOverrideSettingsMinifyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsMinifyOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZoneSettingsOverrideSettingsMinifyOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZoneSettingsOverrideSettingsMinifyOutputReference_Override(z ZoneSetting
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetCss(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetCss(val *string) {
 	if err := j.validateSetCssParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetCss(val 
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetHtml(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetHtml(val *string) {
 	if err := j.validateSetHtmlParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetHtml(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetInternalValue(val *ZoneSettingsOverrideSettingsMinify) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetInternalValue(val *ZoneSettingsOverrideSettingsMinify) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetJs(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetJs(val *string) {
 	if err := j.validateSetJsParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetJs(val *
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) ComputeFqn
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBoolean
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBoolean
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetListAtt
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberA
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberL
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberM
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetStringA
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetStringM
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Interpolat
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) ToString()
 
 	return returns
 }
-

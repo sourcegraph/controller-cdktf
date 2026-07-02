@@ -15,15 +15,15 @@ type WorkerRoute interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,18 +53,18 @@ type WorkerRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -74,9 +74,9 @@ type WorkerRoute interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type WorkerRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type WorkerRoute interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type WorkerRoute interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScriptName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkerRoute
@@ -146,8 +146,8 @@ func (j *jsiiProxy_WorkerRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerRoute) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_WorkerRoute) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkerRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_WorkerRoute) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_WorkerRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkerRoute) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_WorkerRoute) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_WorkerRoute) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkerRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_WorkerRoute) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteConfig) WorkerRoute {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkerRoute) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_WorkerRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkerRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_WorkerRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkerRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_WorkerRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkerRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_WorkerRoute)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetId(val *string) {
+func (j *jsiiProxy_WorkerRoute) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_WorkerRoute)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkerRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_WorkerRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetPattern(val *string) {
+func (j *jsiiProxy_WorkerRoute) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_WorkerRoute)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkerRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_WorkerRoute)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkerRoute) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_WorkerRoute)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetScriptName(val *string) {
+func (j *jsiiProxy_WorkerRoute) SetScriptName(val *string) {
 	if err := j.validateSetScriptNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_WorkerRoute)SetScriptName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetZoneId(val *string) {
+func (j *jsiiProxy_WorkerRoute) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func WorkerRoute_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func WorkerRoute_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkerRoute_IsConstruct(x interface{}) *bool {
+func WorkerRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerRoute_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func WorkerRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func WorkerRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkerRoute_IsTerraformElement(x interface{}) *bool {
+func WorkerRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerRoute_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func WorkerRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func WorkerRoute_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkerRoute_IsTerraformResource(x interface{}) *bool {
+func WorkerRoute_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerRoute_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func WorkerRoute_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (w *jsiiProxy_WorkerRoute) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkerRoute) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkerRoute) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkerRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkerRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (w *jsiiProxy_WorkerRoute) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (w *jsiiProxy_WorkerRoute) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (w *jsiiProxy_WorkerRoute) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (w *jsiiProxy_WorkerRoute) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (w *jsiiProxy_WorkerRoute) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (w *jsiiProxy_WorkerRoute) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (w *jsiiProxy_WorkerRoute) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (w *jsiiProxy_WorkerRoute) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerRoute) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerRoute) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -807,7 +806,7 @@ func (w *jsiiProxy_WorkerRoute) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (w *jsiiProxy_WorkerRoute) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (w *jsiiProxy_WorkerRoute) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkerRoute) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkerRoute) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (w *jsiiProxy_WorkerRoute) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (w *jsiiProxy_WorkerRoute) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -895,8 +894,8 @@ func (w *jsiiProxy_WorkerRoute) ResetScriptName() {
 	)
 }
 
-func (w *jsiiProxy_WorkerRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkerRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -908,8 +907,8 @@ func (w *jsiiProxy_WorkerRoute) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkerRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkerRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -921,8 +920,8 @@ func (w *jsiiProxy_WorkerRoute) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (w *jsiiProxy_WorkerRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -934,8 +933,8 @@ func (w *jsiiProxy_WorkerRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkerRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -960,8 +959,8 @@ func (w *jsiiProxy_WorkerRoute) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkerRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -972,4 +971,3 @@ func (w *jsiiProxy_WorkerRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

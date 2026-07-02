@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomHostnameSslValidationRecordsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCustomHostnameSslValidationRecordsOutputReferenceParameters(terr
 
 	return nil
 }
-

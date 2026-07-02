@@ -138,7 +138,7 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCl
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCu
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewDevicePostureIntegrationConfigAOutputReferenceParameters(terrafo
 
 	return nil
 }
-

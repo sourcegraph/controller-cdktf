@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessGroup) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessGroup) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroup) validatePutExcludeParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroup) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_AccessGroup) validatePutExcludeParameters(value interface{}) 
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroup) validatePutIncludeParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroup) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (a *jsiiProxy_AccessGroup) validatePutIncludeParameters(value interface{}) 
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroup) validatePutRequireParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroup) validatePutRequireParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateAccessGroup_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateAccessGroup_IsConstructParameters(x interface{}) error {
+func validateAccessGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateAccessGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessGroup_IsTerraformElementParameters(x interface{}) error {
+func validateAccessGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateAccessGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_AccessGroup) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AccessGroup) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_AccessGroup) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,4 +531,3 @@ func validateNewAccessGroupParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

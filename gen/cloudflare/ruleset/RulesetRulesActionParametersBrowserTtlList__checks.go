@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersBrowserTtlListParameters(terraformRe
 
 	return nil
 }
-

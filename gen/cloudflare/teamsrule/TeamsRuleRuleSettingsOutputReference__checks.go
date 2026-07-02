@@ -183,7 +183,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAddHeadersPa
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAllowChildBypassParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAllowChildBypassParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetAllowChildBy
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBlockPageEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBlockPageEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBlockPageRea
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBypassParentRuleParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBypassParentRuleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetBypassParent
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -316,7 +316,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetIpCategoriesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetIpCategoriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -407,4 +407,3 @@ func validateNewTeamsRuleRuleSettingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

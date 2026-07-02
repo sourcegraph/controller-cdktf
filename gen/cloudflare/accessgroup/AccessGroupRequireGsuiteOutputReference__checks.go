@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateSetIdentityP
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupRequireGsuiteOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessGroupRequireGsuiteOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

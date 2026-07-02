@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelRoute.TunnelRoute",
-		reflect.TypeOf((*TunnelRoute)(nil)).Elem(),
+		reflect.TypeFor[TunnelRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig",
-		reflect.TypeOf((*TunnelRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[TunnelRouteConfig](),
 	)
 }

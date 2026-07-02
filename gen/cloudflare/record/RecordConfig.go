@@ -6,9 +6,9 @@ import (
 
 type RecordConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type RecordConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the record. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#name Record#name}
@@ -38,7 +38,7 @@ type RecordConfig struct {
 	// This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual changes outside Terraform from overwriting this record. **This configuration is not recommended for most environments**. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#allow_overwrite Record#allow_overwrite}
-	AllowOverwrite interface{} `field:"optional" json:"allowOverwrite" yaml:"allowOverwrite"`
+	AllowOverwrite any `field:"optional" json:"allowOverwrite" yaml:"allowOverwrite"`
 	// Comments or notes about the DNS record. This field has no effect on DNS responses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#comment Record#comment}
@@ -59,7 +59,7 @@ type RecordConfig struct {
 	// Whether the record gets Cloudflare's origin protection.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#proxied Record#proxied}
-	Proxied interface{} `field:"optional" json:"proxied" yaml:"proxied"`
+	Proxied any `field:"optional" json:"proxied" yaml:"proxied"`
 	// Custom tags for the DNS record.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#tags Record#tags}
@@ -77,4 +77,3 @@ type RecordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record#value Record#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
-

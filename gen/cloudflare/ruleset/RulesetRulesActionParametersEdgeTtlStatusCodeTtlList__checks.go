@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validat
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersEdgeTtlStatusCodeTtlListParameters(t
 
 	return nil
 }
-

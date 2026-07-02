@@ -98,7 +98,7 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetHost
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewTunnelConfigConfigIngressRuleOutputReferenceParameters(terraform
 
 	return nil
 }
-

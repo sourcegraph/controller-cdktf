@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerLocationStrategyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerLocationStrategyListParameters(terraformResource cdk
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type TunnelConfigConfigOriginRequestIpRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type TunnelConfigConfigOriginRequestIpRulesList interface {
 	Get(index *float64) TunnelConfigConfigOriginRequestIpRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewTunnelConfigConfigOriginRequestIpRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TunnelConfigConfigOriginRequestIpRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewTunnelConfigConfigOriginRequestIpRulesList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewTunnelConfigConfigOriginRequestIpRulesList_Override(t TunnelConfigConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) AllWithMapKey(map
 	_jsii_.Invoke(
 		t,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) Get(index *float6
 	_jsii_.Invoke(
 		t,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) ToString() *strin
 
 	return returns
 }
-

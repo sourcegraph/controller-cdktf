@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessGroupExcludeAzureList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessGroupExcludeAzureListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

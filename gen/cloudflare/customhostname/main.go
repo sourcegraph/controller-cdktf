@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
-		reflect.TypeOf((*CustomHostname)(nil)).Elem(),
+		reflect.TypeFor[CustomHostname](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostname{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig",
-		reflect.TypeOf((*CustomHostnameConfig)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl",
-		reflect.TypeOf((*CustomHostnameSsl)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSsl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList",
-		reflect.TypeOf((*CustomHostnameSslList)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
-		reflect.TypeOf((*CustomHostnameSslOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthority", GoGetter: "CertificateAuthority"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityInput", GoGetter: "CertificateAuthorityInput"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcard", GoGetter: "Wildcard"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardInput", GoGetter: "WildcardInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -174,11 +174,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings",
-		reflect.TypeOf((*CustomHostnameSslSettings)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsList",
-		reflect.TypeOf((*CustomHostnameSslSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
-		reflect.TypeOf((*CustomHostnameSslSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
 			_jsii_.MemberProperty{JsiiProperty: "ciphersInput", GoGetter: "CiphersInput"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tls13Input", GoGetter: "Tls13Input"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,11 +247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrors",
-		reflect.TypeOf((*CustomHostnameSslValidationErrors)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationErrors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsList",
-		reflect.TypeOf((*CustomHostnameSslValidationErrorsList)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslValidationErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -272,7 +272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
-		reflect.TypeOf((*CustomHostnameSslValidationErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslValidationErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecords",
-		reflect.TypeOf((*CustomHostnameSslValidationRecords)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
-		reflect.TypeOf((*CustomHostnameSslValidationRecordsList)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslValidationRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -330,7 +330,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference",
-		reflect.TypeOf((*CustomHostnameSslValidationRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomHostnameSslValidationRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},
 			_jsii_.MemberProperty{JsiiProperty: "cnameTarget", GoGetter: "CnameTarget"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "txtName", GoGetter: "TxtName"},
 			_jsii_.MemberProperty{JsiiProperty: "txtValue", GoGetter: "TxtValue"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomHostnameSslValidationRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

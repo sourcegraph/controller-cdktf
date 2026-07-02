@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoom",
-		reflect.TypeOf((*WaitingRoom)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoom](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoom{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,15 +108,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig",
-		reflect.TypeOf((*WaitingRoomConfig)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts",
-		reflect.TypeOf((*WaitingRoomTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
-		reflect.TypeOf((*WaitingRoomTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WaitingRoomTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WaitingRoomTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

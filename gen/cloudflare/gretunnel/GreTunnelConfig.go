@@ -6,9 +6,9 @@ import (
 
 type GreTunnelConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GreTunnelConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The IP address assigned to the Cloudflare side of the GRE tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/gre_tunnel#cloudflare_gre_endpoint GreTunnel#cloudflare_gre_endpoint}
@@ -46,7 +46,7 @@ type GreTunnelConfig struct {
 	// Specifies if ICMP tunnel health checks are enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/gre_tunnel#health_check_enabled GreTunnel#health_check_enabled}
-	HealthCheckEnabled interface{} `field:"optional" json:"healthCheckEnabled" yaml:"healthCheckEnabled"`
+	HealthCheckEnabled any `field:"optional" json:"healthCheckEnabled" yaml:"healthCheckEnabled"`
 	// The IP address of the customer endpoint that will receive tunnel health checks.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/gre_tunnel#health_check_target GreTunnel#health_check_target}
@@ -69,4 +69,3 @@ type GreTunnelConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/gre_tunnel#ttl GreTunnel#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
-

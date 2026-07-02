@@ -15,9 +15,9 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ScoreThreshold() *float64
 	SetScoreThreshold(val *float64)
 	ScoreThresholdInput() *float64
@@ -55,7 +55,7 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	ResetSensitivityLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ac
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Id
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Te
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersOverridesRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersOverridesRulesOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewRulesetRulesActionParametersOverridesRulesOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewRulesetRulesActionParametersOverridesRulesOutputReference_Override(r Rul
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetAction(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetId(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetScoreThreshold(val *float64) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetScoreThreshold(val *float64) {
 	if err := j.validateSetScoreThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetSensitivityLevel(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetSensitivityLevel(val *string) {
 	if err := j.validateSetSensitivityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Co
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Ge
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) In
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Re
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) To
 
 	return returns
 }
-

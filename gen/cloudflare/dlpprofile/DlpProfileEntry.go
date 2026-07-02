@@ -1,6 +1,5 @@
 package dlpprofile
 
-
 type DlpProfileEntry struct {
 	// Name of the entry to deploy.
 	//
@@ -9,7 +8,7 @@ type DlpProfileEntry struct {
 	// Whether the entry is active. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Unique entry identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile#id DlpProfile#id}
@@ -22,4 +21,3 @@ type DlpProfileEntry struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
 	Pattern *DlpProfileEntryPattern `field:"optional" json:"pattern" yaml:"pattern"`
 }
-

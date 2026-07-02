@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
-		reflect.TypeOf((*AccessGroup)(nil)).Elem(),
+		reflect.TypeFor[AccessGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,19 +83,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig",
-		reflect.TypeOf((*AccessGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude",
-		reflect.TypeOf((*AccessGroupExclude)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure",
-		reflect.TypeOf((*AccessGroupExcludeAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
-		reflect.TypeOf((*AccessGroupExcludeAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation",
-		reflect.TypeOf((*AccessGroupExcludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub",
-		reflect.TypeOf((*AccessGroupExcludeGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
-		reflect.TypeOf((*AccessGroupExcludeGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -223,7 +223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -264,11 +264,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite",
-		reflect.TypeOf((*AccessGroupExcludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
-		reflect.TypeOf((*AccessGroupExcludeGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -290,7 +290,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeList",
-		reflect.TypeOf((*AccessGroupExcludeList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -350,11 +350,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta",
-		reflect.TypeOf((*AccessGroupExcludeOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList",
-		reflect.TypeOf((*AccessGroupExcludeOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -376,7 +376,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -512,11 +512,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml",
-		reflect.TypeOf((*AccessGroupExcludeSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList",
-		reflect.TypeOf((*AccessGroupExcludeSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -538,7 +538,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
-		reflect.TypeOf((*AccessGroupExcludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupExcludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupExcludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,15 +579,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude",
-		reflect.TypeOf((*AccessGroupInclude)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupInclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure",
-		reflect.TypeOf((*AccessGroupIncludeAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList",
-		reflect.TypeOf((*AccessGroupIncludeAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -601,7 +601,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -609,7 +609,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -647,11 +647,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation",
-		reflect.TypeOf((*AccessGroupIncludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -681,7 +681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -689,11 +689,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub",
-		reflect.TypeOf((*AccessGroupIncludeGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
-		reflect.TypeOf((*AccessGroupIncludeGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -707,7 +707,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -715,7 +715,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,11 +756,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite",
-		reflect.TypeOf((*AccessGroupIncludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteList",
-		reflect.TypeOf((*AccessGroupIncludeGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -774,7 +774,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -782,7 +782,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -812,7 +812,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -820,7 +820,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList",
-		reflect.TypeOf((*AccessGroupIncludeList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -834,7 +834,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -842,11 +842,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta",
-		reflect.TypeOf((*AccessGroupIncludeOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList",
-		reflect.TypeOf((*AccessGroupIncludeOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -860,7 +860,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -868,7 +868,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -898,7 +898,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -906,7 +906,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -996,7 +996,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1004,11 +1004,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml",
-		reflect.TypeOf((*AccessGroupIncludeSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
-		reflect.TypeOf((*AccessGroupIncludeSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1022,7 +1022,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1030,7 +1030,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference",
-		reflect.TypeOf((*AccessGroupIncludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupIncludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -1063,7 +1063,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupIncludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1071,15 +1071,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire",
-		reflect.TypeOf((*AccessGroupRequire)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequire](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure",
-		reflect.TypeOf((*AccessGroupRequireAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureList",
-		reflect.TypeOf((*AccessGroupRequireAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1093,7 +1093,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1101,7 +1101,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureOutputReference",
-		reflect.TypeOf((*AccessGroupRequireAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1131,7 +1131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1139,11 +1139,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation",
-		reflect.TypeOf((*AccessGroupRequireExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessGroupRequireExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1173,7 +1173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1181,11 +1181,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub",
-		reflect.TypeOf((*AccessGroupRequireGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
-		reflect.TypeOf((*AccessGroupRequireGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1199,7 +1199,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1207,7 +1207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
-		reflect.TypeOf((*AccessGroupRequireGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1240,7 +1240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1248,11 +1248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite",
-		reflect.TypeOf((*AccessGroupRequireGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteList",
-		reflect.TypeOf((*AccessGroupRequireGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1266,7 +1266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1274,7 +1274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
-		reflect.TypeOf((*AccessGroupRequireGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1304,7 +1304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1312,7 +1312,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList",
-		reflect.TypeOf((*AccessGroupRequireList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1326,7 +1326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1334,11 +1334,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta",
-		reflect.TypeOf((*AccessGroupRequireOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
-		reflect.TypeOf((*AccessGroupRequireOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1352,7 +1352,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1360,7 +1360,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaOutputReference",
-		reflect.TypeOf((*AccessGroupRequireOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1390,7 +1390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1398,7 +1398,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
-		reflect.TypeOf((*AccessGroupRequireOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -1488,7 +1488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1496,11 +1496,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml",
-		reflect.TypeOf((*AccessGroupRequireSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlList",
-		reflect.TypeOf((*AccessGroupRequireSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1514,7 +1514,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1522,7 +1522,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlOutputReference",
-		reflect.TypeOf((*AccessGroupRequireSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessGroupRequireSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -1555,7 +1555,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessGroupRequireSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

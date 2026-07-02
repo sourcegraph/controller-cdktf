@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZoneLockdown) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdown) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZoneLockdown) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZoneLockdown) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdown) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZoneLockdown) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZoneLockdown) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdown) validatePutConfigurationsParameters(value interface{}) error {
+func (z *jsiiProxy_ZoneLockdown) validatePutConfigurationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateZoneLockdown_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateZoneLockdown_IsConstructParameters(x interface{}) error {
+func validateZoneLockdown_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateZoneLockdown_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZoneLockdown_IsTerraformElementParameters(x interface{}) error {
+func validateZoneLockdown_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateZoneLockdown_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateZoneLockdown_IsTerraformResourceParameters(x interface{}) error {
+func validateZoneLockdown_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateZoneLockdown_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdown) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneLockdown) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_ZoneLockdown) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdown) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneLockdown) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_ZoneLockdown) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdown) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneLockdown) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ZoneLockdown) validateSetPriorityParameters(val *float64) err
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdown) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZoneLockdown) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewZoneLockdownParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

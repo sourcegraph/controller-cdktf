@@ -19,7 +19,7 @@ func (p *jsiiProxy_PagesDomain) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (p *jsiiProxy_PagesDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PagesDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PagesDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PagesDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePagesDomain_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validatePagesDomain_IsConstructParameters(x interface{}) error {
+func validatePagesDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePagesDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePagesDomain_IsTerraformElementParameters(x interface{}) error {
+func validatePagesDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePagesDomain_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePagesDomain_IsTerraformResourceParameters(x interface{}) error {
+func validatePagesDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_PagesDomain) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_PagesDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PagesDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_PagesDomain) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_PagesDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PagesDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_PagesDomain) validateSetProjectNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_PagesDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PagesDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewPagesDomainParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

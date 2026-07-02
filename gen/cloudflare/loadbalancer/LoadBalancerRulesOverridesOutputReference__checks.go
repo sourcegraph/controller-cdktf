@@ -90,7 +90,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolat
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiv
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountry
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocatio
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPool
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomS
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionP
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetFallbac
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -487,4 +487,3 @@ func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

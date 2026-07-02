@@ -101,7 +101,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheKeyFieldsPara
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheTtlByStatusParameters(value interface{}) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheTtlByStatusParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutForwardingUrlParam
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutMinifyParameters(value interface{}) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutMinifyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAlwaysUseHttpsParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAlwaysUseHttpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheOnCookieParam
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -331,7 +331,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableAppsParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableAppsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableAppsParamet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisablePerformanceParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisablePerformanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -371,7 +371,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisablePerformance
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableRailgunParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableRailgunParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -391,7 +391,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableRailgunPara
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableSecurityParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableSecurityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableSecurityPar
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableZarazParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableZarazParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -618,4 +618,3 @@ func validateNewPageRuleActionsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

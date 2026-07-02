@@ -120,7 +120,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewPagesProjectDeploymentConfigsOutputReferenceParameters(terraform
 
 	return nil
 }
-

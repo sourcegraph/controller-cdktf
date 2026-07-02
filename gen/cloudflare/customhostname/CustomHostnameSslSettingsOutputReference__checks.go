@@ -106,7 +106,7 @@ func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetCiphersP
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetHttp2Par
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewCustomHostnameSslSettingsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

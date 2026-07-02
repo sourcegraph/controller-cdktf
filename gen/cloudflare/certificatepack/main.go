@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
-		reflect.TypeOf((*CertificatePack)(nil)).Elem(),
+		reflect.TypeFor[CertificatePack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificatePack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackConfig",
-		reflect.TypeOf((*CertificatePackConfig)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrors",
-		reflect.TypeOf((*CertificatePackValidationErrors)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationErrors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
-		reflect.TypeOf((*CertificatePackValidationErrorsList)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificatePackValidationErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
-		reflect.TypeOf((*CertificatePackValidationErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificatePackValidationErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecords",
-		reflect.TypeOf((*CertificatePackValidationRecords)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsList",
-		reflect.TypeOf((*CertificatePackValidationRecordsList)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificatePackValidationRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -179,7 +179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
-		reflect.TypeOf((*CertificatePackValidationRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificatePackValidationRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},
 			_jsii_.MemberProperty{JsiiProperty: "cnameNameInput", GoGetter: "CnameNameInput"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "txtValue", GoGetter: "TxtValue"},
 			_jsii_.MemberProperty{JsiiProperty: "txtValueInput", GoGetter: "TxtValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificatePackValidationRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

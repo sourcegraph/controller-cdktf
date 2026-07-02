@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessApplication) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessApplication) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessApplication) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value interface{}) error {
+func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateAccessApplication_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateAccessApplication_IsConstructParameters(x interface{}) error {
+func validateAccessApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateAccessApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessApplication_IsTerraformElementParameters(x interface{}) error {
+func validateAccessApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateAccessApplication_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateAccessApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_AccessApplication) validateSetAllowedIdpsParameters(val *[]*s
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameter
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -375,7 +375,7 @@ func (j *jsiiProxy_AccessApplication) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -456,7 +456,7 @@ func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetHttpOnlyCookieAttributeParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetHttpOnlyCookieAttributeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_AccessApplication) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -582,7 +582,7 @@ func (j *jsiiProxy_AccessApplication) validateSetSameSiteCookieAttributeParamete
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetServiceAuth401RedirectParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetServiceAuth401RedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -610,7 +610,7 @@ func (j *jsiiProxy_AccessApplication) validateSetSessionDurationParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -664,4 +664,3 @@ func validateNewAccessApplicationParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

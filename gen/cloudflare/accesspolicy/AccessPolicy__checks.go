@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessPolicy) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessPolicy) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessPolicy) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value interf
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value interface{})
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validatePutIncludeParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (a *jsiiProxy_AccessPolicy) validatePutIncludeParameters(value interface{})
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicy) validatePutRequireParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicy) validatePutRequireParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -344,7 +344,7 @@ func validateAccessPolicy_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateAccessPolicy_IsConstructParameters(x interface{}) error {
+func validateAccessPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func validateAccessPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateAccessPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -360,7 +360,7 @@ func validateAccessPolicy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -384,7 +384,7 @@ func (j *jsiiProxy_AccessPolicy) validateSetApplicationIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicy) validateSetApprovalRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicy) validateSetApprovalRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AccessPolicy) validateSetApprovalRequiredParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AccessPolicy) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -534,7 +534,7 @@ func (j *jsiiProxy_AccessPolicy) validateSetPrecedenceParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -588,7 +588,7 @@ func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationPromptParameters
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -634,4 +634,3 @@ func validateNewAccessPolicyParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

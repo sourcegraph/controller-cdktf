@@ -34,7 +34,7 @@ func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPageRuleActionsCacheTtlByStatusListParameters(terraformResource 
 
 	return nil
 }
-

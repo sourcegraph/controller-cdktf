@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLoadBalancerRulesFixedResponseOutputReferenceParameters(terrafor
 
 	return nil
 }
-

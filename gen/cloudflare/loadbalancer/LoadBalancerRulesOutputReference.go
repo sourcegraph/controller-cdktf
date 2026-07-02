@@ -12,9 +12,9 @@ type LoadBalancerRulesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,26 +28,26 @@ type LoadBalancerRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	FixedResponse() LoadBalancerRulesFixedResponseOutputReference
 	FixedResponseInput() *LoadBalancerRulesFixedResponse
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Overrides() LoadBalancerRulesOverridesList
-	OverridesInput() interface{}
+	OverridesInput() any
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
-	Terminates() interface{}
-	SetTerminates(val interface{})
-	TerminatesInput() interface{}
+	Terminates() any
+	SetTerminates(val any)
+	TerminatesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -59,7 +59,7 @@ type LoadBalancerRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type LoadBalancerRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFixedResponse(value *LoadBalancerRulesFixedResponse)
-	PutOverrides(value interface{})
+	PutOverrides(value any)
 	ResetCondition()
 	ResetDisabled()
 	ResetFixedResponse()
@@ -90,7 +90,7 @@ type LoadBalancerRulesOutputReference interface {
 	ResetTerminates()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ type jsiiProxy_LoadBalancerRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) Overrides() LoadBalancerRul
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) OverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) OverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overridesInput",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) PriorityInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) Terminates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) Terminates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminates",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) Terminates() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerminatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerminatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminatesInput",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewLoadBalancerRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewLoadBalancerRulesOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewLoadBalancerRulesOutputReference_Override(l LoadBalancerRulesOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetCondition(val *string) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetCondition(val *string) {
 	if err := j.validateSetConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetCondition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetDisabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerminates(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetTerminates(val any) {
 	if err := j.validateSetTerminatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerminates(val interface{
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,16 +463,16 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -644,18 +643,18 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutFixedResponse(value *Loa
 	_jsii_.InvokeVoid(
 		l,
 		"putFixedResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutOverrides(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutOverrides(value any) {
 	if err := l.validatePutOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -707,16 +706,16 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) ResetTerminates() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
-		reflect.TypeOf((*TunnelConfigA)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigA](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,19 +71,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig",
-		reflect.TypeOf((*TunnelConfigAConfig)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
-		reflect.TypeOf((*TunnelConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
-		reflect.TypeOf((*TunnelConfigConfigIngressRule)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigIngressRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
-		reflect.TypeOf((*TunnelConfigConfigIngressRuleList)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigIngressRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigIngressRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigIngressRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigIngressRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigIngressRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,15 +145,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest",
-		reflect.TypeOf((*TunnelConfigConfigOriginRequest)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOriginRequest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules",
-		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRules)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOriginRequestIpRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
-		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesList)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOriginRequestIpRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOriginRequestIpRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigOriginRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOriginRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bastionMode", GoGetter: "BastionMode"},
 			_jsii_.MemberProperty{JsiiProperty: "bastionModeInput", GoGetter: "BastionModeInput"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsTimeoutInput", GoGetter: "TlsTimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -297,7 +297,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warpRouting", GoGetter: "WarpRouting"},
 			_jsii_.MemberProperty{JsiiProperty: "warpRoutingInput", GoGetter: "WarpRoutingInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,11 +340,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting",
-		reflect.TypeOf((*TunnelConfigConfigWarpRouting)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigWarpRouting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigWarpRoutingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TunnelConfigConfigWarpRoutingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -371,7 +371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

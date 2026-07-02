@@ -19,7 +19,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateNotificationPolicyWebhooks_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateNotificationPolicyWebhooks_IsConstructParameters(x interface{}) error {
+func validateNotificationPolicyWebhooks_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateNotificationPolicyWebhooks_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateNotificationPolicyWebhooks_IsTerraformElementParameters(x interface{}) error {
+func validateNotificationPolicyWebhooks_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateNotificationPolicyWebhooks_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateNotificationPolicyWebhooks_IsTerraformResourceParameters(x interface{}) error {
+func validateNotificationPolicyWebhooks_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetAccountIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewNotificationPolicyWebhooksParameters(scope constructs.Construct,
 
 	return nil
 }
-

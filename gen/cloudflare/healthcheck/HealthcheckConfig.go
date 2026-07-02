@@ -6,9 +6,9 @@ import (
 
 type HealthcheckConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type HealthcheckConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The hostname or IP address of the origin server to run health checks on.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#address Healthcheck#address}
@@ -38,7 +38,7 @@ type HealthcheckConfig struct {
 	// Do not validate the certificate when the health check uses HTTPS. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// A list of regions from which to run health checks.
 	//
 	// If not set, Cloudflare will pick a default region. Available values: `WNAM`, `ENAM`, `WEU`, `EEU`, `NSAM`, `SSAM`, `OC`, `ME`, `NAF`, `SAF`, `IN`, `SEAS`, `NEAS`, `ALL_REGIONS`.
@@ -70,11 +70,11 @@ type HealthcheckConfig struct {
 	// Follow redirects if the origin returns a 3xx status code. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
-	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	FollowRedirects any `field:"optional" json:"followRedirects" yaml:"followRedirects"`
 	// header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	Header any `field:"optional" json:"header" yaml:"header"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -107,7 +107,7 @@ type HealthcheckConfig struct {
 	// If suspended, no health checks are sent to the origin. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
@@ -117,4 +117,3 @@ type HealthcheckConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
 	Timeouts *HealthcheckTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

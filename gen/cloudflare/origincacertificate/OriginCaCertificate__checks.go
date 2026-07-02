@@ -19,7 +19,7 @@ func (o *jsiiProxy_OriginCaCertificate) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (o *jsiiProxy_OriginCaCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OriginCaCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OriginCaCertificate) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (o *jsiiProxy_OriginCaCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OriginCaCertificate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOriginCaCertificate_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateOriginCaCertificate_IsConstructParameters(x interface{}) error {
+func validateOriginCaCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOriginCaCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOriginCaCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateOriginCaCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOriginCaCertificate_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateOriginCaCertificate_IsTerraformResourceParameters(x interface{}) error {
+func validateOriginCaCertificate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOriginCaCertificate_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_OriginCaCertificate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OriginCaCertificate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_OriginCaCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OriginCaCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetMinDaysForRenewalParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_OriginCaCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OriginCaCertificate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewOriginCaCertificateParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

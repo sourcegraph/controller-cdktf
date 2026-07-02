@@ -34,7 +34,7 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDevicePostureIntegrationConfigAListParameters(terraformResource 
 
 	return nil
 }
-

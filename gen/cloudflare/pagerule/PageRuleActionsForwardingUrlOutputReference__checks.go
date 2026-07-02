@@ -98,7 +98,7 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPageRuleActionsForwardingUrlOutputReferenceParameters(terraformR
 
 	return nil
 }
-

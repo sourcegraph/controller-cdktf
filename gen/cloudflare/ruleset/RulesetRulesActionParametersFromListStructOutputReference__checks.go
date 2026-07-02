@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRulesetRulesActionParametersFromListStructOutputReferenceParamet
 
 	return nil
 }
-

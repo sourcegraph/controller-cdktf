@@ -98,7 +98,7 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) validateSetIncludeSubdo
 	return nil
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewListItemValueRedirectOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

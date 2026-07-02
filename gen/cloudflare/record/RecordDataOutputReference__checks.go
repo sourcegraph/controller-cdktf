@@ -122,7 +122,7 @@ func (j *jsiiProxy_RecordDataOutputReference) validateSetCertificateParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecordDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -510,4 +510,3 @@ func validateNewRecordDataOutputReferenceParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

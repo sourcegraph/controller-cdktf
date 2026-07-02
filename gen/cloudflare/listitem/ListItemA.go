@@ -21,15 +21,15 @@ type ListItemA interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,26 +62,26 @@ type ListItemA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Redirect() ListItemRedirectOutputReference
 	RedirectInput() *ListItemRedirect
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type ListItemA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type ListItemA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type ListItemA interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedirect()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ListItemA
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ListItemA) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ListItemA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_ListItemA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ListItemA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ListItemA) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ListItemA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ListItemA) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ListItemA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ListItemA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ListItemA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_ListItemA) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ListItemA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -424,7 +424,6 @@ func (j *jsiiProxy_ListItemA) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfig) ListItemA {
 	_init_.Initialize()
@@ -436,7 +435,7 @@ func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewListItemA_Override(l ListItemA, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetAccountId(val *string) {
+func (j *jsiiProxy_ListItemA) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ListItemA)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetComment(val *string) {
+func (j *jsiiProxy_ListItemA) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ListItemA)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetConnection(val interface{}) {
+func (j *jsiiProxy_ListItemA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ListItemA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetCount(val interface{}) {
+func (j *jsiiProxy_ListItemA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ListItemA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ListItemA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ListItemA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ListItemA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_ListItemA)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetId(val *string) {
+func (j *jsiiProxy_ListItemA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_ListItemA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetIp(val *string) {
+func (j *jsiiProxy_ListItemA) SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_ListItemA)SetIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ListItemA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_ListItemA)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetListId(val *string) {
+func (j *jsiiProxy_ListItemA) SetListId(val *string) {
 	if err := j.validateSetListIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ListItemA)SetListId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ListItemA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ListItemA)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ListItemA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ListItemA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func ListItemA_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func ListItemA_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ListItemA_IsConstruct(x interface{}) *bool {
+func ListItemA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateListItemA_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func ListItemA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func ListItemA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ListItemA_IsTerraformElement(x interface{}) *bool {
+func ListItemA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateListItemA_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func ListItemA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func ListItemA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ListItemA_IsTerraformResource(x interface{}) *bool {
+func ListItemA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateListItemA_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func ListItemA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (l *jsiiProxy_ListItemA) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_ListItemA) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_ListItemA) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_ListItemA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_ListItemA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (l *jsiiProxy_ListItemA) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (l *jsiiProxy_ListItemA) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (l *jsiiProxy_ListItemA) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (l *jsiiProxy_ListItemA) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (l *jsiiProxy_ListItemA) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (l *jsiiProxy_ListItemA) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (l *jsiiProxy_ListItemA) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (l *jsiiProxy_ListItemA) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_ListItemA) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_ListItemA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -866,7 +865,7 @@ func (l *jsiiProxy_ListItemA) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (l *jsiiProxy_ListItemA) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (l *jsiiProxy_ListItemA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_ListItemA) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_ListItemA) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (l *jsiiProxy_ListItemA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (l *jsiiProxy_ListItemA) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (l *jsiiProxy_ListItemA) PutRedirect(value *ListItemRedirect) {
 	_jsii_.InvokeVoid(
 		l,
 		"putRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (l *jsiiProxy_ListItemA) ResetRedirect() {
 	)
 }
 
-func (l *jsiiProxy_ListItemA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_ListItemA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -994,8 +993,8 @@ func (l *jsiiProxy_ListItemA) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_ListItemA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_ListItemA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1007,8 +1006,8 @@ func (l *jsiiProxy_ListItemA) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (l *jsiiProxy_ListItemA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_ListItemA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1020,8 +1019,8 @@ func (l *jsiiProxy_ListItemA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_ListItemA) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_ListItemA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1046,8 +1045,8 @@ func (l *jsiiProxy_ListItemA) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_ListItemA) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_ListItemA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1058,4 +1057,3 @@ func (l *jsiiProxy_ListItemA) ToTerraform() interface{} {
 
 	return returns
 }
-

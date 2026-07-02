@@ -106,7 +106,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckDisksP
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetDomainParam
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEnabledPara
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetExistsParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetExistsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetPathParamet
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllP
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRunningParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRunningParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -430,4 +430,3 @@ func validateNewDevicePostureRuleInputOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

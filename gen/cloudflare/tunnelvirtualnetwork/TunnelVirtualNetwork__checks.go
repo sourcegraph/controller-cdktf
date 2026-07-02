@@ -19,7 +19,7 @@ func (t *jsiiProxy_TunnelVirtualNetwork) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (t *jsiiProxy_TunnelVirtualNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TunnelVirtualNetwork) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateTunnelVirtualNetwork_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateTunnelVirtualNetwork_IsConstructParameters(x interface{}) error {
+func validateTunnelVirtualNetwork_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateTunnelVirtualNetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTunnelVirtualNetwork_IsTerraformElementParameters(x interface{}) error {
+func validateTunnelVirtualNetwork_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateTunnelVirtualNetwork_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateTunnelVirtualNetwork_IsTerraformResourceParameters(x interface{}) error {
+func validateTunnelVirtualNetwork_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) validateSetCommentParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelVirtualNetwork) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelVirtualNetwork) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) validateSetIsDefaultNetworkParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelVirtualNetwork) validateSetIsDefaultNetworkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TunnelVirtualNetwork) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewTunnelVirtualNetworkParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

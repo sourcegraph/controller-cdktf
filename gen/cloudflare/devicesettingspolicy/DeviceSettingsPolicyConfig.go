@@ -6,9 +6,9 @@ import (
 
 type DeviceSettingsPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DeviceSettingsPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
@@ -30,15 +30,15 @@ type DeviceSettingsPolicyConfig struct {
 	// Whether to allow devices to leave the organization. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
-	AllowedToLeave interface{} `field:"optional" json:"allowedToLeave" yaml:"allowedToLeave"`
+	AllowedToLeave any `field:"optional" json:"allowedToLeave" yaml:"allowedToLeave"`
 	// Whether to allow mode switch for this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
-	AllowModeSwitch interface{} `field:"optional" json:"allowModeSwitch" yaml:"allowModeSwitch"`
+	AllowModeSwitch any `field:"optional" json:"allowModeSwitch" yaml:"allowModeSwitch"`
 	// Whether to allow updates under this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
-	AllowUpdates interface{} `field:"optional" json:"allowUpdates" yaml:"allowUpdates"`
+	AllowUpdates any `field:"optional" json:"allowUpdates" yaml:"allowUpdates"`
 	// The amount of time in minutes to reconnect after having been disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
@@ -50,19 +50,19 @@ type DeviceSettingsPolicyConfig struct {
 	// Whether the policy refers to the default account policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
-	Default interface{} `field:"optional" json:"default" yaml:"default"`
+	Default any `field:"optional" json:"default" yaml:"default"`
 	// Whether to disable auto fallback for this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
-	DisableAutoFallback interface{} `field:"optional" json:"disableAutoFallback" yaml:"disableAutoFallback"`
+	DisableAutoFallback any `field:"optional" json:"disableAutoFallback" yaml:"disableAutoFallback"`
 	// Whether the policy is enabled (cannot be set for default policies). Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Whether to add Microsoft IPs to split tunnel exclusions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
-	ExcludeOfficeIps interface{} `field:"optional" json:"excludeOfficeIps" yaml:"excludeOfficeIps"`
+	ExcludeOfficeIps any `field:"optional" json:"excludeOfficeIps" yaml:"excludeOfficeIps"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -91,6 +91,5 @@ type DeviceSettingsPolicyConfig struct {
 	// Enablement of the ZT client switch lock.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
-	SwitchLocked interface{} `field:"optional" json:"switchLocked" yaml:"switchLocked"`
+	SwitchLocked any `field:"optional" json:"switchLocked" yaml:"switchLocked"`
 }
-

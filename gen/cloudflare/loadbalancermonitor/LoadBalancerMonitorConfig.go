@@ -6,9 +6,9 @@ import (
 
 type LoadBalancerMonitorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoadBalancerMonitorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
@@ -26,7 +26,7 @@ type LoadBalancerMonitorConfig struct {
 	// Do not validate the certificate when monitor use HTTPS.  Only valid if `type` is "http" or "https".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// Free text description.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
@@ -46,11 +46,11 @@ type LoadBalancerMonitorConfig struct {
 	// Follow redirects if returned by the origin. Only valid if `type` is "http" or "https".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
-	FollowRedirects interface{} `field:"optional" json:"followRedirects" yaml:"followRedirects"`
+	FollowRedirects any `field:"optional" json:"followRedirects" yaml:"followRedirects"`
 	// header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	Header any `field:"optional" json:"header" yaml:"header"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#id LoadBalancerMonitor#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -93,4 +93,3 @@ type LoadBalancerMonitorConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GreTunnel) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (g *jsiiProxy_GreTunnel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GreTunnel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GreTunnel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GreTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GreTunnel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGreTunnel_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateGreTunnel_IsConstructParameters(x interface{}) error {
+func validateGreTunnel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGreTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGreTunnel_IsTerraformElementParameters(x interface{}) error {
+func validateGreTunnel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGreTunnel_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGreTunnel_IsTerraformResourceParameters(x interface{}) error {
+func validateGreTunnel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_GreTunnel) validateSetCloudflareGreEndpointParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GreTunnel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GreTunnel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_GreTunnel) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_GreTunnel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GreTunnel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GreTunnel) validateSetDescriptionParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_GreTunnel) validateSetHealthCheckEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GreTunnel) validateSetHealthCheckEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_GreTunnel) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GreTunnel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GreTunnel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -514,4 +514,3 @@ func validateNewGreTunnelParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

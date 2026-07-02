@@ -6,9 +6,9 @@ import (
 
 type CustomHostnameConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CustomHostnameConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
@@ -49,10 +49,9 @@ type CustomHostnameConfig struct {
 	// ssl block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
-	Ssl interface{} `field:"optional" json:"ssl" yaml:"ssl"`
+	Ssl any `field:"optional" json:"ssl" yaml:"ssl"`
 	// Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
-	WaitForSslPendingValidation interface{} `field:"optional" json:"waitForSslPendingValidation" yaml:"waitForSslPendingValidation"`
+	WaitForSslPendingValidation any `field:"optional" json:"waitForSslPendingValidation" yaml:"waitForSslPendingValidation"`
 }
-

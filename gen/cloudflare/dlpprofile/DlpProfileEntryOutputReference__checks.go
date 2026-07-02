@@ -109,7 +109,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewDlpProfileEntryOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

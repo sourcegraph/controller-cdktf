@@ -19,7 +19,7 @@ func (s *jsiiProxy_SplitTunnel) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (s *jsiiProxy_SplitTunnel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SplitTunnel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SplitTunnel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SplitTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SplitTunnel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SplitTunnel) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (s *jsiiProxy_SplitTunnel) validatePutTunnelsParameters(value interface{}) error {
+func (s *jsiiProxy_SplitTunnel) validatePutTunnelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateSplitTunnel_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateSplitTunnel_IsConstructParameters(x interface{}) error {
+func validateSplitTunnel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateSplitTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSplitTunnel_IsTerraformElementParameters(x interface{}) error {
+func validateSplitTunnel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateSplitTunnel_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSplitTunnel_IsTerraformResourceParameters(x interface{}) error {
+func validateSplitTunnel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_SplitTunnel) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SplitTunnel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_SplitTunnel) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SplitTunnel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_SplitTunnel) validateSetPolicyIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SplitTunnel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewSplitTunnelParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

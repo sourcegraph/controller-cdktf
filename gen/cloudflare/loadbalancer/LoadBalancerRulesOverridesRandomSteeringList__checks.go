@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerRulesOverridesRandomSteeringListParameters(terraform
 
 	return nil
 }
-

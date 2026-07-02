@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
-		reflect.TypeOf((*ZoneSettingsOverride)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverride](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneStatus", GoGetter: "ZoneStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneType", GoGetter: "ZoneType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverride{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideConfig",
-		reflect.TypeOf((*ZoneSettingsOverrideConfig)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettings)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsList)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -104,11 +104,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinify",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinify)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMinify](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyList)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMinifyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMinifyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirect",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirect)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMobileRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectList)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMobileRedirectList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,7 +224,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websockets", GoGetter: "Websockets"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroRtt", GoGetter: "ZeroRtt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,11 +311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeader",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeader)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsSecurityHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsSecurityHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -336,7 +336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,15 +373,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings",
-		reflect.TypeOf((*ZoneSettingsOverrideSettings)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinify)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsMinify](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinifyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsMinifyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,11 +419,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirect)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsMobileRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsMobileRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnlineInput", GoGetter: "AlwaysOnlineInput"},
@@ -653,7 +653,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zeroRtt", GoGetter: "ZeroRtt"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroRttInput", GoGetter: "ZeroRttInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -661,11 +661,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeader)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsSecurityHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
-		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneSettingsOverrideSettingsSecurityHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -704,7 +704,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

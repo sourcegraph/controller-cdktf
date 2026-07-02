@@ -6,9 +6,9 @@ import (
 
 type WaitingRoomEventConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WaitingRoomEventConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ISO 8601 timestamp that marks the end of the event.
 	//
 	// **Modifying this attribute will force creation of a new resource.**
@@ -56,7 +56,7 @@ type WaitingRoomEventConfig struct {
 	// Disables automatic renewal of session cookies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
-	DisableSessionRenewal interface{} `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
+	DisableSessionRenewal any `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event#id WaitingRoomEvent#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -85,14 +85,13 @@ type WaitingRoomEventConfig struct {
 	// Requires that `prequeue_start_time` is not null. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
-	ShuffleAtEventStart interface{} `field:"optional" json:"shuffleAtEventStart" yaml:"shuffleAtEventStart"`
+	ShuffleAtEventStart any `field:"optional" json:"shuffleAtEventStart" yaml:"shuffleAtEventStart"`
 	// If suspended, the event is ignored and traffic will be handled based on the waiting room configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// The total number of active user sessions on the route at a point in time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
 	TotalActiveUsers *float64 `field:"optional" json:"totalActiveUsers" yaml:"totalActiveUsers"`
 }
-

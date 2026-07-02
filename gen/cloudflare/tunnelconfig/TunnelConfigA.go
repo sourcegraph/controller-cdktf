@@ -20,15 +20,15 @@ type TunnelConfigA interface {
 	Config() TunnelConfigConfigOutputReference
 	ConfigInput() *TunnelConfigConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,15 +55,15 @@ type TunnelConfigA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelId() *string
@@ -73,9 +73,9 @@ type TunnelConfigA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type TunnelConfigA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type TunnelConfigA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type TunnelConfigA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TunnelConfigA
@@ -185,8 +185,8 @@ func (j *jsiiProxy_TunnelConfigA) ConfigInput() *TunnelConfigConfig {
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_TunnelConfigA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TunnelConfigA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_TunnelConfigA) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_TunnelConfigA) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TunnelConfigA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_TunnelConfigA) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_TunnelConfigA) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TunnelConfigA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_TunnelConfigA) TunnelIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource.
 func NewTunnelConfigA(scope constructs.Construct, id *string, config *TunnelConfigAConfig) TunnelConfigA {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewTunnelConfigA(scope constructs.Construct, id *string, config *TunnelConf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewTunnelConfigA_Override(t TunnelConfigA, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetAccountId(val *string) {
+func (j *jsiiProxy_TunnelConfigA) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_TunnelConfigA)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetConnection(val interface{}) {
+func (j *jsiiProxy_TunnelConfigA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_TunnelConfigA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetCount(val interface{}) {
+func (j *jsiiProxy_TunnelConfigA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_TunnelConfigA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TunnelConfigA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_TunnelConfigA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TunnelConfigA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -454,7 +453,7 @@ func (j *jsiiProxy_TunnelConfigA)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetId(val *string) {
+func (j *jsiiProxy_TunnelConfigA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_TunnelConfigA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TunnelConfigA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_TunnelConfigA)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TunnelConfigA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_TunnelConfigA)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TunnelConfigA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_TunnelConfigA)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigA)SetTunnelId(val *string) {
+func (j *jsiiProxy_TunnelConfigA) SetTunnelId(val *string) {
 	if err := j.validateSetTunnelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func TunnelConfigA_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func TunnelConfigA_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TunnelConfigA_IsConstruct(x interface{}) *bool {
+func TunnelConfigA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTunnelConfigA_IsConstructParameters(x); err != nil {
@@ -553,7 +552,7 @@ func TunnelConfigA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func TunnelConfigA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TunnelConfigA_IsTerraformElement(x interface{}) *bool {
+func TunnelConfigA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTunnelConfigA_IsTerraformElementParameters(x); err != nil {
@@ -572,7 +571,7 @@ func TunnelConfigA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func TunnelConfigA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TunnelConfigA_IsTerraformResource(x interface{}) *bool {
+func TunnelConfigA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTunnelConfigA_IsTerraformResourceParameters(x); err != nil {
@@ -591,7 +590,7 @@ func TunnelConfigA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,31 +615,31 @@ func (t *jsiiProxy_TunnelConfigA) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigA) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TunnelConfigA) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TunnelConfigA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (t *jsiiProxy_TunnelConfigA) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (t *jsiiProxy_TunnelConfigA) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (t *jsiiProxy_TunnelConfigA) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (t *jsiiProxy_TunnelConfigA) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (t *jsiiProxy_TunnelConfigA) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (t *jsiiProxy_TunnelConfigA) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (t *jsiiProxy_TunnelConfigA) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,15 +767,15 @@ func (t *jsiiProxy_TunnelConfigA) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigA) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TunnelConfigA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -795,7 +794,7 @@ func (t *jsiiProxy_TunnelConfigA) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -808,7 +807,7 @@ func (t *jsiiProxy_TunnelConfigA) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,18 +821,18 @@ func (t *jsiiProxy_TunnelConfigA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigA) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TunnelConfigA) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -844,7 +843,7 @@ func (t *jsiiProxy_TunnelConfigA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -855,7 +854,7 @@ func (t *jsiiProxy_TunnelConfigA) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -866,7 +865,7 @@ func (t *jsiiProxy_TunnelConfigA) PutConfig(value *TunnelConfigConfig) {
 	_jsii_.InvokeVoid(
 		t,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -886,8 +885,8 @@ func (t *jsiiProxy_TunnelConfigA) ResetOverrideLogicalId() {
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TunnelConfigA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -899,8 +898,8 @@ func (t *jsiiProxy_TunnelConfigA) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TunnelConfigA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -912,8 +911,8 @@ func (t *jsiiProxy_TunnelConfigA) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TunnelConfigA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -925,8 +924,8 @@ func (t *jsiiProxy_TunnelConfigA) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigA) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TunnelConfigA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -951,8 +950,8 @@ func (t *jsiiProxy_TunnelConfigA) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigA) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TunnelConfigA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -963,4 +962,3 @@ func (t *jsiiProxy_TunnelConfigA) ToTerraform() interface{} {
 
 	return returns
 }
-

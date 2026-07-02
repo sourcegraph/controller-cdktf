@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkersKvNamespace) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (w *jsiiProxy_WorkersKvNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkersKvNamespace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkersKvNamespace) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersKvNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkersKvNamespace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWorkersKvNamespace_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateWorkersKvNamespace_IsConstructParameters(x interface{}) error {
+func validateWorkersKvNamespace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWorkersKvNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkersKvNamespace_IsTerraformElementParameters(x interface{}) error {
+func validateWorkersKvNamespace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWorkersKvNamespace_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateWorkersKvNamespace_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkersKvNamespace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_WorkersKvNamespace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersKvNamespace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_WorkersKvNamespace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersKvNamespace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_WorkersKvNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkersKvNamespace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewWorkersKvNamespaceParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

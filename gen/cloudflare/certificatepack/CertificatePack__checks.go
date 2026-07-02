@@ -19,7 +19,7 @@ func (c *jsiiProxy_CertificatePack) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePack) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CertificatePack) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CertificatePack) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CertificatePack) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CertificatePack) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePack) validatePutValidationErrorsParameters(value interface{}) error {
+func (c *jsiiProxy_CertificatePack) validatePutValidationErrorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (c *jsiiProxy_CertificatePack) validatePutValidationErrorsParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePack) validatePutValidationRecordsParameters(value interface{}) error {
+func (c *jsiiProxy_CertificatePack) validatePutValidationRecordsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateCertificatePack_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateCertificatePack_IsConstructParameters(x interface{}) error {
+func validateCertificatePack_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateCertificatePack_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCertificatePack_IsTerraformElementParameters(x interface{}) error {
+func validateCertificatePack_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateCertificatePack_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCertificatePack_IsTerraformResourceParameters(x interface{}) error {
+func validateCertificatePack_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (j *jsiiProxy_CertificatePack) validateSetCertificateAuthorityParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetCloudflareBrandingParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePack) validateSetCloudflareBrandingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func (j *jsiiProxy_CertificatePack) validateSetCloudflareBrandingParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePack) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -367,7 +367,7 @@ func (j *jsiiProxy_CertificatePack) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePack) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -448,7 +448,7 @@ func (j *jsiiProxy_CertificatePack) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CertificatePack) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -518,7 +518,7 @@ func (j *jsiiProxy_CertificatePack) validateSetValidityDaysParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetWaitForActiveStatusParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePack) validateSetWaitForActiveStatusParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -564,4 +564,3 @@ func validateNewCertificatePackParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

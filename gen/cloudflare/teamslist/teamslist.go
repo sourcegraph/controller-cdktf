@@ -18,15 +18,15 @@ type TeamsList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,15 +62,15 @@ type TeamsList interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -80,9 +80,9 @@ type TeamsList interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type TeamsList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type TeamsList interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type TeamsList interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TeamsList
@@ -173,8 +173,8 @@ func (j *jsiiProxy_TeamsList) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsList) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_TeamsList) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamsList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_TeamsList) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_TeamsList) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TeamsList) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_TeamsList) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_TeamsList) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_TeamsList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamsList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_TeamsList) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_list cloudflare_teams_list} Resource.
 func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfig) TeamsList {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewTeamsList_Override(t TeamsList, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetAccountId(val *string) {
+func (j *jsiiProxy_TeamsList) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_TeamsList)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetConnection(val interface{}) {
+func (j *jsiiProxy_TeamsList) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_TeamsList)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetCount(val interface{}) {
+func (j *jsiiProxy_TeamsList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_TeamsList)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TeamsList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_TeamsList)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetDescription(val *string) {
+func (j *jsiiProxy_TeamsList) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_TeamsList)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TeamsList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_TeamsList)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetId(val *string) {
+func (j *jsiiProxy_TeamsList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_TeamsList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetItems(val *[]*string) {
+func (j *jsiiProxy_TeamsList) SetItems(val *[]*string) {
 	if err := j.validateSetItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_TeamsList)SetItems(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TeamsList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_TeamsList)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetName(val *string) {
+func (j *jsiiProxy_TeamsList) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_TeamsList)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TeamsList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_TeamsList)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TeamsList) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_TeamsList)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsList)SetType(val *string) {
+func (j *jsiiProxy_TeamsList) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func TeamsList_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func TeamsList_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TeamsList_IsConstruct(x interface{}) *bool {
+func TeamsList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsList_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func TeamsList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func TeamsList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamsList_IsTerraformElement(x interface{}) *bool {
+func TeamsList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsList_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func TeamsList_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func TeamsList_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamsList_IsTerraformResource(x interface{}) *bool {
+func TeamsList_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsList_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func TeamsList_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (t *jsiiProxy_TeamsList) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TeamsList) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TeamsList) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TeamsList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamsList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (t *jsiiProxy_TeamsList) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (t *jsiiProxy_TeamsList) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (t *jsiiProxy_TeamsList) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (t *jsiiProxy_TeamsList) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (t *jsiiProxy_TeamsList) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (t *jsiiProxy_TeamsList) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (t *jsiiProxy_TeamsList) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (t *jsiiProxy_TeamsList) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamsList) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsList) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -876,7 +875,7 @@ func (t *jsiiProxy_TeamsList) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (t *jsiiProxy_TeamsList) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (t *jsiiProxy_TeamsList) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TeamsList) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TeamsList) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (t *jsiiProxy_TeamsList) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (t *jsiiProxy_TeamsList) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,8 +971,8 @@ func (t *jsiiProxy_TeamsList) ResetOverrideLogicalId() {
 	)
 }
 
-func (t *jsiiProxy_TeamsList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamsList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -985,8 +984,8 @@ func (t *jsiiProxy_TeamsList) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamsList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -998,8 +997,8 @@ func (t *jsiiProxy_TeamsList) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (t *jsiiProxy_TeamsList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1011,8 +1010,8 @@ func (t *jsiiProxy_TeamsList) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsList) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1037,8 +1036,8 @@ func (t *jsiiProxy_TeamsList) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsList) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1049,4 +1048,3 @@ func (t *jsiiProxy_TeamsList) ToTerraform() interface{} {
 
 	return returns
 }
-

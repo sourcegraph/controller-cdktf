@@ -6,9 +6,9 @@ import (
 
 type DevicePostureRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DevicePostureRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
@@ -43,11 +43,11 @@ type DevicePostureRuleConfig struct {
 	// input block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
-	Input interface{} `field:"optional" json:"input" yaml:"input"`
+	Input any `field:"optional" json:"input" yaml:"input"`
 	// match block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
-	Match interface{} `field:"optional" json:"match" yaml:"match"`
+	Match any `field:"optional" json:"match" yaml:"match"`
 	// Name of the device posture rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
@@ -59,4 +59,3 @@ type DevicePostureRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 }
-
