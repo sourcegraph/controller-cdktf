@@ -106,7 +106,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetCommonNameParam
 	return nil
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,4 +270,3 @@ func validateNewCertRequestSubjectOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

@@ -10,7 +10,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (t *jsiiProxy_TlsProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TlsProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -46,7 +46,7 @@ func validateTlsProvider_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateTlsProvider_IsConstructParameters(x interface{}) error {
+func validateTlsProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -54,7 +54,7 @@ func validateTlsProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTlsProvider_IsTerraformElementParameters(x interface{}) error {
+func validateTlsProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func validateTlsProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTlsProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateTlsProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -93,4 +93,3 @@ func validateNewTlsProviderParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

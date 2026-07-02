@@ -16,11 +16,11 @@ type DataTlsPublicKey interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,17 +55,17 @@ type DataTlsPublicKey interface {
 	PublicKeyOpenssh() *string
 	PublicKeyPem() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataTlsPublicKey interface {
 	ResetOverrideLogicalId()
 	ResetPrivateKeyOpenssh()
 	ResetPrivateKeyPem()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTlsPublicKey
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataTlsPublicKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTlsPublicKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataTlsPublicKey) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsPublicKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DataTlsPublicKey) PublicKeyPem() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsPublicKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DataTlsPublicKey) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTlsPublicKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -351,7 +351,6 @@ func (j *jsiiProxy_DataTlsPublicKey) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/data-sources/public_key tls_public_key} Data Source.
 func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTlsPublicKeyConfig) DataTlsPublicKey {
 	_init_.Initialize()
@@ -363,7 +362,7 @@ func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTls
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -376,12 +375,12 @@ func NewDataTlsPublicKey_Override(d DataTlsPublicKey, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTlsPublicKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTlsPublicKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTlsPublicKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTlsPublicKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetPrivateKeyOpenssh(val *string) {
+func (j *jsiiProxy_DataTlsPublicKey) SetPrivateKeyOpenssh(val *string) {
 	if err := j.validateSetPrivateKeyOpensshParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetPrivateKeyOpenssh(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetPrivateKeyPem(val *string) {
+func (j *jsiiProxy_DataTlsPublicKey) SetPrivateKeyPem(val *string) {
 	if err := j.validateSetPrivateKeyPemParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataTlsPublicKey)SetPrivateKeyPem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsPublicKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTlsPublicKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func DataTlsPublicKey_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func DataTlsPublicKey_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTlsPublicKey_IsConstruct(x interface{}) *bool {
+func DataTlsPublicKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsPublicKey_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func DataTlsPublicKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func DataTlsPublicKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool {
+func DataTlsPublicKey_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsPublicKey_IsTerraformDataSourceParameters(x); err != nil {
@@ -515,7 +514,7 @@ func DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTlsPublicKey_IsTerraformElement(x interface{}) *bool {
+func DataTlsPublicKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsPublicKey_IsTerraformElementParameters(x); err != nil {
@@ -534,7 +533,7 @@ func DataTlsPublicKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,27 +551,27 @@ func DataTlsPublicKey_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTlsPublicKey) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTlsPublicKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataTlsPublicKey) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataTlsPublicKey) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataTlsPublicKey) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -758,8 +757,8 @@ func (d *jsiiProxy_DataTlsPublicKey) ResetPrivateKeyPem() {
 	)
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTlsPublicKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -771,8 +770,8 @@ func (d *jsiiProxy_DataTlsPublicKey) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTlsPublicKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -784,8 +783,8 @@ func (d *jsiiProxy_DataTlsPublicKey) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsPublicKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -797,8 +796,8 @@ func (d *jsiiProxy_DataTlsPublicKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsPublicKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -823,8 +822,8 @@ func (d *jsiiProxy_DataTlsPublicKey) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsPublicKey) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsPublicKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -835,4 +834,3 @@ func (d *jsiiProxy_DataTlsPublicKey) ToTerraform() interface{} {
 
 	return returns
 }
-

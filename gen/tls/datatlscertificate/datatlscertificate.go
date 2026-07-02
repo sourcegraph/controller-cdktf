@@ -16,14 +16,14 @@ type DataTlsCertificate interface {
 	CdktfStack() cdktf.TerraformStack
 	Certificates() DataTlsCertificateCertificatesList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,23 +48,23 @@ type DataTlsCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
-	VerifyChain() interface{}
-	SetVerifyChain(val interface{})
-	VerifyChainInput() interface{}
+	VerifyChain() any
+	SetVerifyChain(val any)
+	VerifyChainInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,18 +92,18 @@ type DataTlsCertificate interface {
 	ResetOverrideLogicalId()
 	ResetUrl()
 	ResetVerifyChain()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTlsCertificate
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataTlsCertificate) Certificates() DataTlsCertificateCertific
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTlsCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataTlsCertificate) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataTlsCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataTlsCertificate) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTlsCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DataTlsCertificate) UrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) VerifyChain() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsCertificate) VerifyChain() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyChain",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataTlsCertificate) VerifyChain() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataTlsCertificate) VerifyChainInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTlsCertificate) VerifyChainInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyChainInput",
@@ -330,7 +330,6 @@ func (j *jsiiProxy_DataTlsCertificate) VerifyChainInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/data-sources/certificate tls_certificate} Data Source.
 func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataTlsCertificateConfig) DataTlsCertificate {
@@ -343,7 +342,7 @@ func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataT
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -356,12 +355,12 @@ func NewDataTlsCertificate_Override(d DataTlsCertificate, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetContent(val *string) {
+func (j *jsiiProxy_DataTlsCertificate) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTlsCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTlsCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +390,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTlsCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTlsCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTlsCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetUrl(val *string) {
+func (j *jsiiProxy_DataTlsCertificate) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataTlsCertificate)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTlsCertificate)SetVerifyChain(val interface{}) {
+func (j *jsiiProxy_DataTlsCertificate) SetVerifyChain(val any) {
 	if err := j.validateSetVerifyChainParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func DataTlsCertificate_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func DataTlsCertificate_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTlsCertificate_IsConstruct(x interface{}) *bool {
+func DataTlsCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsCertificate_IsConstructParameters(x); err != nil {
@@ -487,7 +486,7 @@ func DataTlsCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func DataTlsCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTlsCertificate_IsTerraformDataSource(x interface{}) *bool {
+func DataTlsCertificate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsCertificate_IsTerraformDataSourceParameters(x); err != nil {
@@ -506,7 +505,7 @@ func DataTlsCertificate_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func DataTlsCertificate_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTlsCertificate_IsTerraformElement(x interface{}) *bool {
+func DataTlsCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTlsCertificate_IsTerraformElementParameters(x); err != nil {
@@ -525,7 +524,7 @@ func DataTlsCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -543,27 +542,27 @@ func DataTlsCertificate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsCertificate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTlsCertificate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTlsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTlsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataTlsCertificate) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataTlsCertificate) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataTlsCertificate) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -757,8 +756,8 @@ func (d *jsiiProxy_DataTlsCertificate) ResetVerifyChain() {
 	)
 }
 
-func (d *jsiiProxy_DataTlsCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTlsCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataTlsCertificate) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTlsCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataTlsCertificate) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataTlsCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -822,8 +821,8 @@ func (d *jsiiProxy_DataTlsCertificate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTlsCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTlsCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -834,4 +833,3 @@ func (d *jsiiProxy_DataTlsCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

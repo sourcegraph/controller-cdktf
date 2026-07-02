@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTlsCertificateCertificatesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificateCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTlsCertificateCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataTlsCertificateCertificatesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

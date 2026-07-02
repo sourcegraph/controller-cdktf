@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
-		reflect.TypeOf((*DataTlsCertificate)(nil)).Elem(),
+		reflect.TypeFor[DataTlsCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verifyChain", GoGetter: "VerifyChain"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyChainInput", GoGetter: "VerifyChainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTlsCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,11 +64,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificates",
-		reflect.TypeOf((*DataTlsCertificateCertificates)(nil)).Elem(),
+		reflect.TypeFor[DataTlsCertificateCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
-		reflect.TypeOf((*DataTlsCertificateCertificatesList)(nil)).Elem(),
+		reflect.TypeFor[DataTlsCertificateCertificatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTlsCertificateCertificatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -89,7 +89,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
-		reflect.TypeOf((*DataTlsCertificateCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTlsCertificateCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certPem", GoGetter: "CertPem"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTlsCertificateCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,6 +132,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateConfig",
-		reflect.TypeOf((*DataTlsCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTlsCertificateConfig](),
 	)
 }
