@@ -18,15 +18,15 @@ type Grant interface {
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -65,11 +65,11 @@ type Grant interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -79,19 +79,19 @@ type Grant interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	WithGrantOption() interface{}
-	SetWithGrantOption(val interface{})
-	WithGrantOptionInput() interface{}
+	WithGrantOption() any
+	SetWithGrantOption(val any)
+	WithGrantOptionInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type Grant interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type Grant interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type Grant interface {
 	ResetOverrideLogicalId()
 	ResetSchema()
 	ResetWithGrantOption()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Grant
@@ -184,8 +184,8 @@ func (j *jsiiProxy_Grant) ColumnsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Grant) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_Grant) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Grant) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Grant) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Grant) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_Grant) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Grant) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_Grant) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Grant) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_Grant) TerraformGeneratorMetadata() *cdktf.TerraformProviderG
 	return returns
 }
 
-func (j *jsiiProxy_Grant) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Grant) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_Grant) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) WithGrantOption() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Grant) WithGrantOption() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withGrantOption",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_Grant) WithGrantOption() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Grant) WithGrantOptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Grant) WithGrantOptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withGrantOptionInput",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_Grant) WithGrantOptionInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant postgresql_grant} Resource.
 func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant {
@@ -506,7 +505,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.grant.Grant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -519,12 +518,12 @@ func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-postgresql.grant.Grant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_Grant)SetColumns(val *[]*string) {
+func (j *jsiiProxy_Grant) SetColumns(val *[]*string) {
 	if err := j.validateSetColumnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_Grant)SetColumns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetConnection(val interface{}) {
+func (j *jsiiProxy_Grant) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_Grant)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetCount(val interface{}) {
+func (j *jsiiProxy_Grant) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_Grant)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetDatabase(val *string) {
+func (j *jsiiProxy_Grant) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_Grant)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Grant) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_Grant)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Grant) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -584,7 +583,7 @@ func (j *jsiiProxy_Grant)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetId(val *string) {
+func (j *jsiiProxy_Grant) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_Grant)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Grant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_Grant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetObjects(val *[]*string) {
+func (j *jsiiProxy_Grant) SetObjects(val *[]*string) {
 	if err := j.validateSetObjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_Grant)SetObjects(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetObjectType(val *string) {
+func (j *jsiiProxy_Grant) SetObjectType(val *string) {
 	if err := j.validateSetObjectTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_Grant)SetObjectType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetPrivileges(val *[]*string) {
+func (j *jsiiProxy_Grant) SetPrivileges(val *[]*string) {
 	if err := j.validateSetPrivilegesParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_Grant)SetPrivileges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Grant) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_Grant)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Grant) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_Grant)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetRole(val *string) {
+func (j *jsiiProxy_Grant) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_Grant)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetSchema(val *string) {
+func (j *jsiiProxy_Grant) SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_Grant)SetSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Grant)SetWithGrantOption(val interface{}) {
+func (j *jsiiProxy_Grant) SetWithGrantOption(val any) {
 	if err := j.validateSetWithGrantOptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func Grant_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.grant.Grant",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func Grant_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Grant_IsConstruct(x interface{}) *bool {
+func Grant_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrant_IsConstructParameters(x); err != nil {
@@ -738,7 +737,7 @@ func Grant_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.grant.Grant",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func Grant_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Grant_IsTerraformElement(x interface{}) *bool {
+func Grant_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrant_IsTerraformElementParameters(x); err != nil {
@@ -757,7 +756,7 @@ func Grant_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.grant.Grant",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func Grant_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Grant_IsTerraformResource(x interface{}) *bool {
+func Grant_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrant_IsTerraformResourceParameters(x); err != nil {
@@ -776,7 +775,7 @@ func Grant_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-postgresql.grant.Grant",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,31 +800,31 @@ func (g *jsiiProxy_Grant) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_Grant) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_Grant) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_Grant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_Grant) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (g *jsiiProxy_Grant) GetBooleanAttribute(terraformAttribute *string) cdktf.
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (g *jsiiProxy_Grant) GetBooleanMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (g *jsiiProxy_Grant) GetListAttribute(terraformAttribute *string) *[]*strin
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_Grant) GetNumberAttribute(terraformAttribute *string) *float6
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (g *jsiiProxy_Grant) GetNumberListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (g *jsiiProxy_Grant) GetNumberMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_Grant) GetStringAttribute(terraformAttribute *string) *string
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,15 +952,15 @@ func (g *jsiiProxy_Grant) GetStringMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_Grant) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_Grant) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -980,7 +979,7 @@ func (g *jsiiProxy_Grant) ImportFrom(id *string, provider cdktf.TerraformProvide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -993,7 +992,7 @@ func (g *jsiiProxy_Grant) InterpolationForAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,18 +1006,18 @@ func (g *jsiiProxy_Grant) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_Grant) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_Grant) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_Grant) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_Grant) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1092,8 +1091,8 @@ func (g *jsiiProxy_Grant) ResetWithGrantOption() {
 	)
 }
 
-func (g *jsiiProxy_Grant) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_Grant) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1105,8 +1104,8 @@ func (g *jsiiProxy_Grant) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_Grant) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_Grant) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1118,8 +1117,8 @@ func (g *jsiiProxy_Grant) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_Grant) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_Grant) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1131,8 +1130,8 @@ func (g *jsiiProxy_Grant) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_Grant) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_Grant) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1157,8 +1156,8 @@ func (g *jsiiProxy_Grant) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_Grant) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_Grant) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1169,4 +1168,3 @@ func (g *jsiiProxy_Grant) ToTerraform() interface{} {
 
 	return returns
 }
-

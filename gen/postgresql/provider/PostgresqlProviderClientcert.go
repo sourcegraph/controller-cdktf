@@ -1,6 +1,5 @@
 package provider
 
-
 type PostgresqlProviderClientcert struct {
 	// The SSL client certificate file path. The file must contain PEM encoded data.
 	//
@@ -13,6 +12,5 @@ type PostgresqlProviderClientcert struct {
 	// Must be set to true if you are inlining the cert/key instead of using a file path.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#sslinline PostgresqlProvider#sslinline}
-	Sslinline interface{} `field:"optional" json:"sslinline" yaml:"sslinline"`
+	Sslinline any `field:"optional" json:"sslinline" yaml:"sslinline"`
 }
-

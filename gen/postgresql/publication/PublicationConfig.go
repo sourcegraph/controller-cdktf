@@ -6,9 +6,9 @@ import (
 
 type PublicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type PublicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#name Publication#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Sets the tables list to publish to ALL tables.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#all_tables Publication#all_tables}
-	AllTables interface{} `field:"optional" json:"allTables" yaml:"allTables"`
+	AllTables any `field:"optional" json:"allTables" yaml:"allTables"`
 	// Sets the database to add the publication for.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#database Publication#database}
@@ -32,7 +32,7 @@ type PublicationConfig struct {
 	// When true, will also drop all the objects that depend on the publication, and in turn all objects that depend on those objects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
-	DropCascade interface{} `field:"optional" json:"dropCascade" yaml:"dropCascade"`
+	DropCascade any `field:"optional" json:"dropCascade" yaml:"dropCascade"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#id Publication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -49,10 +49,9 @@ type PublicationConfig struct {
 	// Sets whether changes in a partitioned table using the identity and schema of the partitioned table.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
-	PublishViaPartitionRootParam interface{} `field:"optional" json:"publishViaPartitionRootParam" yaml:"publishViaPartitionRootParam"`
+	PublishViaPartitionRootParam any `field:"optional" json:"publishViaPartitionRootParam" yaml:"publishViaPartitionRootParam"`
 	// Sets the tables list to publish.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/publication#tables Publication#tables}
 	Tables *[]*string `field:"optional" json:"tables" yaml:"tables"`
 }
-

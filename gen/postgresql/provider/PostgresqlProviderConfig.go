@@ -1,6 +1,5 @@
 package provider
 
-
 type PostgresqlProviderConfig struct {
 	// Alias name.
 	//
@@ -9,7 +8,7 @@ type PostgresqlProviderConfig struct {
 	// Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
-	AwsRdsIamAuth interface{} `field:"optional" json:"awsRdsIamAuth" yaml:"awsRdsIamAuth"`
+	AwsRdsIamAuth any `field:"optional" json:"awsRdsIamAuth" yaml:"awsRdsIamAuth"`
 	// AWS profile to use for IAM auth.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#aws_rds_iam_profile PostgresqlProvider#aws_rds_iam_profile}
@@ -25,7 +24,7 @@ type PostgresqlProviderConfig struct {
 	// Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#azure_identity_auth PostgresqlProvider#azure_identity_auth}
-	AzureIdentityAuth interface{} `field:"optional" json:"azureIdentityAuth" yaml:"azureIdentityAuth"`
+	AzureIdentityAuth any `field:"optional" json:"azureIdentityAuth" yaml:"azureIdentityAuth"`
 	// MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#azure_tenant_id PostgresqlProvider#azure_tenant_id}
@@ -85,10 +84,9 @@ type PostgresqlProviderConfig struct {
 	// Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#superuser PostgresqlProvider#superuser}
-	Superuser interface{} `field:"optional" json:"superuser" yaml:"superuser"`
+	Superuser any `field:"optional" json:"superuser" yaml:"superuser"`
 	// PostgreSQL user name to connect as.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs#username PostgresqlProvider#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
-

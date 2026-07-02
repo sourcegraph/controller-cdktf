@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityLabel) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (s *jsiiProxy_SecurityLabel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityLabel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityLabel) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (s *jsiiProxy_SecurityLabel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityLabel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSecurityLabel_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateSecurityLabel_IsConstructParameters(x interface{}) error {
+func validateSecurityLabel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSecurityLabel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityLabel_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityLabel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSecurityLabel_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityLabel_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityLabel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSecurityLabel_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SecurityLabel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityLabel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SecurityLabel) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_SecurityLabel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityLabel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_SecurityLabel) validateSetObjectTypeParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SecurityLabel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityLabel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewSecurityLabelParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

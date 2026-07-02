@@ -6,9 +6,9 @@ import (
 
 type SchemaConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SchemaConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the schema.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#name Schema#name}
@@ -30,7 +30,7 @@ type SchemaConfig struct {
 	// When true, will also drop all the objects that are contained in the schema.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
-	DropCascade interface{} `field:"optional" json:"dropCascade" yaml:"dropCascade"`
+	DropCascade any `field:"optional" json:"dropCascade" yaml:"dropCascade"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#id Schema#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,7 +39,7 @@ type SchemaConfig struct {
 	// When true, use the existing schema if it exists.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
-	IfNotExists interface{} `field:"optional" json:"ifNotExists" yaml:"ifNotExists"`
+	IfNotExists any `field:"optional" json:"ifNotExists" yaml:"ifNotExists"`
 	// The ROLE name who owns the schema.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#owner Schema#owner}
@@ -47,6 +47,5 @@ type SchemaConfig struct {
 	// policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/schema#policy Schema#policy}
-	Policy interface{} `field:"optional" json:"policy" yaml:"policy"`
+	Policy any `field:"optional" json:"policy" yaml:"policy"`
 }
-
